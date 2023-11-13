@@ -27,8 +27,8 @@ public abstract class Person {
         return personName;
     }
 
-    public void setPersonName(int personName) {
-        personName = personName;
+    public void setPersonName(String personName) {
+        this.personName = personName;
     }
 
     public String getPersonSurname() {

@@ -1,5 +1,7 @@
+package src;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.text.ParseException;
 public class TimeInterval {
     private int id;
     private String startTime;
@@ -55,21 +57,27 @@ public class TimeInterval {
         return dayOfWeek;
     }
 
+
     public void setDayOfWeek(String day) {
         this.dayOfWeek = day;
     }
 
-    public int getTotalTimeInMinutes() {
-        
-        //Convert start and end time to Date objects(HH:MM)
-        SimpleDateFormat format = new SimpleDateFormat("HH:mm");
-        Date start = format.parse(startTime);
-        Date end = format.parse(endTime);
+    public int getTotalTimeInMinutes() throws ParseException {
+        try {
+            // Convert start and end time to Date objects(HH:mm)
+            SimpleDateFormat format = new SimpleDateFormat("HH:mm");
+            Date start = format.parse(startTime);
+            Date end = format.parse(endTime);
 
-        //Get difference between start and end time in minutes
-        long difference = end.getTime() - start.getTime();
-        int minutes = (int) (difference / (1000 * 60));
-        return minutes;
+            // Get difference between start and end time in minutes
+            long difference = end.getTime() - start.getTime();
+            int minutes = (int) (difference / (1000 * 60));
+
+            return minutes;
+        } catch (ParseException e) {
+            e.printStackTrace();
+            throw e;
+        }
     }
 
     public String getTimeIntervalInfo() {
