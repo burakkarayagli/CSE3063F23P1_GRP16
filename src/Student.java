@@ -6,11 +6,11 @@ public class Student extends Person {
     private String phoneNumber;
     private int studentYear;
     private int entranceYear;
-    private List<Course> courses;
+    private List<CourseSection> courses;
 
 
     public Student(String personName, String personSurname, String username, String password,
-                   String address, String phoneNumber, int studentYear, int entranceYear, List<Course> courses) {
+                   String address, String phoneNumber, int studentYear, int entranceYear, List<CourseSection> courses) {
         super(personName, personSurname, username, password);
         this.address = address;
         this.phoneNumber = phoneNumber;
