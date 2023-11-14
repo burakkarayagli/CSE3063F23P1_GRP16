@@ -1,4 +1,4 @@
-package src;
+
 public class Staff extends Person {
     private String reputation;
     private int officeHours;

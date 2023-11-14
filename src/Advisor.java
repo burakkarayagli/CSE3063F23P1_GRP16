@@ -1,4 +1,4 @@
-package src;
+
 import java.util.List;
 
 public class Advisor extends Staff {

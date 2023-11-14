@@ -1,4 +1,3 @@
-package src;
 public class Course {
     private String shortName;
     private String fullName;
