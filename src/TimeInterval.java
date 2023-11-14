@@ -3,38 +3,22 @@ import java.util.Date;
 import java.text.ParseException;
 
 public class TimeInterval {
-    private int id;
     private String startTime;
     private String endTime;
     private String dayOfWeek;
 
-    public TimeInterval(int id, String startTime, String endTime, String dayOfWeek) {
-        this.id = id;
+    public TimeInterval(String startTime, String endTime, String dayOfWeek) {
         this.startTime = startTime;
         this.endTime = endTime;
         this.dayOfWeek = dayOfWeek;
     }
 
-    public TimeInterval(int id, String startTime, String endTime) {
-        this.id = id;
+    public TimeInterval(String startTime, String endTime) {
         this.startTime = startTime;
         this.endTime = endTime;
     }
 
-    public TimeInterval(int id, String startTime) {
-        this.id = id;
-        this.startTime = startTime;
-    }
-
-    public TimeInterval(int id) {
-        this.id = id;
-    }
-
     public TimeInterval() {
-    }
-
-    public int getId() {
-        return id;
     }
 
     public String getStartTime() {
@@ -80,7 +64,6 @@ public class TimeInterval {
     }
 
     public String getTimeIntervalInfo() {
-        return "TimeInterval{" + "id=" + id + ", startTime=" + startTime + ", endTime=" + endTime + ", dayOfWeek="
-                + dayOfWeek + '}';
+        return "TimeInterval{" + "startTime=" + startTime + ", endTime=" + endTime + ", dayOfWeek=" + dayOfWeek + '}';
     }
 }

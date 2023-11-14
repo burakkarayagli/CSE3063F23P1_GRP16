@@ -14,10 +14,6 @@ public class Course {
         this.fullName = fullName;
     }
 
-    public Course(String shortName) {
-        this.shortName = shortName;
-    }
-
     public Course() {
     }
     
