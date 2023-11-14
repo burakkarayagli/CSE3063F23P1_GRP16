@@ -8,6 +8,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 import java.io.IOException;
+import java.io.StringReader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -57,6 +58,32 @@ public class Json {
             }
         }
         return null;
+    }
+
+    private void updateJson() {
+        // filesı çekip jsonları oku / jsonların içinden username e eşit olanları
+        // updatele / courses ve isApproved
+        ArrayList<String> files = getStudentFiles();
+        String jsonString;
+        ArrayList<Student> students = getStudents();
+
+        for (int i = 0; i < files.size(); i++) {
+            jsonString = files.get(i);
+            JsonParser parser = new JsonParser();
+            JsonElement jsonElement = parser.parse(jsonString);
+            JsonObject jsonObject = jsonElement.getAsJsonObject();
+
+            String username = jsonObject.get("username").getAsString();
+
+
+            jsonObject.addProperty("isApproved", ); //true/false
+
+            JsonArray courses = jsonObject.getAsJsonArray("courses");
+
+
+            jsonObject.addProperty("courses", );//courses
+
+        }
     }
 
     public ArrayList<String> getStudentFiles() {
@@ -127,7 +154,7 @@ public class Json {
                     }
                     CourseSection course = getCourseSection(shortName, name);
                     if (course == null) {
-                        course = new CourseSection(shortName, fullName, dates, name, null, j)
+                        course = new CourseSection(shortName, fullName, dates, name, null, j);
                     }
                     Lecturer lecturer = getLecturer(jcourses.get(j).getAsJsonObject().get("fullName").getAsString());
 
