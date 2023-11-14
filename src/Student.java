@@ -1,4 +1,3 @@
-package src;
 import java.util.List;
 
 public class Student extends Person {

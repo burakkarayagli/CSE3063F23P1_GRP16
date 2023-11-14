@@ -1,11 +1,11 @@
-package src;
-public class Staff extends Person{
+public class Staff extends Person {
     private String reputation;
     private int officeHours;
     private int salary;
     private String employmentStatus;
 
-    public Staff(int personID, String personName, String personSurname, String username, String password, String reputation, int officeHours, int salary, String employmentStatus) {
+    public Staff(int personID, String personName, String personSurname, String username, String password,
+            String reputation, int officeHours, int salary, String employmentStatus) {
         super(personID, personName, personSurname, username, password);
         this.reputation = reputation;
         this.officeHours = officeHours;
