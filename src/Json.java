@@ -1,6 +1,7 @@
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -15,9 +16,47 @@ import java.io.File;
 
 public class Json {
     private String databaseFolder = "database";
+    private ArrayList<Student> students;
+    private ArrayList<Lecturer> lecturers;
+    private ArrayList<Advisor> advisors;
+    private ArrayList<Course> courses;
+    private ArrayList<CourseSection> courseSections;
 
     Json(String folderPath) {
         this.databaseFolder = folderPath;
+    }
+
+    // return the lecturer if alrady initialized
+    private Lecturer getLecturer(String username) {
+        for (int i = 0; i < lecturers.size(); i++) {
+            Lecturer lecturer = this.lecturers.get(i);
+            if (lecturer.getUsername().equals(username)) {
+                return lecturer;
+            }
+        }
+        return null;
+    }
+
+    // return the course if already initialized
+    private Course getCourse(String shortName) {
+        for (int i = 0; i < courses.size(); i++) {
+            Course course = this.courses.get(i);
+            if (course.getShortName().equals(shortName)) {
+                return course;
+            }
+        }
+        return null;
+    }
+
+    // return the course section if already initialized
+    private CourseSection getCourseSection(String shortName, String sectionName) {
+        for (int i = 0; i < courseSections.size(); i++) {
+            CourseSection courseSection = this.courseSections.get(i);
+            if (courseSection.getShortName().equals(shortName) && courseSection.getSectionName().equals(sectionName)) {
+                return courseSection;
+            }
+        }
+        return null;
     }
 
     public ArrayList<String> getStudentFiles() {
@@ -70,16 +109,45 @@ public class Json {
                 boolean isApproved = jsonObject.get("isApproved").getAsBoolean();
 
                 // get the selected course
-                // add soon
-                System.out.println(jsonObject.get("courses"));
+                ArrayList<CourseSection> studentCourses = new ArrayList<CourseSection>();
+                JsonArray jcourses = jsonObject.get("courses").getAsJsonArray();
+                for (int j = 0; j < jcourses.size(); j++) {
+                    String shortName = jcourses.get(j).getAsJsonObject().get("shortName").getAsString();
+                    String fullName = jcourses.get(j).getAsJsonObject().get("fullName").getAsString();
+                    String description = jcourses.get(j).getAsJsonObject().get("description").getAsString();
+                    // initialize the dates for courseSection
+                    ArrayList<TimeInterval> dates = new ArrayList<TimeInterval>();
+                    JsonArray jdates = jcourses.get(j).getAsJsonArray();
+                    for (int k = 0; k < jdates.size(); k++) {
+                        String startTime = jdates.get(k).getAsJsonObject().get("startTime").getAsString();
+                        String endTime = jdates.get(k).getAsJsonObject().get("endTime").getAsString();
+                        String dayOfWeek = jdates.get(k).getAsJsonObject().get("dayOfWeek").getAsString();
+                        TimeInterval timeInterval = new TimeInterval(startTime, endTime, dayOfWeek);
+                        dates.add(timeInterval);
+                    }
+                    CourseSection course = getCourseSection(shortName, name);
+                    if (course == null) {
+                        course = new CourseSection(shortName, fullName, dates, name, null, j)
+                    }
+                    Lecturer lecturer = getLecturer(jcourses.get(j).getAsJsonObject().get("fullName").getAsString());
+
+                }
 
                 // create transcript objects
-                JsonArray transcipt = jsonObject.get("transcript").getAsJsonArray();
-                for (int j = 0; j < transcipt.size(); j++) {
-                    String shortName = transcipt.get(j).getAsJsonObject().get("shortName").getAsString();
-                    String fullName = transcipt.get(j).getAsJsonObject().get("fullName").getAsString();
-                    String description = transcipt.get(j).getAsJsonObject().get("description").getAsString();
-                    String grade = transcipt.get(j).getAsJsonObject().get("grade").getAsString();
+                Transcript transcipt = new Transcript();
+                JsonArray jtranscipt = jsonObject.get("transcript").getAsJsonArray();
+                for (int j = 0; j < jtranscipt.size(); j++) {
+                    String shortName = jtranscipt.get(j).getAsJsonObject().get("shortName").getAsString();
+                    String fullName = jtranscipt.get(j).getAsJsonObject().get("fullName").getAsString();
+                    String description = jtranscipt.get(j).getAsJsonObject().get("description").getAsString();
+                    String jgrade = jtranscipt.get(j).getAsJsonObject().get("grade").getAsString();
+                    Course course = getCourse(shortName);
+                    if (course == null) {
+                        course = new Course(shortName, fullName, description);
+                        courses.add(course);
+                    }
+                    Grade grade = new Grade(course, jgrade);
+
                     // create the course object
                     // create the grade object
                     // add to arraylist or Transkript

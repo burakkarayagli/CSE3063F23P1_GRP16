@@ -6,18 +6,23 @@ public class Student extends Person {
     private String phoneNumber;
     private int studentYear;
     private int entranceYear;
+    private boolean isApproved;
     private List<CourseSection> courses;
+    private Transcript transcript;
 
 
     public Student(String personName, String personSurname, String username, String password,
-                   String address, String phoneNumber, int studentYear, int entranceYear, List<CourseSection> courses) {
+                   String address, String phoneNumber, int studentYear, int entranceYear, boolean isApproved, List<CourseSection> courses,
+                   Transcript transcript) {
         super(personName, personSurname, username, password);
         this.address = address;
         this.phoneNumber = phoneNumber;
         this.studentYear = studentYear;
         this.entranceYear = entranceYear;
         this.courses = courses;
+        this.transcript = transcript;
     }
+
 
     public String getAddress() {
         return address;
@@ -50,16 +55,27 @@ public class Student extends Person {
     public void setEntranceYear(int entranceYear) {
         this.entranceYear = entranceYear;
     }
-
-    public List<Course> getCourses() {
-        return courses;
+    public boolean getApproved(){
+        return this.isApproved;
     }
 
-    public void setCourses(List<Course> courses) {
-        this.courses = courses;
+    public void setApproved(boolean isApproved){
+        this.isApproved = isApproved;
+    }
+    public List<CourseSection> getCourses() {
+        return courses;
     }
 
     public String getFullName(){
         return this.getPersonName()+ " "+this.getPersonSurname();
     }
+
+
+    public Transcript getTranscript(){
+        return transcript;
+    }
+    public void setTranscript(Transcript transcript){
+        this.transcript = transcript;
+    }
+    
 }

@@ -12,6 +12,7 @@ public class Course {
     public Course(String shortName, String fullName) {
         this.shortName = shortName;
         this.fullName = fullName;
+        this.description = "";
     }
 
     public Course() {

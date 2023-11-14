@@ -7,7 +7,6 @@ public abstract class Person {
     private String password;
 
 
-
     public Person(String personName, String personSurname, String username, String password) {
         this.personName = personName;
         this.personSurname = personSurname;
