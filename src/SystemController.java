@@ -23,7 +23,7 @@ public class SystemController {
         //Check if username and password are correct
         //If correct, set loggedInUser to the correct user
         //If incorrect, throw an error
-        Person dummyUser = new Student(1, "John", "Doe", "johndoe", "password", "123 Main St", "555-555-5555", 1, 2020, null);
+        Person dummyUser = new Student("John", "Doe", "johndoe", "password", "123 Fake Street", "123456789", 1, 2020, null);
         setLoggedInUser(dummyUser);
         return true;
     }
