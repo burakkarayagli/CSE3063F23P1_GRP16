@@ -1,3 +1,4 @@
+package src;
 import java.util.List;
 
 public class Student extends Person {
@@ -8,9 +9,9 @@ public class Student extends Person {
     private List<Course> courses;
 
 
-    public Student(int personID, String personName, String personSurname, String username, String password,
+    public Student(String personName, String personSurname, String username, String password,
                    String address, String phoneNumber, int studentYear, int entranceYear, List<Course> courses) {
-        super(personID, personName, personSurname, username, password);
+        super(personName, personSurname, username, password);
         this.address = address;
         this.phoneNumber = phoneNumber;
         this.studentYear = studentYear;

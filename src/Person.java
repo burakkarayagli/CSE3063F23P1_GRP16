@@ -1,25 +1,18 @@
+package src;
 public abstract class Person {
 
-    private int personID;
     private String personName;
     private String personSurname;
     private String username;
     private String password;
 
-    public int getPersonID() {
-        return personID;
-    }
 
-    public Person(int personID, String personName, String personSurname, String username, String password) {
-        this.personID = personID;
+
+    public Person(String personName, String personSurname, String username, String password) {
         this.personName = personName;
         this.personSurname = personSurname;
         this.username = username;
         this.password = password;
-    }
-
-    public void setPersonID(int personID) {
-        this.personID = personID;
     }
 
     public String getPersonName() {
