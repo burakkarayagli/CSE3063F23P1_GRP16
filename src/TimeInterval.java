@@ -1,7 +1,7 @@
-package src;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.text.ParseException;
+
 public class TimeInterval {
     private int id;
     private String startTime;
@@ -57,7 +57,6 @@ public class TimeInterval {
         return dayOfWeek;
     }
 
-
     public void setDayOfWeek(String day) {
         this.dayOfWeek = day;
     }
@@ -81,6 +80,7 @@ public class TimeInterval {
     }
 
     public String getTimeIntervalInfo() {
-        return "TimeInterval{" + "id=" + id + ", startTime=" + startTime + ", endTime=" + endTime + ", dayOfWeek=" + dayOfWeek + '}';
+        return "TimeInterval{" + "id=" + id + ", startTime=" + startTime + ", endTime=" + endTime + ", dayOfWeek="
+                + dayOfWeek + '}';
     }
 }

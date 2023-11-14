@@ -1,0 +1,250 @@
+{
+    "lectures": [
+        {
+            "id": 150200001,
+            "name": "MUSTAFA",
+            "surname": "AĞAOĞLU",
+            "username": "mustafaagaoglu",
+            "password": "mustafaagaoglu",
+            "reputation": "Doç.Dr.",
+            "officeHours": [
+                {
+                    "startTime": "13:10",
+                    "endTime": "14:30",
+                    "dayOfWeek": "Wednesday, Friday"
+                }
+            ],
+            "salary": 99999,
+            "employeStatus": true,
+            "courses": []
+        },
+        {
+            "id": 150200002,
+            "name": "MURAT CAN",
+            "surname": "GANİZ",
+            "username": "muratcanganiz",
+            "password": "muratcanganiz",
+            "reputation": "Doç.Dr.",
+            "officeHours": [
+                {
+                    "startTime": "15:00",
+                    "endTime": "16:20",
+                    "dayOfWeek": "Tuesday"
+                }
+            ],
+            "salary": 99999,
+            "employeStatus": true,
+            "courses": []
+        }
+    ],
+    "advisors": [
+        {
+            "id": 150300001,
+            "name": "FATMA CORUT",
+            "surname": "ERGİN",
+            "username": "fatmacorutergin",
+            "password": "fatmacorutergin",
+            "reputation": "Dr.",
+            "officeHours": [
+                {
+                    "startTime": "",
+                    "endTime": "",
+                    "dayOfWeek": ""
+                }
+            ],
+            "salary": 99999,
+            "employeStatus": true,
+            "advisee": []
+        },
+        {
+            "id": 150300002,
+            "name": "BETÜL",
+            "surname": "BOZ",
+            "username": "betulboz",
+            "password": "betulboz",
+            "reputation": "Dr.",
+            "officeHours": [
+                {
+                    "startTime": "",
+                    "endTime": "",
+                    "dayOfWeek": ""
+                }
+            ],
+            "salary": 99999,
+            "employeStatus": true,
+            "advisee": []
+        },
+        {
+            "id": 150300003,
+            "name": "Hakkı",
+            "surname": "Kokur",
+            "username": "hakki",
+            "password": "iamin",
+            "reputation": "prof",
+            "officeHours": [
+                {
+                    "startTime": "",
+                    "endTime": "13",
+                    "dayOfWeek": ""
+                }
+            ],
+            "salary": 99999,
+            "employeStatus": true,
+            "advisee": []
+        }
+    ],
+    "courses": [
+        {
+            "shortName": "ATA121",
+            "fullName": "Atatürk İlkeleri ve İnkılap Tarihi I",
+            "description": ""
+        },
+        {
+            "shortName": "CSE1200",
+            "fullName": "Introduction to Computer Engineering",
+            "description": ""
+        },
+        {
+            "shortName": "CSE1241",
+            "fullName": "Computer Programming I",
+            "description": ""
+        },
+        {
+            "shortName": "MATH1001",
+            "fullName": "Calculus I",
+            "description": ""
+        },
+        {
+            "shortName": "MBG1201",
+            "fullName": "Introduction to Modern Biology",
+            "description": ""
+        },
+        {
+            "shortName": "PHYS1101",
+            "fullName": "Physics I",
+            "description": ""
+        },
+        {
+            "shortName": "PHYS1103",
+            "fullName": "Physics Lab I",
+            "description": ""
+        },
+        {
+            "shortName": "TRD121",
+            "fullName": "Türk Dili I",
+            "description": ""
+        },
+        {
+            "shortName": "ATA122",
+            "fullName": "Atatürk İlkeleri ve İnkılap Tarihi II",
+            "description": ""
+        },
+        {
+            "shortName": "CSE1242",
+            "fullName": "Computer Programming II",
+            "description": ""
+        },
+        {
+            "shortName": "MATH1002",
+            "fullName": "Calculus II",
+            "description": ""
+        },
+        {
+            "shortName": "MATH2256",
+            "fullName": "Linear Algebra for Computer Engineering",
+            "description": ""
+        },
+        {
+            "shortName": "PHYS1102",
+            "fullName": "Physics II",
+            "description": ""
+        },
+        {
+            "shortName": "PHYS1104",
+            "fullName": "Physics Lab II",
+            "description": ""
+        },
+        {
+            "shortName": "TRD122",
+            "fullName": "Türk Dili II",
+            "description": ""
+        },
+        {
+            "shortName": "CSE2023",
+            "fullName": "Discrete Computational Structures",
+            "description": ""
+        },
+        {
+            "shortName": "CSE2225",
+            "fullName": "Data Structures",
+            "description": ""
+        },
+        {
+            "shortName": "ECON2004",
+            "fullName": "Engineering Economy",
+            "description": ""
+        },
+        {
+            "shortName": "EE2031",
+            "fullName": "Electric Circuits",
+            "description": ""
+        },
+        {
+            "shortName": "MATH2055",
+            "fullName": "Differential Equations",
+            "description": ""
+        },
+        {
+            "shortName": "MATH2059",
+            "fullName": "Numerical Methods",
+            "description": ""
+        },
+        {
+            "shortName": "CSE2138",
+            "fullName": "Systems Programming",
+            "description": ""
+        },
+        {
+            "shortName": "CSE2246",
+            "fullName": "Analysis of Algorithms",
+            "description": ""
+        },
+        {
+            "shortName": "CSE2260",
+            "fullName": "Principles of Programming Languages",
+            "description": ""
+        },
+        {
+            "shortName": "EE2032",
+            "fullName": "Electronics",
+            "description": ""
+        },
+        {
+            "shortName": "STAT2253",
+            "fullName": "Probability and Statistics for Computer Engineering",
+            "description": ""
+        }
+    ],
+    "sections": [
+        {
+            "shortName": "PHYS1103",
+            "fullName": "Physics Lab I",
+            "description": "",
+            "dates": [
+                {
+                    "startTime": "8:30",
+                    "endTime": "9:20",
+                    "dayOfWeek": "Monday, Friday"
+                },
+                {
+                    "startTime": "11:30",
+                    "endTime": "12:20",
+                    "dayOfWeek": "Tuesday"
+                }
+            ],
+            "sectionName": "1.1",
+            "lecturerUsername": "mustafaagaoglu",
+            "quota": 100
+        }
+    ]
+}

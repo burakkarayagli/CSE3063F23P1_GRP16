@@ -1,8 +1,7 @@
-package src;
 
 import java.util.ArrayList;
 
-public class CourseSection extends Course{
+public class CourseSection extends Course {
 
     private int id;
     private ArrayList<TimeInterval> dates;
