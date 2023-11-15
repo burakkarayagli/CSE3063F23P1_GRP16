@@ -23,6 +23,11 @@ public class Json {
 
     Json(String folderPath) {
         this.databaseFolder = folderPath;
+        this.initCourse();
+        this.initLecturers();
+        this.initCourseSection();
+        this.initStudents();
+        this.initAdvisor();
     }
 
     private ArrayList<File> getStudentFiles() {
@@ -94,7 +99,7 @@ public class Json {
         return null;
     }
 
-    public void initCourse() {
+    private void initCourse() {
         File paraFile = getParametersFile();
         try (Scanner scanner = new Scanner(paraFile,
                 StandardCharsets.UTF_8.name());) {
@@ -117,7 +122,7 @@ public class Json {
         }
     }
 
-    public void initLecturers() {
+    private void initLecturers() {
         File paraFile = getParametersFile();
         try (Scanner scanner = new Scanner(paraFile,
                 StandardCharsets.UTF_8.name());) {
@@ -168,7 +173,7 @@ public class Json {
         }
     }
 
-    public void initCourseSection() {
+    private void initCourseSection() {
         File paraFile = getParametersFile();
         try (Scanner scanner = new Scanner(paraFile,
                 StandardCharsets.UTF_8.name());) {
@@ -213,7 +218,7 @@ public class Json {
         }
     }
 
-    public void initStudents() {
+    private void initStudents() {
         ArrayList<File> files = getStudentFiles();
         for (int i = 0; i < files.size(); i++) {
             try (Scanner scanner = new Scanner(files.get(i), StandardCharsets.UTF_8.name());) {
@@ -273,7 +278,7 @@ public class Json {
 
     }
 
-    public void initAdvisor() {
+    private void initAdvisor() {
         File paraFile = getParametersFile();
         try (Scanner scanner = new Scanner(paraFile,
                 StandardCharsets.UTF_8.name());) {
@@ -386,34 +391,35 @@ public class Json {
         }
     }
 
-    public static void main(String[] args) {
-        // try (Scanner scanner = new Scanner(Paths.get("database/150120033.json"),
-        // StandardCharsets.UTF_8.name());) {
-        // // String content = new
-        // // String(Files.readAllBytes(Paths.get("database/150120033.json")));
-        // String content = scanner.useDelimiter("\\A").next();
-        // scanner.close();
-        // JsonParser parser = new JsonParser();
-        // JsonElement neoJsonElement = parser.parse(content);
-        //
-        // System.out.println(neoJsonElement.getAsJsonObject().get("surname").getAsString());
-        // } catch (IOException e) {
-        // e.printStackTrace();
-        // }
+    // public static void main(String[] args) {
+    // // try (Scanner scanner = new Scanner(Paths.get("database/150120033.json"),
+    // // StandardCharsets.UTF_8.name());) {
+    // // // String content = new
+    // // // String(Files.readAllBytes(Paths.get("database/150120033.json")));
+    // // String content = scanner.useDelimiter("\\A").next();
+    // // scanner.close();
+    // // JsonParser parser = new JsonParser();
+    // // JsonElement neoJsonElement = parser.parse(content);
+    // //
+    // //
+    // System.out.println(neoJsonElement.getAsJsonObject().get("surname").getAsString());
+    // // } catch (IOException e) {
+    // // e.printStackTrace();
+    // // }
 
-        Json json = new Json("database");
-        json.initCourse();
-        json.initLecturers();
-        json.initCourseSection();
-        json.initStudents();
-        json.initAdvisor();
+    // Json json = new Json("database");
+    // // json.initCourse();
+    // // json.initLecturers();
+    // // json.initCourseSection();
+    // // json.initStudents();
+    // // json.initAdvisor();
 
-        // for (int i = 0; i < json.getCourseSections().size(); i++) {
-        // System.out.println(json.getCourseSections().get(i).getCourseInfo());
-        // System.out.println(json.getCourseSections().get(i).getLecturer().getUsername());
-        // }
+    // for (int i = 0; i < json.getCourseSections().size(); i++) {
+    // System.out.println(json.getCourseSections().get(i).getCourseInfo());
+    // System.out.println(json.getCourseSections().get(i).getLecturer().getUsername());
+    // }
 
-    }
+    // }
 
 }
 
