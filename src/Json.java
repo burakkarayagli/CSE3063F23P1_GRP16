@@ -7,6 +7,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 import java.io.IOException;
+import java.io.StringReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -92,6 +93,34 @@ public class Json {
         }
         return null;
     }
+
+    private void updateJson() {
+        // filesı çekip jsonları oku / jsonların içinden username e eşit olanları
+        // updatele / courses ve isApproved
+        ArrayList<String> files = getStudentFiles();
+        String jsonString;
+        ArrayList<Student> students = getStudents();
+
+        for (int i = 0; i < files.size(); i++) {
+            jsonString = files.get(i);
+            JsonParser parser = new JsonParser();
+            JsonElement jsonElement = parser.parse(jsonString);
+            JsonObject jsonObject = jsonElement.getAsJsonObject();
+
+            String username = jsonObject.get("username").getAsString();
+
+
+            jsonObject.addProperty("isApproved", ); //true/false
+
+            JsonArray courses = jsonObject.getAsJsonArray("courses");
+
+
+            jsonObject.addProperty("courses", );//courses
+
+        }
+    }
+
+
 
     public void initCourse() {
         File paraFile = getParametersFile();
@@ -234,12 +263,14 @@ public class Json {
 
                 // get the course sections
                 ArrayList<CourseSection> studentCourses = new ArrayList<CourseSection>();
+
                 JsonArray jCourses = jsonObject.get("courses").getAsJsonArray();
                 for (int j = 0; j < jCourses.size(); j++) {
                     String shortName = jCourses.get(j).getAsJsonObject().get("shortName").getAsString();
                     String sectionName = jCourses.get(j).getAsJsonObject().get("sectionName").getAsString();
                     CourseSection courseSection = getCourseSection(shortName, sectionName);
                     studentCourses.add(courseSection);
+
                 }
 
                 // create transcript objects
