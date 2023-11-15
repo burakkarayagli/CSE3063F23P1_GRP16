@@ -1,5 +1,5 @@
 {
-    "lectures": [
+    "lecturers": [
         {
             "name": "MUSTAFA",
             "surname": "AĞAOĞLU",
@@ -51,7 +51,7 @@
             ],
             "salary": 99999,
             "employeStatus": true,
-            "advisee": [
+            "students": [
                 "username"
             ]
         },
@@ -70,7 +70,7 @@
             ],
             "salary": 99999,
             "employeStatus": true,
-            "advisee": []
+            "students": []
         }
     ],
     "courses": [
@@ -222,6 +222,24 @@
             ],
             "sectionName": "1.1",
             "lecturerUsername": "mustafaagaoglu",
+            "quota": 100
+        },
+        {
+            "shortName": "CSE1241",
+            "dates": [
+                {
+                    "startTime": "8:30",
+                    "endTime": "9:20",
+                    "dayOfWeek": "Monday, Friday"
+                },
+                {
+                    "startTime": "11:30",
+                    "endTime": "12:20",
+                    "dayOfWeek": "Tuesday"
+                }
+            ],
+            "sectionName": "1.1",
+            "lecturerUsername": "muratcanganiz",
             "quota": 100
         }
     ]
