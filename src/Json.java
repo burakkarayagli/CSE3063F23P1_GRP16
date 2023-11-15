@@ -5,9 +5,9 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.google.gson.JsonPrimitive;
 
 import java.io.IOException;
-import java.io.StringReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -93,34 +93,6 @@ public class Json {
         }
         return null;
     }
-
-    private void updateJson() {
-        // filesı çekip jsonları oku / jsonların içinden username e eşit olanları
-        // updatele / courses ve isApproved
-        ArrayList<String> files = getStudentFiles();
-        String jsonString;
-        ArrayList<Student> students = getStudents();
-
-        for (int i = 0; i < files.size(); i++) {
-            jsonString = files.get(i);
-            JsonParser parser = new JsonParser();
-            JsonElement jsonElement = parser.parse(jsonString);
-            JsonObject jsonObject = jsonElement.getAsJsonObject();
-
-            String username = jsonObject.get("username").getAsString();
-
-
-            jsonObject.addProperty("isApproved", ); //true/false
-
-            JsonArray courses = jsonObject.getAsJsonArray("courses");
-
-
-            jsonObject.addProperty("courses", );//courses
-
-        }
-    }
-
-
 
     public void initCourse() {
         File paraFile = getParametersFile();
@@ -369,6 +341,49 @@ public class Json {
 
     public ArrayList<Advisor> getAdvisors() {
         return advisors;
+    }
+
+    private String updateValue(String keyPath, String updateText, String jsonText) {
+        String[] keys = keyPath.split("/");
+        JsonParser jsonParser = new JsonParser();
+        JsonObject jsonObject = (JsonObject) jsonParser.parse(jsonText);
+        JsonObject returnVal = jsonObject; // This holds the ref to target json object
+        JsonPrimitive jp = new JsonPrimitive(updateText);
+        String finalKey = keys[keys.length - 1];
+        for (String key : keys) {
+
+            if (jsonObject.get(key) != null && jsonObject.get(key).isJsonObject()) {
+                jsonObject = (JsonObject) jsonObject.get(key);
+                jsonObject.remove(finalKey);
+                jsonObject.add(finalKey, jp);
+                return returnVal.toString();
+            } else if (jsonObject.get(finalKey) == null) {
+                return returnVal.toString();
+            }
+        }
+        return "";
+    }
+
+    private void updateStudents() {
+        // filesı çekip jsonları oku / jsonların içinden username e eşit olanları
+        // updatele / courses ve isApproved
+        ArrayList<File> files = getStudentFiles();
+        ArrayList<Student> students = getStudents();
+        for (int i = 0; i < files.size(); i++) {
+            try (Scanner scanner = new Scanner(files.get(i), StandardCharsets.UTF_8.name())) {
+                String content = scanner.useDelimiter("\\A").next();
+                scanner.close();
+                // JsonElement jsonParser = new JsonParser().parse(content);
+                for (int j = 0; j < students.size(); j++) {
+                    Student student = students.get(i);
+                    // get the student variable
+                    // update the text via updateValue
+                    // write the updated text to opened file(File.getName() => return name)
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     public static void main(String[] args) {
