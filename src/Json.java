@@ -6,25 +6,19 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import src.Advisor;
-import src.Course;
-import src.CourseSection;
-import src.Lecturer;
-
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
 
 public class Json {
     private String databaseFolder = "database";
-    private ArrayList<Course> courses;
-    private ArrayList<Lecturer> lecturers;
-    private ArrayList<CourseSection> courseSections;
-    private ArrayList<Student> students;
-    private ArrayList<Advisor> advisors;
+    private ArrayList<Course> courses = new ArrayList<Course>();
+    private ArrayList<Lecturer> lecturers = new ArrayList<Lecturer>();
+    private ArrayList<CourseSection> courseSections = new ArrayList<CourseSection>();
+    private ArrayList<Student> students = new ArrayList<Student>();
+    private ArrayList<Advisor> advisors = new ArrayList<Advisor>();
 
     Json(String folderPath) {
         this.databaseFolder = folderPath;
@@ -103,8 +97,6 @@ public class Json {
         File paraFile = getParametersFile();
         try (Scanner scanner = new Scanner(paraFile,
                 StandardCharsets.UTF_8.name());) {
-            // String content = new
-            // String(Files.readAllBytes(Paths.get("database/150120033.json")));
             String content = scanner.useDelimiter("\\A").next();
             scanner.close();
             JsonParser parser = new JsonParser();
@@ -112,7 +104,7 @@ public class Json {
             JsonObject jObject = neoJsonElement.getAsJsonObject();
             JsonArray jCourses = jObject.get("courses").getAsJsonArray();
             for (int i = 0; i < jCourses.size(); i++) {
-                JsonObject jCourse = jCourses.getAsJsonObject();
+                JsonObject jCourse = jCourses.get(i).getAsJsonObject();
                 String shortName = jCourse.get("shortName").getAsString();
                 String fullName = jCourse.get("fullName").getAsString();
                 String description = jCourse.get("description").getAsString();
@@ -133,7 +125,7 @@ public class Json {
             JsonParser parser = new JsonParser();
             JsonElement neoJsonElement = parser.parse(content);
             JsonObject jObject = neoJsonElement.getAsJsonObject();
-            JsonArray jlecturers = jObject.get("lecturer").getAsJsonArray();
+            JsonArray jlecturers = jObject.get("lecturers").getAsJsonArray();
             for (int i = 0; i < jlecturers.size(); i++) {
                 // getting the attributes
                 JsonObject jsonObject = jlecturers.get(i).getAsJsonObject();
@@ -159,15 +151,15 @@ public class Json {
                 // get the courses (empty)
                 ArrayList<Course> lecturerCourses = new ArrayList<Course>();
                 JsonArray jCourses = jsonObject.get("courses").getAsJsonArray();
-                for(int j = 0; j < jCourses.size() ; j++){
+                for (int j = 0; j < jCourses.size(); j++) {
                     String shortName = jCourses.get(j).getAsJsonObject().get("shortName").getAsString();
                     Course course = getCourse(shortName);
                     lecturerCourses.add(course);
                 }
-                // init the lecturer 
-                ////////////
-                Lecturer lecturer = new Lecturer(name, surname, username, password, reputation, i, salary, employementStatus, courses)
-                lecturers.add(lecturer); 
+                // init the lecturer
+                Lecturer lecturer = new Lecturer(name, surname, username, password, reputation, dates, salary,
+                        employementStatus, lecturerCourses);
+                lecturers.add(lecturer);
             }
 
         } catch (IOException e) {
@@ -186,7 +178,7 @@ public class Json {
             JsonObject jObject = neoJsonElement.getAsJsonObject();
             JsonArray jCourses = jObject.get("sections").getAsJsonArray();
             for (int i = 0; i < jCourses.size(); i++) {
-                JsonObject jCourse = jCourses.getAsJsonObject();
+                JsonObject jCourse = jCourses.get(i).getAsJsonObject();
                 String shortName = jCourse.get("shortName").getAsString();
                 String sectionName = jCourse.get("sectionName").getAsString();
                 String lecturerUsername = jCourse.get("lecturerUsername").getAsString();
@@ -202,8 +194,18 @@ public class Json {
                 }
                 Course course = getCourse(shortName);
                 Lecturer lectuer = getLecturer(lecturerUsername);
-                // CourseSection courseSection = new CourseSection();
-                /////// initiliaze
+                // init the course section
+                CourseSection courseSection = new CourseSection(
+                        course.getShortName(),
+                        course.getFullName(),
+                        course.getDescription(),
+                        dates,
+                        sectionName,
+                        lectuer,
+                        quota
+
+                );
+                courseSections.add(courseSection);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -258,9 +260,8 @@ public class Json {
                 }
 
                 // create student object
-                ////////// update****
                 Student student = new Student(name, surname, username, password, address, phoneNumber, studentYear,
-                        entranceYear, courses);
+                        entranceYear, isApproved, studentCourses, transcipt);
                 students.add(student);
             } catch (IOException e) {
                 e.printStackTrace();
@@ -303,16 +304,16 @@ public class Json {
 
                 // get the students
                 ArrayList<Student> students = new ArrayList<Student>();
-                JsonArray jStudents = jsonObject.get("student").getAsJsonArray();
-                for(int j = 0; j < jStudents.size() ; j++){
-                    String studentUsername = jStudents.get(j).getAsJsonObject().get("username").getAsString();
+                JsonArray jStudents = jsonObject.get("students").getAsJsonArray();
+                for (int j = 0; j < jStudents.size(); j++) {
+                    String studentUsername = jStudents.get(j).getAsString();
                     Student student = getStudent(studentUsername);
                     students.add(student);
                 }
-                // init the Advisors 
-                ////////////
-                Advisor advisor = new Advisor(name, surname, username, password, reputation, i, salary, employementStatus, students)
-                advisors.add(advisor); 
+                // init the Advisors
+                Advisor advisor = new Advisor(name, surname, username, password, reputation, dates, salary,
+                        employementStatus, students);
+                advisors.add(advisor);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -323,22 +324,23 @@ public class Json {
         return courses;
     }
 
+    public ArrayList<Lecturer> getLecturers() {
+        return lecturers;
+    }
+
+    public ArrayList<CourseSection> getCourseSections() {
+        return courseSections;
+    }
+
+    public ArrayList<Student> getStudents() {
+        return students;
+    }
+
+    public ArrayList<Advisor> getAdvisors() {
+        return advisors;
+    }
+
     public static void main(String[] args) {
-
-        // Gson gson = new Gson();
-
-        // try (Reader reader = new FileReader("database/150120033.json")) {
-
-        // // Convert JSON File to Java Object
-        // Object object = gson.fromJson(reader, Object.class);
-
-        // // print staff
-        // System.out.println(object);
-
-        // } catch (IOException e) {
-        // e.printStackTrace();
-        // }
-
         // try (Scanner scanner = new Scanner(Paths.get("database/150120033.json"),
         // StandardCharsets.UTF_8.name());) {
         // // String content = new
@@ -355,6 +357,15 @@ public class Json {
 
         Json json = new Json("database");
         json.initCourse();
+        json.initLecturers();
+        json.initCourseSection();
+        json.initStudents();
+        json.initAdvisor();
+
+        // for (int i = 0; i < json.getCourseSections().size(); i++) {
+        // System.out.println(json.getCourseSections().get(i).getCourseInfo());
+        // System.out.println(json.getCourseSections().get(i).getLecturer().getUsername());
+        // }
 
     }
 
