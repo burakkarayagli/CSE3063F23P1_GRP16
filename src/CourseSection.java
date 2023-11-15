@@ -1,4 +1,4 @@
-package src;
+
 import java.util.ArrayList;
 
 public class CourseSection extends Course {
@@ -46,8 +46,7 @@ public class CourseSection extends Course {
 
     public void setLecturer(Lecturer lecturer) {
         this.lecturer = lecturer;
-        //TODO: add course section to lecturer
-        //this.lecturer.addCourseSection(this);
+
     }
 
     public int getQuota() {
