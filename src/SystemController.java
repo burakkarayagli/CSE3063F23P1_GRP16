@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
+import src.CourseSection;
+
 public class SystemController {
     private Person loggedInUser;
     private ArrayList<Course> courses;
@@ -52,12 +54,13 @@ public class SystemController {
     }
 
     public String getMenu() {
+        String_Constants StringConstants = new String_Constants();
         if (loggedInUser instanceof Student) {
-            return String_Constants.STUDENT_MENU_OPTIONS;
+            return StringConstants.STUDENT_MENU_OPTIONS;
         } else if (loggedInUser instanceof Advisor) {
-            return String_Constants.ADVISOR_MENU_OPTIONS;
+            return StringConstants.ADVISOR_MENU_OPTIONS;
         } else if (loggedInUser instanceof Advisor) {
-            return String_Constants.ADVISOR_MENU_OPTIONS;
+            return StringConstants.ADVISOR_MENU_OPTIONS;
         } else {
             return "Error: Invalid user type.";
         }
@@ -82,6 +85,22 @@ public class SystemController {
             courseList += course.getShortName() + " - " + course.getFullName() + "\n";
         }
         return courseList;
+    }
+
+    public void printAvailableCourses(Student student){
+        for(int i = 0;i<courses.size();i++){
+            ArrayList<Grade> studentCoursesTaken = student.getTranscript().getGradeList();
+            int j = 0;
+            for(;j<studentCoursesTaken.size();j++){
+                if(studentCoursesTaken.get(j).getCourse().getFullName().equals(courses.get(i).getFullName())){
+                    break;
+                }
+            }
+            if(j==studentCoursesTaken.size()){
+                System.out.println(courses.get(i).getFullName());
+
+            }
+        }
     }
 
     // Accepting or rejecting the course application.
