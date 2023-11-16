@@ -14,9 +14,13 @@ public class Transcript {
     public String getGrades() {
         StringBuilder result = new StringBuilder();
         for (Grade grade : listGrades) {
-            result.append(grade.getCourse().toString()).append(": ").append(grade.getGrade()).append("\n");
+            result.append("Course name: ").append(grade.getCourse().getFullName()).append(" | Student Grade: ").append(grade.getGrade()).append("\n");
         }
         return result.toString();
+    }
+    
+    public ArrayList<Grade> getGradeList(){
+        return listGrades;
     }
 
     public boolean addGrade(Grade grade) {

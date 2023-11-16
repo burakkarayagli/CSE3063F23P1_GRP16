@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
+
 
 public class SystemController {
     private Person loggedInUser;
@@ -8,14 +10,15 @@ public class SystemController {
     private ArrayList<CourseSection> courseSections;
     private ArrayList<Student> students;
     private ArrayList<Advisor> advisors;
-
+    private Json json;
     SystemController() {
-        Json json = new Json();
+        json = new Json();
         courses = json.getCourses();
         lecturers = json.getLecturers();
         courseSections = json.getCourseSections();
         students = json.getStudents();
         advisors = json.getAdvisors();
+
     }
 
     public SystemController(Person loggedInUser) {
@@ -52,12 +55,13 @@ public class SystemController {
     }
 
     public String getMenu() {
+        String_Constants StringConstants = new String_Constants();
         if (loggedInUser instanceof Student) {
-            return String_Constants.STUDENT_MENU_OPTIONS;
+            return StringConstants.STUDENT_MENU_OPTIONS;
         } else if (loggedInUser instanceof Advisor) {
-            return String_Constants.ADVISOR_MENU_OPTIONS;
+            return StringConstants.ADVISOR_MENU_OPTIONS;
         } else if (loggedInUser instanceof Advisor) {
-            return String_Constants.ADVISOR_MENU_OPTIONS;
+            return StringConstants.ADVISOR_MENU_OPTIONS;
         } else {
             return "Error: Invalid user type.";
         }
@@ -82,6 +86,40 @@ public class SystemController {
             courseList += course.getShortName() + " - " + course.getFullName() + "\n";
         }
         return courseList;
+    }
+
+    public void printAvailableCourses(Student student, ArrayList<CourseSection> untakenCourses){
+        
+        int courseOrder = 1;
+        for(int i = 0;i<courseSections.size();i++){
+            CourseSection courseSection = courseSections.get(i);
+            ArrayList<Grade> studentCoursesTaken = student.getTranscript().getGradeList();
+            int j = 0;
+            for(;j<studentCoursesTaken.size();j++){
+                if(studentCoursesTaken.get(j).getCourse().getFullName().equals(courseSection.getFullName())){
+                    break;
+                }
+            }
+            if(j==studentCoursesTaken.size()){
+                
+                untakenCourses.add(courseSections.get(i));
+                System.out.println(courseOrder+". "+courseSection.getFullName()+" "+courseSection.getSectionName()+" "+courseSection.getShortName());
+                courseOrder++;
+            }
+        }
+    }
+
+    // Applying the course operation
+    public void applyCourse(Student student, CourseSection courseSection){
+        System.out.println(courseSection.getFullName());
+        student.getCourses().add(courseSection);
+        json.updateStudents();
+        json.updateParametes();
+
+    }
+
+    public boolean checkPrerequisite(){
+        return true;
     }
 
     // Accepting or rejecting the course application.
