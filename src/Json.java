@@ -124,7 +124,15 @@ public class Json {
                 String shortName = jCourse.get("shortName").getAsString();
                 String fullName = jCourse.get("fullName").getAsString();
                 String description = jCourse.get("description").getAsString();
-                Course course = new Course(shortName, fullName, description);
+                String prerequisite;
+                try {
+                    prerequisite = jCourse.get("prerequisite").getAsString();
+
+                } catch (NullPointerException e) {
+                    prerequisite = "";
+
+                }
+                Course course = new Course(shortName, fullName, description, prerequisite);
                 courses.add(course);
             }
         } catch (IOException e) {
