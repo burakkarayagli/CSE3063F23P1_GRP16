@@ -1,5 +1,4 @@
 {
-    "id": 150121077,
     "name": "Efe",
     "surname": "Özgen",
     "username": "efe",
@@ -8,8 +7,6 @@
     "phoneNumber": "1234567890",
     "studentYear": 3,
     "entranceYear": 2021,
-    "isApproved": false,
-    "courses": [],
     "transcript": [
         {
             "shortName": "ATA121",
@@ -101,5 +98,7 @@
             "description": "",
             "grade": "AA"
         }
-    ]
+    ],
+    "isApproved": "false",
+    "courses": []
 }

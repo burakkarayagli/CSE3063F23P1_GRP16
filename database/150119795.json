@@ -8,8 +8,6 @@
     "phoneNumber": "1234566789",
     "studentYear": 3,
     "entranceYear": 2019,
-    "isApproved": false,
-    "courses": [],
     "transcript": [
         {
             "shortName": "ATA121",
@@ -101,5 +99,7 @@
             "description": "",
             "grade": "BA"
         }
-    ]
+    ],
+    "isApproved": "false",
+    "courses": []
 }

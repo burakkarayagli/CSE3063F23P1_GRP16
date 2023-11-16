@@ -1,9 +1,11 @@
-package src;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class Lecturer extends Staff {
     public Lecturer(String personName, String personSurname, String username, String password,
-            String reputation, int officeHours, int salary, String employmentStatus, List<Course> courses) {
+            String reputation, ArrayList<TimeInterval> officeHours, int salary, String employmentStatus,
+            List<Course> courses) {
         super(personName, personSurname, username, password, reputation, officeHours, salary,
                 employmentStatus);
         this.courses = courses;
@@ -15,7 +17,11 @@ public class Lecturer extends Staff {
         return courses;
     }
 
-    public void setCourses(List<Course> courses) {
-        this.courses = courses;
+    public boolean addCourse(CourseSection course) {
+        return courses.add(course);
+    }
+
+    public boolean removeCourse(CourseSection course) {
+        return courses.remove(course);
     }
 }

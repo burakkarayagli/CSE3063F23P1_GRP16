@@ -1,24 +1,33 @@
-package src;
-import java.util.List;
+
+import java.util.ArrayList;
 
 public class Student extends Person {
     private String address;
     private String phoneNumber;
     private int studentYear;
     private int entranceYear;
-    private List<Course> courses;
-
+    private boolean isApproved;
+    private ArrayList<CourseSection> courses;
+    private Transcript transcript;
 
     public Student(String personName, String personSurname, String username, String password,
-                   String address, String phoneNumber, int studentYear, int entranceYear, List<Course> courses) {
+            String address, String phoneNumber, int studentYear, int entranceYear, boolean isApproved,
+            ArrayList<CourseSection> courses,
+            Transcript transcript) {
         super(personName, personSurname, username, password);
         this.address = address;
         this.phoneNumber = phoneNumber;
         this.studentYear = studentYear;
         this.entranceYear = entranceYear;
         this.courses = courses;
+        this.transcript = transcript;
     }
 
+    public void printTranscriptInfo(){
+        System.out.println("STUDENT TRANSCRIPT");
+        System.out.println("-------------------------------------------------");
+        System.out.println(transcript.getGrades());
+    }
     public String getAddress() {
         return address;
     }
@@ -51,15 +60,28 @@ public class Student extends Person {
         this.entranceYear = entranceYear;
     }
 
-    public List<Course> getCourses() {
+    public boolean getApproved() {
+        return this.isApproved;
+    }
+
+    public void setApproved(boolean isApproved) {
+        this.isApproved = isApproved;
+    }
+
+    public ArrayList<CourseSection> getCourses() {
         return courses;
     }
 
-    public void setCourses(List<Course> courses) {
-        this.courses = courses;
+    public String getFullName() {
+        return this.getPersonName() + " " + this.getPersonSurname();
     }
 
-    public String getFullName(){
-        return this.getPersonName()+ " "+this.getPersonSurname();
+    public Transcript getTranscript() {
+        return transcript;
     }
+
+    public void setTranscript(Transcript transcript) {
+        this.transcript = transcript;
+    }
+
 }

@@ -1,11 +1,10 @@
-package src;
+
 public abstract class Person {
 
     private String personName;
     private String personSurname;
     private String username;
     private String password;
-
 
 
     public Person(String personName, String personSurname, String username, String password) {
