@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
-import src.CourseSection;
 
 public class SystemController {
     private Person loggedInUser;
@@ -10,14 +10,15 @@ public class SystemController {
     private ArrayList<CourseSection> courseSections;
     private ArrayList<Student> students;
     private ArrayList<Advisor> advisors;
-
+    private Json json;
     SystemController() {
-        Json json = new Json();
+        json = new Json();
         courses = json.getCourses();
         lecturers = json.getLecturers();
         courseSections = json.getCourseSections();
         students = json.getStudents();
         advisors = json.getAdvisors();
+
     }
 
     public SystemController(Person loggedInUser) {
@@ -87,20 +88,38 @@ public class SystemController {
         return courseList;
     }
 
-    public void printAvailableCourses(Student student){
-        for(int i = 0;i<courses.size();i++){
+    public void printAvailableCourses(Student student, ArrayList<CourseSection> untakenCourses){
+        
+        int courseOrder = 1;
+        for(int i = 0;i<courseSections.size();i++){
+            CourseSection courseSection = courseSections.get(i);
             ArrayList<Grade> studentCoursesTaken = student.getTranscript().getGradeList();
             int j = 0;
             for(;j<studentCoursesTaken.size();j++){
-                if(studentCoursesTaken.get(j).getCourse().getFullName().equals(courses.get(i).getFullName())){
+                if(studentCoursesTaken.get(j).getCourse().getFullName().equals(courseSection.getFullName())){
                     break;
                 }
             }
             if(j==studentCoursesTaken.size()){
-                System.out.println(courses.get(i).getFullName());
-
+                
+                untakenCourses.add(courseSections.get(i));
+                System.out.println(courseOrder+". "+courseSection.getFullName()+" "+courseSection.getSectionName()+" "+courseSection.getShortName());
+                courseOrder++;
             }
         }
+    }
+
+    // Applying the course operation
+    public void applyCourse(Student student, CourseSection courseSection){
+        System.out.println(courseSection.getFullName());
+        student.getCourses().add(courseSection);
+        json.updateStudents();
+        json.updateParametes();
+
+    }
+
+    public boolean checkPrerequisite(){
+        return true;
     }
 
     // Accepting or rejecting the course application.
