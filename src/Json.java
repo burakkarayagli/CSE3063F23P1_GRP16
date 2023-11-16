@@ -387,8 +387,7 @@ public class Json {
         return returnVal.toString();
     }
 
-    public void updateStudents(ArrayList<Student> studentss) {
-        this.students = studentss;
+    public void updateStudents() {
         ArrayList<File> files = getStudentFiles();
         ArrayList<Student> students = getStudents();
         for (int i = 0; i < files.size(); i++) {
@@ -443,7 +442,7 @@ public class Json {
                             }
                             newCourses += "]";
                         }
-                        System.out.println(newCourses);
+                        // System.out.println(newCourses);
                         String updatedString = updateValue("isApproved",
                                 String.valueOf(isApproved), content);
                         updatedString = updateValue("courses",

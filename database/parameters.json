@@ -158,7 +158,18 @@
     ],
     "lecturers": [
         {
-            "courses": [],
+            "courses": [
+                {
+                    "shortName": "CSE3055",
+                    "fullName": "Database Systems",
+                    "description": ""
+                },
+                {
+                    "shortName": "CSE3063",
+                    "fullName": "Object-Oriented Software Design",
+                    "description": ""
+                }
+            ],
             "reputation": "Doç.Dr.",
             "officeHours": [
                 {
@@ -171,14 +182,14 @@
             "employmentStatus": "true",
             "personName": "MUSTAFA",
             "personSurname": "AĞAOĞLU",
-            "username": "mustafaagaoglu",
+            "username": "mustafa",
             "password": "mustafaagaoglu"
         },
         {
             "courses": [
                 {
-                    "shortName": "ATA121",
-                    "fullName": "Atatürk İlkeleri ve İnkılap Tarihi I",
+                    "shortName": "CSE3063",
+                    "fullName": "Object-Oriented Software Design",
                     "description": ""
                 }
             ],
@@ -194,7 +205,7 @@
             "employmentStatus": "true",
             "personName": "MURAT CAN",
             "personSurname": "GANİZ",
-            "username": "muratcanganiz",
+            "username": "muratcan",
             "password": "muratcanganiz"
         }
     ],
@@ -438,6 +449,214 @@
                     "personSurname": "Ünal",
                     "username": "tamer",
                     "password": "tamerunal"
+                },
+                {
+                    "name": "Hakkı",
+                    "surname": "Kokur",
+                    "username": "hakki",
+                    "password": "hakkikokur",
+                    "address": "Maltepe/Istanbul",
+                    "phoneNumber": "5315274392",
+                    "studentYear": 3,
+                    "entranceYear": 2020,
+                    "transcript": [
+                        {
+                            "shortName": "ATA121",
+                            "fullName": "Atatürk İlkeleri ve İnkılap Tarihi I",
+                            "description": "",
+                            "grade": "BA"
+                        },
+                        {
+                            "shortName": "CSE1200",
+                            "fullName": "Introduction to Computer Engineering",
+                            "description": "",
+                            "grade": "CB"
+                        },
+                        {
+                            "shortName": "CSE1241",
+                            "fullName": "Computer Programming I",
+                            "description": "",
+                            "grade": "BB"
+                        },
+                        {
+                            "shortName": "MATH1001",
+                            "fullName": "Calculus I",
+                            "description": "",
+                            "grade": "DD"
+                        },
+                        {
+                            "shortName": "MBG1201",
+                            "fullName": "Introduction to Modern Biology",
+                            "description": "",
+                            "grade": "CC"
+                        },
+                        {
+                            "shortName": "PHYS1101",
+                            "fullName": "Physics I",
+                            "description": "",
+                            "grade": "CB"
+                        },
+                        {
+                            "shortName": "PHYS1103",
+                            "fullName": "Physics Lab I",
+                            "description": "",
+                            "grade": "BB"
+                        },
+                        {
+                            "shortName": "TRD121",
+                            "fullName": "Türk Dili I",
+                            "description": "",
+                            "grade": "BB"
+                        },
+                        {
+                            "shortName": "ATA122",
+                            "fullName": "Atatürk İlkeleri ve İnkılap Tarihi II",
+                            "description": "",
+                            "grade": "BA"
+                        },
+                        {
+                            "shortName": "CSE1242",
+                            "fullName": "Computer Programming II",
+                            "description": "",
+                            "grade": "CB"
+                        },
+                        {
+                            "shortName": "MATH1002",
+                            "fullName": "Calculus II",
+                            "description": "",
+                            "grade": "DD"
+                        },
+                        {
+                            "shortName": "MATH2256",
+                            "fullName": "Linear Algebra for Computer Engineering",
+                            "description": "",
+                            "grade": "DC"
+                        },
+                        {
+                            "shortName": "PHYS1102",
+                            "fullName": "Physics II",
+                            "description": "",
+                            "grade": "CB"
+                        },
+                        {
+                            "shortName": "PHYS1104",
+                            "fullName": "Physics Lab II",
+                            "description": "",
+                            "grade": "CB"
+                        },
+                        {
+                            "shortName": "TRD122",
+                            "fullName": "Türk Dili II",
+                            "description": "",
+                            "grade": "AA"
+                        }
+                    ],
+                    "isApproved": "false",
+                    "courses": []
+                },
+                {
+                    "name": "Musa",
+                    "surname": "Özkan",
+                    "username": "musa",
+                    "password": "musaozkan",
+                    "address": "Maltepe/Istanbul",
+                    "phoneNumber": "1234567789",
+                    "studentYear": 3,
+                    "entranceYear": 2021,
+                    "transcript": [
+                        {
+                            "shortName": "ATA121",
+                            "fullName": "Atatürk İlkeleri ve İnkılap Tarihi I",
+                            "description": "",
+                            "grade": "AA"
+                        },
+                        {
+                            "shortName": "CSE1200",
+                            "fullName": "Introduction to Computer Engineering",
+                            "description": "",
+                            "grade": "BA"
+                        },
+                        {
+                            "shortName": "CSE1241",
+                            "fullName": "Computer Programming I",
+                            "description": "",
+                            "grade": "AA"
+                        },
+                        {
+                            "shortName": "MATH1001",
+                            "fullName": "Calculus I",
+                            "description": "",
+                            "grade": "CC"
+                        },
+                        {
+                            "shortName": "MBG1201",
+                            "fullName": "Introduction to Modern Biology",
+                            "description": "",
+                            "grade": "BC"
+                        },
+                        {
+                            "shortName": "PHYS1101",
+                            "fullName": "Physics I",
+                            "description": "",
+                            "grade": "DD"
+                        },
+                        {
+                            "shortName": "PHYS1103",
+                            "fullName": "Physics Lab I",
+                            "description": "",
+                            "grade": "BB"
+                        },
+                        {
+                            "shortName": "TRD121",
+                            "fullName": "Türk Dili I",
+                            "description": "",
+                            "grade": "AA"
+                        },
+                        {
+                            "shortName": "ATA122",
+                            "fullName": "Atatürk İlkeleri ve İnkılap Tarihi II",
+                            "description": "",
+                            "grade": "BC"
+                        },
+                        {
+                            "shortName": "CSE1242",
+                            "fullName": "Computer Programming II",
+                            "description": "",
+                            "grade": "DC"
+                        },
+                        {
+                            "shortName": "MATH1002",
+                            "fullName": "Calculus II",
+                            "description": "",
+                            "grade": "BB"
+                        },
+                        {
+                            "shortName": "MATH2256",
+                            "fullName": "Linear Algebra for Computer Engineering",
+                            "description": "",
+                            "grade": "BA"
+                        },
+                        {
+                            "shortName": "PHYS1102",
+                            "fullName": "Physics II",
+                            "description": "",
+                            "grade": "BB"
+                        },
+                        {
+                            "shortName": "PHYS1104",
+                            "fullName": "Physics Lab II",
+                            "description": "",
+                            "grade": "AA"
+                        },
+                        {
+                            "shortName": "TRD122",
+                            "fullName": "Türk Dili II",
+                            "description": "",
+                            "grade": "AA"
+                        }
+                    ],
+                    "isApproved": "false",
+                    "courses": []
                 }
             ],
             "reputation": "Dr.",
@@ -452,11 +671,324 @@
             "employmentStatus": "true",
             "personName": "FATMA CORUT",
             "personSurname": "ERGİN",
-            "username": "fatmacorutergin",
+            "username": "fatmacorut",
             "password": "fatmacorutergin"
         },
         {
-            "students": [],
+            "students": [
+                {
+                    "name": "Efe",
+                    "surname": "Özgen",
+                    "username": "efe",
+                    "password": "efeozgen",
+                    "address": "Kartal/Istanbul",
+                    "phoneNumber": "1234567890",
+                    "studentYear": 3,
+                    "entranceYear": 2021,
+                    "transcript": [
+                        {
+                            "shortName": "ATA121",
+                            "fullName": "Atatürk İlkeleri ve İnkılap Tarihi I",
+                            "description": "",
+                            "grade": "AA"
+                        },
+                        {
+                            "shortName": "CSE1200",
+                            "fullName": "Introduction to Computer Engineering",
+                            "description": "",
+                            "grade": "BB"
+                        },
+                        {
+                            "shortName": "CSE1241",
+                            "fullName": "Computer Programming I",
+                            "description": "",
+                            "grade": "BA"
+                        },
+                        {
+                            "shortName": "MATH1001",
+                            "fullName": "Calculus I",
+                            "description": "",
+                            "grade": "DC"
+                        },
+                        {
+                            "shortName": "MBG1201",
+                            "fullName": "Introduction to Modern Biology",
+                            "description": "",
+                            "grade": "CC"
+                        },
+                        {
+                            "shortName": "PHYS1101",
+                            "fullName": "Physics I",
+                            "description": "",
+                            "grade": "DC"
+                        },
+                        {
+                            "shortName": "PHYS1103",
+                            "fullName": "Physics Lab I",
+                            "description": "",
+                            "grade": "AA"
+                        },
+                        {
+                            "shortName": "TRD121",
+                            "fullName": "Türk Dili I",
+                            "description": "",
+                            "grade": "BA"
+                        },
+                        {
+                            "shortName": "ATA122",
+                            "fullName": "Atatürk İlkeleri ve İnkılap Tarihi II",
+                            "description": "",
+                            "grade": "AA"
+                        },
+                        {
+                            "shortName": "CSE1242",
+                            "fullName": "Computer Programming II",
+                            "description": "",
+                            "grade": "CC"
+                        },
+                        {
+                            "shortName": "MATH1002",
+                            "fullName": "Calculus II",
+                            "description": "",
+                            "grade": "CC"
+                        },
+                        {
+                            "shortName": "MATH2256",
+                            "fullName": "Linear Algebra for Computer Engineering",
+                            "description": "",
+                            "grade": "CC"
+                        },
+                        {
+                            "shortName": "PHYS1102",
+                            "fullName": "Physics II",
+                            "description": "",
+                            "grade": "BC"
+                        },
+                        {
+                            "shortName": "PHYS1104",
+                            "fullName": "Physics Lab II",
+                            "description": "",
+                            "grade": "AA"
+                        },
+                        {
+                            "shortName": "TRD122",
+                            "fullName": "Türk Dili II",
+                            "description": "",
+                            "grade": "AA"
+                        }
+                    ],
+                    "isApproved": "false",
+                    "courses": []
+                },
+                {
+                    "name": "Barış Giray",
+                    "surname": "Akman",
+                    "username": "baris",
+                    "password": "barisgirayakman",
+                    "address": "Kartal/Istanbul",
+                    "phoneNumber": "1234567899",
+                    "studentYear": 3,
+                    "entranceYear": 2021,
+                    "transcript": [
+                        {
+                            "shortName": "ATA121",
+                            "fullName": "Atatürk İlkeleri ve İnkılap Tarihi I",
+                            "description": "",
+                            "grade": "BB"
+                        },
+                        {
+                            "shortName": "CSE1200",
+                            "fullName": "Introduction to Computer Engineering",
+                            "description": "",
+                            "grade": "AA"
+                        },
+                        {
+                            "shortName": "CSE1241",
+                            "fullName": "Computer Programming I",
+                            "description": "",
+                            "grade": "BA"
+                        },
+                        {
+                            "shortName": "MATH1001",
+                            "fullName": "Calculus I",
+                            "description": "",
+                            "grade": "CC"
+                        },
+                        {
+                            "shortName": "MBG1201",
+                            "fullName": "Introduction to Modern Biology",
+                            "description": "",
+                            "grade": "BC"
+                        },
+                        {
+                            "shortName": "PHYS1101",
+                            "fullName": "Physics I",
+                            "description": "",
+                            "grade": "DD"
+                        },
+                        {
+                            "shortName": "PHYS1103",
+                            "fullName": "Physics Lab I",
+                            "description": "",
+                            "grade": "BA"
+                        },
+                        {
+                            "shortName": "TRD121",
+                            "fullName": "Türk Dili I",
+                            "description": "",
+                            "grade": "AA"
+                        },
+                        {
+                            "shortName": "ATA122",
+                            "fullName": "Atatürk İlkeleri ve İnkılap Tarihi II",
+                            "description": "",
+                            "grade": "AA"
+                        },
+                        {
+                            "shortName": "CSE1242",
+                            "fullName": "Computer Programming II",
+                            "description": "",
+                            "grade": "BB"
+                        },
+                        {
+                            "shortName": "MATH1002",
+                            "fullName": "Calculus II",
+                            "description": "",
+                            "grade": "BC"
+                        },
+                        {
+                            "shortName": "MATH2256",
+                            "fullName": "Linear Algebra for Computer Engineering",
+                            "description": "",
+                            "grade": "DC"
+                        },
+                        {
+                            "shortName": "PHYS1102",
+                            "fullName": "Physics II",
+                            "description": "",
+                            "grade": "BB"
+                        },
+                        {
+                            "shortName": "PHYS1104",
+                            "fullName": "Physics Lab II",
+                            "description": "",
+                            "grade": "BA"
+                        },
+                        {
+                            "shortName": "TRD122",
+                            "fullName": "Türk Dili II",
+                            "description": "",
+                            "grade": "AA"
+                        }
+                    ],
+                    "isApproved": "false",
+                    "courses": []
+                },
+                {
+                    "name": "Burak",
+                    "surname": "Karayağlı",
+                    "username": "burak",
+                    "password": "burakkarayagli",
+                    "address": "Cevizli/Istanbul",
+                    "phoneNumber": "1234567889",
+                    "studentYear": 3,
+                    "entranceYear": 2021,
+                    "transcript": [
+                        {
+                            "shortName": "ATA121",
+                            "fullName": "Atatürk İlkeleri ve İnkılap Tarihi I",
+                            "description": "",
+                            "grade": "BA"
+                        },
+                        {
+                            "shortName": "CSE1200",
+                            "fullName": "Introduction to Computer Engineering",
+                            "description": "",
+                            "grade": "BC"
+                        },
+                        {
+                            "shortName": "CSE1241",
+                            "fullName": "Computer Programming I",
+                            "description": "",
+                            "grade": "AA"
+                        },
+                        {
+                            "shortName": "MATH1001",
+                            "fullName": "Calculus I",
+                            "description": "",
+                            "grade": "CC"
+                        },
+                        {
+                            "shortName": "MBG1201",
+                            "fullName": "Introduction to Modern Biology",
+                            "description": "",
+                            "grade": "BC"
+                        },
+                        {
+                            "shortName": "PHYS1101",
+                            "fullName": "Physics I",
+                            "description": "",
+                            "grade": "DC"
+                        },
+                        {
+                            "shortName": "PHYS1103",
+                            "fullName": "Physics Lab I",
+                            "description": "",
+                            "grade": "AA"
+                        },
+                        {
+                            "shortName": "TRD121",
+                            "fullName": "Türk Dili I",
+                            "description": "",
+                            "grade": "AA"
+                        },
+                        {
+                            "shortName": "ATA122",
+                            "fullName": "Atatürk İlkeleri ve İnkılap Tarihi II",
+                            "description": "",
+                            "grade": "BA"
+                        },
+                        {
+                            "shortName": "CSE1242",
+                            "fullName": "Computer Programming II",
+                            "description": "",
+                            "grade": "DC"
+                        },
+                        {
+                            "shortName": "MATH1002",
+                            "fullName": "Calculus II",
+                            "description": "",
+                            "grade": "BC"
+                        },
+                        {
+                            "shortName": "MATH2256",
+                            "fullName": "Linear Algebra for Computer Engineering",
+                            "description": "",
+                            "grade": "CC"
+                        },
+                        {
+                            "shortName": "PHYS1102",
+                            "fullName": "Physics II",
+                            "description": "",
+                            "grade": "BC"
+                        },
+                        {
+                            "shortName": "PHYS1104",
+                            "fullName": "Physics Lab II",
+                            "description": "",
+                            "grade": "AA"
+                        },
+                        {
+                            "shortName": "TRD122",
+                            "fullName": "Türk Dili II",
+                            "description": "",
+                            "grade": "AA"
+                        }
+                    ],
+                    "isApproved": "false",
+                    "courses": []
+                }
+            ],
             "reputation": "Dr.",
             "officeHours": [
                 {
@@ -469,9 +1001,8 @@
             "employmentStatus": "true",
             "personName": "BETÜL",
             "personSurname": "BOZ",
-            "username": "betulboz",
+            "username": "betul",
             "password": "betulboz"
         }
     ]
 }
-
