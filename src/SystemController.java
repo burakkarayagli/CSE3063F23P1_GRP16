@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-import src.CourseSection;
+// import src.CourseSection;
 
 public class SystemController {
     private Person loggedInUser;
@@ -26,6 +26,10 @@ public class SystemController {
 
     public Person getLoggedInUser() {
         return loggedInUser;
+    }
+
+    public ArrayList<Advisor> getAdvisorList() {
+        return advisors;
     }
 
     public boolean Authenticate(String username, String password) {
