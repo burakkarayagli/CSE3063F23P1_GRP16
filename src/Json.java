@@ -9,11 +9,9 @@ import com.google.gson.JsonParser;
 import com.google.gson.JsonPrimitive;
 
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.List;
 import java.io.File;
 import java.io.FileWriter;
 
@@ -27,6 +25,14 @@ public class Json {
 
     Json(String folderPath) {
         this.databaseFolder = folderPath;
+        this.initCourse();
+        this.initLecturers();
+        this.initCourseSection();
+        this.initStudents();
+        this.initAdvisor();
+    }
+
+    Json() {
         this.initCourse();
         this.initLecturers();
         this.initCourseSection();
