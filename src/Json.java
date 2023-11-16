@@ -442,7 +442,7 @@ public class Json {
                             }
                             newCourses += "]";
                         }
-                        System.out.println(newCourses);
+                        // System.out.println(newCourses);
                         String updatedString = updateValue("isApproved",
                                 String.valueOf(isApproved), content);
                         updatedString = updateValue("courses",

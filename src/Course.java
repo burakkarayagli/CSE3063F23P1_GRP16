@@ -43,6 +43,8 @@ public class Course {
     }
 
     public String getCourseInfo() {
-        return "Course{" + "shortName=" + shortName + ", fullName=" + fullName + ", description=" + description + '}';
+        // return "Course{" + "shortName=" + shortName + ", fullName=" + fullName + ", description=" + description + '}';
+        return fullName + " (" + shortName + ") " + description;
+
     }
 }

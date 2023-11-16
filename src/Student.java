@@ -23,11 +23,12 @@ public class Student extends Person {
         this.transcript = transcript;
     }
 
-    public void printTranscriptInfo(){
+    public void printTranscriptInfo() {
         System.out.println("STUDENT TRANSCRIPT");
         System.out.println("-------------------------------------------------");
         System.out.println(transcript.getGrades());
     }
+
     public String getAddress() {
         return address;
     }
