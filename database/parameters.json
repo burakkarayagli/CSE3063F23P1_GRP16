@@ -157,7 +157,7 @@
         }
     ],
     "lecturers": [
-        { 
+        {
             "courses": [
                 {
                     "shortName": "CSE1241",
@@ -190,7 +190,7 @@
             "username": "mustafa",
             "password": "mustafaagaoglu"
         },
-        { 
+        {
             "courses": [
                 {
                     "shortName": "CSE2260",
@@ -223,39 +223,39 @@
             "username": "murat",
             "password": "muratcanganiz"
         },
-        { 
-        "courses": [
-            {
-                "shortName": "MATH2059",
-                "fullName": "Numerical Methods",
-                "description": ""
-            },
-            {
-                "shortName": "CSE2138",
-                "fullName": "Systems Programming",
-                "description": ""
-            },
-            {
-                "shortName": "CSE2246",
-                "fullName": "Analysis of Algorithms",
-                "description": ""
-            }
-        ],
-        "reputation": "Doç.Dr.",
-        "officeHours": [
-            {
-                "startTime": "15:00",
-                "endTime": "16:20",
-                "dayOfWeek": "Tuesday"
-            }
-        ],
-        "salary": 99999,
-        "employmentStatus": "true",
-        "personName": "Ali Fuat",
-        "personSurname": "Alkaya",
-        "username": "ali",
-        "password": "alifuatalkaya"
-    }
+        {
+            "courses": [
+                {
+                    "shortName": "MATH2059",
+                    "fullName": "Numerical Methods",
+                    "description": ""
+                },
+                {
+                    "shortName": "CSE2138",
+                    "fullName": "Systems Programming",
+                    "description": ""
+                },
+                {
+                    "shortName": "CSE2246",
+                    "fullName": "Analysis of Algorithms",
+                    "description": ""
+                }
+            ],
+            "reputation": "Doç.Dr.",
+            "officeHours": [
+                {
+                    "startTime": "15:00",
+                    "endTime": "16:20",
+                    "dayOfWeek": "Tuesday"
+                }
+            ],
+            "salary": 99999,
+            "employmentStatus": "true",
+            "personName": "Ali Fuat",
+            "personSurname": "Alkaya",
+            "username": "ali",
+            "password": "alifuatalkaya"
+        }
     ],
     "sections": [
         {
