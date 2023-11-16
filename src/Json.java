@@ -387,7 +387,8 @@ public class Json {
         return returnVal.toString();
     }
 
-    public void updateStudents() {
+    public void updateStudents(ArrayList<Student> studentss) {
+        this.students = studentss;
         ArrayList<File> files = getStudentFiles();
         ArrayList<Student> students = getStudents();
         for (int i = 0; i < files.size(); i++) {
@@ -401,35 +402,48 @@ public class Json {
                         boolean isApproved = student.getApproved();
                         ArrayList<CourseSection> courses = student.getCourses();
                         String newCourses;
-                        if (courses.size() > 0) {
-                            newCourses = "";
+                        if (courses.size() == 0) {
+                            newCourses = "[]";
                         } else {
                             newCourses = "[";
                             for (int k = 0; k < courses.size(); k++) {
                                 CourseSection course = courses.get(k);
                                 newCourses += "{";
                                 newCourses += String.format("\"shortName\": \"%s\"", course.getShortName());
+                                newCourses += ",";
                                 newCourses += String.format("\"sectionName\": \"%s\"", course.getSectionName());
+                                newCourses += ",";
                                 newCourses += String.format("\"lecturerUsername\": \"%s\"",
                                         course.getLecturer().getUsername());
+                                newCourses += ",";
                                 newCourses += String.format("\"quota\": \"%s\"", course.getQuota());
+                                newCourses += ",";
                                 ArrayList<TimeInterval> dates = course.getDates();
                                 String datesString = "[";
                                 for (int l = 0; l < dates.size(); l++) {
                                     TimeInterval date = dates.get(l);
                                     datesString += "{";
                                     datesString += String.format("\"startTime\": \"%s\"", date.getStartTime());
+                                    datesString += ",";
                                     datesString += String.format("\"endTime\": \"%s\"", date.getEndTime());
+                                    datesString += ",";
                                     datesString += String.format("\"dayOfWeek\": \"%s\"", date.getDayOfWeek());
                                     datesString += "}";
+                                    if (l + 1 < dates.size()) {
+                                        datesString += ",";
+                                    }
                                 }
                                 datesString += "]";
                                 newCourses += String.format("\"dates\": %s", datesString);
                                 newCourses += "}";
+                                if (k + 1 < courses.size()) {
+                                    newCourses += ",";
+                                }
 
                             }
                             newCourses += "]";
                         }
+                        System.out.println(newCourses);
                         String updatedString = updateValue("isApproved",
                                 String.valueOf(isApproved), content);
                         updatedString = updateValue("courses",
