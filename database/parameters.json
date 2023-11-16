@@ -129,6 +129,31 @@
             "shortName": "STAT2253",
             "fullName": "Probability and Statistics for Computer Engineering",
             "description": ""
+        },
+        {
+            "shortName": "CSE3033",
+            "fullName": "Operating Systems",
+            "description": ""
+        },
+        {
+            "shortName": "CSE3055",
+            "fullName": "Database Systems",
+            "description": ""
+        },
+        {
+            "shortName": "CSE3063",
+            "fullName": "Object-Oriented Software Design",
+            "description": ""
+        },
+        {
+            "shortName": "CSE3215",
+            "fullName": "Digital Logic Design",
+            "description": ""
+        },
+        {
+            "shortName": "IE3081",
+            "fullName": "Modeling and Discrete Simulation",
+            "description": ""
         }
     ],
     "lecturers": [
@@ -189,10 +214,30 @@
             ],
             "sectionName": "1.1",
             "quota": 100,
-            "shortName": "PHYS1103",
-            "fullName": "Physics Lab I",
+            "shortName": "CSE3033",
+            "fullName": "Operating Systems",
             "description": "",
             "lecturerUsername": "mustafaagaoglu"
+        },
+        {
+            "dates": [
+                {
+                    "startTime": "8:30",
+                    "endTime": "9:20",
+                    "dayOfWeek": "Monday, Friday"
+                },
+                {
+                    "startTime": "11:30",
+                    "endTime": "12:20",
+                    "dayOfWeek": "T"
+                }
+            ],
+            "sectionName": "1.1",
+            "quota": 100,
+            "shortName": "CSE3055",
+            "fullName": "Database Systems",
+            "description": "",
+            "lecturerUsername": "muratcanganiz"
         },
         {
             "dates": [
@@ -209,8 +254,48 @@
             ],
             "sectionName": "1.1",
             "quota": 100,
-            "shortName": "CSE1241",
-            "fullName": "Computer Programming I",
+            "shortName": "CSE3063",
+            "fullName": "Object-Oriented Software Design",
+            "description": "",
+            "lecturerUsername": "muratcanganiz"
+        },
+        {
+            "dates": [
+                {
+                    "startTime": "8:30",
+                    "endTime": "9:20",
+                    "dayOfWeek": "Monday, Friday"
+                },
+                {
+                    "startTime": "11:30",
+                    "endTime": "12:20",
+                    "dayOfWeek": "Tuesday"
+                }
+            ],
+            "sectionName": "1.1",
+            "quota": 100,
+            "shortName": "CSE3215",
+            "fullName": "Digital Logic Design",
+            "description": "",
+            "lecturerUsername": "muratcanganiz"
+        },
+        {
+            "dates": [
+                {
+                    "startTime": "8:30",
+                    "endTime": "9:20",
+                    "dayOfWeek": "Monday, Friday"
+                },
+                {
+                    "startTime": "11:30",
+                    "endTime": "12:20",
+                    "dayOfWeek": "Tuesday"
+                }
+            ],
+            "sectionName": "1.1",
+            "quota": 100,
+            "shortName": "IE3081",
+            "fullName": "Modeling and Discrete Simulation",
             "description": "",
             "lecturerUsername": "muratcanganiz"
         }

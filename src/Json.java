@@ -402,7 +402,7 @@ public class Json {
                         ArrayList<CourseSection> courses = student.getCourses();
                         String newCourses;
                         if (courses.size() > 0) {
-                            newCourses = "";
+                            newCourses = "[]";
                         } else {
                             newCourses = "[";
                             for (int k = 0; k < courses.size(); k++) {
