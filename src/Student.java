@@ -1,5 +1,6 @@
 
 import java.util.List;
+import java.util.ArrayList;
 
 public class Student extends Person {
     private String address;
@@ -7,13 +8,13 @@ public class Student extends Person {
     private int studentYear;
     private int entranceYear;
     private boolean isApproved;
-    private List<CourseSection> courses;
+    private ArrayList<CourseSection> courses;
     private Transcript transcript;
 
-
     public Student(String personName, String personSurname, String username, String password,
-                   String address, String phoneNumber, int studentYear, int entranceYear, boolean isApproved, List<CourseSection> courses,
-                   Transcript transcript) {
+            String address, String phoneNumber, int studentYear, int entranceYear, boolean isApproved,
+            ArrayList<CourseSection> courses,
+            Transcript transcript) {
         super(personName, personSurname, username, password);
         this.address = address;
         this.phoneNumber = phoneNumber;
@@ -22,7 +23,6 @@ public class Student extends Person {
         this.courses = courses;
         this.transcript = transcript;
     }
-
 
     public String getAddress() {
         return address;
@@ -55,27 +55,29 @@ public class Student extends Person {
     public void setEntranceYear(int entranceYear) {
         this.entranceYear = entranceYear;
     }
-    public boolean getApproved(){
+
+    public boolean getApproved() {
         return this.isApproved;
     }
 
-    public void setApproved(boolean isApproved){
+    public void setApproved(boolean isApproved) {
         this.isApproved = isApproved;
     }
-    public List<CourseSection> getCourses() {
+
+    public ArrayList<CourseSection> getCourses() {
         return courses;
     }
 
-    public String getFullName(){
-        return this.getPersonName()+ " "+this.getPersonSurname();
+    public String getFullName() {
+        return this.getPersonName() + " " + this.getPersonSurname();
     }
 
-
-    public Transcript getTranscript(){
+    public Transcript getTranscript() {
         return transcript;
     }
-    public void setTranscript(Transcript transcript){
+
+    public void setTranscript(Transcript transcript) {
         this.transcript = transcript;
     }
-    
+
 }

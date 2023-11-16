@@ -1,5 +1,6 @@
 
-// import com.google.gson.Gson;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 // import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -8,10 +9,13 @@ import com.google.gson.JsonParser;
 import com.google.gson.JsonPrimitive;
 
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.List;
 import java.io.File;
+import java.io.FileWriter;
 
 public class Json {
     private String databaseFolder = "database";
@@ -135,8 +139,8 @@ public class Json {
             for (int i = 0; i < jlecturers.size(); i++) {
                 // getting the attributes
                 JsonObject jsonObject = jlecturers.get(i).getAsJsonObject();
-                String name = jsonObject.get("name").getAsString();
-                String surname = jsonObject.get("surname").getAsString();
+                String name = jsonObject.get("personName").getAsString();
+                String surname = jsonObject.get("personSurname").getAsString();
                 String username = jsonObject.get("username").getAsString();
                 String password = jsonObject.get("password").getAsString();
                 String reputation = jsonObject.get("reputation").getAsString();
@@ -152,7 +156,7 @@ public class Json {
                 }
                 // salary, employee status
                 int salary = jsonObject.get("salary").getAsInt();
-                String employementStatus = jsonObject.get("employeStatus").getAsString();
+                String employementStatus = jsonObject.get("employmentStatus").getAsString();
 
                 // get the courses (empty)
                 ArrayList<Course> lecturerCourses = new ArrayList<Course>();
@@ -291,8 +295,8 @@ public class Json {
             for (int i = 0; i < jAdvisors.size(); i++) {
                 // getting the attributes
                 JsonObject jsonObject = jAdvisors.get(i).getAsJsonObject();
-                String name = jsonObject.get("name").getAsString();
-                String surname = jsonObject.get("surname").getAsString();
+                String name = jsonObject.get("personName").getAsString();
+                String surname = jsonObject.get("personSurname").getAsString();
                 String username = jsonObject.get("username").getAsString();
                 String password = jsonObject.get("password").getAsString();
                 String reputation = jsonObject.get("reputation").getAsString();
@@ -308,13 +312,13 @@ public class Json {
                 }
                 // salary, employee status
                 int salary = jsonObject.get("salary").getAsInt();
-                String employementStatus = jsonObject.get("employeStatus").getAsString();
+                String employementStatus = jsonObject.get("employmentStatus").getAsString();
 
                 // get the students
                 ArrayList<Student> students = new ArrayList<Student>();
                 JsonArray jStudents = jsonObject.get("students").getAsJsonArray();
                 for (int j = 0; j < jStudents.size(); j++) {
-                    String studentUsername = jStudents.get(j).getAsString();
+                    String studentUsername = jStudents.get(j).getAsJsonObject().get("username").getAsString();
                     Student student = getStudent(studentUsername);
                     students.add(student);
                 }
@@ -356,7 +360,6 @@ public class Json {
         JsonPrimitive jp = new JsonPrimitive(updateText);
         String finalKey = keys[keys.length - 1];
         for (String key : keys) {
-
             if (jsonObject.get(key) != null && jsonObject.get(key).isJsonObject()) {
                 jsonObject = (JsonObject) jsonObject.get(key);
                 jsonObject.remove(finalKey);
@@ -366,24 +369,72 @@ public class Json {
                 return returnVal.toString();
             }
         }
-        return "";
+        jsonObject.remove(finalKey);
+        if (jp.toString().startsWith("\"[")) {
+            JsonElement je = jsonParser.parse(updateText).getAsJsonArray();
+            jsonObject.add(finalKey, je);
+
+        } else {
+            jsonObject.add(finalKey, jp);
+
+        }
+        return returnVal.toString();
     }
 
-    private void updateStudents() {
-        // filesı çekip jsonları oku / jsonların içinden username e eşit olanları
-        // updatele / courses ve isApproved
+    public void updateStudents() {
         ArrayList<File> files = getStudentFiles();
         ArrayList<Student> students = getStudents();
         for (int i = 0; i < files.size(); i++) {
             try (Scanner scanner = new Scanner(files.get(i), StandardCharsets.UTF_8.name())) {
                 String content = scanner.useDelimiter("\\A").next();
                 scanner.close();
-                // JsonElement jsonParser = new JsonParser().parse(content);
+                JsonObject jObject = new JsonParser().parse(content).getAsJsonObject();
                 for (int j = 0; j < students.size(); j++) {
-                    Student student = students.get(i);
-                    // get the student variable
-                    // update the text via updateValue
-                    // write the updated text to opened file(File.getName() => return name)
+                    Student student = students.get(j);
+                    if (student.getUsername().equals(jObject.get("username").getAsString())) {
+                        boolean isApproved = student.getApproved();
+                        ArrayList<CourseSection> courses = student.getCourses();
+                        String newCourses;
+                        if (courses.size() > 0) {
+                            newCourses = "";
+                        } else {
+                            newCourses = "[";
+                            for (int k = 0; k < courses.size(); k++) {
+                                CourseSection course = courses.get(k);
+                                newCourses += "{";
+                                newCourses += String.format("\"shortName\": \"%s\"", course.getShortName());
+                                newCourses += String.format("\"sectionName\": \"%s\"", course.getSectionName());
+                                newCourses += String.format("\"lecturerUsername\": \"%s\"",
+                                        course.getLecturer().getUsername());
+                                newCourses += String.format("\"quota\": \"%s\"", course.getQuota());
+                                ArrayList<TimeInterval> dates = course.getDates();
+                                String datesString = "[";
+                                for (int l = 0; l < dates.size(); l++) {
+                                    TimeInterval date = dates.get(l);
+                                    datesString += "{";
+                                    datesString += String.format("\"startTime\": \"%s\"", date.getStartTime());
+                                    datesString += String.format("\"endTime\": \"%s\"", date.getEndTime());
+                                    datesString += String.format("\"dayOfWeek\": \"%s\"", date.getDayOfWeek());
+                                    datesString += "}";
+                                }
+                                datesString += "]";
+                                newCourses += String.format("\"dates\": %s", datesString);
+                                newCourses += "}";
+
+                            }
+                            newCourses += "]";
+                        }
+                        String updatedString = updateValue("isApproved",
+                                String.valueOf(isApproved), content);
+                        updatedString = updateValue("courses",
+                                newCourses, updatedString);
+                        // System.out.println(updatedString);
+                        FileWriter writer = new FileWriter(files.get(i));
+                        writer.write(updatedString); // just an example how you can write a String to it
+                        writer.flush();
+                        writer.close();
+
+                    }
                 }
             } catch (IOException e) {
                 e.printStackTrace();
@@ -391,35 +442,105 @@ public class Json {
         }
     }
 
-    // public static void main(String[] args) {
-    // // try (Scanner scanner = new Scanner(Paths.get("database/150120033.json"),
-    // // StandardCharsets.UTF_8.name());) {
-    // // // String content = new
-    // // // String(Files.readAllBytes(Paths.get("database/150120033.json")));
-    // // String content = scanner.useDelimiter("\\A").next();
-    // // scanner.close();
-    // // JsonParser parser = new JsonParser();
-    // // JsonElement neoJsonElement = parser.parse(content);
-    // //
-    // //
-    // System.out.println(neoJsonElement.getAsJsonObject().get("surname").getAsString());
-    // // } catch (IOException e) {
-    // // e.printStackTrace();
-    // // }
+    public void updateParametes() {
+        File file = getParametersFile();
+        try (Scanner scanner = new Scanner(file, StandardCharsets.UTF_8.name())) {
+            String content = scanner.useDelimiter("\\A").next();
+            scanner.close();
+            ArrayList<Course> courses = getCourses();
+            ArrayList<Lecturer> lecturers = getLecturers();
+            ArrayList<CourseSection> courseSections = getCourseSections();
+            ArrayList<Advisor> advisors = getAdvisors();
+            String sCourses = "[";
+            for (int i = 0; i < courses.size(); i++) {
+                Course course = courses.get(i);
+                Gson gson = new Gson();
+                String jgson = gson.toJson(course);
+                sCourses += jgson;
+                if (i + 1 < courses.size())
+                    sCourses += ",";
 
-    // Json json = new Json("database");
-    // // json.initCourse();
-    // // json.initLecturers();
-    // // json.initCourseSection();
-    // // json.initStudents();
-    // // json.initAdvisor();
+            }
+            sCourses += "]";
+            String sLecturers = "[";
+            for (int i = 0; i < lecturers.size(); i++) {
+                Lecturer lecturer = lecturers.get(i);
+                Gson gson = new Gson();
+                String jgson = gson.toJson(lecturer);
+                sLecturers += jgson;
+                if (i + 1 < lecturers.size())
+                    sLecturers += ",";
+            }
+            sLecturers += "]";
+            String sCourseSections = "[";
+            for (int i = 0; i < courseSections.size(); i++) {
+                CourseSection courseSection = courseSections.get(i);
+                Gson gson = new Gson();
+                String jgson = gson.toJson(courseSection);
+                JsonParser parser = new JsonParser();
+                JsonObject jCourseSection = parser.parse(jgson).getAsJsonObject();
+                jCourseSection.remove("lecturer");
+                jCourseSection.add("lecturerUsername", new JsonPrimitive(courseSection.getLecturer().getUsername()));
+                sCourseSections += jCourseSection.toString();
+                if (i + 1 < courseSections.size())
+                    sCourseSections += ",";
+            }
+            sCourseSections += "]";
+            String sAdvisors = "[";
+            for (int i = 0; i < advisors.size(); i++) {
+                Advisor advisor = advisors.get(i);
+                Gson gson = new Gson();
+                String jgson = gson.toJson(advisor);
+                sAdvisors += jgson;
+                if (i + 1 < advisors.size())
+                    sAdvisors += ",";
+            }
+            sAdvisors += "]";
+            // update the params files
+            String updatedString = updateValue("courses",
+                    sCourses, content);
+            updatedString = updateValue("lecturers", sLecturers, updatedString);
+            updatedString = updateValue("sections", sCourseSections, updatedString);
+            updatedString = updateValue("advisors", sAdvisors, updatedString);
 
-    // for (int i = 0; i < json.getCourseSections().size(); i++) {
-    // System.out.println(json.getCourseSections().get(i).getCourseInfo());
-    // System.out.println(json.getCourseSections().get(i).getLecturer().getUsername());
-    // }
+            FileWriter writer = new FileWriter(file);
+            writer.write(updatedString); // just an example how you can write a String to it
+            writer.flush();
+            writer.close();
 
-    // }
+        } catch (
+
+        IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void main(String[] args) {
+        // try (Scanner scanner = new Scanner(Paths.get("database/150120033.json"),
+        // StandardCharsets.UTF_8.name());) {
+        // // String content = new
+        // // String(Files.readAllBytes(Paths.get("database/150120033.json")));
+        // String content = scanner.useDelimiter("\\A").next();
+        // scanner.close();
+        // JsonParser parser = new JsonParser();
+        // JsonElement neoJsonElement = parser.parse(content);
+        //
+        //
+        // System.out.println(neoJsonElement.getAsJsonObject().get("surname").getAsString());
+        // } catch (IOException e) {
+        // e.printStackTrace();
+        // }
+
+        // Json json = new Json("database");
+        // json.updateStudents();
+        // json.updateParametes();
+
+        // for (int i = 0; i < json.getCourseSections().size(); i++) {
+        // System.out.println(json.getCourseSections().get(i).getCourseInfo());
+        // System.out.println(json.getCourseSections().get(i).getLecturer().getUsername());
+        // }
+
+    }
 
 }
 
