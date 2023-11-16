@@ -55,23 +55,38 @@ public class CLI {
                 for (int i = 0; i < advisors.size(); i++) {
                     if (advisor == advisors.get(i)) {
 
-                        
-                        // System.out.println("congratulations");
-                        // System.out.println(advisor.getStudents().get(0).getFullName());
                         for (int j = 0; j < advisor.getStudents().size(); j++) {
                             System.out.println((j + 1) + "- " + advisor.getStudents().get(0).getFullName());
-
-                            // System.out.println("List of courses for student " + advisor.getStudents().get(j).getFullName());
-                            // System.out.println(j); 
-                            // systemController.printAvailableCourses( advisor.getStudents().get(j));
                         }
                         int studentSelection = scanner.nextInt();
                         System.out.println("List of courses for student " + advisor.getStudents().get(studentSelection - 1).getFullName());
                         systemController.printAvailableCourses( advisor.getStudents().get(studentSelection - 1));
+
+                        System.out.println("1-Approve selections\n2-Reject selections");
+                        int decision = scanner.nextInt();
+
+                        if(decision == 1) {
+                            // System.out.println(advisor.getStudents().get(studentSelection - 1).getApproved());
+                            advisor.getStudents().get(studentSelection - 1).setApproved(true);
+                            // System.out.println(advisor.getStudents().get(studentSelection - 1).getApproved());
+                        }
+
                     }
+                    break;
                 }
             } else if (selection == 2) {
+                System.out.println("Which student do you want to go on?");
+                for(int i = 0; i < advisors.size(); i++) {
+                    if(advisor == advisors.get(i)) {
 
+                        for (int j = 0; j < advisor.getStudents().size(); j++) {
+                            System.out.println((j + 1) + "- " + advisor.getStudents().get(0).getFullName());
+                        }
+                        int studentSelection = scanner.nextInt();
+
+                        advisor.getStudents().get(studentSelection - 1).printTranscriptInfo();
+                    }
+                }
             }
         } else if (systemController.getLoggedInUser() instanceof Lecturer) {
             Lecturer lecturer = (Lecturer) systemController.getLoggedInUser();
