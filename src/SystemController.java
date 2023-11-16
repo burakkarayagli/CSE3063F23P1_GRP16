@@ -100,6 +100,57 @@ public class SystemController {
         return courseList;
     }
 
+    public void printAvailableCourses(Student student) {
+        for (int i = 0; i < courses.size(); i++) {
+            ArrayList<Grade> studentCoursesTaken = student.getTranscript().getGradeList();
+            int j = 0;
+            for (; j < studentCoursesTaken.size(); j++) {
+                if (studentCoursesTaken.get(j).getCourse().getFullName().equals(courses.get(i).getFullName())) {
+                    break;
+                }
+            }
+            if (j == studentCoursesTaken.size()) {
+                System.out.println(courses.get(i).getFullName());
+
+            }
+        }
+    }
+
+    public void printLecturerCourses(Lecturer lecturer) {
+        for (int i = 0; i < courses.size(); i++) {
+            List<Course> lecturerCourses = lecturer.getCourses();
+            int j = 0;
+            for (; j < lecturerCourses.size(); j++) {
+                if (lecturerCourses.get(j).getShortName().equals(courses.get(i).getShortName())) {
+                    System.out.println(lecturerCourses.get(j).getFullName());
+                }
+            }
+        }
+    }
+
+    public void printLecturerStudents(Lecturer lecturer) {
+        for (int i = 0; i < students.size(); i++) {
+            List<Course> lecturerCourses = lecturer.getCourses();
+            for (int j = 0; j < students.get(i).getCourses().size(); j++) {
+                for (int k = 0; k < lecturerCourses.size(); k++) {
+                    System.out.println("Lecturer Course: " + lecturerCourses.get(k).getFullName());
+                    System.out.println("Student Course: " + students.get(i).getCourses().get(j).getFullName());
+                    if (lecturerCourses.get(k)
+                            .equals(students.get(i).getCourses().get(j))) {
+                        System.out.println(students.get(i).getCourses().get(k).getFullName());
+                    }
+                }
+            }
+        }
+    }
+
+    public void printLecturerStudentsGrades(Lecturer lecturer) {
+        for (int i = 0; i < courseSections.size(); i++) {
+
+        }
+    }
+
+
     public void printAvailableCourses(Student student, ArrayList<CourseSection> untakenCourses){
         
         int courseOrder = 1;

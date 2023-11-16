@@ -38,6 +38,7 @@ public class CLI {
             if (selection == 1) {
                 System.out.println("AVAILABLE COURSES THAT STUDENT CAN TAKE");
 
+
                 ArrayList<CourseSection> untakenCourses = new ArrayList<CourseSection>();
                 systemController.printAvailableCourses(student, untakenCourses);
                 Scanner input = new Scanner(System.in);
@@ -109,7 +110,21 @@ public class CLI {
             if (selection == 1) {
                 System.out.println(lecturer.getCourses().get(0).getCourseInfo());
 
+
             }
+        } else if (systemController.getLoggedInUser() instanceof Advisor) {
+            Advisor advisor = (Advisor) systemController.getLoggedInUser();
+            if (selection == 1) {
+                System.out.println("AVAILABLE COURSES THAT ADVISOR CAN TAKE");
+                systemController.printAdvisorCourses(advisor);
+            } else if (selection == 2) {
+
+            } else if (selection == 3) {
+                advisor.printTranscriptInfo();
+            } else if (selection == 4) {
+                // logout
+            }
+
         }
 
     }
