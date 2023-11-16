@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class CLI {
@@ -37,7 +38,18 @@ public class CLI {
             Student student = (Student)systemController.getLoggedInUser();
             if(selection==1){
                 System.out.println("AVAILABLE COURSES THAT STUDENT CAN TAKE");
-                systemController.printAvailableCourses(student);
+                ArrayList<CourseSection> untakenCourses = new ArrayList<CourseSection>();
+                systemController.printAvailableCourses(student, untakenCourses);
+                Scanner input = new Scanner(System.in);
+                System.out.println("You are able to choose one of the courses above.");
+                System.out.print("Please enter the number of the course you want to choose(Enter -1 if you want to not choose any course): ");
+                int i = input.nextInt();
+                if(i==-1)
+                    return;
+                if(systemController.checkPrerequisite()){
+                    systemController.applyCourse(student, untakenCourses.get(i-1));
+                }
+                
             }   
             else if(selection==2){
 
@@ -46,6 +58,8 @@ public class CLI {
                 student.printTranscriptInfo();
             }
             else if(selection==4){
+                System.out.println("Logout successful.");
+                return;
             }
         }
 
