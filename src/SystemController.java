@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
-import CourseSection;
 
 public class SystemController {
     private Person loggedInUser;
@@ -10,14 +10,15 @@ public class SystemController {
     private ArrayList<CourseSection> courseSections;
     private ArrayList<Student> students;
     private ArrayList<Advisor> advisors;
-
+    private Json json;
     SystemController() {
-        Json json = new Json();
+        json = new Json();
         courses = json.getCourses();
         lecturers = json.getLecturers();
         courseSections = json.getCourseSections();
         students = json.getStudents();
         advisors = json.getAdvisors();
+
     }
 
     public SystemController(Person loggedInUser) {
@@ -26,6 +27,18 @@ public class SystemController {
 
     public Person getLoggedInUser() {
         return loggedInUser;
+    }
+
+    public ArrayList<CourseSection> getCourseSectionList() {
+        return courseSections;
+    }
+
+    public ArrayList<Advisor> getAdvisorList() {
+        return advisors;
+    }
+
+    public ArrayList<Lecturer> getLecturerList() {
+        return lecturers;
     }
 
     public boolean Authenticate(String username, String password) {
@@ -57,8 +70,6 @@ public class SystemController {
         String_Constants StringConstants = new String_Constants();
         if (loggedInUser instanceof Student) {
             return StringConstants.STUDENT_MENU_OPTIONS;
-        } else if (loggedInUser instanceof Advisor) {
-            return StringConstants.ADVISOR_MENU_OPTIONS;
         } else if (loggedInUser instanceof Advisor) {
             return StringConstants.ADVISOR_MENU_OPTIONS;
         } else if (loggedInUser instanceof Lecturer) {
@@ -139,11 +150,41 @@ public class SystemController {
         }
     }
 
-    public void printAdvisorCourses(Advisor advisor) {
-        for (int i = 0; i < courseSections.size(); i++) {
 
+    public void printAvailableCourses(Student student, ArrayList<CourseSection> untakenCourses){
+        
+        int courseOrder = 1;
+        for(int i = 0;i<courseSections.size();i++){
+            CourseSection courseSection = courseSections.get(i);
+            ArrayList<Grade> studentCoursesTaken = student.getTranscript().getGradeList();
+            int j = 0;
+            for(;j<studentCoursesTaken.size();j++){
+                if(studentCoursesTaken.get(j).getCourse().getFullName().equals(courseSection.getFullName())){
+                    break;
+                }
+            }
+            if(j==studentCoursesTaken.size()){
+                
+                untakenCourses.add(courseSections.get(i));
+                System.out.println(courseOrder+". "+courseSection.getFullName()+" "+courseSection.getSectionName()+" "+courseSection.getShortName());
+                courseOrder++;
+            }
         }
     }
+
+    // Applying the course operation
+    public void applyCourse(Student student, CourseSection courseSection){
+        System.out.println(courseSection.getFullName());
+        student.getCourses().add(courseSection);
+        json.updateStudents();
+        json.updateParametes();
+
+    }
+
+    public boolean checkPrerequisite(){
+        return true;
+    }
+
     // Accepting or rejecting the course application.
 
     // Displaying the information of the advisor. It may be more specific depending
