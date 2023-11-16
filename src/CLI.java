@@ -50,10 +50,10 @@ public class CLI {
                 System.out.println("YOUR COURSES");
                 systemController.printLecturerCourses(lecturer);
             } else if (selection == 2) {
-                System.out.println("YOUR STUDENTS");
+                System.out.println("STUDENTS IN YOUR COURSES");
                 systemController.printLecturerStudents(lecturer);
             } else if (selection == 3) {
-                System.out.println("YOUR STUDENTS GRADES");
+                System.out.println("GRADES OF STUDENTS IN YOUR COURSES");
                 systemController.printLecturerStudentsGrades(lecturer);
             } else if (selection == 4) {
                 // logout

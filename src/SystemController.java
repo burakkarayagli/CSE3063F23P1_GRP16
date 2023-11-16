@@ -111,15 +111,25 @@ public class SystemController {
             int j = 0;
             for (; j < lecturerCourses.size(); j++) {
                 if (lecturerCourses.get(j).getShortName().equals(courses.get(i).getShortName())) {
-                    System.out.println(lecturerCourses.get(j).getShortName());
+                    System.out.println(lecturerCourses.get(j).getFullName());
                 }
             }
         }
     }
 
     public void printLecturerStudents(Lecturer lecturer) {
-        for (int i = 0; i < courseSections.size(); i++) {
-
+        for (int i = 0; i < students.size(); i++) {
+            List<Course> lecturerCourses = lecturer.getCourses();
+            for (int j = 0; j < students.get(i).getCourses().size(); j++) {
+                for (int k = 0; k < lecturerCourses.size(); k++) {
+                    System.out.println("Lecturer Course: " + lecturerCourses.get(k).getFullName());
+                    System.out.println("Student Course: " + students.get(i).getCourses().get(j).getFullName());
+                    if (lecturerCourses.get(k)
+                            .equals(students.get(i).getCourses().get(j))) {
+                        System.out.println(students.get(i).getCourses().get(k).getFullName());
+                    }
+                }
+            }
         }
     }
 
