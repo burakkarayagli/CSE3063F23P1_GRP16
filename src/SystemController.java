@@ -102,7 +102,7 @@ public class SystemController {
             }
             if(j==studentCoursesTaken.size()){
                 
-                untakenCourses.add(courseSections.get(i));
+                untakenCourses.add(courseSection);
                 System.out.println(courseOrder+". "+courseSection.getFullName()+" "+courseSection.getSectionName()+" "+courseSection.getShortName());
                 courseOrder++;
             }
