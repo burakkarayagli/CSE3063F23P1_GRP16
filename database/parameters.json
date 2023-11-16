@@ -132,8 +132,24 @@
         }
     ],
     "lecturers": [
-        {
-            "courses": [],
+        { 
+            "courses": [
+                {
+                    "shortName": "CSE1241",
+                    "fullName": "Computer Programming I",
+                    "description": ""
+                },
+                {
+                    "shortName": "CSE1242",
+                    "fullName": "Computer Programming II",
+                    "description": ""
+                },
+                {
+                    "shortName": "CSE2023",
+                    "fullName": "Discrete Computational Structures",
+                    "description": ""
+                }
+            ],
             "reputation": "Doç.Dr.",
             "officeHours": [
                 {
@@ -149,11 +165,21 @@
             "username": "mustafaagaoglu",
             "password": "mustafaagaoglu"
         },
-        {
+        { 
             "courses": [
                 {
-                    "shortName": "ATA121",
-                    "fullName": "Atatürk İlkeleri ve İnkılap Tarihi I",
+                    "shortName": "CSE2260",
+                    "fullName": "Principles of Programming Languages",
+                    "description": ""
+                },
+                {
+                    "shortName": "EE2032",
+                    "fullName": "Electronics",
+                    "description": ""
+                },
+                {
+                    "shortName": "STAT2253",
+                    "fullName": "Probability and Statistics for Computer Engineering",
                     "description": ""
                 }
             ],
@@ -171,7 +197,40 @@
             "personSurname": "GANİZ",
             "username": "muratcanganiz",
             "password": "muratcanganiz"
-        }
+        },
+        { 
+        "courses": [
+            {
+                "shortName": "MATH2059",
+                "fullName": "Numerical Methods",
+                "description": ""
+            },
+            {
+                "shortName": "CSE2138",
+                "fullName": "Systems Programming",
+                "description": ""
+            },
+            {
+                "shortName": "CSE2246",
+                "fullName": "Analysis of Algorithms",
+                "description": ""
+            }
+        ],
+        "reputation": "Doç.Dr.",
+        "officeHours": [
+            {
+                "startTime": "15:00",
+                "endTime": "16:20",
+                "dayOfWeek": "Tuesday"
+            }
+        ],
+        "salary": 99999,
+        "employmentStatus": "true",
+        "personName": "MURAT CAN",
+        "personSurname": "GANİZ",
+        "username": "muratcanganiz",
+        "password": "muratcanganiz"
+    }
     ],
     "sections": [
         {

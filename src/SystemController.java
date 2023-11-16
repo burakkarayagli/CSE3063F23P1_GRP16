@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-import src.CourseSection;
+import CourseSection;
 
 public class SystemController {
     private Person loggedInUser;
@@ -61,6 +61,8 @@ public class SystemController {
             return StringConstants.ADVISOR_MENU_OPTIONS;
         } else if (loggedInUser instanceof Advisor) {
             return StringConstants.ADVISOR_MENU_OPTIONS;
+        } else if (loggedInUser instanceof Lecturer) {
+            return StringConstants.LECTURER_MENU_OPTIONS;
         } else {
             return "Error: Invalid user type.";
         }
@@ -87,22 +89,51 @@ public class SystemController {
         return courseList;
     }
 
-    public void printAvailableCourses(Student student){
-        for(int i = 0;i<courses.size();i++){
+    public void printAvailableCourses(Student student) {
+        for (int i = 0; i < courses.size(); i++) {
             ArrayList<Grade> studentCoursesTaken = student.getTranscript().getGradeList();
             int j = 0;
-            for(;j<studentCoursesTaken.size();j++){
-                if(studentCoursesTaken.get(j).getCourse().getFullName().equals(courses.get(i).getFullName())){
+            for (; j < studentCoursesTaken.size(); j++) {
+                if (studentCoursesTaken.get(j).getCourse().getFullName().equals(courses.get(i).getFullName())) {
                     break;
                 }
             }
-            if(j==studentCoursesTaken.size()){
+            if (j == studentCoursesTaken.size()) {
                 System.out.println(courses.get(i).getFullName());
 
             }
         }
     }
 
+    public void printLecturerCourses(Lecturer lecturer) {
+        for (int i = 0; i < courses.size(); i++) {
+            List<Course> lecturerCourses = lecturer.getCourses();
+            int j = 0;
+            for (; j < lecturerCourses.size(); j++) {
+                if (lecturerCourses.get(j).getShortName().equals(courses.get(i).getShortName())) {
+                    System.out.println(lecturerCourses.get(j).getShortName());
+                }
+            }
+        }
+    }
+
+    public void printLecturerStudents(Lecturer lecturer) {
+        for (int i = 0; i < courseSections.size(); i++) {
+
+        }
+    }
+
+    public void printLecturerStudentsGrades(Lecturer lecturer) {
+        for (int i = 0; i < courseSections.size(); i++) {
+
+        }
+    }
+
+    public void printAdvisorCourses(Advisor advisor) {
+        for (int i = 0; i < courseSections.size(); i++) {
+
+        }
+    }
     // Accepting or rejecting the course application.
 
     // Displaying the information of the advisor. It may be more specific depending
