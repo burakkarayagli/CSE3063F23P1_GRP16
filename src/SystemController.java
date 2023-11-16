@@ -28,8 +28,16 @@ public class SystemController {
         return loggedInUser;
     }
 
+    public ArrayList<CourseSection> getCourseSectionList() {
+        return courseSections;
+    }
+
     public ArrayList<Advisor> getAdvisorList() {
         return advisors;
+    }
+
+    public ArrayList<Lecturer> getLecturerList() {
+        return lecturers;
     }
 
     public boolean Authenticate(String username, String password) {
@@ -63,8 +71,8 @@ public class SystemController {
             return StringConstants.STUDENT_MENU_OPTIONS;
         } else if (loggedInUser instanceof Advisor) {
             return StringConstants.ADVISOR_MENU_OPTIONS;
-        } else if (loggedInUser instanceof Advisor) {
-            return StringConstants.ADVISOR_MENU_OPTIONS;
+        } else if (loggedInUser instanceof Lecturer) {
+            return StringConstants.LECTURER_MENU_OPTIONS;
         } else {
             return "Error: Invalid user type.";
         }

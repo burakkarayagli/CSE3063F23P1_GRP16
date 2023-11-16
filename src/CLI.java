@@ -89,7 +89,11 @@ public class CLI {
                 }
             }
         } else if (systemController.getLoggedInUser() instanceof Lecturer) {
-            Lecturer lecturer = (Lecturer) systemController.getLoggedInUser();
+            Lecturer lecturer = (Lecturer)systemController.getLoggedInUser();
+
+            if (selection == 1) {
+                System.out.println(lecturer.getCourses().get(0).getCourseInfo());
+            }
         }
 
     }
