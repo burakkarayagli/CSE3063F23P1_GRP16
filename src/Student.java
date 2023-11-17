@@ -74,6 +74,10 @@ public class Student extends Person {
         return courses;
     }
 
+    public void clearCourses() {
+        this.courses = new ArrayList<CourseSection>();
+    }
+
     public String getFullName() {
         return this.getPersonName() + " " + this.getPersonSurname();
     }
