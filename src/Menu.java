@@ -58,7 +58,8 @@ public class Menu {
             Scanner input = new Scanner(System.in);
             System.out.println("You are able to choose one of the courses above.");
             System.out.print(
-                    "Please enter the number of the course you want to choose(Enter -1 if you want to not choose any course): ");
+                    "Please select the course you want to take(Enter -1 if you don't want to choose any course): ");
+
             int i = input.nextInt();
             if (i == -1)
                 studentMenu();
@@ -76,11 +77,12 @@ public class Menu {
             systemController.setLoggedInUser(null);
         }
 
-        else if(selection==4){
+        else if (selection == 4) {
             ArrayList<CourseSection> coursesTaken = student.getCourses();
-            
-            for(int i = 0;i<coursesTaken.size();i++){
-                System.out.println(coursesTaken.get(i).getShortName()+" "+coursesTaken.get(i).getFullName()+" "+coursesTaken.get(i).getShortName());
+
+            for (int i = 0; i < coursesTaken.size(); i++) {
+                System.out.println(coursesTaken.get(i).getShortName() + " " + coursesTaken.get(i).getFullName() + " "
+                        + coursesTaken.get(i).getShortName());
             }
         }
 
@@ -124,13 +126,13 @@ public class Menu {
             if (decision == 1) {
                 // System.out.println(advisor.getStudents().get(studentSelection -
                 // 1).getApproved());
-                //advisor.getStudents().get(studentSelection - 1).setApproved(true);
+                // advisor.getStudents().get(studentSelection - 1).setApproved(true);
                 systemController.approveCourse(advisor, studentSelection);
                 // System.out.println(advisor.getStudents().get(studentSelection -
                 // 1).getApproved());
             } else if (decision == 2) {
                 systemController.rejectCourse(advisor, studentSelection);
-                //advisor.getStudents().get(studentSelection - 1).clearCourses();
+                // advisor.getStudents().get(studentSelection - 1).clearCourses();
             }
 
         } else if (selection == 2) {
