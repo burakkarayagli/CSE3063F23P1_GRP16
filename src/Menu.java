@@ -76,6 +76,14 @@ public class Menu {
             systemController.setLoggedInUser(null);
         }
 
+        else if(selection==4){
+            ArrayList<CourseSection> coursesTaken = student.getCourses();
+            
+            for(int i = 0;i<coursesTaken.size();i++){
+                System.out.println(coursesTaken.get(i).getShortName()+" "+coursesTaken.get(i).getFullName()+" "+coursesTaken.get(i).getShortName());
+            }
+        }
+
         if (systemController.getLoggedInUser() == null) {
             Menu();
         } else {
@@ -116,11 +124,13 @@ public class Menu {
             if (decision == 1) {
                 // System.out.println(advisor.getStudents().get(studentSelection -
                 // 1).getApproved());
-                advisor.getStudents().get(studentSelection - 1).setApproved(true);
+                //advisor.getStudents().get(studentSelection - 1).setApproved(true);
+                systemController.approveCourse(advisor, studentSelection);
                 // System.out.println(advisor.getStudents().get(studentSelection -
                 // 1).getApproved());
             } else if (decision == 2) {
-                advisor.getStudents().get(studentSelection - 1).clearCourses();
+                systemController.rejectCourse(advisor, studentSelection);
+                //advisor.getStudents().get(studentSelection - 1).clearCourses();
             }
 
         } else if (selection == 2) {
