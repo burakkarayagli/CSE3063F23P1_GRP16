@@ -119,6 +119,8 @@ public class Menu {
                 advisor.getStudents().get(studentSelection - 1).setApproved(true);
                 // System.out.println(advisor.getStudents().get(studentSelection -
                 // 1).getApproved());
+            } else if (decision == 2) {
+                advisor.getStudents().get(studentSelection - 1).clearCourses();
             }
 
         } else if (selection == 2) {
