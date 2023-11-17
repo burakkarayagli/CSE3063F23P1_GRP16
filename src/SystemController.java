@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
-
 
 public class SystemController {
     private Person loggedInUser;
@@ -11,6 +9,7 @@ public class SystemController {
     private ArrayList<Student> students;
     private ArrayList<Advisor> advisors;
     private Json json;
+
     SystemController() {
         json = new Json();
         courses = json.getCourses();
@@ -84,22 +83,6 @@ public class SystemController {
         return null;
     }
 
-    public String viewCourses() {
-        // ArrayList<Course> courses = requestCourses();
-        ArrayList<Course> courses = new ArrayList<Course>(
-                List.of(
-                        new Course("CS101", "Introduction to Computer Science",
-                                "This course is an introduction to computer science."),
-                        new Course("CS102", "Introduction to Programming",
-                                "This course is an introduction to programming.")));
-
-        String courseList = "";
-        for (Course course : courses) {
-            courseList += course.getShortName() + " - " + course.getFullName() + "\n";
-        }
-        return courseList;
-    }
-
     public void printAvailableCourses(Student student) {
         for (int i = 0; i < courses.size(); i++) {
             ArrayList<Grade> studentCoursesTaken = student.getTranscript().getGradeList();
@@ -150,30 +133,75 @@ public class SystemController {
         }
     }
 
-
-    public void printAvailableCourses(Student student, ArrayList<CourseSection> untakenCourses){
-        
-        int courseOrder = 1;
-        for(int i = 0;i<courseSections.size();i++){
+    public ArrayList<CourseSection> getUntakenCourses(Student student) {
+        ArrayList<CourseSection> untakenCourses = new ArrayList<CourseSection>();
+        ArrayList<Grade> studentCoursesTaken = student.getTranscript().getGradeList();
+        for (int i = 0; i < courseSections.size(); i++) {
             CourseSection courseSection = courseSections.get(i);
-            ArrayList<Grade> studentCoursesTaken = student.getTranscript().getGradeList();
             int j = 0;
-            for(;j<studentCoursesTaken.size();j++){
-                if(studentCoursesTaken.get(j).getCourse().getFullName().equals(courseSection.getFullName())){
+
+            // Checking if the student has taken the course before.
+            for (; j < studentCoursesTaken.size(); j++) {
+                if (studentCoursesTaken.get(j).getCourse().getFullName().equals(courseSection.getFullName())) {
                     break;
                 }
             }
-            if(j==studentCoursesTaken.size()){
-                
+            // If the student has not taken the course before, it will be added to the list.
+            if (j == studentCoursesTaken.size()) {
                 untakenCourses.add(courseSections.get(i));
-                System.out.println(courseOrder+". "+courseSection.getFullName()+" "+courseSection.getSectionName()+" "+courseSection.getShortName());
-                courseOrder++;
             }
         }
+        return untakenCourses;
+    }
+
+    // Checking if the student passed the prerequisite course.
+    public boolean canTakeCourse(Student student, CourseSection courseSection) {
+        ArrayList<Grade> grades = student.getTranscript().getGradeList();
+        String courseSectionShortName = courseSection.getShortName();
+
+        // Check if the student has taken CSE1241 for CSE1242 course. Computer
+        // programming 2 and computer programming 1
+        if (courseSectionShortName.equals("CSE1242")) {
+            // Check if the student has taken CSE1241
+            for (int i = 0; i < grades.size(); i++) {
+                if (grades.get(i).getCourse().getShortName().equals("CSE1241")
+                        && !grades.get(i).getGrade().equals("FF"))
+                    return true;
+            }
+
+            // Check if the student has taken MATH1001 for MATH2256 course. Linear algebra
+            // and calculus 2.
+        } else if (courseSectionShortName.equals("MATH2256")) {
+            // Check if the student has taken MATH1002
+            for (int i = 0; i < grades.size(); i++) {
+                if (grades.get(i).getCourse().getShortName().equals("MATH1002")
+                        && !grades.get(i).getGrade().equals("FF"))
+                    return true;
+
+            }
+        }
+
+        // Check if the student has taken CSE2225 for CSE2246 course. Analysis of
+        // algorithms and data structures
+        else if (courseSectionShortName.equals("CSE2246")) {
+            // Check if the student has taken CSE2225
+            for (int i = 0; i < grades.size(); i++) {
+                if (grades.get(i).getCourse().getShortName().equals("CSE2225")
+                        && !grades.get(i).getGrade().equals("FF"))
+                    return true;
+
+            }
+        }
+
+        else {
+            return true;
+        }
+
+        return false;
     }
 
     // Applying the course operation
-    public void applyCourse(Student student, CourseSection courseSection){
+    public void applyCourse(Student student, CourseSection courseSection) {
         System.out.println(courseSection.getFullName());
         student.getCourses().add(courseSection);
         json.updateStudents();
@@ -181,8 +209,87 @@ public class SystemController {
 
     }
 
-    public boolean checkPrerequisite(){
-        return true;
+    public ArrayList<CourseSection> getAvailableCourses(Student student) {
+        ArrayList<CourseSection> availableCourses = new ArrayList<CourseSection>();
+
+        // From the course section list
+        for (int i = 0; i < courseSections.size(); i++) {
+            CourseSection courseSection = courseSections.get(i);
+            if (checkStudentAlreadyAddedTheCourse(student, courseSection) == false
+                    && checkPrerequisite(student, courseSection) == true
+                    && checkYear(student, courseSection) == true) {
+                availableCourses.add(courseSection);
+            }
+        }
+        return availableCourses;
+    }
+
+    // Function for checking if the student has already added the course.
+    public boolean checkStudentAlreadyAddedTheCourse(Student student, CourseSection courseSection) {
+        ArrayList<CourseSection> courses = student.getCourses();
+        for (int i = 0; i < courses.size(); i++) {
+            if (courses.get(i).getShortName().equals(courseSection.getShortName())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    // If the student has taken the prerequisite course, it will return true.
+    public boolean checkPrerequisite(Student student, CourseSection courseSection) {
+        ArrayList<Grade> grades = student.getTranscript().getGradeList();
+        // If there are no prerequisites, return true.
+        if (courseSection.getPrerequisite().equals("")) {
+            return true;
+        }
+
+        // If there are prerequisites, check if the student has taken the prerequisite
+        // course.
+        else {
+            // Check if the student has taken the prerequisite course. If the student has
+            // taken the course, return true.
+            // If the student has not taken the course, return false.
+            // If the student has taken the course but failed, return false.
+            for (int i = 0; i < grades.size(); i++) {
+                if (grades.get(i).getCourse().getShortName().equals(courseSection.getPrerequisite())
+                        && !grades.get(i).getGrade().equals("FF")) {
+                    return true;
+                }
+            }
+            return false;
+        }
+    }
+
+    // Function for checking if the student's year is suitable for the course.
+    public boolean checkYear(Student student, CourseSection courseSection) {
+
+        String courseShortName = courseSection.getShortName();
+        int courseYear = parseYearFromShortName(courseShortName);
+
+        // If the student's year is suitable for the course, return true.
+        // If the student's year is not suitable for the course, return false.
+        if (student.getStudentYear() >= courseYear) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    // Function for parsing the year from the course short name.
+    public int parseYearFromShortName(String courseShortName) {
+        // Find first number in string
+        int i = 0;
+        while (!Character.isDigit(courseShortName.charAt(i))) {
+            i++;
+        }
+        // Return courseShortName.charAt(i) as an int
+        return Character.getNumericValue(courseShortName.charAt(i));
+    }
+
+    public void save() {
+        json.updateStudents();
+        json.updateParametes();
+
     }
 
     // Accepting or rejecting the course application.

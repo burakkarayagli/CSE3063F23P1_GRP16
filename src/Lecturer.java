@@ -17,11 +17,11 @@ public class Lecturer extends Staff {
         return courses;
     }
 
-    public boolean addCourse(CourseSection course) {
+    public boolean addCourse(Course course) {
         return courses.add(course);
     }
 
-    public boolean removeCourse(CourseSection course) {
+    public boolean removeCourse(Course course) {
         return courses.remove(course);
     }
 }
