@@ -8,12 +8,14 @@ public class Course {
         this.shortName = shortName;
         this.fullName = fullName;
         this.description = description;
+        this.prerequisite = prerequisite;
     }
 
     public Course(String shortName, String fullName) {
         this.shortName = shortName;
         this.fullName = fullName;
         this.description = "";
+        this.prerequisite = "";
     }
 
     public Course() {
@@ -55,7 +57,6 @@ public class Course {
     public String getCourseInfo() {
         // return "Course{" + "shortName=" + shortName + ", fullName=" + fullName + ",
         // description=" + description + '}';
-        return fullName + " (" + shortName + ") " + description;
-
+        return fullName + " (" + shortName + ") " + description + " " + prerequisite;
     }
 }

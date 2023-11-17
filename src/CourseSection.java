@@ -8,9 +8,9 @@ public class CourseSection extends Course {
     private Lecturer lecturer;
     private int quota;
 
-    public CourseSection(String shortName, String fullName, String description, ArrayList<TimeInterval> dates,
-            String sectionName, Lecturer lecturer, int quota) {
-        super(shortName, fullName, description);
+    public CourseSection(String shortName, String fullName, String description, String prerequisite,
+            ArrayList<TimeInterval> dates, String sectionName, Lecturer lecturer, int quota) {
+        super(shortName, fullName, description, prerequisite);
         this.dates = dates;
         this.sectionName = sectionName;
         this.lecturer = lecturer;

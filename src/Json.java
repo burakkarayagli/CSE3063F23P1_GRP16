@@ -1,7 +1,5 @@
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-// import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -223,6 +221,7 @@ public class Json {
                         course.getShortName(),
                         course.getFullName(),
                         course.getDescription(),
+                        course.getPrerequisite(),
                         dates,
                         sectionName,
                         lectuer,
@@ -275,10 +274,14 @@ public class Json {
                     String shortName = jtranscipt.get(j).getAsJsonObject().get("shortName").getAsString();
                     String fullName = jtranscipt.get(j).getAsJsonObject().get("fullName").getAsString();
                     String description = jtranscipt.get(j).getAsJsonObject().get("description").getAsString();
+                    if (jtranscipt.get(j).getAsJsonObject().get("prerequisite") == null) {
+                        jtranscipt.get(j).getAsJsonObject().addProperty("prerequisite", "");
+                    }
+                    String prerequisite = jtranscipt.get(j).getAsJsonObject().get("prerequisite").getAsString();
                     String jgrade = jtranscipt.get(j).getAsJsonObject().get("grade").getAsString();
                     Course course = getCourse(shortName);
                     if (course == null) {
-                        course = new Course(shortName, fullName, description);
+                        course = new Course(shortName, fullName, description, prerequisite);
                         courses.add(course);
                     }
                     Grade grade = new Grade(course, jgrade);
@@ -542,32 +545,34 @@ public class Json {
         }
     }
 
-    public static void main(String[] args) {
-        // try (Scanner scanner = new Scanner(Paths.get("database/150120033.json"),
-        // StandardCharsets.UTF_8.name());) {
-        // // String content = new
-        // // String(Files.readAllBytes(Paths.get("database/150120033.json")));
-        // String content = scanner.useDelimiter("\\A").next();
-        // scanner.close();
-        // JsonParser parser = new JsonParser();
-        // JsonElement neoJsonElement = parser.parse(content);
-        //
-        //
-        // System.out.println(neoJsonElement.getAsJsonObject().get("surname").getAsString());
-        // } catch (IOException e) {
-        // e.printStackTrace();
-        // }
+    // public static void main(String[] args) {
+    // // try (Scanner scanner = new Scanner(Paths.get("database/150120033.json"),
+    // // StandardCharsets.UTF_8.name());) {
+    // // // String content = new
+    // // // String(Files.readAllBytes(Paths.get("database/150120033.json")));
+    // // String content = scanner.useDelimiter("\\A").next();
+    // // scanner.close();
+    // // JsonParser parser = new JsonParser();
+    // // JsonElement neoJsonElement = parser.parse(content);
+    // //
+    // //
+    // //
+    // System.out.println(neoJsonElement.getAsJsonObject().get("surname").getAsString());
+    // // } catch (IOException e) {
+    // // e.printStackTrace();
+    // // }
 
-        // Json json = new Json("database");
-        // json.updateStudents();
-        // json.updateParametes();
+    // // Json json = new Json("database");
+    // // json.updateStudents();
+    // // json.updateParametes();
 
-        // for (int i = 0; i < json.getCourseSections().size(); i++) {
-        // System.out.println(json.getCourseSections().get(i).getCourseInfo());
-        // System.out.println(json.getCourseSections().get(i).getLecturer().getUsername());
-        // }
+    // // for (int i = 0; i < json.getCourseSections().size(); i++) {
+    // // System.out.println(json.getCourseSections().get(i).getCourseInfo());
+    // //
+    // System.out.println(json.getCourseSections().get(i).getLecturer().getUsername());
+    // // }
 
-    }
+    // }
 
 }
 
