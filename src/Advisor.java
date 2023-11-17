@@ -14,10 +14,18 @@ public class Advisor extends Staff {
         this.students = students;
     }
 
+    public Advisor() {
+        
+    }
+
     public void printTranscriptInfo() {
         System.out.println("STUDENT TRANSCRIPT");
         System.out.println("-------------------------------------------------");
         System.out.println();
+    }
+
+    public void setStudents(List<Student> students) {
+        this.students = students;
     }
 
     public List<Student> getStudents() {
@@ -31,4 +39,5 @@ public class Advisor extends Staff {
     public boolean deleteStudent(Student student) {
         return students.remove(student);
     }
+
 }

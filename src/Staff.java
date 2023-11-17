@@ -16,6 +16,14 @@ public class Staff extends Person {
         this.officeHours = officeHours;
     }
 
+    public void setOfficeHours(ArrayList<TimeInterval> officeHours) {
+        this.officeHours = officeHours;
+    }
+
+    public Staff() {
+        
+    }
+
     public String getReputation() {
         return this.reputation;
     }

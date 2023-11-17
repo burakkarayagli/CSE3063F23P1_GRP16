@@ -24,6 +24,14 @@ public class Student extends Person {
         this.isApproved = isApproved;
     }
 
+    public Student(String personName, String personSurname, String username, String password) {
+
+    }
+
+    public Student() {
+
+    }
+
     public void printTranscriptInfo() {
         System.out.println("STUDENT TRANSCRIPT");
         System.out.println("-------------------------------------------------");

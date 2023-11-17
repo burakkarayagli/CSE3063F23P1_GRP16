@@ -11,9 +11,15 @@ public class Lecturer extends Staff {
         this.courses = courses;
     }
 
+    public Lecturer(String personName, String personSurname, String usrename, String password) {
+
+    }
+
+    public Lecturer() {
+        
+    }
+
     private List<Course> courses;
-
-
 
     public List<Course> getCourses() {
         return courses;
