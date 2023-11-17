@@ -36,7 +36,9 @@ public class CLI {
         if (systemController.getLoggedInUser() instanceof Student) {
             Student student = (Student) systemController.getLoggedInUser();
             if (selection == 1) {
+                System.out.println(student.getApproved());
                 System.out.println("AVAILABLE COURSES THAT STUDENT CAN TAKE");
+
                 ArrayList<CourseSection> availableCourses = systemController.getAvailableCourses(student);
                 for (int i = 0; i < availableCourses.size(); i++) {
                     CourseSection courseSection = availableCourses.get(i);
@@ -66,6 +68,12 @@ public class CLI {
             } else if (selection == 3) {
                 student.printTranscriptInfo();
             } else if (selection == 4) {
+
+
+                systemController.printStudentCourses(student);
+                
+            }
+            else if (selection == 5) {
             }
 
         } else if (systemController.getLoggedInUser() instanceof Advisor) {
@@ -105,9 +113,13 @@ public class CLI {
                 if (decision == 1) {
                     // System.out.println(advisor.getStudents().get(studentSelection -
                     // 1).getApproved());
-                    advisor.getStudents().get(studentSelection - 1).setApproved(true);
+                    systemController.approveCourse(advisor, studentSelection);
                     // System.out.println(advisor.getStudents().get(studentSelection -
                     // 1).getApproved());
+                }
+                else if(decision==2){
+
+                    systemController.rejectCourse(advisor, studentSelection);
                 }
 
             } else if (selection == 2) {
@@ -195,4 +207,5 @@ public class CLI {
         }
 
     }
+
 }

@@ -13,6 +13,8 @@ public class Lecturer extends Staff {
 
     private List<Course> courses;
 
+
+
     public List<Course> getCourses() {
         return courses;
     }
