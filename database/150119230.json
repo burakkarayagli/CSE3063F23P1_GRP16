@@ -1,10 +1,10 @@
 {
-    "name": "Barış Giray",
-    "surname": "Akman",
-    "username": "baris",
-    "password": "barisgirayakman",
+    "name": "Ege",
+    "surname": "Özgen",
+    "username": "ege",
+    "password": "egeozgen",
     "address": "Kartal/Istanbul",
-    "phoneNumber": "1234567899",
+    "phoneNumber": "1234567890",
     "studentYear": 3,
     "entranceYear": 2021,
     "transcript": [
@@ -12,13 +12,13 @@
             "shortName": "ATA121",
             "fullName": "Atatürk İlkeleri ve İnkılap Tarihi I",
             "description": "",
-            "grade": "BB"
+            "grade": "AA"
         },
         {
             "shortName": "CSE1200",
             "fullName": "Introduction to Computer Engineering",
             "description": "",
-            "grade": "AA"
+            "grade": "BB"
         },
         {
             "shortName": "CSE1241",
@@ -30,31 +30,31 @@
             "shortName": "MATH1001",
             "fullName": "Calculus I",
             "description": "",
-            "grade": "CC"
+            "grade": "DC"
         },
         {
             "shortName": "MBG1201",
             "fullName": "Introduction to Modern Biology",
             "description": "",
-            "grade": "BC"
+            "grade": "CC"
         },
         {
             "shortName": "PHYS1101",
             "fullName": "Physics I",
             "description": "",
-            "grade": "DD"
+            "grade": "DC"
         },
         {
             "shortName": "PHYS1103",
             "fullName": "Physics Lab I",
             "description": "",
-            "grade": "BA"
+            "grade": "AA"
         },
         {
             "shortName": "TRD121",
             "fullName": "Türk Dili I",
             "description": "",
-            "grade": "AA"
+            "grade": "BA"
         },
         {
             "shortName": "ATA122",
@@ -66,31 +66,31 @@
             "shortName": "CSE1242",
             "fullName": "Computer Programming II",
             "description": "",
-            "grade": "BB"
+            "grade": "CC"
         },
         {
             "shortName": "MATH1002",
             "fullName": "Calculus II",
             "description": "",
-            "grade": "BC"
+            "grade": "CC"
         },
         {
             "shortName": "MATH2256",
             "fullName": "Linear Algebra for Computer Engineering",
             "description": "",
-            "grade": "DC"
+            "grade": "CC"
         },
         {
             "shortName": "PHYS1102",
             "fullName": "Physics II",
             "description": "",
-            "grade": "BB"
+            "grade": "BC"
         },
         {
             "shortName": "PHYS1104",
             "fullName": "Physics Lab II",
             "description": "",
-            "grade": "BA"
+            "grade": "AA"
         },
         {
             "shortName": "TRD122",
