@@ -37,9 +37,9 @@ public class CLI {
             Student student = (Student) systemController.getLoggedInUser();
             if (selection == 1) {
                 System.out.println("AVAILABLE COURSES THAT STUDENT CAN TAKE");
-                ArrayList<CourseSection> untakenCourses = systemController.getUntakenCourses(student);
-                for (int i = 0; i < untakenCourses.size(); i++) {
-                    CourseSection courseSection = untakenCourses.get(i);
+                ArrayList<CourseSection> availableCourses = systemController.getAvailableCourses(student);
+                for (int i = 0; i < availableCourses.size(); i++) {
+                    CourseSection courseSection = availableCourses.get(i);
                     System.out.println(i + 1 + ". " + courseSection.getFullName() + " " +
                             courseSection.getSectionName()
                             + " " + courseSection.getShortName());
@@ -52,10 +52,8 @@ public class CLI {
                 int i = input.nextInt();
                 if (i == -1)
                     return;
-                if (systemController.canTakeCourse(student, untakenCourses.get(i - 1))) {
-                    systemController.applyCourse(student, untakenCourses.get(i - 1));
-                } else {
-                    System.out.println("You can't take this course. You have to take the prerequisites first.");
+                else {
+                    systemController.applyCourse(student, availableCourses.get(i - 1));
                 }
 
             } else if (selection == 2) {
