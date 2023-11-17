@@ -59,10 +59,8 @@ public class CLI {
                 }
 
             } else if (selection == 2) {
-
-            } else if (selection == 3) {
                 student.printTranscriptInfo();
-            } else if (selection == 4) {
+            } else if (selection == 3) {
             }
 
         } else if (systemController.getLoggedInUser() instanceof Advisor) {
