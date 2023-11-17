@@ -28,6 +28,10 @@ public class SystemController {
         return loggedInUser;
     }
 
+    public void setLoggedInUser(Person loggedInUser) {
+        this.loggedInUser = loggedInUser;
+    }
+
     public ArrayList<CourseSection> getCourseSectionList() {
         return courseSections;
     }
