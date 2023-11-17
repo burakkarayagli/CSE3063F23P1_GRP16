@@ -255,6 +255,7 @@ public class Json {
                 int entranceYear = jsonObject.get("entranceYear").getAsInt();
                 String SisApproved = jsonObject.get("isApproved").getAsString();
                 boolean isApproved = false;
+
                 if (SisApproved.equals(("true"))) {
                     isApproved = true;
                 }

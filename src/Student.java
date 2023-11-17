@@ -21,6 +21,7 @@ public class Student extends Person {
         this.entranceYear = entranceYear;
         this.courses = courses;
         this.transcript = transcript;
+        this.isApproved = isApproved;
     }
 
     public void printTranscriptInfo() {
