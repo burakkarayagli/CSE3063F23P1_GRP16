@@ -36,6 +36,7 @@ public class CLI {
         if (systemController.getLoggedInUser() instanceof Student) {
             Student student = (Student) systemController.getLoggedInUser();
             if (selection == 1) {
+                System.out.println(student.getApproved());
                 System.out.println("AVAILABLE COURSES THAT STUDENT CAN TAKE");
                 
                 ArrayList<CourseSection> untakenCourses = systemController.getUntakenCourses(student);
