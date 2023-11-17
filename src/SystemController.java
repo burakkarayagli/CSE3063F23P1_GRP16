@@ -286,6 +286,12 @@ public class SystemController {
         return Character.getNumericValue(courseShortName.charAt(i));
     }
 
+    public void save() {
+        json.updateStudents();
+        json.updateParametes();
+
+    }
+
     // Accepting or rejecting the course application.
 
     // Displaying the information of the advisor. It may be more specific depending

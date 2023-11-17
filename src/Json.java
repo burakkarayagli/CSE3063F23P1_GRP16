@@ -253,7 +253,11 @@ public class Json {
                 String phoneNumber = jsonObject.get("phoneNumber").getAsString();
                 int studentYear = jsonObject.get("studentYear").getAsInt();
                 int entranceYear = jsonObject.get("entranceYear").getAsInt();
-                boolean isApproved = jsonObject.get("isApproved").getAsBoolean();
+                String SisApproved = jsonObject.get("isApproved").getAsString();
+                boolean isApproved = false;
+                if (SisApproved.equals(("true"))) {
+                    isApproved = true;
+                }
 
                 // get the course sections
                 ArrayList<CourseSection> studentCourses = new ArrayList<CourseSection>();
