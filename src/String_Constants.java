@@ -10,7 +10,7 @@ public class String_Constants {
     public final String STUDENT_MENU_MESSAGE = "Please select an option from the menu below.";
     public final String STUDENT_MENU_OPTIONS = "1. Select Courses\n2. View Transcript\n3. Logout";
     public final String LECTURER_MENU_MESSAGE = "Please select an option from the menu below.";
-    public final String LECTURER_MENU_OPTIONS = "1.Create New Course\n2. Logout";
+    public final String LECTURER_MENU_OPTIONS = "1. Create New Course\n2. Logout";
 
     public final String ADVISOR_MENU_MESSAGE = "Please select an option from the menu below.";
     public final String ADVISOR_MENU_OPTIONS = "1. Approve/Reject Courses\n2. View Students Transcripts\n3. Logout";
