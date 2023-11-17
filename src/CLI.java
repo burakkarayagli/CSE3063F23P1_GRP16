@@ -1,5 +1,12 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Rule;
+
 
 public class CLI {
 
@@ -109,6 +116,10 @@ public class CLI {
             Lecturer lecturer = (Lecturer) systemController.getLoggedInUser();
 
             if (selection == 1) {
+                System.out.println(lecturer.getCourses().get(0).getCourseInfo());
+
+            }
+           else if (selection == 1) {
                 System.out.println(lecturer.getCourses().get(0).getCourseInfo());
 
             }
