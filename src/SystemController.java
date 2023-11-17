@@ -133,6 +133,14 @@ public class SystemController {
         }
     }
 
+    public void printStudentCourses(Student student){
+        ArrayList<CourseSection> studentCourses = student.getCourses();
+        for(int i = 0;i<studentCourses.size();i++){
+            System.out.println((i+1)+". "+studentCourses.get(i).getFullName()+" "+studentCourses.get(i).getSectionName());
+
+        }
+    }
+
     public ArrayList<CourseSection> getUntakenCourses(Student student) {
         ArrayList<CourseSection> untakenCourses = new ArrayList<CourseSection>();
         ArrayList<Grade> studentCoursesTaken = student.getTranscript().getGradeList();
@@ -202,11 +210,21 @@ public class SystemController {
 
     // Applying the course operation
     public void applyCourse(Student student, CourseSection courseSection) {
-        System.out.println(courseSection.getFullName());
         student.getCourses().add(courseSection);
         json.updateStudents();
         json.updateParametes();
 
+    }
+    public void rejectCourse(Advisor advisor, int studentSelection){
+        advisor.getStudents().get(studentSelection - 1).getCourses().clear();
+        json.updateStudents();
+        json.updateParametes();
+    }
+
+    public void approveCourse(Advisor advisor, int studentSelection){
+        advisor.getStudents().get(studentSelection - 1).setApproved(true);
+        json.updateStudents();
+        json.updateParametes();
     }
 
     public boolean checkPrerequisite() {
