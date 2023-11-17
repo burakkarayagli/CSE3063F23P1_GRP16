@@ -150,25 +150,15 @@ public class SystemController {
         }
     }
 
-    public ArrayList<CourseSection> getUntakenCourses(Student student) {
-        ArrayList<CourseSection> untakenCourses = new ArrayList<CourseSection>();
+    public boolean isUntaken(Student student, CourseSection courseSection) {
         ArrayList<Grade> studentCoursesTaken = student.getTranscript().getGradeList();
-        for (int i = 0; i < courseSections.size(); i++) {
-            CourseSection courseSection = courseSections.get(i);
-            int j = 0;
 
-            // Checking if the student has taken the course before.
-            for (; j < studentCoursesTaken.size(); j++) {
-                if (studentCoursesTaken.get(j).getCourse().getFullName().equals(courseSection.getFullName())) {
-                    break;
-                }
-            }
-            // If the student has not taken the course before, it will be added to the list.
-            if (j == studentCoursesTaken.size()) {
-                untakenCourses.add(courseSections.get(i));
-            }
-        }
-        return untakenCourses;
+        for(int i = 0;i<studentCoursesTaken.size();i++){
+            if(studentCoursesTaken.get(i).getCourse().getFullName().equals(courseSection.getFullName()))
+                return false;
+        }           
+       
+        return true;
     }
 
     // Checking if the student passed the prerequisite course.
@@ -245,7 +235,7 @@ public class SystemController {
             CourseSection courseSection = courseSections.get(i);
             if (checkStudentAlreadyAddedTheCourse(student, courseSection) == false
                     && checkPrerequisite(student, courseSection) == true
-                    && checkYear(student, courseSection) == true) {
+                    && checkYear(student, courseSection) == true && isUntaken(student, courseSection)) {
                 availableCourses.add(courseSection);
             }
         }
