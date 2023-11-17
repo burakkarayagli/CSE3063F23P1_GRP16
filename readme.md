@@ -1,26 +1,28 @@
 CSE3063 TERM PROJECT
 
 # Students 
-username/password
-burak/burakkarayagli
-hakki/hakkikokur
-musa/musaozkan
-efe/efeozgen
-baris/barisgirayakman
-tamer/tamerunal
-okan/okanunal
-baran/baranakman
-ege/egeozgen
+- username/password
+- burak/burakkarayagli
+- hakki/hakkikokur
+- musa/musaozkan
+- efe/efeozgen
+- baris/barisgirayakman
+- tamer/tamerunal
+- okan/okanunal
+- baran/baranakman
+- ege/egeozgen
 
 
 # Lecturers
-mustafa/mustafaagaoglu
-muratcan/muratcanganiz
-ali/alifuatkaya
+
+- mustafa/mustafaagaoglu
+- muratcan/muratcanganiz
+- ali/alifuatkaya
 
 # Advisors
-fatmacorut/fatmacorutergin    ----- hakkikokur, tamerunal, musaozkan, egeozen, okanunal
-betul/betulboz                ----- burakkarayagli, barisakman, efeozgen, baranakman, eylemozgen
+
+- fatmacorut/fatmacorutergin    ----- hakkikokur, tamerunal, musaozkan, egeozen, okanunal
+- betul/betulboz                ----- burakkarayagli, barisakman, efeozgen, baranakman, eylemozgen
 
 
 # Additional
