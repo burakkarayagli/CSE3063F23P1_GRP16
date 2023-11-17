@@ -82,6 +82,10 @@ public class Student extends Person {
         return courses;
     }
 
+    public void setCourses(ArrayList<CourseSection> courses) {
+        this.courses = courses;
+    }
+
     public void clearCourses() {
         this.courses = new ArrayList<CourseSection>();
     }
