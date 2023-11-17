@@ -15,4 +15,6 @@ public class String_Constants {
     public final String ADVISOR_MENU_MESSAGE = "Please select an option from the menu below.";
     public final String ADVISOR_MENU_OPTIONS = "1. Approve/Reject Courses\n2. View Students Transcripts\n3. Logout";
 
+    public final String INVALID_OPTION_MESSAGE = "Invalid option! Please try again.";
+
 }
