@@ -75,10 +75,9 @@ public class Menu {
             systemController.setLoggedInUser(null);
         }
 
-        if(systemController.getLoggedInUser() == null) {
+        if (systemController.getLoggedInUser() == null) {
             Menu();
-        }
-        else {
+        } else {
             studentMenu();
         }
 
@@ -134,10 +133,9 @@ public class Menu {
             systemController.setLoggedInUser(null);
         }
 
-        if(systemController.getLoggedInUser() == null) {
+        if (systemController.getLoggedInUser() == null) {
             Menu();
-        }
-        else {
+        } else {
             advisorMenu();
         }
 
@@ -151,17 +149,25 @@ public class Menu {
         Lecturer lecturer = (Lecturer) systemController.getLoggedInUser();
 
         if (selection == 1) {
-            System.out.println(lecturer.getCourses().get(0).getCourseInfo());
+            Scanner input = new Scanner(System.in);
+            System.out.print("Give ShortName: ");
+            String shortName = input.nextLine();
+            System.out.print("Give FullName: ");
+            String fullName = input.nextLine();
+            System.out.print("Description: ");
+            String description = input.nextLine();
+            Course course = new Course(shortName, fullName, description, "");
+            lecturer.addCourse(course);
+            systemController.getCourses().add(course);
+            systemController.save();
 
-        } 
-        else if (selection == 2) {
+        } else if (selection == 2) {
             systemController.setLoggedInUser(null);
         }
 
-        if(systemController.getLoggedInUser() == null) {
+        if (systemController.getLoggedInUser() == null) {
             Menu();
-        }
-        else {
+        } else {
             lecturerMenu();
         }
 
