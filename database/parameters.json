@@ -185,6 +185,18 @@
             "fullName": "Modeling and Discrete Simulation",
             "description": "",
             "prerequisite": "STAT2253"
+        },
+        {
+            "shortName": "CSE4074",
+            "fullName": "Computer Networks",
+            "description": "",
+            "prerequisite": ""
+        },
+        {
+            "shortName": "CSE4219",
+            "fullName": "Principles of Embedded Systems Design",
+            "description": "",
+            "prerequisite": ""
         }
     ],
     "lecturers": [
@@ -314,6 +326,48 @@
             "sectionName": "1.1",
             "quota": 100,
             "shortName": "CSE3033",
+            "fullName": "Operating Systems",
+            "description": "",
+            "prerequisite": "",
+            "lecturerUsername": "mustafa"
+        },
+        {
+            "dates": [
+                {
+                    "startTime": "8:30",
+                    "endTime": "9:20",
+                    "dayOfWeek": "Monday, Friday"
+                },
+                {
+                    "startTime": "11:30",
+                    "endTime": "12:20",
+                    "dayOfWeek": "Tuesday"
+                }
+            ],
+            "sectionName": "1.1",
+            "quota": 100,
+            "shortName": "CSE4074",
+            "fullName": "Computer Networks",
+            "description": "",
+            "prerequisite": "",
+            "lecturerUsername": "mustafa"
+        },
+        {
+            "dates": [
+                {
+                    "startTime": "8:30",
+                    "endTime": "9:20",
+                    "dayOfWeek": "Monday, Friday"
+                },
+                {
+                    "startTime": "11:30",
+                    "endTime": "12:20",
+                    "dayOfWeek": "Tuesday"
+                }
+            ],
+            "sectionName": "1.1",
+            "quota": 100,
+            "shortName": "CSE4219",
             "fullName": "Operating Systems",
             "description": "",
             "prerequisite": "",
