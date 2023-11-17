@@ -38,10 +38,10 @@ public class CLI {
             if (selection == 1) {
                 System.out.println(student.getApproved());
                 System.out.println("AVAILABLE COURSES THAT STUDENT CAN TAKE");
-                
-                ArrayList<CourseSection> untakenCourses = systemController.getUntakenCourses(student);
-                for (int i = 0; i < untakenCourses.size(); i++) {
-                    CourseSection courseSection = untakenCourses.get(i);
+
+                ArrayList<CourseSection> availableCourses = systemController.getAvailableCourses(student);
+                for (int i = 0; i < availableCourses.size(); i++) {
+                    CourseSection courseSection = availableCourses.get(i);
                     System.out.println(i + 1 + ". " + courseSection.getFullName() + " " +
                             courseSection.getSectionName()
                             + " " + courseSection.getShortName());
@@ -54,10 +54,8 @@ public class CLI {
                 int i = input.nextInt();
                 if (i == -1)
                     return;
-                if (systemController.canTakeCourse(student, untakenCourses.get(i - 1))) {
-                    systemController.applyCourse(student, untakenCourses.get(i - 1));
-                } else {
-                    System.out.println("You can't take this course. You have to take the prerequisites first.");
+                else {
+                    systemController.applyCourse(student, availableCourses.get(i - 1));
                 }
 
             } else if (selection == 2) {
@@ -131,10 +129,17 @@ public class CLI {
             }
         } else if (systemController.getLoggedInUser() instanceof Lecturer) {
             Lecturer lecturer = (Lecturer) systemController.getLoggedInUser();
-
             if (selection == 1) {
-                System.out.println(lecturer.getCourses().get(0).getCourseInfo());
-
+                Scanner input = new Scanner(System.in);
+                System.out.print("Give ShortName: ");
+                String shortName = input.nextLine();
+                System.out.print("Give FullName: ");
+                String fullName = input.nextLine();
+                System.out.print("Description: ");
+                String description = input.nextLine();
+                Course course = new Course(shortName, fullName, description, "");
+                lecturer.addCourse(course);
+                systemController.save();
             }
             // } else if (systemController.getLoggedInUser() instanceof Advisor) {
             // Advisor advisor = (Advisor) systemController.getLoggedInUser();
@@ -196,10 +201,6 @@ public class CLI {
             // }
         }
 
-    }
-
-    public class StudentCLI {
-        // ?
     }
 
 }
