@@ -8,7 +8,7 @@ public class String_Constants {
     public final String LOGIN_UNSUCCESSFUL_MESSAGE = "Login unsuccessful!\n";
 
     public final String STUDENT_MENU_MESSAGE = "Please select an option from the menu below.";
-    public final String STUDENT_MENU_OPTIONS = "1. Select Courses\n2. View Transcript\n3. Logout\n4. View Courses Student Taken";
+    public final String STUDENT_MENU_OPTIONS = "1. Select Courses\n2. View Transcript\n3. Logout\n4. View Courses Student is taking";
     public final String LECTURER_MENU_MESSAGE = "Please select an option from the menu below.";
     public final String LECTURER_MENU_OPTIONS = "1. Create New Course\n2. Logout";
 
