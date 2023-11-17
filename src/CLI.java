@@ -53,7 +53,12 @@ public class CLI {
                 if (i == -1)
                     return;
                 else {
-                    systemController.applyCourse(student, availableCourses.get(i - 1));
+                    try {
+                        systemController.applyCourse(student, availableCourses.get(i - 1));
+                    } catch (Exception e) {
+
+                        System.out.println(StringConstants.INVALID_OPTION_MESSAGE);
+                    }
                 }
 
             } else if (selection == 2) {
