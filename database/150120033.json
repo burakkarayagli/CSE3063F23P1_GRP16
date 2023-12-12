@@ -1,181 +1,250 @@
 {
-    "name": "Hakkı",
-    "surname": "Kokur",
-    "username": "hakki",
-    "password": "hakkikokur",
-    "address": "Maltepe/Istanbul",
-    "phoneNumber": "5315274392",
-    "studentYear": 3,
-    "entranceYear": 2020,
-    "transcript": [
-        {
-            "shortName": "ATA121",
-            "fullName": "Atatürk İlkeleri ve İnkılap Tarihi I",
-            "description": "",
-            "grade": "BA"
+  "address": "Maltepe/Istanbul",
+  "phoneNumber": "5315274392",
+  "studentYear": 3,
+  "entranceYear": 2020,
+  "isApproved": false,
+  "courses": [],
+  "transcript": {
+    "listGrades": [
+      {
+        "course": {
+          "shortName": "ATA121",
+          "fullName": "Atatürk İlkeleri ve İnkılap Tarihi I",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "CSE1200",
-            "fullName": "Introduction to Computer Engineering",
-            "description": "",
-            "grade": "CB"
+        "grade": "BA"
+      },
+      {
+        "course": {
+          "shortName": "CSE1200",
+          "fullName": "Introduction to Computer Engineering",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "CSE1241",
-            "fullName": "Computer Programming I",
-            "description": "",
-            "grade": "BB"
+        "grade": "CB"
+      },
+      {
+        "course": {
+          "shortName": "CSE1241",
+          "fullName": "Computer Programming I",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "MATH1001",
-            "fullName": "Calculus I",
-            "description": "",
-            "grade": "DD"
+        "grade": "BB"
+      },
+      {
+        "course": {
+          "shortName": "MATH1001",
+          "fullName": "Calculus I",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "MBG1201",
-            "fullName": "Introduction to Modern Biology",
-            "description": "",
-            "grade": "CC"
+        "grade": "DD"
+      },
+      {
+        "course": {
+          "shortName": "MBG1201",
+          "fullName": "Introduction to Modern Biology",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "PHYS1101",
-            "fullName": "Physics I",
-            "description": "",
-            "grade": "CB"
+        "grade": "CC"
+      },
+      {
+        "course": {
+          "shortName": "PHYS1101",
+          "fullName": "Physics I",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "PHYS1103",
-            "fullName": "Physics Lab I",
-            "description": "",
-            "grade": "BB"
+        "grade": "CB"
+      },
+      {
+        "course": {
+          "shortName": "PHYS1103",
+          "fullName": "Physics Lab I",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "TRD121",
-            "fullName": "Türk Dili I",
-            "description": "",
-            "grade": "BB"
+        "grade": "BB"
+      },
+      {
+        "course": {
+          "shortName": "TRD121",
+          "fullName": "Türk Dili I",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "ATA122",
-            "fullName": "Atatürk İlkeleri ve İnkılap Tarihi II",
-            "description": "",
-            "grade": "BA"
+        "grade": "BB"
+      },
+      {
+        "course": {
+          "shortName": "ATA122",
+          "fullName": "Atatürk İlkeleri ve İnkılap Tarihi II",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "CSE1242",
-            "fullName": "Computer Programming II",
-            "description": "",
-            "grade": "CB"
+        "grade": "BA"
+      },
+      {
+        "course": {
+          "shortName": "CSE1242",
+          "fullName": "Computer Programming II",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "MATH1002",
-            "fullName": "Calculus II",
-            "description": "",
-            "grade": "DD"
+        "grade": "CB"
+      },
+      {
+        "course": {
+          "shortName": "MATH1002",
+          "fullName": "Calculus II",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "MATH2256",
-            "fullName": "Linear Algebra for Computer Engineering",
-            "description": "",
-            "grade": "DC"
+        "grade": "DD"
+      },
+      {
+        "course": {
+          "shortName": "MATH2256",
+          "fullName": "Linear Algebra for Computer Engineering",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "PHYS1102",
-            "fullName": "Physics II",
-            "description": "",
-            "grade": "CB"
+        "grade": "DC"
+      },
+      {
+        "course": {
+          "shortName": "PHYS1102",
+          "fullName": "Physics II",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "PHYS1104",
-            "fullName": "Physics Lab II",
-            "description": "",
-            "grade": "CB"
+        "grade": "CB"
+      },
+      {
+        "course": {
+          "shortName": "PHYS1104",
+          "fullName": "Physics Lab II",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "TRD122",
-            "fullName": "Türk Dili II",
-            "description": "",
-            "grade": "AA"
+        "grade": "CB"
+      },
+      {
+        "course": {
+          "shortName": "TRD122",
+          "fullName": "Türk Dili II",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "CSE2023",
-            "fullName": "Discrete Computational Structures",
-            "description": "",
-            "prerequisite": "",
-            "grade": "AA"
+        "grade": "AA"
+      },
+      {
+        "course": {
+          "shortName": "CSE2023",
+          "fullName": "Discrete Computational Structures",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "CSE2225",
-            "fullName": "Data Structures",
-            "description": "",
-            "prerequisite": "",
-            "grade": "AA"
+        "grade": "AA"
+      },
+      {
+        "course": {
+          "shortName": "CSE2225",
+          "fullName": "Data Structures",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "ECON2004",
-            "fullName": "Engineering Economy",
-            "description": "",
-            "prerequisite": "",
-            "grade": "AA"
+        "grade": "AA"
+      },
+      {
+        "course": {
+          "shortName": "ECON2004",
+          "fullName": "Engineering Economy",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "EE2031",
-            "fullName": "Electric Circuits",
-            "description": "",
-            "prerequisite": "",
-            "grade": "AA"
+        "grade": "AA"
+      },
+      {
+        "course": {
+          "shortName": "EE2031",
+          "fullName": "Electric Circuits",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "MATH2055",
-            "fullName": "Differential Equations",
-            "description": "",
-            "prerequisite": "",
-            "grade": "AA"
+        "grade": "AA"
+      },
+      {
+        "course": {
+          "shortName": "MATH2055",
+          "fullName": "Differential Equations",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "MATH2059",
-            "fullName": "Numerical Methods",
-            "description": "",
-            "prerequisite": "",
-            "grade": "AA"
+        "grade": "AA"
+      },
+      {
+        "course": {
+          "shortName": "MATH2059",
+          "fullName": "Numerical Methods",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "CSE2138",
-            "fullName": "Systems Programming",
-            "description": "",
-            "prerequisite": "",
-            "grade": "AA"
+        "grade": "AA"
+      },
+      {
+        "course": {
+          "shortName": "CSE2138",
+          "fullName": "Systems Programming",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "CSE2246",
-            "fullName": "Analysis of Algorithms",
-            "description": "",
-            "prerequisite": "",
-            "grade": "AA"
+        "grade": "AA"
+      },
+      {
+        "course": {
+          "shortName": "CSE2246",
+          "fullName": "Analysis of Algorithms",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "CSE2260",
-            "fullName": "Principles of Programming Languages",
-            "description": "",
-            "prerequisite": "",
-            "grade": "AA"
+        "grade": "AA"
+      },
+      {
+        "course": {
+          "shortName": "CSE2260",
+          "fullName": "Principles of Programming Languages",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "EE2032",
-            "fullName": "Electronics",
-            "description": "",
-            "prerequisite": "",
-            "grade": "AA"
+        "grade": "AA"
+      },
+      {
+        "course": {
+          "shortName": "EE2032",
+          "fullName": "Electronics",
+          "description": "",
+          "prerequisite": ""
         },
-        {
-            "shortName": "STAT2253",
-            "fullName": "Probability and Statistics for Computer Engineering",
-            "description": "",
-            "prerequisite": "",
-            "grade": "AA"
-        }
-    ],
-    "isApproved": "false",
-    "courses": []
+        "grade": "AA"
+      },
+      {
+        "course": {
+          "shortName": "STAT2253",
+          "fullName": "Probability and Statistics for Computer Engineering",
+          "description": "",
+          "prerequisite": ""
+        },
+        "grade": "AA"
+      }
+    ]
+  },
+  "personName": "Hakkı",
+  "personSurname": "Kokur",
+  "username": "hakki",
+  "password": "hakkikokur"
 }

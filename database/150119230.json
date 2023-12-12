@@ -1,1 +1,151 @@
-{"name":"Ege","surname":"Özgen","username":"ege","password":"egeozgen","address":"Kartal/Istanbul","phoneNumber":"1234567890","studentYear":3,"entranceYear":2021,"transcript":[{"shortName":"ATA121","fullName":"Atatürk İlkeleri ve İnkılap Tarihi I","description":"","grade":"AA"},{"shortName":"CSE1200","fullName":"Introduction to Computer Engineering","description":"","grade":"BB"},{"shortName":"CSE1241","fullName":"Computer Programming I","description":"","grade":"BA"},{"shortName":"MATH1001","fullName":"Calculus I","description":"","grade":"DC"},{"shortName":"MBG1201","fullName":"Introduction to Modern Biology","description":"","grade":"CC"},{"shortName":"PHYS1101","fullName":"Physics I","description":"","grade":"DC"},{"shortName":"PHYS1103","fullName":"Physics Lab I","description":"","grade":"AA"},{"shortName":"TRD121","fullName":"Türk Dili I","description":"","grade":"BA"},{"shortName":"ATA122","fullName":"Atatürk İlkeleri ve İnkılap Tarihi II","description":"","grade":"AA"},{"shortName":"CSE1242","fullName":"Computer Programming II","description":"","grade":"CC"},{"shortName":"MATH1002","fullName":"Calculus II","description":"","grade":"CC"},{"shortName":"MATH2256","fullName":"Linear Algebra for Computer Engineering","description":"","grade":"CC"},{"shortName":"PHYS1102","fullName":"Physics II","description":"","grade":"BC"},{"shortName":"PHYS1104","fullName":"Physics Lab II","description":"","grade":"AA"},{"shortName":"TRD122","fullName":"Türk Dili II","description":"","grade":"AA"}],"isApproved":"false","courses":[]}
+{
+  "address": "Kartal/Istanbul",
+  "phoneNumber": "1234567890",
+  "studentYear": 3,
+  "entranceYear": 2021,
+  "isApproved": false,
+  "courses": [],
+  "transcript": {
+    "listGrades": [
+      {
+        "course": {
+          "shortName": "ATA121",
+          "fullName": "Atatürk İlkeleri ve İnkılap Tarihi I",
+          "description": "",
+          "prerequisite": ""
+        },
+        "grade": "AA"
+      },
+      {
+        "course": {
+          "shortName": "CSE1200",
+          "fullName": "Introduction to Computer Engineering",
+          "description": "",
+          "prerequisite": ""
+        },
+        "grade": "BB"
+      },
+      {
+        "course": {
+          "shortName": "CSE1241",
+          "fullName": "Computer Programming I",
+          "description": "",
+          "prerequisite": ""
+        },
+        "grade": "BA"
+      },
+      {
+        "course": {
+          "shortName": "MATH1001",
+          "fullName": "Calculus I",
+          "description": "",
+          "prerequisite": ""
+        },
+        "grade": "DC"
+      },
+      {
+        "course": {
+          "shortName": "MBG1201",
+          "fullName": "Introduction to Modern Biology",
+          "description": "",
+          "prerequisite": ""
+        },
+        "grade": "CC"
+      },
+      {
+        "course": {
+          "shortName": "PHYS1101",
+          "fullName": "Physics I",
+          "description": "",
+          "prerequisite": ""
+        },
+        "grade": "DC"
+      },
+      {
+        "course": {
+          "shortName": "PHYS1103",
+          "fullName": "Physics Lab I",
+          "description": "",
+          "prerequisite": ""
+        },
+        "grade": "AA"
+      },
+      {
+        "course": {
+          "shortName": "TRD121",
+          "fullName": "Türk Dili I",
+          "description": "",
+          "prerequisite": ""
+        },
+        "grade": "BA"
+      },
+      {
+        "course": {
+          "shortName": "ATA122",
+          "fullName": "Atatürk İlkeleri ve İnkılap Tarihi II",
+          "description": "",
+          "prerequisite": ""
+        },
+        "grade": "AA"
+      },
+      {
+        "course": {
+          "shortName": "CSE1242",
+          "fullName": "Computer Programming II",
+          "description": "",
+          "prerequisite": ""
+        },
+        "grade": "CC"
+      },
+      {
+        "course": {
+          "shortName": "MATH1002",
+          "fullName": "Calculus II",
+          "description": "",
+          "prerequisite": ""
+        },
+        "grade": "CC"
+      },
+      {
+        "course": {
+          "shortName": "MATH2256",
+          "fullName": "Linear Algebra for Computer Engineering",
+          "description": "",
+          "prerequisite": ""
+        },
+        "grade": "CC"
+      },
+      {
+        "course": {
+          "shortName": "PHYS1102",
+          "fullName": "Physics II",
+          "description": "",
+          "prerequisite": ""
+        },
+        "grade": "BC"
+      },
+      {
+        "course": {
+          "shortName": "PHYS1104",
+          "fullName": "Physics Lab II",
+          "description": "",
+          "prerequisite": ""
+        },
+        "grade": "AA"
+      },
+      {
+        "course": {
+          "shortName": "TRD122",
+          "fullName": "Türk Dili II",
+          "description": "",
+          "prerequisite": ""
+        },
+        "grade": "AA"
+      }
+    ]
+  },
+  "personName": "Ege",
+  "personSurname": "Özgen",
+  "username": "ege",
+  "password": "egeozgen"
+}
