@@ -171,17 +171,6 @@
           "classHours": 2
         },
         "grade": "AA"
-      },
-      {
-        "course": {
-          "shortName": "BUS1003",
-          "fullName": "Entrepreneurship and Innovation",
-          "description": "",
-          "semester": 2,
-          "credit": 3,
-          "classHours": 2
-        },
-        "grade": "AA"
       }
     ]
   },

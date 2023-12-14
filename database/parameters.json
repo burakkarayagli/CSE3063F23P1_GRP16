@@ -63,11 +63,955 @@
       "semester": 1,
       "credit": 2,
       "classHours": 2
+    },
+    {
+      "shortName": "ATA122",
+      "fullName": "Atatürk İlkeleri ve İnkılap Tarihi II",
+      "description": "",
+      "semester": 2,
+      "credit": 2,
+      "classHours": 2
+    },
+    {
+      "shortName": "CSE1241",
+      "fullName": "Computer Programming II",
+      "description": "",
+      "semester": 2,
+      "credit": 6,
+      "classHours": 4
+    },
+    {
+      "shortName": "MATH1002",
+      "fullName": "Calculus II",
+      "description": "",
+      "semester": 2,
+      "credit": 6,
+      "classHours": 2
+    },
+    {
+      "shortName": "MATH2256",
+      "fullName": "Linear Algebra for Computer Engineering",
+      "description": "",
+      "semester": 2,
+      "credit": 5,
+      "classHours": 3
+    },
+    {
+      "shortName": "PHYS1002",
+      "fullName": "Physics II",
+      "description": "",
+      "semester": 2,
+      "credit": 4,
+      "classHours": 2
+    },
+    {
+      "shortName": "PHYS1004",
+      "fullName": "Physics Lab II",
+      "description": "",
+      "semester": 2,
+      "credit": 2,
+      "classHours": 2
+    },
+    {
+      "shortName": "TRD122",
+      "fullName": "Türk Dili II",
+      "description": "",
+      "semester": 2,
+      "credit": 2,
+      "classHours": 2
+    },
+    {
+      "shortName": "CSE2023",
+      "fullName": "Discrete Computational Structures",
+      "description": "",
+      "semester": 3,
+      "credit": 6,
+      "classHours": 3
+    },
+    {
+      "shortName": "CSE2225",
+      "fullName": "Data Structures",
+      "description": "",
+      "prerequisite": [
+        "CSE1242"
+      ],
+      "semester": 3,
+      "credit": 7,
+      "classHours": 3
+    },
+    {
+      "shortName": "ECON2004",
+      "fullName": "Engineering Economy",
+      "description": "",
+      "semester": 3,
+      "credit": 4,
+      "classHours": 3
+    },
+    {
+      "shortName": "EE2031",
+      "fullName": "Electric Circuits",
+      "description": "",
+      "prerequisite": [
+        "PHYS1102"
+      ],
+      "semester": 3,
+      "credit": 5,
+      "classHours": 3
+    },
+    {
+      "shortName": "MATH2055",
+      "fullName": "Differential Equations",
+      "description": "",
+      "semester": 3,
+      "credit": 4,
+      "classHours": 3
+    },
+    {
+      "shortName": "MATH2059",
+      "fullName": "Numerical Methods",
+      "description": "",
+      "prerequisite": [
+        "MATH1001"
+      ],
+      "semester": 3,
+      "credit": 4,
+      "classHours": 3
+    },
+    {
+      "shortName": "CSE2138",
+      "fullName": "Systems Programming",
+      "description": "",
+      "semester": 4,
+      "credit": 7,
+      "classHours": 3
+    },
+    {
+      "shortName": "CSE2246",
+      "fullName": "Analysis of Algorithms",
+      "description": "",
+      "prerequisite": [
+        "CSE2225"
+      ],
+      "semester": 4,
+      "credit": 6,
+      "classHours": 3
+    },
+    {
+      "shortName": "CSE2260",
+      "fullName": "Principles of Programming Languages",
+      "description": "",
+      "prerequisite": [
+        "CSE1242"
+      ],
+      "semester": 4,
+      "credit": 6,
+      "classHours": 3
+    },
+    {
+      "shortName": "EE2032",
+      "fullName": "Electronics",
+      "description": "",
+      "prerequisite": [
+        "EE2031"
+      ],
+      "semester": 4,
+      "credit": 5,
+      "classHours": 3
+    },
+    {
+      "shortName": "STAT2253",
+      "fullName": "Probability and Statistics for Computer Engineering",
+      "description": "",
+      "semester": 4,
+      "credit": 5,
+      "classHours": 3
+    },
+    {
+      "shortName": "CSE3033",
+      "fullName": "Operating Systems",
+      "description": "",
+      "prerequisite": [
+        "CSE2225"
+      ],
+      "semester": 5,
+      "credit": 7,
+      "classHours": 3
+    },
+    {
+      "shortName": "CSE3055",
+      "fullName": "Database Systems",
+      "description": "",
+      "prerequisite": [
+        "CSE2225"
+      ],
+      "semester": 5,
+      "credit": 7,
+      "classHours": 3
+    },
+    {
+      "shortName": "CSE3063",
+      "fullName": "Object-Oriented Software Design",
+      "description": "",
+      "prerequisite": [
+        "CSE1242"
+      ],
+      "semester": 5,
+      "credit": 5,
+      "classHours": 3
+    },
+    {
+      "shortName": "CSE3215",
+      "fullName": "Digital Logic Design",
+      "description": "",
+      "semester": 5,
+      "credit": 6,
+      "classHours": 3
+    },
+    {
+      "shortName": "IE3081",
+      "fullName": "Modeling and Discrete Simulation",
+      "description": "",
+      "prerequisite": [
+        "STAT2253"
+      ],
+      "semester": 5,
+      "credit": 4,
+      "classHours": 3
+    },
+    {
+      "shortName": "COM2202",
+      "fullName": "Technical Communication \u0026 Entrepreneurship",
+      "description": "",
+      "semester": 6,
+      "credit": 2,
+      "classHours": 2
+    },
+    {
+      "shortName": "CSE3044",
+      "fullName": "Software Engineering",
+      "description": "",
+      "prerequisite": [
+        "CSE3055"
+      ],
+      "semester": 6,
+      "credit": 7,
+      "classHours": 5
+    },
+    {
+      "shortName": "CSE3264",
+      "fullName": "Formal Languages and Automata Theory",
+      "description": "",
+      "prerequisite": [
+        "CSE2023"
+      ],
+      "semester": 6,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "shortName": "CSE3038",
+      "fullName": "Computer Organization",
+      "description": "",
+      "prerequisite": [
+        "CSE2138",
+        "CSE3215"
+      ],
+      "semester": 6,
+      "credit": 7,
+      "classHours": 6
+    },
+    {
+      "shortName": "CSE3048",
+      "fullName": "Introduction to Signals and Systems",
+      "description": "",
+      "prerequisite": [
+        "MATH2055"
+      ],
+      "semester": 6,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "shortName": "IE3235",
+      "fullName": "Operations Research",
+      "description": "",
+      "prerequisite": [
+        "MATH2256"
+      ],
+      "semester": 6,
+      "credit": 4,
+      "classHours": 2
+    },
+    {
+      "shortName": "CSE4297",
+      "fullName": "Engineering Project I",
+      "description": "",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "shortName": "CSE4074",
+      "fullName": "Computer Networks",
+      "description": "",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "shortName": "CSE4219",
+      "fullName": "Principles of Embedded System Design",
+      "description": "",
+      "prerequisite": [
+        "CSE3038"
+      ],
+      "semester": 7,
+      "credit": 6,
+      "classHours": 4
+    },
+    {
+      "shortName": "ISG121",
+      "fullName": "Work Safety 1",
+      "description": "",
+      "semester": 7,
+      "credit": 2,
+      "classHours": 2
+    },
+    {
+      "shortName": "CSE4288",
+      "fullName": "Introduction to Machine Learning",
+      "description": "",
+      "prerequisite": [
+        "STAT2253",
+        "MATH2256"
+      ],
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "shortName": "CSE4000",
+      "fullName": "Summer Practice ",
+      "description": "",
+      "semester": 7,
+      "credit": 10,
+      "classHours": 0
+    },
+    {
+      "shortName": "CSE4026",
+      "fullName": "Introduction to Robotics and Control Theory",
+      "description": "",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "shortName": "CSE4040",
+      "fullName": "Cloud Computing",
+      "description": "",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "shortName": "NTE1008",
+      "fullName": "Cinema",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "classHours": 2
+    },
+    {
+      "shortName": "YDA1001",
+      "fullName": "German for Beginners",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "classHours": 2
+    },
+    {
+      "shortName": "YDA1001",
+      "fullName": "German for Beginners",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "classHours": 2
     }
   ],
-  "mandatories": [],
-  "technicalElectives": [],
-  "nonTechnicalElectives": [],
+  "mandatories": [
+    {
+      "dates": [
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Monday"
+        },
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Monday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "courses": [],
+        "reputation": "Dr.Öğr.",
+        "officeHours": [
+          {
+            "startTime": "14:00",
+            "endTime": "14:50",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "15:00",
+            "endTime": "15:50",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Betül",
+        "personSurname": "Boz",
+        "username": "betul",
+        "password": "boz"
+      },
+      "quota": 85,
+      "location": "M2-Z02",
+      "labHours": 0,
+      "shortName": "CSE2023",
+      "fullName": "Discrete Computational Structures",
+      "description": "",
+      "semester": 3,
+      "credit": 6,
+      "classHours": 3
+    },
+    {
+      "dates": [
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Monday"
+        },
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Monday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "courses": [],
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
+            "startTime": "11:30",
+            "endTime": "12:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "13:00",
+            "endTime": "13:50",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Murat Can",
+        "personSurname": "Ganiz",
+        "username": "muratcan",
+        "password": "muratcanganiz"
+      },
+      "quota": 50,
+      "location": "M2-Z01",
+      "labHours": 0,
+      "shortName": "COM2202",
+      "fullName": "Technical Communication \u0026 Entrepreneurship",
+      "description": "",
+      "semester": 6,
+      "credit": 2,
+      "classHours": 2
+    },
+    {
+      "dates": [
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Monday"
+        },
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Monday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "courses": [],
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
+            "startTime": "09:30",
+            "endTime": "10:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "11:20",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Mustafa",
+        "personSurname": "Ağaoglu",
+        "username": "mustafa",
+        "password": "mustafaagaoglu"
+      },
+      "quota": 50,
+      "location": "M2-Z02",
+      "labHours": 0,
+      "shortName": "CSE3044",
+      "fullName": "Software Engineering",
+      "description": "",
+      "prerequisite": [
+        "CSE3055"
+      ],
+      "semester": 6,
+      "credit": 7,
+      "classHours": 5
+    },
+    {
+      "dates": [
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Monday"
+        },
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Monday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "courses": [],
+        "reputation": "Dr.Öğr.",
+        "officeHours": [
+          {
+            "startTime": "14:00",
+            "endTime": "14:50",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "15:00",
+            "endTime": "15:50",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Betül",
+        "personSurname": "Boz",
+        "username": "betul",
+        "password": "boz"
+      },
+      "quota": 50,
+      "location": "M2-Z03",
+      "labHours": 0,
+      "shortName": "CSE3264",
+      "fullName": "Formal Languages and Automata Theory",
+      "description": "",
+      "prerequisite": [
+        "CSE2023"
+      ],
+      "semester": 6,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Monday"
+        },
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Tuesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "courses": [],
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
+            "startTime": "11:30",
+            "endTime": "12:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "13:00",
+            "endTime": "13:50",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Murat Can",
+        "personSurname": "Ganiz",
+        "username": "muratcan",
+        "password": "muratcanganiz"
+      },
+      "quota": 50,
+      "location": "M2-Z04",
+      "labHours": 0,
+      "shortName": "CSE3038",
+      "fullName": "Computer Organization",
+      "description": "",
+      "prerequisite": [
+        "CSE2138",
+        "CSE3215"
+      ],
+      "semester": 6,
+      "credit": 7,
+      "classHours": 6
+    },
+    {
+      "dates": [
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Tuesday"
+        },
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Tuesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "courses": [],
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
+            "startTime": "09:30",
+            "endTime": "10:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "11:20",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Mustafa",
+        "personSurname": "Ağaoglu",
+        "username": "mustafa",
+        "password": "mustafaagaoglu"
+      },
+      "quota": 50,
+      "location": "M2-Z04",
+      "labHours": 0,
+      "shortName": "CSE3048",
+      "fullName": "Introduction to Signals and Systems",
+      "description": "",
+      "prerequisite": [
+        "MATH2055"
+      ],
+      "semester": 6,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Tuesday"
+        },
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Tuesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "courses": [],
+        "reputation": "Dr.Öğr.",
+        "officeHours": [
+          {
+            "startTime": "14:00",
+            "endTime": "14:50",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "15:00",
+            "endTime": "15:50",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Betül",
+        "personSurname": "Boz",
+        "username": "betul",
+        "password": "boz"
+      },
+      "quota": 50,
+      "location": "M2-Z05",
+      "labHours": 0,
+      "shortName": "IE3235",
+      "fullName": "Operations Research",
+      "description": "",
+      "prerequisite": [
+        "MATH2256"
+      ],
+      "semester": 6,
+      "credit": 4,
+      "classHours": 2
+    },
+    {
+      "dates": [
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Tuesday"
+        },
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Tuesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "courses": [],
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
+            "startTime": "11:30",
+            "endTime": "12:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "13:00",
+            "endTime": "13:50",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Murat Can",
+        "personSurname": "Ganiz",
+        "username": "muratcan",
+        "password": "muratcanganiz"
+      },
+      "quota": 50,
+      "location": "M2-Z06",
+      "labHours": 0,
+      "shortName": "CSE4297",
+      "fullName": "Engineering Project I",
+      "description": "",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "courses": [],
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
+            "startTime": "09:30",
+            "endTime": "10:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "11:20",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Mustafa",
+        "personSurname": "Ağaoglu",
+        "username": "mustafa",
+        "password": "mustafaagaoglu"
+      },
+      "quota": 50,
+      "location": "M2-Z01",
+      "labHours": 0,
+      "shortName": "CSE4074",
+      "fullName": "Computer Networks",
+      "description": "",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    }
+  ],
+  "technicalElectives": [
+    {
+      "dates": [
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "courses": [],
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
+            "startTime": "11:30",
+            "endTime": "12:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "13:00",
+            "endTime": "13:50",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Murat Can",
+        "personSurname": "Ganiz",
+        "username": "muratcan",
+        "password": "muratcanganiz"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z02",
+      "shortName": "CSE4026",
+      "fullName": "Introduction to Robotics and Control Theory",
+      "description": "",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "courses": [],
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
+            "startTime": "09:30",
+            "endTime": "10:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "11:20",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Mustafa",
+        "personSurname": "Ağaoglu",
+        "username": "mustafa",
+        "password": "mustafaagaoglu"
+      },
+      "quota": 50,
+      "requiredCredit": 155,
+      "location": "M2-Z03",
+      "shortName": "CSE4040",
+      "fullName": "Cloud Computing",
+      "description": "",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    }
+  ],
+  "nonTechnicalElectives": [
+    {
+      "dates": [
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Thursday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "courses": [],
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
+            "startTime": "09:30",
+            "endTime": "10:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "11:20",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Mustafa",
+        "personSurname": "Ağaoglu",
+        "username": "mustafa",
+        "password": "mustafaagaoglu"
+      },
+      "quota": 50,
+      "location": "M2-Z04",
+      "isRemote": true,
+      "shortName": "NTE1008",
+      "fullName": "Cinema",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "classHours": 2
+    }
+  ],
   "lecturers": [
     {
       "courses": [],
@@ -312,17 +1256,6 @@
                   "classHours": 2
                 },
                 "grade": "AA"
-              },
-              {
-                "course": {
-                  "shortName": "BUS1003",
-                  "fullName": "Entrepreneurship and Innovation",
-                  "description": "",
-                  "semester": 2,
-                  "credit": 3,
-                  "classHours": 2
-                },
-                "grade": "AA"
               }
             ]
           },
@@ -504,17 +1437,6 @@
                   "classHours": 2
                 },
                 "grade": "AA"
-              },
-              {
-                "course": {
-                  "shortName": "BUS1003",
-                  "fullName": "Entrepreneurship and Innovation",
-                  "description": "",
-                  "semester": 2,
-                  "credit": 3,
-                  "classHours": 2
-                },
-                "grade": "AA"
               }
             ]
           },
@@ -693,17 +1615,6 @@
                   "description": "",
                   "semester": 2,
                   "credit": 2,
-                  "classHours": 2
-                },
-                "grade": "AA"
-              },
-              {
-                "course": {
-                  "shortName": "BUS1003",
-                  "fullName": "Entrepreneurship and Innovation",
-                  "description": "",
-                  "semester": 2,
-                  "credit": 3,
                   "classHours": 2
                 },
                 "grade": "AA"
@@ -911,17 +1822,6 @@
                   "classHours": 2
                 },
                 "grade": "AA"
-              },
-              {
-                "course": {
-                  "shortName": "BUS1003",
-                  "fullName": "Entrepreneurship and Innovation",
-                  "description": "",
-                  "semester": 2,
-                  "credit": 3,
-                  "classHours": 2
-                },
-                "grade": "AA"
               }
             ]
           },
@@ -1103,17 +2003,6 @@
                   "classHours": 2
                 },
                 "grade": "AA"
-              },
-              {
-                "course": {
-                  "shortName": "BUS1003",
-                  "fullName": "Entrepreneurship and Innovation",
-                  "description": "",
-                  "semester": 2,
-                  "credit": 3,
-                  "classHours": 2
-                },
-                "grade": "AA"
               }
             ]
           },
@@ -1292,17 +2181,6 @@
                   "description": "",
                   "semester": 2,
                   "credit": 2,
-                  "classHours": 2
-                },
-                "grade": "AA"
-              },
-              {
-                "course": {
-                  "shortName": "BUS1003",
-                  "fullName": "Entrepreneurship and Innovation",
-                  "description": "",
-                  "semester": 2,
-                  "credit": 3,
                   "classHours": 2
                 },
                 "grade": "AA"
