@@ -78,6 +78,34 @@ public class godOfEverything {
                 Course bus1003 = new Course("BUS1003", "Entrepreneurship and Innovation", "", null, 2, 3, 2);
                 // Create TechnicalElective Courses
 
+                /// 3. Semester
+                Course cse2023 = new Course("CSE2023", "Discrete Computational Structures", "", null, 3, 6, 3);
+                Course cse2225 = new Course("CSE2225", "Data Structures", "", new ArrayList<String>(Arrays.asList("CSE1242")), 3, 7, 3);
+                Course econ2004 = new Course("ECON2004", "Engineering Economy", "", null, 3, 4, 3);
+                Course ee2031 = new Course("EE2031", "Electric Circuits", "", new ArrayList<String>(Arrays.asList("PHYS1102")), 3, 5, 3);
+                Course math2055 = new Course("MATH2055", "Differential Equations", "", null, 3, 4, 3);
+                Course math2059 = new Course("MATH2059", "Numerical Methods", "", new ArrayList<String>(Arrays.asList("MATH1001")), 3, 4, 3);
+
+                /// 4. Semester
+                Course cse2138 = new Course("CSE2138", "Systems Programming", "", null, 4, 7, 3);
+                Course cse2246 = new Course("CSE2246", "Analysis of Algorithms", "", new ArrayList<String>(Arrays.asList("CSE2225")), 4, 6, 3);
+                Course cse2260 = new Course("CSE2260", "Principles of Programming Languages", "", new ArrayList<String>(Arrays.asList("CSE1242")), 4, 6, 3);
+                Course ee2032 = new Course("EE2032",    "Electronics", "", new ArrayList<String>(Arrays.asList("EE2031")), 4, 5, 3);
+                Course stat2253 = new Course("STAT2253", "Probability and Statistics for Computer Engineering", "", null, 4, 5, 3);
+
+                /// 5. Semester
+                Course cse3033 = new Course("CSE3033", "Operating Systems", "", new ArrayList<String>(Arrays.asList("CSE2225")), 5, 7, 3);
+                Course cse3055 = new Course("CSE3055", "Database Systems", "", new ArrayList<String>(Arrays.asList("CSE2225")), 5, 7, 3);
+                Course cse3063 = new Course("CSE3063", "Object-Oriented Software Design", "", new ArrayList<String>(Arrays.asList("CSE1242")), 5, 5, 3);
+                Course cse3215 = new Course("CSE3215", "Digital Logic Design", "", null, 5, 6, 3);
+                Course ie3081 = new Course("IE3081", "Modeling and Discrete Simulation", "", new ArrayList<String>(Arrays.asList("STAT2253")), 5, 4, 3);
+
+                //locations -> "M2-Z01" "M2-Z02" "M2-Z03" "M2-Z04" "M2-Z04" "M2-Z05" "M2-Z06" "M2-Z07" 
+
+                /// Mandatory Courses
+                MandatoryCourse cse2023M = new MandatoryCourse(cse2023, new ArrayList<TimeInterval>(Arrays.asList(monday.get(0), monday.get(1))), "1.1", null, 85, locations[1], 0);
+
+
                 // Create Lecturers
                 Lecturer agaoglu = new Lecturer("Mustafa", "Ağaoglu", "mustafa", "mustafaagaoglu", "Doç. Dr.",
                                 new ArrayList<TimeInterval>(Arrays.asList(monday.get(0), monday.get(1))), 10000,
