@@ -1,24 +1,38 @@
 import java.util.ArrayList;
 
-public class TechnicalElective extends Course implements ISection {
+public class NonTechnicalElectiveCourse extends Course implements SectionInterface {
     private ArrayList<TimeInterval> dates;
     private String sectionName;
     private Lecturer lecturer;
     private int quota;
-    private int requiredCredit;
     private String location;
+    private boolean isRemote;
 
-    TechnicalElective(String shortName, String fullName, String description, ArrayList<String> prerequisite,
+    NonTechnicalElectiveCourse(Course course, ArrayList<TimeInterval> dates, String sectionName, Lecturer lecturer,
+            int quota,
+            String location, boolean isRemote) {
+        super(course.getShortName(), course.getFullName(), course.getDescription(), course.getPrerequisite(),
+                course.getSemester(), course.getCredit(), course.getClassHours());
+        this.dates = dates;
+        this.sectionName = sectionName;
+        this.lecturer = lecturer;
+        this.quota = quota;
+        this.location = location;
+        this.isRemote = isRemote;
+
+    }
+
+    NonTechnicalElectiveCourse(String shortName, String fullName, String description, ArrayList<String> prerequisite,
             int semester,
             int credit, int classHours, ArrayList<TimeInterval> dates, String sectionName, Lecturer lecturer,
-            int quota, String location, int requiredCredit) {
+            int quota, String location, boolean isRemote) {
         super(shortName, fullName, description, prerequisite, semester, credit, classHours);
         this.dates = dates;
         this.sectionName = sectionName;
         this.lecturer = lecturer;
         this.quota = quota;
         this.location = location;
-        this.requiredCredit = requiredCredit;
+        this.isRemote = isRemote;
     }
 
     // Interface Methods
@@ -80,23 +94,9 @@ public class TechnicalElective extends Course implements ISection {
                 + "\nPrequisite: " + this.getPrerequisite() + "\nSemester: " + this.getSemester() + "\nCredit: "
                 + this.getCredit() + "\nClass Hours: " + this.getClassHours() + "\nSection Name: "
                 + this.getSectionName() + "\nLecturer: " + this.getLecturer() + "\nQuota: " + this.getQuota()
-                + "\nLocation: " + this.location + "\nRequiredCredit: " + this.requiredCredit;
+                + "\nLocation: " + this.location + "\nIsRemote: " + this.isRemote;
     }
 
     // Class Methods
-    public int getRequiredCredit() {
-        return requiredCredit;
-    }
-
-    public void setRequiredCredit(int requiredCredit) {
-        this.requiredCredit = requiredCredit;
-    }
-
-    public boolean checkRequiredCredit(int totalCredit) {
-        if (totalCredit >= this.requiredCredit) {
-            return true;
-        }
-        return false;
-    }
 
 }

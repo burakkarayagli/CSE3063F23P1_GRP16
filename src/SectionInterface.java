@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-interface ISection {
+interface SectionInterface {
     public boolean isTechnical();
 
     public boolean isMandatory();
