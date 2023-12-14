@@ -428,14 +428,6 @@
       "semester": 1,
       "credit": 2,
       "classHours": 2
-    },
-    {
-      "shortName": "YDA1001",
-      "fullName": "German for Beginners",
-      "description": "",
-      "semester": 1,
-      "credit": 2,
-      "classHours": 2
     }
   ],
   "mandatories": [
@@ -984,6 +976,52 @@
         "reputation": "Doç. Dr.",
         "officeHours": [
           {
+            "startTime": "11:30",
+            "endTime": "12:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "13:00",
+            "endTime": "13:50",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Murat Can",
+        "personSurname": "Ganiz",
+        "username": "muratcan",
+        "password": "muratcanganiz"
+      },
+      "quota": 50,
+      "location": "M2-Z04",
+      "isRemote": true,
+      "shortName": "NTE1008",
+      "fullName": "Cinema",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "classHours": 2
+    },
+    {
+      "dates": [
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Thursday"
+        },
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Thursday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "courses": [],
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
             "startTime": "09:30",
             "endTime": "10:20",
             "dayOfWeek": "Monday"
@@ -1003,9 +1041,9 @@
       },
       "quota": 50,
       "location": "M2-Z04",
-      "isRemote": true,
-      "shortName": "NTE1008",
-      "fullName": "Cinema",
+      "isRemote": false,
+      "shortName": "YDA1001",
+      "fullName": "German for Beginners",
       "description": "",
       "semester": 1,
       "credit": 2,

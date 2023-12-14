@@ -237,7 +237,7 @@ public class godOfEverything {
                 courses.add(nte1008);
                 nonTechnicalElectives.add(nte1008N);
                 courses.add(yda1001);
-                courses.add(yda1001N);
+                nonTechnicalElectives.add(yda1001N);
 
                 // Create Lecturers
                 Lecturer agaoglu = new Lecturer("Mustafa", "Ağaoglu", "mustafa", "mustafaagaoglu", "Doç. Dr.",
@@ -288,7 +288,6 @@ public class godOfEverything {
                         if (lecturersNumber == 0) {
                                 lecturersNumber = lecturers.size() + 1;
                         }
-
                 }
 
                 // Create Students
