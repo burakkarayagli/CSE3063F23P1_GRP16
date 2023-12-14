@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Mandatory extends Course implements ISection {
+public class MandatoryCourse extends Course implements SectionInterface {
     private ArrayList<TimeInterval> dates;
     private String sectionName;
     private Lecturer lecturer;
@@ -8,7 +8,20 @@ public class Mandatory extends Course implements ISection {
     private String location;
     private int labHours;
 
-    Mandatory(String shortName, String fullName, String description, ArrayList<String> prerequisite, int semester,
+    MandatoryCourse(Course course, ArrayList<TimeInterval> dates, String sectionName, Lecturer lecturer, int quota,
+            String location, int labHours) {
+        super(course.getShortName(), course.getFullName(), course.getDescription(), course.getPrerequisite(),
+                course.getSemester(), course.getCredit(), course.getClassHours());
+        this.dates = dates;
+        this.sectionName = sectionName;
+        this.lecturer = lecturer;
+        this.quota = quota;
+        this.location = location;
+        this.labHours = labHours;
+
+    }
+
+    MandatoryCourse(String shortName, String fullName, String description, ArrayList<String> prerequisite, int semester,
             int credit, int classHours, ArrayList<TimeInterval> dates, String sectionName, Lecturer lecturer,
             int quota, String location, int labHours) {
         super(shortName, fullName, description, prerequisite, semester, credit, classHours);
