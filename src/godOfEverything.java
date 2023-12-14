@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class godOfEverything {
 
@@ -74,6 +75,76 @@ public class godOfEverything {
                 Course phys1102 = new Course("PHYS1002", "Physics II", "", null, 2, 4, 2);
                 Course phys1104 = new Course("PHYS1004", "Physics Lab II", "", null, 2, 2, 2);
                 Course trd122 = new Course("TRD122", "Türk Dili II", "", null, 2, 2, 2);
+
+                /// 6. semester
+                Course com2202 = new Course("COM2202", "Technical Communication & Entrepreneurship", "", null, 6, 2, 2);
+                Course cse3044 = new Course("CSE3044", "Software Engineering", "",
+                                new ArrayList<String>(Arrays.asList("CSE3055")), 6, 7, 5);
+                Course cse3264 = new Course("CSE3264", "Formal Languages and Automata Theory", "",
+                                new ArrayList<String>(Arrays.asList("CSE2023")), 6, 5, 4);
+                Course cse3038 = new Course("CSE3038", "Computer Organization", "",
+                                new ArrayList<String>(new ArrayList<>(Arrays.asList("CSE2138", "CSE3215"))), 6, 7, 6);
+                Course cse3048 = new Course("CSE3048", "Introduction to Signals and Systems", "",
+                                new ArrayList<String>(Arrays.asList("MATH2055")), 6, 5, 4);
+                Course ie3235 = new Course("IE3235", "Operations Research", "",
+                                new ArrayList<String>(Arrays.asList("MATH2256")), 6, 4, 2);
+
+                /// 7. semester
+                Course cse4297 = new Course("CSE4297", "Engineering Project I", "", null, 7, 5, 4);
+                Course cse4074 = new Course("CSE4074", "Computer Networks", "", null, 7, 5, 4);
+                Course cse4219 = new Course("CSE4219", "Principles of Embedded System Design", "",
+                                new ArrayList<String>(Arrays.asList("CSE3038")), 7, 6, 4);
+                Course isg121 = new Course("ISG121", "Work Safety 1", "", null, 7, 2, 2);
+                Course cse4288 = new Course("CSE4288", "Introduction to Machine Learning", "",
+                                new ArrayList<String>(Arrays.asList("STAT2253", "MATH2256")), 7, 5, 4);
+                Course cse4000 = new Course("CSE4000", "Summer Practice ", "", null, 7, 10, 0);
+
+                // Manadatory Courses
+                MandatoryCourse com2202M = new MandatoryCourse(com2202,
+                                new ArrayList<TimeInterval>(Arrays.asList(monday.get(0), monday.get(1))), "1.1", null,
+                                50, locations[0], 0);
+                MandatoryCourse cse3044M = new MandatoryCourse(cse3044,
+                                new ArrayList<TimeInterval>(Arrays.asList(monday.get(2), monday.get(3))), "1.1", null,
+                                50, locations[1], 0);
+                MandatoryCourse cse3264M = new MandatoryCourse(cse3264,
+                                new ArrayList<TimeInterval>(Arrays.asList(monday.get(4), monday.get(5))), "1.1", null,
+                                50, locations[2], 0);
+                MandatoryCourse cse3038M = new MandatoryCourse(cse3038,
+                                new ArrayList<TimeInterval>(Arrays.asList(monday.get(6), tuesday.get(0))), "1.1", null,
+                                50, locations[3], 0);
+                MandatoryCourse cse3048M = new MandatoryCourse(cse3048,
+                                new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(1), tuesday.get(2))), "1.1", null,
+                                50, locations[4], 0);
+                MandatoryCourse ie3235M = new MandatoryCourse(ie3235,
+                                new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(3), tuesday.get(4))), "1.1", null,
+                                50, locations[5], 0);
+                MandatoryCourse cse4297M = new MandatoryCourse(cse4297,
+                                new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(5), tuesday.get(6))), "1.1", null,
+                                50, locations[6], 0);
+                MandatoryCourse cse4074M = new MandatoryCourse(cse4074,
+                                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(0), wednesday.get(1))), "1.1",
+                                null, 50, locations[0], 0);
+
+                // Technical Elective Courses
+                Course cse4026 = new Course("CSE4026", "Introduction to Robotics and Control Theory", "", null, 7, 5,
+                                4);
+                TechnicalElectiveCourse cse4026T = new TechnicalElectiveCourse(cse4026,
+                                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(2), wednesday.get(3))), "1.1",
+                                null, 50, locations[1], 165);
+                Course cse4040 = new Course("CSE4040", "Cloud Computing", "", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4040T = new TechnicalElectiveCourse(cse4040,
+                                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(4), wednesday.get(5))), "1.1",
+                                null, 50, locations[2], 155);
+                // Non Technical Elective Courses
+                Course nte1008 = new Course("NTE1008", "Cinema", "", null, 1, 2, 2);
+                NonTechnicalElectiveCourse nte1008N = new NonTechnicalElectiveCourse(nte1008,
+                                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(6), thursday.get(0))), "1.1",
+                                null, 50, locations[3], true);
+                Course yda1001 = new Course("YDA1001", "German for Beginners", "", null, 1, 2, 2);
+                NonTechnicalElectiveCourse yda1001N = new NonTechnicalElectiveCourse(yda1001,
+                                new ArrayList<TimeInterval>(Arrays.asList(thursday.get(1), thursday.get(2))), "1.1",
+                                null, 50, locations[4], false);
+
                 // NonTechnicalElective
                 Course bus1003 = new Course("BUS1003", "Entrepreneurship and Innovation", "", null, 2, 3, 2);
                 // Create TechnicalElective Courses
