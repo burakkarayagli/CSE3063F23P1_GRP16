@@ -285,44 +285,46 @@ public class Json {
         writePretty();
     }
 
-    public ArrayList<CourseSection> readCourseSections() {
-        File file = getParametersFile();
-        ArrayList<CourseSection> courseSections = new ArrayList<CourseSection>();
+    public ArrayList<MandatoryCourse> readMandatoryCourses() {
+        File file = this.getParametersFile();
+        ArrayList<MandatoryCourse> mandatories = new ArrayList<MandatoryCourse>();
         try (Scanner scanner = new Scanner(file, StandardCharsets.UTF_8.name())) {
             String content = scanner.useDelimiter("\\A").next();
             scanner.close();
             JsonParser parser = new JsonParser();
             JsonElement neoJsonElement = parser.parse(content);
             JsonObject jObject = neoJsonElement.getAsJsonObject();
-            JsonArray jCourses = jObject.get("sections").getAsJsonArray();
-            for (int i = 0; i < jCourses.size(); i++) {
+            JsonArray jMandatory = jObject.get("mandatories").getAsJsonArray();
+            for (int i = 0; i < jMandatory.size(); i++) {
                 Gson gson = new Gson();
-                CourseSection courseSection = gson.fromJson(jCourses.get(i), CourseSection.class);
-                courseSections.add(courseSection);
+                MandatoryCourse mandatory = gson.fromJson(jMandatory.get(i), MandatoryCourse.class);
+                mandatories.add(mandatory);
             }
-        } catch (IOException e) {
+        } catch (
+
+        IOException e) {
             e.printStackTrace();
         }
-        return courseSections;
+        return mandatories;
     }
 
-    public void writeCourseSections(ArrayList<CourseSection> courseSections) {
-        File file = getParametersFile();
+    public void writeMandatoryCourses(ArrayList<MandatoryCourse> mandatories) {
+        File file = this.getParametersFile();
         try (Scanner scanner = new Scanner(file, StandardCharsets.UTF_8.name())) {
             String content = scanner.useDelimiter("\\A").next();
             scanner.close();
-            String sCourseSections = "";
-            for (int i = 0; i < courseSections.size(); i++) {
-                CourseSection courseSection = courseSections.get(i);
+            String sMandatories = "";
+            for (int i = 0; i < mandatories.size(); i++) {
+                MandatoryCourse mandatory = mandatories.get(i);
                 Gson gson = new GsonBuilder().setPrettyPrinting().create();
-                sCourseSections += gson.toJson(courseSection, CourseSection.class);
-                if (i + 1 < courseSections.size())
-                    sCourseSections += ",\n";
+                sMandatories += gson.toJson(mandatory, MandatoryCourse.class);
+                if (i + 1 < mandatories.size())
+                    sMandatories += ",\n";
             }
-            sCourseSections = "[\n" + sCourseSections + "\n]";
-            String updatedString = updateValue("sections", sCourseSections, content);
+            sMandatories = "[\n" + sMandatories + "\n]";
+            String updatedString = updateValue("mandatories", sMandatories, content);
             FileWriter writer = new FileWriter(file);
-            writer.write(updatedString); // just an example how you can write a String to it
+            writer.write(updatedString); // just an example how you can write a String it
             writer.flush();
             writer.close();
         } catch (
@@ -333,29 +335,97 @@ public class Json {
         writePretty();
     }
 
-    public void writeMandatories(ArrayList<Mandatory> mandatories) {
-
-        File file = new File("database.back/newParameters.json");
+    public ArrayList<TechnicalElectiveCourse> readTechnicalElectiveCourse() {
+        File file = this.getParametersFile();
+        ArrayList<TechnicalElectiveCourse> technicalElectives = new ArrayList<TechnicalElectiveCourse>();
         try (Scanner scanner = new Scanner(file, StandardCharsets.UTF_8.name())) {
             String content = scanner.useDelimiter("\\A").next();
             scanner.close();
-            String sMandatories = "";
-            for (int i = 0; i < mandatories.size(); i++) {
-                Mandatory mandatory = mandatories.get(i);
-                Gson gson = new GsonBuilder().setPrettyPrinting().create();
-                sMandatories += gson.toJson(mandatory, Mandatory.class);
-                if (i + 1 < mandatories.size())
-                    sMandatories += ",\n";
+            JsonParser parser = new JsonParser();
+            JsonElement neoJsonElement = parser.parse(content);
+            JsonObject jObject = neoJsonElement.getAsJsonObject();
+            JsonArray jTechnicalElectives = jObject.get("technicalElectives").getAsJsonArray();
+            for (int i = 0; i < jTechnicalElectives.size(); i++) {
+                Gson gson = new Gson();
+                TechnicalElectiveCourse technicalElective = gson.fromJson(jTechnicalElectives.get(i),
+                        TechnicalElectiveCourse.class);
+                technicalElectives.add(technicalElective);
             }
-            sMandatories = "[\n" + sMandatories + "\n]";
-            String updatedString = updateValue("mandatories", sMandatories, content);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return technicalElectives;
+    }
+
+    public void writeTechnicalElectiveCourse(ArrayList<TechnicalElectiveCourse> technicalElectives) {
+        File file = this.getParametersFile();
+        try (Scanner scanner = new Scanner(file, StandardCharsets.UTF_8.name())) {
+            String content = scanner.useDelimiter("\\A").next();
+            scanner.close();
+            String sTechnicalElectives = "";
+            for (int i = 0; i < technicalElectives.size(); i++) {
+                TechnicalElectiveCourse technicalElective = technicalElectives.get(i);
+                Gson gson = new GsonBuilder().setPrettyPrinting().create();
+                sTechnicalElectives += gson.toJson(technicalElective, TechnicalElectiveCourse.class);
+                if (i + 1 < technicalElectives.size())
+                    sTechnicalElectives += ",\n";
+            }
+            sTechnicalElectives = "[\n" + sTechnicalElectives + "\n]";
+            String updatedString = updateValue("technicalElectives", sTechnicalElectives, content);
             FileWriter writer = new FileWriter(file);
-            writer.write(updatedString); // just an example how you can write a String to it
+            writer.write(updatedString); // just an example how you can write a String it
             writer.flush();
             writer.close();
         } catch (
 
         IOException e) {
+            e.printStackTrace();
+        }
+        writePretty();
+    }
+
+    public ArrayList<NonTechnicalElectiveCourse> readNonTechnicalElectiveCourses() {
+        File file = this.getParametersFile();
+        ArrayList<NonTechnicalElectiveCourse> nonTechnicalElectives = new ArrayList<NonTechnicalElectiveCourse>();
+        try (Scanner scanner = new Scanner(file, StandardCharsets.UTF_8.name())) {
+            String content = scanner.useDelimiter("\\A").next();
+            scanner.close();
+            JsonParser parser = new JsonParser();
+            JsonElement neoJsonElement = parser.parse(content);
+            JsonObject jObject = neoJsonElement.getAsJsonObject();
+            JsonArray jNonTechnicalElectives = jObject.get("nonTechnicalElectives").getAsJsonArray();
+            for (int i = 0; i < jNonTechnicalElectives.size(); i++) {
+                Gson gson = new Gson();
+                NonTechnicalElectiveCourse nonTechnicalElective = gson.fromJson(jNonTechnicalElectives.get(i),
+                        NonTechnicalElectiveCourse.class);
+                nonTechnicalElectives.add(nonTechnicalElective);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return nonTechnicalElectives;
+    }
+
+    public void writeNonTechnicalElectiveCourse(ArrayList<NonTechnicalElectiveCourse> nonTechnicalElectives) {
+        File file = this.getParametersFile();
+        try (Scanner scanner = new Scanner(file, StandardCharsets.UTF_8.name())) {
+            String content = scanner.useDelimiter("\\A").next();
+            scanner.close();
+            String sNonTechnicalElectives = "";
+            for (int i = 0; i < nonTechnicalElectives.size(); i++) {
+                NonTechnicalElectiveCourse nonTechnicalElective = nonTechnicalElectives.get(i);
+                Gson gson = new GsonBuilder().setPrettyPrinting().create();
+                sNonTechnicalElectives += gson.toJson(nonTechnicalElective, NonTechnicalElectiveCourse.class);
+                if (i + 1 < nonTechnicalElectives.size())
+                    sNonTechnicalElectives += ",\n";
+            }
+            sNonTechnicalElectives = "[\n" + sNonTechnicalElectives + "\n]";
+            String updatedString = updateValue("nonTechnicalElectives", sNonTechnicalElectives, content);
+            FileWriter writer = new FileWriter(file);
+            writer.write(updatedString); // just an example how you can write a String it
+            writer.flush();
+            writer.close();
+        } catch (IOException e) {
             e.printStackTrace();
         }
         writePretty();
