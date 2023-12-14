@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public abstract class Course {
+public class Course {
     private String shortName;
     private String fullName;
     private String description;
@@ -95,7 +95,10 @@ public abstract class Course {
         }
     }
 
-    public abstract String toString();
+    public String toString() {
+        return "Course Code: " + this.shortName + "\nCourse Name:" + this.fullName + "\nDescription: "
+                + this.description + "\nPrerequisite: " + this.prerequisite + "\nSemester: " + this.semester
+                + "\nCredit: " + this.credit + "\nClass Hours: " + this.classHours;
+    };
 
-    // public abstract String getInfo();
 }

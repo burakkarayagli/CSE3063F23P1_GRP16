@@ -333,6 +333,34 @@ public class Json {
         writePretty();
     }
 
+    public void writeMandatories(ArrayList<Mandatory> mandatories) {
+
+        File file = new File("database.back/newParameters.json");
+        try (Scanner scanner = new Scanner(file, StandardCharsets.UTF_8.name())) {
+            String content = scanner.useDelimiter("\\A").next();
+            scanner.close();
+            String sMandatories = "";
+            for (int i = 0; i < mandatories.size(); i++) {
+                Mandatory mandatory = mandatories.get(i);
+                Gson gson = new GsonBuilder().setPrettyPrinting().create();
+                sMandatories += gson.toJson(mandatory, Mandatory.class);
+                if (i + 1 < mandatories.size())
+                    sMandatories += ",\n";
+            }
+            sMandatories = "[\n" + sMandatories + "\n]";
+            String updatedString = updateValue("mandatories", sMandatories, content);
+            FileWriter writer = new FileWriter(file);
+            writer.write(updatedString); // just an example how you can write a String to it
+            writer.flush();
+            writer.close();
+        } catch (
+
+        IOException e) {
+            e.printStackTrace();
+        }
+        writePretty();
+    }
+
     // public static void main(String[] args) {
     // Json json = new Json();
     // json.writeStudents(json.readStudents());

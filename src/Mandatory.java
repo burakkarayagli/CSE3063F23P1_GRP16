@@ -72,7 +72,7 @@ public class Mandatory extends Course implements ISection {
         this.quota = quota;
     }
 
-    // Abstract Methods
+    // Class Methods
     public String toString() {
         return "Mandatory Course: " + this.getFullName() + "\nCode: " + this.getShortName() + "\nDescription:"
                 + this.getDescription()
@@ -82,7 +82,6 @@ public class Mandatory extends Course implements ISection {
                 + "\nLocation: " + this.location + "\nLab Hours: " + this.labHours;
     }
 
-    // Class Methods
     public boolean hasLabs() {
         if (this.labHours > 0) {
             return true;
