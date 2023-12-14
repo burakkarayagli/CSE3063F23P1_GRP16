@@ -71,7 +71,7 @@ public class Json {
         return returnVal.toString();
     }
 
-    private void writePrity() {
+    private void writePretty() {
         File file = getParametersFile();
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         try (Scanner scanner = new Scanner(file, StandardCharsets.UTF_8.name())) {
@@ -180,7 +180,7 @@ public class Json {
         IOException e) {
             e.printStackTrace();
         }
-        writePrity();
+        writePretty();
     }
 
     public ArrayList<Lecturer> readLecturers() {
@@ -231,7 +231,7 @@ public class Json {
         IOException e) {
             e.printStackTrace();
         }
-        writePrity();
+        writePretty();
     }
 
     public ArrayList<Advisor> readAdvisors() {
@@ -282,7 +282,7 @@ public class Json {
         IOException e) {
             e.printStackTrace();
         }
-        writePrity();
+        writePretty();
     }
 
     public ArrayList<CourseSection> readCourseSections() {
@@ -330,7 +330,7 @@ public class Json {
         IOException e) {
             e.printStackTrace();
         }
-        writePrity();
+        writePretty();
     }
 
     // public static void main(String[] args) {
