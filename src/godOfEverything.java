@@ -78,6 +78,15 @@ public class godOfEverything {
                 Course bus1003 = new Course("BUS1003", "Entrepreneurship and Innovation", "", null, 2, 3, 2);
                 // Create TechnicalElective Courses
 
+                courses.add(ata121);
+                courses.add(mbg1201);
+                courses.add(cse1200);
+                courses.add(cse1241);
+                courses.add(math1001);
+                courses.add(phys1101);
+                courses.add(phys1103);
+                courses.add(trd121);
+
                 // Create Lecturers
                 Lecturer agaoglu = new Lecturer("Mustafa", "Ağaoglu", "mustafa", "mustafaagaoglu", "Doç. Dr.",
                                 new ArrayList<TimeInterval>(Arrays.asList(monday.get(0), monday.get(1))), 10000,
@@ -98,7 +107,7 @@ public class godOfEverything {
                 // Assign lecturer to courses
                 int lecturersNumber = lecturers.size();
                 for (int i = 0; i < mandatoryCourses.size(); i++) {
-                        Mandatory course = mandatoryCourses.get(i);
+                        MandatoryCourse course = mandatoryCourses.get(i);
                         course.setLecturer(lecturers.get(lecturersNumber));
                         lecturers.get(lecturersNumber).addCourse(course);
                         if (lecturersNumber == 0) {
@@ -108,7 +117,7 @@ public class godOfEverything {
                 }
                 lecturersNumber = nonTechnicalElectives.size();
                 for (int i = 0; i < nonTechnicalElectives.size(); i++) {
-                        NonTechnicalElective course = nonTechnicalElectives.get(i);
+                        NonTechnicalElectiveCourse course = nonTechnicalElectives.get(i);
                         course.setLecturer(lecturers.get(lecturersNumber));
                         lecturers.get(lecturersNumber).addCourse(course);
                         if (lecturersNumber == 0) {
@@ -118,7 +127,7 @@ public class godOfEverything {
                 }
                 lecturersNumber = technicalElectives.size();
                 for (int i = 0; i < technicalElectives.size(); i++) {
-                        TechnicalElective course = technicalElectives.get(i);
+                        TechnicalElectiveCourse course = technicalElectives.get(i);
                         course.setLecturer(lecturers.get(lecturersNumber));
                         lecturers.get(lecturersNumber).addCourse(course);
                         if (lecturersNumber == 0) {
@@ -141,40 +150,54 @@ public class godOfEverything {
                                                                 new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
                                                                 new Grade(trd122, "AA"),
                                                                 new Grade(bus1003, "AA"))));
-                // Student kokur = new Student("Hakkı", "Kokur", "hakki", "hakkikokur",
-                // "Maltepe/Istanbul", "5315274392", 5, 2020,
-                // false, new ArrayList<Course>(), transcript);
-                // Student karayagli = new Student("Burak", "Karayağlı", "burak",
-                // "burakkarayagli",
-                // "Kartal/Istanbul", "5312347654", 5, 2021,
-                // false, new ArrayList<Course>(), transcript);
-                // Student akman = new Student("Barış Giray", "Akman", "barisgiray",
-                // "barisgirayakman",
-                // "Tuzla/Istanbul", "5345274592", 5, 2021,
-                // false, new ArrayList<Course>(), transcript);
-                // Student ozgen = new Student("Efe", "Özgen", "efe", "efeozgen",
-                // "Bostancı/Istanbul", "5365544592", 5, 2021,
-                // false, new ArrayList<Course>(), transcript);
-                // Student ozkan = new Student("Musa", "Özkan", "musa", "musaozkan",
-                // "Ataşehir/Istanbul", "5305244392", 5, 2021,
-                // false, new ArrayList<Course>(), transcript);
-                // Student unal = new Student("Tamer", "Unal", "tamer", "tamerunal",
-                // "Üsküdar/Istanbul", "5375344792", 5, 2021,
-                // false, new ArrayList<Course>(), transcript);
+                Student kokur = new Student("Hakkı", "Kokur", "hakki", "hakkikokur",
+                                "Maltepe/Istanbul", "5315274392", 5, 2020,
+                                "", new ArrayList<Course>(), transcript);
+                Student karayagli = new Student("Burak", "Karayağlı", "burak",
+                                "burakkarayagli",
+                                "Kartal/Istanbul", "5312347654", 5, 2021,
+                                "", new ArrayList<Course>(), transcript);
+                Student akman = new Student("Barış Giray", "Akman", "barisgiray",
+                                "barisgirayakman",
+                                "Tuzla/Istanbul", "5345274592", 5, 2021,
+                                "", new ArrayList<Course>(), transcript);
+                Student ozgen = new Student("Efe", "Özgen", "efe", "efeozgen",
+                                "Bostancı/Istanbul", "5365544592", 5, 2021,
+                                "", new ArrayList<Course>(), transcript);
+                Student ozkan = new Student("Musa", "Özkan", "musa", "musaozkan",
+                                "Ataşehir/Istanbul", "5305244392", 5, 2021,
+                                "", new ArrayList<Course>(), transcript);
+                Student unal = new Student("Tamer", "Unal", "tamer", "tamerunal",
+                                "Üsküdar/Istanbul", "5375344792", 5, 2021,
+                                "", new ArrayList<Course>(), transcript);
+
+                students.add(kokur);
+                students.add(karayagli);
+                students.add(akman);
+                students.add(ozgen);
+                students.add(ozkan);
+                students.add(unal);
 
                 // Create Advisors
                 // fatmacorutergin, alihaydar, mujdat
+                Advisor fatmaCorutErgin = new Advisor("Fatma Corut", "Ergin", "fatmacorut", "fatmacorutergin",
+                                "Dr.Öğr.Üyesi",
+                                new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(0), tuesday.get(1))), 10000,
+                                "active", new ArrayList<>(Arrays.asList(kokur, karayagli, akman)));
+                Advisor aliHaydar = new Advisor("Ali", "Haydar", "alihaydar", "alihaydar", "Doç.Dr.",
+                                new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(2), tuesday.get(3))), 10000,
+                                "active", new ArrayList<>(Arrays.asList(ozgen, ozkan, unal)));
 
-                mandatoryCourses.add(ata121);
-                mandatoryCourses.add(mbg1201);
-                mandatoryCourses.add(cse1200);
-                mandatoryCourses.add(cse1241);
-                mandatoryCourses.add(math1001);
-                mandatoryCourses.add(phys1101);
-                mandatoryCourses.add(phys1103);
-                mandatoryCourses.add(trd121);
+                advisors.add(fatmaCorutErgin);
+                advisors.add(aliHaydar);
 
                 Json json = new Json();
-                json.writeMandatories(mandatoryCourses);
+                json.writeCourses(courses);
+                json.writeMandatoryCourses(mandatoryCourses);
+                json.writeTechnicalElectiveCourse(technicalElectives);
+                json.writeNonTechnicalElectiveCourse(nonTechnicalElectives);
+                json.writeLecturers(lecturers);
+                json.writeStudents(students);
+                json.writeAdvisors(advisors);
         }
 }

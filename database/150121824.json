@@ -1,10 +1,10 @@
 {
-  "address": "Cevizli/Istanbul",
-  "phoneNumber": "1234567889",
-  "studentYear": 3,
+  "address": "Kartal/Istanbul",
+  "phoneNumber": "5312347654",
+  "semester": 5,
   "entranceYear": 2021,
-  "isApproved": true,
-  "courses": [],
+  "status": "",
+  "selectedCourses": [],
   "transcript": {
     "listGrades": [
       {
@@ -12,25 +12,42 @@
           "shortName": "ATA121",
           "fullName": "Atatürk İlkeleri ve İnkılap Tarihi I",
           "description": "",
-          "prerequisite": ""
+          "semester": 1,
+          "credit": 2,
+          "classHours": 2
         },
-        "grade": "BA"
+        "grade": "AA"
+      },
+      {
+        "course": {
+          "shortName": "MBG1201",
+          "fullName": "Introduction to Modern Biology",
+          "description": "",
+          "semester": 1,
+          "credit": 5,
+          "classHours": 3
+        },
+        "grade": "AA"
       },
       {
         "course": {
           "shortName": "CSE1200",
           "fullName": "Introduction to Computer Engineering",
           "description": "",
-          "prerequisite": ""
+          "semester": 1,
+          "credit": 4,
+          "classHours": 3
         },
-        "grade": "BC"
+        "grade": "AA"
       },
       {
         "course": {
           "shortName": "CSE1241",
           "fullName": "Computer Programming I",
           "description": "",
-          "prerequisite": ""
+          "semester": 1,
+          "credit": 6,
+          "classHours": 4
         },
         "grade": "AA"
       },
@@ -39,34 +56,31 @@
           "shortName": "MATH1001",
           "fullName": "Calculus I",
           "description": "",
-          "prerequisite": ""
+          "semester": 1,
+          "credit": 6,
+          "classHours": 2
         },
-        "grade": "CC"
+        "grade": "AA"
       },
       {
         "course": {
-          "shortName": "MBG1201",
-          "fullName": "Introduction to Modern Biology",
-          "description": "",
-          "prerequisite": ""
-        },
-        "grade": "BC"
-      },
-      {
-        "course": {
-          "shortName": "PHYS1101",
+          "shortName": "PHYS1001",
           "fullName": "Physics I",
           "description": "",
-          "prerequisite": ""
+          "semester": 1,
+          "credit": 4,
+          "classHours": 2
         },
-        "grade": "DC"
+        "grade": "AA"
       },
       {
         "course": {
-          "shortName": "PHYS1103",
+          "shortName": "PHYS1003",
           "fullName": "Physics Lab I",
           "description": "",
-          "prerequisite": ""
+          "semester": 1,
+          "credit": 2,
+          "classHours": 2
         },
         "grade": "AA"
       },
@@ -75,7 +89,9 @@
           "shortName": "TRD121",
           "fullName": "Türk Dili I",
           "description": "",
-          "prerequisite": ""
+          "semester": 1,
+          "credit": 2,
+          "classHours": 2
         },
         "grade": "AA"
       },
@@ -84,52 +100,64 @@
           "shortName": "ATA122",
           "fullName": "Atatürk İlkeleri ve İnkılap Tarihi II",
           "description": "",
-          "prerequisite": ""
+          "semester": 2,
+          "credit": 2,
+          "classHours": 2
         },
-        "grade": "BA"
+        "grade": "AA"
       },
       {
         "course": {
-          "shortName": "CSE1242",
+          "shortName": "CSE1241",
           "fullName": "Computer Programming II",
           "description": "",
-          "prerequisite": ""
+          "semester": 2,
+          "credit": 6,
+          "classHours": 4
         },
-        "grade": "DC"
+        "grade": "AA"
       },
       {
         "course": {
           "shortName": "MATH1002",
           "fullName": "Calculus II",
           "description": "",
-          "prerequisite": ""
+          "semester": 2,
+          "credit": 6,
+          "classHours": 2
         },
-        "grade": "BC"
+        "grade": "AA"
       },
       {
         "course": {
           "shortName": "MATH2256",
           "fullName": "Linear Algebra for Computer Engineering",
           "description": "",
-          "prerequisite": ""
+          "semester": 2,
+          "credit": 5,
+          "classHours": 3
         },
-        "grade": "CC"
+        "grade": "AA"
       },
       {
         "course": {
-          "shortName": "PHYS1102",
+          "shortName": "PHYS1002",
           "fullName": "Physics II",
           "description": "",
-          "prerequisite": ""
+          "semester": 2,
+          "credit": 4,
+          "classHours": 2
         },
-        "grade": "BC"
+        "grade": "AA"
       },
       {
         "course": {
-          "shortName": "PHYS1104",
+          "shortName": "PHYS1004",
           "fullName": "Physics Lab II",
           "description": "",
-          "prerequisite": ""
+          "semester": 2,
+          "credit": 2,
+          "classHours": 2
         },
         "grade": "AA"
       },
@@ -138,97 +166,20 @@
           "shortName": "TRD122",
           "fullName": "Türk Dili II",
           "description": "",
-          "prerequisite": ""
+          "semester": 2,
+          "credit": 2,
+          "classHours": 2
         },
         "grade": "AA"
       },
       {
         "course": {
-          "shortName": "CSE2023",
-          "fullName": "Discrete Computational Structures",
+          "shortName": "BUS1003",
+          "fullName": "Entrepreneurship and Innovation",
           "description": "",
-          "prerequisite": ""
-        },
-        "grade": "AA"
-      },
-      {
-        "course": {
-          "shortName": "CSE2225",
-          "fullName": "Data Structures",
-          "description": "",
-          "prerequisite": ""
-        },
-        "grade": "AA"
-      },
-      {
-        "course": {
-          "shortName": "ECON2004",
-          "fullName": "Engineering Economy",
-          "description": "",
-          "prerequisite": ""
-        },
-        "grade": "AA"
-      },
-      {
-        "course": {
-          "shortName": "EE2031",
-          "fullName": "Electric Circuits",
-          "description": "",
-          "prerequisite": ""
-        },
-        "grade": "AA"
-      },
-      {
-        "course": {
-          "shortName": "MATH2055",
-          "fullName": "Differential Equations",
-          "description": "",
-          "prerequisite": ""
-        },
-        "grade": "AA"
-      },
-      {
-        "course": {
-          "shortName": "MATH2059",
-          "fullName": "Numerical Methods",
-          "description": "",
-          "prerequisite": ""
-        },
-        "grade": "AA"
-      },
-      {
-        "course": {
-          "shortName": "CSE2138",
-          "fullName": "Systems Programming",
-          "description": "",
-          "prerequisite": ""
-        },
-        "grade": "AA"
-      },
-      {
-        "course": {
-          "shortName": "CSE2246",
-          "fullName": "Analysis of Algorithms",
-          "description": "",
-          "prerequisite": ""
-        },
-        "grade": "AA"
-      },
-      {
-        "course": {
-          "shortName": "CSE2260",
-          "fullName": "Principles of Programming Languages",
-          "description": "",
-          "prerequisite": ""
-        },
-        "grade": "AA"
-      },
-      {
-        "course": {
-          "shortName": "EE2032",
-          "fullName": "Electronics",
-          "description": "",
-          "prerequisite": ""
+          "semester": 2,
+          "credit": 3,
+          "classHours": 2
         },
         "grade": "AA"
       }
