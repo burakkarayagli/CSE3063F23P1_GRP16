@@ -1,6 +1,7 @@
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Advisor extends Staff {
 
@@ -32,6 +33,35 @@ public class Advisor extends Staff {
 
     public boolean deleteStudent(Student student) {
         return students.remove(student);
+    }
+
+    // It provides adding or dropping the course of the student by the advisor.
+    public void studentCourseOrganization(){
+        Scanner input = new Scanner(System.in);
+        int num = 0;
+        for(int i = 0;i<students.size();i++){
+            System.out.println("Eligible Students");
+            System.out.println("Please select one of them");
+            System.out.println((i+1)+" "+students.get(i).getFullName());
+
+        }
+        num = input.nextInt();
+        Student student = students.get(num-1);
+        ArrayList<Course> combinedCourseList = getCombinedCourses(student);
+        for(int i = 0;i<combinedCourseList.size();i++){
+            System.out.println((i+1)+" "+combinedCourseList.get(i).getFullName());
+        }
+        int selection = input.nextInt();
+        Course chosenCourse = combinedCourseList.get(selection-1);
+        if(student.getSelectedCourses().contains(chosenCourse)){
+            System.out.println("Course chosen by the student has been dropped.");
+            student.dropCourse(chosenCourse);
+        }
+        else{
+            System.out.println("Course has been added to the list of the student.");
+            student.addCourse(chosenCourse);
+        }
+        input.close();
     }
 
     public ArrayList<Course> getCombinedCourses(Student student) {

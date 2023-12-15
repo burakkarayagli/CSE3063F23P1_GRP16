@@ -22,6 +22,10 @@ public abstract class Person {
         return personName;
     }
 
+    public String getFullName(){
+        return this.personName+" "+this.personSurname;
+    }
+
     public void setPersonName(String personName) {
         this.personName = personName;
     }
