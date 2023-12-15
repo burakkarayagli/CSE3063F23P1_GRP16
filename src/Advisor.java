@@ -47,7 +47,7 @@ public class Advisor extends Staff {
         return combinedCourses;
     }
 
-    public boolean approveStudents(Student student, String courseSelections) {
+    public boolean approveStudent(Student student, String courseSelections) {
         courseSelections = courseSelections.replaceAll("[.\\s]", "");
 
         if(courseSelections.equals("*")) {
@@ -79,7 +79,7 @@ public class Advisor extends Staff {
         return true;
     }
 
-    // public boolean rejectStudents(Student student) {
+    // public boolean rejectStudent(Student student) {
 
     // }
     
