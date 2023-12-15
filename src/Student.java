@@ -114,11 +114,9 @@ public class Student extends Person {
     public ArrayList<Course> getAvailableCourses() {
         ArrayList<Course> availableCourses = new ArrayList<Course>();
 
-        ArrayList<Course> allCourseSections = getAllCourses();
-        for (Course course : allCourseSections) {
-            if (checkStudentAlreadySelectedCourse(course) == false &&
-                    checkPrerequisite(course) == true &&
-                    checkSemesterOfCourse(course) == true) {
+        ArrayList<Course> allCourse = getAllCourses();
+        for (Course course : allCourse) {
+            if (studentCanTakeCourse(course)) {
                 availableCourses.add(course);
             }
         }
@@ -126,47 +124,120 @@ public class Student extends Person {
         return availableCourses;
     }
 
-    public ArrayList<Course> getAllCourses() {
+    private boolean studentCanTakeCourse(Course course) {
+        if (checkStudentAlreadySelectedCourse(course) == false &&
+                checkPrerequisite(course) == true &&
+                checkSemesterOfCourse(course) == true &&
+                checkStudentPassedCourse(course) == false) {
+            return true;
+        }
 
-        Json json = new Json();
-        ArrayList<CourseSection> allCourseSections = json.readCourseSections();
+        else {
+            return false;
+        }
+    }
+
+    public ArrayList<Course> getAllCourses() {
         ArrayList<Course> allCourses = new ArrayList<Course>();
 
-        allCourses.addAll(allCourseSections);
+        Json json = new Json();
+        allCourses.addAll(json.readMandatoryCourses());
+        allCourses.addAll(json.readTechnicalElectiveCourse());
+        allCourses.addAll(json.readNonTechnicalElectiveCourses());
+
         return allCourses;
     }
 
     public String getWarnings() {
 
-        return "";
+        String warningString = "";
+
+        if (checkCreditLimit() == false) {
+            warningString += "========Student has exceeded the credit limit.=========\n";
+            warningString += "Total credit: " + getTotalCreditOfSelectedCourses() + "\n";
+            warningString += "Max credit: 30\n";
+            warningString += "========================================================\n";
+        }
+
+        // TODO: revise this function after merge
+        if (checkOverlappingCourses().size() > 0) {
+            warningString += "========Student has overlapping courses.=========\n";
+            for (ArrayList<Course> overlappingCourses : checkOverlappingCourses()) {
+                warningString += "Overlapping courses: ";
+                for (Course course : overlappingCourses) {
+                    warningString += course.getFullName() + " (" + course.getShortName() + "), ";
+                }
+                warningString += "\n";
+            }
+            warningString += "========================================================\n";
+        }
+
+        return warningString;
     }
 
-    public int getTotalCredit() {
+    private int getTotalCreditOfSelectedCourses() {
+        int totalCredit = 0;
 
-        return 0;
+        for (Course course : selectedCourses) {
+            totalCredit += course.getCredit();
+        }
+
+        return totalCredit;
     }
 
-    public boolean checkCredits() {
-        return false;
+    // Returns true if the student has less than max credit
+    public boolean checkCreditLimit() {
+        if (getTotalCreditOfSelectedCourses() > 30) {
+            return false;
+        }
+
+        else {
+            return true;
+        }
     }
 
+    // Returns true if the student has already selected the course
     public boolean checkStudentAlreadySelectedCourse(Course course) {
-        return false;
+        if (selectedCourses.contains(course)) {
+            return true;
+        }
+
+        else {
+            return false;
+        }
     }
 
+    // Returns true if the student passed the prerequisite courses
     public boolean checkPrerequisite(Course course) {
-        return false;
+        if (course.getPrerequisite().isEmpty()) {
+            return true;
+        }
+
+        else {
+            for (String prerequisite : course.getPrerequisite()) {
+                if (checkStudentPassedCourseWithShortName(prerequisite) == false) {
+                    return false;
+                }
+            }
+
+            return true;
+        }
     }
 
+    // Returns true if student has greater or equal semester than the course
     public boolean checkSemesterOfCourse(Course course) {
-        return false;
+        if (course.getSemester() <= this.semester) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     // Returns true if the course is in the transcript(student has taken the course
     // before and passed)
-    private boolean checkCourseInTranscript(Course course) {
+    public boolean checkStudentPassedCourse(Course course) {
         for (Grade grade : transcript.getGradeList()) {
-            if (grade.getCourse() == course) {
+            if (grade.getCourse().getShortName().equals(course.getShortName()) && grade.getGrade() != "FF") {
                 return true;
             }
         }
@@ -174,7 +245,13 @@ public class Student extends Person {
         return false;
     }
 
-    public boolean sendCoursesForApproval() {
+    public boolean checkStudentPassedCourseWithShortName(String courseShortName) {
+        for (Grade grade : transcript.getGradeList()) {
+            if (grade.getCourse().getShortName().equals(courseShortName) && grade.getGrade() != "FF") {
+                return true;
+            }
+        }
+
         return false;
     }
 
@@ -183,48 +260,44 @@ public class Student extends Person {
 
         ArrayList<Course> allCourseSections = getSelectedCourses();
 
-        for(int i = 0; i < allCourseSections.size(); i++) {
+        for (int i = 0; i < allCourseSections.size(); i++) {
 
             Course course1 = allCourseSections.get(i);
             ArrayList<TimeInterval> dates1 = new ArrayList<>();
 
-            for(int j = i + 1; j < allCourseSections.size(); j++) {
+            for (int j = i + 1; j < allCourseSections.size(); j++) {
 
                 Course course2 = allCourseSections.get(j);
                 ArrayList<TimeInterval> dates2 = new ArrayList<>();
 
-                if(allCourseSections.get(i) instanceof MandatoryCourse) {
+                if (allCourseSections.get(i) instanceof MandatoryCourse) {
                     course1 = (MandatoryCourse) allCourseSections.get(i);
                     dates1 = ((MandatoryCourse) allCourseSections.get(i)).getDates();
-                }
-                else if(allCourseSections.get(i) instanceof TechnicalElectiveCourse) {
+                } else if (allCourseSections.get(i) instanceof TechnicalElectiveCourse) {
                     course1 = (TechnicalElectiveCourse) allCourseSections.get(i);
                     dates1 = ((TechnicalElectiveCourse) allCourseSections.get(i)).getDates();
-                }
-                else if(allCourseSections.get(i) instanceof NonTechnicalElectiveCourse) {
+                } else if (allCourseSections.get(i) instanceof NonTechnicalElectiveCourse) {
                     course1 = (NonTechnicalElectiveCourse) allCourseSections.get(i);
                     dates1 = ((NonTechnicalElectiveCourse) allCourseSections.get(i)).getDates();
                 }
-                if(allCourseSections.get(j) instanceof MandatoryCourse) {
+                if (allCourseSections.get(j) instanceof MandatoryCourse) {
                     course2 = (MandatoryCourse) allCourseSections.get(i);
                     dates2 = ((MandatoryCourse) allCourseSections.get(i)).getDates();
-                }
-                else if(allCourseSections.get(j) instanceof TechnicalElectiveCourse) {
+                } else if (allCourseSections.get(j) instanceof TechnicalElectiveCourse) {
                     course2 = (TechnicalElectiveCourse) allCourseSections.get(i);
                     dates2 = ((TechnicalElectiveCourse) allCourseSections.get(i)).getDates();
-                }
-                else if(allCourseSections.get(j) instanceof NonTechnicalElectiveCourse) {
+                } else if (allCourseSections.get(j) instanceof NonTechnicalElectiveCourse) {
                     course2 = (NonTechnicalElectiveCourse) allCourseSections.get(i);
                     dates2 = ((NonTechnicalElectiveCourse) allCourseSections.get(i)).getDates();
                 }
 
-                for(int x = 0; x < dates1.size(); x++) {
-                    if(dates2.contains(dates1.get(x))) {
-                    ArrayList<Course> overlapingCourse = new ArrayList<Course>();
-                    overlapingCourse.add(course1);
-                    overlapingCourse.add(course2);
-                    overlapingCourses.add(overlapingCourse);
-                }
+                for (int x = 0; x < dates1.size(); x++) {
+                    if (dates2.contains(dates1.get(x))) {
+                        ArrayList<Course> overlapingCourse = new ArrayList<Course>();
+                        overlapingCourse.add(course1);
+                        overlapingCourse.add(course2);
+                        overlapingCourses.add(overlapingCourse);
+                    }
                 }
             }
         }

@@ -87,7 +87,7 @@ public class Lecturer extends Staff {
             for (int i = 0; i < mandatoryCourses.size(); i++) {
                 MandatoryCourse mandatoryCourse = mandatoryCourses.get(i);
                 if (mandatoryCourse.getShortName().equals(course.getShortName())) {
-                    mandatoryCourses.remove(i));
+                    mandatoryCourses.remove(i);
                     json.writeMandatoryCourses(mandatoryCourses);
                     return true;
                 }
