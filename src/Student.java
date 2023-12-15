@@ -178,8 +178,58 @@ public class Student extends Person {
         return false;
     }
 
-    public ArrayList<ArrayList<Course>> checkOverlappingCourses() {
-        return new ArrayList<ArrayList<Course>>();
+    public ArrayList<ArrayList<Course>> checkOverlapingCourses() {
+        ArrayList<ArrayList<Course>> overlapingCourses = new ArrayList<ArrayList<Course>>();
+
+        ArrayList<Course> allCourseSections = getSelectedCourses();
+
+        for(int i = 0; i < allCourseSections.size(); i++) {
+
+            Course course1 = allCourseSections.get(i);
+            ArrayList<TimeInterval> dates1 = new ArrayList<>();
+
+            for(int j = i + 1; j < allCourseSections.size(); j++) {
+
+                Course course2 = allCourseSections.get(j);
+                ArrayList<TimeInterval> dates2 = new ArrayList<>();
+
+                if(allCourseSections.get(i) instanceof MandatoryCourse) {
+                    course1 = (MandatoryCourse) allCourseSections.get(i);
+                    dates1 = ((MandatoryCourse) allCourseSections.get(i)).getDates();
+                }
+                else if(allCourseSections.get(i) instanceof TechnicalElectiveCourse) {
+                    course1 = (TechnicalElectiveCourse) allCourseSections.get(i);
+                    dates1 = ((TechnicalElectiveCourse) allCourseSections.get(i)).getDates();
+                }
+                else if(allCourseSections.get(i) instanceof NonTechnicalElectiveCourse) {
+                    course1 = (NonTechnicalElectiveCourse) allCourseSections.get(i);
+                    dates1 = ((NonTechnicalElectiveCourse) allCourseSections.get(i)).getDates();
+                }
+                if(allCourseSections.get(j) instanceof MandatoryCourse) {
+                    course2 = (MandatoryCourse) allCourseSections.get(i);
+                    dates2 = ((MandatoryCourse) allCourseSections.get(i)).getDates();
+                }
+                else if(allCourseSections.get(j) instanceof TechnicalElectiveCourse) {
+                    course2 = (TechnicalElectiveCourse) allCourseSections.get(i);
+                    dates2 = ((TechnicalElectiveCourse) allCourseSections.get(i)).getDates();
+                }
+                else if(allCourseSections.get(j) instanceof NonTechnicalElectiveCourse) {
+                    course2 = (NonTechnicalElectiveCourse) allCourseSections.get(i);
+                    dates2 = ((NonTechnicalElectiveCourse) allCourseSections.get(i)).getDates();
+                }
+
+                for(int x = 0; x < dates1.size(); x++) {
+                    if(dates2.contains(dates1.get(x))) {
+                    ArrayList<Course> overlapingCourse = new ArrayList<Course>();
+                    overlapingCourse.add(course1);
+                    overlapingCourse.add(course2);
+                    overlapingCourses.add(overlapingCourse);
+                }
+                }
+            }
+        }
+
+        return overlapingCourses;
     }
 
     // + addCourse(course: Course): boolean
