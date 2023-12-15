@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 
 public class Student extends Person {
@@ -163,7 +162,6 @@ public class Student extends Person {
         if (checkOverlappingCourses().size() > 0) {
             warningString += "========Student has overlapping courses.=========\n";
             for (ArrayList<Course> overlappingCourses : checkOverlappingCourses()) {
-                warningString += "Overlapping courses: ";
                 for (Course course : overlappingCourses) {
                     warningString += course.getFullName() + " (" + course.getShortName() + "), ";
                 }
@@ -198,18 +196,19 @@ public class Student extends Person {
 
     // Returns true if the student has already selected the course
     public boolean checkStudentAlreadySelectedCourse(Course course) {
-        if (selectedCourses.contains(course)) {
-            return true;
+        // Check if the course's short name is in the selected courses
+        for (Course selectedCourse : selectedCourses) {
+            if (selectedCourse.getShortName().equals(course.getShortName())) {
+                return true;
+            }
         }
 
-        else {
-            return false;
-        }
+        return false;
     }
 
     // Returns true if the student passed the prerequisite courses
     public boolean checkPrerequisite(Course course) {
-        if (course.getPrerequisite().isEmpty()) {
+        if (course.getPrerequisite() == null) {
             return true;
         }
 
@@ -255,7 +254,7 @@ public class Student extends Person {
         return false;
     }
 
-    public ArrayList<ArrayList<Course>> checkOverlapingCourses() {
+    public ArrayList<ArrayList<Course>> checkOverlappingCourses() {
         ArrayList<ArrayList<Course>> overlapingCourses = new ArrayList<ArrayList<Course>>();
 
         ArrayList<Course> allCourseSections = getSelectedCourses();
@@ -304,19 +303,4 @@ public class Student extends Person {
 
         return overlapingCourses;
     }
-
-    // + addCourse(course: Course): boolean
-    // + dropCourse(course: Course): boolean
-    // - dropCourse(course: Course): boolean
-    // + getSelectedCourse():
-    // + getAvailableCourses():
-    // + getAllCourses():
-    // + getWarnings(): String
-    // - getTotalCredit(): int
-    // - checkCredits(): boolean
-    // - checkStudentAlreadySelectedCourse(course: Course): boolean
-    // - checkPrerequisite(course: Course): boolean
-    // - checkSemesterOfCourse(course: Course): boolean
-    // + sendCoursesForApproval(): boolean
-    // + checkOver1apingCourses(): ArrayList<ArrayList<Course>>
 }
