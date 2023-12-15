@@ -47,6 +47,40 @@ public class Advisor extends Staff {
         return combinedCourses;
     }
 
-    
+    public boolean approveStudents(Student student, String courseSelections) {
+        courseSelections = courseSelections.replaceAll("[.\\s]", "");
 
+        if(courseSelections.equals("*")) {
+            for(int i = 0; i < student.getSelectedCourses().size(); i++) {
+                student.addCourse(student.getSelectedCourses().get(i));
+            }
+
+            return true;
+        }
+
+        int selections = 0;
+
+        try {
+            selections = Integer.parseInt(courseSelections);
+        }
+        catch(Exception e) {
+            System.out.println("Error: Format is not valid, please enter a valid format.\nEx:\n1,2,3\n1 2 3\n123");
+            return false;
+        }
+
+        while(selections != 0) {
+            int selection = selections % 10;
+            
+            student.addCourse(student.getSelectedCourses().get(selection-1));
+            selections /= 10;
+
+        }
+
+        return true;
+    }
+
+    // public boolean rejectStudents(Student student) {
+
+    // }
+    
 }
