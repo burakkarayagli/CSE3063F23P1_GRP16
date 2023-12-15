@@ -28,8 +28,6 @@ public class StudentController {
         ArrayList<Course> courses = student.getAvailableCourses();
         ArrayList<Integer> selectedCourses = parseInput(input, courses);
 
-        System.out.println(selectedCourses);
-
         for (int i = 0; i < selectedCourses.size(); i++) {
             student.addCourse(courses.get(selectedCourses.get(i) - 1));
         }
@@ -52,7 +50,7 @@ public class StudentController {
         ArrayList<Integer> selectedCourses = parseInput(input, courses);
 
         System.out.println(selectedCourses);
-        for (int i = 0; i < selectedCourses.size(); i++) {
+        for (int i = selectedCourses.size() - 1; i >= 0; i--) {
             student.dropCourse(courses.get(selectedCourses.get(i) - 1));
         }
     }
@@ -88,9 +86,9 @@ public class StudentController {
         Transcript transcript = student.getTranscript();
         String grades = transcript.getGrades();
 
-        System.out.println("====================================");
+        System.out.println("=================Transcript==================");
         System.out.println(grades);
-        System.out.println("====================================");
+        System.out.println("=============================================");
     }
 
     private ArrayList<Integer> parseInput(String input, ArrayList<Course> courses) {
