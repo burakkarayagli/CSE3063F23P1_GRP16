@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 
 public class Student extends Person {
@@ -163,7 +162,6 @@ public class Student extends Person {
         if (checkOverlappingCourses().size() > 0) {
             warningString += "========Student has overlapping courses.=========\n";
             for (ArrayList<Course> overlappingCourses : checkOverlappingCourses()) {
-                warningString += "Overlapping courses: ";
                 for (Course course : overlappingCourses) {
                     warningString += course.getFullName() + " (" + course.getShortName() + "), ";
                 }
@@ -209,7 +207,7 @@ public class Student extends Person {
 
     // Returns true if the student passed the prerequisite courses
     public boolean checkPrerequisite(Course course) {
-        if (course.getPrerequisite().isEmpty()) {
+        if (course.getPrerequisite() == null) {
             return true;
         }
 
@@ -253,15 +251,6 @@ public class Student extends Person {
         }
 
         return false;
-    }
-
-    public void printSelectedCourses() {
-        System.out.println("Selected courses of " + getPersonName() + " " + getPersonSurname());
-        System.out.println("====================================");
-        for (Course course : selectedCourses) {
-            System.out.println(course.getFullName() + " (" + course.getShortName() + ")");
-        }
-        System.out.println("====================================");
     }
 
     public void printTranscript() {

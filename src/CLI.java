@@ -7,13 +7,18 @@ public class CLI {
         Json json = new Json();
         ArrayList<Student> students = json.readStudents();
         Student student = students.get(1);
-        student.printTranscript();
+        StudentController studentController = new StudentController(student);
+        studentController.CourseSelection();
+        studentController.printSelectedCourses();
 
-        for (int i = 0; i < student.getAllCourses().size(); i++) {
-            System.out.println(student.getAllCourses().get(i).getShortName() + "[" + i + "]");
-        }
+        // student.printTranscript();
 
-        System.out.println(student.checkStudentPassedCourse(student.getAllCourses().get(5)));
+        // for (int i = 0; i < student.getAllCourses().size(); i++) {
+        // System.out.println(student.getAllCourses().get(i).getShortName() + "[" + i +
+        // "]");
+        // }
+
+        // System.out.println(student.checkStudentPassedCourse(student.getAllCourses().get(5)));
     }
 
     public static void main2(String[] args) {
