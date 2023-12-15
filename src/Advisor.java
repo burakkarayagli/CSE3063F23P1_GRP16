@@ -18,12 +18,6 @@ public class Advisor extends Staff {
         
     }
 
-    public void printTranscriptInfo() {
-        System.out.println("STUDENT TRANSCRIPT");
-        System.out.println("-------------------------------------------------");
-        System.out.println();
-    }
-
     public void setStudents(List<Student> students) {
         this.students = students;
     }
@@ -39,5 +33,20 @@ public class Advisor extends Staff {
     public boolean deleteStudent(Student student) {
         return students.remove(student);
     }
+
+    public ArrayList<Course> getCombinedCourses(Student student) {
+        ArrayList<Course> combinedCourses = new ArrayList<Course>();
+
+        for(int i = 0; i < student.getSelectedCourses().size(); i++) {
+            combinedCourses.add(student.getSelectedCourses().get(i));
+        }
+        for(int i = 0; i < student.getAvailableCourses().size(); i++) {
+            combinedCourses.add(student.getAvailableCourses().get(i));
+        }
+
+        return combinedCourses;
+    }
+
+    
 
 }
