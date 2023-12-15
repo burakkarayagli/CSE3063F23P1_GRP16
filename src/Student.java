@@ -253,36 +253,68 @@ public class Student extends Person {
         return false;
     }
 
-    public void printTranscript() {
-        System.out.println("Transcript of " + getPersonName() + " " + getPersonSurname());
-        System.out.println("====================================");
-        for (Grade grade : transcript.getGradeList()) {
-            System.out.println(
-                    grade.getCourse().getFullName() + " (" + grade.getCourse().getShortName() + "): "
-                            + grade.getGrade());
+    public ArrayList<ArrayList<Course>> checkOverlapingCourses() {
+        ArrayList<ArrayList<Course>> overlapingCourses = new ArrayList<ArrayList<Course>>();
+
+        ArrayList<Course> allCourseSections = getSelectedCourses();
+
+        for (int i = 0; i < allCourseSections.size(); i++) {
+
+            Course course1 = allCourseSections.get(i);
+            ArrayList<TimeInterval> dates1 = new ArrayList<>();
+
+            for (int j = i + 1; j < allCourseSections.size(); j++) {
+
+                Course course2 = allCourseSections.get(j);
+                ArrayList<TimeInterval> dates2 = new ArrayList<>();
+
+                if (allCourseSections.get(i) instanceof MandatoryCourse) {
+                    course1 = (MandatoryCourse) allCourseSections.get(i);
+                    dates1 = ((MandatoryCourse) allCourseSections.get(i)).getDates();
+                } else if (allCourseSections.get(i) instanceof TechnicalElectiveCourse) {
+                    course1 = (TechnicalElectiveCourse) allCourseSections.get(i);
+                    dates1 = ((TechnicalElectiveCourse) allCourseSections.get(i)).getDates();
+                } else if (allCourseSections.get(i) instanceof NonTechnicalElectiveCourse) {
+                    course1 = (NonTechnicalElectiveCourse) allCourseSections.get(i);
+                    dates1 = ((NonTechnicalElectiveCourse) allCourseSections.get(i)).getDates();
+                }
+                if (allCourseSections.get(j) instanceof MandatoryCourse) {
+                    course2 = (MandatoryCourse) allCourseSections.get(i);
+                    dates2 = ((MandatoryCourse) allCourseSections.get(i)).getDates();
+                } else if (allCourseSections.get(j) instanceof TechnicalElectiveCourse) {
+                    course2 = (TechnicalElectiveCourse) allCourseSections.get(i);
+                    dates2 = ((TechnicalElectiveCourse) allCourseSections.get(i)).getDates();
+                } else if (allCourseSections.get(j) instanceof NonTechnicalElectiveCourse) {
+                    course2 = (NonTechnicalElectiveCourse) allCourseSections.get(i);
+                    dates2 = ((NonTechnicalElectiveCourse) allCourseSections.get(i)).getDates();
+                }
+
+                for (int x = 0; x < dates1.size(); x++) {
+                    if (dates2.contains(dates1.get(x))) {
+                        ArrayList<Course> overlapingCourse = new ArrayList<Course>();
+                        overlapingCourse.add(course1);
+                        overlapingCourse.add(course2);
+                        overlapingCourses.add(overlapingCourse);
+                    }
+                }
+            }
         }
-        System.out.println("====================================");
+
+        return overlapingCourses;
     }
 
-    public boolean sendCoursesForApproval() {
-        if (status.equals("waiting")) {
-            System.out.println("Error: Student has already sent courses for approval.");
-            return false;
-        }
-
-        else if (status.equals("finished")) {
-            System.out.println("Course registration is finished.");
-            return false;
-        }
-
-        else {
-            setStatus("waiting");
-            System.out.println("Courses sent for approval.");
-            return true;
-        }
-    }
-
-    public ArrayList<ArrayList<Course>> checkOverlappingCourses() {
-        return new ArrayList<ArrayList<Course>>();
-    }
+    // + addCourse(course: Course): boolean
+    // + dropCourse(course: Course): boolean
+    // - dropCourse(course: Course): boolean
+    // + getSelectedCourse():
+    // + getAvailableCourses():
+    // + getAllCourses():
+    // + getWarnings(): String
+    // - getTotalCredit(): int
+    // - checkCredits(): boolean
+    // - checkStudentAlreadySelectedCourse(course: Course): boolean
+    // - checkPrerequisite(course: Course): boolean
+    // - checkSemesterOfCourse(course: Course): boolean
+    // + sendCoursesForApproval(): boolean
+    // + checkOver1apingCourses(): ArrayList<ArrayList<Course>>
 }
