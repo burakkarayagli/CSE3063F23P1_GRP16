@@ -72,8 +72,13 @@ public class Advisor extends Staff {
             int selection = selections % 10;
             
             student.addCourse(student.getSelectedCourses().get(selection-1));
+            student.getSelectedCourses().remove(selection-1);
             selections /= 10;
 
+        }
+
+        for(int i = 0; i < student.getSelectedCourses().size(); i++) {
+            student.dropCourse(student.getSelectedCourses().get(i));
         }
 
         return true;
