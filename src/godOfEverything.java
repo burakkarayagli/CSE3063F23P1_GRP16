@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 
 public class godOfEverything {
 
@@ -76,7 +75,7 @@ public class godOfEverything {
                 courses.add(trd121);
                 /// 2. Semester
                 Course ata122 = new Course("ATA122", "Atatürk İlkeleri ve İnkılap Tarihi II", "", null, 2, 2, 2);
-                Course cse1242 = new Course("CSE1241", "Computer Programming II", "", null, 2, 6, 4);
+                Course cse1242 = new Course("CSE1242", "Computer Programming II", "", null, 2, 6, 4);
                 Course math1002 = new Course("MATH1002", "Calculus II", "", null, 2, 6, 2);
                 Course math2256 = new Course("MATH2256", "Linear Algebra for Computer Engineering", "",
                                 null, 2, 5, 3);
@@ -200,6 +199,9 @@ public class godOfEverything {
                 MandatoryCourse cse4074M = new MandatoryCourse(cse4074,
                                 new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(0), wednesday.get(1))), "1.1",
                                 null, 50, locations[0], 0);
+                MandatoryCourse cse1242M = new MandatoryCourse(cse1242,
+                                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(2), wednesday.get(3))), "1.1",
+                                null, 50, locations[1], 0);
                 mandatoryCourses.add(cse2023M);
                 mandatoryCourses.add(com2202M);
                 mandatoryCourses.add(cse3044M);
@@ -209,6 +211,7 @@ public class godOfEverything {
                 mandatoryCourses.add(ie3235M);
                 mandatoryCourses.add(cse4297M);
                 mandatoryCourses.add(cse4074M);
+                mandatoryCourses.add(cse1242M);
 
                 // Technical Elective Courses
                 Course cse4026 = new Course("CSE4026", "Introduction to Robotics and Control Theory", "", null, 7, 5,
@@ -242,16 +245,14 @@ public class godOfEverything {
                 // Create Lecturers
                 Lecturer agaoglu = new Lecturer("Mustafa", "Ağaoglu", "mustafa", "mustafaagaoglu", "Doç. Dr.",
                                 new ArrayList<TimeInterval>(Arrays.asList(monday.get(0), monday.get(1))), 10000,
-                                "active",
-                                new ArrayList<Course>());
+                                "active");
                 Lecturer ganiz = new Lecturer("Murat Can", "Ganiz", "muratcan", "muratcanganiz", "Doç. Dr.",
                                 new ArrayList<TimeInterval>(Arrays.asList(monday.get(2), monday.get(3))), 10000,
-                                "active",
-                                new ArrayList<Course>());
+                                "active");
                 Lecturer boz = new Lecturer("Betül", "Boz", "betul", "boz", "Dr.Öğr.",
                                 new ArrayList<TimeInterval>(Arrays.asList(monday.get(4), monday.get(5))), 10000,
-                                "active",
-                                new ArrayList<Course>());
+                                "active");
+
                 lecturers.add(agaoglu);
                 lecturers.add(ganiz);
                 lecturers.add(boz);

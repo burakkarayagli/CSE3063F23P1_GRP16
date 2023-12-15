@@ -153,11 +153,11 @@ public class SystemController {
     public boolean isUntaken(Student student, CourseSection courseSection) {
         ArrayList<Grade> studentCoursesTaken = student.getTranscript().getGradeList();
 
-        for(int i = 0;i<studentCoursesTaken.size();i++){
-            if(studentCoursesTaken.get(i).getCourse().getFullName().equals(courseSection.getFullName()))
+        for (int i = 0; i < studentCoursesTaken.size(); i++) {
+            if (studentCoursesTaken.get(i).getCourse().getFullName().equals(courseSection.getFullName()))
                 return false;
-        }           
-       
+        }
+
         return true;
     }
 

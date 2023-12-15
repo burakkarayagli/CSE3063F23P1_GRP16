@@ -73,7 +73,7 @@
       "classHours": 2
     },
     {
-      "shortName": "CSE1241",
+      "shortName": "CSE1242",
       "fullName": "Computer Programming II",
       "description": "",
       "semester": 2,
@@ -446,7 +446,6 @@
       ],
       "sectionName": "1.1",
       "lecturer": {
-        "courses": [],
         "reputation": "Dr.Öğr.",
         "officeHours": [
           {
@@ -492,7 +491,6 @@
       ],
       "sectionName": "1.1",
       "lecturer": {
-        "courses": [],
         "reputation": "Doç. Dr.",
         "officeHours": [
           {
@@ -538,7 +536,6 @@
       ],
       "sectionName": "1.1",
       "lecturer": {
-        "courses": [],
         "reputation": "Doç. Dr.",
         "officeHours": [
           {
@@ -587,7 +584,6 @@
       ],
       "sectionName": "1.1",
       "lecturer": {
-        "courses": [],
         "reputation": "Dr.Öğr.",
         "officeHours": [
           {
@@ -636,7 +632,6 @@
       ],
       "sectionName": "1.1",
       "lecturer": {
-        "courses": [],
         "reputation": "Doç. Dr.",
         "officeHours": [
           {
@@ -686,7 +681,6 @@
       ],
       "sectionName": "1.1",
       "lecturer": {
-        "courses": [],
         "reputation": "Doç. Dr.",
         "officeHours": [
           {
@@ -735,7 +729,6 @@
       ],
       "sectionName": "1.1",
       "lecturer": {
-        "courses": [],
         "reputation": "Dr.Öğr.",
         "officeHours": [
           {
@@ -784,7 +777,6 @@
       ],
       "sectionName": "1.1",
       "lecturer": {
-        "courses": [],
         "reputation": "Doç. Dr.",
         "officeHours": [
           {
@@ -830,7 +822,6 @@
       ],
       "sectionName": "1.1",
       "lecturer": {
-        "courses": [],
         "reputation": "Doç. Dr.",
         "officeHours": [
           {
@@ -860,6 +851,51 @@
       "semester": 7,
       "credit": 5,
       "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Dr.Öğr.",
+        "officeHours": [
+          {
+            "startTime": "14:00",
+            "endTime": "14:50",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "15:00",
+            "endTime": "15:50",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Betül",
+        "personSurname": "Boz",
+        "username": "betul",
+        "password": "boz"
+      },
+      "quota": 50,
+      "location": "M2-Z02",
+      "labHours": 0,
+      "shortName": "CSE1242",
+      "fullName": "Computer Programming II",
+      "description": "",
+      "semester": 2,
+      "credit": 6,
+      "classHours": 4
     }
   ],
   "technicalElectives": [
@@ -878,7 +914,6 @@
       ],
       "sectionName": "1.1",
       "lecturer": {
-        "courses": [],
         "reputation": "Doç. Dr.",
         "officeHours": [
           {
@@ -924,7 +959,6 @@
       ],
       "sectionName": "1.1",
       "lecturer": {
-        "courses": [],
         "reputation": "Doç. Dr.",
         "officeHours": [
           {
@@ -972,7 +1006,6 @@
       ],
       "sectionName": "1.1",
       "lecturer": {
-        "courses": [],
         "reputation": "Doç. Dr.",
         "officeHours": [
           {
@@ -1018,7 +1051,6 @@
       ],
       "sectionName": "1.1",
       "lecturer": {
-        "courses": [],
         "reputation": "Doç. Dr.",
         "officeHours": [
           {
@@ -1052,7 +1084,6 @@
   ],
   "lecturers": [
     {
-      "courses": [],
       "reputation": "Doç. Dr.",
       "officeHours": [
         {
@@ -1074,7 +1105,6 @@
       "password": "mustafaagaoglu"
     },
     {
-      "courses": [],
       "reputation": "Doç. Dr.",
       "officeHours": [
         {
@@ -1096,7 +1126,6 @@
       "password": "muratcanganiz"
     },
     {
-      "courses": [],
       "reputation": "Dr.Öğr.",
       "officeHours": [
         {
@@ -1231,7 +1260,7 @@
               },
               {
                 "course": {
-                  "shortName": "CSE1241",
+                  "shortName": "CSE1242",
                   "fullName": "Computer Programming II",
                   "description": "",
                   "semester": 2,
@@ -1412,7 +1441,7 @@
               },
               {
                 "course": {
-                  "shortName": "CSE1241",
+                  "shortName": "CSE1242",
                   "fullName": "Computer Programming II",
                   "description": "",
                   "semester": 2,
@@ -1593,7 +1622,7 @@
               },
               {
                 "course": {
-                  "shortName": "CSE1241",
+                  "shortName": "CSE1242",
                   "fullName": "Computer Programming II",
                   "description": "",
                   "semester": 2,
@@ -1797,7 +1826,7 @@
               },
               {
                 "course": {
-                  "shortName": "CSE1241",
+                  "shortName": "CSE1242",
                   "fullName": "Computer Programming II",
                   "description": "",
                   "semester": 2,
@@ -1978,7 +2007,7 @@
               },
               {
                 "course": {
-                  "shortName": "CSE1241",
+                  "shortName": "CSE1242",
                   "fullName": "Computer Programming II",
                   "description": "",
                   "semester": 2,
@@ -2159,7 +2188,7 @@
               },
               {
                 "course": {
-                  "shortName": "CSE1241",
+                  "shortName": "CSE1242",
                   "fullName": "Computer Programming II",
                   "description": "",
                   "semester": 2,
