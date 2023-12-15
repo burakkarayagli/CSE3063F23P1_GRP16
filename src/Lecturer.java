@@ -80,6 +80,7 @@ public class Lecturer extends Staff {
     }
 
     public boolean deletLecturedCourses(Course course) {
+        // it don't check the lecturer of course
         Json json = new Json();
         if (course instanceof MandatoryCourse) {
             ArrayList<MandatoryCourse> mandatoryCourses = json.readMandatoryCourses();
