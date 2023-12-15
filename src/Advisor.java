@@ -15,7 +15,7 @@ public class Advisor extends Staff {
     }
 
     public Advisor() {
-        
+
     }
 
     public void setStudents(List<Student> students) {
@@ -37,10 +37,10 @@ public class Advisor extends Staff {
     public ArrayList<Course> getCombinedCourses(Student student) {
         ArrayList<Course> combinedCourses = new ArrayList<Course>();
 
-        for(int i = 0; i < student.getSelectedCourses().size(); i++) {
+        for (int i = 0; i < student.getSelectedCourses().size(); i++) {
             combinedCourses.add(student.getSelectedCourses().get(i));
         }
-        for(int i = 0; i < student.getAvailableCourses().size(); i++) {
+        for (int i = 0; i < student.getAvailableCourses().size(); i++) {
             combinedCourses.add(student.getAvailableCourses().get(i));
         }
 
@@ -50,10 +50,8 @@ public class Advisor extends Staff {
     public boolean approveStudent(Student student, String courseSelections) {
         courseSelections = courseSelections.replaceAll("[.\\s]", "");
 
-        if(courseSelections.equals("*")) {
-            for(int i = 0; i < student.getSelectedCourses().size(); i++) {
-                student.addCourse(student.getSelectedCourses().get(i));
-            }
+        if (courseSelections.equals("*")) {
+            student.setStatus("Approved");
 
             return true;
         }
@@ -62,22 +60,21 @@ public class Advisor extends Staff {
 
         try {
             selections = Integer.parseInt(courseSelections);
-        }
-        catch(Exception e) {
+        } catch (Exception e) {
             System.out.println("Error: Format is not valid, please enter a valid format.\nEx:\n1,2,3\n1 2 3\n123");
             return false;
         }
 
-        while(selections != 0) {
+        while (selections != 0) {
             int selection = selections % 10;
-            
-            student.addCourse(student.getSelectedCourses().get(selection-1));
-            student.getSelectedCourses().remove(selection-1);
+
+            student.addCourse(student.getSelectedCourses().get(selection - 1));
+            student.getSelectedCourses().remove(selection - 1);
             selections /= 10;
 
         }
 
-        for(int i = 0; i < student.getSelectedCourses().size(); i++) {
+        for (int i = 0; i < student.getSelectedCourses().size(); i++) {
             student.dropCourse(student.getSelectedCourses().get(i));
         }
 
@@ -87,5 +84,5 @@ public class Advisor extends Staff {
     // public boolean rejectStudent(Student student) {
 
     // }
-    
+
 }
