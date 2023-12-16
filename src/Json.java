@@ -316,7 +316,8 @@ public class Json {
             String sMandatories = "";
             for (int i = 0; i < mandatories.size(); i++) {
                 MandatoryCourse mandatory = mandatories.get(i);
-                Gson gson = new GsonBuilder().setPrettyPrinting().create();
+                Gson gson = new GsonBuilder().setPrettyPrinting()
+                        .excludeFieldsWithModifiers(java.lang.reflect.Modifier.TRANSIENT).create();
                 sMandatories += gson.toJson(mandatory, MandatoryCourse.class);
                 if (i + 1 < mandatories.size())
                     sMandatories += ",\n";
@@ -365,7 +366,8 @@ public class Json {
             String sTechnicalElectives = "";
             for (int i = 0; i < technicalElectives.size(); i++) {
                 TechnicalElectiveCourse technicalElective = technicalElectives.get(i);
-                Gson gson = new GsonBuilder().setPrettyPrinting().create();
+                Gson gson = new GsonBuilder().setPrettyPrinting()
+                        .excludeFieldsWithModifiers(java.lang.reflect.Modifier.TRANSIENT).create();
                 sTechnicalElectives += gson.toJson(technicalElective, TechnicalElectiveCourse.class);
                 if (i + 1 < technicalElectives.size())
                     sTechnicalElectives += ",\n";
@@ -414,7 +416,8 @@ public class Json {
             String sNonTechnicalElectives = "";
             for (int i = 0; i < nonTechnicalElectives.size(); i++) {
                 NonTechnicalElectiveCourse nonTechnicalElective = nonTechnicalElectives.get(i);
-                Gson gson = new GsonBuilder().setPrettyPrinting().create();
+                Gson gson = new GsonBuilder().setPrettyPrinting()
+                        .excludeFieldsWithModifiers(java.lang.reflect.Modifier.TRANSIENT).create();
                 sNonTechnicalElectives += gson.toJson(nonTechnicalElective, NonTechnicalElectiveCourse.class);
                 if (i + 1 < nonTechnicalElectives.size())
                     sNonTechnicalElectives += ",\n";

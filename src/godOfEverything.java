@@ -245,13 +245,13 @@ public class godOfEverything {
                 // Create Lecturers
                 Lecturer agaoglu = new Lecturer("Mustafa", "Ağaoglu", "mustafa", "mustafaagaoglu", "Doç. Dr.",
                                 new ArrayList<TimeInterval>(Arrays.asList(monday.get(0), monday.get(1))), 10000,
-                                "active");
+                                "active", new ArrayList<Course>());
                 Lecturer ganiz = new Lecturer("Murat Can", "Ganiz", "muratcan", "muratcanganiz", "Doç. Dr.",
                                 new ArrayList<TimeInterval>(Arrays.asList(monday.get(2), monday.get(3))), 10000,
-                                "active");
+                                "active", new ArrayList<Course>());
                 Lecturer boz = new Lecturer("Betül", "Boz", "betul", "boz", "Dr.Öğr.",
                                 new ArrayList<TimeInterval>(Arrays.asList(monday.get(4), monday.get(5))), 10000,
-                                "active");
+                                "active", new ArrayList<Course>());
 
                 lecturers.add(agaoglu);
                 lecturers.add(ganiz);
@@ -263,7 +263,7 @@ public class godOfEverything {
                         lecturersNumber--;
                         MandatoryCourse course = mandatoryCourses.get(i);
                         course.setLecturer(lecturers.get(lecturersNumber));
-                        // lecturers.get(lecturersNumber).addCourse(course);
+                        lecturers.get(lecturersNumber).addlecturedCourses(course);
                         if (lecturersNumber == 0) {
                                 lecturersNumber = lecturers.size();
                         }
@@ -274,7 +274,7 @@ public class godOfEverything {
                         lecturersNumber--;
                         NonTechnicalElectiveCourse course = nonTechnicalElectives.get(i);
                         course.setLecturer(lecturers.get(lecturersNumber));
-                        // lecturers.get(lecturersNumber).addCourse(course);
+                        lecturers.get(lecturersNumber).addlecturedCourses(course);
                         if (lecturersNumber == 0) {
                                 lecturersNumber = lecturers.size() + 1;
                         }
@@ -285,7 +285,7 @@ public class godOfEverything {
                         lecturersNumber--;
                         TechnicalElectiveCourse course = technicalElectives.get(i);
                         course.setLecturer(lecturers.get(lecturersNumber));
-                        // lecturers.get(lecturersNumber).addCourse(course);
+                        lecturers.get(lecturersNumber).addlecturedCourses(course);
                         if (lecturersNumber == 0) {
                                 lecturersNumber = lecturers.size() + 1;
                         }
@@ -303,7 +303,8 @@ public class godOfEverything {
                                                                 new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
                                                                 new Grade(math2256, "AA"),
                                                                 new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
-                                                                new Grade(trd122, "AA"))));
+                                                                new Grade(trd122, "AA"))),
+                                "");
                 Student kokur = new Student("Hakkı", "Kokur", "hakki", "hakkikokur",
                                 "Maltepe/Istanbul", "5315274392", 5, 2020,
                                 "", new ArrayList<Course>(), transcript);
