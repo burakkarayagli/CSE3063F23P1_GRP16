@@ -58,6 +58,34 @@ public class DataUtils {
         writeNonTechnicalElectiveCourse(nonTechnicalElectives);
     }
 
+    public ArrayList<Student> getStudents() {
+        return students;
+    }
+
+    public ArrayList<Course> getCourses() {
+        return courses;
+    }
+
+    public ArrayList<Lecturer> getLecturers() {
+        return lecturers;
+    }
+
+    public ArrayList<Advisor> getAdvisors() {
+        return advisors;
+    }
+
+    public ArrayList<MandatoryCourse> getMandatories() {
+        return mandatories;
+    }
+
+    public ArrayList<TechnicalElectiveCourse> getTechnicalElectives() {
+        return technicalElectives;
+    }
+
+    public ArrayList<NonTechnicalElectiveCourse> getNonTechnicalElectives() {
+        return nonTechnicalElectives;
+    }
+
     // end singleton pattern
 
     private static DataUtils databaseInstance = null;
