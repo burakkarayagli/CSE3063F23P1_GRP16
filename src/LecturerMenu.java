@@ -5,16 +5,15 @@ public class LecturerMenu {
 
     Scanner scanner = new Scanner(System.in);
 
-    SystemController systemController = new SystemController();
     String_Constants StringConstants = new String_Constants();
     Menu menu = new Menu();
 
     public void lecturerMenu() {
 
-        System.out.println(systemController.getMenu());
+        System.out.println(menu.getMenu());
         int selection = scanner.nextInt();
 
-        Lecturer lecturer = (Lecturer) systemController.getLoggedInUser();
+        Lecturer lecturer = (Lecturer) menu.getLoggedInUser();
 
         if (selection == 1) {
             // ShortName
@@ -51,14 +50,14 @@ public class LecturerMenu {
 
             Course course = new Course(shortName, fullName, description, prequisites, semester, credit, classHours);
             lecturer.addlecturedCourses(course);
-            systemController.getCourses().add(course);
-            systemController.save();
+            lecturer.getLecturedCourses().add(course);
+            // systemController.save();
 
         } else if (selection == 2) {
-            systemController.setLoggedInUser(null);
+            menu.setLoggedInUser(null);
         }
 
-        if (systemController.getLoggedInUser() == null) {
+        if (menu.getLoggedInUser() == null) {
             menu.Menu();
         } else {
             lecturerMenu();
