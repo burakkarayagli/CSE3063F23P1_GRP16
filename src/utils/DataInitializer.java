@@ -318,6 +318,9 @@ public class DataInitializer {
                                                                 new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
                                                                 new Grade(trd122, "AA"))),
                                 "");
+
+                
+
                 Student kokur = new Student("Hakkı", "Kokur", "hakki", "hakkikokur",
                                 "Maltepe/Istanbul", "5315274392", 5, 2020,
                                 "", new ArrayList<Course>(), transcript);

@@ -126,8 +126,6 @@ public class StudentMenu {
     }
 
     public void showTranscript() {
-        System.out.println("Transcript of " + studentController.getPersonName() + " " +
-                studentController.getPersonSurname());
         Transcript transcript = studentController.getTranscript();
         String grades = transcript.getGrades();
 
