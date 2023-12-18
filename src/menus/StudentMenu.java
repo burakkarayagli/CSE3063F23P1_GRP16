@@ -58,8 +58,7 @@ public class StudentMenu {
     public void CourseAdding() {
         showAvailableCourses();
 
-        System.out.println(
-                "Enter the numbers of the courses you want to add");
+        System.out.println("Enter the course you want to add");
 
         System.out.println("eg: 1,2,3");
         System.out.println("eg: * for all courses");
@@ -78,8 +77,7 @@ public class StudentMenu {
     public void CourseDropping() {
         showSelectedCourses();
 
-        System.out.println(
-                "Enter the numbers of the courses you want to drop");
+        System.out.println("Enter the course you want to drop");
 
         System.out.println("eg: 1,2,3");
         System.out.println("eg: * for all courses");

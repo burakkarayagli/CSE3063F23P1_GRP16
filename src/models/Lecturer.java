@@ -142,7 +142,7 @@ public class Lecturer extends Staff {
 
     }
 
-    public boolean deletLecturedCourses(Course course) {
+    public boolean deleteLecturedCourses(Course course) {
         // it don't check the lecturer of course
         // Json json = new Json();
         // if (course instanceof MandatoryCourse) {
