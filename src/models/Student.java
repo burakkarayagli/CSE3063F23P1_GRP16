@@ -146,10 +146,10 @@ public class Student extends Person {
     public ArrayList<Course> getAllCourses() {
         ArrayList<Course> allCourses = new ArrayList<Course>();
 
-        DataUtils json = new DataUtils();
-        allCourses.addAll(json.readMandatoryCourses());
-        allCourses.addAll(json.readTechnicalElectiveCourse());
-        allCourses.addAll(json.readNonTechnicalElectiveCourses());
+        DataUtils dataUtils = DataUtils.getInstance();
+        allCourses.addAll(dataUtils.readMandatoryCourses());
+        allCourses.addAll(dataUtils.readTechnicalElectiveCourse());
+        allCourses.addAll(dataUtils.readNonTechnicalElectiveCourses());
 
         return allCourses;
     }

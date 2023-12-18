@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 import constants.String_Constants;
 import contollers.StudentController;
+import contollers.LecturerController;
 import models.*;
 import utils.DataUtils;
 
@@ -37,7 +38,7 @@ public class Menu {
 
     public Menu() {
         loggedInUser = null;
-        json = new DataUtils();
+        json = DataUtils.getInstance();
         lecturers = json.readLecturers();
         students = json.readStudents();
         advisors = json.readAdvisors();
@@ -72,7 +73,8 @@ public class Menu {
         } else if (getLoggedInUser() instanceof Advisor) {
             // advisorMenu.advisorMenu();
         } else if (getLoggedInUser() instanceof Lecturer) {
-            // lecturerMenu.lecturerMenu();
+            LecturerMenu lecturerMenu = new LecturerMenu(new LecturerController((Lecturer) getLoggedInUser()));
+            lecturerMenu.lecturerMenu();
         }
     }
 

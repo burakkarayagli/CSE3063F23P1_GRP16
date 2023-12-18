@@ -17,7 +17,7 @@ public class Lecturer extends Staff {
     }
 
     private void initCourses() {
-        DataUtils json = new DataUtils();
+        DataUtils json = DataUtils.getInstance();
         ArrayList<Course> courses = new ArrayList<>();
         courses.addAll(json.readMandatoryCourses());
         courses.addAll(json.readTechnicalElectiveCourse());
@@ -81,7 +81,7 @@ public class Lecturer extends Staff {
         return this.courses;
     }
 
-    public boolean addlecturedCourses(Course course) {
+    public boolean addLecturedCourses(Course course) {
         // Json json = new Json();
         // if (course instanceof MandatoryCourse) {
         // ArrayList<MandatoryCourse> mandatoryCourses = json.readMandatoryCourses();
@@ -123,7 +123,7 @@ public class Lecturer extends Staff {
 
         // Alternative
         ((SectionInterface) course).setLecturer(this);
-        DataUtils json = new DataUtils();
+        DataUtils json = DataUtils.getInstance();
         if (course instanceof MandatoryCourse) {
             ArrayList<MandatoryCourse> courses = json.readMandatoryCourses();
             courses.add((MandatoryCourse) course);
@@ -181,7 +181,7 @@ public class Lecturer extends Staff {
         // }
         // }
         // return false;
-        DataUtils json = new DataUtils();
+        DataUtils json = DataUtils.getInstance();
         ArrayList<SectionInterface> courses = new ArrayList<>();
         courses.addAll(json.readMandatoryCourses());
         courses.addAll(json.readTechnicalElectiveCourse());
@@ -223,7 +223,7 @@ public class Lecturer extends Staff {
     }
 
     public ArrayList<Student> viewEnrolledStudents(Course course) {
-        DataUtils json = new DataUtils();
+        DataUtils json = DataUtils.getInstance();
         ArrayList<Student> students = json.readStudents();
         ArrayList<Student> enrolledStudents = new ArrayList<Student>();
         for (int i = 0; i < students.size(); i++) {
