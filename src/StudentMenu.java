@@ -5,18 +5,17 @@ public class StudentMenu {
 
     Scanner scanner = new Scanner(System.in);
 
-    SystemController systemController = new SystemController();
     String_Constants StringConstants = new String_Constants();
     Menu menu = new Menu();
 
     public void studentMenu() {
-        System.out.println(systemController.getMenu());
+        System.out.println(menu.getMenu());
         int selection = scanner.nextInt();
 
-        Student student = (Student) systemController.getLoggedInUser();
+        Student student = (Student) menu.getLoggedInUser();
         if (selection == 1) {
             System.out.println("AVAILABLE COURSES THAT STUDENT CAN TAKE");
-            ArrayList<Course> availableCourses = systemController.getAvailableCourses(student);
+            ArrayList<Course> availableCourses = student.getAvailableCourses();
             for (int i = 0; i < availableCourses.size(); i++) {
                 Course courseSection = availableCourses.get(i);
                 System.out.println(i + 1 + ". " + courseSection.getFullName() + " " + courseSection.getShortName());
@@ -40,7 +39,7 @@ public class StudentMenu {
         } else if (selection == 2) {
             student.getTranscript();
         } else if (selection == 3) {
-            systemController.setLoggedInUser(null);
+            menu.setLoggedInUser(null);
         }
 
         else if (selection == 4) {
@@ -52,7 +51,7 @@ public class StudentMenu {
             }
         }
 
-        if (systemController.getLoggedInUser() == null) {
+        if (menu.getLoggedInUser() == null) {
             menu.Menu();
         } else {
             studentMenu();

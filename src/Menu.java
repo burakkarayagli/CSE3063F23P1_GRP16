@@ -61,6 +61,19 @@ public class Menu {
 
     }
 
+    public String getMenu() {
+        String_Constants StringConstants = new String_Constants();
+        if (loggedInUser instanceof Student) {
+            return StringConstants.STUDENT_MENU_OPTIONS;
+        } else if (loggedInUser instanceof Advisor) {
+            return StringConstants.ADVISOR_MENU_OPTIONS;
+        } else if (loggedInUser instanceof Lecturer) {
+            return StringConstants.LECTURER_MENU_OPTIONS;
+        } else {
+            return "Error: Invalid user type.";
+        }
+    }
+
     public boolean Authenticate(String username, String password) {
         // Check if username and password are correct
         // If correct, set loggedInUser to the correct user
