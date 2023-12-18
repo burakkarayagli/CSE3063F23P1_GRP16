@@ -81,7 +81,7 @@ public class Lecturer extends Staff {
         return this.courses;
     }
 
-    public boolean addlecturedCourses(Course course) {
+    public boolean addLecturedCourses(Course course) {
         // Json json = new Json();
         // if (course instanceof MandatoryCourse) {
         // ArrayList<MandatoryCourse> mandatoryCourses = json.readMandatoryCourses();
