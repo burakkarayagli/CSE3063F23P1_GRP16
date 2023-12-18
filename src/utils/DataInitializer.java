@@ -1,20 +1,7 @@
-package utils;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import models.Advisor;
-import models.Course;
-import models.Grade;
-import models.Lecturer;
-import models.MandatoryCourse;
-import models.NonTechnicalElectiveCourse;
-import models.Student;
-import models.TechnicalElectiveCourse;
-import models.TimeInterval;
-import models.Transcript;
-
-public class DataInitializer {
+public class godOfEverything {
 
         public static void main(String[] args) {
                 ArrayList<Course> courses = new ArrayList<Course>();
@@ -265,10 +252,42 @@ public class DataInitializer {
                 Lecturer boz = new Lecturer("Betül", "Boz", "betul", "boz", "Dr.Öğr.",
                                 new ArrayList<TimeInterval>(Arrays.asList(monday.get(4), monday.get(5))), 10000,
                                 "active", new ArrayList<Course>());
+                //new ones
+                Lecturer topcuoglu = new Lecturer("Haluk Rahmi", "Topçuğlu", "haluk", "haluk", "Prof. Dr.",
+                                new ArrayList<TimeInterval>(), 10000, "active", new ArrayList<Course>());
+                Lecturer erdem = new Lecturer("Çiğdem Eroğlu", "Erdem", "cigdem", "cigdemerogluerdem", "Prof. Dr.",
+                                new ArrayList<TimeInterval>(), 10000, "active", new ArrayList<Course>());
+                Lecturer alkaya = new Lecturer("Ali Fuat", "Alkaya", "alifuat", "alifuatalkaya", "Prof. Prof.",
+                                new ArrayList<TimeInterval>(), 10000, "active", new ArrayList<Course>());
+                Lecturer soyturk = new Lecturer("Müjdat", "Soytürk", "mujdat", "mujdatsoyturk", "Assoc. Prof.",
+                                new ArrayList<TimeInterval>(), 10000, "active", new ArrayList<Course>());
+                Lecturer tumer = new Lecturer("Borahan", "Tümer", "borahan", "borahantumer", "Assoc. Prof.",
+                                new ArrayList<TimeInterval>(), 10000, "active", new ArrayList<Course>());
+                Lecturer baran = new Lecturer("Mehmet", "Baran", "mehmet", "mehmetbaran", "Asst. Prof.",
+                                new ArrayList<TimeInterval>(), 10000, "active", new ArrayList<Course>());
+                Lecturer ergin = new Lecturer("Fatma Corut", "Ergin", "fatma", "fatma.ergin", "Asst. Prof.",
+                                new ArrayList<TimeInterval>(), 10000, "active", new ArrayList<Course>());
+                Lecturer korcak = new Lecturer("Ömer", "Korçak", "omer", "omerkorcak", "Assoc. Prof.",
+                                new ArrayList<TimeInterval>(), 10000, "active", new ArrayList<Course>());
+                Lecturer ozer = new Lecturer("Ali Haydar", "Özer", "alihaydar", "alihaydarozer", "Asst. Prof.",
+                                new ArrayList<TimeInterval>(), 10000, "active", new ArrayList<Course>());
+                Lecturer arslan = new Lecturer("Sanem", "Arslan", "sanem", "sanemarslan", "Asst. Prof.",
+                                new ArrayList<TimeInterval>(), 10000, "active", new ArrayList<Course>());
 
                 lecturers.add(agaoglu);
                 lecturers.add(ganiz);
                 lecturers.add(boz);
+                lecturers.add(topcuoglu);
+                lecturers.add(erdem);
+                lecturers.add(alkaya);
+                lecturers.add(soyturk);
+                lecturers.add(tumer);
+                lecturers.add(baran);
+                lecturers.add(ergin);
+                lecturers.add(korcak);
+                lecturers.add(ozer);
+                lecturers.add(arslan);
+
 
                 // Assign lecturer to courses
                 int lecturersNumber = lecturers.size();
@@ -276,7 +295,7 @@ public class DataInitializer {
                         lecturersNumber--;
                         MandatoryCourse course = mandatoryCourses.get(i);
                         course.setLecturer(lecturers.get(lecturersNumber));
-                        lecturers.get(lecturersNumber).addLecturedCourses(course);
+                        lecturers.get(lecturersNumber).addlecturedCourses(course);
                         if (lecturersNumber == 0) {
                                 lecturersNumber = lecturers.size();
                         }
@@ -287,7 +306,7 @@ public class DataInitializer {
                         lecturersNumber--;
                         NonTechnicalElectiveCourse course = nonTechnicalElectives.get(i);
                         course.setLecturer(lecturers.get(lecturersNumber));
-                        lecturers.get(lecturersNumber).addLecturedCourses(course);
+                        lecturers.get(lecturersNumber).addlecturedCourses(course);
                         if (lecturersNumber == 0) {
                                 lecturersNumber = lecturers.size() + 1;
                         }
@@ -298,7 +317,7 @@ public class DataInitializer {
                         lecturersNumber--;
                         TechnicalElectiveCourse course = technicalElectives.get(i);
                         course.setLecturer(lecturers.get(lecturersNumber));
-                        lecturers.get(lecturersNumber).addLecturedCourses(course);
+                        lecturers.get(lecturersNumber).addlecturedCourses(course);
                         if (lecturersNumber == 0) {
                                 lecturersNumber = lecturers.size() + 1;
                         }
@@ -319,32 +338,202 @@ public class DataInitializer {
                                                                 new Grade(trd122, "AA"))),
                                 "");
                 Student kokur = new Student("Hakkı", "Kokur", "hakki", "hakkikokur",
-                                "Maltepe/Istanbul", "5315274392", 5, 2020,
-                                "", new ArrayList<Course>(), transcript);
-                Student karayagli = new Student("Burak", "Karayağlı", "burak",
-                                "burakkarayagli",
+                            "Maltepe/Istanbul", "5315274392", 5, 2020,
+                            "", new ArrayList<Course>(), transcript);
+                Student karayagli = new Student("Burak", "Karayağlı", "burak", "burakkarayagli",
                                 "Kartal/Istanbul", "5312347654", 5, 2021,
                                 "", new ArrayList<Course>(), transcript);
-                Student akman = new Student("Barış Giray", "Akman", "barisgiray",
-                                "barisgirayakman",
-                                "Tuzla/Istanbul", "5345274592", 5, 2021,
-                                "", new ArrayList<Course>(), transcript);
-                Student ozgen = new Student("Efe", "Özgen", "efe", "efeozgen",
-                                "Bostancı/Istanbul", "5365544592", 5, 2021,
-                                "", new ArrayList<Course>(), transcript);
-                Student ozkan = new Student("Musa", "Özkan", "musa", "musaozkan",
-                                "Ataşehir/Istanbul", "5305244392", 5, 2021,
-                                "", new ArrayList<Course>(), transcript);
-                Student unal = new Student("Tamer", "Unal", "tamer", "tamerunal",
-                                "Üsküdar/Istanbul", "5375344792", 5, 2021,
-                                "", new ArrayList<Course>(), transcript);
+Student akman = new Student("Barış Giray", "Akman", "barisgiray", "barisgirayakman",
+                            "Tuzla/Istanbul", "5345274592", 5, 2021,
+                            "", new ArrayList<Course>(), transcript);
+Student ozgen = new Student("Efe", "Özgen", "efe", "efeozgen",
+                            "Bostancı/Istanbul", "5365544592", 5, 2021,
+                            "", new ArrayList<Course>(), transcript);
+Student ozkan = new Student("Musa", "Özkan", "musa", "musaozkan",
+                            "Ataşehir/Istanbul", "5305244392", 5, 2021,
+                            "", new ArrayList<Course>(), transcript);
+Student unal = new Student("Tamer", "Unal", "tamer", "tamerunal",
+                            "Üsküdar/Istanbul", "5375344792", 5, 2021,
+                            "", new ArrayList<Course>(), transcript);
+Student yilmaz = new Student("Ahmet", "Yilmaz", "ahmet", "ahmetyilmaz",
+                            "Kadikoy/Istanbul", "5011223344", 1, 2023,
+                            "", new ArrayList<Course>(), transcript);
+Student aydin = new Student("Elif", "Aydin", "elif", "elifaydin",
+                            "Sile/Istanbul", "5022334455", 5, 2021,
+                            "", new ArrayList<Course>(), transcript);
+Student kaya = new Student("Ayse", "Kaya", "ayse", "aysekaya",
+                            "Sisli/Istanbul", "5033445566", 3, 2022,
+                            "", new ArrayList<Course>(), transcript);
+Student aksoy = new Student("Mehmet", "Aksoy", "mehmet", "mehmetaksoy",
+                            "Silivri/Istanbul", "5044556677", 7, 2020,
+                            "", new ArrayList<Course>(), transcript);
+Student celik = new Student("Zeynep", "Celik", "zeynep", "zeynepcelik",
+                            "Beykoz/Istanbul", "5055667788", 2, 2023,
+                            "", new ArrayList<Course>(), transcript);
+Student demir = new Student("Mustafa", "Demir", "mustafa", "mustafademir",
+                            "Atasehir/Istanbul", "5066778899", 4, 2022,
+                            "", new ArrayList<Course>(), transcript);
+Student sahin = new Student("Sevgi", "Sahin", "sevgi", "sevgisahin",
+                            "Eyupsultan/Istanbul", "5077889900", 8, 2020,
+                            "", new ArrayList<Course>(), transcript);
+Student toprak = new Student("Emre", "Toprak", "emre", "emretoprak",
+                            "Uskudar/Istanbul", "5088990011", 1, 2023,
+                            "", new ArrayList<Course>(), transcript);
+Student yildiz = new Student("Esra", "Yildiz", "esra", "esrayildiz",
+                            "Esenler/Istanbul", "5099001122", 6, 2021,
+                            "", new ArrayList<Course>(), transcript);
+Student tas = new Student("Ozlem", "Tas", "ozlem", "ozlemtas",
+                            "Sariyer/Istanbul", "5100112233", 3, 2022,
+                            "", new ArrayList<Course>(), transcript);
+Student arslan = new Student("Yusuf", "Arslan", "yusuf", "yusufarslan",
+                            "Kucukcekmece/Istanbul", "5111223344", 4, 2022,
+                            "", new ArrayList<Course>(), transcript);
+Student gunes = new Student("Betul", "Gunes", "betul", "betulgunes",
+                            "Maltepe/Istanbul", "5122334455", 2, 2023,
+                            "", new ArrayList<Course>(), transcript);
+Student karahan = new Student("Ismail", "Karahan", "ismail", "ismailkarahan",
+                            "Buyukcekmece/Istanbul", "5133445566", 5, 2021,
+                            "", new ArrayList<Course>(), transcript);
+Student ay = new Student("Ceren", "Ay", "ceren", "cerenay",
+                            "Zeytinburnu/Istanbul", "5144556677", 7, 2020,
+                            "", new ArrayList<Course>(), transcript);
+Student eren = new Student("Selim", "Eren", "selim", "selimeren",
+                            "Besiktas/Istanbul", "5155667788", 8, 2020,
+                            "", new ArrayList<Course>(), transcript);
+Student akbas = new Student("Gizem", "Akbas", "gizem", "gizemakbas",
+                            "Kagithane/Istanbul", "5166778899", 1, 2023,
+                            "", new ArrayList<Course>(), transcript);
+Student yilmazer = new Student("Berk", "Yilmazer", "berk", "berkyilmazer",
+                            "Cekmekoy/Istanbul", "5177889900", 6, 2021,
+                            "", new ArrayList<Course>(), transcript);
+Student korkmaz = new Student("Ilayda", "Korkmaz", "ilayda", "ilaydakorkmaz",
+                            "Bagcilar/Istanbul", "5188990011", 2, 2023,
+                            "", new ArrayList<Course>(), transcript);
+Student cetin = new Student("Onur", "Cetin", "onur", "onurcetin",
+                            "Tuzla/Istanbul", "5199001122", 4, 2022,
+                            "", new ArrayList<Course>(), transcript);
+Student sen = new Student("Gulsen", "Sen", "gulsen", "gulsenSen",
+                            "Bakirkoy/Istanbul", "5200112233", 3, 2022,
+                            "", new ArrayList<Course>(), transcript);
+Student oguz = new Student("Burak", "Oguz", "burak", "burakoguz",
+                            "Bahcelievler/Istanbul", "5211223344", 5, 2021,
+                            "", new ArrayList<Course>(), transcript);
+Student kirim = new Student("Sema", "Kirim", "sema", "semakirim",
+                            "Beylikduzu/Istanbul", "5222334455", 7, 2020,
+                            "", new ArrayList<Course>(), transcript);
+Student selcuk = new Student("Mehmet", "Selcuk", "mehmet", "mehmetselcuk",
+                            "Sultanbeyli/Istanbul", "5233445566", 8, 2020,
+                            "", new ArrayList<Course>(), transcript);
+Student aslan = new Student("Nazli", "Aslan", "nazli", "nazliaslan",
+                            "Umraniye/Istanbul", "5244556677", 1, 2023,
+                            "", new ArrayList<Course>(), transcript);
+Student ozturk = new Student("Sercan", "Ozturk", "sercan", "sercanozturk",
+                            "Sultangazi/Istanbul", "5255667788", 6, 2021,
+                            "", new ArrayList<Course>(), transcript);
+Student ulutas = new Student("Esin", "Ulutas", "esin", "esinulutas",
+                            "Beyoglu/Istanbul", "5266778899", 2, 2023,
+                            "", new ArrayList<Course>(), transcript);
+Student yildirim = new Student("Riza", "Yildirim", "riza", "rizayildirim",
+                            "Basaksehir/Istanbul", "5277889900", 4, 2022,
+                            "", new ArrayList<Course>(), transcript);
+Student ekinci = new Student("Sibel", "Ekinci", "sibel", "sibelekinci",
+                            "Fatih/Istanbul", "5288990011", 3, 2022,
+                            "", new ArrayList<Course>(), transcript);
+Student arikan = new Student("Engin", "Arikan", "engin", "enginArikan",
+                            "Sancaktepe/Istanbul", "5299001122", 5, 2021,
+                            "", new ArrayList<Course>(), transcript);
+Student karatas = new Student("Eren", "Karatas", "eren", "erenkaratas",
+                            "Kadikoy/Istanbul", "5312345678", 3, 2022,
+                            "", new ArrayList<Course>(), transcript);
+Student cengiz = new Student("Asli", "Cengiz", "asli", "aslicengiz",
+                            "Umraniye/Istanbul", "5323456789", 5, 2021,
+                            "", new ArrayList<Course>(), transcript);
+Student sevinc = new Student("Ayse", "Sevinc", "ayse", "aysesevinc",
+                            "Sisli/Istanbul", "5345678901", 2, 2023,
+                            "", new ArrayList<Course>(), transcript);
+Student kocak = new Student("Ali", "Kocak", "ali", "alikocak",
+                            "Bakirkoy/Istanbul", "5356789012", 6, 2021,
+                            "", new ArrayList<Course>(), transcript);
+Student onat = new Student("Selin", "Onat", "selin", "selinonat",
+                            "Kartal/Istanbul", "5367890123", 1, 2023,
+                            "", new ArrayList<Course>(), transcript);
+Student turk = new Student("Kaan", "Turk", "kaan", "kaanturk",
+                            "Pendik/Istanbul", "5378901234", 7, 2020,
+                            "", new ArrayList<Course>(), transcript);
+Student yilmazoglu = new Student("Deniz", "Yilmazoglu", "deniz", "denizyilmazoglu",
+                            "Maltepe/Istanbul", "5389012345", 4, 2022,
+                            "", new ArrayList<Course>(), transcript);
+Student acar = new Student("Cem", "Acar", "cem", "cemacar",
+                            "Tuzla/Istanbul", "5390123456", 5, 2021,
+                            "", new ArrayList<Course>(), transcript);
+Student aygun = new Student("Ebru", "Aygün", "ebru", "ebruaygun",
+                            "Kucukcekmece/Istanbul", "5401234567", 3, 2022,
+                            "", new ArrayList<Course>(), transcript);
+Student albayrak = new Student("Berkay", "Albayrak", "berkay", "berkayalbayrak",
+                            "Beyoglu/Istanbul", "5412345678", 2, 2023,
+                            "", new ArrayList<Course>(), transcript);
+Student yigit = new Student("Sibel", "Yigit", "sibel", "sibelyigit",
+                            "Avcilar/Istanbul", "5423456789", 5, 2022,
+                            "", new ArrayList<Course>(), transcript);
+Student akdogan = new Student("Aysegul", "Akdogan", "aysegul", "aysegulakdogan",
+                            "Bagcilar/Istanbul", "5434567890", 6, 2021,
+                            "", new ArrayList<Course>(), transcript);
+Student sarikaya = new Student("Ugur", "Sarikaya", "ugur", "ugursarikaya",
+                            "Sariyer/Istanbul", "5445678901", 7, 2020,
+                            "", new ArrayList<Course>(), transcript);
+Student temiz = new Student("Gizem", "Temiz", "gizem", "gizemtemiz",
+                            "Buyukcekmece/Istanbul", "5456789012", 1, 2023,
+                            "", new ArrayList<Course>(), transcript);
 
-                students.add(kokur);
-                students.add(karayagli);
-                students.add(akman);
-                students.add(ozgen);
-                students.add(ozkan);
-                students.add(unal);
+students.add(kokur);
+students.add(karayagli);
+students.add(akman);
+students.add(ozgen);
+students.add(ozkan);
+students.add(unal);
+students.add(yilmaz);
+students.add(aydin);
+students.add(kaya);
+students.add(aksoy);
+students.add(celik);
+students.add(demir);
+students.add(sahin);
+students.add(toprak);
+students.add(yildiz);
+students.add(tas);
+students.add(arslan);
+students.add(gunes);
+students.add(karahan);
+students.add(ay);
+students.add(eren);
+students.add(akbas);
+students.add(yilmazer);
+students.add(korkmaz);
+students.add(cetin);
+students.add(sen);
+students.add(oguz);
+students.add(kirim);
+students.add(selcuk);
+students.add(aslan);
+students.add(ozturk);
+students.add(ulutas);
+students.add(yildirim);
+students.add(ekinci);
+students.add(arikan);
+students.add(karatas);
+students.add(cengiz);
+students.add(sevinc);
+students.add(kocak);
+students.add(onat);
+students.add(turk);
+students.add(yilmazoglu);
+students.add(acar);
+students.add(aygun);
+students.add(albayrak);
+students.add(yigit);
+students.add(akdogan);
+students.add(sarikaya);
+students.add(temiz);
 
                 // Create Advisors
                 // fatmacorutergin, alihaydar, mujdat
@@ -359,7 +548,7 @@ public class DataInitializer {
                 advisors.add(fatmaCorutErgin);
                 advisors.add(aliHaydar);
 
-                DataUtils json = new DataUtils();
+                Json json = new Json();
                 json.writeCourses(courses);
                 json.writeMandatoryCourses(mandatoryCourses);
                 json.writeTechnicalElectiveCourse(technicalElectives);
