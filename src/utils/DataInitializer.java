@@ -214,6 +214,188 @@ public class godOfEverything {
                 mandatoryCourses.add(cse1242M);
 
                 // Technical Elective Courses
+                // Course CSE4026
+                Course cse4026 = new Course("CSE4026", "Introduction to Robotics and Control Theory", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4026T = new TechnicalElectiveCourse(cse4026, new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(2), wednesday.get(3))), "1.1", null, 50, locations[1], 165);
+                courses.add(cse4026);
+                technicalElectives.add(cse4026T);
+
+                // Course CSE4032
+                Course cse4032 = new Course("CSE4032", "Introduction to Distributed Systems", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4032T = new TechnicalElectiveCourse(cse4032, new ArrayList<TimeInterval>(Arrays.asList(monday.get(0), monday.get(1))), "1.1", null, 50, locations[2], 155);
+                courses.add(cse4032);
+                technicalElectives.add(cse4032T);
+
+                // Course CSE4034
+                Course cse4034 = new Course("CSE4034", "Advanced Unix Programming", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4034T = new TechnicalElectiveCourse(cse4034, new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(1), tuesday.get(2))), "1.1", null, 50, locations[3], 165);
+                courses.add(cse4034);
+                technicalElectives.add(cse4034T);
+
+                // Course CSE4038
+                Course cse4038 = new Course("CSE4038", "Introduction to Parallel Processing", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4038T1 = new TechnicalElectiveCourse(cse4038, new ArrayList<TimeInterval>(Arrays.asList(thursday.get(3), thursday.get(4))), "1.1", null, 50, locations[4], 155);
+                TechnicalElectiveCourse cse4038T2 = new TechnicalElectiveCourse(cse4038, new ArrayList<TimeInterval>(Arrays.asList(thursday.get(5), thursday.get(6))), "1.2", null, 50, locations[5], 155);
+                courses.add(cse4038);
+                technicalElectives.add(cse4038T1);
+                technicalElectives.add(cse4038T2);
+
+                // Course CSE4040
+                Course cse4040 = new Course("CSE4040", "Cloud Computing", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4040T = new TechnicalElectiveCourse(cse4040, new ArrayList<TimeInterval>(Arrays.asList(friday.get(4), friday.get(5))), "1.1", null, 50, locations[6], 165);
+                courses.add(cse4040);
+                technicalElectives.add(cse4040T);
+
+                // Course CSE4044
+                Course cse4044 = new Course("CSE4044", "Software Project Management", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4044T = new TechnicalElectiveCourse(cse4044, new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(4), wednesday.get(5))), "1.1", null, 50, locations[7], 155);
+                courses.add(cse4044);
+                technicalElectives.add(cse4044T);
+
+                // Course CSE4053
+                Course cse4053 = new Course("CSE4053", "Information Systems: Analysis and Design", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4053T = new TechnicalElectiveCourse(cse4053, new ArrayList<TimeInterval>(Arrays.asList(monday.get(2), monday.get(3))), "1.1", null, 50, locations[0], 165);
+                courses.add(cse4053);
+                technicalElectives.add(cse4053T);
+
+                // Course CSE4056
+                Course cse4056 = new Course("CSE4056", "Management of Information Systems", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4056T = new TechnicalElectiveCourse(cse4056, new ArrayList<TimeInterval>(Arrays.asList(monday.get(4), monday.get(5))), "1.1", null, 50, locations[1], 155);
+                courses.add(cse4056);
+                technicalElectives.add(cse4056T);
+
+                // Course CSE4057
+                Course cse4057 = new Course("CSE4057", "Information Systems Security", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4057T1 = new TechnicalElectiveCourse(cse4057, new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(0), wednesday.get(1))), "1.1", null, 50, locations[2], 165);
+                TechnicalElectiveCourse cse4057T2 = new TechnicalElectiveCourse(cse4057, new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(6), wednesday.get(0))), "1.2", null, 50, locations[3], 155);
+                courses.add(cse4057);
+                technicalElectives.add(cse4057T1);
+                technicalElectives.add(cse4057T2);
+
+                // Course CSE4058
+                Course cse4058 = new Course("CSE4058", "Fundamentals of Electronic Commerce", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4058T = new TechnicalElectiveCourse(cse4058, new ArrayList<TimeInterval>(Arrays.asList(friday.get(0), friday.get(1))), "1.1", null, 50, locations[4], 165);
+                courses.add(cse4058);
+                technicalElectives.add(cse4058T);
+
+                // Course CSE4059
+                Course cse4059 = new Course("CSE4059", "Internet Programming", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4059T = new TechnicalElectiveCourse(cse4059, new ArrayList<TimeInterval>(Arrays.asList(friday.get(2), friday.get(3))), "1.1", null, 50, locations[5], 155);
+                courses.add(cse4059);
+                technicalElectives.add(cse4059T);
+
+                // Course CSE4061
+                Course cse4061 = new Course("CSE4061", "Compiler Design", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4061T = new TechnicalElectiveCourse(cse4061, new ArrayList<TimeInterval>(Arrays.asList(monday.get(5), monday.get(6))), "1.1", null, 50, locations[6], 165);
+                courses.add(cse4061);
+                technicalElectives.add(cse4061T);
+
+                // Course CSE4062
+                Course cse4062 = new Course("CSE4062", "Introduction to Data Science and Analytics", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4062T = new TechnicalElectiveCourse(cse4062, new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(3), tuesday.get(4))), "1.1", null, 50, locations[7], 155);
+                courses.add(cse4062);
+                technicalElectives.add(cse4062T);
+
+                // Course CSE4063
+                Course cse4063 = new Course("CSE4063", "Fundamentals of Data Mining", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4063T = new TechnicalElectiveCourse(cse4063, new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(2), wednesday.get(3))), "1.1", null, 50, locations[0], 165);
+                courses.add(cse4063);
+                technicalElectives.add(cse4063T);
+
+                // Course CSE4065
+                Course cse4065 = new Course("CSE4065", "Introduction to Computational Genomics", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4065T = new TechnicalElectiveCourse(cse4065, new ArrayList<TimeInterval>(Arrays.asList(thursday.get(1), thursday.get(2))), "1.1", null, 50, locations[1], 155);
+                courses.add(cse4065);
+                technicalElectives.add(cse4065T);
+
+                // Course CSE4066
+                Course cse4066 = new Course("CSE4066", "Introduction to Cryptography", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4066T = new TechnicalElectiveCourse(cse4066, new ArrayList<TimeInterval>(Arrays.asList(thursday.get(4), thursday.get(5))), "1.1", null, 50, locations[2], 165);
+                courses.add(cse4066);
+                technicalElectives.add(cse4066T);
+
+                // Course CSE4067
+                Course cse4067 = new Course("CSE4067", "Introduction to Blockchain Programming", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4067T = new TechnicalElectiveCourse(cse4067, new ArrayList<TimeInterval>(Arrays.asList(friday.get(5), friday.get(6))), "1.1", null, 50, locations[3], 155);
+                courses.add(cse4067);
+                technicalElectives.add(cse4067T);
+
+                // Course CSE4070
+                Course cse4070 = new Course("CSE4070", "Software Frameworks", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4070T = new TechnicalElectiveCourse(cse4070, new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(5), tuesday.get(6))), "1.1", null, 50, locations[4], 165);
+                courses.add(cse4070);
+                technicalElectives.add(cse4070T);
+
+                // Course CSE4075
+                Course cse4075 = new Course("CSE4075", "Wireless and Mobile Networks", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4075T = new TechnicalElectiveCourse(cse4075, new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(4), wednesday.get(5))), "1.1", null, 50, locations[5], 155);
+                courses.add(cse4075);
+                technicalElectives.add(cse4075T);
+
+                // Course CSE4082
+                Course cse4082 = new Course("CSE4082", "Artificial Intelligence", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4082T = new TechnicalElectiveCourse(cse4082, new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(1), wednesday.get(2))), "1.1", null, 50, locations[6], 165);
+                courses.add(cse4082);
+                technicalElectives.add(cse4082T);
+
+                // Course CSE4083
+                Course cse4083 = new Course("CSE4083", "Computer Graphics", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4083T = new TechnicalElectiveCourse(cse4083, new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(0), tuesday.get(1))), "1.1", null, 50, locations[7], 155);
+                courses.add(cse4083);
+                technicalElectives.add(cse4083T);
+
+                // Course CSE4084
+                Course cse4084 = new Course("CSE4084", "Multimedia Systems", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4084T = new TechnicalElectiveCourse(cse4084, new ArrayList<TimeInterval>(Arrays.asList(monday.get(6), monday.get(0))), "1.1", null, 50, locations[0], 165);
+                courses.add(cse4084);
+                technicalElectives.add(cse4084T);
+
+                // Course CSE4085
+                Course cse4085 = new Course("CSE4085", "Human Computer Interaction", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4085T = new TechnicalElectiveCourse(cse4085, new ArrayList<TimeInterval>(Arrays.asList(thursday.get(0), thursday.get(1))), "1.1", null, 50, locations[1], 155);
+                courses.add(cse4085);
+                technicalElectives.add(cse4085T);
+
+                // Course CSE4086
+                Course cse4086 = new Course("CSE4086", "Mobile Device Programming", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4086T = new TechnicalElectiveCourse(cse4086, new ArrayList<TimeInterval>(Arrays.asList(friday.get(2), friday.get(3))), "1.1", null, 50, locations[2], 165);
+                courses add(cse4086);
+                technicalElectives.add(cse4086T);
+
+                // Course CSE4217
+                Course cse4217 = new Course("CSE4217", "Microprocessors", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4217T = new TechnicalElectiveCourse(cse4217, new ArrayList<TimeInterval>(Arrays.asList(friday.get(3), friday.get(4))), "1.1", null, 50, locations[3], 155);
+                courses.add(cse4217);
+                technicalElectives.add(cse4217T);
+
+                // Course CSE4093
+                Course cse4093 = new Course("CSE4093", "Special Topics in Computer Engineering I", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4093T = new TechnicalElectiveCourse(cse4093, new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(4), tuesday.get(5))), "1.1", null, 50, locations[4], 165);
+                courses.add(cse4093);
+                technicalElectives.add(cse4093T);
+
+                // Course CSE4094
+                Course cse4094 = new Course("CSE4094", "Special Topics in Computer Engineering II", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4094T = new TechnicalElectiveCourse(cse4094, new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(3), wednesday.get(4))), "1.1", null, 50, locations[5], 155);
+                courses.add(cse4094);
+                technicalElectives.add(cse4094T);
+
+                // Course CSE4095
+                Course cse4095 = new Course("CSE4095", "Special Topics in Computer Engineering III", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4095T = new TechnicalElectiveCourse(cse4095, new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(5), wednesday.get(6))), "1.1", null, 50, locations[6], 165);
+                courses.add(cse4095);
+                technicalElectives.add(cse4095T);
+
+                // Course CSE4096
+                Course cse4096 = new Course("CSE4096", "Special Topics in Computer Engineering IV", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4096T = new TechnicalElectiveCourse(cse4096, new ArrayList<TimeInterval>(Arrays.asList(thursday.get(2), thursday.get(3))), "1.1", null, 50, locations[7], 155);
+                courses.add(cse4096);
+                technicalElectives.add(cse4096T);
+
+
+
+
+                
                 Course cse4026 = new Course("CSE4026", "Introduction to Robotics and Control Theory", "", null, 7, 5,
                                 4);
                 TechnicalElectiveCourse cse4026T = new TechnicalElectiveCourse(cse4026,
