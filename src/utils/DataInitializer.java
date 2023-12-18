@@ -276,7 +276,7 @@ public class DataInitializer {
                         lecturersNumber--;
                         MandatoryCourse course = mandatoryCourses.get(i);
                         course.setLecturer(lecturers.get(lecturersNumber));
-                        lecturers.get(lecturersNumber).addlecturedCourses(course);
+                        lecturers.get(lecturersNumber).addLecturedCourses(course);
                         if (lecturersNumber == 0) {
                                 lecturersNumber = lecturers.size();
                         }
@@ -287,7 +287,7 @@ public class DataInitializer {
                         lecturersNumber--;
                         NonTechnicalElectiveCourse course = nonTechnicalElectives.get(i);
                         course.setLecturer(lecturers.get(lecturersNumber));
-                        lecturers.get(lecturersNumber).addlecturedCourses(course);
+                        lecturers.get(lecturersNumber).addLecturedCourses(course);
                         if (lecturersNumber == 0) {
                                 lecturersNumber = lecturers.size() + 1;
                         }
@@ -298,7 +298,7 @@ public class DataInitializer {
                         lecturersNumber--;
                         TechnicalElectiveCourse course = technicalElectives.get(i);
                         course.setLecturer(lecturers.get(lecturersNumber));
-                        lecturers.get(lecturersNumber).addlecturedCourses(course);
+                        lecturers.get(lecturersNumber).addLecturedCourses(course);
                         if (lecturersNumber == 0) {
                                 lecturersNumber = lecturers.size() + 1;
                         }

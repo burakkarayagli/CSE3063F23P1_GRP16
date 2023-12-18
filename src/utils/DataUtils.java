@@ -17,6 +17,7 @@ import models.Student;
 import models.TechnicalElectiveCourse;
 
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -25,11 +26,46 @@ import java.io.FileWriter;
 
 public class DataUtils {
 
+    // For singleton pattern
+    ArrayList<Student> students;
+    ArrayList<Course> courses;
+    ArrayList<Lecturer> lecturers;
+    ArrayList<Advisor> advisors;
+    ArrayList<MandatoryCourse> mandatories;
+    ArrayList<TechnicalElectiveCourse> technicalElectives;
+    ArrayList<NonTechnicalElectiveCourse> nonTechnicalElectives;
+
+    DataUtils() {
+
+    }
+
+    DataUtils(int number) {
+        students = readStudents();
+        courses = readCourses();
+        lecturers = readLecturers();
+        advisors = readAdvisors();
+        mandatories = readMandatoryCourses();
+        technicalElectives = readTechnicalElectiveCourse();
+        nonTechnicalElectives = readNonTechnicalElectiveCourses();
+    }
+
+    public void save() {
+        writeStudents(students);
+        writeCourses(courses);
+        writeLecturers(lecturers);
+        writeAdvisors(advisors);
+        writeMandatoryCourses(mandatories);
+        writeTechnicalElectiveCourse(technicalElectives);
+        writeNonTechnicalElectiveCourse(nonTechnicalElectives);
+    }
+
+    // end singleton pattern
+
     private static DataUtils databaseInstance = null;
 
     public static synchronized DataUtils getInstance() {
         if (databaseInstance == null)
-            databaseInstance = new DataUtils();
+            databaseInstance = new DataUtils(0);
 
         return databaseInstance;
     }
