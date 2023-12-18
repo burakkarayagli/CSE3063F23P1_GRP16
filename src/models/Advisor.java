@@ -89,6 +89,8 @@ public class Advisor extends Staff {
                     if (selections.indexOf(String.valueOf(i + 1)) == -1) {
                         student.dropCourse(student.getSelectedCourses().get(i));
                         student.setStatus("Rejected");
+                    } else {
+                        student.setStatus("Approved");
                     }
                 }
             }

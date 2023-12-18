@@ -1,7 +1,8 @@
 package models;
 
 import java.util.ArrayList;
-import database_utils.Json;
+
+import utils.DataUtils;
 
 public class Student extends Person {
     private String address;
@@ -95,6 +96,9 @@ public class Student extends Person {
     public boolean addCourse(Course course) {
         try {
             selectedCourses.add(course);
+
+            DataUtils database = DataUtils.getInstance();
+            database.writeStudents(menus.Menu.students);
             return true;
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
@@ -142,7 +146,7 @@ public class Student extends Person {
     public ArrayList<Course> getAllCourses() {
         ArrayList<Course> allCourses = new ArrayList<Course>();
 
-        Json json = new Json();
+        DataUtils json = new DataUtils();
         allCourses.addAll(json.readMandatoryCourses());
         allCourses.addAll(json.readTechnicalElectiveCourse());
         allCourses.addAll(json.readNonTechnicalElectiveCourses());

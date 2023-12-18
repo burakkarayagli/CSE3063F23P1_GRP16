@@ -1,22 +1,58 @@
+package menus;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
 import models.Course;
-import models.Student;
+import contollers.StudentController;
 import models.Transcript;
-
-
 
 public class StudentMenu {
 
-    Student student;
+    StudentController studentController;
 
-    public StudentMenu(Student student) {
-        this.student = student;
+    public StudentMenu(StudentController studentController) {
+        this.studentController = studentController;
     }
 
     public StudentMenu() {
-        this.student = new Student();
+        this.studentController = new StudentController();
+    }
+
+    public void studentMenu() {
+        Scanner scanner = new Scanner(System.in);
+        int choice = 0;
+        while (choice != 5) {
+            System.out.println("1-Add Course");
+            System.out.println("2-Drop Course");
+            System.out.println("3-Show Transcript");
+            System.out.println("4-Show Selected Courses");
+            System.out.println("5-Exit");
+            System.out.print("Enter your choice: ");
+            choice = scanner.nextInt();
+            switch (choice) {
+                case 1:
+                    CourseAdding();
+                    break;
+                case 2:
+                    CourseDropping();
+                    break;
+                case 3:
+                    showTranscript();
+                    break;
+                case 4:
+                    showSelectedCourses();
+                    break;
+                case 5:
+                    menus.Menu.getInstance().setLoggedInUser(null);
+                    menus.Menu.getInstance().LoginMenu();
+                    break;
+                default:
+                    System.out.println("Invalid choice");
+                    break;
+            }
+        }
+
     }
 
     public void CourseAdding() {
@@ -31,11 +67,11 @@ public class StudentMenu {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
 
-        ArrayList<Course> courses = student.getAvailableCourses();
+        ArrayList<Course> courses = studentController.getAvailableCourses();
         ArrayList<Integer> selectedCourses = parseInput(input, courses);
 
         for (int i = 0; i < selectedCourses.size(); i++) {
-            student.addCourse(courses.get(selectedCourses.get(i) - 1));
+            studentController.addCourse(courses.get(selectedCourses.get(i) - 1));
         }
     }
 
@@ -52,44 +88,47 @@ public class StudentMenu {
         String input = scanner.nextLine();
         ;
 
-        ArrayList<Course> courses = student.getSelectedCourses();
+        ArrayList<Course> courses = studentController.getSelectedCourses();
         ArrayList<Integer> selectedCourses = parseInput(input, courses);
 
         System.out.println(selectedCourses);
         for (int i = selectedCourses.size() - 1; i >= 0; i--) {
-            student.dropCourse(courses.get(selectedCourses.get(i) - 1));
+            studentController.dropCourse(courses.get(selectedCourses.get(i) - 1));
         }
     }
 
     public void showSelectedCourses() {
-        ArrayList<Course> courses = student.getSelectedCourses();
+        ArrayList<Course> courses = studentController.getSelectedCourses();
 
         System.out.println("=============Selected Courses=============");
 
         for (int i = 0; i < courses.size(); i++) {
             Course course = courses.get(i);
-            System.out.println(i + 1 + "-" + course.getFullName() + " [" + course.getShortName() + "]");
+            System.out.println(i + 1 + "-" + course.getFullName() + " [" +
+                    course.getShortName() + "]");
         }
 
         System.out.println("============================================");
     }
 
     public void showAvailableCourses() {
-        ArrayList<Course> courses = student.getAvailableCourses();
+        ArrayList<Course> courses = studentController.getAvailableCourses();
 
         System.out.println("=============Available Courses=============");
 
         for (int i = 0; i < courses.size(); i++) {
             Course course = courses.get(i);
-            System.out.println(i + 1 + "-" + course.getFullName() + " [" + course.getShortName() + "]");
+            System.out.println(i + 1 + "-" + course.getFullName() + " [" +
+                    course.getShortName() + "]");
         }
 
         System.out.println("============================================");
     }
 
     public void showTranscript() {
-        System.out.println("Transcript of " + student.getPersonName() + " " + student.getPersonSurname());
-        Transcript transcript = student.getTranscript();
+        System.out.println("Transcript of " + studentController.getPersonName() + " " +
+                studentController.getPersonSurname());
+        Transcript transcript = studentController.getTranscript();
         String grades = transcript.getGrades();
 
         System.out.println("=================Transcript==================");

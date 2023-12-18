@@ -1,0 +1,289 @@
+[33mcommit fd479d95fdec3bc3e74dd2e7368281552e00c5d0[m[33m ([m[1;36mHEAD -> [m[1;32mefe[m[33m, [m[1;31morigin/efe[m[33m)[m
+Author: Efe Özgen <efe.ozgennn@gmail.com>
+Date:   Mon Dec 18 15:05:10 2023 +0300
+
+    AdvisorController LecturerController  CourseController create
+
+[33mcommit b3273d8f01bbf8134d00d3c0b8bfff98e88e4e79[m
+Author: Efe Özgen <efe.ozgennn@gmail.com>
+Date:   Mon Dec 18 15:03:58 2023 +0300
+
+    advisorMenu.java
+
+[33mcommit 41f10f905282191beb3561ab4c5853615b7612bb[m
+Author: Efe Özgen <efe.ozgennn@gmail.com>
+Date:   Mon Dec 18 15:03:43 2023 +0300
+
+    lecturerMenu.java
+
+[33mcommit 7a743611f076730071d5ac40b52bea01f91a1d11[m
+Author: Efe Özgen <efe.ozgennn@gmail.com>
+Date:   Mon Dec 18 15:03:17 2023 +0300
+
+    studentMenu.java
+
+[33mcommit 135b11045d6b960152bdbc3982603ec1799cf532[m
+Author: Efe Özgen <efe.ozgennn@gmail.com>
+Date:   Mon Dec 18 15:02:40 2023 +0300
+
+    transcript fix
+
+[33mcommit 2de764ff39ec61db80785f8a2fbc37a853ae9bcc[m
+Author: Efe Özgen <efe.ozgennn@gmail.com>
+Date:   Mon Dec 18 15:01:47 2023 +0300
+
+    cli menu systemcontroller update
+
+[33mcommit 98d3ac379d032a93e12ae8593756c428cd09211c[m
+Author: barisgirayakman <girayakman@gmail.com>
+Date:   Fri Dec 15 21:56:54 2023 +0300
+
+    added an alternative approvestudent method
+
+[33mcommit a01733d8bed3a25f7f4087b8099979e4bf73df3c[m
+Author: barisgirayakman <girayakman@gmail.com>
+Date:   Fri Dec 15 21:27:07 2023 +0300
+
+    added student course organization method and added fullname method back
+
+[33mcommit 81930dd7810cf51578842701dbbe95f3829efacb[m
+Merge: aec37aa e7ee514
+Author: Hakkı Kokur <hakkikokur24@gmail.com>
+Date:   Fri Dec 15 20:48:23 2023 +0300
+
+    Merge pull request #102 from hkokur/efe
+    
+    Efe
+
+[33mcommit e7ee51412349e6de1eb07cec2e35012fee1042a1[m
+Author: Efe Özgen <efe.ozgennn@gmail.com>
+Date:   Fri Dec 15 20:45:47 2023 +0300
+
+    Advisor approveStudent conflict fix
+
+[33mcommit b585fcdfcb1f631b432cb18c793648b2a8cf2d2f[m
+Merge: 35975a5 aec37aa
+Author: Efe Özgen <efe.ozgennn@gmail.com>
+Date:   Fri Dec 15 20:38:58 2023 +0300
+
+    Merge branch 'master' into efe
+
+[33mcommit 35975a5414d9313df910816520619111af15ca7a[m
+Author: Efe Özgen <efe.ozgennn@gmail.com>
+Date:   Fri Dec 15 20:34:21 2023 +0300
+
+    null
+
+[33mcommit aec37aa753e11f6f0749cc69b846ec729d31933a[m
+Merge: 12086ac 2fa49c1
+Author: Efe Özgen <efe.ozgennn@gmail.com>
+Date:   Fri Dec 15 20:14:47 2023 +0300
+
+    Merge branch 'master' of https://github.com/hkokur/CSE3063F23P1_GRP16
+
+[33mcommit 2fa49c1bf84a0b01a105fc233979bb40418a2751[m
+Merge: e7f3b1a 43983b0
+Author: Hakkı Kokur <hakkikokur24@gmail.com>
+Date:   Fri Dec 15 19:37:40 2023 +0300
+
+    Merge pull request #101 from hkokur/burak
+    
+    Burak
+
+[33mcommit 43983b01857cae060b6fa363593b5810d16034d5[m[33m ([m[1;31morigin/burak[m[33m)[m
+Author: Burak Karayağlı <hazewiooo@gmail.com>
+Date:   Fri Dec 15 16:40:16 2023 +0300
+
+    bug fix for dropping multiple courses
+
+[33mcommit 5e0ec3ebe716a68c948a1899648ad8ec0c4a582f[m
+Author: Burak Karayağlı <hazewiooo@gmail.com>
+Date:   Fri Dec 15 16:06:29 2023 +0300
+
+    Student contoller
+
+[33mcommit bc266adcc4a29c280a3d955611697eee5b54fa71[m
+Author: Efe Özgen <efe.ozgennn@gmail.com>
+Date:   Fri Dec 15 15:57:56 2023 +0300
+
+    Advisor approveStudent method fix
+
+[33mcommit 65cd8d9bc073d8d62b06aa8e55653eb9a0bedb52[m
+Merge: 914eaa2 4b76ca4
+Author: Burak Karayağlı <hazewiooo@gmail.com>
+Date:   Fri Dec 15 15:01:07 2023 +0300
+
+    resolved conflicts
+
+[33mcommit 12086ac2c4609651145a93367018c549815b2528[m
+Merge: 3e44d1f e7f3b1a
+Author: Efe Özgen <efe.ozgennn@gmail.com>
+Date:   Fri Dec 15 15:00:24 2023 +0300
+
+    Merge branch 'master' of https://github.com/hkokur/CSE3063F23P1_GRP16
+
+[33mcommit e7f3b1aabd396a3f823227c6ad9f29e1e9984bd1[m
+Author: hkokur <hakkikokur24@gmail.com>
+Date:   Fri Dec 15 14:59:34 2023 +0300
+
+    delete database
+
+[33mcommit 914eaa214156e86cc7695cfeb95e310b640dc9b7[m
+Author: Burak Karayağlı <hazewiooo@gmail.com>
+Date:   Fri Dec 15 14:58:53 2023 +0300
+
+    Student controller
+
+[33mcommit abb44ce052b17f360718e8e1137e20a151f614af[m
+Author: Burak Karayağlı <hazewiooo@gmail.com>
+Date:   Fri Dec 15 14:58:14 2023 +0300
+
+    Making student controller
+
+[33mcommit 4b76ca49c8af77c1b5255c1d3ed5ea1acc90108e[m
+Merge: c5edfa2 ebf4aaf
+Author: Hakkı Kokur <hakkikokur24@gmail.com>
+Date:   Fri Dec 15 14:56:44 2023 +0300
+
+    Merge pull request #99 from hkokur/efe
+    
+    Efe
+
+[33mcommit c5edfa2a21a8838564788c0a6c5609ff6f5140df[m
+Merge: 19dd799 ebda074
+Author: hkokur <hakkikokur24@gmail.com>
+Date:   Fri Dec 15 14:53:52 2023 +0300
+
+    merge burak
+
+[33mcommit 3e44d1f9ce9f40c318cfb73c8b404c9c7d1d6857[m
+Merge: 19dd799 ebf4aaf
+Author: Hakkı Kokur <hakkikokur24@gmail.com>
+Date:   Fri Dec 15 14:44:41 2023 +0300
+
+    Merge pull request #98 from hkokur/efe
+    
+    Efe
+
+[33mcommit ebf4aaf16cf024d50a3d057146396de702d3bae7[m
+Author: Efe Özgen <efe.ozgennn@gmail.com>
+Date:   Fri Dec 15 14:17:03 2023 +0300
+
+    Advisor if bot approved then automatically dropped
+
+[33mcommit 4fc3dd9cf30ce9e1f563591ef28e38046ca48b89[m
+Author: Efe Özgen <efe.ozgennn@gmail.com>
+Date:   Fri Dec 15 14:15:09 2023 +0300
+
+    fix
+
+[33mcommit 3de1466a65990650e2537c236e5d2aed693b1f74[m
+Author: Efe Özgen <efe.ozgennn@gmail.com>
+Date:   Fri Dec 15 14:14:12 2023 +0300
+
+    Advisor approveStudent method
+
+[33mcommit ebda0749364316a5282f01ac16965fd792d8f1cb[m
+Author: Burak Karayağlı <hazewiooo@gmail.com>
+Date:   Fri Dec 15 13:54:44 2023 +0300
+
+    Student
+
+[33mcommit 19dd799456bc357d351a2262a1e869610a106dc4[m
+Merge: c80ef1a e3a858a
+Author: Hakkı Kokur <hakkikokur24@gmail.com>
+Date:   Fri Dec 15 13:42:19 2023 +0300
+
+    Merge pull request #94 from hkokur/hakki
+    
+    Hakki
+
+[33mcommit e3a858a3d7e2f433c41912ccfa6f3c3c7cd01e25[m
+Author: hkokur <hakkikokur24@gmail.com>
+Date:   Fri Dec 15 13:41:08 2023 +0300
+
+    removed jsons
+
+[33mcommit e29f38c3d857182b9d40f8df15129330d9ea4eed[m
+Author: Efe Özgen <efe.ozgennn@gmail.com>
+Date:   Fri Dec 15 13:38:06 2023 +0300
+
+    Advisor getCombinedCourses method
+
+[33mcommit c80ef1a316b5474cfcc8b366eb2d3dfe72d128c5[m
+Merge: 5719f8b 5a4de02
+Author: Hakkı Kokur <hakkikokur24@gmail.com>
+Date:   Fri Dec 15 13:36:46 2023 +0300
+
+    Merge pull request #92 from hkokur/efe
+    
+    Efe
+
+[33mcommit 5a4de02c132b94a7c49ea65b23a5babac8f6d559[m
+Author: Efe Özgen <efe.ozgennn@gmail.com>
+Date:   Fri Dec 15 13:15:40 2023 +0300
+
+    Student checkOverlapingCourses method
+
+[33mcommit a2875392f8192db8bbe138a718c049920bc9a996[m
+Merge: 289ce49 5719f8b
+Author: Burak Karayağlı <hazewiooo@gmail.com>
+Date:   Fri Dec 15 10:11:56 2023 +0300
+
+    Merge remote-tracking branch 'origin' into burak
+
+[33mcommit 289ce49fabacfeb18b7e9240b850b41e5c403d75[m
+Merge: a4f1cf9 bd497ec
+Author: Burak Karayağlı <49692984+burakkarayagli@users.noreply.github.com>
+Date:   Fri Dec 15 10:08:22 2023 +0300
+
+    Merge pull request #90 from hkokur/hakki
+    
+    Hakki
+
+[33mcommit 414a7c1c1bbcb0b3124c5c573c5f50f308a16811[m
+Author: Efe Özgen <efe.ozgennn@gmail.com>
+Date:   Fri Dec 15 04:35:34 2023 +0300
+
+    Trnascript functions done
+
+[33mcommit bd497ec2d71d4a672a79d265275173f8b26e1db6[m
+Author: hkokur <hakkikokur24@gmail.com>
+Date:   Fri Dec 15 03:52:57 2023 +0300
+
+    lecturer methods done
+
+[33mcommit 03a5b42a1d394863cba0871b70ec5580c7a54093[m
+Author: hkokur <hakkikokur24@gmail.com>
+Date:   Fri Dec 15 01:48:35 2023 +0300
+
+    something
+
+[33mcommit 5719f8ba9a9e0d461301eedaa5c31bc4a5e9527e[m
+Merge: 08973b9 6cd51ce
+Author: Hakkı Kokur <hakkikokur24@gmail.com>
+Date:   Fri Dec 15 00:31:02 2023 +0300
+
+    Merge pull request #80 from hkokur/hakki
+    
+    a json
+
+[33mcommit 6cd51ce613d6ecd5fbc7960b3b48c7645c92ed89[m
+Author: hkokur <hakkikokur24@gmail.com>
+Date:   Fri Dec 15 00:30:14 2023 +0300
+
+    a json
+
+[33mcommit 08973b9324d43f1216a5984d845a9e71b69b3ee1[m
+Merge: aee7ac7 87512dd
+Author: Hakkı Kokur <hakkikokur24@gmail.com>
+Date:   Thu Dec 14 23:59:26 2023 +0300
+
+    Merge pull request #79 from hkokur/hakki
+    
+    Hakki
+
+[33mcommit 87512dd68139800b248c39a1ba99bf6584ca55dc[m
+Merge: 29bc9c1 2a9988d
+Author: Hakkı Kokur <hakkikokur24@gmail.com>
+Date:   Thu Dec

@@ -1,4 +1,4 @@
-package database_utils;
+package utils;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -23,7 +23,17 @@ import java.util.Scanner;
 import java.io.File;
 import java.io.FileWriter;
 
-public class Json {
+public class DataUtils {
+
+    private static DataUtils databaseInstance = null;
+
+    public static synchronized DataUtils getInstance() {
+        if (databaseInstance == null)
+            databaseInstance = new DataUtils();
+
+        return databaseInstance;
+    }
+
     private String databaseFolder = "database";
 
     private ArrayList<File> getStudentFiles() {

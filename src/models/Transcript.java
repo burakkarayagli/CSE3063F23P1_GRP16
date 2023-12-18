@@ -11,6 +11,10 @@ public class Transcript {
         this.notes = "";
     }
 
+    public Transcript(ArrayList<Grade> initialGrades) {
+        this.listGrades = new ArrayList<Grade>(initialGrades);
+    }
+
     public Transcript(ArrayList<Grade> initialGrades, String notes) {
         this.listGrades = new ArrayList<Grade>(initialGrades);
         this.notes = notes;
