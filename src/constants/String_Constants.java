@@ -1,3 +1,5 @@
+package constants;
+
 //Static String constants used in the program
 public class String_Constants {
     public final String WELCOME_MESSAGE = "Welcome to the Course Management System!";

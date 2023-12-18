@@ -1,5 +1,13 @@
+package menus;
+
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import database_utils.Json;
+import models.Advisor;
+import models.Lecturer;
+import models.Person;
+import models.Student;
 
 public class CLI {
 
@@ -7,7 +15,7 @@ public class CLI {
         Json json = new Json();
         ArrayList<Student> students = json.readStudents();
         Student student = students.get(1);
-        StudentController studentController = new StudentController(student);
+        StudentMenu studentController = new StudentMenu(student);
 
         String choice = "";
 
@@ -54,14 +62,19 @@ public class CLI {
     }
 
     public static void main2(String[] args) {
-        // Create a new system controller with null logged in user
-        SystemController systemController = new SystemController();
-        Menu menu = new Menu();
-        Scanner scanner = new Scanner(System.in);
+        Person loggedinPerson = null;
 
-        String_Constants StringConstants = new String_Constants();
+        Scanner authScanner = new Scanner(System.in);
+        System.out.println("Enter your username:");
+        String username = authScanner.nextLine();
+        System.out.println("Enter your password:");
+        String password = authScanner.nextLine();
 
-        menu.Menu();
+        Json json = new Json();
+        ArrayList<Student> students = json.readStudents();
+        ArrayList<Advisor> advisors = json.readAdvisors();
+        ArrayList<Lecturer> lecturers = json.readLecturers();
+
     }
 
 }

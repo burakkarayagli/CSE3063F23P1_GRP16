@@ -1,4 +1,7 @@
+package models;
+
 import java.util.ArrayList;
+import database_utils.Json;
 
 public class Student extends Person {
     private String address;

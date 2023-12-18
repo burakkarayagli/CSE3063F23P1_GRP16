@@ -1,15 +1,21 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class StudentController {
+import models.Course;
+import models.Student;
+import models.Transcript;
+
+
+
+public class StudentMenu {
 
     Student student;
 
-    public StudentController(Student student) {
+    public StudentMenu(Student student) {
         this.student = student;
     }
 
-    public StudentController() {
+    public StudentMenu() {
         this.student = new Student();
     }
 

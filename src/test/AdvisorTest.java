@@ -1,5 +1,9 @@
 import org.junit.Before;
 import org.junit.Test;
+
+import models.Advisor;
+import models.Student;
+
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
@@ -32,7 +36,6 @@ public class AdvisorTest {
         assertTrue(advisor.deleteStudent(studentToDelete));
         assertFalse(advisor.getStudents().contains(studentToDelete));
     }
-
 
     @Test
     public void testPrintTranscriptInfo() {

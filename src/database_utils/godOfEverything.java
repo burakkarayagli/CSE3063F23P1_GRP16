@@ -1,5 +1,18 @@
+package database_utils;
+
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import models.Advisor;
+import models.Course;
+import models.Grade;
+import models.Lecturer;
+import models.MandatoryCourse;
+import models.NonTechnicalElectiveCourse;
+import models.Student;
+import models.TechnicalElectiveCourse;
+import models.TimeInterval;
+import models.Transcript;
 
 public class godOfEverything {
 

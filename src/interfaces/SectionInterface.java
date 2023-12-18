@@ -1,6 +1,11 @@
+package interfaces;
+
 import java.util.ArrayList;
 
-interface SectionInterface {
+import models.Lecturer;
+import models.TimeInterval;
+
+public interface SectionInterface {
     public boolean isTechnical();
 
     public boolean isMandatory();

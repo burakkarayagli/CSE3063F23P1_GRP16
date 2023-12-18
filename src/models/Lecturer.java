@@ -1,6 +1,9 @@
+package models;
 
 import java.util.ArrayList;
 import java.util.List;
+import interfaces.SectionInterface;
+import database_utils.Json;
 
 public class Lecturer extends Staff {
     private transient List<Course> courses = new ArrayList<>();
