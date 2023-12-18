@@ -36,28 +36,27 @@ public class Advisor extends Staff {
     }
 
     // It provides adding or dropping the course of the student by the advisor.
-    public void studentCourseOrganization(){
+    public void studentCourseOrganization() {
         Scanner input = new Scanner(System.in);
         int num = 0;
-        for(int i = 0;i<students.size();i++){
+        for (int i = 0; i < students.size(); i++) {
             System.out.println("Eligible Students");
             System.out.println("Please select one of them");
-            System.out.println((i+1)+" "+students.get(i).getFullName());
+            System.out.println((i + 1) + " " + students.get(i).getFullName());
 
         }
         num = input.nextInt();
-        Student student = students.get(num-1);
+        Student student = students.get(num - 1);
         ArrayList<Course> combinedCourseList = getCombinedCourses(student);
-        for(int i = 0;i<combinedCourseList.size();i++){
-            System.out.println((i+1)+" "+combinedCourseList.get(i).getFullName());
+        for (int i = 0; i < combinedCourseList.size(); i++) {
+            System.out.println((i + 1) + " " + combinedCourseList.get(i).getFullName());
         }
         int selection = input.nextInt();
-        Course chosenCourse = combinedCourseList.get(selection-1);
-        if(student.getSelectedCourses().contains(chosenCourse)){
+        Course chosenCourse = combinedCourseList.get(selection - 1);
+        if (student.getSelectedCourses().contains(chosenCourse)) {
             System.out.println("Course chosen by the student has been dropped.");
             student.dropCourse(chosenCourse);
-        }
-        else{
+        } else {
             System.out.println("Course has been added to the list of the student.");
             student.addCourse(chosenCourse);
         }
@@ -77,10 +76,10 @@ public class Advisor extends Staff {
         return combinedCourses;
     }
 
-        public boolean approveStudent(Student student, String selections) {
-            
-            try {
-                
+    public boolean approveStudent(Student student, String selections) {
+
+        try {
+
             if (selections.equals("*")) {
                 student.setStatus("Approved");
                 return true;
@@ -93,63 +92,64 @@ public class Advisor extends Staff {
                 }
             }
             return true;
-            }
-            catch(Exception e) {
-                System.out.println("Error: " + e.getMessage());
-                return false;
-            }
-
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+            return false;
         }
-        
-        // Alternative approveStudent method
-        /*
-        public boolean approveStudent(Student student){
-        ArrayList<Course> selectedCourses = student.getSelectedCourses();
-        Scanner input = new Scanner(System.in);
-        int operation = 0;
-        while (operation != 1 || operation != 2) {
-            System.out.println("Please select the approval type:");
-            System.out.println("1. Approve whole");
-            System.out.println("2. Approve one by one");
-            System.out.println("3. Skip");
-            operation = input.nextInt();
-            if(operation != 1 || operation != 2){
-                System.out.println("Please select one of the operations showcased.\n");
-            }
-            else if(operation==1){   
-                if(student.getTotalCredit()>40){
-                    student.getWarnings(1); // It requests the first warning shooting out.
-                }
-                else{
-                    student.setStatus("Approved");
-                }   
-            }
-            else if(operation==2){
-                int i = 0;
-                int approvalStatus  = 0;
-                while(i<student.getSelectedCourses().size()){
-                    System.out.println("Do you approve the course "+student.getSelectedCourses().get(i).getFullName()+"?(1: approve, 0: reject, -1: skip)");
-                    approvalStatus = input.nextInt();
-                    if(approvalStatus==1){
-                        i++;
-                    }
-                    else if(approvalStatus==0){
-                        Course targetCourse = student.getAvailableCourses().get(i);
-                        student.getSelectedCourses().remove(targetCourse);
-                    }
-                    else if(approvalStatus!=-1)
-                        System.out.println("Please type one of the options showcased.\n");
-                }
-                student.setStatus("Approved");
-            }
-            else if(operation==3){
-                student.setStatus("Pending");
-                return false;
-            }
-        } */
-
-        // public boolean rejectStudent(Student student) {
-
-        // }
 
     }
+
+    // Alternative approveStudent method
+    /*
+     * public boolean approveStudent(Student student){
+     * ArrayList<Course> selectedCourses = student.getSelectedCourses();
+     * Scanner input = new Scanner(System.in);
+     * int operation = 0;
+     * while (operation != 1 || operation != 2) {
+     * System.out.println("Please select the approval type:");
+     * System.out.println("1. Approve whole");
+     * System.out.println("2. Approve one by one");
+     * System.out.println("3. Skip");
+     * operation = input.nextInt();
+     * if(operation != 1 || operation != 2){
+     * System.out.println("Please select one of the operations showcased.\n");
+     * }
+     * else if(operation==1){
+     * if(student.getTotalCredit()>40){
+     * student.getWarnings(1); // It requests the first warning shooting out.
+     * }
+     * else{
+     * student.setStatus("Approved");
+     * }
+     * }
+     * else if(operation==2){
+     * int i = 0;
+     * int approvalStatus = 0;
+     * while(i<student.getSelectedCourses().size()){
+     * System.out.println("Do you approve the course "+student.getSelectedCourses().
+     * get(i).getFullName()+"?(1: approve, 0: reject, -1: skip)");
+     * approvalStatus = input.nextInt();
+     * if(approvalStatus==1){
+     * i++;
+     * }
+     * else if(approvalStatus==0){
+     * Course targetCourse = student.getAvailableCourses().get(i);
+     * student.getSelectedCourses().remove(targetCourse);
+     * }
+     * else if(approvalStatus!=-1)
+     * System.out.println("Please type one of the options showcased.\n");
+     * }
+     * student.setStatus("Approved");
+     * }
+     * else if(operation==3){
+     * student.setStatus("Pending");
+     * return false;
+     * }
+     * }
+     */
+
+    // public boolean rejectStudent(Student student) {
+
+    // }
+
+}
