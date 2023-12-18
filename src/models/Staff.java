@@ -1,3 +1,5 @@
+package models;
+
 import java.util.ArrayList;
 
 public class Staff extends Person {
@@ -5,7 +7,7 @@ public class Staff extends Person {
     private ArrayList<TimeInterval> officeHours;
     private int salary;
     private String employmentStatus;
-    
+
     public Staff(String personName, String personSurname, String username, String password,
             String reputation, ArrayList<TimeInterval> officeHours, int salary, String employmentStatus) {
         super(personName, personSurname, username, password);
@@ -21,7 +23,7 @@ public class Staff extends Person {
     }
 
     public Staff() {
-        
+
     }
 
     public String getReputation() {
@@ -35,10 +37,12 @@ public class Staff extends Person {
     public ArrayList<TimeInterval> getOfficeHours() {
         return this.officeHours;
     }
-    public boolean addOfficeHours(TimeInterval officeHour){
+
+    public boolean addOfficeHours(TimeInterval officeHour) {
         return officeHours.add(officeHour);
     }
-    public boolean deleteOfficeHours(TimeInterval officeHour){
+
+    public boolean deleteOfficeHours(TimeInterval officeHour) {
         return officeHours.remove(officeHour);
     }
 

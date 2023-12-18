@@ -1,3 +1,5 @@
+package models;
+
 public class Grade {
     private Course course;
     private String grade;

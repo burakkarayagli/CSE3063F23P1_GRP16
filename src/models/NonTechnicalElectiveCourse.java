@@ -1,4 +1,8 @@
+package models;
+
 import java.util.ArrayList;
+
+import interfaces.SectionInterface;
 
 public class NonTechnicalElectiveCourse extends Course implements SectionInterface {
     private ArrayList<TimeInterval> dates;
@@ -8,7 +12,8 @@ public class NonTechnicalElectiveCourse extends Course implements SectionInterfa
     private String location;
     private boolean isRemote;
 
-    NonTechnicalElectiveCourse(Course course, ArrayList<TimeInterval> dates, String sectionName, Lecturer lecturer,
+    public NonTechnicalElectiveCourse(Course course, ArrayList<TimeInterval> dates, String sectionName,
+            Lecturer lecturer,
             int quota,
             String location, boolean isRemote) {
         super(course.getShortName(), course.getFullName(), course.getDescription(), course.getPrerequisite(),
@@ -22,7 +27,8 @@ public class NonTechnicalElectiveCourse extends Course implements SectionInterfa
 
     }
 
-    NonTechnicalElectiveCourse(String shortName, String fullName, String description, ArrayList<String> prerequisite,
+    public NonTechnicalElectiveCourse(String shortName, String fullName, String description,
+            ArrayList<String> prerequisite,
             int semester,
             int credit, int classHours, ArrayList<TimeInterval> dates, String sectionName, Lecturer lecturer,
             int quota, String location, boolean isRemote) {

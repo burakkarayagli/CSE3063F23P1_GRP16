@@ -1,16 +1,20 @@
+package models;
+
 import java.util.ArrayList;
 
-public class TechnicalElectiveCourse extends Course implements SectionInterface {
+import interfaces.SectionInterface;
+
+public class MandatoryCourse extends Course implements SectionInterface {
     private ArrayList<TimeInterval> dates;
     private String sectionName;
     private Lecturer lecturer;
     private int quota;
-    private int requiredCredit;
     private String location;
+    private int labHours;
 
-    TechnicalElectiveCourse(Course course, ArrayList<TimeInterval> dates, String sectionName, Lecturer lecturer,
+    public MandatoryCourse(Course course, ArrayList<TimeInterval> dates, String sectionName, Lecturer lecturer,
             int quota,
-            String location) {
+            String location, int labHours) {
         super(course.getShortName(), course.getFullName(), course.getDescription(), course.getPrerequisite(),
                 course.getSemester(), course.getCredit(), course.getClassHours());
         this.dates = dates;
@@ -18,34 +22,21 @@ public class TechnicalElectiveCourse extends Course implements SectionInterface 
         this.lecturer = lecturer;
         this.quota = quota;
         this.location = location;
+        this.labHours = labHours;
 
     }
 
-    TechnicalElectiveCourse(Course course, ArrayList<TimeInterval> dates, String sectionName, Lecturer lecturer,
-            int quota,
-            String location, int requiredCredit) {
-        super(course.getShortName(), course.getFullName(), course.getDescription(), course.getPrerequisite(),
-                course.getSemester(), course.getCredit(), course.getClassHours());
-        this.dates = dates;
-        this.sectionName = sectionName;
-        this.lecturer = lecturer;
-        this.quota = quota;
-        this.location = location;
-        this.requiredCredit = requiredCredit;
-
-    }
-
-    TechnicalElectiveCourse(String shortName, String fullName, String description, ArrayList<String> prerequisite,
+    public MandatoryCourse(String shortName, String fullName, String description, ArrayList<String> prerequisite,
             int semester,
             int credit, int classHours, ArrayList<TimeInterval> dates, String sectionName, Lecturer lecturer,
-            int quota, String location, int requiredCredit) {
+            int quota, String location, int labHours) {
         super(shortName, fullName, description, prerequisite, semester, credit, classHours);
         this.dates = dates;
         this.sectionName = sectionName;
         this.lecturer = lecturer;
         this.quota = quota;
         this.location = location;
-        this.requiredCredit = requiredCredit;
+        this.labHours = labHours;
     }
 
     // Interface Methods
@@ -100,27 +91,18 @@ public class TechnicalElectiveCourse extends Course implements SectionInterface 
         this.quota = quota;
     }
 
-    // Abstract Methods
+    // Class Methods
     public String toString() {
         return "Mandatory Course: " + this.getFullName() + "\nCode: " + this.getShortName() + "\nDescription:"
                 + this.getDescription()
                 + "\nPrequisite: " + this.getPrerequisite() + "\nSemester: " + this.getSemester() + "\nCredit: "
                 + this.getCredit() + "\nClass Hours: " + this.getClassHours() + "\nSection Name: "
                 + this.getSectionName() + "\nLecturer: " + this.getLecturer() + "\nQuota: " + this.getQuota()
-                + "\nLocation: " + this.location + "\nRequiredCredit: " + this.requiredCredit;
+                + "\nLocation: " + this.location + "\nLab Hours: " + this.labHours;
     }
 
-    // Class Methods
-    public int getRequiredCredit() {
-        return requiredCredit;
-    }
-
-    public void setRequiredCredit(int requiredCredit) {
-        this.requiredCredit = requiredCredit;
-    }
-
-    public boolean checkRequiredCredit(int totalCredit) {
-        if (totalCredit >= this.requiredCredit) {
+    public boolean hasLabs() {
+        if (this.labHours > 0) {
             return true;
         }
         return false;

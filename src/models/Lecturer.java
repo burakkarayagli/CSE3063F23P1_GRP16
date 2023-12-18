@@ -1,6 +1,9 @@
+package models;
 
 import java.util.ArrayList;
 import java.util.List;
+import interfaces.SectionInterface;
+import utils.DataUtils;
 
 public class Lecturer extends Staff {
     private transient List<Course> courses = new ArrayList<>();
@@ -14,7 +17,7 @@ public class Lecturer extends Staff {
     }
 
     private void initCourses() {
-        Json json = new Json();
+        DataUtils json = new DataUtils();
         ArrayList<Course> courses = new ArrayList<>();
         courses.addAll(json.readMandatoryCourses());
         courses.addAll(json.readTechnicalElectiveCourse());
@@ -120,7 +123,7 @@ public class Lecturer extends Staff {
 
         // Alternative
         ((SectionInterface) course).setLecturer(this);
-        Json json = new Json();
+        DataUtils json = new DataUtils();
         if (course instanceof MandatoryCourse) {
             ArrayList<MandatoryCourse> courses = json.readMandatoryCourses();
             courses.add((MandatoryCourse) course);
@@ -178,7 +181,7 @@ public class Lecturer extends Staff {
         // }
         // }
         // return false;
-        Json json = new Json();
+        DataUtils json = new DataUtils();
         ArrayList<SectionInterface> courses = new ArrayList<>();
         courses.addAll(json.readMandatoryCourses());
         courses.addAll(json.readTechnicalElectiveCourse());
@@ -220,7 +223,7 @@ public class Lecturer extends Staff {
     }
 
     public ArrayList<Student> viewEnrolledStudents(Course course) {
-        Json json = new Json();
+        DataUtils json = new DataUtils();
         ArrayList<Student> students = json.readStudents();
         ArrayList<Student> enrolledStudents = new ArrayList<Student>();
         for (int i = 0; i < students.size(); i++) {

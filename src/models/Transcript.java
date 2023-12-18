@@ -1,3 +1,5 @@
+package models;
+
 import java.util.ArrayList;
 
 public class Transcript {
@@ -6,7 +8,11 @@ public class Transcript {
 
     public Transcript() {
         this.listGrades = new ArrayList<Grade>();
-        this.notes = ""; 
+        this.notes = "";
+    }
+
+    public Transcript(ArrayList<Grade> initialGrades) {
+        this.listGrades = new ArrayList<Grade>(initialGrades);
     }
 
     public Transcript(ArrayList<Grade> initialGrades, String notes) {
@@ -17,12 +23,13 @@ public class Transcript {
     public String getGrades() {
         StringBuilder result = new StringBuilder();
         for (Grade grade : listGrades) {
-            result.append("Course name: ").append(grade.getCourse().getFullName()).append(" | Student Grade: ").append(grade.getGrade()).append("\n");
+            result.append("Course name: ").append(grade.getCourse().getFullName()).append(" | Student Grade: ")
+                    .append(grade.getGrade()).append("\n");
         }
         return result.toString();
     }
-    
-    public ArrayList<Grade> getGradeList(){
+
+    public ArrayList<Grade> getGradeList() {
         return listGrades;
     }
 
@@ -32,8 +39,8 @@ public class Transcript {
     }
 
     public boolean deleteGrade(Grade grade) {
-        for(int i = 0; i < listGrades.size(); i++) {
-            if(listGrades.get(i) == grade) {
+        for (int i = 0; i < listGrades.size(); i++) {
+            if (listGrades.get(i) == grade) {
                 listGrades.remove(i);
                 return true;
             }
@@ -47,12 +54,13 @@ public class Transcript {
         int totalCredit = 0;
         int credit = 0;
         for (int i = 0; i < listGrades.size(); i++) {
-                credit = listGrades.get(i).getCourse().getCredit();
-                sum += Double.parseDouble(listGrades.get(i).getGrade()) * credit;
-                count++;
-                totalCredit += credit;
+            credit = listGrades.get(i).getCourse().getCredit();
+            sum += Double.parseDouble(listGrades.get(i).getGrade()) * credit;
+            count++;
+            totalCredit += credit;
         }
-        if(count == 0 || totalCredit == 0) return 0.0;
+        if (count == 0 || totalCredit == 0)
+            return 0.0;
         return sum / (count * totalCredit);
     }
 
@@ -69,7 +77,8 @@ public class Transcript {
                 totalCredit += credit;
             }
         }
-        if(count == 0 || totalCredit == 0) return 0.0;
+        if (count == 0 || totalCredit == 0)
+            return 0.0;
         return sum / (count * totalCredit);
     }
 
@@ -86,7 +95,8 @@ public class Transcript {
         result.append("Transcript: \n");
         result.append("Grades: \n");
         for (Grade grade : listGrades) {
-            result.append("Course name: ").append(grade.getCourse().getFullName()).append(" | Student Grade: ").append(grade.getGrade()).append("\n");
+            result.append("Course name: ").append(grade.getCourse().getFullName()).append(" | Student Grade: ")
+                    .append(grade.getGrade()).append("\n");
         }
         result.append("Notes: ").append(notes).append("\n");
         return result.toString();

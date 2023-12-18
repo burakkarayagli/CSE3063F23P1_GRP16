@@ -1,7 +1,20 @@
+package utils;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class godOfEverything {
+import models.Advisor;
+import models.Course;
+import models.Grade;
+import models.Lecturer;
+import models.MandatoryCourse;
+import models.NonTechnicalElectiveCourse;
+import models.Student;
+import models.TechnicalElectiveCourse;
+import models.TimeInterval;
+import models.Transcript;
+
+public class DataInitializer {
 
         public static void main(String[] args) {
                 ArrayList<Course> courses = new ArrayList<Course>();
@@ -346,7 +359,7 @@ public class godOfEverything {
                 advisors.add(fatmaCorutErgin);
                 advisors.add(aliHaydar);
 
-                Json json = new Json();
+                DataUtils json = new DataUtils();
                 json.writeCourses(courses);
                 json.writeMandatoryCourses(mandatoryCourses);
                 json.writeTechnicalElectiveCourse(technicalElectives);
