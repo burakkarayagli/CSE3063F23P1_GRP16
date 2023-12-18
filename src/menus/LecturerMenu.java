@@ -96,6 +96,7 @@ public class LecturerMenu {
 
         System.out.println("Enter the course section name");
         System.out.println("eg: 1.1");
+        scanner = new Scanner(System.in);
         String sectionName = scanner.nextLine();
 
         System.out.println("Enter the course quota");
@@ -104,13 +105,14 @@ public class LecturerMenu {
 
         System.out.println("Enter the course location");
         System.out.println("eg: M1Z11");
+        scanner = new Scanner(System.in);
         String location = scanner.nextLine();
 
         ArrayList<TimeInterval> dates = new ArrayList<TimeInterval>();
         while (true) {
             System.out.println("Enter the course day");
             System.out.println("eg: Monday, Tuesday, Wednesday, Thursday or Friday(ony one day)");
-            System.out.println("eg: -1 to exit");
+            System.out.println("eg: -1 to exit from time interval adding");
             String day = scanner.nextLine();
             if (day.equals("-1")) {
                 break;
