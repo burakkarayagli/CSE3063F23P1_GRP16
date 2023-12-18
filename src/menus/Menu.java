@@ -38,7 +38,7 @@ public class Menu {
 
     public Menu() {
         loggedInUser = null;
-        json = new DataUtils();
+        json = DataUtils.getInstance();
         lecturers = json.readLecturers();
         students = json.readStudents();
         advisors = json.readAdvisors();
