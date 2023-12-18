@@ -55,11 +55,7 @@ public class CLI {
 
     public static void main2(String[] args) {
         // Create a new system controller with null logged in user
-        SystemController systemController = new SystemController();
         Menu menu = new Menu();
-        Scanner scanner = new Scanner(System.in);
-
-        String_Constants StringConstants = new String_Constants();
 
         menu.Menu();
     }

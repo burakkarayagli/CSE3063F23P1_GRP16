@@ -5,18 +5,18 @@ public class SystemController {
     private Person loggedInUser;
     private ArrayList<Course> courses;
     private ArrayList<Lecturer> lecturers;
-    private ArrayList<CourseSection> courseSections;
+    // private ArrayList<CourseSection> courseSections;
     private ArrayList<Student> students;
     private ArrayList<Advisor> advisors;
     private Json json;
 
     SystemController() {
         json = new Json();
-        courses = json.getCourses();
-        lecturers = json.getLecturers();
-        courseSections = json.getCourseSections();
-        students = json.getStudents();
-        advisors = json.getAdvisors();
+        courses = json.readCourses();
+        lecturers = json.readLecturers();
+        students = json.readStudents();
+        advisors = json.readAdvisors();
+        // courseSections = json.getCourseSections();
 
     }
 
@@ -30,10 +30,6 @@ public class SystemController {
 
     public void setLoggedInUser(Person loggedInUser) {
         this.loggedInUser = loggedInUser;
-    }
-
-    public ArrayList<CourseSection> getCourseSectionList() {
-        return courseSections;
     }
 
     public ArrayList<Advisor> getAdvisorList() {
@@ -109,7 +105,7 @@ public class SystemController {
 
     public void printLecturerCourses(Lecturer lecturer) {
         for (int i = 0; i < courses.size(); i++) {
-            List<Course> lecturerCourses = lecturer.getCourses();
+            List<Course> lecturerCourses = lecturer.getLecturedCourses();
             int j = 0;
             for (; j < lecturerCourses.size(); j++) {
                 if (lecturerCourses.get(j).getShortName().equals(courses.get(i).getShortName())) {
@@ -121,14 +117,14 @@ public class SystemController {
 
     public void printLecturerStudents(Lecturer lecturer) {
         for (int i = 0; i < students.size(); i++) {
-            List<Course> lecturerCourses = lecturer.getCourses();
-            for (int j = 0; j < students.get(i).getCourses().size(); j++) {
+            List<Course> lecturerCourses = lecturer.getLecturedCourses();
+            for (int j = 0; j < students.get(i).getAllCourses().size(); j++) {
                 for (int k = 0; k < lecturerCourses.size(); k++) {
                     System.out.println("Lecturer Course: " + lecturerCourses.get(k).getFullName());
-                    System.out.println("Student Course: " + students.get(i).getCourses().get(j).getFullName());
+                    System.out.println("Student Course: " + students.get(i).getAllCourses().get(j).getFullName());
                     if (lecturerCourses.get(k)
-                            .equals(students.get(i).getCourses().get(j))) {
-                        System.out.println(students.get(i).getCourses().get(k).getFullName());
+                            .equals(students.get(i).getAllCourses().get(j))) {
+                        System.out.println(students.get(i).getAllCourses().get(k).getFullName());
                     }
                 }
             }
@@ -142,7 +138,7 @@ public class SystemController {
     }
 
     public void printStudentCourses(Student student) {
-        ArrayList<CourseSection> studentCourses = student.getCourses();
+        ArrayList<CourseSection> studentCourses = student.readCourses();
         for (int i = 0; i < studentCourses.size(); i++) {
             System.out.println((i + 1) + ". " + studentCourses.get(i).getFullName() + " "
                     + studentCourses.get(i).getSectionName());
@@ -209,14 +205,14 @@ public class SystemController {
 
     // Applying the course operation
     public void applyCourse(Student student, CourseSection courseSection) {
-        student.getCourses().add(courseSection);
+        student.readCourses().add(courseSection);
         json.updateStudents();
         json.updateParametes();
 
     }
 
     public void rejectCourse(Advisor advisor, int studentSelection) {
-        advisor.getStudents().get(studentSelection - 1).getCourses().clear();
+        advisor.getStudents().get(studentSelection - 1).readCourses().clear();
         json.updateStudents();
         json.updateParametes();
     }
@@ -227,11 +223,11 @@ public class SystemController {
         json.updateParametes();
     }
 
-    public ArrayList<CourseSection> getAvailableCourses(Student student) {
-        ArrayList<CourseSection> availableCourses = new ArrayList<CourseSection>();
+    public ArrayList<Course> getAvailableCourses(Student student) {
+        ArrayList<Course> availableCourses = new ArrayList<Course>();
 
         // From the course section list
-        for (int i = 0; i < courseSections.size(); i++) {
+        for (int i = 0; i < student.getAvailableCourses().size(); i++) {
             CourseSection courseSection = courseSections.get(i);
             if (checkStudentAlreadyAddedTheCourse(student, courseSection) == false
                     && checkPrerequisite(student, courseSection) == true
@@ -244,7 +240,7 @@ public class SystemController {
 
     // Function for checking if the student has already added the course.
     public boolean checkStudentAlreadyAddedTheCourse(Student student, CourseSection courseSection) {
-        ArrayList<CourseSection> courses = student.getCourses();
+        ArrayList<CourseSection> courses = student.readCourses();
         for (int i = 0; i < courses.size(); i++) {
             if (courses.get(i).getShortName().equals(courseSection.getShortName())) {
                 return true;
