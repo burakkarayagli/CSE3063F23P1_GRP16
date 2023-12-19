@@ -186,7 +186,6 @@ public class DataUtils {
             }
         }
         return students;
-
     }
 
     public void writeStudents(ArrayList<Student> students) {
@@ -209,7 +208,7 @@ public class DataUtils {
                         writer.close();
 
                     }
-                    
+
                 }
             } catch (IOException e) {
                 e.printStackTrace();
