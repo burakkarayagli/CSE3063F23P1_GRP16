@@ -122,3 +122,19 @@
 2023-12-19 23:14:30 INFO  Menu:72 - User fatmacorut logged in successfully
 2023-12-19 23:16:43 INFO  Menu:62 - Login menu displayed
 2023-12-19 23:16:49 INFO  Menu:74 - User fatmacorut logged in successfully
+2023-12-20 00:34:37 INFO  Menu:62 - Login menu displayed
+2023-12-20 00:34:42 INFO  Menu:74 - User efe logged in successfully
+2023-12-20 00:34:42 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 00:34:42 INFO  StudentMenu:70 - Course adding menu displayed
+2023-12-20 00:34:42 INFO  StudentMenu:127 - Available courses displayed
+2023-12-20 00:34:46 INFO  StudentMenu:112 - Selected courses displayed
+2023-12-20 00:34:49 INFO  Menu:62 - Login menu displayed
+2023-12-20 00:34:53 INFO  Menu:74 - User fatmacorut logged in successfully
+2023-12-20 01:13:13 INFO  Menu:62 - Login menu displayed
+2023-12-20 01:13:17 INFO  Menu:74 - User efe logged in successfully
+2023-12-20 01:13:17 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 01:13:17 INFO  StudentMenu:70 - Course adding menu displayed
+2023-12-20 01:13:17 INFO  StudentMenu:127 - Available courses displayed
+2023-12-20 01:13:20 INFO  StudentMenu:112 - Selected courses displayed
+2023-12-20 01:13:22 INFO  Menu:62 - Login menu displayed
+2023-12-20 01:13:27 INFO  Menu:74 - User fatmacorut logged in successfully
