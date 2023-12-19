@@ -1497,13 +1497,13 @@ public class DataInitializer {
                                                                 new Grade(cse3264, "DC"), new Grade(cse3038, "DD"),
                                                                 new Grade(cse3048, "BA"), new Grade(ie3235, "BB"),
                                                                 // Random Technical Elective Courses
-                                                                new Grade(cse4026, "BA"), new Grade(cse4032, "BB"),
-                                                                new Grade(cse4034, "CB"), new Grade(cse4038, "DC"),
-                                                                new Grade(cse4040, "DD"),
+                                                                new Grade(cse4026T, "BA"), new Grade(cse4032T, "BB"),
+                                                                new Grade(cse4034T, "CB"), new Grade(cse4038T, "DC"),
+                                                                new Grade(cse4040T, "DD"),
                                                                 // Random Non-Technical Elective Courses
                                                                 new Grade(cas1010N1, "DD"),
                                                                 // Newly added FTE courses
-                                                                new Grade(mgt4084, "BA"))),
+                                                                new Grade(mgt4084FTE, "BA"))),
                                 "");
 
                 Transcript transcript_s8_v2 = new Transcript(
@@ -1533,9 +1533,9 @@ public class DataInitializer {
                                                                 new Grade(cse4057, "CB"), new Grade(cse4058, "DC"),
                                                                 new Grade(cse4059, "DD"),
                                                                 // Random Non-Technical Elective Courses
-                                                                new Grade(bus1004N1, "AB"),
+                                                                new Grade(cas2001N1, "AB"),
                                                                 // Newly added FTE courses
-                                                                new Grade(me4018, "BA"))),
+                                                                new Grade(me4018FTE, "BA"))),
                                 "");
 
               Transcript transcript_s8_v3 = new Transcript(
@@ -1561,13 +1561,13 @@ public class DataInitializer {
                                                                 new Grade(cse3264, "DC"), new Grade(cse3038, "DD"),
                                                                 new Grade(cse3048, "BA"), new Grade(ie3235, "BB"),
                                                                 // Random Technical Elective Courses
-                                                                new Grade(cse4060, "BA"), new Grade(cse4061, "BB"),
-                                                                new Grade(cse4062, "CB"), new Grade(cse4063, "DC"),
-                                                                new Grade(cse4064, "DD"),
+                                                                new Grade(cse4060T, "BA"), new Grade(cse4061T, "BB"),
+                                                                new Grade(cse4062T, "CB"), new Grade(cse4063T, "DC"),
+                                                                new Grade(cse4217T, "DD"),
                                                                 // Random Non-Technical Elective Courses
-                                                                new Grade(bus1006N1, "AB"),
+                                                                new Grade(bus1003N1, "AB"),
                                                                 // Newly added FTE courses
-                                                                new Grade(bioe4072, "BA"))),
+                                                                new Grade(bioe4072FTE, "BA"))),
                                 "");
 
                 Student kokur = new Student("Hakkı", "Kokur", "hakki", "hakkikokur",
