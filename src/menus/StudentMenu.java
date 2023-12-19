@@ -19,7 +19,7 @@ public class StudentMenu {
         this.studentController = new StudentController();
     }
 
-    public void studentMenu() throws Exception {
+    public void studentMenu() {
         Scanner scanner = new Scanner(System.in);
         int choice = 0;
         while (choice != 5) {
@@ -29,33 +29,39 @@ public class StudentMenu {
             System.out.println("4-Show Selected Courses");
             System.out.println("5-Exit");
             System.out.print("Enter your choice: ");
-            choice = scanner.nextInt();
-            switch (choice) {
-                case 1:
-                    CourseAdding();
-                    break;
-                case 2:
-                    CourseDropping();
-                    break;
-                case 3:
-                    showTranscript();
-                    break;
-                case 4:
-                    showSelectedCourses();
-                    break;
-                case 5:
-                    menus.Menu.getInstance().setLoggedInUser(null);
-                    menus.Menu.getInstance().LoginMenu();
-                    break;
-                default:
-                    System.out.println("Invalid choice");
-                    break;
+            try{
+                choice = scanner.nextInt();
+                switch (choice) {
+                    case 1:
+                        CourseAdding();
+                        break;
+                    case 2:
+                        CourseDropping();
+                        break;
+                    case 3:
+                        showTranscript();
+                        break;
+                    case 4:
+                        showSelectedCourses();
+                        break;
+                    case 5:
+                        menus.Menu.getInstance().setLoggedInUser(null);
+                        menus.Menu.getInstance().LoginMenu();
+                        break;
+                    default:
+                        System.out.println("Invalid choice");
+                        break;
+                }
+            }
+            catch(Exception e){
+                System.out.println("Invalid input type. Please try again.");
+                scanner.next();
             }
         }
 
     }
 
-    public void CourseAdding() {
+    public void CourseAdding() throws Exception {
         showAvailableCourses();
 
         System.out.println("Enter the course you want to add");
@@ -68,15 +74,16 @@ public class StudentMenu {
 
         ArrayList<Course> courses = studentController.getAvailableCourses();
         ArrayList<Integer> selectedCourses = parseInput(input, courses);
-
+  
         for (int i = 0; i < selectedCourses.size(); i++) {
             studentController.addCourse(courses.get(selectedCourses.get(i) - 1));
         }
+        
     }
 
     
 
-    public void CourseDropping() {
+    public void CourseDropping() throws Exception {
         showSelectedCourses();
 
         System.out.println("Enter the course you want to drop");
@@ -137,7 +144,7 @@ public class StudentMenu {
         System.out.println("=============================================");
     }
 
-    private ArrayList<Integer> parseInput(String input, ArrayList<Course> courses) {
+    private ArrayList<Integer> parseInput(String input, ArrayList<Course> courses) throws Exception {
 
         // If input is * then return all indexes of courses
         // If input is -1 then return empty array
@@ -164,7 +171,7 @@ public class StudentMenu {
                         selectedCourses.add(index);
                     }
                 } catch (Exception e) {
-                    System.out.println("Invalid input");
+                    throw new Exception("Invalid input");
                 }
             }
 

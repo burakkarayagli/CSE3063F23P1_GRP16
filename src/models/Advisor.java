@@ -77,6 +77,32 @@ public class Advisor extends Staff {
         return combinedCourses;
     }
 
+    public boolean rejectStudent(Student student, String selections) throws Exception{
+         try {
+
+            if (selections.equals("*")) {
+                student.setStatus("Rejected");
+                student.getSelectedCourses().clear();
+                return true;
+            } else {
+                ArrayList<Course> rejectedCourses = new ArrayList<>();
+                String[] input = selections.split(",");
+
+                for(int j = 0;j<input.length;j++){
+                    int selection = Integer.parseInt(input[j]);
+                    rejectedCourses.add(student.getSelectedCourses().get(selection-1));
+                }
+                for (int i = 0; i < rejectedCourses.size(); i++) {
+                    student.dropCourse(rejectedCourses.get(i));
+                }
+            }
+            student.setStatus("Rejected");
+            return true;
+        } catch (Exception e) {
+            throw new Exception("Input must only include numbers. Please try again.");
+        }
+    }
+
     public boolean approveStudent(Student student, String selections) {
 
         try {
@@ -85,7 +111,8 @@ public class Advisor extends Staff {
                 student.setStatus("Approved");
                 return true;
             } else {
-                for (int i = 0; i < student.getSelectedCourses().size() - 1; i++) {
+                
+                for (int i = 0; i < student.getSelectedCourses().size(); i++) {
                     if (selections.indexOf(String.valueOf(i + 1)) == -1) {
                         student.dropCourse(student.getSelectedCourses().get(i));
                         student.setStatus("Rejected");
