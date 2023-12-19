@@ -615,7 +615,6 @@ public class DataInitializer {
                 technicalElectives.add(cse4040T);
 
                 // Course CSE4044
-                Course cse4044 = new Course("CSE4044", "Software Project Management", "Elective", null, 7, 5, 4);
                 TechnicalElectiveCourse cse4044T = new TechnicalElectiveCourse(cse4044,
                                 new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(4), wednesday.get(5))), "1.1",
                                 null, 50, locations[7], 155);
@@ -632,7 +631,6 @@ public class DataInitializer {
                 technicalElectives.add(cse4053T);
 
                 // Course CSE4056
-                Course cse4056 = new Course("CSE4056", "Management of Information Systems", "Elective", null, 7, 5, 4);
                 TechnicalElectiveCourse cse4056T = new TechnicalElectiveCourse(cse4056,
                                 new ArrayList<TimeInterval>(Arrays.asList(monday.get(4), monday.get(5))), "1.1", null,
                                 50, locations[1], 155);
@@ -677,8 +675,6 @@ public class DataInitializer {
                 technicalElectives.add(cse4061T);
 
                 // Course CSE4062
-                Course cse4062 = new Course("CSE4062", "Introduction to Data Science and Analytics", "Elective", null,
-                                7, 5, 4);
                 TechnicalElectiveCourse cse4062T = new TechnicalElectiveCourse(cse4062,
                                 new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(3), tuesday.get(4))), "1.1", null,
                                 50, locations[7], 155);
