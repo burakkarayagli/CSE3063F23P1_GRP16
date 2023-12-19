@@ -1,16 +1,23 @@
 package menus;
-import java.util.logging.Logger;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
 import constants.String_Constants;
 import contollers.StudentController;
-import contollers.AdvisorController;
 import contollers.LecturerController;
 import models.*;
 import utils.DataUtils;
 
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PatternLayout;
+import org.apache.log4j.PropertyConfigurator;
+import org.apache.log4j.RollingFileAppender;
+
 public class Menu {
+    // Logger
+    final static Logger logger = Logger.getLogger(Menu.class);
 
     // Singleton
     private static Menu MenuInstance = null;
@@ -32,7 +39,9 @@ public class Menu {
     private ArrayList<Lecturer> lecturers;
     private DataUtils json;
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
+        configureLog4j();
+
         Menu menu = new Menu();
         menu.LoginMenu();
     }
@@ -43,12 +52,12 @@ public class Menu {
         lecturers = json.readLecturers();
         students = json.readStudents();
         advisors = json.readAdvisors();
-
     }
 
     public void LoginMenu() {
         Scanner loginScanner = new Scanner(System.in);
         while (getLoggedInUser() == null) {
+            logger.info("Login menu displayed");
             System.out.println(StringConstants.WELCOME_MESSAGE);
             System.out.println(StringConstants.LOGIN_MESSAGE);
             System.out.print(StringConstants.USERNAME_MESSAGE);
@@ -60,8 +69,11 @@ public class Menu {
             boolean isLogged = Authenticate(username, password);
             if (isLogged) {
                 System.out.println(StringConstants.LOGIN_SUCCESSFUL_MESSAGE);
+                logger.info("User " + username + " logged in successfully");
             } else {
                 System.out.println(StringConstants.LOGIN_UNSUCCESSFUL_MESSAGE);
+                logger.warn("User " + username + " failed to log in with username " + username + " and password "
+                        + password);
             }
             System.out.println();
         }
@@ -73,8 +85,7 @@ public class Menu {
             StudentMenu studentMenu = new StudentMenu(new StudentController((Student) getLoggedInUser()));
             studentMenu.studentMenu();
         } else if (getLoggedInUser() instanceof Advisor) {
-            AdvisorMenu advisorMenu= new AdvisorMenu(new AdvisorController((Advisor) getLoggedInUser()));
-            advisorMenu.advisorMenu();
+            // advisorMenu.advisorMenu();
         } else if (getLoggedInUser() instanceof Lecturer) {
             LecturerMenu lecturerMenu = new LecturerMenu(new LecturerController((Lecturer) getLoggedInUser()));
             lecturerMenu.lecturerMenu();
@@ -100,7 +111,6 @@ public class Menu {
                 setLoggedInUser(advisors.get(i));
             }
         }
-        
         if (this.loggedInUser == null) {
             return false;
         }
@@ -113,6 +123,27 @@ public class Menu {
 
     public void setLoggedInUser(Person loggedInUser) {
         this.loggedInUser = loggedInUser;
+    }
+
+    private static void configureLog4j() {
+        // Create a pattern layout
+        PatternLayout layout = new PatternLayout("%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n");
+
+        // Create a rolling file appender
+        RollingFileAppender fileAppender;
+        try {
+            fileAppender = new RollingFileAppender(layout, "logs/mylog.log", true);
+            fileAppender.setMaxFileSize("5MB");
+            fileAppender.setMaxBackupIndex(3);
+
+            // Set the appender to the root logger
+            Logger.getRootLogger().addAppender(fileAppender);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        // Set the log level (adjust as needed)
+        Logger.getRootLogger().setLevel(Level.INFO);
     }
 
 }
