@@ -1,5 +1,6 @@
 package contollers;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import models.*;
@@ -32,7 +33,7 @@ public class AdvisorController {
         return advisor.getCombinedCourses(student);
     }
 
-    public boolean approveStudentSelection(Student student, String selections) {
+    public boolean approveStudentSelection(Student student, ArrayList<Integer> selections) {
         return advisor.approveStudent(student, selections);
     }
     public boolean rejectStudentSelection(Student student, String selections) throws Exception{
