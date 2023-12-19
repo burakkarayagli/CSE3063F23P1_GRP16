@@ -122,3 +122,32 @@
 2023-12-19 23:14:30 INFO  Menu:72 - User fatmacorut logged in successfully
 2023-12-19 23:16:43 INFO  Menu:62 - Login menu displayed
 2023-12-19 23:16:49 INFO  Menu:74 - User fatmacorut logged in successfully
+2023-12-20 00:19:03 INFO  Menu:62 - Login menu displayed
+2023-12-20 00:19:12 INFO  Menu:74 - User fatmacorut logged in successfully
+2023-12-20 00:19:31 INFO  Menu:62 - Login menu displayed
+2023-12-20 00:19:39 INFO  Menu:74 - User hakki logged in successfully
+2023-12-20 00:19:39 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 00:19:44 INFO  StudentMenu:91 - Course dropping menu displayed
+2023-12-20 00:19:44 INFO  StudentMenu:112 - Selected courses displayed
+2023-12-20 00:21:06 INFO  Menu:62 - Login menu displayed
+2023-12-20 00:21:11 INFO  Menu:74 - User hakki logged in successfully
+2023-12-20 00:21:11 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 00:21:41 INFO  StudentMenu:112 - Selected courses displayed
+2023-12-20 00:21:44 INFO  Menu:62 - Login menu displayed
+2023-12-20 00:21:50 INFO  Menu:74 - User fatmacorut logged in successfully
+2023-12-20 00:22:01 INFO  Menu:62 - Login menu displayed
+2023-12-20 00:29:09 INFO  Menu:62 - Login menu displayed
+2023-12-20 00:29:17 INFO  Menu:74 - User fatmacorut logged in successfully
+2023-12-20 00:29:20 INFO  Menu:62 - Login menu displayed
+2023-12-20 00:31:47 INFO  Menu:62 - Login menu displayed
+2023-12-20 00:31:54 INFO  Menu:74 - User fatmacorut logged in successfully
+2023-12-20 00:32:05 INFO  Menu:62 - Login menu displayed
+2023-12-20 00:32:09 INFO  Menu:74 - User hakki logged in successfully
+2023-12-20 00:32:09 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 00:32:10 INFO  StudentMenu:70 - Course adding menu displayed
+2023-12-20 00:32:10 INFO  StudentMenu:127 - Available courses displayed
+2023-12-20 00:32:32 INFO  StudentMenu:142 - Transcript displayed
+2023-12-20 00:32:34 INFO  StudentMenu:112 - Selected courses displayed
+2023-12-20 00:32:37 INFO  StudentMenu:91 - Course dropping menu displayed
+2023-12-20 00:32:37 INFO  StudentMenu:112 - Selected courses displayed
+2023-12-20 00:32:41 INFO  Menu:62 - Login menu displayed

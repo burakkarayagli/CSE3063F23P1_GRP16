@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import javax.xml.crypto.Data;
+
+import utils.DataUtils;
+
 public class Advisor extends Staff {
 
     private List<Student> students;
@@ -77,8 +81,8 @@ public class Advisor extends Staff {
         return combinedCourses;
     }
 
-    public boolean rejectStudent(Student student, String selections) throws Exception{
-         try {
+    public boolean rejectStudent(Student student, String selections) throws Exception {
+        try {
 
             if (selections.equals("*")) {
                 student.setStatus("Rejected");
@@ -88,15 +92,33 @@ public class Advisor extends Staff {
                 ArrayList<Course> rejectedCourses = new ArrayList<>();
                 String[] input = selections.split(",");
 
-                for(int j = 0;j<input.length;j++){
+                for (int j = 0; j < input.length; j++) {
                     int selection = Integer.parseInt(input[j]);
-                    rejectedCourses.add(student.getSelectedCourses().get(selection-1));
+                    rejectedCourses.add(student.getSelectedCourses().get(selection - 1));
                 }
                 for (int i = 0; i < rejectedCourses.size(); i++) {
                     student.dropCourse(rejectedCourses.get(i));
                 }
             }
+
             student.setStatus("Rejected");
+            // save the advisors
+            DataUtils dataUtils = DataUtils.getInstance();
+            ArrayList<Advisor> advisors = dataUtils.getAdvisors();
+            for (int i = 0; i < advisors.size(); i++) {
+                if (advisors.get(i).getUsername().equals(this.getUsername())) {
+                    advisors.set(i, this);
+                }
+            }
+            dataUtils.writeAdvisors(advisors);
+            ArrayList<Student> students = dataUtils.getStudents();
+            for (int i = 0; i < students.size(); i++) {
+                if (students.get(i).getUsername().equals(student.getUsername())) {
+                    students.set(i, student);
+                }
+            }
+            dataUtils.writeStudents(students)
+
             return true;
         } catch (Exception e) {
             throw new Exception("Input must only include numbers. Please try again.");
@@ -104,7 +126,6 @@ public class Advisor extends Staff {
     }
 
     public boolean approveStudent(Student student, String selections) {
-
         try {
 
             if (selections.equals("*")) {
@@ -116,10 +137,32 @@ public class Advisor extends Staff {
                     if (selections.indexOf(String.valueOf(i)) == -1) {
                         student.dropCourse(student.getSelectedCourses().get(i));
                         status = true;
+                    } else {
+                        student.setStatus("Approved");
                     }
                 }
-                student.setStatus(status ? "Rejected" : "Approved");
+                if (status)
+                    student.setStatus("Rejected");
             }
+
+            student.setStatus("Rejected");
+            // save the advisors
+            DataUtils dataUtils = DataUtils.getInstance();
+            ArrayList<Advisor> advisors = dataUtils.getAdvisors();
+            for (int i = 0; i < advisors.size(); i++) {
+                if (advisors.get(i).getUsername().equals(this.getUsername())) {
+                    advisors.set(i, this);
+                }
+            }
+            dataUtils.writeAdvisors(advisors);
+            ArrayList<Student> students = dataUtils.getStudents();
+            for (int i = 0; i < students.size(); i++) {
+                if (students.get(i).getUsername().equals(student.getUsername())) {
+                    students.set(i, student);
+                }
+            }
+            dataUtils.writeStudents(students);
+
             return true;
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
