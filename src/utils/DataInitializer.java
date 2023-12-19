@@ -397,7 +397,7 @@ public class DataInitializer {
                 courses.add(che4060);
                 technicalElectives.add(che4060FTE);
 
-                Course che4068 = a Course("CHE4068", "Financial Engineering", "Elective", null, 7, 5, 4);
+                Course che4068 = new Course("CHE4068", "Financial Engineering", "Elective", null, 7, 5, 4);
                 TechnicalElectiveCourse che4068FTE = new TechnicalElectiveCourse(che4068,
                 new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(4), tuesday.get(5))), "1.1",
                 null, 50, locations[2], 165);
@@ -1571,11 +1571,11 @@ public class DataInitializer {
                                                                 new Grade(cse3264, "DC"), new Grade(cse3038, "DD"),
                                                                 new Grade(cse3048, "BA"), new Grade(ie3235, "BB"),
                                                                 // Random Technical Elective Courses
-                                                                new Grade(cse4060, "BA"), new Grade(cse4061, "BB"),
+                                                                new Grade(cse4061, "BA"), new Grade(cse4061, "BB"),
                                                                 new Grade(cse4062, "CB"), new Grade(cse4063, "DC"),
-                                                                new Grade(cse4064, "DD"),
+                                                                new Grade(cse4063, "DD"),
                                                                 // Random Non-Technical Elective Courses
-                                                                new Grade(bus1006N1, "AB"),
+                                                                new Grade(bioe4072, "AB"),
                                                                 // Newly added FTE courses
                                                                 new Grade(bioe4072, "BA"))),
                                 "");
