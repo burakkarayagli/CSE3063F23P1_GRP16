@@ -95,12 +95,12 @@ public class NonTechnicalElectiveCourse extends Course implements SectionInterfa
 
     // Abstract Methods
     public String toString() {
-        return "Mandatory Course: " + this.getFullName() + "\nCode: " + this.getShortName() + "\nDescription:"
+        return "Non Technical Elective Course: " + this.getFullName() + "\nCode: " + this.getShortName() + "\nDescription:"
                 + this.getDescription()
-                + "\nPrequisite: " + this.getPrerequisite() + "\nSemester: " + this.getSemester() + "\nCredit: "
+                + "\nPrequisite: " + this.getPrerequisities()+ "\nSemester: " + this.getSemester() + "\nCredit: "
                 + this.getCredit() + "\nClass Hours: " + this.getClassHours() + "\nSection Name: "
-                + this.getSectionName() + "\nLecturer: " + this.getLecturer() + "\nQuota: " + this.getQuota()
-                + "\nLocation: " + this.location + "\nIsRemote: " + this.isRemote;
+                + this.getSectionName() + "\nLecturer: " + this.getLecturer().getFullName() + "\nQuota: " + this.getQuota()
+                + "\nLocation: " + this.location + "\nIsRemote: " + this.isRemote+"\n------------";
     }
 
     // Class Methods

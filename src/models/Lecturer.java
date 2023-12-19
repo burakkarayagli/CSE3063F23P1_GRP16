@@ -22,22 +22,29 @@ public class Lecturer extends Staff {
         courses.addAll(json.readMandatoryCourses());
         courses.addAll(json.readTechnicalElectiveCourse());
         courses.addAll(json.readNonTechnicalElectiveCourses());
+        ArrayList<Course> newCourses = new ArrayList<>();
         for (int i = 0; i < courses.size(); i++) {
             Course course = courses.get(i);
             if (course instanceof SectionInterface) {
                 if (((SectionInterface) course).getLecturer().getUsername().equals(this.getUsername())) {
-                    boolean isExist = false;
-                    // check the already have or not.
-                    for (int j = 0; j < this.courses.size(); j++) {
-                        Course course1 = this.courses.get(j);
-                        if (course1.getShortName().equals(course.getShortName()) && (((SectionInterface) course1)
-                                .getSectionName().equals(((SectionInterface) course).getSectionName()))) {
-                            isExist = true;
+                    if (this.courses != null) {
+                        boolean isExist = false;
+                        // check the already have or not.
+                        for (int j = 0; j < this.courses.size(); j++) {
+                            Course course1 = this.courses.get(j);
+                            if (course1.getShortName().equals(course.getShortName()) && (((SectionInterface) course1)
+                                    .getSectionName().equals(((SectionInterface) course).getSectionName()))) {
+                                isExist = true;
+                            }
                         }
+                        if (!isExist) {
+                            this.courses.add(course);
+                        }
+                    } else {
+                        newCourses.add(course);
+                        this.courses = newCourses;
                     }
-                    if (!isExist) {
-                        this.courses.add(course);
-                    }
+
                 }
             }
         }
@@ -142,7 +149,7 @@ public class Lecturer extends Staff {
 
     }
 
-    public boolean deletLecturedCourses(Course course) {
+    public boolean deleteLecturedCourses(Course course) {
         // it don't check the lecturer of course
         // Json json = new Json();
         // if (course instanceof MandatoryCourse) {

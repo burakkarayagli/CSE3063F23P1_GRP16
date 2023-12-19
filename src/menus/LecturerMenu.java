@@ -2,6 +2,7 @@ package menus;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import contollers.LecturerController;
@@ -18,22 +19,44 @@ public class LecturerMenu {
         this.lecturerController = new LecturerController();
     }
 
-    public void lecturerMenu() {
+    public void showGivenCourses(){
+        for(int i = 0;i<lecturerController.getLecturedCourses().size();i++){
+            Course course = lecturerController.getLecturedCourses().get(i);
+            System.out.println(course);
+        }
+    }
+
+    public void showStudents(){
+        for(int i = 0;i<lecturerController.getLecturedCourses().size();i++){
+             Course course = lecturerController.getLecturedCourses().get(i);
+
+             for(int j = 0;j<lecturerController.viewEnrolledStudents(course).size();j++){
+            
+                Student student = lecturerController.viewEnrolledStudents(course).get(j);
+                System.out.println(student.getFullName());
+             }
+        }
+    }
+    public void lecturerMenu(){
         Scanner scanner = new Scanner(System.in);
         int choice = 0;
-        while (choice != 5) {
+        while (choice>4 || choice<1) {
+
             System.out.println("1- Show Given Courses");
             System.out.println("2- Show Students that take the given courses");
             System.out.println("3- Create Course");
             System.out.println("4- Exit");
             System.out.println("Enter your choice: ");
-            choice = scanner.nextInt();
-            switch (choice) {
+            try{
+                choice = scanner.nextInt();
+                switch (choice) {
                 case 1:
-                    // showGivenCourses();
+                    
+                    showGivenCourses();
                     break;
                 case 2:
-                    // showStudents();
+                    
+                    showStudents();
                     break;
                 case 3:
                     createCourse();
@@ -46,11 +69,23 @@ public class LecturerMenu {
                     System.out.println("Invalid choice");
                     break;
             }
-
+            }
+            catch(InputMismatchException e){
+                System.out.println("Invalid input type. Please try again.");
+                scanner.next();
+            }
+            catch(Exception e){
+                e.printStackTrace();
+            }
+            if(choice>4 || choice<0){
+                System.out.println("Input is not valid. Please try again.");
+            }
+        
+            choice = 0;
         }
     }
 
-    public void createCourse() {
+    public void createCourse() throws Exception {
         System.out.println("Enter the course code");
         System.out.println("eg: CSE1001");
         System.out.println("eg: -1 to exit");
@@ -71,46 +106,55 @@ public class LecturerMenu {
         System.out.println("Enter the course prequistes");
         System.out.println("eg: CSE101,CSE102");
         ArrayList<String> coursePrerequisites = new ArrayList<String>(Arrays.asList(scanner.nextLine().split(",")));
+        int courseSemester, courseCredit, courseClassHours, courseType, quota;
+        String sectionName, location;
+        Course course;
+        try{
+            System.out.println("Enter the course semester");
+            System.out.println("eg: 1");
+            courseSemester = scanner.nextInt();
 
-        System.out.println("Enter the course semester");
-        System.out.println("eg: 1");
-        int courseSemester = scanner.nextInt();
+            System.out.println("Enter the course credit");
+            System.out.println("eg: 3");
+            courseCredit = scanner.nextInt();
 
-        System.out.println("Enter the course credit");
-        System.out.println("eg: 3");
-        int courseCredit = scanner.nextInt();
+            System.out.println("Enter the class hours");
+            System.out.println("eg: 3");
+            courseClassHours = scanner.nextInt();
 
-        System.out.println("Enter the class hours");
-        System.out.println("eg: 3");
-        int courseClassHours = scanner.nextInt();
+            // get the course type
+            System.out.println("Enter the course type");
+            System.out.println("\t 1. Mandatory");
+            System.out.println("\t 2. Technical Elective");
+            System.out.println("\t 3. NonTechnical Elective");
+            courseType = scanner.nextInt();
 
-        // get the course type
-        System.out.println("Enter the course type");
-        System.out.println("\t 1. Mandatory");
-        System.out.println("\t 2. Technical Elective");
-        System.out.println("\t 3. NonTechnical Elective");
-        int courseType = scanner.nextInt();
+            course = new Course(courseCode, courseName, courseDescription, coursePrerequisites, courseSemester,
+                    courseCredit, courseClassHours);
 
-        Course course = new Course(courseCode, courseName, courseDescription, coursePrerequisites, courseSemester,
-                courseCredit, courseClassHours);
+            System.out.println("Enter the course section name");
+            System.out.println("eg: 1.1");
+            scanner = new Scanner(System.in);
+            sectionName = scanner.nextLine();
 
-        System.out.println("Enter the course section name");
-        System.out.println("eg: 1.1");
-        String sectionName = scanner.nextLine();
+            System.out.println("Enter the course quota");
+            System.out.println("eg: 30");
+            quota = scanner.nextInt();
 
-        System.out.println("Enter the course quota");
-        System.out.println("eg: 30");
-        int quota = scanner.nextInt();
+            System.out.println("Enter the course location");
+            System.out.println("eg: M1Z11");
+            scanner = new Scanner(System.in);
+            location = scanner.nextLine();
 
-        System.out.println("Enter the course location");
-        System.out.println("eg: M1Z11");
-        String location = scanner.nextLine();
-
+        }
+        catch(Exception e){
+            throw new Exception("Invalid input type. Please try again.");
+        }
         ArrayList<TimeInterval> dates = new ArrayList<TimeInterval>();
         while (true) {
             System.out.println("Enter the course day");
             System.out.println("eg: Monday, Tuesday, Wednesday, Thursday or Friday(ony one day)");
-            System.out.println("eg: -1 to exit");
+            System.out.println("eg: -1 to exit from time interval adding");
             String day = scanner.nextLine();
             if (day.equals("-1")) {
                 break;
@@ -163,7 +207,13 @@ public class LecturerMenu {
         } else if (courseType == 2) {
             System.out.println("Enter the course required credit");
             System.out.println("eg: 60");
-            int requiredCredit = scanner.nextInt();
+            int requiredCredit = 0;
+            try{
+                requiredCredit = scanner.nextInt();
+            }
+            catch(Exception e){
+                throw new Exception("Incompatible input type. Please try again.");
+            }
 
             TechnicalElectiveCourse technicalElectiveCourse = new TechnicalElectiveCourse(course, dates, sectionName,
                     null, quota, location, requiredCredit);
@@ -172,7 +222,13 @@ public class LecturerMenu {
         } else if (courseType == 3) {
             System.out.println("Enter the remote or not");
             System.out.println("eg: true or false");
-            boolean isRemote = scanner.nextBoolean();
+            boolean isRemote = false;
+            try{
+                isRemote = scanner.nextBoolean();
+            }
+            catch(Exception e){
+                throw new Exception("Incompatible input type. Please try again.");
+            }
 
             NonTechnicalElectiveCourse nonTechnicalElectiveCourse = new NonTechnicalElectiveCourse(course, dates,
                     sectionName, null, quota, location, isRemote);
