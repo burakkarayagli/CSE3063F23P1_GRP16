@@ -151,3 +151,80 @@
 2023-12-20 00:32:37 INFO  StudentMenu:91 - Course dropping menu displayed
 2023-12-20 00:32:37 INFO  StudentMenu:112 - Selected courses displayed
 2023-12-20 00:32:41 INFO  Menu:62 - Login menu displayed
+2023-12-20 01:04:17 INFO  Menu:62 - Login menu displayed
+2023-12-20 01:04:21 INFO  Menu:74 - User burak logged in successfully
+2023-12-20 01:04:21 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 01:04:26 INFO  StudentMenu:116 - Selected courses displayed
+2023-12-20 01:06:19 INFO  Menu:62 - Login menu displayed
+2023-12-20 01:06:21 INFO  Menu:74 - User burak logged in successfully
+2023-12-20 01:06:21 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 01:06:24 INFO  StudentMenu:116 - Selected courses displayed
+2023-12-20 01:08:05 INFO  StudentMenu:146 - Transcript displayed
+2023-12-20 01:08:07 INFO  StudentMenu:116 - Selected courses displayed
+2023-12-20 01:08:12 INFO  StudentMenu:156 - Approval request sent
+2023-12-20 01:08:12 INFO  StudentController:108 - Approval request sent to advisor for student:Burak
+2023-12-20 01:08:12 ERROR StudentController:111 - Error occured while sending approval request to advisor for student:Burak
+2023-12-20 01:09:32 INFO  Menu:62 - Login menu displayed
+2023-12-20 01:09:36 INFO  Menu:74 - User burak logged in successfully
+2023-12-20 01:09:36 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 01:09:39 INFO  StudentMenu:116 - Selected courses displayed
+2023-12-20 01:09:42 INFO  StudentMenu:156 - Approval request sent
+2023-12-20 01:09:42 INFO  StudentController:108 - Approval request sent to advisor for student:Burak
+2023-12-20 01:11:23 INFO  Menu:62 - Login menu displayed
+2023-12-20 01:11:26 INFO  Menu:74 - User burak logged in successfully
+2023-12-20 01:11:26 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 01:11:29 INFO  StudentMenu:146 - Transcript displayed
+2023-12-20 01:11:33 INFO  StudentMenu:156 - Approval request sent
+2023-12-20 01:11:33 INFO  StudentController:108 - Approval request sent to advisor for student:Burak
+2023-12-20 01:13:24 INFO  Menu:62 - Login menu displayed
+2023-12-20 01:13:26 INFO  Menu:74 - User burak logged in successfully
+2023-12-20 01:13:26 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 01:13:28 INFO  StudentMenu:116 - Selected courses displayed
+2023-12-20 01:14:01 INFO  Menu:62 - Login menu displayed
+2023-12-20 01:14:06 INFO  Menu:74 - User burak logged in successfully
+2023-12-20 01:14:06 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 01:14:09 INFO  StudentMenu:116 - Selected courses displayed
+2023-12-20 01:14:49 INFO  StudentMenu:156 - Approval request sent
+2023-12-20 01:14:49 INFO  StudentController:108 - Approval request sent to advisor for student:Burak
+2023-12-20 01:15:34 INFO  Menu:62 - Login menu displayed
+2023-12-20 01:15:37 INFO  Menu:74 - User burak logged in successfully
+2023-12-20 01:15:37 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 01:15:39 INFO  StudentMenu:156 - Approval request sent
+2023-12-20 01:15:39 INFO  StudentController:108 - Approval request sent to advisor for student:Burak
+2023-12-20 01:15:46 INFO  StudentMenu:156 - Approval request sent
+2023-12-20 01:15:46 INFO  StudentController:108 - Approval request sent to advisor for student:Burak
+2023-12-20 01:17:11 INFO  Menu:62 - Login menu displayed
+2023-12-20 01:17:14 INFO  Menu:74 - User burak logged in successfully
+2023-12-20 01:17:14 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 01:17:16 INFO  StudentMenu:116 - Selected courses displayed
+2023-12-20 01:17:17 INFO  StudentMenu:95 - Course dropping menu displayed
+2023-12-20 01:17:17 INFO  StudentMenu:116 - Selected courses displayed
+2023-12-20 01:17:18 INFO  StudentController:39 - Course dropped: YDA1001 from student:Burak
+2023-12-20 01:17:18 INFO  StudentController:39 - Course dropped: NTE1008 from student:Burak
+2023-12-20 01:17:18 INFO  StudentController:39 - Course dropped: CSE2023 from student:Burak
+2023-12-20 01:17:19 INFO  StudentMenu:116 - Selected courses displayed
+2023-12-20 01:17:24 INFO  StudentMenu:95 - Course dropping menu displayed
+2023-12-20 01:17:24 INFO  StudentMenu:116 - Selected courses displayed
+2023-12-20 01:17:27 INFO  StudentController:39 - Course dropped: YDA1001 from student:Burak
+2023-12-20 01:17:27 INFO  StudentController:39 - Course dropped: NTE1008 from student:Burak
+2023-12-20 01:17:27 INFO  StudentController:39 - Course dropped: CSE2023 from student:Burak
+2023-12-20 01:18:29 INFO  StudentMenu:146 - Transcript displayed
+2023-12-20 01:18:32 INFO  StudentMenu:116 - Selected courses displayed
+2023-12-20 01:18:42 INFO  StudentMenu:74 - Course adding menu displayed
+2023-12-20 01:18:42 INFO  StudentMenu:131 - Available courses displayed
+2023-12-20 01:19:43 INFO  StudentMenu:74 - Course adding menu displayed
+2023-12-20 01:19:43 INFO  StudentMenu:131 - Available courses displayed
+2023-12-20 01:19:49 INFO  StudentMenu:74 - Course adding menu displayed
+2023-12-20 01:19:49 INFO  StudentMenu:131 - Available courses displayed
+2023-12-20 01:19:56 INFO  StudentMenu:95 - Course dropping menu displayed
+2023-12-20 01:19:56 INFO  StudentMenu:116 - Selected courses displayed
+2023-12-20 01:19:58 INFO  StudentController:39 - Course dropped: YDA1001 from student:Burak
+2023-12-20 01:19:58 INFO  StudentController:39 - Course dropped: NTE1008 from student:Burak
+2023-12-20 01:19:58 INFO  StudentController:39 - Course dropped: CSE2023 from student:Burak
+2023-12-20 01:20:31 INFO  StudentMenu:146 - Transcript displayed
+2023-12-20 01:20:33 INFO  StudentMenu:116 - Selected courses displayed
+2023-12-20 01:20:39 INFO  StudentMenu:156 - Approval request sent
+2023-12-20 01:20:39 INFO  StudentController:108 - Approval request sent to advisor for student:Burak
+2023-12-20 01:20:44 INFO  Menu:62 - Login menu displayed
+2023-12-20 01:20:51 INFO  Menu:74 - User burak logged in successfully
+2023-12-20 01:20:51 INFO  StudentMenu:28 - Student menu displayed

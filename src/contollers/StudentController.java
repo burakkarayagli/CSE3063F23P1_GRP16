@@ -92,4 +92,25 @@ public class StudentController {
             return null;
         }
     }
+
+    public String getStatus() {
+        try {
+            return student.getStatus();
+        } catch (Exception e) {
+            logger.error("Error occured while getting status for student:" + student.getPersonName());
+            return null;
+        }
+    }
+
+    // Sends approval request to the advisor.
+    public boolean sendApprovalRequest() {
+        try {
+            logger.info("Approval request sent to advisor for student:" + student.getPersonName());
+            return student.sendApprovalRequest();
+        } catch (Exception e) {
+            logger.error(
+                    "Error occured while sending approval request to advisor for student:" + student.getPersonName());
+            return false;
+        }
+    }
 }

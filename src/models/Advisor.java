@@ -117,7 +117,7 @@ public class Advisor extends Staff {
                     students.set(i, student);
                 }
             }
-            dataUtils.writeStudents(students)
+            dataUtils.writeStudents(students);
 
             return true;
         } catch (Exception e) {

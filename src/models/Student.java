@@ -94,8 +94,19 @@ public class Student extends Person {
         this.transcript = new Transcript();
     }
 
+    // student can't add/drop course in waiting statment
+    // student can add/drop course in approved statment but can't drop course
+    // student can add/drop course in rejected statment
+    // student can't add/drop course in finished statment
+    // student can add/drop course in available statment
+
     // Adding a course to the selected courses of the student
     public boolean addCourse(Course course) {
+        if (status.equals("waiting") || status.equals("finished")) {
+            System.out.println("Error: Student can't add/drop course in " + status + " statment");
+            return false;
+        }
+
         try {
             selectedCourses.add(course);
 
@@ -117,10 +128,14 @@ public class Student extends Person {
             System.out.println("Error: " + e.getMessage());
             return false;
         }
-
     }
 
     public boolean dropCourse(Course course) {
+        if (status.equals("waiting") || status.equals("finished")) {
+            System.out.println("Error: Student can't add/drop course in " + status + " statment");
+            return false;
+        }
+
         try {
             selectedCourses.remove(course);
 
@@ -136,6 +151,7 @@ public class Student extends Person {
                 }
             }
             database.writeAdvisors(advisors);
+
             return true;
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
@@ -203,6 +219,18 @@ public class Student extends Person {
         return warningString;
     }
 
+    public boolean sendApprovalRequest() {
+        if (status.equals("waiting") || status.equals("finished")) {
+            System.out.println("Error: Student can't send for approval in " + status + " statment");
+            return false;
+        }
+
+        setStatus("waiting");
+        DataUtils database = DataUtils.getInstance();
+        database.writeStudents(Menu.students);
+        return true;
+    }
+
     private int getTotalCreditOfSelectedCourses() {
         int totalCredit = 0;
 
@@ -214,7 +242,7 @@ public class Student extends Person {
     }
 
     // Returns true if the student has less than max credit
-    public boolean checkCreditLimit() {
+    private boolean checkCreditLimit() {
         if (getTotalCreditOfSelectedCourses() > 30) {
             return false;
         }
@@ -225,7 +253,7 @@ public class Student extends Person {
     }
 
     // Returns true if the student has already selected the course
-    public boolean checkStudentAlreadySelectedCourse(Course course) {
+    private boolean checkStudentAlreadySelectedCourse(Course course) {
         // Check if the course's short name is in the selected courses
         for (Course selectedCourse : selectedCourses) {
             if (selectedCourse.getShortName().equals(course.getShortName())) {
@@ -237,7 +265,7 @@ public class Student extends Person {
     }
 
     // Returns true if the student passed the prerequisite courses
-    public boolean checkPrerequisite(Course course) {
+    private boolean checkPrerequisite(Course course) {
         if (course.getPrerequisite() == null) {
             return true;
         }
@@ -254,7 +282,7 @@ public class Student extends Person {
     }
 
     // Returns true if student has greater or equal semester than the course
-    public boolean checkSemesterOfCourse(Course course) {
+    private boolean checkSemesterOfCourse(Course course) {
         if (course.getSemester() <= this.semester) {
             return true;
         } else {
@@ -264,7 +292,7 @@ public class Student extends Person {
 
     // Returns true if the course is in the transcript(student has taken the course
     // before and passed)
-    public boolean checkStudentPassedCourse(Course course) {
+    private boolean checkStudentPassedCourse(Course course) {
         for (Grade grade : transcript.getGradeList()) {
             if (grade.getCourse().getShortName().equals(course.getShortName()) && grade.getGrade() != "FF") {
                 return true;
@@ -274,7 +302,7 @@ public class Student extends Person {
         return false;
     }
 
-    public boolean checkStudentPassedCourseWithShortName(String courseShortName) {
+    private boolean checkStudentPassedCourseWithShortName(String courseShortName) {
         for (Grade grade : transcript.getGradeList()) {
             if (grade.getCourse().getShortName().equals(courseShortName) && grade.getGrade() != "FF") {
                 return true;
