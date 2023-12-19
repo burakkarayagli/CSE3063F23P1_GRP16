@@ -68,4 +68,33 @@ public class TimeInterval {
     public String getTimeIntervalInfo() {
         return "TimeInterval{" + "startTime=" + startTime + ", endTime=" + endTime + ", dayOfWeek=" + dayOfWeek + '}';
     }
+
+    public boolean isOverlapping(TimeInterval timeInterval) throws ParseException {
+        try {
+            // Convert start and end time to Date objects(HH:mm)
+            SimpleDateFormat format = new SimpleDateFormat("HH:mm");
+            Date start = format.parse(startTime);
+            Date end = format.parse(endTime);
+
+            // Convert start and end time to Date objects(HH:mm)
+            Date start2 = format.parse(timeInterval.getStartTime());
+            Date end2 = format.parse(timeInterval.getEndTime());
+
+            // Check if the time intervals are overlapping
+            if (start2.after(start) && start2.before(end)) {
+                return true;
+            } else if (end2.after(start) && end2.before(end)) {
+                return true;
+            } else if (start2.before(start) && end2.after(end)) {
+                return true;
+            } else if (start2.equals(start) && end2.equals(end)) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (ParseException e) {
+            e.printStackTrace();
+            throw e;
+        }
+    }
 }

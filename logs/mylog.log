@@ -18,3 +18,29 @@
 2023-12-19 21:55:03 INFO  StudentController:39 - Course dropped: NTE1008 from student:Burak
 2023-12-19 21:55:03 INFO  StudentController:39 - Course dropped: CSE2023 from student:Burak
 2023-12-19 21:55:05 INFO  Menu:60 - Login menu displayed
+2023-12-19 22:33:26 INFO  Menu:60 - Login menu displayed
+2023-12-19 22:33:29 INFO  Menu:72 - User burak logged in successfully
+2023-12-19 22:33:29 INFO  StudentMenu:28 - Student menu displayed
+2023-12-19 22:33:31 INFO  StudentMenu:112 - Selected courses displayed
+2023-12-19 22:33:34 INFO  StudentMenu:91 - Course dropping menu displayed
+2023-12-19 22:33:34 INFO  StudentMenu:112 - Selected courses displayed
+2023-12-19 22:33:36 INFO  StudentController:39 - Course dropped: YDA1001 from student:Burak
+2023-12-19 22:33:36 INFO  StudentController:39 - Course dropped: NTE1008 from student:Burak
+2023-12-19 22:33:36 INFO  StudentController:39 - Course dropped: CSE2023 from student:Burak
+2023-12-19 22:33:37 INFO  StudentMenu:112 - Selected courses displayed
+2023-12-19 22:33:41 INFO  Menu:60 - Login menu displayed
+2023-12-19 22:34:07 INFO  Menu:60 - Login menu displayed
+2023-12-19 22:34:10 INFO  Menu:72 - User efe logged in successfully
+2023-12-19 22:34:10 INFO  StudentMenu:28 - Student menu displayed
+2023-12-19 22:34:11 INFO  StudentMenu:112 - Selected courses displayed
+2023-12-19 22:34:14 INFO  StudentMenu:70 - Course adding menu displayed
+2023-12-19 22:34:14 INFO  StudentMenu:127 - Available courses displayed
+2023-12-19 22:34:17 INFO  StudentController:28 - Course added: CSE2023 to student:Efe
+2023-12-19 22:34:17 INFO  StudentController:28 - Course added: NTE1008 to student:Efe
+2023-12-19 22:34:17 INFO  StudentController:28 - Course added: YDA1001 to student:Efe
+2023-12-19 22:34:25 INFO  Menu:60 - Login menu displayed
+2023-12-19 22:44:18 INFO  Menu:60 - Login menu displayed
+2023-12-19 22:44:54 INFO  Menu:60 - Login menu displayed
+2023-12-19 22:44:57 INFO  Menu:72 - User burak logged in successfully
+2023-12-19 22:44:57 INFO  StudentMenu:28 - Student menu displayed
+2023-12-19 22:44:59 INFO  Menu:60 - Login menu displayed

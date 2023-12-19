@@ -2,6 +2,7 @@ package models;
 
 import java.util.ArrayList;
 
+import interfaces.SectionInterface;
 import menus.Menu;
 import utils.DataUtils;
 
@@ -111,6 +112,9 @@ public class Student extends Person {
     public boolean dropCourse(Course course) {
         try {
             selectedCourses.remove(course);
+
+            DataUtils database = DataUtils.getInstance();
+            database.writeStudents(Menu.students);
             return true;
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
@@ -166,14 +170,11 @@ public class Student extends Person {
             warningString += "========================================================\n";
         }
 
-        // TODO: revise this function after merge
-        if (checkOverlappingCourses().size() > 0) {
+        if (getOverlappingCourses().size() > 0) {
             warningString += "========Student has overlapping courses.=========\n";
-            for (ArrayList<Course> overlappingCourses : checkOverlappingCourses()) {
-                for (Course course : overlappingCourses) {
-                    warningString += course.getFullName() + " (" + course.getShortName() + "), ";
-                }
-                warningString += "\n";
+            for (ArrayList<Course> overlappingCourse : getOverlappingCourses()) {
+                warningString += overlappingCourse.get(0).getFullName() + " and "
+                        + overlappingCourse.get(1).getFullName() + " are overlapping.\n";
             }
             warningString += "========================================================\n";
         }
@@ -262,63 +263,29 @@ public class Student extends Person {
         return false;
     }
 
+    public ArrayList<ArrayList<Course>> getOverlappingCourses() {
+        ArrayList<ArrayList<Course>> overlappingCourses = new ArrayList<ArrayList<Course>>();
 
-    public boolean checkTime(TimeInterval time1, TimeInterval time2){
-        if(time1.getStartTime().equals(time2.getStartTime())){
-            return true;
-        }
-        return false;
-    }
-
-    public ArrayList<ArrayList<Course>> checkOverlappingCourses() {
-        ArrayList<ArrayList<Course>> overlapingCourses = new ArrayList<ArrayList<Course>>();
-
-        ArrayList<Course> allCourseSections = this.getSelectedCourses();
-
-        for (int i = 0; i < allCourseSections.size(); i++) {
-
-            Course course1 = allCourseSections.get(i);
-            ArrayList<TimeInterval> dates1 = new ArrayList<>();
-
-            for (int j = i + 1; j < allCourseSections.size(); j++) {
-
-                Course course2 = allCourseSections.get(j);
-                ArrayList<TimeInterval> dates2 = new ArrayList<>();
-
-                if (allCourseSections.get(i) instanceof MandatoryCourse) {
-                    course1 = (MandatoryCourse) allCourseSections.get(i);
-                    dates1 = ((MandatoryCourse) allCourseSections.get(i)).getDates();
-                } else if (allCourseSections.get(i) instanceof TechnicalElectiveCourse) {
-                    course1 = (TechnicalElectiveCourse) allCourseSections.get(i);
-                    dates1 = ((TechnicalElectiveCourse) allCourseSections.get(i)).getDates();
-                } else if (allCourseSections.get(i) instanceof NonTechnicalElectiveCourse) {
-                    course1 = (NonTechnicalElectiveCourse) allCourseSections.get(i);
-                    dates1 = ((NonTechnicalElectiveCourse) allCourseSections.get(i)).getDates();
-                }
-                if (allCourseSections.get(j) instanceof MandatoryCourse) {
-                    course2 = (MandatoryCourse) allCourseSections.get(i);
-                    dates2 = ((MandatoryCourse) allCourseSections.get(i)).getDates();
-                } else if (allCourseSections.get(j) instanceof TechnicalElectiveCourse) {
-                    course2 = (TechnicalElectiveCourse) allCourseSections.get(i);
-                    dates2 = ((TechnicalElectiveCourse) allCourseSections.get(i)).getDates();
-                } else if (allCourseSections.get(j) instanceof NonTechnicalElectiveCourse) {
-                    course2 = (NonTechnicalElectiveCourse) allCourseSections.get(i);
-                    dates2 = ((NonTechnicalElectiveCourse) allCourseSections.get(i)).getDates();
-                }
-                
-                for(int y = 0;y<dates2.size();y++){
-                    for (int x = 0; x < dates1.size(); x++) {
-                        if (checkTime(dates1.get(x), dates2.get(y))) {
-                            ArrayList<Course> overlapingCourse = new ArrayList<Course>();
-                            overlapingCourse.add(course1);
-                            overlapingCourse.add(course2);
-                            overlapingCourses.add(overlapingCourse);
+        selectedCourses = getSelectedCourses();
+        for (int i = 0; i < selectedCourses.size(); i++) {
+            for (int j = i + 1; j < selectedCourses.size(); j++) {
+                for (TimeInterval timeInterval : ((SectionInterface) selectedCourses.get(i)).getDates()) {
+                    for (TimeInterval timeInterval2 : ((SectionInterface) selectedCourses.get(j)).getDates()) {
+                        try {
+                            if (timeInterval.isOverlapping(timeInterval2)) {
+                                ArrayList<Course> overlappingCourse = new ArrayList<Course>();
+                                overlappingCourse.add(selectedCourses.get(i));
+                                overlappingCourse.add(selectedCourses.get(j));
+                                overlappingCourses.add(overlappingCourse);
+                            }
+                        } catch (Exception e) {
+                            e.printStackTrace();
                         }
                     }
                 }
             }
         }
 
-        return overlapingCourses;
+        return overlappingCourses;
     }
 }
