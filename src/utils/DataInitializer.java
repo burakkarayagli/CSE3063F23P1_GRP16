@@ -178,10 +178,12 @@ public class DataInitializer {
                 courses.add(cse4000);
 
                 // // 8. Semester
-                // Course cse4298 = new Course("CSE4298", "Engineering Project II", "",
-                // new ArrayList<String>(Arrays.asList("CSE4297")), 8, 5, 4);
-                // Course isg122 = new Course("ISG122", "İş Sağlığı ve Güvenliği II", "",
-                // new ArrayList<String>(Arrays.asList("ISG121")), 8, 2, 2);
+                Course cse4298 = new Course("CSE4298", "Engineering Project II", "",
+                                new ArrayList<String>(Arrays.asList("CSE4297")), 8, 5, 4);
+                Course isg122 = new Course("ISG122", "İş Sağlığı ve Güvenliği II", "",
+                                new ArrayList<String>(Arrays.asList("ISG121")), 8, 2, 2);
+                courses.add(cse4298);
+                courses.add(isg122);
 
                 // Manadatory Courses
                 /// 1. Semester
@@ -369,6 +371,16 @@ public class DataInitializer {
                 mandatoryCourses.add(cse4219M);
                 mandatoryCourses.add(isg121M);
                 mandatoryCourses.add(cse4288M);
+
+                // 8.Semester
+                MandatoryCourse cse4298M = new MandatoryCourse(cse4298,
+                                new ArrayList<TimeInterval>(Arrays.asList(monday.get(0), monday.get(1))), "1.1", null,
+                                85, locations[1], 0);
+                MandatoryCourse isg122M = new MandatoryCourse(isg122,
+                                new ArrayList<TimeInterval>(Arrays.asList(monday.get(2), monday.get(3))), "1.1", null,
+                                50, locations[0], 0);
+                mandatoryCourses.add(cse4298M);
+                mandatoryCourses.add(isg122M);
 
                 // Technical Elective Courses
                 // Course CSE4026
@@ -1297,17 +1309,64 @@ public class DataInitializer {
                 students.add(temiz);
 
                 // Create Advisors
-                // fatmacorutergin, alihaydar, mujdat
                 Advisor fatmaCorutErgin = new Advisor("Fatma Corut", "Ergin", "fatmacorut", "fatmacorutergin",
                                 "Dr.Öğr.Üyesi",
                                 new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(0), tuesday.get(1))), 10000,
-                                "active", new ArrayList<>(Arrays.asList(kokur, karayagli, akman)));
+                                "active", new ArrayList<>(Arrays.asList(kokur, karayagli, akman,
+                                                ozgen,
+                                                ozkan,
+                                                unal,
+                                                yilmaz,
+                                                aydin,
+                                                kaya,
+                                                aksoy,
+                                                celik,
+                                                demir,
+                                                sahin,
+                                                toprak,
+                                                yildiz,
+                                                tas)));
                 Advisor aliHaydar = new Advisor("Ali", "Haydar", "alihaydar", "alihaydar", "Doç.Dr.",
                                 new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(2), tuesday.get(3))), 10000,
-                                "active", new ArrayList<>(Arrays.asList(ozgen, ozkan, unal)));
+                                "active", new ArrayList<>(Arrays.asList(yarslan,
+                                                gunes,
+                                                karahan,
+                                                ay,
+                                                eren,
+                                                akbas,
+                                                yilmazer,
+                                                korkmaz,
+                                                cetin,
+                                                sen,
+                                                oguz,
+                                                kirim,
+                                                selcuk,
+                                                aslan,
+                                                ozturk,
+                                                ulutas)));
 
+                Advisor mujdatOzturk = new Advisor("Mujdat", "Soytürk", "mujdat", "mujdatSoyturk", "Doç.Dr.",
+                                new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(4), tuesday.get(5))),
+                                10000, "active", new ArrayList<>(Arrays.asList(yildirim,
+                                                ekinci,
+                                                arikan,
+                                                karatas,
+                                                cengiz,
+                                                sevinc,
+                                                kocak,
+                                                onat,
+                                                turk,
+                                                yilmazoglu,
+                                                acar,
+                                                aygun,
+                                                albayrak,
+                                                yigit,
+                                                akdogan,
+                                                sarikaya,
+                                                temiz)));
                 advisors.add(fatmaCorutErgin);
                 advisors.add(aliHaydar);
+                advisors.add(mujdatOzturk);
 
                 DataUtils json = DataUtils.getInstance();
                 json.writeCourses(courses);
