@@ -1445,7 +1445,7 @@ public class DataInitializer {
                                                                 new Grade(cse4297, "BB"), new Grade(cse4000, "AA"),
                                                                 new Grade(cse4074, "CB"), new Grade(cse4219, "CD"),
                                                                 new Grade(isg121, "BA"), new Grade(cse4288, "CC"),
-                                                                new Grade(cse4034T, "BB"), new Grade(cse4038T, "CB"))),
+                                                                new Grade(cse4034T, "BB"), new Grade(cse4038T2, "CB"))),
                                 "");
                 Transcript transcript_s7_v3 = new Transcript(
                                 new ArrayList<Grade>(
@@ -1498,7 +1498,7 @@ public class DataInitializer {
                                                                 new Grade(cse3048, "BA"), new Grade(ie3235, "BB"),
                                                                 // Random Technical Elective Courses
                                                                 new Grade(cse4026T, "BA"), new Grade(cse4032T, "BB"),
-                                                                new Grade(cse4034T, "CB"), new Grade(cse4038T, "DC"),
+                                                                new Grade(cse4034T, "CB"), new Grade(cse4038T1, "DC"),
                                                                 new Grade(cse4040T, "DD"),
                                                                 // Random Non-Technical Elective Courses
                                                                 new Grade(cas1010N1, "DD"),
@@ -1561,7 +1561,7 @@ public class DataInitializer {
                                                                 new Grade(cse3264, "DC"), new Grade(cse3038, "DD"),
                                                                 new Grade(cse3048, "BA"), new Grade(ie3235, "BB"),
                                                                 // Random Technical Elective Courses
-                                                                new Grade(cse4060T, "BA"), new Grade(cse4061T, "BB"),
+                                                                new Grade(cse4096T, "BA"), new Grade(cse4061T, "BB"),
                                                                 new Grade(cse4062T, "CB"), new Grade(cse4063T, "DC"),
                                                                 new Grade(cse4217T, "DD"),
                                                                 // Random Non-Technical Elective Courses
