@@ -3,11 +3,16 @@ package menus;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import org.apache.log4j.Logger;
+
 import models.Course;
 import contollers.StudentController;
 import models.Transcript;
 
 public class StudentMenu {
+
+    // Logger
+    final static Logger logger = Logger.getLogger(StudentMenu.class);
 
     StudentController studentController;
 
@@ -20,6 +25,7 @@ public class StudentMenu {
     }
 
     public void studentMenu() {
+        logger.info("Student menu displayed");
         Scanner scanner = new Scanner(System.in);
         int choice = 0;
         while (choice != 5) {
@@ -29,7 +35,7 @@ public class StudentMenu {
             System.out.println("4-Show Selected Courses");
             System.out.println("5-Exit");
             System.out.print("Enter your choice: ");
-            try{
+            try {
                 choice = scanner.nextInt();
                 switch (choice) {
                     case 1:
@@ -52,8 +58,7 @@ public class StudentMenu {
                         System.out.println("Invalid choice");
                         break;
                 }
-            }
-            catch(Exception e){
+            } catch (Exception e) {
                 System.out.println("Invalid input type. Please try again.");
                 scanner.next();
             }
@@ -62,6 +67,7 @@ public class StudentMenu {
     }
 
     public void CourseAdding() throws Exception {
+        logger.info("Course adding menu displayed");
         showAvailableCourses();
 
         System.out.println("Enter the course you want to add");
@@ -74,16 +80,15 @@ public class StudentMenu {
 
         ArrayList<Course> courses = studentController.getAvailableCourses();
         ArrayList<Integer> selectedCourses = parseInput(input, courses);
-  
+
         for (int i = 0; i < selectedCourses.size(); i++) {
             studentController.addCourse(courses.get(selectedCourses.get(i) - 1));
         }
-        
+
     }
 
-    
-
     public void CourseDropping() throws Exception {
+        logger.info("Course dropping menu displayed");
         showSelectedCourses();
 
         System.out.println("Enter the course you want to drop");
@@ -93,8 +98,6 @@ public class StudentMenu {
         System.out.println("eg: -1 to exit");
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
-        
-        
 
         ArrayList<Course> courses = studentController.getSelectedCourses();
         ArrayList<Integer> selectedCourses = parseInput(input, courses);
@@ -106,6 +109,7 @@ public class StudentMenu {
     }
 
     public void showSelectedCourses() {
+        logger.info("Selected courses displayed");
         ArrayList<Course> courses = studentController.getSelectedCourses();
 
         System.out.println("=============Selected Courses=============");
@@ -120,6 +124,7 @@ public class StudentMenu {
     }
 
     public void showAvailableCourses() {
+        logger.info("Available courses displayed");
         ArrayList<Course> courses = studentController.getAvailableCourses();
 
         System.out.println("=============Available Courses=============");
@@ -134,6 +139,7 @@ public class StudentMenu {
     }
 
     public void showTranscript() {
+        logger.info("Transcript displayed");
         Transcript transcript = studentController.getTranscript();
         String grades = transcript.getGrades();
 
@@ -162,7 +168,7 @@ public class StudentMenu {
         } else {
             String[] inputArray = input.split(",");
             for (int i = 0; i < inputArray.length; i++) {
-                
+
                 try {
                     int index = Integer.parseInt(inputArray[i]);
                     if (index > 0 && index <= courses.size()) {
