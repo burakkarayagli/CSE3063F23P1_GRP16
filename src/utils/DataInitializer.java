@@ -847,7 +847,7 @@ public class godOfEverything {
                 }
 
                 // Create Students
-                Transcript transcript = new Transcript(
+                Transcript transcript_s1 = new Transcript(
                                 new ArrayList<Grade>(
                                                 Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
                                                                 new Grade(cse1200, "AA"),
@@ -860,10 +860,127 @@ public class godOfEverything {
                                                                 new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
                                                                 new Grade(trd122, "AA"))),
                                 "");
-                Student kokur = new Student("Hakkı", "Kokur", "hakki", "hakkikokur",
+                Transcript transcript_s2 = new Transcript(
+                                new ArrayList<Grade>(
+                                                Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
+                                                                new Grade(cse1200, "AA"),
+                                                                new Grade(cse1241, "AA"), new Grade(math1001, "AA"),
+                                                                new Grade(phys1101, "AA"),
+                                                                new Grade(phys1103, "AA"), new Grade(trd121, "AA"),
+                                                                new Grade(ata122, "AA"),
+                                                                new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
+                                                                new Grade(math2256, "AA"),
+                                                                new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
+                                                                new Grade(trd122, "AA"))),
+                                "");
+                Transcript transcript_s3 = new Transcript(
+                                new ArrayList<Grade>(
+                                                Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
+                                                                new Grade(cse1200, "AA"),
+                                                                new Grade(cse1241, "AA"), new Grade(math1001, "AA"),
+                                                                new Grade(phys1101, "AA"),
+                                                                new Grade(phys1103, "AA"), new Grade(trd121, "AA"),
+                                                                new Grade(ata122, "AA"),
+                                                                new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
+                                                                new Grade(math2256, "AA"),
+                                                                new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
+                                                                new Grade(trd122, "AA"))),
+                                "");
+                Transcript transcript_s4 = new Transcript(
+                                new ArrayList<Grade>(
+                                                Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
+                                                                new Grade(cse1200, "AA"),
+                                                                new Grade(cse1241, "AA"), new Grade(math1001, "AA"),
+                                                                new Grade(phys1101, "AA"),
+                                                                new Grade(phys1103, "AA"), new Grade(trd121, "AA"),
+                                                                new Grade(ata122, "AA"),
+                                                                new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
+                                                                new Grade(math2256, "AA"),
+                                                                new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
+                                                                new Grade(trd122, "AA"))),
+                                "");
+                Transcript transcript_s5 = new Transcript(
+                                new ArrayList<Grade>(
+                                                Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
+                                                                new Grade(cse1200, "AA"),
+                                                                new Grade(cse1241, "AA"), new Grade(math1001, "AA"),
+                                                                new Grade(phys1101, "AA"),
+                                                                new Grade(phys1103, "AA"), new Grade(trd121, "AA"),
+                                                                new Grade(ata122, "AA"),
+                                                                new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
+                                                                new Grade(math2256, "AA"),
+                                                                new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
+                                                                new Grade(trd122, "AA"))),
+                                "");
+                Transcript transcript_s6 = new Transcript(
+                                new ArrayList<Grade>(
+                                                Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
+                                                                new Grade(cse1200, "AA"),
+                                                                new Grade(cse1241, "AA"), new Grade(math1001, "AA"),
+                                                                new Grade(phys1101, "AA"),
+                                                                new Grade(phys1103, "AA"), new Grade(trd121, "AA"),
+                                                                new Grade(ata122, "AA"),
+                                                                new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
+                                                                new Grade(math2256, "AA"),
+                                                                new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
+                                                                new Grade(trd122, "AA"))),
+                                "");
+                Transcript transcript_s7_v1 = new Transcript(
+                                new ArrayList<Grade>(
+                                                Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
+                                                                new Grade(cse1200, "AA"),
+                                                                new Grade(cse1241, "AA"), new Grade(math1001, "AA"),
+                                                                new Grade(phys1101, "AA"),
+                                                                new Grade(phys1103, "AA"), new Grade(trd121, "AA"),
+                                                                new Grade(ata122, "AA"),
+                                                                new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
+                                                                new Grade(math2256, "AA"),
+                                                                new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
+                                                                new Grade(trd122, "AA"))),
+                                "");   
+                Transcript transcript_s7_v2 = new Transcript(
+                                new ArrayList<Grade>(
+                                                Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
+                                                                new Grade(cse1200, "AA"),
+                                                                new Grade(cse1241, "AA"), new Grade(math1001, "AA"),
+                                                                new Grade(phys1101, "AA"),
+                                                                new Grade(phys1103, "AA"), new Grade(trd121, "AA"),
+                                                                new Grade(ata122, "AA"),
+                                                                new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
+                                                                new Grade(math2256, "AA"),
+                                                                new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
+                                                                new Grade(trd122, "AA"))),
+                                "");   
+                Transcript transcript_s8_v1 = new Transcript(
+                                new ArrayList<Grade>(
+                                                Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
+                                                                new Grade(cse1200, "AA"),
+                                                                new Grade(cse1241, "AA"), new Grade(math1001, "AA"),
+                                                                new Grade(phys1101, "AA"),
+                                                                new Grade(phys1103, "AA"), new Grade(trd121, "AA"),
+                                                                new Grade(ata122, "AA"),
+                                                                new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
+                                                                new Grade(math2256, "AA"),
+                                                                new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
+                                                                new Grade(trd122, "AA"))),
+                                "");
+                Transcript transcript_s8_v2 = new Transcript(
+                                new ArrayList<Grade>(
+                                                Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
+                                                                new Grade(cse1200, "AA"),
+                                                                new Grade(cse1241, "AA"), new Grade(math1001, "AA"),
+                                                                new Grade(phys1101, "AA"),
+                                                                new Grade(phys1103, "AA"), new Grade(trd121, "AA"),
+                                                                new Grade(ata122, "AA"),
+                                                                new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
+                                                                new Grade(math2256, "AA"),
+                                                                new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
+                                                                new Grade(trd122, "AA"))),
+                                "");
+Student kokur = new Student("Hakkı", "Kokur", "hakki", "hakkikokur",
                             "Maltepe/Istanbul", "5315274392", 5, 2020,
                             "", new ArrayList<Course>(), transcript);
-                Student karayagli = new Student("Burak", "Karayağlı", "burak", "burakkarayagli",
+Student karayagli = new Student("Burak", "Karayağlı", "burak", "burakkarayagli",
                                 "Kartal/Istanbul", "5312347654", 5, 2021,
                                 "", new ArrayList<Course>(), transcript);
 Student akman = new Student("Barış Giray", "Akman", "barisgiray", "barisgirayakman",
