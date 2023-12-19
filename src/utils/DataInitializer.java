@@ -267,7 +267,7 @@ public class godOfEverything {
                 // Course CSE4057
                 Course cse4057 = new Course("CSE4057", "Information Systems Security", "Elective", null, 7, 5, 4);
                 TechnicalElectiveCourse cse4057T1 = new TechnicalElectiveCourse(cse4057, new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(0), wednesday.get(1))), "1.1", null, 50, locations[2], 165);
-                TechnicalElectiveCourse cse4057T2 = new TechnicalElectiveCourse(cse4057, new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(6), wednesday.get(0))), "1.2", null, 50, locations[3], 155);
+                TechnicalElectiveCourse cse4057T2 = new TechnicalElectiveCourse(cse4057, new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(6), wednesday.get(0))), "1.2", null, 50, locations[3], 165);
                 courses.add(cse4057);
                 technicalElectives.add(cse4057T1);
                 technicalElectives.add(cse4057T2);
@@ -359,7 +359,7 @@ public class godOfEverything {
                 // Course CSE4086
                 Course cse4086 = new Course("CSE4086", "Mobile Device Programming", "Elective", null, 7, 5, 4);
                 TechnicalElectiveCourse cse4086T = new TechnicalElectiveCourse(cse4086, new ArrayList<TimeInterval>(Arrays.asList(friday.get(2), friday.get(3))), "1.1", null, 50, locations[2], 165);
-                courses add(cse4086);
+                courses.add(cse4086);
                 technicalElectives.add(cse4086T);
 
                 // Course CSE4217
@@ -392,37 +392,378 @@ public class godOfEverything {
                 courses.add(cse4096);
                 technicalElectives.add(cse4096T);
 
-
-
-
-                
-                Course cse4026 = new Course("CSE4026", "Introduction to Robotics and Control Theory", "", null, 7, 5,
-                                4);
-                TechnicalElectiveCourse cse4026T = new TechnicalElectiveCourse(cse4026,
-                                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(2), wednesday.get(3))), "1.1",
-                                null, 50, locations[1], 165);
-                Course cse4040 = new Course("CSE4040", "Cloud Computing", "", null, 7, 5, 4);
-                TechnicalElectiveCourse cse4040T = new TechnicalElectiveCourse(cse4040,
-                                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(4), wednesday.get(5))), "1.1",
-                                null, 50, locations[2], 155);
-                courses.add(cse4026);
-                technicalElectives.add(cse4026T);
-                courses.add(cse4040);
-                technicalElectives.add(cse4040T);
-
                 // Non Technical Elective Courses
-                Course nte1008 = new Course("NTE1008", "Cinema", "", null, 1, 2, 2);
+<                        Course bus1003 = new Course("BUS1003", "Entrepreneurship and Innovation", "", 1, 2, 2);
+                NonTechnicalElectiveCourse bus1003N1 = new NonTechnicalElectiveCourse(bus1003,
+                        new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(1), wednesday.get(2))), "N1",
+                        null, 50, locations[4], true);
+                NonTechnicalElectiveCourse bus1003N2 = new NonTechnicalElectiveCourse(bus1003,
+                        new ArrayList<TimeInterval>(Arrays.asList(thursday.get(3), thursday.get(4))), "N2",
+                        null, 50, locations[7], true);
+                courses.add(bus1003);
+                nonTechnicalElectives.add(bus1003N1);
+                nonTechnicalElectives.add(bus1003N2);
+
+                Course bus1004 = new Course("BUS1004", "Strategic Entrepreneurship", "", 1, 2, 2);
+                NonTechnicalElectiveCourse bus1004N1 = new NonTechnicalElectiveCourse(bus1004,
+                        new ArrayList<TimeInterval>(Arrays.asList(thursday.get(3), thursday.get(4))), "1.1",
+                        null, 50, locations[7], true);
+                courses.add(bus1004);
+                nonTechnicalElectives.add(bus1004N1);
+
+                Course bus2005 = new Course("BUS2005", "International Business", "", 1, 2, 2);
+                NonTechnicalElectiveCourse bus2005N1 = new NonTechnicalElectiveCourse(bus2005,
+                        new ArrayList<TimeInterval>(Arrays.asList(friday.get(1), friday.get(2))), "N1",
+                        null, 50, locations[2], true);
+                NonTechnicalElectiveCourse bus2005N2 = new NonTechnicalElectiveCourse(bus2005,
+                        new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(4), wednesday.get(5))), "N2",
+                        null, 50, locations[1], true);
+                courses.add(bus2005);
+                nonTechnicalElectives.add(bus2005N1);
+                nonTechnicalElectives.add(bus2005N2);
+
+                Course cas1001 = new Course("CAS1001", "Self Management", "", 1, 2, 2);
+                NonTechnicalElectiveCourse cas1001N1 = new NonTechnicalElectiveCourse(cas1001,
+                        new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(4), tuesday.get(5))), "1.1",
+                        null, 50, locations[5], true);
+                courses.add(cas1001);
+                nonTechnicalElectives.add(cas1001N1);
+
+                Course cas1010 = new Course("CAS1010", "Our Biosphere", "", 1, 2, 2);
+                NonTechnicalElectiveCourse cas1010N1 = new NonTechnicalElectiveCourse(cas1010,
+                        new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(6), wednesday.get(0))), "1.1",
+                        null, 50, locations[1], true);
+                courses.add(cas1010);
+                nonTechnicalElectives.add(cas1010N1);
+
+                Course cas1061 = new Course("CAS1061", "Geometric Origami", "", 1, 2, 2);
+                NonTechnicalElectiveCourse cas1061N1 = new NonTechnicalElectiveCourse(cas1061,
+                        new ArrayList<TimeInterval>(Arrays.asList(thursday.get(6), friday.get(0))), "1.1",
+                        null, 50, locations[6], true);
+                courses.add(cas1061);
+                nonTechnicalElectives.add(cas1061N1);
+
+                Course cas2001 = new Course("CAS2001", "Energy for Physical Activity", "", 1, 2, 2);
+                NonTechnicalElectiveCourse cas2001N1 = new NonTechnicalElectiveCourse(cas2001,
+                        new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(2), wednesday.get(3))), "N1",
+                        null, 50, locations[0], true);
+                NonTechnicalElectiveCourse cas2001N2 = new NonTechnicalElectiveCourse(cas2001,
+                        new ArrayList<TimeInterval>(Arrays.asList(thursday.get(0), thursday.get(1))), "N2",
+                        null, 50, locations[1], true);
+                courses.add(cas2001);
+                nonTechnicalElectives.add(cas2001N1);
+                nonTechnicalElectives.add(cas2001N2);
+
+                Course cas2002 = new Course("CAS2002", "Human Performance and Nutrition", "", 1, 2, 2);
+                NonTechnicalElectiveCourse cas2002N = new NonTechnicalElectiveCourse(cas2002,
+                        new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(0), tuesday.get(1))), "1.1",
+                        null, 50, locations[3], true);
+                courses.add(cas2002);
+                nonTechnicalElectives.add(cas2002N);
+
+                Course cas2003 = new Course("CAS2003", "Cardiopulmonary Resuscitation and First Aid Basics", "", 1, 2, 2);
+                NonTechnicalElectiveCourse cas2003N = new NonTechnicalElectiveCourse(cas2003,
+                        new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(5), wednesday.get(6))), "1.1",
+                        null, 50, locations[7], true);
+                courses.add(cas2003);
+                nonTechnicalElectives.add(cas2003N);
+
+                Course cas2004 = new Course("CAS2004", "Interpersonal Relations and Communication", "", 1, 2, 2);
+                NonTechnicalElectiveCourse cas2004N = new NonTechnicalElectiveCourse(cas2004,
+                        new ArrayList<TimeInterval>(Arrays.asList(thursday.get(0), thursday.get(1))), "1.1",
+                        null, 50, locations[1], true);
+                courses.add(cas2004);
+                nonTechnicalElectives.add(cas2004N);
+
+                Course cas2005 = new Course("CAS2005", "Trekking and Orienteering", "", 1, 2, 2);
+                NonTechnicalElectiveCourse cas2005N = new NonTechnicalElectiveCourse(cas2005,
+                        new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(2), tuesday.get(3))), "1.1",
+                        null, 50, locations[4], true);
+                courses.add(cas2005);
+                nonTechnicalElectives.add(cas2005N);
+
+                Course cas3001 = new Course("CAS3001", "Earthquake and Rescue Principles", "", 1, 2, 2);
+                NonTechnicalElectiveCourse cas3001N = new NonTechnicalElectiveCourse(cas3001,
+                        new ArrayList<TimeInterval>(Arrays.asList(friday.get(3), friday.get(4))), "1.1",
+                        null, 50, locations[2], true);
+                courses.add(cas3001);
+                nonTechnicalElectives.add(cas3001N);
+
+                Course cas3044 = new Course("CAS3044", "Positive Thinking", "", 1, 2, 2);
+                NonTechnicalElectiveCourse cas3044N = new NonTechnicalElectiveCourse(cas3044,
+                        new ArrayList<TimeInterval>(Arrays.asList(thursday.get(5), thursday.get(6))), "1.1",
+                        null, 50, locations[5], true);
+                courses.add(cas3044);
+                nonTechnicalElectives.add(cas3044N);
+
+                Course comm2060 = new Course("COMM2060", "Communication Models and Techniques", "", 1, 2, 2);
+                NonTechnicalElectiveCourse comm2060N = new NonTechnicalElectiveCourse(comm2060,
+                        new ArrayList<TimeInterval>(Arrays.asList(friday.get(0), friday.get(1))), "1.1",
+                        null, 50, locations[6], true);
+                courses.add(comm2060);
+                nonTechnicalElectives.add(comm2060N);
+
+                Course fnce3003 = new Course("FNCE3003", "Investment Planning", "", 1, 2, 2);
+                NonTechnicalElectiveCourse fnce3003N = new NonTechnicalElectiveCourse(fnce3003,
+                        new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(3), wednesday.get(4))), "1.1",
+                        null, 50, locations[3], true);
+                courses.add(fnce3003);
+                nonTechnicalElectives.add(fnce3003N);
+
+                Course hr1013 = new Course("HR1013", "Career Development", "", 1, 2, 2);
+                NonTechnicalElectiveCourse hr1013N = new NonTechnicalElectiveCourse(hr1013,
+                        new ArrayList<TimeInterval>(Arrays.asList(friday.get(5), friday.get(6))), "1.1",
+                        null, 50, locations[0], true);
+                courses.add(hr1013);
+                nonTechnicalElectives.add(hr1013N);
+
+                Course hr4001 = new Course("HR4001", "Career Orientation", "", 1, 2, 2);
+                NonTechnicalElectiveCourse hr4001N = new NonTechnicalElectiveCourse(hr4001,
+                        new ArrayList<TimeInterval>(Arrays.asList(thursday.get(2), thursday.get(3))), "1.1",
+                        null, 50, locations[2], true);
+                courses.add(hr4001);
+                nonTechnicalElectives.add(hr4001N);
+
+                Course hss3002 = new Course("HSS3002", "Ethics in Engineering and Science", "", 1, 2, 2);
+                NonTechnicalElectiveCourse hss3002N = new NonTechnicalElectiveCourse(hss3002,
+                        new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(5), tuesday.get(6))), "1.1",
+                        null, 50, locations[1], true);
+                courses.add(hss3002);
+                nonTechnicalElectives.add(hss3002N);
+
+                Course ikt1054 = new Course("IKT1054", "Industrial and Economic Sociology", "", 1, 2, 2);
+                NonTechnicalElectiveCourse ikt1054N = new NonTechnicalElectiveCourse(ikt1054,
+                        new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(4), wednesday.get(5))), "1.1",
+                        null, 50, locations[4], true);
+                courses.add(ikt1054);
+                nonTechnicalElectives.add(ikt1054N);
+
+                Course inf1001 = new Course("INF1001", "Information Literacy in Engineering", "", 1, 2, 2);
+                NonTechnicalElectiveCourse inf1001N = new NonTechnicalElectiveCourse(inf1001,
+                        new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(0), wednesday.get(1))), "1.1",
+                        null, 50, locations[2], true);
+                courses.add(inf1001);
+                nonTechnicalElectives.add(inf1001N);
+
+                Course law2004 = new Course("LAW2004", "Labor Law", "", 1, 2, 2);
+                NonTechnicalElectiveCourse law2004N = new NonTechnicalElectiveCourse(law2004,
+                        new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(2), tuesday.get(3))), "1.1",
+                        null, 50, locations[5], true);
+                courses.add(law2004);
+                nonTechnicalElectives.add(law2004N);
+
+                Course man1001 = new Course("MAN1001", "Principles of Managerial Economics & Financial Management", "", 1, 2, 2);
+                NonTechnicalElectiveCourse man1001N = new NonTechnicalElectiveCourse(man1001,
+                        new ArrayList<TimeInterval>(Arrays.asList(friday.get(2), friday.get(3))), "1.1",
+                        null, 50, locations[4], true);
+                courses.add(man1001);
+                nonTechnicalElectives.add(man1001N);
+
+                Course mgt1021 = new Course("MGT1021", "Design, Innovation and Entrepreneurship", "", 1, 2, 2);
+                NonTechnicalElectiveCourse mgt1021N = new NonTechnicalElectiveCourse(mgt1021,
+                        new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(1), wednesday.get(2))), "1.1",
+                        null, 50, locations[1], true);
+                courses.add(mgt1021);
+                nonTechnicalElectives.add(mgt1021N);
+
+                Course mgt3082 = new Course("MGT3082", "Creativity And Innovation Management", "", 1, 2, 2);
+                NonTechnicalElectiveCourse mgt3082N = new NonTechnicalElectiveCourse(mgt3082,
+                        new ArrayList<TimeInterval>(Arrays.asList(thursday.get(4), thursday.get(5))), "1.1",
+                        null, 50, locations[6], true);
+                courses.add(mgt3082);
+                nonTechnicalElectives.add(mgt3082N);
+
+                Course mrk3082 = new Course("MRK3082", "Integrated Marketing Communication", "", 1, 2, 2);
+                NonTechnicalElectiveCourse mrk3082N = new NonTechnicalElectiveCourse(mrk3082,
+                        new ArrayList<TimeInterval>(Arrays.asList(friday.get(1), friday.get(2))), "1.1",
+                        null, 50, locations[3], true);
+                courses.add(mrk3082);
+                nonTechnicalElectives.add(mrk3082N);
+
+                Course mrk3084 = new Course("MRK3084", "Brand Creation/Branding", "", 1, 2, 2);
+                NonTechnicalElectiveCourse mrk3084N = new NonTechnicalElectiveCourse(mrk3084,
+                        new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(2), wednesday.get(3))), "1.1",
+                        null, 50, locations[0], true);
+                courses.add(mrk3084);
+                nonTechnicalElectives.add(mrk3084N);
+
+                Course nte1002 = new Course("NTE1002", "Effects of Human Behaviour on Environment", "", 1, 2, 2);
+                NonTechnicalElectiveCourse nte1002N = new NonTechnicalElectiveCourse(nte1002,
+                        new ArrayList<TimeInterval>(Arrays.asList(thursday.get(0), thursday.get(1))), "1.1",
+                        null, 50, locations[7], true);
+                courses.add(nte1002);
+                nonTechnicalElectives.add(nte1002N);
+
+                Course nte1003 = new Course("NTE1003", "The Culture of Radiation Safety", "", 1, 2, 2);
+                NonTechnicalElectiveCourse nte1003N = new NonTechnicalElectiveCourse(nte1003,
+                        new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(4), tuesday.get(5))), "1.1",
+                        null, 50, locations[1], true);
+                courses.add(nte1003);
+                nonTechnicalElectives.add(nte1003N);
+
+                Course nte1004 = new Course("NTE1004", "World Cultures", "", 1, 2, 2);
+                NonTechnicalElectiveCourse nte1004N = new NonTechnicalElectiveCourse(nte1004,
+                        new ArrayList<TimeInterval>(Arrays.asList(friday.get(3), friday.get(4))), "1.1",
+                        null, 50, locations[5], true);
+                courses.add(nte1004);
+                nonTechnicalElectives.add(nte1004N);
+
+                Course nte1006 = new Course("NTE1006", "Basic Principles of Accessibility in Informatics and Technology", "", 1, 2, 2);
+                NonTechnicalElectiveCourse nte1006N = new NonTechnicalElectiveCourse(nte1006,
+                        new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(1), wednesday.get(2))), "1.1",
+                        null, 50, locations[2], true);
+                courses.add(nte1006);
+                nonTechnicalElectives.add(nte1006N);
+
+                Course nte1008 = new Course("NTE1008", "Cinema", "", 1, 2, 2);
                 NonTechnicalElectiveCourse nte1008N = new NonTechnicalElectiveCourse(nte1008,
-                                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(6), thursday.get(0))), "1.1",
-                                null, 50, locations[3], true);
-                Course yda1001 = new Course("YDA1001", "German for Beginners", "", null, 1, 2, 2);
-                NonTechnicalElectiveCourse yda1001N = new NonTechnicalElectiveCourse(yda1001,
-                                new ArrayList<TimeInterval>(Arrays.asList(thursday.get(1), thursday.get(2))), "1.1",
-                                null, 50, locations[4], false);
+                        new ArrayList<TimeInterval>(Arrays.asList(thursday.get(3), thursday.get(4))), "1.1",
+                        null, 50, locations[6], true);
                 courses.add(nte1008);
                 nonTechnicalElectives.add(nte1008N);
+
+                Course nte1010 = new Course("NTE1010", "Introduction to Finance for Engineers", "", 1, 2, 2);
+                NonTechnicalElectiveCourse nte1010N = new NonTechnicalElectiveCourse(nte1010,
+                        new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(4), wednesday.get(5))), "1.1",
+                        null, 50, locations[3], true);
+                courses.add(nte1010);
+                nonTechnicalElectives.add(nte1010N);
+
+                Course nte1011 = new Course("NTE1011", "Business Communication", "", 1, 2, 2);
+                NonTechnicalElectiveCourse nte1011N = new NonTechnicalElectiveCourse(nte1011,
+                        new ArrayList<TimeInterval>(Arrays.asList(thursday.get(5), thursday.get(6))), "1.1",
+                        null, 50, locations[0], true);
+                courses.add(nte1011);
+                nonTechnicalElectives.add(nte1011N);
+
+                Course nte1012 = new Course("NTE1012", "Introduction to Corporate Governance for Engineers", "", 1, 2, 2);
+                NonTechnicalElectiveCourse nte1012N = new NonTechnicalElectiveCourse(nte1012,
+                        new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(0), tuesday.get(1))), "1.1",
+                        null, 50, locations[7], true);
+                courses.add(nte1012);
+                nonTechnicalElectives.add(nte1012N);
+
+                Course nte1013 = new Course("NTE1013", "Business Intelligence for Managers", "", 1, 2, 2);
+                NonTechnicalElectiveCourse nte1013N = new NonTechnicalElectiveCourse(nte1013,
+                        new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(3), wednesday.get(4))), "1.1",
+                        null, 50, locations[4], true);
+                courses.add(nte1013);
+                nonTechnicalElectives.add(nte1013N);
+
+                Course nte1014 = new Course("NTE1014", "Introduction to Strategic Human Resources Management", "", 1, 2, 2);
+                NonTechnicalElectiveCourse nte1014N = new NonTechnicalElectiveCourse(nte1014,
+                        new ArrayList<TimeInterval>(Arrays.asList(friday.get(0), friday.get(1))), "1.1",
+                        null, 50, locations[1], true);
+                courses.add(nte1014);
+                nonTechnicalElectives.add(nte1014N);
+
+                Course nte1015 = new Course("NTE1015", "Introduction to Leadership & Management for Engineers", "", 1, 2, 2);
+                NonTechnicalElectiveCourse nte1015N = new NonTechnicalElectiveCourse(nte1015,
+                        new ArrayList<TimeInterval>(Arrays.asList(thursday.get(2), thursday.get(3))), "1.1",
+                        null, 50, locations[6], true);
+                courses.add(nte1015);
+                nonTechnicalElectives.add(nte1015N);
+
+                Course nte1016 = new Course("NTE1016", "Introduction to Strategy for Engineers", "", 1, 2, 2);
+                NonTechnicalElectiveCourse nte1016N = new NonTechnicalElectiveCourse(nte1016,
+                        new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(5), wednesday.get(6))), "1.1",
+                        null, 50, locations[2], true);
+                courses.add(nte1016);
+                nonTechnicalElectives.add(nte1016N);
+
+                Course ob2040 = new Course("OB2040", "Industrial Psychology", "", 1, 2, 2);
+                NonTechnicalElectiveCourse ob2040N = new NonTechnicalElectiveCourse(ob2040,
+                        new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(3), tuesday.get(4))), "1.1",
+                        null, 50, locations[7], true);
+                courses.add(ob2040);
+                nonTechnicalElectives.add(ob2040N);
+
+                Course ob2041 = new Course("OB2041", "Behavioral Sciences for Engineers", "", 1, 2, 2);
+                NonTechnicalElectiveCourse ob2041N = new NonTechnicalElectiveCourse(ob2041,
+                        new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(0), wednesday.get(1))), "1.1",
+                        null, 50, locations[3], true);
+                courses.add(ob2041);
+                nonTechnicalElectives.add(ob2041N);
+
+                Course ob3043 = new Course("OB3043", "Organizational Behaviour", "", 1, 2, 2);
+                NonTechnicalElectiveCourse ob3043N = new NonTechnicalElectiveCourse(ob3043,
+                        new ArrayList<TimeInterval>(Arrays.asList(thursday.get(0), thursday.get(1))), "1.1",
+                        null, 50, locations[5], true);
+                courses.add(ob3043);
+                nonTechnicalElectives.add(ob3043N);
+
+                Course soc3082 = new Course("SOC3082", "Environmental Sociology", "", 1, 2, 2);
+                NonTechnicalElectiveCourse soc3082N = new NonTechnicalElectiveCourse(soc3082,
+                        new ArrayList<TimeInterval>(Arrays.asList(friday.get(3), friday.get(4))), "1.1",
+                        null, 50, locations[4], true);
+                courses.add(soc3082);
+                nonTechnicalElectives.add(soc3082N);
+
+                Course yda1001 = new Course("YDA1001", "German for Beginners", "", 1, 2, 2);
+                NonTechnicalElectiveCourse yda1001N = new NonTechnicalElectiveCourse(yda1001,
+                        new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(0), tuesday.get(1))), "1.1",
+                        null, 50, locations[6], true);
                 courses.add(yda1001);
                 nonTechnicalElectives.add(yda1001N);
+
+                Course yda1002 = new Course("YDA1002", "German", "", 1, 2, 2);
+                NonTechnicalElectiveCourse yda1002N = new NonTechnicalElectiveCourse(yda1002,
+                        new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(2), wednesday.get(3))), "1.1",
+                        null, 50, locations[0], true);
+                courses.add(yda1002);
+                nonTechnicalElectives.add(yda1002N);
+
+                Course yda1003 = new Course("YDA1003", "German Communication", "", 1, 2, 2);
+                NonTechnicalElectiveCourse yda1003N = new NonTechnicalElectiveCourse(yda1003,
+                        new ArrayList<TimeInterval>(Arrays.asList(friday.get(5), friday.get(6))), "1.1",
+                        null, 50, locations[7], true);
+                courses.add(yda1003);
+                nonTechnicalElectives.add(yda1003N);
+
+                Course yda2001 = new Course("YDA2001", "Seminars in German", "", 1, 2, 2);
+                NonTechnicalElectiveCourse yda2001N = new NonTechnicalElectiveCourse(yda2001,
+                        new ArrayList<TimeInterval>(Arrays.asList(thursday.get(2), thursday.get(3))), "1.1",
+                        null, 50, locations[1], true);
+                courses.add(yda2001);
+                nonTechnicalElectives.add(yda2001N);
+
+                Course ydf1001 = new Course("YDF1001", "French for Beginners", "", 1, 2, 2);
+                NonTechnicalElectiveCourse ydf1001N = new NonTechnicalElectiveCourse(ydf1001,
+                        new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(4), wednesday.get(5))), "1.1",
+                        null, 50, locations[2], true);
+                courses.add(ydf1001);
+                nonTechnicalElectives.add(ydf1001N);
+
+                Course ydf1002 = new Course("YDF1002", "French", "", 1, 2, 2);
+                NonTechnicalElectiveCourse ydf1002N = new NonTechnicalElectiveCourse(ydf1002,
+                        new ArrayList<TimeInterval>(Arrays.asList(thursday.get(4), thursday.get(5))), "1.1",
+                        null, 50, locations[3], true);
+                courses.add(ydf1002);
+                nonTechnicalElectives.add(ydf1002N);
+
+                Course ydi1004 = new Course("YDI1004", "Report Writing in English", "", 1, 2, 2);
+                NonTechnicalElectiveCourse ydi1004N = new NonTechnicalElectiveCourse(ydi1004,
+                        new ArrayList<TimeInterval>(Arrays.asList(friday.get(0), friday.get(1))), "1.1",
+                        null, 50, locations[6], true);
+                courses.add(ydi1004);
+                nonTechnicalElectives.add(ydi1004N);
+
+                Course ydis1001 = new Course("YDIS1001", "Spanish for Beginners", "", 1, 2, 2);
+                NonTechnicalElectiveCourse ydis1001N = new NonTechnicalElectiveCourse(ydis1001,
+                        new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(2), wednesday.get(3))), "1.1",
+                        null, 50, locations[4], true);
+                courses.add(ydis1001);
+                nonTechnicalElectives.add(ydis1001N);
+
+                Course ydis1002 = new Course("YDIS1002", "Spanish", "", 1, 2, 2);
+                NonTechnicalElectiveCourse ydis1002N = new NonTechnicalElectiveCourse(ydis1002,
+                        new ArrayList<TimeInterval>(Arrays.asList(thursday.get(2), thursday.get(3))), "1.1",
+                        null, 50, locations[0], true);
+                courses.add(ydis1002);
+                nonTechnicalElectives.add(ydis1002N);
+
+       
+
 
                 // Create Lecturers
                 Lecturer agaoglu = new Lecturer("Mustafa", "Ağaoglu", "mustafa", "mustafaagaoglu", "Doç. Dr.",
