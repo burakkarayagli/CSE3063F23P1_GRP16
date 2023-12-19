@@ -1258,29 +1258,43 @@ public class DataInitializer {
                         }
 
                 }
-                lecturersNumber = nonTechnicalElectives.size();
+                lecturersNumber = lecturers.size();
                 for (int i = 0; i < nonTechnicalElectives.size(); i++) {
                         lecturersNumber--;
                         NonTechnicalElectiveCourse course = nonTechnicalElectives.get(i);
                         course.setLecturer(lecturers.get(lecturersNumber));
                         lecturers.get(lecturersNumber).addLecturedCourses(course);
                         if (lecturersNumber == 0) {
-                                lecturersNumber = lecturers.size() + 1;
+                                lecturersNumber = lecturers.size();
                         }
 
                 }
-                lecturersNumber = technicalElectives.size();
+                lecturersNumber = lecturers.size();
                 for (int i = 0; i < technicalElectives.size(); i++) {
                         lecturersNumber--;
                         TechnicalElectiveCourse course = technicalElectives.get(i);
                         course.setLecturer(lecturers.get(lecturersNumber));
                         lecturers.get(lecturersNumber).addLecturedCourses(course);
                         if (lecturersNumber == 0) {
-                                lecturersNumber = lecturers.size() + 1;
+                                lecturersNumber = lecturers.size();
                         }
                 }
 
                 // Create Students
+                Transcript transcript = new Transcript(
+                                new ArrayList<Grade>(
+                                                Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
+                                                                new Grade(cse1200, "AA"),
+                                                                new Grade(cse1241, "AA"), new Grade(math1001, "AA"),
+                                                                new Grade(phys1101, "AA"),
+                                                                new Grade(phys1103, "AA"), new Grade(trd121, "AA"),
+                                                                new Grade(ata122, "AA"),
+                                                                new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
+                                                                new Grade(math2256, "AA"),
+                                                                new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
+                                                                new Grade(trd122, "AA"))),
+                                "");
+
                 Transcript transcript_s1 = new Transcript(
                                 new ArrayList<Grade>(
                                                                 Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
