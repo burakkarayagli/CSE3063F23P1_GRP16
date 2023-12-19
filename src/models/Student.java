@@ -101,6 +101,17 @@ public class Student extends Person {
 
             DataUtils database = DataUtils.getInstance();
             database.writeStudents(Menu.students);
+            // Update the advisor's student's selected courses
+            ArrayList<Advisor> advisors = database.readAdvisors();
+            for (int i = 0; i < advisors.size(); i++) {
+                for (int j = 0; j < advisors.get(i).getStudents().size(); j++) {
+                    if (advisors.get(i).getStudents().get(j).getUsername().equals(this.getUsername())) {
+                        advisors.get(i).getStudents().set(j, this);
+                    }
+                }
+            }
+            database.writeAdvisors(advisors);
+
             return true;
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
@@ -115,6 +126,16 @@ public class Student extends Person {
 
             DataUtils database = DataUtils.getInstance();
             database.writeStudents(Menu.students);
+            // Update the advisor's student's selected courses
+            ArrayList<Advisor> advisors = database.readAdvisors();
+            for (int i = 0; i < advisors.size(); i++) {
+                for (int j = 0; j < advisors.get(i).getStudents().size(); j++) {
+                    if (advisors.get(i).getStudents().get(j).getUsername().equals(this.getUsername())) {
+                        advisors.get(i).getStudents().set(j, this);
+                    }
+                }
+            }
+            database.writeAdvisors(advisors);
             return true;
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());

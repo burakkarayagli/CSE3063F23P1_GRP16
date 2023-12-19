@@ -44,3 +44,12 @@
 2023-12-19 22:44:57 INFO  Menu:72 - User burak logged in successfully
 2023-12-19 22:44:57 INFO  StudentMenu:28 - Student menu displayed
 2023-12-19 22:44:59 INFO  Menu:60 - Login menu displayed
+2023-12-19 23:31:33 INFO  Menu:60 - Login menu displayed
+2023-12-19 23:31:36 INFO  Menu:72 - User hakki logged in successfully
+2023-12-19 23:31:36 INFO  StudentMenu:28 - Student menu displayed
+2023-12-19 23:31:39 INFO  StudentMenu:70 - Course adding menu displayed
+2023-12-19 23:31:39 INFO  StudentMenu:127 - Available courses displayed
+2023-12-19 23:31:43 INFO  StudentController:28 - Course added: NTE1008 to student:Hakkı
+2023-12-19 23:31:43 INFO  StudentController:28 - Course added: YDA1001 to student:Hakkı
+2023-12-19 23:31:51 INFO  Menu:60 - Login menu displayed
+2023-12-19 23:31:58 INFO  Menu:72 - User fatmacorut logged in successfully
