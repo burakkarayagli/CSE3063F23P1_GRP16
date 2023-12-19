@@ -1476,7 +1476,7 @@ public class DataInitializer {
                                                                 new Grade(cse4034T, "CB"), new Grade(cse4038T1, "DC"),
                                                                 new Grade(cse4040T, "DD"),
                                                                 // Random Non-Technical Elective Courses
-                                                                new Grade(cas1010N1, "DD"),
+                                                                new Grade(comm2060N, "DD"),
                                                                 // Newly added FTE courses
                                                                 new Grade(mgt4084FTE, "BA"))),
                                 "");
