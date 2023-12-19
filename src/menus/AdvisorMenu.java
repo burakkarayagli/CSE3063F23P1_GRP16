@@ -24,8 +24,8 @@ public class AdvisorMenu {
         this.advisorController = advisorController;
     }
 
-    public void advisorMenu() {
 
+    public void advisorMenu() {
         System.out.println("Which student do you want to go on?");
         Menu menu = new Menu();
         for (int j = 0; j < advisorController.getStudents().size(); j++) {
@@ -52,6 +52,7 @@ public class AdvisorMenu {
                 + "Selection/s: ");
         // scanner.nextLine();
         String selections = scanner.nextLine();
+
 
         ArrayList<Integer> sortedSelections = new ArrayList<>();
 
@@ -99,11 +100,13 @@ public class AdvisorMenu {
         //     advisorMenu();
         // }
 
+
         if (menu.getLoggedInUser() == null) {
             menu.LoginMenu();
         } else {
             advisorMenu();
         }
+
 
     }
 
@@ -143,5 +146,3 @@ public class AdvisorMenu {
             }
         }
         return false;
-    }
-}
