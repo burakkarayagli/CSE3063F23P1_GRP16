@@ -1,6 +1,7 @@
 package contollers;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import models.Course;
 import models.Lecturer;
@@ -17,6 +18,9 @@ public class LecturerController {
 
     }
 
+    public List<Course> getLecturedCourses(){
+        return this.lecturer.getLecturedCourses();
+    }
     public boolean addLecturedCourse(Course course) {
         return this.lecturer.addLecturedCourses(course);
     }

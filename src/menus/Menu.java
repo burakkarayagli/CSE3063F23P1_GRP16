@@ -31,7 +31,7 @@ public class Menu {
     private ArrayList<Lecturer> lecturers;
     private DataUtils json;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Menu menu = new Menu();
         menu.LoginMenu();
     }
@@ -44,7 +44,7 @@ public class Menu {
         advisors = json.readAdvisors();
     }
 
-    public void LoginMenu() {
+    public void LoginMenu() throws Exception {
         Scanner loginScanner = new Scanner(System.in);
         while (getLoggedInUser() == null) {
             System.out.println(StringConstants.WELCOME_MESSAGE);
@@ -66,7 +66,7 @@ public class Menu {
         PersonMenu();
     }
 
-    public void PersonMenu() {
+    public void PersonMenu() throws Exception {
         if (getLoggedInUser() instanceof Student) {
             StudentMenu studentMenu = new StudentMenu(new StudentController((Student) getLoggedInUser()));
             studentMenu.studentMenu();

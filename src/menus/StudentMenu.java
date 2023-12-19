@@ -19,7 +19,7 @@ public class StudentMenu {
         this.studentController = new StudentController();
     }
 
-    public void studentMenu() {
+    public void studentMenu() throws Exception {
         Scanner scanner = new Scanner(System.in);
         int choice = 0;
         while (choice != 5) {
@@ -74,6 +74,8 @@ public class StudentMenu {
         }
     }
 
+    
+
     public void CourseDropping() {
         showSelectedCourses();
 
@@ -84,7 +86,8 @@ public class StudentMenu {
         System.out.println("eg: -1 to exit");
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
-        ;
+        
+        
 
         ArrayList<Course> courses = studentController.getSelectedCourses();
         ArrayList<Integer> selectedCourses = parseInput(input, courses);
@@ -154,6 +157,7 @@ public class StudentMenu {
         } else {
             String[] inputArray = input.split(",");
             for (int i = 0; i < inputArray.length; i++) {
+                
                 try {
                     int index = Integer.parseInt(inputArray[i]);
                     if (index > 0 && index <= courses.size()) {
