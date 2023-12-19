@@ -1,96 +1,82 @@
-// package menus;
+package menus;
 
-// import java.util.ArrayList;
-// import java.util.Scanner;
-// import models.*;
-// import constants.String_Constants;
-// import menus.*;
+import java.util.ArrayList;
+import java.util.Scanner;
+import models.*;
+import constants.String_Constants;
+import contollers.AdvisorController;
+import menus.*;
 
-// public class AdvisorMenu {
+public class AdvisorMenu {
 
-// Scanner scanner = new Scanner(System.in);
+    private AdvisorController advisorController;
+    Scanner scanner = new Scanner(System.in);
 
-// String_Constants StringConstants = new String_Constants();
-// Menu menu = new Menu();
+    String_Constants StringConstants = new String_Constants();
 
-// public void advisorMenu() {
+    public AdvisorMenu(AdvisorController advisorController){
+        this.advisorController = advisorController;
+    }
+    public void advisorMenu() {
 
-// System.out.println(menu.getMenu());
-// int selection = scanner.nextInt();
 
-// Advisor advisor = (Advisor) menu.getLoggedInUser();
+        System.out.println("Which student do you want to go on?");
+        Menu menu = new Menu();
+        for (int j = 0; j < advisorController.getStudents().size(); j++) {
+            System.out.println((j + 1) + "- " + advisorController.getStudents().get(j).getFullName());
+        }
 
-// if (selection == 1) {
-// System.out.println("Which student do you want to go on?");
+        int studentSelection = scanner.nextInt();
 
-// for (int j = 0; j < advisor.getStudents().size(); j++) {
-// System.out.println((j + 1) + "- " +
-// advisor.getStudents().get(j).getFullName());
-// }
+        Student student = advisorController.getStudents().get(studentSelection - 1);
 
-// int studentSelection = scanner.nextInt();
+        System.out.println("List of courses for student " + advisorController.getStudents().get(studentSelection - 1).getFullName());
 
-// Student student = advisor.getStudents().get(studentSelection - 1);
+        ArrayList<Course> coursesOfStudent = advisorController.getStudents().get(studentSelection - 1).getSelectedCourses();
+        for (int i = 0; i < coursesOfStudent.size(); i++) {
+            Course course = coursesOfStudent.get(i);
+            System.out.println((i + 1) + " -> " + course.getFullName() + " " + course.getShortName());
+        }
 
-// System.out.println(
-// "List of courses for student " + advisor.getStudents().get(studentSelection -
-// 1).getFullName());
+        System.out.println("Please enter the courses you want to approve for the student \n"
+                + "Type * to approve all courses\n"
+                + "The non-chosen ones will automatically be rejected\n"
+                + "Selection/s: ");
+        scanner.nextLine();
+        String selections = scanner.nextLine();
 
-// ArrayList<Course> coursesOfStudent =
-// advisor.getStudents().get(studentSelection - 1)
-// .getAllCourses();
-// for (int i = 0; i < coursesOfStudent.size(); i++) {
-// Course course = coursesOfStudent.get(i);
-// System.out.println((i + 1) + " -> " + course.getFullName() + " " +
-// course.getShortName());
-// }
 
-// System.out.println("Please enter the courses you want to approve for the
-// student \n" +
-// "Type * to approve all courses\n" +
-// "The non chosen ones will automatically rejected\n" +
-// "Selection/s: ");
+        System.out.println("1-Approve selections\n2-Reject selections");
+        int decision = 0;
+        try{
+            decision = scanner.nextInt();
+        }
+        catch(Exception e){
+            System.out.println("Invalid input type. Please try again.");
+            
+        }
+        if(decision!=1 && decision != 2){
+            System.out.println("Input must be 1 or 2. Please try again.");
+            advisorMenu();
+        }
 
-// String selections = scanner.nextLine();
-
-// advisor.approveStudent(student, selections);
-
-// // eski kod
-// // System.out.println("1-Approve selections\n2-Reject selections");
-// // int decision = scanner.nextInt();
-
-// // if (decision == 1) {
-// // // System.out.println(advisor.getStudents().get(studentSelection -
-// // // 1).getApproved());
-// // // advisor.getStudents().get(studentSelection - 1).setApproved(true);
-// // advisor.approveStudent(student, selections);
-// // // System.out.println(advisor.getStudents().get(studentSelection -
-// // // 1).getApproved());
-// // } else if (decision == 2) {
-// // systemController.rejectCourse(advisor, studentSelection);
-// // // advisor.getStudents().get(studentSelection - 1).clearCourses();
-// // }
-
-// } else if (selection == 2) {
-// System.out.println("Which student do you want to go on?");
-
-// for (int j = 0; j < advisor.getStudents().size(); j++) {
-// System.out.println((j + 1) + "- " +
-// advisor.getStudents().get(j).getFullName());
-// }
-// int studentSelection = scanner.nextInt();
-
-// advisor.getStudents().get(studentSelection - 1).getTranscript();
-// } else if (selection == 3) {
-// menu.setLoggedInUser(null);
-// }
-
-// if (menu.getLoggedInUser() == null) {
-// menu.Menu();
-// } else {
-// advisorMenu();
-// }
-
-// }
-
-// }
+        try{
+            if (decision == 1) {
+                advisorController.getStudents().get(studentSelection-1).setStatus("Approved");
+                advisorController.approveStudentSelection(student, selections);
+            } else if (decision == 2) {
+                advisorController.rejectStudentSelection(student, selections);
+            }
+        }
+        catch(Exception e){
+            e.printStackTrace();
+            advisorMenu();
+        }
+        if (menu.getLoggedInUser() == null) {
+            menu.LoginMenu();
+        } else {
+            advisorMenu();
+        }
+        
+    }
+}

@@ -2,6 +2,7 @@ package models;
 
 import java.util.ArrayList;
 
+import menus.Menu;
 import utils.DataUtils;
 
 public class Student extends Person {
@@ -98,7 +99,7 @@ public class Student extends Person {
             selectedCourses.add(course);
 
             DataUtils database = DataUtils.getInstance();
-            database.writeStudents(menus.Menu.students);
+            database.writeStudents(Menu.students);
             return true;
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
@@ -261,10 +262,18 @@ public class Student extends Person {
         return false;
     }
 
+
+    public boolean checkTime(TimeInterval time1, TimeInterval time2){
+        if(time1.getStartTime().equals(time2.getStartTime())){
+            return true;
+        }
+        return false;
+    }
+
     public ArrayList<ArrayList<Course>> checkOverlappingCourses() {
         ArrayList<ArrayList<Course>> overlapingCourses = new ArrayList<ArrayList<Course>>();
 
-        ArrayList<Course> allCourseSections = getSelectedCourses();
+        ArrayList<Course> allCourseSections = this.getSelectedCourses();
 
         for (int i = 0; i < allCourseSections.size(); i++) {
 
@@ -296,13 +305,15 @@ public class Student extends Person {
                     course2 = (NonTechnicalElectiveCourse) allCourseSections.get(i);
                     dates2 = ((NonTechnicalElectiveCourse) allCourseSections.get(i)).getDates();
                 }
-
-                for (int x = 0; x < dates1.size(); x++) {
-                    if (dates2.contains(dates1.get(x))) {
-                        ArrayList<Course> overlapingCourse = new ArrayList<Course>();
-                        overlapingCourse.add(course1);
-                        overlapingCourse.add(course2);
-                        overlapingCourses.add(overlapingCourse);
+                
+                for(int y = 0;y<dates2.size();y++){
+                    for (int x = 0; x < dates1.size(); x++) {
+                        if (checkTime(dates1.get(x), dates2.get(y))) {
+                            ArrayList<Course> overlapingCourse = new ArrayList<Course>();
+                            overlapingCourse.add(course1);
+                            overlapingCourse.add(course2);
+                            overlapingCourses.add(overlapingCourse);
+                        }
                     }
                 }
             }

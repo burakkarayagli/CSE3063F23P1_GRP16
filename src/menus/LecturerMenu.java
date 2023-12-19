@@ -37,7 +37,7 @@ public class LecturerMenu {
              }
         }
     }
-    public void lecturerMenu() throws Exception {
+    public void lecturerMenu(){
         Scanner scanner = new Scanner(System.in);
         int choice = 0;
         while (choice>4 || choice<1) {
