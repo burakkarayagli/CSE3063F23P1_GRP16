@@ -1,0 +1,20 @@
+2023-12-19 21:38:20 INFO  Menu:60 - Login menu displayed
+2023-12-19 21:38:23 INFO  Menu:72 - User burak logged in successfully
+2023-12-19 21:38:24 INFO  Menu:60 - Login menu displayed
+2023-12-19 21:38:32 WARN  Menu:75 - User a failed to log in
+2023-12-19 21:38:32 INFO  Menu:60 - Login menu displayed
+2023-12-19 21:49:42 INFO  Menu:60 - Login menu displayed
+2023-12-19 21:49:45 INFO  Menu:72 - User burak logged in successfully
+2023-12-19 21:49:54 INFO  Menu:60 - Login menu displayed
+2023-12-19 21:49:59 INFO  Menu:72 - User burak logged in successfully
+2023-12-19 21:50:02 INFO  StudentController:27 - Course added: YDA1001to student:Burak
+2023-12-19 21:50:03 INFO  Menu:60 - Login menu displayed
+2023-12-19 21:50:06 INFO  Menu:72 - User hakki logged in successfully
+2023-12-19 21:50:08 INFO  StudentController:27 - Course added: NTE1008to student:Hakkı
+2023-12-19 21:50:09 INFO  Menu:60 - Login menu displayed
+2023-12-19 21:54:51 INFO  Menu:60 - Login menu displayed
+2023-12-19 21:54:58 INFO  Menu:72 - User burak logged in successfully
+2023-12-19 21:55:03 INFO  StudentController:39 - Course dropped: YDA1001 from student:Burak
+2023-12-19 21:55:03 INFO  StudentController:39 - Course dropped: NTE1008 from student:Burak
+2023-12-19 21:55:03 INFO  StudentController:39 - Course dropped: CSE2023 from student:Burak
+2023-12-19 21:55:05 INFO  Menu:60 - Login menu displayed
