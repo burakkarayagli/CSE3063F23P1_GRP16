@@ -1,10 +1,11 @@
 package menus;
-
+import java.util.logging.Logger;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 import constants.String_Constants;
 import contollers.StudentController;
+import contollers.AdvisorController;
 import contollers.LecturerController;
 import models.*;
 import utils.DataUtils;
@@ -31,7 +32,7 @@ public class Menu {
     private ArrayList<Lecturer> lecturers;
     private DataUtils json;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Menu menu = new Menu();
         menu.LoginMenu();
     }
@@ -42,6 +43,7 @@ public class Menu {
         lecturers = json.readLecturers();
         students = json.readStudents();
         advisors = json.readAdvisors();
+
     }
 
     public void LoginMenu() {
@@ -71,7 +73,8 @@ public class Menu {
             StudentMenu studentMenu = new StudentMenu(new StudentController((Student) getLoggedInUser()));
             studentMenu.studentMenu();
         } else if (getLoggedInUser() instanceof Advisor) {
-            // advisorMenu.advisorMenu();
+            AdvisorMenu advisorMenu= new AdvisorMenu(new AdvisorController((Advisor) getLoggedInUser()));
+            advisorMenu.advisorMenu();
         } else if (getLoggedInUser() instanceof Lecturer) {
             LecturerMenu lecturerMenu = new LecturerMenu(new LecturerController((Lecturer) getLoggedInUser()));
             lecturerMenu.lecturerMenu();
@@ -97,6 +100,7 @@ public class Menu {
                 setLoggedInUser(advisors.get(i));
             }
         }
+        
         if (this.loggedInUser == null) {
             return false;
         }

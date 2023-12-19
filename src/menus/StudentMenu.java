@@ -29,37 +29,42 @@ public class StudentMenu {
             System.out.println("4-Show Selected Courses");
             System.out.println("5-Exit");
             System.out.print("Enter your choice: ");
-            choice = scanner.nextInt();
-            switch (choice) {
-                case 1:
-                    CourseAdding();
-                    break;
-                case 2:
-                    CourseDropping();
-                    break;
-                case 3:
-                    showTranscript();
-                    break;
-                case 4:
-                    showSelectedCourses();
-                    break;
-                case 5:
-                    menus.Menu.getInstance().setLoggedInUser(null);
-                    menus.Menu.getInstance().LoginMenu();
-                    break;
-                default:
-                    System.out.println("Invalid choice");
-                    break;
+            try{
+                choice = scanner.nextInt();
+                switch (choice) {
+                    case 1:
+                        CourseAdding();
+                        break;
+                    case 2:
+                        CourseDropping();
+                        break;
+                    case 3:
+                        showTranscript();
+                        break;
+                    case 4:
+                        showSelectedCourses();
+                        break;
+                    case 5:
+                        menus.Menu.getInstance().setLoggedInUser(null);
+                        menus.Menu.getInstance().LoginMenu();
+                        break;
+                    default:
+                        System.out.println("Invalid choice");
+                        break;
+                }
+            }
+            catch(Exception e){
+                System.out.println("Invalid input type. Please try again.");
+                scanner.next();
             }
         }
 
     }
 
-    public void CourseAdding() {
+    public void CourseAdding() throws Exception {
         showAvailableCourses();
 
-        System.out.println(
-                "Enter the numbers of the courses you want to add");
+        System.out.println("Enter the course you want to add");
 
         System.out.println("eg: 1,2,3");
         System.out.println("eg: * for all courses");
@@ -69,24 +74,27 @@ public class StudentMenu {
 
         ArrayList<Course> courses = studentController.getAvailableCourses();
         ArrayList<Integer> selectedCourses = parseInput(input, courses);
-
+  
         for (int i = 0; i < selectedCourses.size(); i++) {
             studentController.addCourse(courses.get(selectedCourses.get(i) - 1));
         }
+        
     }
 
-    public void CourseDropping() {
+    
+
+    public void CourseDropping() throws Exception {
         showSelectedCourses();
 
-        System.out.println(
-                "Enter the numbers of the courses you want to drop");
+        System.out.println("Enter the course you want to drop");
 
         System.out.println("eg: 1,2,3");
         System.out.println("eg: * for all courses");
         System.out.println("eg: -1 to exit");
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
-        ;
+        
+        
 
         ArrayList<Course> courses = studentController.getSelectedCourses();
         ArrayList<Integer> selectedCourses = parseInput(input, courses);
@@ -136,7 +144,7 @@ public class StudentMenu {
         System.out.println("=============================================");
     }
 
-    private ArrayList<Integer> parseInput(String input, ArrayList<Course> courses) {
+    private ArrayList<Integer> parseInput(String input, ArrayList<Course> courses) throws Exception {
 
         // If input is * then return all indexes of courses
         // If input is -1 then return empty array
@@ -156,13 +164,14 @@ public class StudentMenu {
         } else {
             String[] inputArray = input.split(",");
             for (int i = 0; i < inputArray.length; i++) {
+                
                 try {
                     int index = Integer.parseInt(inputArray[i]);
                     if (index > 0 && index <= courses.size()) {
                         selectedCourses.add(index);
                     }
                 } catch (Exception e) {
-                    System.out.println("Invalid input");
+                    throw new Exception("Invalid input");
                 }
             }
 
