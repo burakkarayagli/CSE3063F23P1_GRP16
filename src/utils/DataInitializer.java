@@ -176,7 +176,7 @@ public class DataInitializer {
                 courses.add(isg121);
                 courses.add(cse4288);
                 courses.add(cse4000);
-
+          
                 // // 8. Semester
                 Course cse4298 = new Course("CSE4298", "Engineering Project II", "",
                                 new ArrayList<String>(Arrays.asList("CSE4297")), 8, 5, 4);
@@ -381,6 +381,190 @@ public class DataInitializer {
                                 50, locations[0], 0);
                 mandatoryCourses.add(cse4298M);
                 mandatoryCourses.add(isg122M);
+
+                // Faculty Technical Elective
+                Course bioe4072 = new Course("BIOE4072", "Planning and Management of Research", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse bioe4072FTE = new TechnicalElectiveCourse(bioe4072,
+                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(2), wednesday.get(3))), "1.1",
+                null, 50, locations[0], 165);
+                courses.add(bioe4072);
+                technicalElectives.add(bioe4072FTE);
+
+                Course che4060 = new Course("CHE4060", "Cost Management in Chemical Industries", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse che4060FTE = new TechnicalElectiveCourse(che4060,
+                new ArrayList<TimeInterval>(Arrays.asList(friday.get(1), friday.get(2))), "1.1",
+                null, 50, locations[1], 165);
+                courses.add(che4060);
+                technicalElectives.add(che4060FTE);
+
+                Course che4068 = a Course("CHE4068", "Financial Engineering", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse che4068FTE = new TechnicalElectiveCourse(che4068,
+                new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(4), tuesday.get(5))), "1.1",
+                null, 50, locations[2], 165);
+                courses.add(che4068);
+                technicalElectives.add(che4068FTE);
+
+                Course che4080 = new Course("CHE4080", "Chemical Engineering for Sustainable Biosphere", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse che4080FTE = new TechnicalElectiveCourse(che4080,
+                new ArrayList<TimeInterval>(Arrays.asList(thursday.get(0), thursday.get(1))), "1.1",
+                null, 50, locations[3], 165);
+                courses.add(che4080);
+                technicalElectives.add(che4080FTE);
+
+                Course cse4044 = new Course("CSE4044", "Software Project Management", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4044FTE = new TechnicalElectiveCourse(cse4044,
+                new ArrayList<TimeInterval>(Arrays.asList(friday.get(4), friday.get(5))), "1.1",
+                null, 50, locations[4], 165);
+                courses.add(cse4044);
+                technicalElectives.add(cse4044FTE);
+
+                Course cse4056 = new Course("CSE4056", "Management of Information Systems", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4056FTE = new TechnicalElectiveCourse(cse4056,
+                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(4), wednesday.get(5))), "1.1",
+                null, 50, locations[5], 165);
+                courses.add(cse4056);
+                technicalElectives.add(cse4056FTE);
+
+                Course cse4062 = new Course("CSE4062", "Introduction to Data Science and Analytics", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse cse4062FTE = new TechnicalElectiveCourse(cse4062,
+                new ArrayList<TimeInterval>(Arrays.asList(monday.get(2), monday.get(3))), "1.1",
+                null, 50, locations[6], 165);
+                courses.add(cse4062);
+                technicalElectives.add(cse4062FTE);
+
+                Course ee4056 = new Course("EE4056", "Introduction to Information Systems Management", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse ee4056FTE = new TechnicalElectiveCourse(ee4056,
+                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(6), wednesday.get(0))), "1.1",
+                null, 50, locations[0], 165);
+                courses.add(ee4056);
+                technicalElectives.add(ee4056FTE);
+
+                Course ee4062 = new Course("EE4062", "Introduction to Image Processing", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse ee4062FTE = new TechnicalElectiveCourse(ee4062,
+                new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(6), tuesday.get(0))), "1.1",
+                null, 50, locations[1], 165);
+                courses.add(ee4062);
+                technicalElectives.add(ee4062FTE);
+
+                Course enve4062 = new Course("ENVE4062", "Energy and the Environment", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse enve4062FTE = new TechnicalElectiveCourse(enve4062,
+                new ArrayList<TimeInterval>(Arrays.asList(thursday.get(2), thursday.get(3))), "1.1",
+                null, 50, locations[2], 165);
+                courses.add(enve4062);
+                technicalElectives.add(enve4062FTE);
+
+                Course enve4063 = new Course("ENVE4063", "Construction Materials for Environmental Engineering", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse enve4063FTE = new TechnicalElectiveCourse(enve4063,
+                new ArrayList<TimeInterval>(Arrays.asList(friday.get(3), friday.get(4))), "1.1",
+                null, 50, locations[3], 165);
+                courses.add(enve4063);
+                technicalElectives.add(enve4063FTE);
+
+                Course ie4055 = new Course("IE4055", "Design of Experiments", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse ie4055FTE = new TechnicalElectiveCourse(ie4055,
+                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(2), wednesday.get(3))), "1.1",
+                null, 50, locations[4], 165);
+                courses.add(ie4055);
+                technicalElectives.add(ie4055FTE);
+
+                Course ie4087 = new Course("IE4087", "Introduction to Total Quality Management", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse ie4087FTE = new TechnicalElectiveCourse(ie4087,
+                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(5), wednesday.get(6))), "1.1",
+                null, 50, locations[5], 165);
+                courses.add(ie4087);
+                technicalElectives.add(ie4087FTE);
+
+                Course me3004 = new Course("ME3004", "Mathematical Modeling in Mechanical Engineering", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse me3004FTE = new TechnicalElectiveCourse(me3004,
+                new ArrayList<TimeInterval>(Arrays.asList(monday.get(0), monday.get(1))), "1.1",
+                null, 50, locations[6], 165);
+                courses.add(me3004);
+                technicalElectives.add(me3004FTE);
+
+                Course me3022 = new Course("ME3022", "Mechatronics", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse me3022FTE = new TechnicalElectiveCourse(me3022,
+                new ArrayList<TimeInterval>(Arrays.asList(friday.get(2), friday.get(3))), "1.1",
+                null, 50, locations[0], 165);
+                courses.add(me3022);
+                technicalElectives.add(me3022FTE);
+
+                Course me4018 = new Course("ME4018", "Introduction to Robotics", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse me4018FTE = new TechnicalElectiveCourse(me4018,
+                new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(1), tuesday.get(2))), "1.1",
+                null, 50, locations[1], 165);
+                courses.add(me4018);
+                technicalElectives.add(me4018FTE);
+
+                Course me4022 = new Course("ME4022", "Control Systems", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse me4022FTE = new TechnicalElectiveCourse(me4022,
+                new ArrayList<TimeInterval>(Arrays.asList(thursday.get(6), thursday.get(0))), "1.1",
+                null, 50, locations[2], 165);
+                courses.add(me4022);
+                technicalElectives.add(me4022FTE);
+
+                Course me4033 = new Course("ME4033", "Designing Quality Products", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse me4033FTE = new TechnicalElectiveCourse(me4033,
+                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(3), wednesday.get(4))), "1.1",
+                null, 50, locations[3], 165);
+                courses.add(me4033);
+                technicalElectives.add(me4033FTE);
+
+                Course me4051 = new Course("ME4051", "Automotive Engineering", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse me4051FTE = new TechnicalElectiveCourse(me4051,
+                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(0), wednesday.get(1))), "1.1",
+                null, 50, locations[4], 165);
+                courses.add(me4051);
+                technicalElectives.add(me4051FTE);
+
+                Course mgt4076 = new Course("MGT4076", "Quality Management System in Automotive Industry", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse mgt4076FTE = new TechnicalElectiveCourse(mgt4076,
+                new ArrayList<TimeInterval>(Arrays.asList(friday.get(0), friday.get(1))), "1.1",
+                null, 50, locations[5], 165);
+                courses.add(mgt4076);
+                technicalElectives.add(mgt4076FTE);
+
+                Course mgt4082 = new Course("MGT4082", "Advanced Innovative Design Management for Entrepreneurship", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse mgt4082FTE = new TechnicalElectiveCourse(mgt4082,
+                new ArrayList<TimeInterval>(Arrays.asList(monday.get(4), monday.get(5))), "1.1",
+                null, 50, locations[6], 165);
+                courses.add(mgt4082);
+                technicalElectives.add(mgt4082FTE);
+
+                Course mgt4084 = new Course("MGT4084", "Innovation and New Product Development Management", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse mgt4084FTE = new TechnicalElectiveCourse(mgt4084,
+                new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(3), tuesday.get(4))), "1.1",
+                null, 50, locations[0], 165);
+                courses.add(mgt4084);
+                technicalElectives.add(mgt4084FTE);
+
+                Course mgt4086 = new Course("MGT4086", "Managing Engineering and Technology", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse mgt4086FTE = new TechnicalElectiveCourse(mgt4086,
+                new ArrayList<TimeInterval>(Arrays.asList(thursday.get(5), thursday.get(6))), "1.1",
+                null, 50, locations[1], 165);
+                courses.add(mgt4086);
+                technicalElectives.add(mgt4086FTE);
+
+                Course mgt4088 = new Course("MGT4088", "Project Management for Engineers", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse mgt4088FTE = new TechnicalElectiveCourse(mgt4088,
+                new ArrayList<TimeInterval>(Arrays.asList(friday.get(5), friday.get(6))), "1.1",
+                null, 50, locations[2], 165);
+                courses.add(mgt4088);
+                technicalElectives.add(mgt4088FTE);
+
+                Course mse4073 = new Course("MSE4073", "Materials Engineering Economics and Plant Design", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse mse4073FTE = new TechnicalElectiveCourse(mse4073,
+                new ArrayList<TimeInterval>(Arrays.asList(monday.get(3), monday.get(4))), "1.1",
+                null, 50, locations[3], 165);
+                courses.add(mse4073);
+                technicalElectives.add(mse4073FTE);
+
+                Course mse4074 = new Course("MSE4074", "Total Quality Management in Materials Engineering", "Elective", null, 7, 5, 4);
+                TechnicalElectiveCourse mse4074FTE = new TechnicalElectiveCourse(mse4074,
+                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(1), wednesday.get(2))), "1.1",
+                null, 50, locations[4], 165);
+                courses.add(mse4074);
+                technicalElectives.add(mse4074FTE);
+
 
                 // Technical Elective Courses
                 // Course CSE4026
@@ -1099,136 +1283,292 @@ public class DataInitializer {
                 // Create Students
                 Transcript transcript_s1 = new Transcript(
                                 new ArrayList<Grade>(
-                                                Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
-                                                                new Grade(cse1200, "AA"),
-                                                                new Grade(cse1241, "AA"), new Grade(math1001, "AA"),
-                                                                new Grade(phys1101, "AA"),
-                                                                new Grade(phys1103, "AA"), new Grade(trd121, "AA"),
-                                                                new Grade(ata122, "AA"),
-                                                                new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
-                                                                new Grade(math2256, "AA"),
-                                                                new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
-                                                                new Grade(trd122, "AA"))),
+                                                                Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
+                                                                new Grade(cse1200, "CB"), new Grade(cse1241, "DC"),
+                                                                new Grade(math1001, "DD"), new Grade(phys1101, "BA"),
+                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"),
+                                                                new Grade(ata122, "DC"), new Grade(cse1242, "DD"),
+                                                                new Grade(math1002, "BA"), new Grade(math2256, "BB"),
+                                                                new Grade(phys1102, "CB"), new Grade(phys1104, "DC"),
+                                                                new Grade(trd122, "DD"))),
                                 "");
+
                 Transcript transcript_s2 = new Transcript(
                                 new ArrayList<Grade>(
-                                                Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
-                                                                new Grade(cse1200, "AA"),
-                                                                new Grade(cse1241, "AA"), new Grade(math1001, "AA"),
-                                                                new Grade(phys1101, "AA"),
-                                                                new Grade(phys1103, "AA"), new Grade(trd121, "AA"),
-                                                                new Grade(ata122, "AA"),
-                                                                new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
-                                                                new Grade(math2256, "AA"),
-                                                                new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
-                                                                new Grade(trd122, "AA"))),
+                                                                Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
+                                                                new Grade(cse1200, "CB"), new Grade(cse1241, "DC"),
+                                                                new Grade(math1001, "DD"), new Grade(phys1101, "BA"),
+                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"),
+                                                                new Grade(ata122, "DC"), new Grade(cse1242, "DD"),
+                                                                new Grade(math1002, "BA"), new Grade(math2256, "BB"),
+                                                                new Grade(phys1102, "CB"), new Grade(phys1104, "DC"),
+                                                                new Grade(trd122, "DD"),
+                                                                new Grade(cse2023, "BA"), new Grade(cse2225, "BB"),
+                                                                new Grade(econ2004, "CB"), new Grade(ee2031, "DC"),
+                                                                new Grade(math2055, "DD"), new Grade(math2059, "BA"))),
                                 "");
+
                 Transcript transcript_s3 = new Transcript(
                                 new ArrayList<Grade>(
-                                                Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
-                                                                new Grade(cse1200, "AA"),
-                                                                new Grade(cse1241, "AA"), new Grade(math1001, "AA"),
-                                                                new Grade(phys1101, "AA"),
-                                                                new Grade(phys1103, "AA"), new Grade(trd121, "AA"),
-                                                                new Grade(ata122, "AA"),
-                                                                new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
-                                                                new Grade(math2256, "AA"),
-                                                                new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
-                                                                new Grade(trd122, "AA"))),
+                                                Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
+                                                                new Grade(cse1200, "CB"), new Grade(cse1241, "DC"),
+                                                                new Grade(math1001, "DD"), new Grade(phys1101, "BA"),
+                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"),
+                                                                new Grade(ata122, "DC"), new Grade(cse1242, "DD"),
+                                                                new Grade(math1002, "BA"), new Grade(math2256, "BB"),
+                                                                new Grade(phys1102, "CB"), new Grade(phys1104, "DC"),
+                                                                new Grade(trd122, "DD"),
+                                                                new Grade(cse2023, "BA"), new Grade(cse2225, "BB"),
+                                                                new Grade(econ2004, "CB"), new Grade(ee2031, "DC"),
+                                                                new Grade(math2055, "DD"), new Grade(math2059, "BA"),
+                                                                new Grade(cse2138, "BB"), new Grade(cse2246, "CB"),
+                                                                new Grade(cse2260, "DC"), new Grade(ee2032, "DD"),
+                                                                new Grade(stat2253, "BA"))),
                                 "");
+
                 Transcript transcript_s4 = new Transcript(
                                 new ArrayList<Grade>(
-                                                Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
-                                                                new Grade(cse1200, "AA"),
-                                                                new Grade(cse1241, "AA"), new Grade(math1001, "AA"),
-                                                                new Grade(phys1101, "AA"),
-                                                                new Grade(phys1103, "AA"), new Grade(trd121, "AA"),
-                                                                new Grade(ata122, "AA"),
-                                                                new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
-                                                                new Grade(math2256, "AA"),
-                                                                new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
-                                                                new Grade(trd122, "AA"))),
+                                                Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
+                                                                new Grade(cse1200, "CB"), new Grade(cse1241, "DC"),
+                                                                new Grade(math1001, "DD"), new Grade(phys1101, "BA"),
+                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"),
+                                                                new Grade(ata122, "DC"), new Grade(cse1242, "DD"),
+                                                                new Grade(math1002, "BA"), new Grade(math2256, "BB"),
+                                                                new Grade(phys1102, "CB"), new Grade(phys1104, "DC"),
+                                                                new Grade(trd122, "DD"),
+                                                                new Grade(cse2023, "BA"), new Grade(cse2225, "BB"),
+                                                                new Grade(econ2004, "CB"), new Grade(ee2031, "DC"),
+                                                                new Grade(math2055, "DD"), new Grade(math2059, "BA"),
+                                                                new Grade(cse2138, "BB"), new Grade(cse2246, "CB"),
+                                                                new Grade(cse2260, "DC"), new Grade(ee2032, "DD"),
+                                                                new Grade(stat2253, "BA"),
+                                                                new Grade(cse3033, "BB"), new Grade(cse3055, "CB"),
+                                                                new Grade(cse3063, "DC"), new Grade(cse3215, "DD"),
+                                                                new Grade(ie3081, "BA"))),
                                 "");
+
                 Transcript transcript_s5 = new Transcript(
                                 new ArrayList<Grade>(
-                                                Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
-                                                                new Grade(cse1200, "AA"),
-                                                                new Grade(cse1241, "AA"), new Grade(math1001, "AA"),
-                                                                new Grade(phys1101, "AA"),
-                                                                new Grade(phys1103, "AA"), new Grade(trd121, "AA"),
-                                                                new Grade(ata122, "AA"),
-                                                                new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
-                                                                new Grade(math2256, "AA"),
-                                                                new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
-                                                                new Grade(trd122, "AA"))),
+                                                Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
+                                                                new Grade(cse1200, "CB"), new Grade(cse1241, "DC"),
+                                                                new Grade(math1001, "DD"), new Grade(phys1101, "BA"),
+                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"),
+                                                                new Grade(ata122, "DC"), new Grade(cse1242, "DD"),
+                                                                new Grade(math1002, "BA"), new Grade(math2256, "BB"),
+                                                                new Grade(phys1102, "CB"), new Grade(phys1104, "DC"),
+                                                                new Grade(trd122, "DD"),
+                                                                new Grade(cse2023, "BA"), new Grade(cse2225, "BB"),
+                                                                new Grade(econ2004, "CB"), new Grade(ee2031, "DC"),
+                                                                new Grade(math2055, "DD"), new Grade(math2059, "BA"),
+                                                                new Grade(cse2138, "BB"), new Grade(cse2246, "CB"),
+                                                                new Grade(cse2260, "DC"), new Grade(ee2032, "DD"),
+                                                                new Grade(stat2253, "BA"),
+                                                                new Grade(cse3033, "BB"), new Grade(cse3055, "CB"),
+                                                                new Grade(cse3063, "DC"), new Grade(cse3215, "DD"),
+                                                                new Grade(ie3081, "BA"),
+                                                                new Grade(com2202, "BB"), new Grade(cse3044, "CB"),
+                                                                new Grade(cse3264, "DC"), new Grade(cse3038, "DD"),
+                                                                new Grade(cse3048, "BA"), new Grade(ie3235, "BB"))),
                                 "");
                 Transcript transcript_s6 = new Transcript(
                                 new ArrayList<Grade>(
-                                                Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
-                                                                new Grade(cse1200, "AA"),
-                                                                new Grade(cse1241, "AA"), new Grade(math1001, "AA"),
-                                                                new Grade(phys1101, "AA"),
-                                                                new Grade(phys1103, "AA"), new Grade(trd121, "AA"),
-                                                                new Grade(ata122, "AA"),
-                                                                new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
-                                                                new Grade(math2256, "AA"),
-                                                                new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
-                                                                new Grade(trd122, "AA"))),
+                                                Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
+                                                                new Grade(cse1200, "CB"), new Grade(cse1241, "DC"),
+                                                                new Grade(math1001, "DD"), new Grade(phys1101, "BA"),
+                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"),
+                                                                new Grade(ata122, "DC"), new Grade(cse1242, "DD"),
+                                                                new Grade(math1002, "BA"), new Grade(math2256, "BB"),
+                                                                new Grade(phys1102, "CB"), new Grade(phys1104, "DC"),
+                                                                new Grade(trd122, "DD"),
+                                                                new Grade(cse2023, "BA"), new Grade(cse2225, "BB"),
+                                                                new Grade(econ2004, "CB"), new Grade(ee2031, "DC"),
+                                                                new Grade(math2055, "DD"), new Grade(math2059, "BA"),
+                                                                new Grade(cse2138, "BB"), new Grade(cse2246, "CB"),
+                                                                new Grade(cse2260, "DC"), new Grade(ee2032, "DD"),
+                                                                new Grade(stat2253, "BA"),
+                                                                new Grade(cse3033, "BB"), new Grade(cse3055, "CB"),
+                                                                new Grade(cse3063, "DC"), new Grade(cse3215, "DD"),
+                                                                new Grade(ie3081, "BA"),
+                                                                new Grade(com2202, "BB"), new Grade(cse3044, "CB"),
+                                                                new Grade(cse3264, "DC"), new Grade(cse3038, "DD"),
+                                                                new Grade(cse3048, "BA"), new Grade(ie3235, "BB"))),
                                 "");
                 Transcript transcript_s7_v1 = new Transcript(
                                 new ArrayList<Grade>(
-                                                Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
-                                                                new Grade(cse1200, "AA"),
-                                                                new Grade(cse1241, "AA"), new Grade(math1001, "AA"),
-                                                                new Grade(phys1101, "AA"),
-                                                                new Grade(phys1103, "AA"), new Grade(trd121, "AA"),
-                                                                new Grade(ata122, "AA"),
-                                                                new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
-                                                                new Grade(math2256, "AA"),
-                                                                new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
-                                                                new Grade(trd122, "AA"))),
-                                "");   
+                                                Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
+                                                                new Grade(cse1200, "CB"), new Grade(cse1241, "DC"),
+                                                                new Grade(math1001, "DD"), new Grade(phys1101, "BA"),
+                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"),
+                                                                new Grade(ata122, "DC"), new Grade(cse1242, "DD"),
+                                                                new Grade(math1002, "BA"), new Grade(math2256, "BB"),
+                                                                new Grade(phys1102, "CB"), new Grade(phys1104, "DC"),
+                                                                new Grade(trd122, "DD"),
+                                                                new Grade(cse2023, "BA"), new Grade(cse2225, "BB"),
+                                                                new Grade(econ2004, "CB"), new Grade(ee2031, "DC"),
+                                                                new Grade(math2055, "DD"), new Grade(math2059, "BA"),
+                                                                new Grade(cse2138, "BB"), new Grade(cse2246, "CB"),
+                                                                new Grade(cse2260, "DC"), new Grade(ee2032, "DD"),
+                                                                new Grade(stat2253, "BA"),
+                                                                new Grade(cse3033, "BB"), new Grade(cse3055, "CB"),
+                                                                new Grade(cse3063, "DC"), new Grade(cse3215, "DD"),
+                                                                new Grade(ie3081, "BA"),
+                                                                new Grade(com2202, "BB"), new Grade(cse3044, "CB"),
+                                                                new Grade(cse3264, "DC"), new Grade(cse3038, "DD"),
+                                                                new Grade(cse3048, "BA"), new Grade(ie3235, "BB"),
+                                                                new Grade(cse4297, "BB"), new Grade(cse4000, "AA"),
+                                                                new Grade(cse4074, "CB"), new Grade(cse4219, "CD"),
+                                                                new Grade(isg121, "BA"), new Grade(cse4288, "CC"),
+                                                                new Grade(cse4026, "AA"), new Grade(cse4032, "BA"))),
+                                "");
                 Transcript transcript_s7_v2 = new Transcript(
                                 new ArrayList<Grade>(
-                                                Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
-                                                                new Grade(cse1200, "AA"),
-                                                                new Grade(cse1241, "AA"), new Grade(math1001, "AA"),
-                                                                new Grade(phys1101, "AA"),
-                                                                new Grade(phys1103, "AA"), new Grade(trd121, "AA"),
-                                                                new Grade(ata122, "AA"),
-                                                                new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
-                                                                new Grade(math2256, "AA"),
-                                                                new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
-                                                                new Grade(trd122, "AA"))),
-                                "");   
+                                                Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
+                                                                new Grade(cse1200, "CB"), new Grade(cse1241, "DC"),
+                                                                new Grade(math1001, "DD"), new Grade(phys1101, "BA"),
+                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"),
+                                                                new Grade(ata122, "DC"), new Grade(cse1242, "DD"),
+                                                                new Grade(math1002, "BA"), new Grade(math2256, "BB"),
+                                                                new Grade(phys1102, "CB"), new Grade(phys1104, "DC"),
+                                                                new Grade(trd122, "DD"),
+                                                                new Grade(cse2023, "BA"), new Grade(cse2225, "BB"),
+                                                                new Grade(econ2004, "CB"), new Grade(ee2031, "DC"),
+                                                                new Grade(math2055, "DD"), new Grade(math2059, "BA"),
+                                                                new Grade(cse2138, "BB"), new Grade(cse2246, "CB"),
+                                                                new Grade(cse2260, "DC"), new Grade(ee2032, "DD"),
+                                                                new Grade(stat2253, "BA"),
+                                                                new Grade(cse3033, "BB"), new Grade(cse3055, "CB"),
+                                                                new Grade(cse3063, "DC"), new Grade(cse3215, "DD"),
+                                                                new Grade(ie3081, "BA"),
+                                                                new Grade(com2202, "BB"), new Grade(cse3044, "CB"),
+                                                                new Grade(cse3264, "DC"), new Grade(cse3038, "DD"),
+                                                                new Grade(cse3048, "BA"), new Grade(ie3235, "BB"),
+                                                                new Grade(cse4297, "BB"), new Grade(cse4000, "AA"),
+                                                                new Grade(cse4074, "CB"), new Grade(cse4219, "CD"),
+                                                                new Grade(isg121, "BA"), new Grade(cse4288, "CC"),
+                                                                new Grade(cse4034, "BB"), new Grade(cse4038, "CB"))),
+                                "");
+                Transcript transcript_s7_v3 = new Transcript(
+                                new ArrayList<Grade>(
+                                                Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
+                                                                new Grade(cse1200, "CB"), new Grade(cse1241, "DC"),
+                                                                new Grade(math1001, "DD"), new Grade(phys1101, "BA"),
+                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"),
+                                                                new Grade(ata122, "DC"), new Grade(cse1242, "DD"),
+                                                                new Grade(math1002, "BA"), new Grade(math2256, "BB"),
+                                                                new Grade(phys1102, "CB"), new Grade(phys1104, "DC"),
+                                                                new Grade(trd122, "DD"),
+                                                                new Grade(cse2023, "BA"), new Grade(cse2225, "BB"),
+                                                                new Grade(econ2004, "CB"), new Grade(ee2031, "DC"),
+                                                                new Grade(math2055, "DD"), new Grade(math2059, "BA"),
+                                                                new Grade(cse2138, "BB"), new Grade(cse2246, "CB"),
+                                                                new Grade(cse2260, "DC"), new Grade(ee2032, "DD"),
+                                                                new Grade(stat2253, "BA"),
+                                                                new Grade(cse3033, "BB"), new Grade(cse3055, "CB"),
+                                                                new Grade(cse3063, "DC"), new Grade(cse3215, "DD"),
+                                                                new Grade(ie3081, "BA"),
+                                                                new Grade(com2202, "BB"), new Grade(cse3044, "CB"),
+                                                                new Grade(cse3264, "DC"), new Grade(cse3038, "DD"),
+                                                                new Grade(cse3048, "BA"), new Grade(ie3235, "BB"),
+                                                                new Grade(cse4297, "BB"), new Grade(cse4000, "AA"),
+                                                                new Grade(cse4074, "CB"), new Grade(cse4219, "CD"),
+                                                                new Grade(isg121, "BA"), new Grade(cse4288, "CC"),
+                                                                new Grade(cse4040, "CC"), new Grade(cse4044, "DC"))),
+                                "");
                 Transcript transcript_s8_v1 = new Transcript(
                                 new ArrayList<Grade>(
-                                                Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
-                                                                new Grade(cse1200, "AA"),
-                                                                new Grade(cse1241, "AA"), new Grade(math1001, "AA"),
-                                                                new Grade(phys1101, "AA"),
-                                                                new Grade(phys1103, "AA"), new Grade(trd121, "AA"),
-                                                                new Grade(ata122, "AA"),
-                                                                new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
-                                                                new Grade(math2256, "AA"),
-                                                                new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
-                                                                new Grade(trd122, "AA"))),
-                                "");
-                Transcript transcript_s8_v2 = new Transcript(
-                                new ArrayList<Grade>(
-                                                Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
-                                                                new Grade(cse1200, "AA"),
-                                                                new Grade(cse1241, "AA"), new Grade(math1001, "AA"),
-                                                                new Grade(phys1101, "AA"),
-                                                                new Grade(phys1103, "AA"), new Grade(trd121, "AA"),
-                                                                new Grade(ata122, "AA"),
-                                                                new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
-                                                                new Grade(math2256, "AA"),
-                                                                new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
-                                                                new Grade(trd122, "AA"))),
+                                                Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
+                                                                new Grade(cse1200, "CB"), new Grade(cse1241, "DC"),
+                                                                new Grade(math1001, "DD"), new Grade(phys1101, "BA"),
+                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"),
+                                                                new Grade(ata122, "DC"), new Grade(cse1242, "DD"),
+                                                                new Grade(math1002, "BA"), new Grade(math2256, "BB"),
+                                                                new Grade(phys1102, "CB"), new Grade(phys1104, "DC"),
+                                                                new Grade(trd122, "DD"),
+                                                                new Grade(cse2023, "BA"), new Grade(cse2225, "BB"),
+                                                                new Grade(econ2004, "CB"), new Grade(ee2031, "DC"),
+                                                                new Grade(math2055, "DD"), new Grade(math2059, "BA"),
+                                                                new Grade(cse2138, "BB"), new Grade(cse2246, "CB"),
+                                                                new Grade(cse2260, "DC"), new Grade(ee2032, "DD"),
+                                                                new Grade(stat2253, "BA"),
+                                                                new Grade(cse3033, "BB"), new Grade(cse3055, "CB"),
+                                                                new Grade(cse3063, "DC"), new Grade(cse3215, "DD"),
+                                                                new Grade(ie3081, "BA"),
+                                                                new Grade(com2202, "BB"), new Grade(cse3044, "CB"),
+                                                                new Grade(cse3264, "DC"), new Grade(cse3038, "DD"),
+                                                                new Grade(cse3048, "BA"), new Grade(ie3235, "BB"),
+                                                                // Random Technical Elective Courses
+                                                                new Grade(cse4026, "BA"), new Grade(cse4032, "BB"),
+                                                                new Grade(cse4034, "CB"), new Grade(cse4038, "DC"),
+                                                                new Grade(cse4040, "DD"),
+                                                                // Random Non-Technical Elective Courses
+                                                                new Grade(cas1010N1, "DD"),
+                                                                // Newly added FTE courses
+                                                                new Grade(mgt4084, "BA"))),
                                 "");
 
-                
+                Transcript transcript_s8_v2 = new Transcript(
+                        new ArrayList<Grade>(
+                                                Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
+                                                                new Grade(cse1200, "CB"), new Grade(cse1241, "DC"),
+                                                                new Grade(math1001, "DD"), new Grade(phys1101, "BA"),
+                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"),
+                                                                new Grade(ata122, "DC"), new Grade(cse1242, "DD"),
+                                                                new Grade(math1002, "BA"), new Grade(math2256, "BB"),
+                                                                new Grade(phys1102, "CB"), new Grade(phys1104, "DC"),
+                                                                new Grade(trd122, "DD"),
+                                                                new Grade(cse2023, "BA"), new Grade(cse2225, "BB"),
+                                                                new Grade(econ2004, "CB"), new Grade(ee2031, "DC"),
+                                                                new Grade(math2055, "DD"), new Grade(math2059, "BA"),
+                                                                new Grade(cse2138, "BB"), new Grade(cse2246, "CB"),
+                                                                new Grade(cse2260, "DC"), new Grade(ee2032, "DD"),
+                                                                new Grade(stat2253, "BA"),
+                                                                new Grade(cse3033, "BB"), new Grade(cse3055, "CB"),
+                                                                new Grade(cse3063, "DC"), new Grade(cse3215, "DD"),
+                                                                new Grade(ie3081, "BA"),
+                                                                new Grade(com2202, "BB"), new Grade(cse3044, "CB"),
+                                                                new Grade(cse3264, "DC"), new Grade(cse3038, "DD"),
+                                                                new Grade(cse3048, "BA"), new Grade(ie3235, "BB"),
+                                                                // Random Technical Elective Courses
+                                                                new Grade(cse4053, "BA"), new Grade(cse4056, "BB"),
+                                                                new Grade(cse4057, "CB"), new Grade(cse4058, "DC"),
+                                                                new Grade(cse4059, "DD"),
+                                                                // Random Non-Technical Elective Courses
+                                                                new Grade(bus1004N1, "AB"),
+                                                                // Newly added FTE courses
+                                                                new Grade(me4018, "BA"))),
+                                "");
+
+              Transcript transcript_s8_v3 = new Transcript(
+                        new ArrayList<Grade>(
+                                                Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
+                                                                new Grade(cse1200, "CB"), new Grade(cse1241, "DC"),
+                                                                new Grade(math1001, "DD"), new Grade(phys1101, "BA"),
+                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"),
+                                                                new Grade(ata122, "DC"), new Grade(cse1242, "DD"),
+                                                                new Grade(math1002, "BA"), new Grade(math2256, "BB"),
+                                                                new Grade(phys1102, "CB"), new Grade(phys1104, "DC"),
+                                                                new Grade(trd122, "DD"),
+                                                                new Grade(cse2023, "BA"), new Grade(cse2225, "BB"),
+                                                                new Grade(econ2004, "CB"), new Grade(ee2031, "DC"),
+                                                                new Grade(math2055, "DD"), new Grade(math2059, "BA"),
+                                                                new Grade(cse2138, "BB"), new Grade(cse2246, "CB"),
+                                                                new Grade(cse2260, "DC"), new Grade(ee2032, "DD"),
+                                                                new Grade(stat2253, "BA"),
+                                                                new Grade(cse3033, "BB"), new Grade(cse3055, "CB"),
+                                                                new Grade(cse3063, "DC"), new Grade(cse3215, "DD"),
+                                                                new Grade(ie3081, "BA"),
+                                                                new Grade(com2202, "BB"), new Grade(cse3044, "CB"),
+                                                                new Grade(cse3264, "DC"), new Grade(cse3038, "DD"),
+                                                                new Grade(cse3048, "BA"), new Grade(ie3235, "BB"),
+                                                                // Random Technical Elective Courses
+                                                                new Grade(cse4060, "BA"), new Grade(cse4061, "BB"),
+                                                                new Grade(cse4062, "CB"), new Grade(cse4063, "DC"),
+                                                                new Grade(cse4064, "DD"),
+                                                                // Random Non-Technical Elective Courses
+                                                                new Grade(bus1006N1, "AB"),
+                                                                // Newly added FTE courses
+                                                                new Grade(bioe4072, "BA"))),
+                                "");
 
                 Student kokur = new Student("Hakkı", "Kokur", "hakki", "hakkikokur",
                             "Maltepe/Istanbul", "5315274392", 5, 2020,
