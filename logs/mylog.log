@@ -44,12 +44,81 @@
 2023-12-19 22:44:57 INFO  Menu:72 - User burak logged in successfully
 2023-12-19 22:44:57 INFO  StudentMenu:28 - Student menu displayed
 2023-12-19 22:44:59 INFO  Menu:60 - Login menu displayed
-2023-12-19 23:31:33 INFO  Menu:60 - Login menu displayed
-2023-12-19 23:31:36 INFO  Menu:72 - User hakki logged in successfully
-2023-12-19 23:31:36 INFO  StudentMenu:28 - Student menu displayed
-2023-12-19 23:31:39 INFO  StudentMenu:70 - Course adding menu displayed
-2023-12-19 23:31:39 INFO  StudentMenu:127 - Available courses displayed
-2023-12-19 23:31:43 INFO  StudentController:28 - Course added: NTE1008 to student:Hakkı
-2023-12-19 23:31:43 INFO  StudentController:28 - Course added: YDA1001 to student:Hakkı
-2023-12-19 23:31:51 INFO  Menu:60 - Login menu displayed
-2023-12-19 23:31:58 INFO  Menu:72 - User fatmacorut logged in successfully
+2023-12-19 23:13:48 INFO  Menu:60 - Login menu displayed
+2023-12-19 23:13:51 INFO  Menu:72 - User efe logged in successfully
+2023-12-19 23:13:51 INFO  StudentMenu:28 - Student menu displayed
+2023-12-19 23:13:53 INFO  StudentMenu:70 - Course adding menu displayed
+2023-12-19 23:13:53 INFO  StudentMenu:127 - Available courses displayed
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: CSE2023 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: CSE2225 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: ECON2004 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: MATH2055 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: MATH2059 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: CSE2138 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: CSE2260 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: STAT2253 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: CSE3063 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: CSE3215 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: BUS1003 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: BUS1003 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: BUS1004 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: BUS2005 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: BUS2005 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: CAS1001 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: CAS1010 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: CAS1061 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: CAS2001 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: CAS2001 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: CAS2002 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: CAS2003 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: CAS2004 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: CAS2005 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: CAS3001 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: CAS3044 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: COMM2060 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: FNCE3003 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: HR1013 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: HR4001 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: HSS3002 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: IKT1054 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: INF1001 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: LAW2004 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: MAN1001 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: MGT1021 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: MGT3082 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: MRK3082 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: MRK3084 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: NTE1002 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: NTE1003 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: NTE1004 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: NTE1006 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: NTE1008 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: NTE1010 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: NTE1011 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: NTE1012 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: NTE1013 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: NTE1014 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: NTE1015 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: NTE1016 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: OB2040 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: OB2041 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: OB3043 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: SOC3082 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: YDA1001 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: YDA1002 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: YDA1003 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: YDA2001 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: YDF1001 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: YDF1002 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: YDI1004 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: YDIS1001 to student:Efe
+2023-12-19 23:13:57 INFO  StudentController:28 - Course added: YDIS1002 to student:Efe
+2023-12-19 23:13:59 INFO  StudentMenu:70 - Course adding menu displayed
+2023-12-19 23:13:59 INFO  StudentMenu:127 - Available courses displayed
+2023-12-19 23:14:03 INFO  StudentMenu:112 - Selected courses displayed
+2023-12-19 23:14:06 INFO  Menu:60 - Login menu displayed
+2023-12-19 23:14:12 INFO  Menu:72 - User fatmacorut logged in successfully
+2023-12-19 23:14:23 INFO  Menu:60 - Login menu displayed
+2023-12-19 23:14:30 INFO  Menu:72 - User fatmacorut logged in successfully
+2023-12-19 23:16:43 INFO  Menu:62 - Login menu displayed
+2023-12-19 23:16:49 INFO  Menu:74 - User fatmacorut logged in successfully
