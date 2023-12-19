@@ -111,15 +111,16 @@ public class Advisor extends Staff {
                 student.setStatus("Approved");
                 return true;
             } else {
-                
-                for (int i = 0; i < student.getSelectedCourses().size(); i++) {
-                    if (selections.indexOf(String.valueOf(i + 1)) == -1) {
+                boolean status = false;
+                for (int i = student.getSelectedCourses().size() - 1; i >= 0; i--) {
+                    if (selections.indexOf(String.valueOf(i)) == -1) {
                         student.dropCourse(student.getSelectedCourses().get(i));
-                        student.setStatus("Rejected");
+                        status = true;
                     } else {
                         student.setStatus("Approved");
                     }
                 }
+                if(status) student.setStatus("Rejected");
             }
             return true;
         } catch (Exception e) {
