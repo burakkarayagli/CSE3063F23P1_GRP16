@@ -125,31 +125,50 @@ public class Advisor extends Staff {
         }
     }
 
-
     public boolean approveStudent(Student student, ArrayList<Integer> selections) {
-
 
         try {
 
-            if (selections.equals("*")) {
+            if (selections.get(0) == 0 && selections.size() == 1) {
                 student.setStatus("Approved");
-                return true;
-            } else {
-                booelan status = false;
-                for (int i = student.getSelectedCourses().size() - 1; i >= 0; i--) {
-                    if (!numberExists(selections, i)) {
-                        student.dropCourse(student.getSelectedCourses().get(i));
-
-                        status = true;
-                    } else {
-                        student.setStatus("Approved");
+                // save the advisors
+                DataUtils dataUtils = DataUtils.getInstance();
+                ArrayList<Advisor> advisors = dataUtils.getAdvisors();
+                for (int i = 0; i < advisors.size(); i++) {
+                    if (advisors.get(i).getUsername().equals(this.getUsername())) {
+                        advisors.set(i, this);
                     }
                 }
-                if (status)
-                    student.setStatus("Rejected");
+                dataUtils.writeAdvisors(advisors);
+                ArrayList<Student> students = dataUtils.getStudents();
+                for (int i = 0; i < students.size(); i++) {
+                    if (students.get(i).getUsername().equals(student.getUsername())) {
+                        students.set(i, student);
+                    }
+                }
+                dataUtils.writeStudents(students);
+                return true;
+            } else {
+                boolean status = false;
+                boolean exists = false;
+                for (int i = student.getSelectedCourses().size(); i > 0; i--) {
+                    // System.out.println(" --> " + i + " - " + "j-> " + selections.get(j) + "
+                    // course -> " + student.getSelectedCourses().get(i-1) );
+                    exists = false;
+                    for (int j = selections.size(); j > 0; j--) {
+                        if (selections.get(j - 1) == i) {
+                            exists = true;
+                            break;
+                        }
+                    }
+                    if (!exists) {
+                        student.dropCourse(student.getSelectedCourses().get(i - 1));
+                        status = true;
+                    }
+                }
+                student.setStatus(status ? "Rejected" : "Approved");
             }
 
-            student.setStatus("Rejected");
             // save the advisors
             DataUtils dataUtils = DataUtils.getInstance();
             ArrayList<Advisor> advisors = dataUtils.getAdvisors();
@@ -167,22 +186,14 @@ public class Advisor extends Staff {
             }
             dataUtils.writeStudents(students);
 
+            System.out.println("LDSHGLDSJKGJDSL.");
+
             return true;
         } catch (Exception e) {
             System.out.println("Error in Advisor.java approveStudent: " + e.getMessage());
             return false;
         }
 
-    }
-
-    public boolean numberExists(ArrayList<Integer> selections, int targetNumber) {
-        for (int i = 0; i < selections.size(); i++) {
-            if (selections.get(i) == targetNumber) {
-                return true;
-            }
-        }
-        
-        return false;
     }
 
     // Alternative approveStudent method
