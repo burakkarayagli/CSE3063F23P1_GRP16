@@ -1,7 +1,13 @@
 package utils;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import models.*;
 import interfaces.*;
@@ -1726,5 +1732,32 @@ public class DataInitializer {
                 json.writeLecturers(lecturers);
                 json.writeStudents(students);
                 json.writeAdvisors(advisors);
+
+                // create .json file for student if it doesnt
+                int n = 150122000;
+                ArrayList<Student> writedStudents = json.readStudents();
+                for (int i = 0; i < students.size(); i++) {
+                        boolean isExist = false;
+                        for (int j = 0; j < writedStudents.size(); j++) {
+                                if (students.get(i).getUsername().equals(writedStudents.get(j).getUsername())) {
+                                        isExist = true;
+                                }
+                        }
+                        if (!isExist) {
+                                try (FileWriter writer = new FileWriter("database/" + Integer.toString(n) + ".json")) {
+                                        String str = "{" + "\"username\":" + "\"" + students.get(i).getUsername()
+                                                        + "\"" + "," + "\"password\":" + "\""
+                                                        + students.get(i).getPassword() + "\"" + "}";
+                                        writer.write(str);
+                                        writer.flush();
+                                        writer.close();
+                                        n++;
+                                } catch (Exception e) {
+                                        e.printStackTrace();
+                                }
+                        }
+
+                }
         }
+
 }
