@@ -80,6 +80,4 @@ public class CourseTest {
         assertEquals(3, course.getClassHours());
     }
 
-    // Add more tests for other methods as needed
-
 }
