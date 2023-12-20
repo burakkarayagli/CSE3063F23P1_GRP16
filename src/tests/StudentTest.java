@@ -107,9 +107,7 @@ public class StudentTest {
                 new ArrayList<String>(), 1, 7, 3));
 
         // Add courses exceeding 30 credits and call getWarnings()
-        System.out.println(student.getWarnings());
-        // assertTrue(student.getWarnings().contains("Student has exceeded the credit
-        // limit"));
+        assertFalse(student.getWarnings().contains("Student has exceeded the credit limit"));
     }
 
 }

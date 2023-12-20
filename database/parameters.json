@@ -13189,6 +13189,7 @@
           "status": "Approved",
           "selectedCourses": [
             {
+
               "shortName": "BUS1003",
               "fullName": "Entrepreneurship and Innovation",
               "description": "",
@@ -13537,6 +13538,7 @@
           "phoneNumber": "5345274592",
           "semester": 5,
           "entranceYear": 2021,
+
           "status": "Approved",
           "selectedCourses": [
             {
@@ -20410,6 +20412,7 @@
           "status": "Approved",
           "selectedCourses": [
             {
+
               "shortName": "BUS1003",
               "fullName": "Entrepreneurship and Innovation",
               "description": "",

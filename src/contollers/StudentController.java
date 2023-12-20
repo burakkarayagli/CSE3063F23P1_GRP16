@@ -113,4 +113,13 @@ public class StudentController {
             return false;
         }
     }
+
+    public String getWarnings() {
+        try {
+            return student.getWarnings();
+        } catch (Exception e) {
+            logger.error("Error occured while getting warnings for student:" + student.getPersonName());
+            return null;
+        }
+    }
 }
