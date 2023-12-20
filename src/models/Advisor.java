@@ -125,17 +125,21 @@ public class Advisor extends Staff {
         }
     }
 
-    public boolean approveStudent(Student student, String selections) {
+
+    public boolean approveStudent(Student student, ArrayList<Integer> selections) {
+
+
         try {
 
             if (selections.equals("*")) {
                 student.setStatus("Approved");
                 return true;
             } else {
-                boolean status = false;
+                booelan status = false;
                 for (int i = student.getSelectedCourses().size() - 1; i >= 0; i--) {
-                    if (selections.indexOf(String.valueOf(i)) == -1) {
+                    if (!numberExists(selections, i)) {
                         student.dropCourse(student.getSelectedCourses().get(i));
+
                         status = true;
                     } else {
                         student.setStatus("Approved");
@@ -165,10 +169,20 @@ public class Advisor extends Staff {
 
             return true;
         } catch (Exception e) {
-            System.out.println("Error: " + e.getMessage());
+            System.out.println("Error in Advisor.java approveStudent: " + e.getMessage());
             return false;
         }
 
+    }
+
+    public boolean numberExists(ArrayList<Integer> selections, int targetNumber) {
+        for (int i = 0; i < selections.size(); i++) {
+            if (selections.get(i) == targetNumber) {
+                return true;
+            }
+        }
+        
+        return false;
     }
 
     // Alternative approveStudent method

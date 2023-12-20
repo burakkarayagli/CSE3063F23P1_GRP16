@@ -1,7 +1,13 @@
 package utils;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import models.*;
 import interfaces.*;
@@ -176,7 +182,7 @@ public class DataInitializer {
                 courses.add(isg121);
                 courses.add(cse4288);
                 courses.add(cse4000);
-          
+
                 // // 8. Semester
                 Course cse4298 = new Course("CSE4298", "Engineering Project II", "",
                                 new ArrayList<String>(Arrays.asList("CSE4297")), 8, 5, 4);
@@ -383,188 +389,201 @@ public class DataInitializer {
                 mandatoryCourses.add(isg122M);
 
                 // Faculty Technical Elective
-                Course bioe4072 = new Course("BIOE4072", "Planning and Management of Research", "Elective", null, 7, 5, 4);
+                Course bioe4072 = new Course("BIOE4072", "Planning and Management of Research", "Elective", null, 7, 5,
+                                4);
                 TechnicalElectiveCourse bioe4072FTE = new TechnicalElectiveCourse(bioe4072,
-                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(2), wednesday.get(3))), "1.1",
-                null, 50, locations[0], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(2), wednesday.get(3))), "1.1",
+                                null, 50, locations[0], 165);
                 courses.add(bioe4072);
                 technicalElectives.add(bioe4072FTE);
 
-                Course che4060 = new Course("CHE4060", "Cost Management in Chemical Industries", "Elective", null, 7, 5, 4);
+                Course che4060 = new Course("CHE4060", "Cost Management in Chemical Industries", "Elective", null, 7, 5,
+                                4);
                 TechnicalElectiveCourse che4060FTE = new TechnicalElectiveCourse(che4060,
-                new ArrayList<TimeInterval>(Arrays.asList(friday.get(1), friday.get(2))), "1.1",
-                null, 50, locations[1], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(friday.get(1), friday.get(2))), "1.1",
+                                null, 50, locations[1], 165);
                 courses.add(che4060);
                 technicalElectives.add(che4060FTE);
 
                 Course che4068 = new Course("CHE4068", "Financial Engineering", "Elective", null, 7, 5, 4);
                 TechnicalElectiveCourse che4068FTE = new TechnicalElectiveCourse(che4068,
-                new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(4), tuesday.get(5))), "1.1",
-                null, 50, locations[2], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(4), tuesday.get(5))), "1.1",
+                                null, 50, locations[2], 165);
                 courses.add(che4068);
                 technicalElectives.add(che4068FTE);
 
-                Course che4080 = new Course("CHE4080", "Chemical Engineering for Sustainable Biosphere", "Elective", null, 7, 5, 4);
+                Course che4080 = new Course("CHE4080", "Chemical Engineering for Sustainable Biosphere", "Elective",
+                                null, 7, 5, 4);
                 TechnicalElectiveCourse che4080FTE = new TechnicalElectiveCourse(che4080,
-                new ArrayList<TimeInterval>(Arrays.asList(thursday.get(0), thursday.get(1))), "1.1",
-                null, 50, locations[3], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(thursday.get(0), thursday.get(1))), "1.1",
+                                null, 50, locations[3], 165);
                 courses.add(che4080);
                 technicalElectives.add(che4080FTE);
 
                 Course cse4044 = new Course("CSE4044", "Software Project Management", "Elective", null, 7, 5, 4);
                 TechnicalElectiveCourse cse4044FTE = new TechnicalElectiveCourse(cse4044,
-                new ArrayList<TimeInterval>(Arrays.asList(friday.get(4), friday.get(5))), "1.1",
-                null, 50, locations[4], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(friday.get(4), friday.get(5))), "1.1",
+                                null, 50, locations[4], 165);
                 courses.add(cse4044);
                 technicalElectives.add(cse4044FTE);
 
                 Course cse4056 = new Course("CSE4056", "Management of Information Systems", "Elective", null, 7, 5, 4);
                 TechnicalElectiveCourse cse4056FTE = new TechnicalElectiveCourse(cse4056,
-                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(4), wednesday.get(5))), "1.1",
-                null, 50, locations[5], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(4), wednesday.get(5))), "1.1",
+                                null, 50, locations[5], 165);
                 courses.add(cse4056);
                 technicalElectives.add(cse4056FTE);
 
-                Course cse4062 = new Course("CSE4062", "Introduction to Data Science and Analytics", "Elective", null, 7, 5, 4);
+                Course cse4062 = new Course("CSE4062", "Introduction to Data Science and Analytics", "Elective", null,
+                                7, 5, 4);
                 TechnicalElectiveCourse cse4062FTE = new TechnicalElectiveCourse(cse4062,
-                new ArrayList<TimeInterval>(Arrays.asList(monday.get(2), monday.get(3))), "1.1",
-                null, 50, locations[6], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(monday.get(2), monday.get(3))), "1.1",
+                                null, 50, locations[6], 165);
                 courses.add(cse4062);
                 technicalElectives.add(cse4062FTE);
 
-                Course ee4056 = new Course("EE4056", "Introduction to Information Systems Management", "Elective", null, 7, 5, 4);
+                Course ee4056 = new Course("EE4056", "Introduction to Information Systems Management", "Elective", null,
+                                7, 5, 4);
                 TechnicalElectiveCourse ee4056FTE = new TechnicalElectiveCourse(ee4056,
-                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(6), wednesday.get(0))), "1.1",
-                null, 50, locations[0], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(6), wednesday.get(0))), "1.1",
+                                null, 50, locations[0], 165);
                 courses.add(ee4056);
                 technicalElectives.add(ee4056FTE);
 
                 Course ee4062 = new Course("EE4062", "Introduction to Image Processing", "Elective", null, 7, 5, 4);
                 TechnicalElectiveCourse ee4062FTE = new TechnicalElectiveCourse(ee4062,
-                new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(6), tuesday.get(0))), "1.1",
-                null, 50, locations[1], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(6), tuesday.get(0))), "1.1",
+                                null, 50, locations[1], 165);
                 courses.add(ee4062);
                 technicalElectives.add(ee4062FTE);
 
                 Course enve4062 = new Course("ENVE4062", "Energy and the Environment", "Elective", null, 7, 5, 4);
                 TechnicalElectiveCourse enve4062FTE = new TechnicalElectiveCourse(enve4062,
-                new ArrayList<TimeInterval>(Arrays.asList(thursday.get(2), thursday.get(3))), "1.1",
-                null, 50, locations[2], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(thursday.get(2), thursday.get(3))), "1.1",
+                                null, 50, locations[2], 165);
                 courses.add(enve4062);
                 technicalElectives.add(enve4062FTE);
 
-                Course enve4063 = new Course("ENVE4063", "Construction Materials for Environmental Engineering", "Elective", null, 7, 5, 4);
+                Course enve4063 = new Course("ENVE4063", "Construction Materials for Environmental Engineering",
+                                "Elective", null, 7, 5, 4);
                 TechnicalElectiveCourse enve4063FTE = new TechnicalElectiveCourse(enve4063,
-                new ArrayList<TimeInterval>(Arrays.asList(friday.get(3), friday.get(4))), "1.1",
-                null, 50, locations[3], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(friday.get(3), friday.get(4))), "1.1",
+                                null, 50, locations[3], 165);
                 courses.add(enve4063);
                 technicalElectives.add(enve4063FTE);
 
                 Course ie4055 = new Course("IE4055", "Design of Experiments", "Elective", null, 7, 5, 4);
                 TechnicalElectiveCourse ie4055FTE = new TechnicalElectiveCourse(ie4055,
-                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(2), wednesday.get(3))), "1.1",
-                null, 50, locations[4], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(2), wednesday.get(3))), "1.1",
+                                null, 50, locations[4], 165);
                 courses.add(ie4055);
                 technicalElectives.add(ie4055FTE);
 
-                Course ie4087 = new Course("IE4087", "Introduction to Total Quality Management", "Elective", null, 7, 5, 4);
+                Course ie4087 = new Course("IE4087", "Introduction to Total Quality Management", "Elective", null, 7, 5,
+                                4);
                 TechnicalElectiveCourse ie4087FTE = new TechnicalElectiveCourse(ie4087,
-                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(5), wednesday.get(6))), "1.1",
-                null, 50, locations[5], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(5), wednesday.get(6))), "1.1",
+                                null, 50, locations[5], 165);
                 courses.add(ie4087);
                 technicalElectives.add(ie4087FTE);
 
-                Course me3004 = new Course("ME3004", "Mathematical Modeling in Mechanical Engineering", "Elective", null, 7, 5, 4);
+                Course me3004 = new Course("ME3004", "Mathematical Modeling in Mechanical Engineering", "Elective",
+                                null, 7, 5, 4);
                 TechnicalElectiveCourse me3004FTE = new TechnicalElectiveCourse(me3004,
-                new ArrayList<TimeInterval>(Arrays.asList(monday.get(0), monday.get(1))), "1.1",
-                null, 50, locations[6], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(monday.get(0), monday.get(1))), "1.1",
+                                null, 50, locations[6], 165);
                 courses.add(me3004);
                 technicalElectives.add(me3004FTE);
 
                 Course me3022 = new Course("ME3022", "Mechatronics", "Elective", null, 7, 5, 4);
                 TechnicalElectiveCourse me3022FTE = new TechnicalElectiveCourse(me3022,
-                new ArrayList<TimeInterval>(Arrays.asList(friday.get(2), friday.get(3))), "1.1",
-                null, 50, locations[0], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(friday.get(2), friday.get(3))), "1.1",
+                                null, 50, locations[0], 165);
                 courses.add(me3022);
                 technicalElectives.add(me3022FTE);
 
                 Course me4018 = new Course("ME4018", "Introduction to Robotics", "Elective", null, 7, 5, 4);
                 TechnicalElectiveCourse me4018FTE = new TechnicalElectiveCourse(me4018,
-                new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(1), tuesday.get(2))), "1.1",
-                null, 50, locations[1], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(1), tuesday.get(2))), "1.1",
+                                null, 50, locations[1], 165);
                 courses.add(me4018);
                 technicalElectives.add(me4018FTE);
 
                 Course me4022 = new Course("ME4022", "Control Systems", "Elective", null, 7, 5, 4);
                 TechnicalElectiveCourse me4022FTE = new TechnicalElectiveCourse(me4022,
-                new ArrayList<TimeInterval>(Arrays.asList(thursday.get(6), thursday.get(0))), "1.1",
-                null, 50, locations[2], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(thursday.get(6), thursday.get(0))), "1.1",
+                                null, 50, locations[2], 165);
                 courses.add(me4022);
                 technicalElectives.add(me4022FTE);
 
                 Course me4033 = new Course("ME4033", "Designing Quality Products", "Elective", null, 7, 5, 4);
                 TechnicalElectiveCourse me4033FTE = new TechnicalElectiveCourse(me4033,
-                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(3), wednesday.get(4))), "1.1",
-                null, 50, locations[3], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(3), wednesday.get(4))), "1.1",
+                                null, 50, locations[3], 165);
                 courses.add(me4033);
                 technicalElectives.add(me4033FTE);
 
                 Course me4051 = new Course("ME4051", "Automotive Engineering", "Elective", null, 7, 5, 4);
                 TechnicalElectiveCourse me4051FTE = new TechnicalElectiveCourse(me4051,
-                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(0), wednesday.get(1))), "1.1",
-                null, 50, locations[4], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(0), wednesday.get(1))), "1.1",
+                                null, 50, locations[4], 165);
                 courses.add(me4051);
                 technicalElectives.add(me4051FTE);
 
-                Course mgt4076 = new Course("MGT4076", "Quality Management System in Automotive Industry", "Elective", null, 7, 5, 4);
+                Course mgt4076 = new Course("MGT4076", "Quality Management System in Automotive Industry", "Elective",
+                                null, 7, 5, 4);
                 TechnicalElectiveCourse mgt4076FTE = new TechnicalElectiveCourse(mgt4076,
-                new ArrayList<TimeInterval>(Arrays.asList(friday.get(0), friday.get(1))), "1.1",
-                null, 50, locations[5], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(friday.get(0), friday.get(1))), "1.1",
+                                null, 50, locations[5], 165);
                 courses.add(mgt4076);
                 technicalElectives.add(mgt4076FTE);
 
-                Course mgt4082 = new Course("MGT4082", "Advanced Innovative Design Management for Entrepreneurship", "Elective", null, 7, 5, 4);
+                Course mgt4082 = new Course("MGT4082", "Advanced Innovative Design Management for Entrepreneurship",
+                                "Elective", null, 7, 5, 4);
                 TechnicalElectiveCourse mgt4082FTE = new TechnicalElectiveCourse(mgt4082,
-                new ArrayList<TimeInterval>(Arrays.asList(monday.get(4), monday.get(5))), "1.1",
-                null, 50, locations[6], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(monday.get(4), monday.get(5))), "1.1",
+                                null, 50, locations[6], 165);
                 courses.add(mgt4082);
                 technicalElectives.add(mgt4082FTE);
 
-                Course mgt4084 = new Course("MGT4084", "Innovation and New Product Development Management", "Elective", null, 7, 5, 4);
+                Course mgt4084 = new Course("MGT4084", "Innovation and New Product Development Management", "Elective",
+                                null, 7, 5, 4);
                 TechnicalElectiveCourse mgt4084FTE = new TechnicalElectiveCourse(mgt4084,
-                new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(3), tuesday.get(4))), "1.1",
-                null, 50, locations[0], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(3), tuesday.get(4))), "1.1",
+                                null, 50, locations[0], 165);
                 courses.add(mgt4084);
                 technicalElectives.add(mgt4084FTE);
 
-                Course mgt4086 = new Course("MGT4086", "Managing Engineering and Technology", "Elective", null, 7, 5, 4);
+                Course mgt4086 = new Course("MGT4086", "Managing Engineering and Technology", "Elective", null, 7, 5,
+                                4);
                 TechnicalElectiveCourse mgt4086FTE = new TechnicalElectiveCourse(mgt4086,
-                new ArrayList<TimeInterval>(Arrays.asList(thursday.get(5), thursday.get(6))), "1.1",
-                null, 50, locations[1], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(thursday.get(5), thursday.get(6))), "1.1",
+                                null, 50, locations[1], 165);
                 courses.add(mgt4086);
                 technicalElectives.add(mgt4086FTE);
 
                 Course mgt4088 = new Course("MGT4088", "Project Management for Engineers", "Elective", null, 7, 5, 4);
                 TechnicalElectiveCourse mgt4088FTE = new TechnicalElectiveCourse(mgt4088,
-                new ArrayList<TimeInterval>(Arrays.asList(friday.get(5), friday.get(6))), "1.1",
-                null, 50, locations[2], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(friday.get(5), friday.get(6))), "1.1",
+                                null, 50, locations[2], 165);
                 courses.add(mgt4088);
                 technicalElectives.add(mgt4088FTE);
 
-                Course mse4073 = new Course("MSE4073", "Materials Engineering Economics and Plant Design", "Elective", null, 7, 5, 4);
+                Course mse4073 = new Course("MSE4073", "Materials Engineering Economics and Plant Design", "Elective",
+                                null, 7, 5, 4);
                 TechnicalElectiveCourse mse4073FTE = new TechnicalElectiveCourse(mse4073,
-                new ArrayList<TimeInterval>(Arrays.asList(monday.get(3), monday.get(4))), "1.1",
-                null, 50, locations[3], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(monday.get(3), monday.get(4))), "1.1",
+                                null, 50, locations[3], 165);
                 courses.add(mse4073);
                 technicalElectives.add(mse4073FTE);
 
-                Course mse4074 = new Course("MSE4074", "Total Quality Management in Materials Engineering", "Elective", null, 7, 5, 4);
+                Course mse4074 = new Course("MSE4074", "Total Quality Management in Materials Engineering", "Elective",
+                                null, 7, 5, 4);
                 TechnicalElectiveCourse mse4074FTE = new TechnicalElectiveCourse(mse4074,
-                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(1), wednesday.get(2))), "1.1",
-                null, 50, locations[4], 165);
+                                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(1), wednesday.get(2))), "1.1",
+                                null, 50, locations[4], 165);
                 courses.add(mse4074);
                 technicalElectives.add(mse4074FTE);
-
 
                 // Technical Elective Courses
                 // Course CSE4026
@@ -614,13 +633,6 @@ public class DataInitializer {
                 courses.add(cse4040);
                 technicalElectives.add(cse4040T);
 
-                // Course CSE4044
-                TechnicalElectiveCourse cse4044T = new TechnicalElectiveCourse(cse4044,
-                                new ArrayList<TimeInterval>(Arrays.asList(wednesday.get(4), wednesday.get(5))), "1.1",
-                                null, 50, locations[7], 155);
-                courses.add(cse4044);
-                technicalElectives.add(cse4044T);
-
                 // Course CSE4053
                 Course cse4053 = new Course("CSE4053", "Information Systems: Analysis and Design", "Elective", null, 7,
                                 5, 4);
@@ -629,13 +641,6 @@ public class DataInitializer {
                                 50, locations[0], 165);
                 courses.add(cse4053);
                 technicalElectives.add(cse4053T);
-
-                // Course CSE4056
-                TechnicalElectiveCourse cse4056T = new TechnicalElectiveCourse(cse4056,
-                                new ArrayList<TimeInterval>(Arrays.asList(monday.get(4), monday.get(5))), "1.1", null,
-                                50, locations[1], 155);
-                courses.add(cse4056);
-                technicalElectives.add(cse4056T);
 
                 // Course CSE4057
                 Course cse4057 = new Course("CSE4057", "Information Systems Security", "Elective", null, 7, 5, 4);
@@ -673,13 +678,6 @@ public class DataInitializer {
                                 50, locations[6], 165);
                 courses.add(cse4061);
                 technicalElectives.add(cse4061T);
-
-                // Course CSE4062
-                TechnicalElectiveCourse cse4062T = new TechnicalElectiveCourse(cse4062,
-                                new ArrayList<TimeInterval>(Arrays.asList(tuesday.get(3), tuesday.get(4))), "1.1", null,
-                                50, locations[7], 155);
-                courses.add(cse4062);
-                technicalElectives.add(cse4062T);
 
                 // Course CSE4063
                 Course cse4063 = new Course("CSE4063", "Fundamentals of Data Mining", "Elective", null, 7, 5, 4);
@@ -1277,45 +1275,17 @@ public class DataInitializer {
                 }
 
                 // Create Students
-                Transcript transcript = new Transcript(
-                                new ArrayList<Grade>(
-                                                Arrays.asList(new Grade(ata121, "AA"), new Grade(mbg1201, "AA"),
-                                                                new Grade(cse1200, "AA"),
-                                                                new Grade(cse1241, "AA"), new Grade(math1001, "AA"),
-                                                                new Grade(phys1101, "AA"),
-                                                                new Grade(phys1103, "AA"), new Grade(trd121, "AA"),
-                                                                new Grade(ata122, "AA"),
-                                                                new Grade(cse1242, "AA"), new Grade(math1002, "AA"),
-                                                                new Grade(math2256, "AA"),
-                                                                new Grade(phys1102, "AA"), new Grade(phys1104, "AA"),
-                                                                new Grade(trd122, "AA"))),
-                                "");
-
                 Transcript transcript_s1 = new Transcript(
                                 new ArrayList<Grade>(
-                                                                Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
-                                                                new Grade(cse1200, "CB"), new Grade(cse1241, "DC"),
-                                                                new Grade(math1001, "DD"), new Grade(phys1101, "BA"),
-                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"),
-                                                                new Grade(ata122, "DC"), new Grade(cse1242, "DD"),
-                                                                new Grade(math1002, "BA"), new Grade(math2256, "BB"),
-                                                                new Grade(phys1102, "CB"), new Grade(phys1104, "DC"),
-                                                                new Grade(trd122, "DD"))),
+                                                Arrays.asList()),
                                 "");
 
                 Transcript transcript_s2 = new Transcript(
                                 new ArrayList<Grade>(
-                                                                Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
+                                                Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
                                                                 new Grade(cse1200, "CB"), new Grade(cse1241, "DC"),
                                                                 new Grade(math1001, "DD"), new Grade(phys1101, "BA"),
-                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"),
-                                                                new Grade(ata122, "DC"), new Grade(cse1242, "DD"),
-                                                                new Grade(math1002, "BA"), new Grade(math2256, "BB"),
-                                                                new Grade(phys1102, "CB"), new Grade(phys1104, "DC"),
-                                                                new Grade(trd122, "DD"),
-                                                                new Grade(cse2023, "BA"), new Grade(cse2225, "BB"),
-                                                                new Grade(econ2004, "CB"), new Grade(ee2031, "DC"),
-                                                                new Grade(math2055, "DD"), new Grade(math2059, "BA"))),
+                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"))),
                                 "");
 
                 Transcript transcript_s3 = new Transcript(
@@ -1327,13 +1297,7 @@ public class DataInitializer {
                                                                 new Grade(ata122, "DC"), new Grade(cse1242, "DD"),
                                                                 new Grade(math1002, "BA"), new Grade(math2256, "BB"),
                                                                 new Grade(phys1102, "CB"), new Grade(phys1104, "DC"),
-                                                                new Grade(trd122, "DD"),
-                                                                new Grade(cse2023, "BA"), new Grade(cse2225, "BB"),
-                                                                new Grade(econ2004, "CB"), new Grade(ee2031, "DC"),
-                                                                new Grade(math2055, "DD"), new Grade(math2059, "BA"),
-                                                                new Grade(cse2138, "BB"), new Grade(cse2246, "CB"),
-                                                                new Grade(cse2260, "DC"), new Grade(ee2032, "DD"),
-                                                                new Grade(stat2253, "BA"))),
+                                                                new Grade(trd122, "DD"))),
                                 "");
 
                 Transcript transcript_s4 = new Transcript(
@@ -1348,13 +1312,7 @@ public class DataInitializer {
                                                                 new Grade(trd122, "DD"),
                                                                 new Grade(cse2023, "BA"), new Grade(cse2225, "BB"),
                                                                 new Grade(econ2004, "CB"), new Grade(ee2031, "DC"),
-                                                                new Grade(math2055, "DD"), new Grade(math2059, "BA"),
-                                                                new Grade(cse2138, "BB"), new Grade(cse2246, "CB"),
-                                                                new Grade(cse2260, "DC"), new Grade(ee2032, "DD"),
-                                                                new Grade(stat2253, "BA"),
-                                                                new Grade(cse3033, "BB"), new Grade(cse3055, "CB"),
-                                                                new Grade(cse3063, "DC"), new Grade(cse3215, "DD"),
-                                                                new Grade(ie3081, "BA"))),
+                                                                new Grade(math2055, "DD"), new Grade(math2059, "BA"))),
                                 "");
 
                 Transcript transcript_s5 = new Transcript(
@@ -1372,13 +1330,7 @@ public class DataInitializer {
                                                                 new Grade(math2055, "DD"), new Grade(math2059, "BA"),
                                                                 new Grade(cse2138, "BB"), new Grade(cse2246, "CB"),
                                                                 new Grade(cse2260, "DC"), new Grade(ee2032, "DD"),
-                                                                new Grade(stat2253, "BA"),
-                                                                new Grade(cse3033, "BB"), new Grade(cse3055, "CB"),
-                                                                new Grade(cse3063, "DC"), new Grade(cse3215, "DD"),
-                                                                new Grade(ie3081, "BA"),
-                                                                new Grade(com2202, "BB"), new Grade(cse3044, "CB"),
-                                                                new Grade(cse3264, "DC"), new Grade(cse3038, "DD"),
-                                                                new Grade(cse3048, "BA"), new Grade(ie3235, "BB"))),
+                                                                new Grade(stat2253, "BA"))),
                                 "");
                 Transcript transcript_s6 = new Transcript(
                                 new ArrayList<Grade>(
@@ -1398,12 +1350,32 @@ public class DataInitializer {
                                                                 new Grade(stat2253, "BA"),
                                                                 new Grade(cse3033, "BB"), new Grade(cse3055, "CB"),
                                                                 new Grade(cse3063, "DC"), new Grade(cse3215, "DD"),
+                                                                new Grade(ie3081, "BA"))),
+                                "");
+                Transcript transcript_s7 = new Transcript(
+                                new ArrayList<Grade>(
+                                                Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
+                                                                new Grade(cse1200, "CB"), new Grade(cse1241, "DC"),
+                                                                new Grade(math1001, "DD"), new Grade(phys1101, "BA"),
+                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"),
+                                                                new Grade(ata122, "DC"), new Grade(cse1242, "DD"),
+                                                                new Grade(math1002, "BA"), new Grade(math2256, "BB"),
+                                                                new Grade(phys1102, "CB"), new Grade(phys1104, "DC"),
+                                                                new Grade(trd122, "DD"),
+                                                                new Grade(cse2023, "BA"), new Grade(cse2225, "BB"),
+                                                                new Grade(econ2004, "CB"), new Grade(ee2031, "DC"),
+                                                                new Grade(math2055, "DD"), new Grade(math2059, "BA"),
+                                                                new Grade(cse2138, "BB"), new Grade(cse2246, "CB"),
+                                                                new Grade(cse2260, "DC"), new Grade(ee2032, "DD"),
+                                                                new Grade(stat2253, "BA"),
+                                                                new Grade(cse3033, "BB"), new Grade(cse3055, "CB"),
+                                                                new Grade(cse3063, "DC"), new Grade(cse3215, "DD"),
                                                                 new Grade(ie3081, "BA"),
                                                                 new Grade(com2202, "BB"), new Grade(cse3044, "CB"),
                                                                 new Grade(cse3264, "DC"), new Grade(cse3038, "DD"),
                                                                 new Grade(cse3048, "BA"), new Grade(ie3235, "BB"))),
                                 "");
-                Transcript transcript_s7_v1 = new Transcript(
+                Transcript transcript_s8 = new Transcript(
                                 new ArrayList<Grade>(
                                                 Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
                                                                 new Grade(cse1200, "CB"), new Grade(cse1241, "DC"),
@@ -1428,96 +1400,10 @@ public class DataInitializer {
                                                                 new Grade(cse4297, "BB"), new Grade(cse4000, "AA"),
                                                                 new Grade(cse4074, "CB"), new Grade(cse4219, "CD"),
                                                                 new Grade(isg121, "BA"), new Grade(cse4288, "CC"),
-                                                                new Grade(cse4026T, "AA"), new Grade(cse4032T, "BA"))),
+                                                                new Grade(cse4034T, "BB"), new Grade(cse4038T2, "CB"))),
                                 "");
-                Transcript transcript_s7_v2 = new Transcript(
-                                new ArrayList<Grade>(
-                                                Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
-                                                                new Grade(cse1200, "CB"), new Grade(cse1241, "DC"),
-                                                                new Grade(math1001, "DD"), new Grade(phys1101, "BA"),
-                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"),
-                                                                new Grade(ata122, "DC"), new Grade(cse1242, "DD"),
-                                                                new Grade(math1002, "BA"), new Grade(math2256, "BB"),
-                                                                new Grade(phys1102, "CB"), new Grade(phys1104, "DC"),
-                                                                new Grade(trd122, "DD"),
-                                                                new Grade(cse2023, "BA"), new Grade(cse2225, "BB"),
-                                                                new Grade(econ2004, "CB"), new Grade(ee2031, "DC"),
-                                                                new Grade(math2055, "DD"), new Grade(math2059, "BA"),
-                                                                new Grade(cse2138, "BB"), new Grade(cse2246, "CB"),
-                                                                new Grade(cse2260, "DC"), new Grade(ee2032, "DD"),
-                                                                new Grade(stat2253, "BA"),
-                                                                new Grade(cse3033, "BB"), new Grade(cse3055, "CB"),
-                                                                new Grade(cse3063, "DC"), new Grade(cse3215, "DD"),
-                                                                new Grade(ie3081, "BA"),
-                                                                new Grade(com2202, "BB"), new Grade(cse3044, "CB"),
-                                                                new Grade(cse3264, "DC"), new Grade(cse3038, "DD"),
-                                                                new Grade(cse3048, "BA"), new Grade(ie3235, "BB"),
-                                                                new Grade(cse4297, "BB"), new Grade(cse4000, "AA"),
-                                                                new Grade(cse4074, "CB"), new Grade(cse4219, "CD"),
-                                                                new Grade(isg121, "BA"), new Grade(cse4288, "CC"),
-                                                                new Grade(cse4034T, "BB"), new Grade(cse4038T, "CB"))),
-                                "");
-                Transcript transcript_s7_v3 = new Transcript(
-                                new ArrayList<Grade>(
-                                                Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
-                                                                new Grade(cse1200, "CB"), new Grade(cse1241, "DC"),
-                                                                new Grade(math1001, "DD"), new Grade(phys1101, "BA"),
-                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"),
-                                                                new Grade(ata122, "DC"), new Grade(cse1242, "DD"),
-                                                                new Grade(math1002, "BA"), new Grade(math2256, "BB"),
-                                                                new Grade(phys1102, "CB"), new Grade(phys1104, "DC"),
-                                                                new Grade(trd122, "DD"),
-                                                                new Grade(cse2023, "BA"), new Grade(cse2225, "BB"),
-                                                                new Grade(econ2004, "CB"), new Grade(ee2031, "DC"),
-                                                                new Grade(math2055, "DD"), new Grade(math2059, "BA"),
-                                                                new Grade(cse2138, "BB"), new Grade(cse2246, "CB"),
-                                                                new Grade(cse2260, "DC"), new Grade(ee2032, "DD"),
-                                                                new Grade(stat2253, "BA"),
-                                                                new Grade(cse3033, "BB"), new Grade(cse3055, "CB"),
-                                                                new Grade(cse3063, "DC"), new Grade(cse3215, "DD"),
-                                                                new Grade(ie3081, "BA"),
-                                                                new Grade(com2202, "BB"), new Grade(cse3044, "CB"),
-                                                                new Grade(cse3264, "DC"), new Grade(cse3038, "DD"),
-                                                                new Grade(cse3048, "BA"), new Grade(ie3235, "BB"),
-                                                                new Grade(cse4297, "BB"), new Grade(cse4000, "AA"),
-                                                                new Grade(cse4074, "CB"), new Grade(cse4219, "CD"),
-                                                                new Grade(isg121, "BA"), new Grade(cse4288, "CC"),
-                                                                new Grade(cse4040T, "CC"), new Grade(cse4044T, "DC"))),
-                                "");
-                Transcript transcript_s8_v1 = new Transcript(
-                                new ArrayList<Grade>(
-                                                Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
-                                                                new Grade(cse1200, "CB"), new Grade(cse1241, "DC"),
-                                                                new Grade(math1001, "DD"), new Grade(phys1101, "BA"),
-                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"),
-                                                                new Grade(ata122, "DC"), new Grade(cse1242, "DD"),
-                                                                new Grade(math1002, "BA"), new Grade(math2256, "BB"),
-                                                                new Grade(phys1102, "CB"), new Grade(phys1104, "DC"),
-                                                                new Grade(trd122, "DD"),
-                                                                new Grade(cse2023, "BA"), new Grade(cse2225, "BB"),
-                                                                new Grade(econ2004, "CB"), new Grade(ee2031, "DC"),
-                                                                new Grade(math2055, "DD"), new Grade(math2059, "BA"),
-                                                                new Grade(cse2138, "BB"), new Grade(cse2246, "CB"),
-                                                                new Grade(cse2260, "DC"), new Grade(ee2032, "DD"),
-                                                                new Grade(stat2253, "BA"),
-                                                                new Grade(cse3033, "BB"), new Grade(cse3055, "CB"),
-                                                                new Grade(cse3063, "DC"), new Grade(cse3215, "DD"),
-                                                                new Grade(ie3081, "BA"),
-                                                                new Grade(com2202, "BB"), new Grade(cse3044, "CB"),
-                                                                new Grade(cse3264, "DC"), new Grade(cse3038, "DD"),
-                                                                new Grade(cse3048, "BA"), new Grade(ie3235, "BB"),
-                                                                // Random Technical Elective Courses
-                                                                new Grade(cse4026T, "BA"), new Grade(cse4032T, "BB"),
-                                                                new Grade(cse4034T, "CB"), new Grade(cse4038T, "DC"),
-                                                                new Grade(cse4040T, "DD"),
-                                                                // Random Non-Technical Elective Courses
-                                                                new Grade(cas1010N1, "DD"),
-                                                                // Newly added FTE courses
-                                                                new Grade(mgt4084FTE, "BA"))),
-                                "");
-
                 Transcript transcript_s8_v2 = new Transcript(
-                        new ArrayList<Grade>(
+                                new ArrayList<Grade>(
                                                 Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
                                                                 new Grade(cse1200, "CB"), new Grade(cse1241, "DC"),
                                                                 new Grade(math1001, "DD"), new Grade(phys1101, "BA"),
@@ -1538,196 +1424,195 @@ public class DataInitializer {
                                                                 new Grade(com2202, "BB"), new Grade(cse3044, "CB"),
                                                                 new Grade(cse3264, "DC"), new Grade(cse3038, "DD"),
                                                                 new Grade(cse3048, "BA"), new Grade(ie3235, "BB"),
-                                                                // Random Technical Elective Courses
-                                                                new Grade(cse4053T, "BA"), new Grade(cse4056T, "BB"),
-                                                                new Grade(cse4057T1, "CB"), new Grade(cse4058T, "DC"),
-                                                                new Grade(cse4059T, "DD"),
-                                                                // Random Non-Technical Elective Courses
-                                                                new Grade(cas2001N1, "AB"),
-                                                                // Newly added FTE courses
-                                                                new Grade(me4018FTE, "BA"))),
+                                                                new Grade(cse4297, "BB"), new Grade(cse4000, "AA"),
+                                                                new Grade(cse4074, "CB"), new Grade(cse4219, "CD"),
+                                                                new Grade(isg121, "BA"), new Grade(cse4288, "CC"),
+                                                                new Grade(cse4040T, "CC"), new Grade(cse4034T, "DC"))),
                                 "");
 
-              Transcript transcript_s8_v3 = new Transcript(
-                        new ArrayList<Grade>(
+                Transcript transcript_s2_prerequsite = new Transcript(
+                                new ArrayList<Grade>(
                                                 Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
                                                                 new Grade(cse1200, "CB"), new Grade(cse1241, "DC"),
-                                                                new Grade(math1001, "DD"), new Grade(phys1101, "BA"),
-                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"),
-                                                                new Grade(ata122, "DC"), new Grade(cse1242, "DD"),
-                                                                new Grade(math1002, "BA"), new Grade(math2256, "BB"),
-                                                                new Grade(phys1102, "CB"), new Grade(phys1104, "DC"),
-                                                                new Grade(trd122, "DD"),
-                                                                new Grade(cse2023, "BA"), new Grade(cse2225, "BB"),
+                                                                new Grade(math1001, "FF"), new Grade(phys1101, "BA"),
+                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"))),
+                                "");
+
+                Transcript transcript_s6_enough_credit = new Transcript(
+                                new ArrayList<Grade>(
+                                                Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
+                                                                new Grade(cse1200, "FF"), new Grade(cse1241, "DC"),
+                                                                new Grade(math1001, "AA"), new Grade(phys1101, "FF"),
+                                                                new Grade(phys1103, "FF"), new Grade(trd121, "FF"),
+                                                                new Grade(ata122, "FF"), new Grade(cse1242, "DD"),
+                                                                new Grade(math1002, "FF"), new Grade(math2256, "F"),
+                                                                new Grade(phys1102, "CB"), new Grade(phys1104, "FF"),
+                                                                new Grade(trd122, "FF"),
+                                                                new Grade(cse2023, "AA"), new Grade(cse2225, "BB"),
                                                                 new Grade(econ2004, "CB"), new Grade(ee2031, "DC"),
                                                                 new Grade(math2055, "DD"), new Grade(math2059, "BA"),
-                                                                new Grade(cse2138, "BB"), new Grade(cse2246, "CB"),
+                                                                new Grade(cse2138, "FF"), new Grade(cse2246, "CB"),
                                                                 new Grade(cse2260, "DC"), new Grade(ee2032, "DD"),
-                                                                new Grade(stat2253, "BA"),
-                                                                new Grade(cse3033, "BB"), new Grade(cse3055, "CB"),
+                                                                new Grade(stat2253, "AA"),
+                                                                new Grade(cse3033, "AA"), new Grade(cse3055, "CB"),
                                                                 new Grade(cse3063, "DC"), new Grade(cse3215, "DD"),
-                                                                new Grade(ie3081, "BA"),
-                                                                new Grade(com2202, "BB"), new Grade(cse3044, "CB"),
-                                                                new Grade(cse3264, "DC"), new Grade(cse3038, "DD"),
-                                                                new Grade(cse3048, "BA"), new Grade(ie3235, "BB"),
-                                                                // Random Technical Elective Courses
-
-                                                                new Grade(cse4060T, "BA"), new Grade(cse4061T, "BB"),
-                                                                new Grade(cse4062T, "CB"), new Grade(cse4063T, "DC"),
-                                                                new Grade(cse4217T, "DD"),
-                                                                // Random Non-Technical Elective Courses
-                                                                new Grade(bus1003N1, "AB"),
-                                                                // Newly added FTE courses
-                                                                new Grade(bioe4072FTE, "BA"))),
+                                                                new Grade(ie3081, "BA"))),
+                                "");
+                Transcript transcript_s2_overlap = new Transcript(
+                                new ArrayList<Grade>(
+                                                Arrays.asList(new Grade(ata121, "FF"), new Grade(mbg1201, "FF"),
+                                                                new Grade(cse1200, "AA"), new Grade(cse1241, "DC"),
+                                                                new Grade(math1001, "AA"), new Grade(phys1101, "BA"),
+                                                                new Grade(phys1103, "BB"), new Grade(trd121, "CB"))),
                                 "");
 
                 Student kokur = new Student("Hakkı", "Kokur", "hakki", "hakkikokur",
-                            "Maltepe/Istanbul", "5315274392", 5, 2020,
-                            "", new ArrayList<Course>(), transcript);
+                                "Maltepe/Istanbul", "5315274392", 5, 2020,
+                                "", new ArrayList<Course>(), transcript_s5);
                 Student karayagli = new Student("Burak", "Karayağlı", "burak", "burakkarayagli",
                                 "Kartal/Istanbul", "5312347654", 5, 2021,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s5);
                 Student akman = new Student("Barış Giray", "Akman", "barisgiray", "barisgirayakman",
                                 "Tuzla/Istanbul", "5345274592", 5, 2021,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s5);
                 Student ozgen = new Student("Efe", "Özgen", "efe", "efeozgen",
                                 "Bostancı/Istanbul", "5365544592", 5, 2021,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s5);
                 Student ozkan = new Student("Musa", "Özkan", "musa", "musaozkan",
                                 "Ataşehir/Istanbul", "5305244392", 5, 2021,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s5);
                 Student unal = new Student("Tamer", "Unal", "tamer", "tamerunal",
                                 "Üsküdar/Istanbul", "5375344792", 5, 2021,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s5);
                 Student yilmaz = new Student("Ahmet", "Yilmaz", "ahmet", "ahmetyilmaz",
                                 "Kadikoy/Istanbul", "5011223344", 1, 2023,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s1);
                 Student aydin = new Student("Elif", "Aydin", "elif", "elifaydin",
                                 "Sile/Istanbul", "5022334455", 5, 2021,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s5);
                 Student kaya = new Student("Ayse", "Kaya", "ayse", "aysekaya",
                                 "Sisli/Istanbul", "5033445566", 3, 2022,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s3);
                 Student aksoy = new Student("Mehmet", "Aksoy", "mehmet", "mehmetaksoy",
                                 "Silivri/Istanbul", "5044556677", 7, 2020,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s7);
                 Student celik = new Student("Zeynep", "Celik", "zeynep", "zeynepcelik",
                                 "Beykoz/Istanbul", "5055667788", 2, 2023,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s2_prerequsite);
                 Student demir = new Student("Mustafa", "Demir", "mustafa", "mustafademir",
                                 "Atasehir/Istanbul", "5066778899", 4, 2022,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s4);
                 Student sahin = new Student("Sevgi", "Sahin", "sevgi", "sevgisahin",
                                 "Eyupsultan/Istanbul", "5077889900", 8, 2020,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s8);
                 Student toprak = new Student("Emre", "Toprak", "emre", "emretoprak",
                                 "Uskudar/Istanbul", "5088990011", 1, 2023,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s1);
                 Student yildiz = new Student("Esra", "Yildiz", "esra", "esrayildiz",
                                 "Esenler/Istanbul", "5099001122", 6, 2021,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s6);
                 Student tas = new Student("Ozlem", "Tas", "ozlem", "ozlemtas",
                                 "Sariyer/Istanbul", "5100112233", 3, 2022,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s3);
                 Student yarslan = new Student("Yusuf", "Arslan", "yusuf", "yusufarslan",
                                 "Kucukcekmece/Istanbul", "5111223344", 4, 2022,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s4);
                 Student gunes = new Student("Betul", "Gunes", "betul", "betulgunes",
                                 "Maltepe/Istanbul", "5122334455", 2, 2023,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s2_overlap);
                 Student karahan = new Student("Ismail", "Karahan", "ismail", "ismailkarahan",
                                 "Buyukcekmece/Istanbul", "5133445566", 5, 2021,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s5);
                 Student ay = new Student("Ceren", "Ay", "ceren", "cerenay",
                                 "Zeytinburnu/Istanbul", "5144556677", 7, 2020,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s7);
                 Student eren = new Student("Selim", "Eren", "selim", "selimeren",
                                 "Besiktas/Istanbul", "5155667788", 8, 2020,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s8_v2);
                 Student akbas = new Student("Gizem", "Akbas", "gizem", "gizemakbas",
                                 "Kagithane/Istanbul", "5166778899", 1, 2023,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s1);
                 Student yilmazer = new Student("Berk", "Yilmazer", "berk", "berkyilmazer",
                                 "Cekmekoy/Istanbul", "5177889900", 6, 2021,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s6);
                 Student korkmaz = new Student("Ilayda", "Korkmaz", "ilayda", "ilaydakorkmaz",
                                 "Bagcilar/Istanbul", "5188990011", 2, 2023,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s2);
                 Student cetin = new Student("Onur", "Cetin", "onur", "onurcetin",
                                 "Tuzla/Istanbul", "5199001122", 4, 2022,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s4);
                 Student sen = new Student("Gulsen", "Sen", "gulsen", "gulsenSen",
                                 "Bakirkoy/Istanbul", "5200112233", 3, 2022,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s3);
                 Student oguz = new Student("Burak", "Oguz", "burak", "burakoguz",
                                 "Bahcelievler/Istanbul", "5211223344", 5, 2021,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s5);
                 Student kirim = new Student("Sema", "Kirim", "sema", "semakirim",
                                 "Beylikduzu/Istanbul", "5222334455", 7, 2020,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s7);
                 Student selcuk = new Student("Mehmet", "Selcuk", "mehmet", "mehmetselcuk",
                                 "Sultanbeyli/Istanbul", "5233445566", 8, 2020,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s8);
                 Student aslan = new Student("Nazli", "Aslan", "nazli", "nazliaslan",
                                 "Umraniye/Istanbul", "5244556677", 1, 2023,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s1);
                 Student ozturk = new Student("Sercan", "Ozturk", "sercan", "sercanozturk",
                                 "Sultangazi/Istanbul", "5255667788", 6, 2021,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s6);
                 Student ulutas = new Student("Esin", "Ulutas", "esin", "esinulutas",
                                 "Beyoglu/Istanbul", "5266778899", 2, 2023,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s2);
                 Student yildirim = new Student("Riza", "Yildirim", "riza", "rizayildirim",
                                 "Basaksehir/Istanbul", "5277889900", 4, 2022,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s4);
                 Student ekinci = new Student("Sibel", "Ekinci", "sibel", "sibelekinci",
                                 "Fatih/Istanbul", "5288990011", 3, 2022,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s3);
                 Student arikan = new Student("Engin", "Arikan", "engin", "enginArikan",
                                 "Sancaktepe/Istanbul", "5299001122", 5, 2021,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s5);
                 Student karatas = new Student("Eren", "Karatas", "eren", "erenkaratas",
                                 "Kadikoy/Istanbul", "5312345678", 3, 2022,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s3);
                 Student cengiz = new Student("Asli", "Cengiz", "asli", "aslicengiz",
                                 "Umraniye/Istanbul", "5323456789", 5, 2021,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s5);
                 Student sevinc = new Student("Ayse", "Sevinc", "ayse", "aysesevinc",
                                 "Sisli/Istanbul", "5345678901", 2, 2023,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s2);
                 Student kocak = new Student("Ali", "Kocak", "ali", "alikocak",
                                 "Bakirkoy/Istanbul", "5356789012", 6, 2021,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s6);
                 Student onat = new Student("Selin", "Onat", "selin", "selinonat",
                                 "Kartal/Istanbul", "5367890123", 1, 2023,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s1);
                 Student turk = new Student("Kaan", "Turk", "kaan", "kaanturk",
                                 "Pendik/Istanbul", "5378901234", 7, 2020,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s7);
                 Student yilmazoglu = new Student("Deniz", "Yilmazoglu", "deniz", "denizyilmazoglu",
                                 "Maltepe/Istanbul", "5389012345", 4, 2022,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s4);
                 Student acar = new Student("Cem", "Acar", "cem", "cemacar",
                                 "Tuzla/Istanbul", "5390123456", 5, 2021,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s5);
                 Student aygun = new Student("Ebru", "Aygün", "ebru", "ebruaygun",
                                 "Kucukcekmece/Istanbul", "5401234567", 3, 2022,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s3);
                 Student albayrak = new Student("Berkay", "Albayrak", "berkay", "berkayalbayrak",
                                 "Beyoglu/Istanbul", "5412345678", 2, 2023,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s2);
                 Student yigit = new Student("Sibel", "Yigit", "sibel", "sibelyigit",
                                 "Avcilar/Istanbul", "5423456789", 5, 2022,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s5);
                 Student akdogan = new Student("Aysegul", "Akdogan", "aysegul", "aysegulakdogan",
                                 "Bagcilar/Istanbul", "5434567890", 6, 2021,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s6);
                 Student sarikaya = new Student("Ugur", "Sarikaya", "ugur", "ugursarikaya",
                                 "Sariyer/Istanbul", "5445678901", 7, 2020,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s7);
                 Student temiz = new Student("Gizem", "Temiz", "gizem", "gizemtemiz",
                                 "Buyukcekmece/Istanbul", "5456789012", 1, 2023,
-                                "", new ArrayList<Course>(), transcript);
+                                "", new ArrayList<Course>(), transcript_s1);
 
                 students.add(kokur);
                 students.add(karayagli);
@@ -1847,5 +1732,32 @@ public class DataInitializer {
                 json.writeLecturers(lecturers);
                 json.writeStudents(students);
                 json.writeAdvisors(advisors);
+
+                // create .json file for student if it doesnt
+                int n = 150122000;
+                ArrayList<Student> writedStudents = json.readStudents();
+                for (int i = 0; i < students.size(); i++) {
+                        boolean isExist = false;
+                        for (int j = 0; j < writedStudents.size(); j++) {
+                                if (students.get(i).getUsername().equals(writedStudents.get(j).getUsername())) {
+                                        isExist = true;
+                                }
+                        }
+                        if (!isExist) {
+                                try (FileWriter writer = new FileWriter("database/" + Integer.toString(n) + ".json")) {
+                                        String str = "{" + "\"username\":" + "\"" + students.get(i).getUsername()
+                                                        + "\"" + "," + "\"password\":" + "\""
+                                                        + students.get(i).getPassword() + "\"" + "}";
+                                        writer.write(str);
+                                        writer.flush();
+                                        writer.close();
+                                        n++;
+                                } catch (Exception e) {
+                                        e.printStackTrace();
+                                }
+                        }
+
+                }
         }
+
 }
