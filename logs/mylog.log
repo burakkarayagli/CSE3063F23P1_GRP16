@@ -1,0 +1,21 @@
+2023-12-20 15:16:06 INFO  Menu:62 - Login menu displayed
+2023-12-20 15:16:14 INFO  Menu:74 - User fatmacorut logged in successfully
+2023-12-20 15:16:30 INFO  Menu:62 - Login menu displayed
+2023-12-20 15:16:35 INFO  Menu:74 - User fatmacorut logged in successfully
+2023-12-20 15:16:44 INFO  Menu:62 - Login menu displayed
+2023-12-20 15:16:53 WARN  Menu:77 - User mehmet failed to log in with username mehmet and password mehmetaksoy
+2023-12-20 15:16:53 INFO  Menu:62 - Login menu displayed
+2023-12-20 15:17:01 INFO  Menu:74 - User barisgiray logged in successfully
+2023-12-20 15:17:01 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 15:17:02 INFO  StudentMenu:74 - Course adding menu displayed
+2023-12-20 15:17:02 INFO  StudentMenu:131 - Available courses displayed
+2023-12-20 15:17:16 INFO  StudentController:28 - Course added: CSE3033 to student:Barış Giray
+2023-12-20 15:17:16 INFO  StudentController:28 - Course added: CSE3055 to student:Barış Giray
+2023-12-20 15:17:17 INFO  StudentController:28 - Course added: CSE3063 to student:Barış Giray
+2023-12-20 15:17:23 INFO  StudentMenu:116 - Selected courses displayed
+2023-12-20 15:17:26 INFO  StudentMenu:156 - Approval request sent
+2023-12-20 15:17:26 INFO  StudentController:108 - Approval request sent to advisor for student:Barış Giray
+2023-12-20 15:17:28 INFO  Menu:62 - Login menu displayed
+2023-12-20 15:17:44 INFO  Menu:74 - User fatmacorut logged in successfully
+2023-12-20 15:17:45 INFO  Menu:62 - Login menu displayed
+2023-12-20 15:17:51 INFO  Menu:74 - User fatmacorut logged in successfully
