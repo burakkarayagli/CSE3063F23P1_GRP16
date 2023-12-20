@@ -12,6 +12,7 @@
           "shortName": "ATA121",
           "fullName": "Atatürk İlkeleri ve İnkılap Tarihi I",
           "description": "",
+          "prerequisite": [],
           "semester": 1,
           "credit": 2,
           "classHours": 2
@@ -23,6 +24,7 @@
           "shortName": "MBG1201",
           "fullName": "Introduction to Modern Biology",
           "description": "",
+          "prerequisite": [],
           "semester": 1,
           "credit": 5,
           "classHours": 3
@@ -34,6 +36,7 @@
           "shortName": "CSE1200",
           "fullName": "Introduction to Computer Engineering",
           "description": "",
+          "prerequisite": [],
           "semester": 1,
           "credit": 4,
           "classHours": 3
@@ -45,6 +48,7 @@
           "shortName": "CSE1241",
           "fullName": "Computer Programming I",
           "description": "",
+          "prerequisite": [],
           "semester": 1,
           "credit": 6,
           "classHours": 4
@@ -56,6 +60,7 @@
           "shortName": "MATH1001",
           "fullName": "Calculus I",
           "description": "",
+          "prerequisite": [],
           "semester": 1,
           "credit": 6,
           "classHours": 2
@@ -67,6 +72,7 @@
           "shortName": "PHYS1001",
           "fullName": "Physics I",
           "description": "",
+          "prerequisite": [],
           "semester": 1,
           "credit": 4,
           "classHours": 2
@@ -78,6 +84,7 @@
           "shortName": "PHYS1003",
           "fullName": "Physics Lab I",
           "description": "",
+          "prerequisite": [],
           "semester": 1,
           "credit": 2,
           "classHours": 2
@@ -89,6 +96,7 @@
           "shortName": "TRD121",
           "fullName": "Türk Dili I",
           "description": "",
+          "prerequisite": [],
           "semester": 1,
           "credit": 2,
           "classHours": 2
