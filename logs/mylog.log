@@ -229,6 +229,11 @@
 2023-12-20 01:20:39 INFO  StudentController:108 - Approval request sent to advisor for student:Burak
 2023-12-20 01:20:44 INFO  Menu:62 - Login menu displayed
 2023-12-20 01:20:51 INFO  Menu:74 - User burak logged in successfully
+2023-12-20 01:20:51 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 01:24:41 INFO  Menu:62 - Login menu displayed
+2023-12-20 01:24:46 INFO  Menu:74 - User burak logged in successfully
+2023-12-20 01:24:46 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 01:24:47 INFO  Menu:62 - Login menu displayed
 
 2023-12-20 11:41:44 INFO  Menu:62 - Login menu displayed
 2023-12-20 11:41:54 WARN  Menu:77 - User ilayda failed to log in with username ilayda and password ilaydakorkmaz

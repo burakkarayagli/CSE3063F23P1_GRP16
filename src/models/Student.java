@@ -107,6 +107,11 @@ public class Student extends Person {
             return false;
         }
 
+        if (getSelectedCourses().size() >= 5) {
+            System.out.println("Error: Student can't add more than 5 courses");
+            return false;
+        }
+
         try {
             selectedCourses.add(course);
 

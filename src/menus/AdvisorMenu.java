@@ -47,6 +47,7 @@ public class AdvisorMenu {
         if ((student.getStatus() == "Rejected" || student.getStatus() == "Approved")) {
             System.out.println("Approve/Reject process is already done for this student.\n");
 
+
         } else {
             for (int i = 0; i < coursesOfStudent.size(); i++) {
                 Course course = coursesOfStudent.get(i);
@@ -98,6 +99,7 @@ public class AdvisorMenu {
     private boolean isValidFormat(String selections) {
         selections = selections.replaceAll("[,\\s]", "");
 
+
         try {
             int intValue = Integer.parseInt(selections);
             return true;
@@ -122,6 +124,7 @@ public class AdvisorMenu {
 
         return numbers;
     }
+
 
     // private boolean ifSelectionOutOfBounds(ArrayList<Integer> selections, Student
     // student) {
