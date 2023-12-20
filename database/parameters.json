@@ -13189,186 +13189,14 @@
           "status": "Approved",
           "selectedCourses": [
             {
-              "dates": [
-                {
-                  "startTime": "09:30",
-                  "endTime": "10:20",
-                  "dayOfWeek": "Monday"
-                },
-                {
-                  "startTime": "10:30",
-                  "endTime": "11:20",
-                  "dayOfWeek": "Monday"
-                }
-              ],
-              "sectionName": "1.1",
-              "lecturer": {
-                "reputation": "Asst. Prof.",
-                "officeHours": [],
-                "salary": 10000,
-                "employmentStatus": "active",
-                "personName": "Sanem",
-                "personSurname": "Arslan",
-                "username": "sanem",
-                "password": "sanemarslan"
-              },
-              "quota": 85,
-              "location": "M2-Z02",
-              "labHours": 0,
-              "shortName": "CSE3033",
-              "fullName": "Operating Systems",
+
+              "shortName": "BUS1003",
+              "fullName": "Entrepreneurship and Innovation",
               "description": "",
-              "prerequisite": [
-                "CSE2225"
-              ],
-              "semester": 5,
-              "credit": 7,
-              "classHours": 3
-            },
-            {
-              "dates": [
-                {
-                  "startTime": "11:30",
-                  "endTime": "12:20",
-                  "dayOfWeek": "Monday"
-                },
-                {
-                  "startTime": "13:00",
-                  "endTime": "13:50",
-                  "dayOfWeek": "Monday"
-                }
-              ],
-              "sectionName": "1.1",
-              "lecturer": {
-                "reputation": "Asst. Prof.",
-                "officeHours": [],
-                "salary": 10000,
-                "employmentStatus": "active",
-                "personName": "Ali Haydar",
-                "personSurname": "Özer",
-                "username": "alihaydar",
-                "password": "alihaydarozer"
-              },
-              "quota": 50,
-              "location": "M2-Z01",
-              "labHours": 0,
-              "shortName": "CSE3055",
-              "fullName": "Database Systems",
-              "description": "",
-              "prerequisite": [
-                "CSE2225"
-              ],
-              "semester": 5,
-              "credit": 7,
-              "classHours": 3
-            },
-            {
-              "dates": [
-                {
-                  "startTime": "16:00",
-                  "endTime": "16:50",
-                  "dayOfWeek": "Monday"
-                },
-                {
-                  "startTime": "09:30",
-                  "endTime": "10:20",
-                  "dayOfWeek": "Tuesday"
-                }
-              ],
-              "sectionName": "1.1",
-              "lecturer": {
-                "reputation": "Asst. Prof.",
-                "officeHours": [],
-                "salary": 10000,
-                "employmentStatus": "active",
-                "personName": "Fatma Corut",
-                "personSurname": "Ergin",
-                "username": "fatma",
-                "password": "fatma.ergin"
-              },
-              "quota": 50,
-              "location": "M2-Z04",
-              "labHours": 0,
-              "shortName": "CSE3215",
-              "fullName": "Digital Logic Design",
-              "description": "",
-              "semester": 5,
-              "credit": 6,
-              "classHours": 3
-            },
-            {
-              "dates": [
-                {
-                  "startTime": "09:30",
-                  "endTime": "10:20",
-                  "dayOfWeek": "Monday"
-                },
-                {
-                  "startTime": "10:30",
-                  "endTime": "11:20",
-                  "dayOfWeek": "Monday"
-                }
-              ],
-              "sectionName": "1.1",
-              "lecturer": {
-                "reputation": "Asst. Prof.",
-                "officeHours": [],
-                "salary": 10000,
-                "employmentStatus": "active",
-                "personName": "Sanem",
-                "personSurname": "Arslan",
-                "username": "sanem",
-                "password": "sanemarslan"
-              },
-              "quota": 85,
-              "location": "M2-Z02",
-              "labHours": 0,
-              "shortName": "CSE3033",
-              "fullName": "Operating Systems",
-              "description": "",
-              "prerequisite": [
-                "CSE2225"
-              ],
-              "semester": 5,
-              "credit": 7,
-              "classHours": 3
-            },
-            {
-              "dates": [
-                {
-                  "startTime": "11:30",
-                  "endTime": "12:20",
-                  "dayOfWeek": "Monday"
-                },
-                {
-                  "startTime": "13:00",
-                  "endTime": "13:50",
-                  "dayOfWeek": "Monday"
-                }
-              ],
-              "sectionName": "1.1",
-              "lecturer": {
-                "reputation": "Asst. Prof.",
-                "officeHours": [],
-                "salary": 10000,
-                "employmentStatus": "active",
-                "personName": "Ali Haydar",
-                "personSurname": "Özer",
-                "username": "alihaydar",
-                "password": "alihaydarozer"
-              },
-              "quota": 50,
-              "location": "M2-Z01",
-              "labHours": 0,
-              "shortName": "CSE3055",
-              "fullName": "Database Systems",
-              "description": "",
-              "prerequisite": [
-                "CSE2225"
-              ],
-              "semester": 5,
-              "credit": 7,
-              "classHours": 3
+              "prerequisite": [],
+              "semester": 1,
+              "credit": 2,
+              "classHours": 2
             }
           ],
           "transcript": {
@@ -13710,8 +13538,19 @@
           "phoneNumber": "5345274592",
           "semester": 5,
           "entranceYear": 2021,
-          "status": "",
-          "selectedCourses": [],
+
+          "status": "Approved",
+          "selectedCourses": [
+            {
+              "shortName": "YDI1004",
+              "fullName": "Report Writing in English",
+              "description": "",
+              "prerequisite": [],
+              "semester": 1,
+              "credit": 2,
+              "classHours": 2
+            }
+          ],
           "transcript": {
             "listGrades": [
               {
@@ -20573,186 +20412,14 @@
           "status": "Approved",
           "selectedCourses": [
             {
-              "dates": [
-                {
-                  "startTime": "09:30",
-                  "endTime": "10:20",
-                  "dayOfWeek": "Monday"
-                },
-                {
-                  "startTime": "10:30",
-                  "endTime": "11:20",
-                  "dayOfWeek": "Monday"
-                }
-              ],
-              "sectionName": "1.1",
-              "lecturer": {
-                "reputation": "Asst. Prof.",
-                "officeHours": [],
-                "salary": 10000,
-                "employmentStatus": "active",
-                "personName": "Sanem",
-                "personSurname": "Arslan",
-                "username": "sanem",
-                "password": "sanemarslan"
-              },
-              "quota": 85,
-              "location": "M2-Z02",
-              "labHours": 0,
-              "shortName": "CSE3033",
-              "fullName": "Operating Systems",
+
+              "shortName": "BUS1003",
+              "fullName": "Entrepreneurship and Innovation",
               "description": "",
-              "prerequisite": [
-                "CSE2225"
-              ],
-              "semester": 5,
-              "credit": 7,
-              "classHours": 3
-            },
-            {
-              "dates": [
-                {
-                  "startTime": "11:30",
-                  "endTime": "12:20",
-                  "dayOfWeek": "Monday"
-                },
-                {
-                  "startTime": "13:00",
-                  "endTime": "13:50",
-                  "dayOfWeek": "Monday"
-                }
-              ],
-              "sectionName": "1.1",
-              "lecturer": {
-                "reputation": "Asst. Prof.",
-                "officeHours": [],
-                "salary": 10000,
-                "employmentStatus": "active",
-                "personName": "Ali Haydar",
-                "personSurname": "Özer",
-                "username": "alihaydar",
-                "password": "alihaydarozer"
-              },
-              "quota": 50,
-              "location": "M2-Z01",
-              "labHours": 0,
-              "shortName": "CSE3055",
-              "fullName": "Database Systems",
-              "description": "",
-              "prerequisite": [
-                "CSE2225"
-              ],
-              "semester": 5,
-              "credit": 7,
-              "classHours": 3
-            },
-            {
-              "dates": [
-                {
-                  "startTime": "16:00",
-                  "endTime": "16:50",
-                  "dayOfWeek": "Monday"
-                },
-                {
-                  "startTime": "09:30",
-                  "endTime": "10:20",
-                  "dayOfWeek": "Tuesday"
-                }
-              ],
-              "sectionName": "1.1",
-              "lecturer": {
-                "reputation": "Asst. Prof.",
-                "officeHours": [],
-                "salary": 10000,
-                "employmentStatus": "active",
-                "personName": "Fatma Corut",
-                "personSurname": "Ergin",
-                "username": "fatma",
-                "password": "fatma.ergin"
-              },
-              "quota": 50,
-              "location": "M2-Z04",
-              "labHours": 0,
-              "shortName": "CSE3215",
-              "fullName": "Digital Logic Design",
-              "description": "",
-              "semester": 5,
-              "credit": 6,
-              "classHours": 3
-            },
-            {
-              "dates": [
-                {
-                  "startTime": "09:30",
-                  "endTime": "10:20",
-                  "dayOfWeek": "Monday"
-                },
-                {
-                  "startTime": "10:30",
-                  "endTime": "11:20",
-                  "dayOfWeek": "Monday"
-                }
-              ],
-              "sectionName": "1.1",
-              "lecturer": {
-                "reputation": "Asst. Prof.",
-                "officeHours": [],
-                "salary": 10000,
-                "employmentStatus": "active",
-                "personName": "Sanem",
-                "personSurname": "Arslan",
-                "username": "sanem",
-                "password": "sanemarslan"
-              },
-              "quota": 85,
-              "location": "M2-Z02",
-              "labHours": 0,
-              "shortName": "CSE3033",
-              "fullName": "Operating Systems",
-              "description": "",
-              "prerequisite": [
-                "CSE2225"
-              ],
-              "semester": 5,
-              "credit": 7,
-              "classHours": 3
-            },
-            {
-              "dates": [
-                {
-                  "startTime": "11:30",
-                  "endTime": "12:20",
-                  "dayOfWeek": "Monday"
-                },
-                {
-                  "startTime": "13:00",
-                  "endTime": "13:50",
-                  "dayOfWeek": "Monday"
-                }
-              ],
-              "sectionName": "1.1",
-              "lecturer": {
-                "reputation": "Asst. Prof.",
-                "officeHours": [],
-                "salary": 10000,
-                "employmentStatus": "active",
-                "personName": "Ali Haydar",
-                "personSurname": "Özer",
-                "username": "alihaydar",
-                "password": "alihaydarozer"
-              },
-              "quota": 50,
-              "location": "M2-Z01",
-              "labHours": 0,
-              "shortName": "CSE3055",
-              "fullName": "Database Systems",
-              "description": "",
-              "prerequisite": [
-                "CSE2225"
-              ],
-              "semester": 5,
-              "credit": 7,
-              "classHours": 3
+              "prerequisite": [],
+              "semester": 1,
+              "credit": 2,
+              "classHours": 2
             }
           ],
           "transcript": {

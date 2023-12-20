@@ -3,8 +3,18 @@
   "phoneNumber": "5345274592",
   "semester": 5,
   "entranceYear": 2021,
-  "status": "",
-  "selectedCourses": [],
+  "status": "Approved",
+  "selectedCourses": [
+    {
+      "shortName": "YDI1004",
+      "fullName": "Report Writing in English",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2,
+      "classHours": 2
+    }
+  ],
   "transcript": {
     "listGrades": [
       {
