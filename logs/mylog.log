@@ -270,3 +270,60 @@
 2023-12-20 14:28:16 WARN  Menu:77 - User burak failed to log in with username burak and password burakkarayagli
 2023-12-20 14:28:16 INFO  Menu:62 - Login menu displayed
 
+2023-12-20 16:46:17 INFO  Menu:62 - Login menu displayed
+2023-12-20 16:46:21 INFO  Menu:74 - User burak logged in successfully
+2023-12-20 16:46:21 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 16:46:41 INFO  StudentMenu:116 - Selected courses displayed
+2023-12-20 16:46:44 INFO  StudentMenu:95 - Course dropping menu displayed
+2023-12-20 16:46:44 INFO  StudentMenu:116 - Selected courses displayed
+2023-12-20 16:46:45 INFO  StudentController:39 - Course dropped: CSE3063 from student:Burak
+2023-12-20 16:46:45 INFO  StudentController:39 - Course dropped: CSE3055 from student:Burak
+2023-12-20 16:46:45 INFO  StudentController:39 - Course dropped: CSE3033 from student:Burak
+2023-12-20 16:46:45 INFO  StudentController:39 - Course dropped: CSE3055 from student:Burak
+2023-12-20 16:46:45 INFO  StudentController:39 - Course dropped: CSE3033 from student:Burak
+2023-12-20 16:47:53 INFO  Menu:62 - Login menu displayed
+2023-12-20 16:48:25 INFO  Menu:62 - Login menu displayed
+2023-12-20 16:48:28 INFO  Menu:74 - User burak logged in successfully
+2023-12-20 16:48:28 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 16:48:29 INFO  StudentMenu:145 - Transcript displayed
+2023-12-20 16:48:42 INFO  StudentMenu:115 - Selected courses displayed
+2023-12-20 16:48:45 INFO  StudentMenu:74 - Course adding menu displayed
+2023-12-20 16:48:45 INFO  StudentMenu:130 - Available courses displayed
+2023-12-20 16:49:01 INFO  StudentController:28 - Course added: CSE3033 to student:Burak
+2023-12-20 16:49:01 INFO  StudentController:28 - Course added: CSE3055 to student:Burak
+2023-12-20 16:49:01 INFO  StudentController:28 - Course added: CSE3215 to student:Burak
+2023-12-20 16:49:01 INFO  StudentController:28 - Course added: CSE3033 to student:Burak
+2023-12-20 16:49:01 INFO  StudentController:28 - Course added: CSE3055 to student:Burak
+2023-12-20 16:49:32 INFO  StudentMenu:115 - Selected courses displayed
+2023-12-20 16:49:33 INFO  StudentMenu:145 - Transcript displayed
+2023-12-20 16:58:57 INFO  Menu:62 - Login menu displayed
+2023-12-20 16:59:00 INFO  Menu:74 - User burak logged in successfully
+2023-12-20 16:59:00 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 16:59:03 INFO  StudentMenu:74 - Course adding menu displayed
+2023-12-20 16:59:03 INFO  StudentMenu:130 - Available courses displayed
+2023-12-20 16:59:59 INFO  Menu:62 - Login menu displayed
+2023-12-20 17:00:02 INFO  Menu:74 - User burak logged in successfully
+2023-12-20 17:00:02 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 17:00:06 INFO  StudentMenu:74 - Course adding menu displayed
+2023-12-20 17:00:06 INFO  StudentMenu:130 - Available courses displayed
+2023-12-20 17:00:39 INFO  Menu:62 - Login menu displayed
+2023-12-20 17:00:42 INFO  Menu:74 - User burak logged in successfully
+2023-12-20 17:00:42 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 17:00:43 INFO  StudentMenu:74 - Course adding menu displayed
+2023-12-20 17:00:43 INFO  StudentMenu:130 - Available courses displayed
+2023-12-20 17:11:24 INFO  Menu:62 - Login menu displayed
+2023-12-20 17:11:27 INFO  Menu:74 - User burak logged in successfully
+2023-12-20 17:11:27 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 17:11:30 INFO  StudentMenu:74 - Course adding menu displayed
+2023-12-20 17:11:30 INFO  StudentMenu:130 - Available courses displayed
+2023-12-20 17:12:43 INFO  Menu:62 - Login menu displayed
+2023-12-20 17:12:47 INFO  Menu:74 - User burak logged in successfully
+2023-12-20 17:12:47 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 17:12:48 INFO  StudentMenu:74 - Course adding menu displayed
+2023-12-20 17:12:48 INFO  StudentMenu:130 - Available courses displayed
+2023-12-20 17:12:56 INFO  StudentMenu:95 - Course dropping menu displayed
+2023-12-20 17:12:56 INFO  StudentMenu:115 - Selected courses displayed
+2023-12-20 17:13:03 INFO  StudentMenu:74 - Course adding menu displayed
+2023-12-20 17:13:03 INFO  StudentMenu:130 - Available courses displayed
+2023-12-20 17:13:03 INFO  StudentController:28 - Course added: CSE3063 to student:Burak
+2023-12-20 17:13:09 INFO  Menu:62 - Login menu displayed
