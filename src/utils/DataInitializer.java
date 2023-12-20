@@ -1438,7 +1438,7 @@ public class DataInitializer {
                                                                 new Grade(phys1103, "BB"), new Grade(trd121, "CB"))),
                                 "");
 
-                Transcript transcript_s6_enough_credit = new Transcript(
+                Transcript transcript_s7_enough_credit = new Transcript(
                                 new ArrayList<Grade>(
                                                 Arrays.asList(new Grade(ata121, "BA"), new Grade(mbg1201, "BB"),
                                                                 new Grade(cse1200, "FF"), new Grade(cse1241, "DC"),
@@ -1456,7 +1456,10 @@ public class DataInitializer {
                                                                 new Grade(stat2253, "AA"),
                                                                 new Grade(cse3033, "AA"), new Grade(cse3055, "CB"),
                                                                 new Grade(cse3063, "DC"), new Grade(cse3215, "DD"),
-                                                                new Grade(ie3081, "BA"))),
+                                                                new Grade(ie3081, "BA"), new Grade(cse3038, "AA"),
+                                                                new Grade(cse3044, "AA"), new Grade(cse3264, "DC"),
+                                                                new Grade(cse3048, "BA"), new Grade(ie3235, "BB"),
+                                                                new Grade(com2202, "BB"))),
                                 "");
                 Transcript transcript_s2_overlap = new Transcript(
                                 new ArrayList<Grade>(
@@ -1495,7 +1498,7 @@ public class DataInitializer {
                                 "", new ArrayList<Course>(), transcript_s3);
                 Student aksoy = new Student("Mehmet", "Aksoy", "mehmet", "mehmetaksoy",
                                 "Silivri/Istanbul", "5044556677", 7, 2020,
-                                "", new ArrayList<Course>(), transcript_s7);
+                                "", new ArrayList<Course>(), transcript_s7_enough_credit);
                 Student celik = new Student("Zeynep", "Celik", "zeynep", "zeynepcelik",
                                 "Beykoz/Istanbul", "5055667788", 2, 2023,
                                 "", new ArrayList<Course>(), transcript_s2_prerequsite);
@@ -1734,30 +1737,33 @@ public class DataInitializer {
                 json.writeAdvisors(advisors);
 
                 // create .json file for student if it doesnt
-                int n = 150122000;
-                ArrayList<Student> writedStudents = json.readStudents();
-                for (int i = 0; i < students.size(); i++) {
-                        boolean isExist = false;
-                        for (int j = 0; j < writedStudents.size(); j++) {
-                                if (students.get(i).getUsername().equals(writedStudents.get(j).getUsername())) {
-                                        isExist = true;
-                                }
-                        }
-                        if (!isExist) {
-                                try (FileWriter writer = new FileWriter("database/" + Integer.toString(n) + ".json")) {
-                                        String str = "{" + "\"username\":" + "\"" + students.get(i).getUsername()
-                                                        + "\"" + "," + "\"password\":" + "\""
-                                                        + students.get(i).getPassword() + "\"" + "}";
-                                        writer.write(str);
-                                        writer.flush();
-                                        writer.close();
-                                        n++;
-                                } catch (Exception e) {
-                                        e.printStackTrace();
-                                }
-                        }
+                // int n = 150120000;
+                // ArrayList<Student> writedStudents = json.readStudents();
+                // System.out.println("Writed Students: " + writedStudents.size());
+                // for (int i = 0; i < students.size(); i++) {
+                // boolean isExist = false;
+                // for (int j = 0; j < writedStudents.size(); j++) {
+                // if
+                // (students.get(i).getPassword().equals(writedStudents.get(j).getPassword())) {
+                // isExist = true;
+                // }
+                // }
+                // if (!isExist) {
+                // try (FileWriter writer = new FileWriter("database/" + Integer.toString(n) +
+                // ".json")) {
+                // String str = "{" + "\"username\":" + "\"" + students.get(i).getUsername()
+                // + "\"" + "," + "\"password\":" + "\""
+                // + students.get(i).getPassword() + "\"" + "}";
+                // writer.write(str);
+                // writer.flush();
+                // writer.close();
+                // n++;
+                // } catch (Exception e) {
+                // e.printStackTrace();
+                // }
+                // }
 
-                }
+                // }
         }
 
 }

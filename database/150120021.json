@@ -1,6 +1,6 @@
 {
-  "address": "Buyukcekmece/Istanbul",
-  "phoneNumber": "5456789012",
+  "address": "Kagithane/Istanbul",
+  "phoneNumber": "5166778899",
   "semester": 1,
   "entranceYear": 2023,
   "status": "",
@@ -10,7 +10,7 @@
     "notes": ""
   },
   "personName": "Gizem",
-  "personSurname": "Temiz",
+  "personSurname": "Akbas",
   "username": "gizem",
-  "password": "gizemtemiz"
+  "password": "gizemakbas"
 }
