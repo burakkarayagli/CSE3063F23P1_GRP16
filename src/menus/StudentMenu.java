@@ -28,12 +28,13 @@ public class StudentMenu {
         logger.info("Student menu displayed");
         Scanner scanner = new Scanner(System.in);
         int choice = 0;
-        while (choice != 5) {
+        while (choice != 6) {
             System.out.println("1-Add Course");
             System.out.println("2-Drop Course");
             System.out.println("3-Show Transcript");
             System.out.println("4-Show Selected Courses");
-            System.out.println("5-Exit");
+            System.out.println("5-Send Approval Request");
+            System.out.println("6-Logout");
             System.out.print("Enter your choice: ");
             try {
                 choice = scanner.nextInt();
@@ -51,6 +52,9 @@ public class StudentMenu {
                         showSelectedCourses();
                         break;
                     case 5:
+                        sendApprovalRequest();
+                        break;
+                    case 6:
                         menus.Menu.getInstance().setLoggedInUser(null);
                         menus.Menu.getInstance().LoginMenu();
                         break;
@@ -111,7 +115,7 @@ public class StudentMenu {
     public void showSelectedCourses() {
         logger.info("Selected courses displayed");
         ArrayList<Course> courses = studentController.getSelectedCourses();
-
+        System.out.println("Status: " + studentController.getStatus());
         System.out.println("=============Selected Courses=============");
 
         for (int i = 0; i < courses.size(); i++) {
@@ -146,6 +150,16 @@ public class StudentMenu {
         System.out.println("=================Transcript==================");
         System.out.println(grades);
         System.out.println("=============================================");
+    }
+
+    public void sendApprovalRequest() {
+        logger.info("Approval request sent");
+
+        if (studentController.sendApprovalRequest()) {
+            System.out.println("Approval request sent");
+        } else {
+            System.out.println("Approval request could not be sent");
+        }
     }
 
     private ArrayList<Integer> parseInput(String input, ArrayList<Course> courses) throws Exception {

@@ -14,12 +14,11 @@ public class AdvisorMenu {
 
     String_Constants StringConstants = new String_Constants();
 
-    public AdvisorMenu(AdvisorController advisorController){
+    public AdvisorMenu(AdvisorController advisorController) {
         this.advisorController = advisorController;
     }
+
     public void advisorMenu() {
-
-
         System.out.println("Which student do you want to go on?");
         Menu menu = new Menu();
         for (int j = 0; j < advisorController.getStudents().size(); j++) {
@@ -30,9 +29,11 @@ public class AdvisorMenu {
 
         Student student = advisorController.getStudents().get(studentSelection - 1);
 
-        System.out.println("List of courses for student " + advisorController.getStudents().get(studentSelection - 1).getFullName());
+        System.out.println("List of courses for student "
+                + advisorController.getStudents().get(studentSelection - 1).getFullName());
 
-        ArrayList<Course> coursesOfStudent = advisorController.getStudents().get(studentSelection - 1).getSelectedCourses();
+        ArrayList<Course> coursesOfStudent = advisorController.getStudents().get(studentSelection - 1)
+                .getSelectedCourses();
         for (int i = 0; i < coursesOfStudent.size(); i++) {
             Course course = coursesOfStudent.get(i);
             System.out.println((i + 1) + " -> " + course.getFullName() + " " + course.getShortName());
@@ -45,30 +46,27 @@ public class AdvisorMenu {
         scanner.nextLine();
         String selections = scanner.nextLine();
 
-
         System.out.println("1-Approve selections\n2-Reject selections");
         int decision = 0;
-        try{
+        try {
             decision = scanner.nextInt();
-        }
-        catch(Exception e){
+        } catch (Exception e) {
             System.out.println("Invalid input type. Please try again.");
-            
+
         }
-        if(decision!=1 && decision != 2){
+        if (decision != 1 && decision != 2) {
             System.out.println("Input must be 1 or 2. Please try again.");
             advisorMenu();
         }
 
-        try{
+        try {
             if (decision == 1) {
-                advisorController.getStudents().get(studentSelection-1).setStatus("Approved");
+                advisorController.getStudents().get(studentSelection - 1).setStatus("Approved");
                 advisorController.approveStudentSelection(student, selections);
             } else if (decision == 2) {
                 advisorController.rejectStudentSelection(student, selections);
             }
-        }
-        catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             advisorMenu();
         }
@@ -77,6 +75,6 @@ public class AdvisorMenu {
         } else {
             advisorMenu();
         }
-        
+
     }
 }

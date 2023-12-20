@@ -2,6 +2,7 @@ package models;
 
 import java.util.ArrayList;
 
+import interfaces.SectionInterface;
 import menus.Menu;
 import utils.DataUtils;
 
@@ -93,24 +94,64 @@ public class Student extends Person {
         this.transcript = new Transcript();
     }
 
+    // student can't add/drop course in waiting statment
+    // student can add/drop course in approved statment but can't drop course
+    // student can add/drop course in rejected statment
+    // student can't add/drop course in finished statment
+    // student can add/drop course in available statment
+
     // Adding a course to the selected courses of the student
     public boolean addCourse(Course course) {
+        if (status.equals("waiting") || status.equals("finished")) {
+            System.out.println("Error: Student can't add/drop course in " + status + " statment");
+            return false;
+        }
+
         try {
             selectedCourses.add(course);
 
             DataUtils database = DataUtils.getInstance();
             database.writeStudents(Menu.students);
+            // Update the advisor's student's selected courses
+            ArrayList<Advisor> advisors = database.readAdvisors();
+            for (int i = 0; i < advisors.size(); i++) {
+                for (int j = 0; j < advisors.get(i).getStudents().size(); j++) {
+                    if (advisors.get(i).getStudents().get(j).getUsername().equals(this.getUsername())) {
+                        advisors.get(i).getStudents().set(j, this);
+                    }
+                }
+            }
+            database.writeAdvisors(advisors);
+
             return true;
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
             return false;
         }
-
     }
 
     public boolean dropCourse(Course course) {
+        if (status.equals("waiting") || status.equals("finished")) {
+            System.out.println("Error: Student can't add/drop course in " + status + " statment");
+            return false;
+        }
+
         try {
             selectedCourses.remove(course);
+
+            DataUtils database = DataUtils.getInstance();
+            database.writeStudents(Menu.students);
+            // Update the advisor's student's selected courses
+            ArrayList<Advisor> advisors = database.readAdvisors();
+            for (int i = 0; i < advisors.size(); i++) {
+                for (int j = 0; j < advisors.get(i).getStudents().size(); j++) {
+                    if (advisors.get(i).getStudents().get(j).getUsername().equals(this.getUsername())) {
+                        advisors.get(i).getStudents().set(j, this);
+                    }
+                }
+            }
+            database.writeAdvisors(advisors);
+
             return true;
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
@@ -166,19 +207,28 @@ public class Student extends Person {
             warningString += "========================================================\n";
         }
 
-        // TODO: revise this function after merge
-        if (checkOverlappingCourses().size() > 0) {
+        if (getOverlappingCourses().size() > 0) {
             warningString += "========Student has overlapping courses.=========\n";
-            for (ArrayList<Course> overlappingCourses : checkOverlappingCourses()) {
-                for (Course course : overlappingCourses) {
-                    warningString += course.getFullName() + " (" + course.getShortName() + "), ";
-                }
-                warningString += "\n";
+            for (ArrayList<Course> overlappingCourse : getOverlappingCourses()) {
+                warningString += overlappingCourse.get(0).getFullName() + " and "
+                        + overlappingCourse.get(1).getFullName() + " are overlapping.\n";
             }
             warningString += "========================================================\n";
         }
 
         return warningString;
+    }
+
+    public boolean sendApprovalRequest() {
+        if (status.equals("waiting") || status.equals("finished")) {
+            System.out.println("Error: Student can't send for approval in " + status + " statment");
+            return false;
+        }
+
+        setStatus("waiting");
+        DataUtils database = DataUtils.getInstance();
+        database.writeStudents(Menu.students);
+        return true;
     }
 
     private int getTotalCreditOfSelectedCourses() {
@@ -192,7 +242,7 @@ public class Student extends Person {
     }
 
     // Returns true if the student has less than max credit
-    public boolean checkCreditLimit() {
+    private boolean checkCreditLimit() {
         if (getTotalCreditOfSelectedCourses() > 30) {
             return false;
         }
@@ -203,7 +253,7 @@ public class Student extends Person {
     }
 
     // Returns true if the student has already selected the course
-    public boolean checkStudentAlreadySelectedCourse(Course course) {
+    private boolean checkStudentAlreadySelectedCourse(Course course) {
         // Check if the course's short name is in the selected courses
         for (Course selectedCourse : selectedCourses) {
             if (selectedCourse.getShortName().equals(course.getShortName())) {
@@ -215,7 +265,7 @@ public class Student extends Person {
     }
 
     // Returns true if the student passed the prerequisite courses
-    public boolean checkPrerequisite(Course course) {
+    private boolean checkPrerequisite(Course course) {
         if (course.getPrerequisite() == null) {
             return true;
         }
@@ -232,7 +282,7 @@ public class Student extends Person {
     }
 
     // Returns true if student has greater or equal semester than the course
-    public boolean checkSemesterOfCourse(Course course) {
+    private boolean checkSemesterOfCourse(Course course) {
         if (course.getSemester() <= this.semester) {
             return true;
         } else {
@@ -242,7 +292,7 @@ public class Student extends Person {
 
     // Returns true if the course is in the transcript(student has taken the course
     // before and passed)
-    public boolean checkStudentPassedCourse(Course course) {
+    private boolean checkStudentPassedCourse(Course course) {
         for (Grade grade : transcript.getGradeList()) {
             if (grade.getCourse().getShortName().equals(course.getShortName()) && grade.getGrade() != "FF") {
                 return true;
@@ -252,7 +302,7 @@ public class Student extends Person {
         return false;
     }
 
-    public boolean checkStudentPassedCourseWithShortName(String courseShortName) {
+    private boolean checkStudentPassedCourseWithShortName(String courseShortName) {
         for (Grade grade : transcript.getGradeList()) {
             if (grade.getCourse().getShortName().equals(courseShortName) && grade.getGrade() != "FF") {
                 return true;
@@ -262,63 +312,29 @@ public class Student extends Person {
         return false;
     }
 
+    public ArrayList<ArrayList<Course>> getOverlappingCourses() {
+        ArrayList<ArrayList<Course>> overlappingCourses = new ArrayList<ArrayList<Course>>();
 
-    public boolean checkTime(TimeInterval time1, TimeInterval time2){
-        if(time1.getStartTime().equals(time2.getStartTime())){
-            return true;
-        }
-        return false;
-    }
-
-    public ArrayList<ArrayList<Course>> checkOverlappingCourses() {
-        ArrayList<ArrayList<Course>> overlapingCourses = new ArrayList<ArrayList<Course>>();
-
-        ArrayList<Course> allCourseSections = this.getSelectedCourses();
-
-        for (int i = 0; i < allCourseSections.size(); i++) {
-
-            Course course1 = allCourseSections.get(i);
-            ArrayList<TimeInterval> dates1 = new ArrayList<>();
-
-            for (int j = i + 1; j < allCourseSections.size(); j++) {
-
-                Course course2 = allCourseSections.get(j);
-                ArrayList<TimeInterval> dates2 = new ArrayList<>();
-
-                if (allCourseSections.get(i) instanceof MandatoryCourse) {
-                    course1 = (MandatoryCourse) allCourseSections.get(i);
-                    dates1 = ((MandatoryCourse) allCourseSections.get(i)).getDates();
-                } else if (allCourseSections.get(i) instanceof TechnicalElectiveCourse) {
-                    course1 = (TechnicalElectiveCourse) allCourseSections.get(i);
-                    dates1 = ((TechnicalElectiveCourse) allCourseSections.get(i)).getDates();
-                } else if (allCourseSections.get(i) instanceof NonTechnicalElectiveCourse) {
-                    course1 = (NonTechnicalElectiveCourse) allCourseSections.get(i);
-                    dates1 = ((NonTechnicalElectiveCourse) allCourseSections.get(i)).getDates();
-                }
-                if (allCourseSections.get(j) instanceof MandatoryCourse) {
-                    course2 = (MandatoryCourse) allCourseSections.get(i);
-                    dates2 = ((MandatoryCourse) allCourseSections.get(i)).getDates();
-                } else if (allCourseSections.get(j) instanceof TechnicalElectiveCourse) {
-                    course2 = (TechnicalElectiveCourse) allCourseSections.get(i);
-                    dates2 = ((TechnicalElectiveCourse) allCourseSections.get(i)).getDates();
-                } else if (allCourseSections.get(j) instanceof NonTechnicalElectiveCourse) {
-                    course2 = (NonTechnicalElectiveCourse) allCourseSections.get(i);
-                    dates2 = ((NonTechnicalElectiveCourse) allCourseSections.get(i)).getDates();
-                }
-                
-                for(int y = 0;y<dates2.size();y++){
-                    for (int x = 0; x < dates1.size(); x++) {
-                        if (checkTime(dates1.get(x), dates2.get(y))) {
-                            ArrayList<Course> overlapingCourse = new ArrayList<Course>();
-                            overlapingCourse.add(course1);
-                            overlapingCourse.add(course2);
-                            overlapingCourses.add(overlapingCourse);
+        selectedCourses = getSelectedCourses();
+        for (int i = 0; i < selectedCourses.size(); i++) {
+            for (int j = i + 1; j < selectedCourses.size(); j++) {
+                for (TimeInterval timeInterval : ((SectionInterface) selectedCourses.get(i)).getDates()) {
+                    for (TimeInterval timeInterval2 : ((SectionInterface) selectedCourses.get(j)).getDates()) {
+                        try {
+                            if (timeInterval.isOverlapping(timeInterval2)) {
+                                ArrayList<Course> overlappingCourse = new ArrayList<Course>();
+                                overlappingCourse.add(selectedCourses.get(i));
+                                overlappingCourse.add(selectedCourses.get(j));
+                                overlappingCourses.add(overlappingCourse);
+                            }
+                        } catch (Exception e) {
+                            e.printStackTrace();
                         }
                     }
                 }
             }
         }
 
-        return overlapingCourses;
+        return overlappingCourses;
     }
 }

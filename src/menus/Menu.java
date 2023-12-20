@@ -6,6 +6,8 @@ import java.util.Scanner;
 import constants.String_Constants;
 import contollers.StudentController;
 import contollers.LecturerController;
+import contollers.AdvisorController;
+
 import models.*;
 import utils.DataUtils;
 
@@ -85,7 +87,8 @@ public class Menu {
             StudentMenu studentMenu = new StudentMenu(new StudentController((Student) getLoggedInUser()));
             studentMenu.studentMenu();
         } else if (getLoggedInUser() instanceof Advisor) {
-            // advisorMenu.advisorMenu();
+            AdvisorMenu advisorMenu = new AdvisorMenu(new AdvisorController((Advisor) getLoggedInUser()));
+            advisorMenu.advisorMenu();
         } else if (getLoggedInUser() instanceof Lecturer) {
             LecturerMenu lecturerMenu = new LecturerMenu(new LecturerController((Lecturer) getLoggedInUser()));
             lecturerMenu.lecturerMenu();
