@@ -1,7 +1,7 @@
 {
-  "address": "Sultanbeyli/Istanbul",
-  "phoneNumber": "5233445566",
-  "semester": 8,
+  "address": "Silivri/Istanbul",
+  "phoneNumber": "5044556677",
+  "semester": 7,
   "entranceYear": 2020,
   "status": "",
   "selectedCourses": [],
@@ -38,7 +38,7 @@
           "credit": 4,
           "classHours": 3
         },
-        "grade": "CB"
+        "grade": "FF"
       },
       {
         "course": {
@@ -60,7 +60,7 @@
           "credit": 6,
           "classHours": 2
         },
-        "grade": "DD"
+        "grade": "AA"
       },
       {
         "course": {
@@ -71,7 +71,7 @@
           "credit": 4,
           "classHours": 2
         },
-        "grade": "BA"
+        "grade": "FF"
       },
       {
         "course": {
@@ -82,7 +82,7 @@
           "credit": 2,
           "classHours": 2
         },
-        "grade": "BB"
+        "grade": "FF"
       },
       {
         "course": {
@@ -93,7 +93,7 @@
           "credit": 2,
           "classHours": 2
         },
-        "grade": "CB"
+        "grade": "FF"
       },
       {
         "course": {
@@ -104,7 +104,7 @@
           "credit": 2,
           "classHours": 2
         },
-        "grade": "DC"
+        "grade": "FF"
       },
       {
         "course": {
@@ -126,7 +126,7 @@
           "credit": 6,
           "classHours": 2
         },
-        "grade": "BA"
+        "grade": "FF"
       },
       {
         "course": {
@@ -137,7 +137,7 @@
           "credit": 5,
           "classHours": 3
         },
-        "grade": "BB"
+        "grade": "F"
       },
       {
         "course": {
@@ -159,7 +159,7 @@
           "credit": 2,
           "classHours": 2
         },
-        "grade": "DC"
+        "grade": "FF"
       },
       {
         "course": {
@@ -170,7 +170,7 @@
           "credit": 2,
           "classHours": 2
         },
-        "grade": "DD"
+        "grade": "FF"
       },
       {
         "course": {
@@ -181,7 +181,7 @@
           "credit": 6,
           "classHours": 3
         },
-        "grade": "BA"
+        "grade": "AA"
       },
       {
         "course": {
@@ -256,7 +256,7 @@
           "credit": 7,
           "classHours": 3
         },
-        "grade": "BB"
+        "grade": "FF"
       },
       {
         "course": {
@@ -309,7 +309,7 @@
           "credit": 5,
           "classHours": 3
         },
-        "grade": "BA"
+        "grade": "AA"
       },
       {
         "course": {
@@ -323,7 +323,7 @@
           "credit": 7,
           "classHours": 3
         },
-        "grade": "BB"
+        "grade": "AA"
       },
       {
         "course": {
@@ -380,14 +380,18 @@
       },
       {
         "course": {
-          "shortName": "COM2202",
-          "fullName": "Technical Communication \u0026 Entrepreneurship",
+          "shortName": "CSE3038",
+          "fullName": "Computer Organization",
           "description": "",
+          "prerequisite": [
+            "CSE2138",
+            "CSE3215"
+          ],
           "semester": 6,
-          "credit": 2,
-          "classHours": 2
+          "credit": 7,
+          "classHours": 6
         },
-        "grade": "BB"
+        "grade": "AA"
       },
       {
         "course": {
@@ -401,7 +405,7 @@
           "credit": 7,
           "classHours": 5
         },
-        "grade": "CB"
+        "grade": "AA"
       },
       {
         "course": {
@@ -416,21 +420,6 @@
           "classHours": 4
         },
         "grade": "DC"
-      },
-      {
-        "course": {
-          "shortName": "CSE3038",
-          "fullName": "Computer Organization",
-          "description": "",
-          "prerequisite": [
-            "CSE2138",
-            "CSE3215"
-          ],
-          "semester": 6,
-          "credit": 7,
-          "classHours": 6
-        },
-        "grade": "DD"
       },
       {
         "course": {
@@ -462,156 +451,20 @@
       },
       {
         "course": {
-          "shortName": "CSE4297",
-          "fullName": "Engineering Project I",
+          "shortName": "COM2202",
+          "fullName": "Technical Communication \u0026 Entrepreneurship",
           "description": "",
-          "semester": 7,
-          "credit": 5,
-          "classHours": 4
-        },
-        "grade": "BB"
-      },
-      {
-        "course": {
-          "shortName": "CSE4000",
-          "fullName": "Summer Practice ",
-          "description": "",
-          "semester": 7,
-          "credit": 10,
-          "classHours": 0
-        },
-        "grade": "AA"
-      },
-      {
-        "course": {
-          "shortName": "CSE4074",
-          "fullName": "Computer Networks",
-          "description": "",
-          "semester": 7,
-          "credit": 5,
-          "classHours": 4
-        },
-        "grade": "CB"
-      },
-      {
-        "course": {
-          "shortName": "CSE4219",
-          "fullName": "Principles of Embedded System Design",
-          "description": "",
-          "prerequisite": [
-            "CSE3038"
-          ],
-          "semester": 7,
-          "credit": 6,
-          "classHours": 4
-        },
-        "grade": "CD"
-      },
-      {
-        "course": {
-          "shortName": "ISG121",
-          "fullName": "Work Safety 1",
-          "description": "",
-          "semester": 7,
+          "semester": 6,
           "credit": 2,
           "classHours": 2
         },
-        "grade": "BA"
-      },
-      {
-        "course": {
-          "shortName": "CSE4288",
-          "fullName": "Introduction to Machine Learning",
-          "description": "",
-          "prerequisite": [
-            "STAT2253",
-            "MATH2256"
-          ],
-          "semester": 7,
-          "credit": 5,
-          "classHours": 4
-        },
-        "grade": "CC"
-      },
-      {
-        "course": {
-          "dates": [
-            {
-              "startTime": "10:30",
-              "endTime": "11:20",
-              "dayOfWeek": "Tuesday"
-            },
-            {
-              "startTime": "11:30",
-              "endTime": "12:20",
-              "dayOfWeek": "Tuesday"
-            }
-          ],
-          "sectionName": "1.1",
-          "lecturer": {
-            "reputation": "Assoc. Prof.",
-            "officeHours": [],
-            "salary": 10000,
-            "employmentStatus": "active",
-            "personName": "Ömer",
-            "personSurname": "Korçak",
-            "username": "omer",
-            "password": "omerkorcak"
-          },
-          "quota": 50,
-          "requiredCredit": 165,
-          "location": "M2-Z04",
-          "shortName": "CSE4034",
-          "fullName": "Advanced Unix Programming",
-          "description": "Elective",
-          "semester": 7,
-          "credit": 5,
-          "classHours": 4
-        },
         "grade": "BB"
-      },
-      {
-        "course": {
-          "dates": [
-            {
-              "startTime": "15:00",
-              "endTime": "15:50",
-              "dayOfWeek": "Thursday"
-            },
-            {
-              "startTime": "16:00",
-              "endTime": "16:50",
-              "dayOfWeek": "Thursday"
-            }
-          ],
-          "sectionName": "1.2",
-          "lecturer": {
-            "reputation": "Asst. Prof.",
-            "officeHours": [],
-            "salary": 10000,
-            "employmentStatus": "active",
-            "personName": "Mehmet",
-            "personSurname": "Baran",
-            "username": "mehmet",
-            "password": "mehmetbaran"
-          },
-          "quota": 50,
-          "requiredCredit": 155,
-          "location": "M2-Z05",
-          "shortName": "CSE4038",
-          "fullName": "Introduction to Parallel Processing",
-          "description": "Elective",
-          "semester": 7,
-          "credit": 5,
-          "classHours": 4
-        },
-        "grade": "CB"
       }
     ],
     "notes": ""
   },
   "personName": "Mehmet",
-  "personSurname": "Selcuk",
+  "personSurname": "Aksoy",
   "username": "mehmet",
-  "password": "mehmetselcuk"
+  "password": "mehmetaksoy"
 }
