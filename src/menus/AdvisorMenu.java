@@ -2,17 +2,14 @@ package menus;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.regex.Pattern;
 
 import models.*;
 import constants.String_Constants;
 import contollers.AdvisorController;
 import menus.*;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.Arrays;
 import java.util.Collections;
+
 public class AdvisorMenu {
 
     private AdvisorController advisorController;
@@ -24,15 +21,21 @@ public class AdvisorMenu {
         this.advisorController = advisorController;
     }
 
-
     public void advisorMenu() {
-        System.out.println("Which student do you want to go on?");
-        Menu menu = new Menu();
+        System.out.println("Which student do you want to go on?\n"
+                + "Type -1 for exit");
         for (int j = 0; j < advisorController.getStudents().size(); j++) {
             System.out.println((j + 1) + "- " + advisorController.getStudents().get(j).getFullName());
         }
 
+        // scanner = new Scanner(System.in);
         int studentSelection = scanner.nextInt();
+
+        if (studentSelection == -1) {
+            Menu menu = new Menu();
+            menu.LoginMenu();
+            return;
+        }
 
         Student student = advisorController.getStudents().get(studentSelection - 1);
 
@@ -41,91 +44,72 @@ public class AdvisorMenu {
 
         ArrayList<Course> coursesOfStudent = advisorController.getStudents().get(studentSelection - 1)
                 .getSelectedCourses();
-        for (int i = 0; i < coursesOfStudent.size(); i++) {
-            Course course = coursesOfStudent.get(i);
-            System.out.println((i + 1) + " -> " + course.getFullName() + " " + course.getShortName());
-        }
+        if ((student.getStatus() == "Rejected" || student.getStatus() == "Approved")) {
+            System.out.println("Approve/Reject process is already done for this student.\n");
 
-        System.out.println("Please enter the courses you want to approve for the student \n"
-                + "Type * to approve all courses\n"
-                + "The non-chosen ones will automatically be rejected\n"
-                + "Selection/s: ");
-        // scanner.nextLine();
-        String selections = scanner.nextLine();
-
-
-        ArrayList<Integer> sortedSelections = new ArrayList<>();
-
-        while(true) {
-            System.out.print("Enter a comma-separated list of numbers: ");
-            selections = scanner.nextLine();
-
-            if (!isValidFormat(selections)) {
-                System.out.println("Invalid format. Please enter a valid comma-separated list of numbers.");
-            }
-            else if (!ifSelectionOutOfBounds(sortedSelections, student)) {
-                System.out.println("Invalid input. Please stay in bounds.");
-            }
-            else {
-                sortedSelections = sortNumbers(selections);
-                break;
-            }
-
-        }
-
-        advisorController.approveStudentSelection(student, sortedSelections);
-
-        // System.out.println("1-Approve selections\n2-Reject selections");
-        // int decision = 0;
-        // try {
-        //     decision = scanner.nextInt();
-        // } catch (Exception e) {
-        //     System.out.println("Invalid input type. Please try again.");
-
-        // }
-        // if (decision != 1 && decision != 2) {
-        //     System.out.println("Input must be 1 or 2. Please try again.");
-        //     advisorMenu();
-        // }
-
-        // try {
-        //     if (decision == 1) {
-        //         advisorController.getStudents().get(studentSelection - 1).setStatus("Approved");
-        //         advisorController.approveStudentSelection(student, selections);
-        //     } else if (decision == 2) {
-        //         advisorController.rejectStudentSelection(student, selections);
-        //     }
-        // } catch (Exception e) {
-        //     e.printStackTrace();
-        //     advisorMenu();
-        // }
-
-
-        if (menu.getLoggedInUser() == null) {
-            menu.LoginMenu();
         } else {
-            advisorMenu();
+            for (int i = 0; i < coursesOfStudent.size(); i++) {
+                Course course = coursesOfStudent.get(i);
+                System.out.println((i + 1) + " -> " + course.getFullName() + " " + course.getShortName());
+            }
+            System.out.println("Please enter the courses you want to approve for the student \n"
+                    + "Type * to approve all courses\n"
+                    + "The non-chosen ones will automatically be rejected\n"
+                    + "Selection/s: ");
+
+            scanner = new Scanner(System.in);
+            // scanner.nextLine();
+            String selections = scanner.nextLine();
+
+            ArrayList<Integer> sortedSelections = new ArrayList<>();
+
+            while (true) {
+                if (selections.equals("*")) {
+                    sortedSelections.add(0);
+                    advisorController.approveStudentSelection(student, sortedSelections);
+                    break;
+                } else {
+
+                    if (!isValidFormat(selections)) {
+                        System.out.println("Invalid format. Please enter a valid comma-separated list of numbers.\n");
+                    } else {
+                        sortedSelections = sortNumbers(selections);
+
+                        if (sortedSelections.get(0) <= 0) {
+                            // || sortedSelections.get(sortedSelections.size() - 1) >
+                            // student.getSelectedCourses().size()
+                            System.out.println("Invalid input. Please stay in bounds.\n");
+                        } else {
+                            advisorController.approveStudentSelection(student, sortedSelections);
+                            break;
+                        }
+                    }
+                    System.out.print("Enter a comma-separated list of numbers: ");
+                    selections = scanner.nextLine();
+                }
+            }
+
         }
 
+        advisorMenu();
 
     }
 
-    private  boolean isValidFormat(String input) {
-        // Define the regex pattern for a comma-separated list of numbers
-        String regex = "^\\d+(,\\d+)*$";
+    private boolean isValidFormat(String selections) {
+        selections = selections.replaceAll("[,\\s]", "");
 
-        // Create a Pattern object
-        Pattern pattern = Pattern.compile(regex);
-
-        // Create a Matcher object
-        Matcher matcher = pattern.matcher(input);
-
-        // Check if the input matches the pattern
-        return matcher.matches();
+        try {
+            int intValue = Integer.parseInt(selections);
+            return true;
+        } catch (Exception e) {
+            System.out.println("Exception: " + e.getMessage() + "\n");
+            return false;
+        }
     }
 
-    private  ArrayList<Integer> sortNumbers(String input) {
-        // Split the input string by commas, convert the substrings to integers, and sort
+    private ArrayList<Integer> sortNumbers(String input) {
+        // Split the input string by commas, convert the substrings to integers, and
+        // sort
         String[] numberStrings = input.split(",");
         ArrayList<Integer> numbers = new ArrayList<>();
 
@@ -139,10 +123,12 @@ public class AdvisorMenu {
         return numbers;
     }
 
-    private boolean ifSelectionOutOfBounds(ArrayList<Integer> selections, Student student) {
-        for (int i = 0; i < selections.size(); i++) {
-            if (selections.get(i) <= 0 || selections.get(i) > student.getSelectedCourses().size()) {
-                return true;
-            }
-        }
-        return false;
+    // private boolean ifSelectionOutOfBounds(ArrayList<Integer> selections, Student
+    // student) {
+    // if (selections.get(0) <= 0 || selections.get(selections.size() - 1) >
+    // student.getSelectedCourses().size()) {
+    // return true;
+    // }
+    // return false;
+    // }
+}

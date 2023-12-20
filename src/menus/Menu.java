@@ -106,12 +106,12 @@ public class Menu {
         }
         for (int i = 0; i < lecturers.size(); i++) {
             if (lecturers.get(i).getUsername().equals(username) && lecturers.get(i).getPassword().equals(password)) {
-                setLoggedInUser(lecturers.get(i));
+                setLoggedInUser(this.loggedInUser = lecturers.get(i));
             }
         }
         for (int i = 0; i < advisors.size(); i++) {
             if (advisors.get(i).getUsername().equals(username) && advisors.get(i).getPassword().equals(password)) {
-                setLoggedInUser(advisors.get(i));
+                setLoggedInUser(this.loggedInUser = advisors.get(i));
             }
         }
         if (this.loggedInUser == null) {
