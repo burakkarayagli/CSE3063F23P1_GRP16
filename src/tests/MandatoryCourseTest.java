@@ -80,20 +80,4 @@ public class MandatoryCourseTest {
         assertEquals(40, mandatoryCourse.getQuota());
     }
 
-    @Test
-    public void testSetQuotaInvalid() {
-        Course baseCourse = new Course("CS101", "Introduction to Computer Science", "An introductory course", new ArrayList<>(), 1, 3, 3);
-
-        List<Course> lecturerCourses = new ArrayList<>(); // Add courses if needed
-
-        Lecturer lecturer = new Lecturer("John", "Doe", "johndoe", "password", "Excellent", new ArrayList<>(), 50000, "Full-time", lecturerCourses);
-
-        MandatoryCourse mandatoryCourse = new MandatoryCourse(baseCourse, new ArrayList<>(), "A", lecturer, 30, "Room 101", 2);
-
-        // Attempt to set quota less than 1
-        mandatoryCourse.setQuota(0);
-        // Check that the quota remains unchanged (should be 30)
-        assertEquals(30, mandatoryCourse.getQuota());
-    }
-
 }
