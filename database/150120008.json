@@ -1,7 +1,7 @@
 {
-  "address": "Avcilar/Istanbul",
-  "phoneNumber": "5423456789",
-  "semester": 5,
+  "address": "Sisli/Istanbul",
+  "phoneNumber": "5033445566",
+  "semester": 3,
   "entranceYear": 2022,
   "status": "",
   "selectedCourses": [],
@@ -171,151 +171,12 @@
           "classHours": 2
         },
         "grade": "DD"
-      },
-      {
-        "course": {
-          "shortName": "CSE2023",
-          "fullName": "Discrete Computational Structures",
-          "description": "",
-          "semester": 3,
-          "credit": 6,
-          "classHours": 3
-        },
-        "grade": "BA"
-      },
-      {
-        "course": {
-          "shortName": "CSE2225",
-          "fullName": "Data Structures",
-          "description": "",
-          "prerequisite": [
-            "CSE1242"
-          ],
-          "semester": 3,
-          "credit": 7,
-          "classHours": 3
-        },
-        "grade": "BB"
-      },
-      {
-        "course": {
-          "shortName": "ECON2004",
-          "fullName": "Engineering Economy",
-          "description": "",
-          "semester": 3,
-          "credit": 4,
-          "classHours": 3
-        },
-        "grade": "CB"
-      },
-      {
-        "course": {
-          "shortName": "EE2031",
-          "fullName": "Electric Circuits",
-          "description": "",
-          "prerequisite": [
-            "PHYS1102"
-          ],
-          "semester": 3,
-          "credit": 5,
-          "classHours": 3
-        },
-        "grade": "DC"
-      },
-      {
-        "course": {
-          "shortName": "MATH2055",
-          "fullName": "Differential Equations",
-          "description": "",
-          "semester": 3,
-          "credit": 4,
-          "classHours": 3
-        },
-        "grade": "DD"
-      },
-      {
-        "course": {
-          "shortName": "MATH2059",
-          "fullName": "Numerical Methods",
-          "description": "",
-          "prerequisite": [
-            "MATH1001"
-          ],
-          "semester": 3,
-          "credit": 4,
-          "classHours": 3
-        },
-        "grade": "BA"
-      },
-      {
-        "course": {
-          "shortName": "CSE2138",
-          "fullName": "Systems Programming",
-          "description": "",
-          "semester": 4,
-          "credit": 7,
-          "classHours": 3
-        },
-        "grade": "BB"
-      },
-      {
-        "course": {
-          "shortName": "CSE2246",
-          "fullName": "Analysis of Algorithms",
-          "description": "",
-          "prerequisite": [
-            "CSE2225"
-          ],
-          "semester": 4,
-          "credit": 6,
-          "classHours": 3
-        },
-        "grade": "CB"
-      },
-      {
-        "course": {
-          "shortName": "CSE2260",
-          "fullName": "Principles of Programming Languages",
-          "description": "",
-          "prerequisite": [
-            "CSE1242"
-          ],
-          "semester": 4,
-          "credit": 6,
-          "classHours": 3
-        },
-        "grade": "DC"
-      },
-      {
-        "course": {
-          "shortName": "EE2032",
-          "fullName": "Electronics",
-          "description": "",
-          "prerequisite": [
-            "EE2031"
-          ],
-          "semester": 4,
-          "credit": 5,
-          "classHours": 3
-        },
-        "grade": "DD"
-      },
-      {
-        "course": {
-          "shortName": "STAT2253",
-          "fullName": "Probability and Statistics for Computer Engineering",
-          "description": "",
-          "semester": 4,
-          "credit": 5,
-          "classHours": 3
-        },
-        "grade": "BA"
       }
     ],
     "notes": ""
   },
-  "personName": "Sibel",
-  "personSurname": "Yigit",
-  "username": "sibel",
-  "password": "sibelyigit"
+  "personName": "Ayse",
+  "personSurname": "Kaya",
+  "username": "ayse",
+  "password": "aysekaya"
 }
