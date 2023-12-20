@@ -3,8 +3,17 @@
   "phoneNumber": "5312347654",
   "semester": 5,
   "entranceYear": 2021,
-  "status": "",
-  "selectedCourses": [],
+  "status": "Approved",
+  "selectedCourses": [
+    {
+      "shortName": "BUS1003",
+      "fullName": "Entrepreneurship and Innovation",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "classHours": 2
+    }
+  ],
   "transcript": {
     "listGrades": [
       {
