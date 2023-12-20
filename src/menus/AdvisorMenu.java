@@ -13,6 +13,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.Arrays;
 import java.util.Collections;
+
 public class AdvisorMenu {
 
     private AdvisorController advisorController;
@@ -23,7 +24,6 @@ public class AdvisorMenu {
     public AdvisorMenu(AdvisorController advisorController) {
         this.advisorController = advisorController;
     }
-
 
     public void advisorMenu() {
         System.out.println("Which student do you want to go on?");
@@ -53,20 +53,17 @@ public class AdvisorMenu {
         // scanner.nextLine();
         String selections = scanner.nextLine();
 
-
         ArrayList<Integer> sortedSelections = new ArrayList<>();
 
-        while(true) {
+        while (true) {
             System.out.print("Enter a comma-separated list of numbers: ");
             selections = scanner.nextLine();
 
             if (!isValidFormat(selections)) {
                 System.out.println("Invalid format. Please enter a valid comma-separated list of numbers.");
-            }
-            else if (!ifSelectionOutOfBounds(sortedSelections, student)) {
+            } else if (!ifSelectionOutOfBounds(sortedSelections, student)) {
                 System.out.println("Invalid input. Please stay in bounds.");
-            }
-            else {
+            } else {
                 sortedSelections = sortNumbers(selections);
                 break;
             }
@@ -78,28 +75,28 @@ public class AdvisorMenu {
         // System.out.println("1-Approve selections\n2-Reject selections");
         // int decision = 0;
         // try {
-        //     decision = scanner.nextInt();
+        // decision = scanner.nextInt();
         // } catch (Exception e) {
-        //     System.out.println("Invalid input type. Please try again.");
+        // System.out.println("Invalid input type. Please try again.");
 
         // }
         // if (decision != 1 && decision != 2) {
-        //     System.out.println("Input must be 1 or 2. Please try again.");
-        //     advisorMenu();
+        // System.out.println("Input must be 1 or 2. Please try again.");
+        // advisorMenu();
         // }
 
         // try {
-        //     if (decision == 1) {
-        //         advisorController.getStudents().get(studentSelection - 1).setStatus("Approved");
-        //         advisorController.approveStudentSelection(student, selections);
-        //     } else if (decision == 2) {
-        //         advisorController.rejectStudentSelection(student, selections);
-        //     }
-        // } catch (Exception e) {
-        //     e.printStackTrace();
-        //     advisorMenu();
+        // if (decision == 1) {
+        // advisorController.getStudents().get(studentSelection -
+        // 1).setStatus("Approved");
+        // advisorController.approveStudentSelection(student, selections);
+        // } else if (decision == 2) {
+        // advisorController.rejectStudentSelection(student, selections);
         // }
-
+        // } catch (Exception e) {
+        // e.printStackTrace();
+        // advisorMenu();
+        // }
 
         if (menu.getLoggedInUser() == null) {
             menu.LoginMenu();
@@ -107,10 +104,9 @@ public class AdvisorMenu {
             advisorMenu();
         }
 
-
     }
 
-    private  boolean isValidFormat(String input) {
+    private boolean isValidFormat(String input) {
         // Define the regex pattern for a comma-separated list of numbers
         String regex = "^\\d+(,\\d+)*$";
 
@@ -124,8 +120,9 @@ public class AdvisorMenu {
         return matcher.matches();
     }
 
-    private  ArrayList<Integer> sortNumbers(String input) {
-        // Split the input string by commas, convert the substrings to integers, and sort
+    private ArrayList<Integer> sortNumbers(String input) {
+        // Split the input string by commas, convert the substrings to integers, and
+        // sort
         String[] numberStrings = input.split(",");
         ArrayList<Integer> numbers = new ArrayList<>();
 
@@ -146,3 +143,5 @@ public class AdvisorMenu {
             }
         }
         return false;
+    }
+}

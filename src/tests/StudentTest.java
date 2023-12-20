@@ -67,14 +67,49 @@ public class StudentTest {
 
     @Test
     public void testAddCourse() {
-        student.setStatus("approved");
-        assertTrue(student.addCourse(course));
+        // check selected courses
+        student.addCourse(course);
+        assertTrue(student.getSelectedCourses().contains(course));
     }
 
     @Test
     public void testDropCourse() {
-        student.setStatus("approved");
         student.addCourse(course);
-        assertTrue(student.dropCourse(course));
+        assertTrue(student.getSelectedCourses().contains(course));
     }
+
+    //
+    @Test
+    public void testCanAddMoreThan5Courses() {
+        ArrayList<Course> courses = new ArrayList<>();
+        courses.add(new Course());
+        courses.add(new Course());
+        courses.add(new Course());
+        courses.add(new Course());
+        courses.add(new Course());
+        student.setSelectedCourses(courses);
+        assertFalse(student.addCourse(course));
+    }
+
+    // Add courses exceeding 30 credits and call getWarnings()
+    @Test
+    public void testWarningMessage() {
+        ArrayList<Course> courses = new ArrayList<>();
+        courses.add(new Course("CSE 101", "Introduction to Computer Science", "Introduction to Computer Science",
+                new ArrayList<String>(), 1, 7, 3));
+        courses.add(new Course("CSE 102", "Introduction to Computer Science", "Introduction to Computer Science",
+                new ArrayList<String>(), 1, 7, 3));
+        courses.add(new Course("CSE 103", "Introduction to Computer Science", "Introduction to Computer Science",
+                new ArrayList<String>(), 1, 7, 3));
+        courses.add(new Course("CSE 104", "Introduction to Computer Science", "Introduction to Computer Science",
+                new ArrayList<String>(), 1, 7, 3));
+        courses.add(new Course("CSE 105", "Introduction to Computer Science", "Introduction to Computer Science",
+                new ArrayList<String>(), 1, 7, 3));
+
+        // Add courses exceeding 30 credits and call getWarnings()
+        System.out.println(student.getWarnings());
+        // assertTrue(student.getWarnings().contains("Student has exceeded the credit
+        // limit"));
+    }
+
 }

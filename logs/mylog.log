@@ -237,3 +237,19 @@
 2023-12-20 11:41:44 INFO  Menu:62 - Login menu displayed
 2023-12-20 11:41:54 WARN  Menu:77 - User ilayda failed to log in with username ilayda and password ilaydakorkmaz
 2023-12-20 11:41:54 INFO  Menu:62 - Login menu displayed
+2023-12-20 15:21:31 INFO  Menu:62 - Login menu displayed
+2023-12-20 15:21:34 INFO  Menu:74 - User burak logged in successfully
+2023-12-20 15:21:34 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 15:23:51 INFO  Menu:62 - Login menu displayed
+2023-12-20 15:23:55 INFO  Menu:74 - User burak logged in successfully
+2023-12-20 15:23:55 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 15:23:58 INFO  StudentMenu:156 - Approval request sent
+2023-12-20 15:23:58 INFO  StudentController:108 - Approval request sent to advisor for student:Burak
+2023-12-20 15:24:04 INFO  StudentMenu:74 - Course adding menu displayed
+2023-12-20 15:24:04 INFO  StudentMenu:131 - Available courses displayed
+2023-12-20 15:24:28 INFO  Menu:62 - Login menu displayed
+2023-12-20 15:24:31 WARN  Menu:77 - User betul failed to log in with username betul and password betulboz
+2023-12-20 15:24:31 INFO  Menu:62 - Login menu displayed
+2023-12-20 15:24:39 WARN  Menu:77 - User betul failed to log in with username betul and password betulboz
+2023-12-20 15:24:39 INFO  Menu:62 - Login menu displayed
+2023-12-20 15:26:21 INFO  Menu:74 - User fatmacorut logged in successfully

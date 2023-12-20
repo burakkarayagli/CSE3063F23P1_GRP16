@@ -125,9 +125,7 @@ public class Advisor extends Staff {
         }
     }
 
-
     public boolean approveStudent(Student student, ArrayList<Integer> selections) {
-
 
         try {
 
@@ -135,7 +133,7 @@ public class Advisor extends Staff {
                 student.setStatus("Approved");
                 return true;
             } else {
-                booelan status = false;
+                boolean status = false;
                 for (int i = student.getSelectedCourses().size() - 1; i >= 0; i--) {
                     if (!numberExists(selections, i)) {
                         student.dropCourse(student.getSelectedCourses().get(i));
@@ -181,7 +179,7 @@ public class Advisor extends Staff {
                 return true;
             }
         }
-        
+
         return false;
     }
 
