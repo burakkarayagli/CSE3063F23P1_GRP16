@@ -150,6 +150,7 @@ public class Advisor extends Staff {
                 return true;
             } else {
                 boolean status = false;
+
                 boolean exists = false;
                 for (int i = student.getSelectedCourses().size(); i > 0; i--) {
                     // System.out.println(" --> " + i + " - " + "j-> " + selections.get(j) + "
@@ -195,6 +196,7 @@ public class Advisor extends Staff {
         }
 
     }
+
 
     // Alternative approveStudent method
     /*

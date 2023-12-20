@@ -22,6 +22,16 @@ public class Course {
         this.classHours = classHours;
     }
 
+    public Course() {
+        this.shortName = "";
+        this.fullName = "";
+        this.description = "";
+        this.prerequisite = new ArrayList<String>();
+        this.semester = 0;
+        this.credit = 0;
+        this.classHours = 0;
+    }
+
     public String getShortName() {
         return shortName;
     }
@@ -97,23 +107,23 @@ public class Course {
         }
     }
 
-    public String getPrerequisities(){
+    public String getPrerequisities() {
         String prerequisites = "";
-        
-        if(prerequisite==null || prerequisite.size()==0){
+
+        if (prerequisite == null || prerequisite.size() == 0) {
             return "There is no prerequisite";
-        }
-        else{
-            for(int i = 0;i<prerequisite.size();i++){
-                prerequisites+=prerequisite.get(i)+" ";
+        } else {
+            for (int i = 0; i < prerequisite.size(); i++) {
+                prerequisites += prerequisite.get(i) + " ";
             }
         }
         return prerequisites;
     }
+
     public String toString() {
         return "Course Code: " + this.shortName + "\nCourse Name:" + this.fullName + "\nDescription: "
-                + this.description + "\nPrerequisite: " + this.getPrerequisities()+ "\nSemester: " + this.semester
-                + "\nCredit: " + this.credit + "\nClass Hours: " + this.classHours+"\n---------";
+                + this.description + "\nPrerequisite: " + this.getPrerequisities() + "\nSemester: " + this.semester
+                + "\nCredit: " + this.credit + "\nClass Hours: " + this.classHours + "\n---------";
     };
 
 }
