@@ -1,0 +1,182 @@
+{
+  "address": "Sariyer/Istanbul",
+  "phoneNumber": "5100112233",
+  "semester": 3,
+  "entranceYear": 2022,
+  "status": "",
+  "selectedCourses": [],
+  "transcript": {
+    "listGrades": [
+      {
+        "course": {
+          "shortName": "ATA121",
+          "fullName": "Atatürk İlkeleri ve İnkılap Tarihi I",
+          "description": "",
+          "semester": 1,
+          "credit": 2,
+          "classHours": 2
+        },
+        "grade": "BA"
+      },
+      {
+        "course": {
+          "shortName": "MBG1201",
+          "fullName": "Introduction to Modern Biology",
+          "description": "",
+          "semester": 1,
+          "credit": 5,
+          "classHours": 3
+        },
+        "grade": "BB"
+      },
+      {
+        "course": {
+          "shortName": "CSE1200",
+          "fullName": "Introduction to Computer Engineering",
+          "description": "",
+          "semester": 1,
+          "credit": 4,
+          "classHours": 3
+        },
+        "grade": "CB"
+      },
+      {
+        "course": {
+          "shortName": "CSE1241",
+          "fullName": "Computer Programming I",
+          "description": "",
+          "semester": 1,
+          "credit": 6,
+          "classHours": 4
+        },
+        "grade": "DC"
+      },
+      {
+        "course": {
+          "shortName": "MATH1001",
+          "fullName": "Calculus I",
+          "description": "",
+          "semester": 1,
+          "credit": 6,
+          "classHours": 2
+        },
+        "grade": "DD"
+      },
+      {
+        "course": {
+          "shortName": "PHYS1001",
+          "fullName": "Physics I",
+          "description": "",
+          "semester": 1,
+          "credit": 4,
+          "classHours": 2
+        },
+        "grade": "BA"
+      },
+      {
+        "course": {
+          "shortName": "PHYS1003",
+          "fullName": "Physics Lab I",
+          "description": "",
+          "semester": 1,
+          "credit": 2,
+          "classHours": 2
+        },
+        "grade": "BB"
+      },
+      {
+        "course": {
+          "shortName": "TRD121",
+          "fullName": "Türk Dili I",
+          "description": "",
+          "semester": 1,
+          "credit": 2,
+          "classHours": 2
+        },
+        "grade": "CB"
+      },
+      {
+        "course": {
+          "shortName": "ATA122",
+          "fullName": "Atatürk İlkeleri ve İnkılap Tarihi II",
+          "description": "",
+          "semester": 2,
+          "credit": 2,
+          "classHours": 2
+        },
+        "grade": "DC"
+      },
+      {
+        "course": {
+          "shortName": "CSE1242",
+          "fullName": "Computer Programming II",
+          "description": "",
+          "semester": 2,
+          "credit": 6,
+          "classHours": 4
+        },
+        "grade": "DD"
+      },
+      {
+        "course": {
+          "shortName": "MATH1002",
+          "fullName": "Calculus II",
+          "description": "",
+          "semester": 2,
+          "credit": 6,
+          "classHours": 2
+        },
+        "grade": "BA"
+      },
+      {
+        "course": {
+          "shortName": "MATH2256",
+          "fullName": "Linear Algebra for Computer Engineering",
+          "description": "",
+          "semester": 2,
+          "credit": 5,
+          "classHours": 3
+        },
+        "grade": "BB"
+      },
+      {
+        "course": {
+          "shortName": "PHYS1002",
+          "fullName": "Physics II",
+          "description": "",
+          "semester": 2,
+          "credit": 4,
+          "classHours": 2
+        },
+        "grade": "CB"
+      },
+      {
+        "course": {
+          "shortName": "PHYS1004",
+          "fullName": "Physics Lab II",
+          "description": "",
+          "semester": 2,
+          "credit": 2,
+          "classHours": 2
+        },
+        "grade": "DC"
+      },
+      {
+        "course": {
+          "shortName": "TRD122",
+          "fullName": "Türk Dili II",
+          "description": "",
+          "semester": 2,
+          "credit": 2,
+          "classHours": 2
+        },
+        "grade": "DD"
+      }
+    ],
+    "notes": ""
+  },
+  "personName": "Ozlem",
+  "personSurname": "Tas",
+  "username": "ozlem",
+  "password": "ozlemtas"
+}
