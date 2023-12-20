@@ -22,14 +22,24 @@ public class AdvisorMenu {
     }
 
     public void advisorMenu() {
-        System.out.println("Which student do you want to go on?\n"
+        
+        int studentSelection = 0;
+        while(studentSelection<1 || studentSelection>advisorController.getStudents().size()){
+            System.out.println("Which student do you want to go on?\n"
                 + "Type -1 for exit");
-        for (int j = 0; j < advisorController.getStudents().size(); j++) {
-            System.out.println((j + 1) + "- " + advisorController.getStudents().get(j).getFullName());
-        }
+            for (int j = 0; j < advisorController.getStudents().size(); j++) {
+                System.out.println((j + 1) + "- " + advisorController.getStudents().get(j).getFullName());
+            }
+            try{
+                // scanner = new Scanner(System.in);
+                studentSelection = scanner.nextInt();
+            }
+            catch(Exception e){
+                System.out.println("Invalid choice. Please try again.");
+                scanner.nextLine();
 
-        // scanner = new Scanner(System.in);
-        int studentSelection = scanner.nextInt();
+            }
+        }
 
         if (studentSelection == -1) {
             Menu menu = new Menu();

@@ -7378,8 +7378,17 @@
           "phoneNumber": "5312347654",
           "semester": 5,
           "entranceYear": 2021,
-          "status": "",
-          "selectedCourses": [],
+          "status": "Approved",
+          "selectedCourses": [
+            {
+              "shortName": "BUS1003",
+              "fullName": "Entrepreneurship and Innovation",
+              "description": "",
+              "semester": 1,
+              "credit": 2,
+              "classHours": 2
+            }
+          ],
           "transcript": {
             "listGrades": [
               {
@@ -7699,8 +7708,17 @@
           "phoneNumber": "5345274592",
           "semester": 5,
           "entranceYear": 2021,
-          "status": "",
-          "selectedCourses": [],
+          "status": "Approved",
+          "selectedCourses": [
+            {
+              "shortName": "YDI1004",
+              "fullName": "Report Writing in English",
+              "description": "",
+              "semester": 1,
+              "credit": 2,
+              "classHours": 2
+            }
+          ],
           "transcript": {
             "listGrades": [
               {
@@ -10866,32 +10884,6 @@
               },
               {
                 "course": {
-                  "dates": [
-                    {
-                      "startTime": "10:30",
-                      "endTime": "11:20",
-                      "dayOfWeek": "Tuesday"
-                    },
-                    {
-                      "startTime": "11:30",
-                      "endTime": "12:20",
-                      "dayOfWeek": "Tuesday"
-                    }
-                  ],
-                  "sectionName": "1.1",
-                  "lecturer": {
-                    "reputation": "Assoc. Prof.",
-                    "officeHours": [],
-                    "salary": 10000,
-                    "employmentStatus": "active",
-                    "personName": "Ömer",
-                    "personSurname": "Korçak",
-                    "username": "omer",
-                    "password": "omerkorcak"
-                  },
-                  "quota": 50,
-                  "requiredCredit": 165,
-                  "location": "M2-Z04",
                   "shortName": "CSE4034",
                   "fullName": "Advanced Unix Programming",
                   "description": "Elective",
@@ -10903,32 +10895,6 @@
               },
               {
                 "course": {
-                  "dates": [
-                    {
-                      "startTime": "15:00",
-                      "endTime": "15:50",
-                      "dayOfWeek": "Thursday"
-                    },
-                    {
-                      "startTime": "16:00",
-                      "endTime": "16:50",
-                      "dayOfWeek": "Thursday"
-                    }
-                  ],
-                  "sectionName": "1.2",
-                  "lecturer": {
-                    "reputation": "Asst. Prof.",
-                    "officeHours": [],
-                    "salary": 10000,
-                    "employmentStatus": "active",
-                    "personName": "Mehmet",
-                    "personSurname": "Baran",
-                    "username": "mehmet",
-                    "password": "mehmetbaran"
-                  },
-                  "quota": 50,
-                  "requiredCredit": 155,
-                  "location": "M2-Z05",
                   "shortName": "CSE4038",
                   "fullName": "Introduction to Parallel Processing",
                   "description": "Elective",
@@ -13245,32 +13211,6 @@
               },
               {
                 "course": {
-                  "dates": [
-                    {
-                      "startTime": "14:00",
-                      "endTime": "14:50",
-                      "dayOfWeek": "Friday"
-                    },
-                    {
-                      "startTime": "15:00",
-                      "endTime": "15:50",
-                      "dayOfWeek": "Friday"
-                    }
-                  ],
-                  "sectionName": "1.1",
-                  "lecturer": {
-                    "reputation": "Assoc. Prof.",
-                    "officeHours": [],
-                    "salary": 10000,
-                    "employmentStatus": "active",
-                    "personName": "Borahan",
-                    "personSurname": "Tümer",
-                    "username": "borahan",
-                    "password": "borahantumer"
-                  },
-                  "quota": 50,
-                  "requiredCredit": 165,
-                  "location": "M2-Z06",
                   "shortName": "CSE4040",
                   "fullName": "Cloud Computing",
                   "description": "Elective",
@@ -13282,32 +13222,6 @@
               },
               {
                 "course": {
-                  "dates": [
-                    {
-                      "startTime": "10:30",
-                      "endTime": "11:20",
-                      "dayOfWeek": "Tuesday"
-                    },
-                    {
-                      "startTime": "11:30",
-                      "endTime": "12:20",
-                      "dayOfWeek": "Tuesday"
-                    }
-                  ],
-                  "sectionName": "1.1",
-                  "lecturer": {
-                    "reputation": "Assoc. Prof.",
-                    "officeHours": [],
-                    "salary": 10000,
-                    "employmentStatus": "active",
-                    "personName": "Ömer",
-                    "personSurname": "Korçak",
-                    "username": "omer",
-                    "password": "omerkorcak"
-                  },
-                  "quota": 50,
-                  "requiredCredit": 165,
-                  "location": "M2-Z04",
                   "shortName": "CSE4034",
                   "fullName": "Advanced Unix Programming",
                   "description": "Elective",
@@ -14274,12 +14188,21 @@
           "password": "gulsenSen"
         },
         {
-          "address": "Bahcelievler/Istanbul",
-          "phoneNumber": "5211223344",
+          "address": "Kartal/Istanbul",
+          "phoneNumber": "5312347654",
           "semester": 5,
           "entranceYear": 2021,
-          "status": "",
-          "selectedCourses": [],
+          "status": "Approved",
+          "selectedCourses": [
+            {
+              "shortName": "BUS1003",
+              "fullName": "Entrepreneurship and Innovation",
+              "description": "",
+              "semester": 1,
+              "credit": 2,
+              "classHours": 2
+            }
+          ],
           "transcript": {
             "listGrades": [
               {
@@ -14590,9 +14513,9 @@
             "notes": ""
           },
           "personName": "Burak",
-          "personSurname": "Oguz",
+          "personSurname": "Karayağlı",
           "username": "burak",
-          "password": "burakoguz"
+          "password": "burakkarayagli"
         },
         {
           "address": "Beylikduzu/Istanbul",
@@ -15601,32 +15524,6 @@
               },
               {
                 "course": {
-                  "dates": [
-                    {
-                      "startTime": "10:30",
-                      "endTime": "11:20",
-                      "dayOfWeek": "Tuesday"
-                    },
-                    {
-                      "startTime": "11:30",
-                      "endTime": "12:20",
-                      "dayOfWeek": "Tuesday"
-                    }
-                  ],
-                  "sectionName": "1.1",
-                  "lecturer": {
-                    "reputation": "Assoc. Prof.",
-                    "officeHours": [],
-                    "salary": 10000,
-                    "employmentStatus": "active",
-                    "personName": "Ömer",
-                    "personSurname": "Korçak",
-                    "username": "omer",
-                    "password": "omerkorcak"
-                  },
-                  "quota": 50,
-                  "requiredCredit": 165,
-                  "location": "M2-Z04",
                   "shortName": "CSE4034",
                   "fullName": "Advanced Unix Programming",
                   "description": "Elective",
@@ -15638,32 +15535,6 @@
               },
               {
                 "course": {
-                  "dates": [
-                    {
-                      "startTime": "15:00",
-                      "endTime": "15:50",
-                      "dayOfWeek": "Thursday"
-                    },
-                    {
-                      "startTime": "16:00",
-                      "endTime": "16:50",
-                      "dayOfWeek": "Thursday"
-                    }
-                  ],
-                  "sectionName": "1.2",
-                  "lecturer": {
-                    "reputation": "Asst. Prof.",
-                    "officeHours": [],
-                    "salary": 10000,
-                    "employmentStatus": "active",
-                    "personName": "Mehmet",
-                    "personSurname": "Baran",
-                    "username": "mehmet",
-                    "password": "mehmetbaran"
-                  },
-                  "quota": 50,
-                  "requiredCredit": 155,
-                  "location": "M2-Z05",
                   "shortName": "CSE4038",
                   "fullName": "Introduction to Parallel Processing",
                   "description": "Elective",
