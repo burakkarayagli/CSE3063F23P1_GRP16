@@ -22,19 +22,29 @@ public class AdvisorMenu {
     }
 
     public void advisorMenu() {
-        
+
         int studentSelection = 0;
-        while(studentSelection<1 || studentSelection>advisorController.getStudents().size()){
+
+        while (studentSelection < 1 || studentSelection > advisorController.getStudents().size()) {
             System.out.println("Which student do you want to go on?\n"
-                + "Type -1 for exit");
+                    + "Type -1 for exit");
             for (int j = 0; j < advisorController.getStudents().size(); j++) {
-                System.out.println((j + 1) + "- " + advisorController.getStudents().get(j).getFullName());
+                System.out.print((j + 1) + "- " + advisorController.getStudents().get(j).getFullName());
+                if (advisorController.getStudents().get(j).getStatus().equals("Rejected")) {
+                    System.out.println(" (Rejected)");
+                } else if (advisorController.getStudents().get(j).getStatus().equals("Approved")) {
+                    System.out.println(" (Approved)");
+                } else if (advisorController.getStudents().get(j).getStatus().equals("Waiting")) {
+                    System.out.println(" (Waiting)");
+                } else {
+                    System.out.println();
+                }
+
             }
-            try{
+            try {
                 // scanner = new Scanner(System.in);
                 studentSelection = scanner.nextInt();
-            }
-            catch(Exception e){
+            } catch (Exception e) {
                 System.out.println("Invalid choice. Please try again.");
                 scanner.nextLine();
 
@@ -57,20 +67,25 @@ public class AdvisorMenu {
         if ((student.getStatus() == "Rejected" || student.getStatus() == "Approved")) {
             System.out.println("Approve/Reject process is already done for this student.\n");
 
-
         } else {
             for (int i = 0; i < coursesOfStudent.size(); i++) {
                 Course course = coursesOfStudent.get(i);
                 System.out.println((i + 1) + " -> " + course.getFullName() + " " + course.getShortName());
             }
+
             System.out.println("Please enter the courses you want to approve for the student \n"
                     + "Type * to approve all courses\n"
                     + "The non-chosen ones will automatically be rejected\n"
+                    + "Type -1 for exit\n"
                     + "Selection/s: ");
 
             scanner = new Scanner(System.in);
             // scanner.nextLine();
             String selections = scanner.nextLine();
+            if (selections.equals("-1")) {
+                advisorMenu();
+                return;
+            }
 
             ArrayList<Integer> sortedSelections = new ArrayList<>();
 
@@ -109,7 +124,6 @@ public class AdvisorMenu {
     private boolean isValidFormat(String selections) {
         selections = selections.replaceAll("[,\\s]", "");
 
-
         try {
             int intValue = Integer.parseInt(selections);
             return true;
@@ -134,7 +148,6 @@ public class AdvisorMenu {
 
         return numbers;
     }
-
 
     // private boolean ifSelectionOutOfBounds(ArrayList<Integer> selections, Student
     // student) {
