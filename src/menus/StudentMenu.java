@@ -64,7 +64,7 @@ public class StudentMenu {
                 }
             } catch (Exception e) {
                 System.out.println("Invalid input type. Please try again.");
-                scanner.next();
+                scanner.nextLine();
             }
         }
 
