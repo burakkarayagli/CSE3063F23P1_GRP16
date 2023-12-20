@@ -136,7 +136,5 @@ public class TechnicalElectiveCourseTest {
         assertFalse(electiveCourse.checkRequiredCredit(5));
     }
 
-    // Add more tests for other methods as needed
-
 }
 

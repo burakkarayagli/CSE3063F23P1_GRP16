@@ -111,6 +111,4 @@ public class NonTechnicalElectiveCourseTest {
         assertEquals(40, electiveCourse.getQuota());
     }
 
-    // Add more tests for other methods as needed
-
 }
