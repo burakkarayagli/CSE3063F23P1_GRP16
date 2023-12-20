@@ -1,3 +1,4 @@
+
 2023-12-19 21:38:20 INFO  Menu:60 - Login menu displayed
 2023-12-19 21:38:23 INFO  Menu:72 - User burak logged in successfully
 2023-12-19 21:38:24 INFO  Menu:60 - Login menu displayed
@@ -122,6 +123,7 @@
 2023-12-19 23:14:30 INFO  Menu:72 - User fatmacorut logged in successfully
 2023-12-19 23:16:43 INFO  Menu:62 - Login menu displayed
 2023-12-19 23:16:49 INFO  Menu:74 - User fatmacorut logged in successfully
+
 2023-12-20 00:19:03 INFO  Menu:62 - Login menu displayed
 2023-12-20 00:19:12 INFO  Menu:74 - User fatmacorut logged in successfully
 2023-12-20 00:19:31 INFO  Menu:62 - Login menu displayed
@@ -227,4 +229,39 @@
 2023-12-20 01:20:39 INFO  StudentController:108 - Approval request sent to advisor for student:Burak
 2023-12-20 01:20:44 INFO  Menu:62 - Login menu displayed
 2023-12-20 01:20:51 INFO  Menu:74 - User burak logged in successfully
-2023-12-20 01:20:51 INFO  StudentMenu:28 - Student menu displayed
+
+2023-12-20 11:41:44 INFO  Menu:62 - Login menu displayed
+2023-12-20 11:41:54 WARN  Menu:77 - User ilayda failed to log in with username ilayda and password ilaydakorkmaz
+2023-12-20 11:41:54 INFO  Menu:62 - Login menu displayed
+2023-12-20 14:07:15 INFO  Menu:62 - Login menu displayed
+2023-12-20 14:07:36 INFO  Menu:74 - User ilayda logged in successfully
+2023-12-20 14:07:36 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 14:07:37 INFO  StudentMenu:74 - Course adding menu displayed
+2023-12-20 14:07:37 INFO  StudentMenu:131 - Available courses displayed
+2023-12-20 14:08:06 INFO  Menu:62 - Login menu displayed
+2023-12-20 14:08:13 INFO  Menu:74 - User esra logged in successfully
+2023-12-20 14:08:13 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 14:08:14 INFO  StudentMenu:74 - Course adding menu displayed
+2023-12-20 14:08:14 INFO  StudentMenu:131 - Available courses displayed
+2023-12-20 14:11:47 INFO  Menu:62 - Login menu displayed
+2023-12-20 14:18:10 INFO  Menu:62 - Login menu displayed
+2023-12-20 14:18:16 WARN  Menu:77 - User mehmet failed to log in with username mehmet and password mehmetaksoy
+2023-12-20 14:18:16 INFO  Menu:62 - Login menu displayed
+2023-12-20 14:18:58 INFO  Menu:62 - Login menu displayed
+2023-12-20 14:19:07 WARN  Menu:77 - User mehmet failed to log in with username mehmet and password mehmetaksoy
+2023-12-20 14:19:07 INFO  Menu:62 - Login menu displayed
+2023-12-20 14:21:16 WARN  Menu:77 - User hakkı failed to log in with username hakkı and password sg
+2023-12-20 14:21:16 INFO  Menu:62 - Login menu displayed
+2023-12-20 14:21:21 INFO  Menu:74 - User hakki logged in successfully
+2023-12-20 14:21:21 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 14:21:23 INFO  Menu:62 - Login menu displayed
+2023-12-20 14:21:28 WARN  Menu:77 - User mehmet failed to log in with username mehmet and password mehmetaksoy
+2023-12-20 14:21:28 INFO  Menu:62 - Login menu displayed
+2023-12-20 14:24:23 INFO  Menu:74 - User zeynep logged in successfully
+2023-12-20 14:24:23 INFO  StudentMenu:28 - Student menu displayed
+2023-12-20 14:24:26 INFO  Menu:62 - Login menu displayed
+2023-12-20 14:28:07 WARN  Menu:77 - User burak failed to log in with username burak and password burakkarayaglı
+2023-12-20 14:28:07 INFO  Menu:62 - Login menu displayed
+2023-12-20 14:28:16 WARN  Menu:77 - User burak failed to log in with username burak and password burakkarayagli
+2023-12-20 14:28:16 INFO  Menu:62 - Login menu displayed
+
