@@ -197,7 +197,7 @@ public class DataUtils {
                 JsonObject jObject = new JsonParser().parse(content).getAsJsonObject();
                 for (int j = 0; j < students.size(); j++) {
                     Student student = students.get(j);
-                    if (student.getUsername().equals(jObject.get("username").getAsString())) {
+                    if (student.getPassword().equals(jObject.get("password").getAsString())) {
                         String updatedString;
                         Gson gson = new GsonBuilder().setPrettyPrinting().create();
                         updatedString = gson.toJson(student);

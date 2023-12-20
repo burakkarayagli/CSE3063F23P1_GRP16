@@ -9537,7 +9537,7 @@
                   "credit": 4,
                   "classHours": 3
                 },
-                "grade": "CB"
+                "grade": "FF"
               },
               {
                 "course": {
@@ -9559,7 +9559,7 @@
                   "credit": 6,
                   "classHours": 2
                 },
-                "grade": "DD"
+                "grade": "AA"
               },
               {
                 "course": {
@@ -9570,7 +9570,7 @@
                   "credit": 4,
                   "classHours": 2
                 },
-                "grade": "BA"
+                "grade": "FF"
               },
               {
                 "course": {
@@ -9581,7 +9581,7 @@
                   "credit": 2,
                   "classHours": 2
                 },
-                "grade": "BB"
+                "grade": "FF"
               },
               {
                 "course": {
@@ -9592,7 +9592,7 @@
                   "credit": 2,
                   "classHours": 2
                 },
-                "grade": "CB"
+                "grade": "FF"
               },
               {
                 "course": {
@@ -9603,7 +9603,7 @@
                   "credit": 2,
                   "classHours": 2
                 },
-                "grade": "DC"
+                "grade": "FF"
               },
               {
                 "course": {
@@ -9625,7 +9625,7 @@
                   "credit": 6,
                   "classHours": 2
                 },
-                "grade": "BA"
+                "grade": "FF"
               },
               {
                 "course": {
@@ -9636,7 +9636,7 @@
                   "credit": 5,
                   "classHours": 3
                 },
-                "grade": "BB"
+                "grade": "F"
               },
               {
                 "course": {
@@ -9658,7 +9658,7 @@
                   "credit": 2,
                   "classHours": 2
                 },
-                "grade": "DC"
+                "grade": "FF"
               },
               {
                 "course": {
@@ -9669,7 +9669,7 @@
                   "credit": 2,
                   "classHours": 2
                 },
-                "grade": "DD"
+                "grade": "FF"
               },
               {
                 "course": {
@@ -9680,7 +9680,7 @@
                   "credit": 6,
                   "classHours": 3
                 },
-                "grade": "BA"
+                "grade": "AA"
               },
               {
                 "course": {
@@ -9755,7 +9755,7 @@
                   "credit": 7,
                   "classHours": 3
                 },
-                "grade": "BB"
+                "grade": "FF"
               },
               {
                 "course": {
@@ -9808,7 +9808,7 @@
                   "credit": 5,
                   "classHours": 3
                 },
-                "grade": "BA"
+                "grade": "AA"
               },
               {
                 "course": {
@@ -9822,7 +9822,7 @@
                   "credit": 7,
                   "classHours": 3
                 },
-                "grade": "BB"
+                "grade": "AA"
               },
               {
                 "course": {
@@ -9879,14 +9879,18 @@
               },
               {
                 "course": {
-                  "shortName": "COM2202",
-                  "fullName": "Technical Communication \u0026 Entrepreneurship",
+                  "shortName": "CSE3038",
+                  "fullName": "Computer Organization",
                   "description": "",
+                  "prerequisite": [
+                    "CSE2138",
+                    "CSE3215"
+                  ],
                   "semester": 6,
-                  "credit": 2,
-                  "classHours": 2
+                  "credit": 7,
+                  "classHours": 6
                 },
-                "grade": "BB"
+                "grade": "AA"
               },
               {
                 "course": {
@@ -9900,7 +9904,7 @@
                   "credit": 7,
                   "classHours": 5
                 },
-                "grade": "CB"
+                "grade": "AA"
               },
               {
                 "course": {
@@ -9915,21 +9919,6 @@
                   "classHours": 4
                 },
                 "grade": "DC"
-              },
-              {
-                "course": {
-                  "shortName": "CSE3038",
-                  "fullName": "Computer Organization",
-                  "description": "",
-                  "prerequisite": [
-                    "CSE2138",
-                    "CSE3215"
-                  ],
-                  "semester": 6,
-                  "credit": 7,
-                  "classHours": 6
-                },
-                "grade": "DD"
               },
               {
                 "course": {
@@ -9955,6 +9944,17 @@
                   ],
                   "semester": 6,
                   "credit": 4,
+                  "classHours": 2
+                },
+                "grade": "BB"
+              },
+              {
+                "course": {
+                  "shortName": "COM2202",
+                  "fullName": "Technical Communication \u0026 Entrepreneurship",
+                  "description": "",
+                  "semester": 6,
+                  "credit": 2,
                   "classHours": 2
                 },
                 "grade": "BB"

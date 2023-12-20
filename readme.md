@@ -55,7 +55,10 @@ Yeni/Güncellenen Özellikler:
     - checking course quota
     - checking prerequisite list
     - checking time intervals
+    - checking credits to select technical electives
 - Tekil kurs seçimi ve bırakma 
 - Advisor tekli kurs onaylama ve red etme
 - lecturer mandatory,technical, nontechnical kurs ekleme 
-- lecturer derslerine kayıt olan öğrencileri göre 
+- lecturer derslerine kayıt olan öğrencileri göre
+- transciptlerin çeşitlendirilmesi ve cumulative ve dönemsel gano hesaplanması 
+- öğrenci sayısının 10'da 48'e, advisor sayısını 3'e, lecturer sayısını 13'e çıkarılması 
