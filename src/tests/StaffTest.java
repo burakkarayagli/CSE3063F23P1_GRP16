@@ -1,9 +1,9 @@
 package tests;
 
-import models.*;
-import static org.junit.Assert.*;
-import org.junit.Test;
 import java.util.ArrayList;
+import models.*;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class StaffTest {
 

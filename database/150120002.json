@@ -9,6 +9,7 @@
       "shortName": "YDI1004",
       "fullName": "Report Writing in English",
       "description": "",
+      "prerequisite": [],
       "semester": 1,
       "credit": 2,
       "classHours": 2
@@ -21,6 +22,7 @@
           "shortName": "ATA121",
           "fullName": "Atatürk İlkeleri ve İnkılap Tarihi I",
           "description": "",
+          "prerequisite": [],
           "semester": 1,
           "credit": 2,
           "classHours": 2
@@ -32,6 +34,7 @@
           "shortName": "MBG1201",
           "fullName": "Introduction to Modern Biology",
           "description": "",
+          "prerequisite": [],
           "semester": 1,
           "credit": 5,
           "classHours": 3
@@ -43,6 +46,7 @@
           "shortName": "CSE1200",
           "fullName": "Introduction to Computer Engineering",
           "description": "",
+          "prerequisite": [],
           "semester": 1,
           "credit": 4,
           "classHours": 3
@@ -54,6 +58,7 @@
           "shortName": "CSE1241",
           "fullName": "Computer Programming I",
           "description": "",
+          "prerequisite": [],
           "semester": 1,
           "credit": 6,
           "classHours": 4
@@ -65,6 +70,7 @@
           "shortName": "MATH1001",
           "fullName": "Calculus I",
           "description": "",
+          "prerequisite": [],
           "semester": 1,
           "credit": 6,
           "classHours": 2
@@ -76,6 +82,7 @@
           "shortName": "PHYS1001",
           "fullName": "Physics I",
           "description": "",
+          "prerequisite": [],
           "semester": 1,
           "credit": 4,
           "classHours": 2
@@ -87,6 +94,7 @@
           "shortName": "PHYS1003",
           "fullName": "Physics Lab I",
           "description": "",
+          "prerequisite": [],
           "semester": 1,
           "credit": 2,
           "classHours": 2
@@ -98,6 +106,7 @@
           "shortName": "TRD121",
           "fullName": "Türk Dili I",
           "description": "",
+          "prerequisite": [],
           "semester": 1,
           "credit": 2,
           "classHours": 2
@@ -109,6 +118,7 @@
           "shortName": "ATA122",
           "fullName": "Atatürk İlkeleri ve İnkılap Tarihi II",
           "description": "",
+          "prerequisite": [],
           "semester": 2,
           "credit": 2,
           "classHours": 2
@@ -120,6 +130,7 @@
           "shortName": "CSE1242",
           "fullName": "Computer Programming II",
           "description": "",
+          "prerequisite": [],
           "semester": 2,
           "credit": 6,
           "classHours": 4
@@ -131,6 +142,7 @@
           "shortName": "MATH1002",
           "fullName": "Calculus II",
           "description": "",
+          "prerequisite": [],
           "semester": 2,
           "credit": 6,
           "classHours": 2
@@ -142,6 +154,7 @@
           "shortName": "MATH2256",
           "fullName": "Linear Algebra for Computer Engineering",
           "description": "",
+          "prerequisite": [],
           "semester": 2,
           "credit": 5,
           "classHours": 3
@@ -153,6 +166,7 @@
           "shortName": "PHYS1002",
           "fullName": "Physics II",
           "description": "",
+          "prerequisite": [],
           "semester": 2,
           "credit": 4,
           "classHours": 2
@@ -164,6 +178,7 @@
           "shortName": "PHYS1004",
           "fullName": "Physics Lab II",
           "description": "",
+          "prerequisite": [],
           "semester": 2,
           "credit": 2,
           "classHours": 2
@@ -175,6 +190,7 @@
           "shortName": "TRD122",
           "fullName": "Türk Dili II",
           "description": "",
+          "prerequisite": [],
           "semester": 2,
           "credit": 2,
           "classHours": 2
@@ -186,6 +202,7 @@
           "shortName": "CSE2023",
           "fullName": "Discrete Computational Structures",
           "description": "",
+          "prerequisite": [],
           "semester": 3,
           "credit": 6,
           "classHours": 3
@@ -211,6 +228,7 @@
           "shortName": "ECON2004",
           "fullName": "Engineering Economy",
           "description": "",
+          "prerequisite": [],
           "semester": 3,
           "credit": 4,
           "classHours": 3
@@ -236,6 +254,7 @@
           "shortName": "MATH2055",
           "fullName": "Differential Equations",
           "description": "",
+          "prerequisite": [],
           "semester": 3,
           "credit": 4,
           "classHours": 3
@@ -261,6 +280,7 @@
           "shortName": "CSE2138",
           "fullName": "Systems Programming",
           "description": "",
+          "prerequisite": [],
           "semester": 4,
           "credit": 7,
           "classHours": 3
@@ -314,6 +334,7 @@
           "shortName": "STAT2253",
           "fullName": "Probability and Statistics for Computer Engineering",
           "description": "",
+          "prerequisite": [],
           "semester": 4,
           "credit": 5,
           "classHours": 3

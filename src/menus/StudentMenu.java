@@ -106,7 +106,6 @@ public class StudentMenu {
         ArrayList<Course> courses = studentController.getSelectedCourses();
         ArrayList<Integer> selectedCourses = parseInput(input, courses);
 
-        System.out.println(selectedCourses);
         for (int i = selectedCourses.size() - 1; i >= 0; i--) {
             studentController.dropCourse(courses.get(selectedCourses.get(i) - 1));
         }
@@ -121,7 +120,7 @@ public class StudentMenu {
         for (int i = 0; i < courses.size(); i++) {
             Course course = courses.get(i);
             System.out.println(i + 1 + "-" + course.getFullName() + " [" +
-                    course.getShortName() + "]");
+                    course.getShortName() + "]" + "(" + course.getCredit() + ")");
         }
 
         System.out.println("============================================");
@@ -136,7 +135,7 @@ public class StudentMenu {
         for (int i = 0; i < courses.size(); i++) {
             Course course = courses.get(i);
             System.out.println(i + 1 + "-" + course.getFullName() + " [" +
-                    course.getShortName() + "]");
+                    course.getShortName() + "]" + "(" + course.getCredit() + ")");
         }
 
         System.out.println("============================================");

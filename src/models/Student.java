@@ -206,18 +206,9 @@ public class Student extends Person {
         String warningString = "";
 
         if (checkCreditLimit() == false) {
-            warningString += "========Student has exceeded the credit limit.=========\n";
+            warningString += "========Student has exceeded the credit limit.==========\n";
             warningString += "Total credit: " + getTotalCreditOfSelectedCourses() + "\n";
             warningString += "Max credit: 30\n";
-            warningString += "========================================================\n";
-        }
-
-        if (getOverlappingCourses().size() > 0) {
-            warningString += "========Student has overlapping courses.=========\n";
-            for (ArrayList<Course> overlappingCourse : getOverlappingCourses()) {
-                warningString += overlappingCourse.get(0).getFullName() + " and "
-                        + overlappingCourse.get(1).getFullName() + " are overlapping.\n";
-            }
             warningString += "========================================================\n";
         }
 
@@ -317,6 +308,7 @@ public class Student extends Person {
         return false;
     }
 
+    // Returns the overlapping courses of the student
     public ArrayList<ArrayList<Course>> getOverlappingCourses() {
         ArrayList<ArrayList<Course>> overlappingCourses = new ArrayList<ArrayList<Course>>();
 
