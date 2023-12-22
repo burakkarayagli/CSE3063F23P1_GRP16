@@ -14768,6 +14768,3130 @@
       "password": "mujdatSoyturk"
     }
   ],
+  "technicalElectives": [
+    {
+      "dates": [
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Sanem",
+        "personSurname": "Arslan",
+        "username": "sanem",
+        "password": "sanemarslan"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z01",
+      "shortName": "BIOE4072",
+      "fullName": "Planning and Management of Research",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Friday"
+        },
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Friday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Ali Haydar",
+        "personSurname": "Özer",
+        "username": "alihaydar",
+        "password": "alihaydarozer"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z02",
+      "shortName": "CHE4060",
+      "fullName": "Cost Management in Chemical Industries",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Tuesday"
+        },
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Tuesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Assoc. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Ömer",
+        "personSurname": "Korçak",
+        "username": "omer",
+        "password": "omerkorcak"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z03",
+      "shortName": "CHE4068",
+      "fullName": "Financial Engineering",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Thursday"
+        },
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Thursday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Fatma Corut",
+        "personSurname": "Ergin",
+        "username": "fatma",
+        "password": "fatma.ergin"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "CHE4080",
+      "fullName": "Chemical Engineering for Sustainable Biosphere",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Friday"
+        },
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Friday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Mehmet",
+        "personSurname": "Baran",
+        "username": "mehmet",
+        "password": "mehmetbaran"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "CSE4044",
+      "fullName": "Software Project Management",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Assoc. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Borahan",
+        "personSurname": "Tümer",
+        "username": "borahan",
+        "password": "borahantumer"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z05",
+      "shortName": "CSE4056",
+      "fullName": "Management of Information Systems",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Monday"
+        },
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Monday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Assoc. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Müjdat",
+        "personSurname": "Soytürk",
+        "username": "mujdat",
+        "password": "mujdatsoyturk"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z06",
+      "shortName": "CSE4062",
+      "fullName": "Introduction to Data Science and Analytics",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Prof. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Ali Fuat",
+        "personSurname": "Alkaya",
+        "username": "alifuat",
+        "password": "alifuatalkaya"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z01",
+      "shortName": "EE4056",
+      "fullName": "Introduction to Information Systems Management",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Tuesday"
+        },
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Tuesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Prof. Dr.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Çiğdem Eroğlu",
+        "personSurname": "Erdem",
+        "username": "cigdem",
+        "password": "cigdemerogluerdem"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z02",
+      "shortName": "EE4062",
+      "fullName": "Introduction to Image Processing",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Thursday"
+        },
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Thursday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Prof. Dr.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Haluk Rahmi",
+        "personSurname": "Topçuğlu",
+        "username": "haluk",
+        "password": "haluk"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z03",
+      "shortName": "ENVE4062",
+      "fullName": "Energy and the Environment",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Friday"
+        },
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Friday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Dr.Öğr.",
+        "officeHours": [
+          {
+            "startTime": "14:00",
+            "endTime": "14:50",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "15:00",
+            "endTime": "15:50",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Betül",
+        "personSurname": "Boz",
+        "username": "betul",
+        "password": "boz"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "ENVE4063",
+      "fullName": "Construction Materials for Environmental Engineering",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
+            "startTime": "11:30",
+            "endTime": "12:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "13:00",
+            "endTime": "13:50",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Murat Can",
+        "personSurname": "Ganiz",
+        "username": "muratcan",
+        "password": "muratcanganiz"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "IE4055",
+      "fullName": "Design of Experiments",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
+            "startTime": "09:30",
+            "endTime": "10:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "11:20",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Mustafa",
+        "personSurname": "Ağaoglu",
+        "username": "mustafa",
+        "password": "mustafaagaoglu"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z05",
+      "shortName": "IE4087",
+      "fullName": "Introduction to Total Quality Management",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Monday"
+        },
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Monday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Sanem",
+        "personSurname": "Arslan",
+        "username": "sanem",
+        "password": "sanemarslan"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z06",
+      "shortName": "ME3004",
+      "fullName": "Mathematical Modeling in Mechanical Engineering",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Friday"
+        },
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Friday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Ali Haydar",
+        "personSurname": "Özer",
+        "username": "alihaydar",
+        "password": "alihaydarozer"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z01",
+      "shortName": "ME3022",
+      "fullName": "Mechatronics",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Tuesday"
+        },
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Tuesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Assoc. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Ömer",
+        "personSurname": "Korçak",
+        "username": "omer",
+        "password": "omerkorcak"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z02",
+      "shortName": "ME4018",
+      "fullName": "Introduction to Robotics",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Thursday"
+        },
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Thursday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Fatma Corut",
+        "personSurname": "Ergin",
+        "username": "fatma",
+        "password": "fatma.ergin"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z03",
+      "shortName": "ME4022",
+      "fullName": "Control Systems",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Mehmet",
+        "personSurname": "Baran",
+        "username": "mehmet",
+        "password": "mehmetbaran"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "ME4033",
+      "fullName": "Designing Quality Products",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Assoc. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Borahan",
+        "personSurname": "Tümer",
+        "username": "borahan",
+        "password": "borahantumer"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "ME4051",
+      "fullName": "Automotive Engineering",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Friday"
+        },
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Friday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Assoc. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Müjdat",
+        "personSurname": "Soytürk",
+        "username": "mujdat",
+        "password": "mujdatsoyturk"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z05",
+      "shortName": "MGT4076",
+      "fullName": "Quality Management System in Automotive Industry",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Monday"
+        },
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Monday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Prof. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Ali Fuat",
+        "personSurname": "Alkaya",
+        "username": "alifuat",
+        "password": "alifuatalkaya"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z06",
+      "shortName": "MGT4082",
+      "fullName": "Advanced Innovative Design Management for Entrepreneurship",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Tuesday"
+        },
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Tuesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Prof. Dr.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Çiğdem Eroğlu",
+        "personSurname": "Erdem",
+        "username": "cigdem",
+        "password": "cigdemerogluerdem"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z01",
+      "shortName": "MGT4084",
+      "fullName": "Innovation and New Product Development Management",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Thursday"
+        },
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Thursday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Prof. Dr.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Haluk Rahmi",
+        "personSurname": "Topçuğlu",
+        "username": "haluk",
+        "password": "haluk"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z02",
+      "shortName": "MGT4086",
+      "fullName": "Managing Engineering and Technology",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Friday"
+        },
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Friday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Dr.Öğr.",
+        "officeHours": [
+          {
+            "startTime": "14:00",
+            "endTime": "14:50",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "15:00",
+            "endTime": "15:50",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Betül",
+        "personSurname": "Boz",
+        "username": "betul",
+        "password": "boz"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z03",
+      "shortName": "MGT4088",
+      "fullName": "Project Management for Engineers",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Monday"
+        },
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Monday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
+            "startTime": "11:30",
+            "endTime": "12:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "13:00",
+            "endTime": "13:50",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Murat Can",
+        "personSurname": "Ganiz",
+        "username": "muratcan",
+        "password": "muratcanganiz"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "MSE4073",
+      "fullName": "Materials Engineering Economics and Plant Design",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
+            "startTime": "09:30",
+            "endTime": "10:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "11:20",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Mustafa",
+        "personSurname": "Ağaoglu",
+        "username": "mustafa",
+        "password": "mustafaagaoglu"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "MSE4074",
+      "fullName": "Total Quality Management in Materials Engineering",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Sanem",
+        "personSurname": "Arslan",
+        "username": "sanem",
+        "password": "sanemarslan"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z02",
+      "shortName": "CSE4026",
+      "fullName": "Introduction to Robotics and Control Theory",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Monday"
+        },
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Monday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Ali Haydar",
+        "personSurname": "Özer",
+        "username": "alihaydar",
+        "password": "alihaydarozer"
+      },
+      "quota": 50,
+      "requiredCredit": 155,
+      "location": "M2-Z03",
+      "shortName": "CSE4032",
+      "fullName": "Introduction to Distributed Systems",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Tuesday"
+        },
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Tuesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Assoc. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Ömer",
+        "personSurname": "Korçak",
+        "username": "omer",
+        "password": "omerkorcak"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "CSE4034",
+      "fullName": "Advanced Unix Programming",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Thursday"
+        },
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Thursday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Fatma Corut",
+        "personSurname": "Ergin",
+        "username": "fatma",
+        "password": "fatma.ergin"
+      },
+      "quota": 50,
+      "requiredCredit": 155,
+      "location": "M2-Z04",
+      "shortName": "CSE4038",
+      "fullName": "Introduction to Parallel Processing",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Thursday"
+        },
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Thursday"
+        }
+      ],
+      "sectionName": "1.2",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Mehmet",
+        "personSurname": "Baran",
+        "username": "mehmet",
+        "password": "mehmetbaran"
+      },
+      "quota": 50,
+      "requiredCredit": 155,
+      "location": "M2-Z05",
+      "shortName": "CSE4038",
+      "fullName": "Introduction to Parallel Processing",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Friday"
+        },
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Friday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Assoc. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Borahan",
+        "personSurname": "Tümer",
+        "username": "borahan",
+        "password": "borahantumer"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z06",
+      "shortName": "CSE4040",
+      "fullName": "Cloud Computing",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Monday"
+        },
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Monday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Assoc. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Müjdat",
+        "personSurname": "Soytürk",
+        "username": "mujdat",
+        "password": "mujdatsoyturk"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z01",
+      "shortName": "CSE4053",
+      "fullName": "Information Systems: Analysis and Design",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Prof. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Ali Fuat",
+        "personSurname": "Alkaya",
+        "username": "alifuat",
+        "password": "alifuatalkaya"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z03",
+      "shortName": "CSE4057",
+      "fullName": "Information Systems Security",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.2",
+      "lecturer": {
+        "reputation": "Prof. Dr.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Çiğdem Eroğlu",
+        "personSurname": "Erdem",
+        "username": "cigdem",
+        "password": "cigdemerogluerdem"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "CSE4057",
+      "fullName": "Information Systems Security",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Friday"
+        },
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Friday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Prof. Dr.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Haluk Rahmi",
+        "personSurname": "Topçuğlu",
+        "username": "haluk",
+        "password": "haluk"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "CSE4058",
+      "fullName": "Fundamentals of Electronic Commerce",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Friday"
+        },
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Friday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Dr.Öğr.",
+        "officeHours": [
+          {
+            "startTime": "14:00",
+            "endTime": "14:50",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "15:00",
+            "endTime": "15:50",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Betül",
+        "personSurname": "Boz",
+        "username": "betul",
+        "password": "boz"
+      },
+      "quota": 50,
+      "requiredCredit": 155,
+      "location": "M2-Z05",
+      "shortName": "CSE4059",
+      "fullName": "Internet Programming",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Monday"
+        },
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Monday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
+            "startTime": "11:30",
+            "endTime": "12:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "13:00",
+            "endTime": "13:50",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Murat Can",
+        "personSurname": "Ganiz",
+        "username": "muratcan",
+        "password": "muratcanganiz"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z06",
+      "shortName": "CSE4061",
+      "fullName": "Compiler Design",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
+            "startTime": "09:30",
+            "endTime": "10:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "11:20",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Mustafa",
+        "personSurname": "Ağaoglu",
+        "username": "mustafa",
+        "password": "mustafaagaoglu"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z01",
+      "shortName": "CSE4063",
+      "fullName": "Fundamentals of Data Mining",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Thursday"
+        },
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Thursday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Sanem",
+        "personSurname": "Arslan",
+        "username": "sanem",
+        "password": "sanemarslan"
+      },
+      "quota": 50,
+      "requiredCredit": 155,
+      "location": "M2-Z02",
+      "shortName": "CSE4065",
+      "fullName": "Introduction to Computational Genomics",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Thursday"
+        },
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Thursday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Ali Haydar",
+        "personSurname": "Özer",
+        "username": "alihaydar",
+        "password": "alihaydarozer"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z03",
+      "shortName": "CSE4066",
+      "fullName": "Introduction to Cryptography",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Friday"
+        },
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Friday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Assoc. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Ömer",
+        "personSurname": "Korçak",
+        "username": "omer",
+        "password": "omerkorcak"
+      },
+      "quota": 50,
+      "requiredCredit": 155,
+      "location": "M2-Z04",
+      "shortName": "CSE4067",
+      "fullName": "Introduction to Blockchain Programming",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Tuesday"
+        },
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Tuesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Fatma Corut",
+        "personSurname": "Ergin",
+        "username": "fatma",
+        "password": "fatma.ergin"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "CSE4070",
+      "fullName": "Software Frameworks",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Mehmet",
+        "personSurname": "Baran",
+        "username": "mehmet",
+        "password": "mehmetbaran"
+      },
+      "quota": 50,
+      "requiredCredit": 155,
+      "location": "M2-Z05",
+      "shortName": "CSE4075",
+      "fullName": "Wireless and Mobile Networks",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Assoc. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Borahan",
+        "personSurname": "Tümer",
+        "username": "borahan",
+        "password": "borahantumer"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z06",
+      "shortName": "CSE4082",
+      "fullName": "Artificial Intelligence",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Tuesday"
+        },
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Tuesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Assoc. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Müjdat",
+        "personSurname": "Soytürk",
+        "username": "mujdat",
+        "password": "mujdatsoyturk"
+      },
+      "quota": 50,
+      "requiredCredit": 155,
+      "location": "M2-Z07",
+      "shortName": "CSE4083",
+      "fullName": "Computer Graphics",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Monday"
+        },
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Monday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Prof. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Ali Fuat",
+        "personSurname": "Alkaya",
+        "username": "alifuat",
+        "password": "alifuatalkaya"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z01",
+      "shortName": "CSE4084",
+      "fullName": "Multimedia Systems",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Thursday"
+        },
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Thursday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Prof. Dr.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Çiğdem Eroğlu",
+        "personSurname": "Erdem",
+        "username": "cigdem",
+        "password": "cigdemerogluerdem"
+      },
+      "quota": 50,
+      "requiredCredit": 155,
+      "location": "M2-Z02",
+      "shortName": "CSE4085",
+      "fullName": "Human Computer Interaction",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Friday"
+        },
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Friday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Prof. Dr.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Haluk Rahmi",
+        "personSurname": "Topçuğlu",
+        "username": "haluk",
+        "password": "haluk"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z03",
+      "shortName": "CSE4086",
+      "fullName": "Mobile Device Programming",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Friday"
+        },
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Friday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Dr.Öğr.",
+        "officeHours": [
+          {
+            "startTime": "14:00",
+            "endTime": "14:50",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "15:00",
+            "endTime": "15:50",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Betül",
+        "personSurname": "Boz",
+        "username": "betul",
+        "password": "boz"
+      },
+      "quota": 50,
+      "requiredCredit": 155,
+      "location": "M2-Z04",
+      "shortName": "CSE4217",
+      "fullName": "Microprocessors",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Tuesday"
+        },
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Tuesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
+            "startTime": "11:30",
+            "endTime": "12:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "13:00",
+            "endTime": "13:50",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Murat Can",
+        "personSurname": "Ganiz",
+        "username": "muratcan",
+        "password": "muratcanganiz"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "CSE4093",
+      "fullName": "Special Topics in Computer Engineering I",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
+            "startTime": "09:30",
+            "endTime": "10:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "11:20",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Mustafa",
+        "personSurname": "Ağaoglu",
+        "username": "mustafa",
+        "password": "mustafaagaoglu"
+      },
+      "quota": 50,
+      "requiredCredit": 155,
+      "location": "M2-Z05",
+      "shortName": "CSE4094",
+      "fullName": "Special Topics in Computer Engineering II",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Sanem",
+        "personSurname": "Arslan",
+        "username": "sanem",
+        "password": "sanemarslan"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z06",
+      "shortName": "CSE4095",
+      "fullName": "Special Topics in Computer Engineering III",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Thursday"
+        },
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Thursday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Ali Haydar",
+        "personSurname": "Özer",
+        "username": "alihaydar",
+        "password": "alihaydarozer"
+      },
+      "quota": 50,
+      "requiredCredit": 155,
+      "location": "M2-Z07",
+      "shortName": "CSE4096",
+      "fullName": "Special Topics in Computer Engineering IV",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Sanem",
+        "personSurname": "Arslan",
+        "username": "sanem",
+        "password": "sanemarslan"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z01",
+      "shortName": "BIOE4072",
+      "fullName": "Planning and Management of Research",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Friday"
+        },
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Friday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Ali Haydar",
+        "personSurname": "Özer",
+        "username": "alihaydar",
+        "password": "alihaydarozer"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z02",
+      "shortName": "CHE4060",
+      "fullName": "Cost Management in Chemical Industries",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Tuesday"
+        },
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Tuesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Assoc. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Ömer",
+        "personSurname": "Korçak",
+        "username": "omer",
+        "password": "omerkorcak"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z03",
+      "shortName": "CHE4068",
+      "fullName": "Financial Engineering",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Thursday"
+        },
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Thursday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Fatma Corut",
+        "personSurname": "Ergin",
+        "username": "fatma",
+        "password": "fatma.ergin"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "CHE4080",
+      "fullName": "Chemical Engineering for Sustainable Biosphere",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Friday"
+        },
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Friday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Mehmet",
+        "personSurname": "Baran",
+        "username": "mehmet",
+        "password": "mehmetbaran"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "CSE4044",
+      "fullName": "Software Project Management",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Assoc. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Borahan",
+        "personSurname": "Tümer",
+        "username": "borahan",
+        "password": "borahantumer"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z05",
+      "shortName": "CSE4056",
+      "fullName": "Management of Information Systems",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Monday"
+        },
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Monday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Assoc. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Müjdat",
+        "personSurname": "Soytürk",
+        "username": "mujdat",
+        "password": "mujdatsoyturk"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z06",
+      "shortName": "CSE4062",
+      "fullName": "Introduction to Data Science and Analytics",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Prof. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Ali Fuat",
+        "personSurname": "Alkaya",
+        "username": "alifuat",
+        "password": "alifuatalkaya"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z01",
+      "shortName": "EE4056",
+      "fullName": "Introduction to Information Systems Management",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Tuesday"
+        },
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Tuesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Prof. Dr.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Çiğdem Eroğlu",
+        "personSurname": "Erdem",
+        "username": "cigdem",
+        "password": "cigdemerogluerdem"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z02",
+      "shortName": "EE4062",
+      "fullName": "Introduction to Image Processing",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Thursday"
+        },
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Thursday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Prof. Dr.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Haluk Rahmi",
+        "personSurname": "Topçuğlu",
+        "username": "haluk",
+        "password": "haluk"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z03",
+      "shortName": "ENVE4062",
+      "fullName": "Energy and the Environment",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Friday"
+        },
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Friday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Dr.Öğr.",
+        "officeHours": [
+          {
+            "startTime": "14:00",
+            "endTime": "14:50",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "15:00",
+            "endTime": "15:50",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Betül",
+        "personSurname": "Boz",
+        "username": "betul",
+        "password": "boz"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "ENVE4063",
+      "fullName": "Construction Materials for Environmental Engineering",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
+            "startTime": "11:30",
+            "endTime": "12:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "13:00",
+            "endTime": "13:50",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Murat Can",
+        "personSurname": "Ganiz",
+        "username": "muratcan",
+        "password": "muratcanganiz"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "IE4055",
+      "fullName": "Design of Experiments",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
+            "startTime": "09:30",
+            "endTime": "10:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "11:20",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Mustafa",
+        "personSurname": "Ağaoglu",
+        "username": "mustafa",
+        "password": "mustafaagaoglu"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z05",
+      "shortName": "IE4087",
+      "fullName": "Introduction to Total Quality Management",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Monday"
+        },
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Monday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Sanem",
+        "personSurname": "Arslan",
+        "username": "sanem",
+        "password": "sanemarslan"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z06",
+      "shortName": "ME3004",
+      "fullName": "Mathematical Modeling in Mechanical Engineering",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Friday"
+        },
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Friday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Ali Haydar",
+        "personSurname": "Özer",
+        "username": "alihaydar",
+        "password": "alihaydarozer"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z01",
+      "shortName": "ME3022",
+      "fullName": "Mechatronics",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Tuesday"
+        },
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Tuesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Assoc. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Ömer",
+        "personSurname": "Korçak",
+        "username": "omer",
+        "password": "omerkorcak"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z02",
+      "shortName": "ME4018",
+      "fullName": "Introduction to Robotics",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Thursday"
+        },
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Thursday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Fatma Corut",
+        "personSurname": "Ergin",
+        "username": "fatma",
+        "password": "fatma.ergin"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z03",
+      "shortName": "ME4022",
+      "fullName": "Control Systems",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Mehmet",
+        "personSurname": "Baran",
+        "username": "mehmet",
+        "password": "mehmetbaran"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "ME4033",
+      "fullName": "Designing Quality Products",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Assoc. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Borahan",
+        "personSurname": "Tümer",
+        "username": "borahan",
+        "password": "borahantumer"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "ME4051",
+      "fullName": "Automotive Engineering",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Friday"
+        },
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Friday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Assoc. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Müjdat",
+        "personSurname": "Soytürk",
+        "username": "mujdat",
+        "password": "mujdatsoyturk"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z05",
+      "shortName": "MGT4076",
+      "fullName": "Quality Management System in Automotive Industry",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Monday"
+        },
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Monday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Prof. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Ali Fuat",
+        "personSurname": "Alkaya",
+        "username": "alifuat",
+        "password": "alifuatalkaya"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z06",
+      "shortName": "MGT4082",
+      "fullName": "Advanced Innovative Design Management for Entrepreneurship",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Tuesday"
+        },
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Tuesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Prof. Dr.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Çiğdem Eroğlu",
+        "personSurname": "Erdem",
+        "username": "cigdem",
+        "password": "cigdemerogluerdem"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z01",
+      "shortName": "MGT4084",
+      "fullName": "Innovation and New Product Development Management",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Thursday"
+        },
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Thursday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Prof. Dr.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Haluk Rahmi",
+        "personSurname": "Topçuğlu",
+        "username": "haluk",
+        "password": "haluk"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z02",
+      "shortName": "MGT4086",
+      "fullName": "Managing Engineering and Technology",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Friday"
+        },
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Friday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Dr.Öğr.",
+        "officeHours": [
+          {
+            "startTime": "14:00",
+            "endTime": "14:50",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "15:00",
+            "endTime": "15:50",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Betül",
+        "personSurname": "Boz",
+        "username": "betul",
+        "password": "boz"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z03",
+      "shortName": "MGT4088",
+      "fullName": "Project Management for Engineers",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Monday"
+        },
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Monday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
+            "startTime": "11:30",
+            "endTime": "12:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "13:00",
+            "endTime": "13:50",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Murat Can",
+        "personSurname": "Ganiz",
+        "username": "muratcan",
+        "password": "muratcanganiz"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "MSE4073",
+      "fullName": "Materials Engineering Economics and Plant Design",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Doç. Dr.",
+        "officeHours": [
+          {
+            "startTime": "09:30",
+            "endTime": "10:20",
+            "dayOfWeek": "Monday"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "11:20",
+            "dayOfWeek": "Monday"
+          }
+        ],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Mustafa",
+        "personSurname": "Ağaoglu",
+        "username": "mustafa",
+        "password": "mustafaagaoglu"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "MSE4074",
+      "fullName": "Total Quality Management in Materials Engineering",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Wednesday"
+        },
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Wednesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Sanem",
+        "personSurname": "Arslan",
+        "username": "sanem",
+        "password": "sanemarslan"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z02",
+      "shortName": "CSE4026",
+      "fullName": "Introduction to Robotics and Control Theory",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "09:30",
+          "endTime": "10:20",
+          "dayOfWeek": "Monday"
+        },
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Monday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Ali Haydar",
+        "personSurname": "Özer",
+        "username": "alihaydar",
+        "password": "alihaydarozer"
+      },
+      "quota": 50,
+      "requiredCredit": 155,
+      "location": "M2-Z03",
+      "shortName": "CSE4032",
+      "fullName": "Introduction to Distributed Systems",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "10:30",
+          "endTime": "11:20",
+          "dayOfWeek": "Tuesday"
+        },
+        {
+          "startTime": "11:30",
+          "endTime": "12:20",
+          "dayOfWeek": "Tuesday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Assoc. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Ömer",
+        "personSurname": "Korçak",
+        "username": "omer",
+        "password": "omerkorcak"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z04",
+      "shortName": "CSE4034",
+      "fullName": "Advanced Unix Programming",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "13:00",
+          "endTime": "13:50",
+          "dayOfWeek": "Thursday"
+        },
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Thursday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Fatma Corut",
+        "personSurname": "Ergin",
+        "username": "fatma",
+        "password": "fatma.ergin"
+      },
+      "quota": 50,
+      "requiredCredit": 155,
+      "location": "M2-Z04",
+      "shortName": "CSE4038",
+      "fullName": "Introduction to Parallel Processing",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Thursday"
+        },
+        {
+          "startTime": "16:00",
+          "endTime": "16:50",
+          "dayOfWeek": "Thursday"
+        }
+      ],
+      "sectionName": "1.2",
+      "lecturer": {
+        "reputation": "Asst. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Mehmet",
+        "personSurname": "Baran",
+        "username": "mehmet",
+        "password": "mehmetbaran"
+      },
+      "quota": 50,
+      "requiredCredit": 155,
+      "location": "M2-Z05",
+      "shortName": "CSE4038",
+      "fullName": "Introduction to Parallel Processing",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    },
+    {
+      "dates": [
+        {
+          "startTime": "14:00",
+          "endTime": "14:50",
+          "dayOfWeek": "Friday"
+        },
+        {
+          "startTime": "15:00",
+          "endTime": "15:50",
+          "dayOfWeek": "Friday"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": {
+        "reputation": "Assoc. Prof.",
+        "officeHours": [],
+        "salary": 10000,
+        "employmentStatus": "active",
+        "personName": "Borahan",
+        "personSurname": "Tümer",
+        "username": "borahan",
+        "password": "borahantumer"
+      },
+      "quota": 50,
+      "requiredCredit": 165,
+      "location": "M2-Z06",
+      "shortName": "CSE4040",
+      "fullName": "Cloud Computing",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "classHours": 4
+    }
+  ],
   "mandatories": [
     {
       "dates": [
@@ -19132,6 +22256,122 @@
       "semester": 8,
       "credit": 2,
       "classHours": 2
+    },
+    {
+      "dates": [
+        {
+          "startTime": "2023-01-01",
+          "endTime": "2023-05-01"
+        }
+      ],
+      "sectionName": "A",
+      "lecturer": {
+        "reputation": "Excellent",
+        "officeHours": [],
+        "salary": 5000,
+        "employmentStatus": "Full-Time",
+        "personName": "John",
+        "personSurname": "Doe",
+        "username": "john.doe",
+        "password": "password"
+      },
+      "quota": 50,
+      "location": "Room 101",
+      "labHours": 2,
+      "shortName": "CS101",
+      "fullName": "Introduction to Computer Science",
+      "description": "Introductory course",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 3,
+      "classHours": 3
+    },
+    {
+      "dates": [
+        {
+          "startTime": "2023-01-01",
+          "endTime": "2023-05-01"
+        }
+      ],
+      "sectionName": "A",
+      "lecturer": {
+        "reputation": "Excellent",
+        "officeHours": [],
+        "salary": 5000,
+        "employmentStatus": "Full-Time",
+        "personName": "John",
+        "personSurname": "Doe",
+        "username": "john.doe",
+        "password": "password"
+      },
+      "quota": 50,
+      "location": "Room 101",
+      "labHours": 2,
+      "shortName": "CS101",
+      "fullName": "Introduction to Computer Science",
+      "description": "Introductory course",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 3,
+      "classHours": 3
+    },
+    {
+      "dates": [
+        {
+          "startTime": "2023-01-01",
+          "endTime": "2023-05-01"
+        }
+      ],
+      "sectionName": "A",
+      "lecturer": {
+        "reputation": "Excellent",
+        "officeHours": [],
+        "salary": 5000,
+        "employmentStatus": "Full-Time",
+        "personName": "John",
+        "personSurname": "Doe",
+        "username": "john.doe",
+        "password": "password"
+      },
+      "quota": 50,
+      "location": "Room 101",
+      "labHours": 2,
+      "shortName": "CS101",
+      "fullName": "Introduction to Computer Science",
+      "description": "Introductory course",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 3,
+      "classHours": 3
+    },
+    {
+      "dates": [
+        {
+          "startTime": "2023-01-01",
+          "endTime": "2023-05-01"
+        }
+      ],
+      "sectionName": "A",
+      "lecturer": {
+        "reputation": "Excellent",
+        "officeHours": [],
+        "salary": 5000,
+        "employmentStatus": "Full-Time",
+        "personName": "John",
+        "personSurname": "Doe",
+        "username": "john.doe",
+        "password": "password"
+      },
+      "quota": 50,
+      "location": "Room 101",
+      "labHours": 2,
+      "shortName": "CS101",
+      "fullName": "Introduction to Computer Science",
+      "description": "Introductory course",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 3,
+      "classHours": 3
     }
   ],
   "nonTechnicalElectives": [
@@ -23070,3130 +26310,296 @@
       "semester": 1,
       "credit": 2,
       "classHours": 2
-    }
-  ],
-  "technicalElectives": [
-    {
-      "dates": [
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Sanem",
-        "personSurname": "Arslan",
-        "username": "sanem",
-        "password": "sanemarslan"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z01",
-      "shortName": "BIOE4072",
-      "fullName": "Planning and Management of Research",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Friday"
-        },
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Friday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Ali Haydar",
-        "personSurname": "Özer",
-        "username": "alihaydar",
-        "password": "alihaydarozer"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z02",
-      "shortName": "CHE4060",
-      "fullName": "Cost Management in Chemical Industries",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Tuesday"
-        },
-        {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Tuesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Assoc. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Ömer",
-        "personSurname": "Korçak",
-        "username": "omer",
-        "password": "omerkorcak"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z03",
-      "shortName": "CHE4068",
-      "fullName": "Financial Engineering",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Thursday"
-        },
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Thursday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Fatma Corut",
-        "personSurname": "Ergin",
-        "username": "fatma",
-        "password": "fatma.ergin"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "CHE4080",
-      "fullName": "Chemical Engineering for Sustainable Biosphere",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Friday"
-        },
-        {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Friday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Mehmet",
-        "personSurname": "Baran",
-        "username": "mehmet",
-        "password": "mehmetbaran"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "CSE4044",
-      "fullName": "Software Project Management",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Assoc. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Borahan",
-        "personSurname": "Tümer",
-        "username": "borahan",
-        "password": "borahantumer"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z05",
-      "shortName": "CSE4056",
-      "fullName": "Management of Information Systems",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Monday"
-        },
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Monday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Assoc. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Müjdat",
-        "personSurname": "Soytürk",
-        "username": "mujdat",
-        "password": "mujdatsoyturk"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z06",
-      "shortName": "CSE4062",
-      "fullName": "Introduction to Data Science and Analytics",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "16:00",
-          "endTime": "16:50",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Prof. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Ali Fuat",
-        "personSurname": "Alkaya",
-        "username": "alifuat",
-        "password": "alifuatalkaya"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z01",
-      "shortName": "EE4056",
-      "fullName": "Introduction to Information Systems Management",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "16:00",
-          "endTime": "16:50",
-          "dayOfWeek": "Tuesday"
-        },
-        {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Tuesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Prof. Dr.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Çiğdem Eroğlu",
-        "personSurname": "Erdem",
-        "username": "cigdem",
-        "password": "cigdemerogluerdem"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z02",
-      "shortName": "EE4062",
-      "fullName": "Introduction to Image Processing",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Thursday"
-        },
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Thursday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Prof. Dr.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Haluk Rahmi",
-        "personSurname": "Topçuğlu",
-        "username": "haluk",
-        "password": "haluk"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z03",
-      "shortName": "ENVE4062",
-      "fullName": "Energy and the Environment",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Friday"
-        },
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Friday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Dr.Öğr.",
-        "officeHours": [
-          {
-            "startTime": "14:00",
-            "endTime": "14:50",
-            "dayOfWeek": "Monday"
-          },
-          {
-            "startTime": "15:00",
-            "endTime": "15:50",
-            "dayOfWeek": "Monday"
-          }
-        ],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Betül",
-        "personSurname": "Boz",
-        "username": "betul",
-        "password": "boz"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "ENVE4063",
-      "fullName": "Construction Materials for Environmental Engineering",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Doç. Dr.",
-        "officeHours": [
-          {
-            "startTime": "11:30",
-            "endTime": "12:20",
-            "dayOfWeek": "Monday"
-          },
-          {
-            "startTime": "13:00",
-            "endTime": "13:50",
-            "dayOfWeek": "Monday"
-          }
-        ],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Murat Can",
-        "personSurname": "Ganiz",
-        "username": "muratcan",
-        "password": "muratcanganiz"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "IE4055",
-      "fullName": "Design of Experiments",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "16:00",
-          "endTime": "16:50",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Doç. Dr.",
-        "officeHours": [
-          {
-            "startTime": "09:30",
-            "endTime": "10:20",
-            "dayOfWeek": "Monday"
-          },
-          {
-            "startTime": "10:30",
-            "endTime": "11:20",
-            "dayOfWeek": "Monday"
-          }
-        ],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Mustafa",
-        "personSurname": "Ağaoglu",
-        "username": "mustafa",
-        "password": "mustafaagaoglu"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z05",
-      "shortName": "IE4087",
-      "fullName": "Introduction to Total Quality Management",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Monday"
-        },
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Monday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Sanem",
-        "personSurname": "Arslan",
-        "username": "sanem",
-        "password": "sanemarslan"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z06",
-      "shortName": "ME3004",
-      "fullName": "Mathematical Modeling in Mechanical Engineering",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Friday"
-        },
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Friday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Ali Haydar",
-        "personSurname": "Özer",
-        "username": "alihaydar",
-        "password": "alihaydarozer"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z01",
-      "shortName": "ME3022",
-      "fullName": "Mechatronics",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Tuesday"
-        },
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Tuesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Assoc. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Ömer",
-        "personSurname": "Korçak",
-        "username": "omer",
-        "password": "omerkorcak"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z02",
-      "shortName": "ME4018",
-      "fullName": "Introduction to Robotics",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "16:00",
-          "endTime": "16:50",
-          "dayOfWeek": "Thursday"
-        },
-        {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Thursday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Fatma Corut",
-        "personSurname": "Ergin",
-        "username": "fatma",
-        "password": "fatma.ergin"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z03",
-      "shortName": "ME4022",
-      "fullName": "Control Systems",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Mehmet",
-        "personSurname": "Baran",
-        "username": "mehmet",
-        "password": "mehmetbaran"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "ME4033",
-      "fullName": "Designing Quality Products",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Assoc. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Borahan",
-        "personSurname": "Tümer",
-        "username": "borahan",
-        "password": "borahantumer"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "ME4051",
-      "fullName": "Automotive Engineering",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Friday"
-        },
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Friday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Assoc. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Müjdat",
-        "personSurname": "Soytürk",
-        "username": "mujdat",
-        "password": "mujdatsoyturk"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z05",
-      "shortName": "MGT4076",
-      "fullName": "Quality Management System in Automotive Industry",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Monday"
-        },
-        {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Monday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Prof. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Ali Fuat",
-        "personSurname": "Alkaya",
-        "username": "alifuat",
-        "password": "alifuatalkaya"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z06",
-      "shortName": "MGT4082",
-      "fullName": "Advanced Innovative Design Management for Entrepreneurship",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Tuesday"
-        },
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Tuesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Prof. Dr.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Çiğdem Eroğlu",
-        "personSurname": "Erdem",
-        "username": "cigdem",
-        "password": "cigdemerogluerdem"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z01",
-      "shortName": "MGT4084",
-      "fullName": "Innovation and New Product Development Management",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Thursday"
-        },
-        {
-          "startTime": "16:00",
-          "endTime": "16:50",
-          "dayOfWeek": "Thursday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Prof. Dr.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Haluk Rahmi",
-        "personSurname": "Topçuğlu",
-        "username": "haluk",
-        "password": "haluk"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z02",
-      "shortName": "MGT4086",
-      "fullName": "Managing Engineering and Technology",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Friday"
-        },
-        {
-          "startTime": "16:00",
-          "endTime": "16:50",
-          "dayOfWeek": "Friday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Dr.Öğr.",
-        "officeHours": [
-          {
-            "startTime": "14:00",
-            "endTime": "14:50",
-            "dayOfWeek": "Monday"
-          },
-          {
-            "startTime": "15:00",
-            "endTime": "15:50",
-            "dayOfWeek": "Monday"
-          }
-        ],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Betül",
-        "personSurname": "Boz",
-        "username": "betul",
-        "password": "boz"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z03",
-      "shortName": "MGT4088",
-      "fullName": "Project Management for Engineers",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Monday"
-        },
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Monday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Doç. Dr.",
-        "officeHours": [
-          {
-            "startTime": "11:30",
-            "endTime": "12:20",
-            "dayOfWeek": "Monday"
-          },
-          {
-            "startTime": "13:00",
-            "endTime": "13:50",
-            "dayOfWeek": "Monday"
-          }
-        ],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Murat Can",
-        "personSurname": "Ganiz",
-        "username": "muratcan",
-        "password": "muratcanganiz"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "MSE4073",
-      "fullName": "Materials Engineering Economics and Plant Design",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Doç. Dr.",
-        "officeHours": [
-          {
-            "startTime": "09:30",
-            "endTime": "10:20",
-            "dayOfWeek": "Monday"
-          },
-          {
-            "startTime": "10:30",
-            "endTime": "11:20",
-            "dayOfWeek": "Monday"
-          }
-        ],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Mustafa",
-        "personSurname": "Ağaoglu",
-        "username": "mustafa",
-        "password": "mustafaagaoglu"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "MSE4074",
-      "fullName": "Total Quality Management in Materials Engineering",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Sanem",
-        "personSurname": "Arslan",
-        "username": "sanem",
-        "password": "sanemarslan"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z02",
-      "shortName": "CSE4026",
-      "fullName": "Introduction to Robotics and Control Theory",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Monday"
-        },
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Monday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Ali Haydar",
-        "personSurname": "Özer",
-        "username": "alihaydar",
-        "password": "alihaydarozer"
-      },
-      "quota": 50,
-      "requiredCredit": 155,
-      "location": "M2-Z03",
-      "shortName": "CSE4032",
-      "fullName": "Introduction to Distributed Systems",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Tuesday"
-        },
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Tuesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Assoc. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Ömer",
-        "personSurname": "Korçak",
-        "username": "omer",
-        "password": "omerkorcak"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "CSE4034",
-      "fullName": "Advanced Unix Programming",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Thursday"
-        },
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Thursday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Fatma Corut",
-        "personSurname": "Ergin",
-        "username": "fatma",
-        "password": "fatma.ergin"
-      },
-      "quota": 50,
-      "requiredCredit": 155,
-      "location": "M2-Z04",
-      "shortName": "CSE4038",
-      "fullName": "Introduction to Parallel Processing",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Thursday"
-        },
-        {
-          "startTime": "16:00",
-          "endTime": "16:50",
-          "dayOfWeek": "Thursday"
-        }
-      ],
-      "sectionName": "1.2",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Mehmet",
-        "personSurname": "Baran",
-        "username": "mehmet",
-        "password": "mehmetbaran"
-      },
-      "quota": 50,
-      "requiredCredit": 155,
-      "location": "M2-Z05",
-      "shortName": "CSE4038",
-      "fullName": "Introduction to Parallel Processing",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Friday"
-        },
-        {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Friday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Assoc. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Borahan",
-        "personSurname": "Tümer",
-        "username": "borahan",
-        "password": "borahantumer"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z06",
-      "shortName": "CSE4040",
-      "fullName": "Cloud Computing",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Monday"
-        },
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Monday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Assoc. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Müjdat",
-        "personSurname": "Soytürk",
-        "username": "mujdat",
-        "password": "mujdatsoyturk"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z01",
-      "shortName": "CSE4053",
-      "fullName": "Information Systems: Analysis and Design",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Prof. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Ali Fuat",
-        "personSurname": "Alkaya",
-        "username": "alifuat",
-        "password": "alifuatalkaya"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z03",
-      "shortName": "CSE4057",
-      "fullName": "Information Systems Security",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "16:00",
-          "endTime": "16:50",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.2",
-      "lecturer": {
-        "reputation": "Prof. Dr.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Çiğdem Eroğlu",
-        "personSurname": "Erdem",
-        "username": "cigdem",
-        "password": "cigdemerogluerdem"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "CSE4057",
-      "fullName": "Information Systems Security",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Friday"
-        },
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Friday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Prof. Dr.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Haluk Rahmi",
-        "personSurname": "Topçuğlu",
-        "username": "haluk",
-        "password": "haluk"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "CSE4058",
-      "fullName": "Fundamentals of Electronic Commerce",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Friday"
-        },
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Friday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Dr.Öğr.",
-        "officeHours": [
-          {
-            "startTime": "14:00",
-            "endTime": "14:50",
-            "dayOfWeek": "Monday"
-          },
-          {
-            "startTime": "15:00",
-            "endTime": "15:50",
-            "dayOfWeek": "Monday"
-          }
-        ],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Betül",
-        "personSurname": "Boz",
-        "username": "betul",
-        "password": "boz"
-      },
-      "quota": 50,
-      "requiredCredit": 155,
-      "location": "M2-Z05",
-      "shortName": "CSE4059",
-      "fullName": "Internet Programming",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Monday"
-        },
-        {
-          "startTime": "16:00",
-          "endTime": "16:50",
-          "dayOfWeek": "Monday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Doç. Dr.",
-        "officeHours": [
-          {
-            "startTime": "11:30",
-            "endTime": "12:20",
-            "dayOfWeek": "Monday"
-          },
-          {
-            "startTime": "13:00",
-            "endTime": "13:50",
-            "dayOfWeek": "Monday"
-          }
-        ],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Murat Can",
-        "personSurname": "Ganiz",
-        "username": "muratcan",
-        "password": "muratcanganiz"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z06",
-      "shortName": "CSE4061",
-      "fullName": "Compiler Design",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Doç. Dr.",
-        "officeHours": [
-          {
-            "startTime": "09:30",
-            "endTime": "10:20",
-            "dayOfWeek": "Monday"
-          },
-          {
-            "startTime": "10:30",
-            "endTime": "11:20",
-            "dayOfWeek": "Monday"
-          }
-        ],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Mustafa",
-        "personSurname": "Ağaoglu",
-        "username": "mustafa",
-        "password": "mustafaagaoglu"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z01",
-      "shortName": "CSE4063",
-      "fullName": "Fundamentals of Data Mining",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Thursday"
-        },
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Thursday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Sanem",
-        "personSurname": "Arslan",
-        "username": "sanem",
-        "password": "sanemarslan"
-      },
-      "quota": 50,
-      "requiredCredit": 155,
-      "location": "M2-Z02",
-      "shortName": "CSE4065",
-      "fullName": "Introduction to Computational Genomics",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Thursday"
-        },
-        {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Thursday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Ali Haydar",
-        "personSurname": "Özer",
-        "username": "alihaydar",
-        "password": "alihaydarozer"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z03",
-      "shortName": "CSE4066",
-      "fullName": "Introduction to Cryptography",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Friday"
-        },
-        {
-          "startTime": "16:00",
-          "endTime": "16:50",
-          "dayOfWeek": "Friday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Assoc. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Ömer",
-        "personSurname": "Korçak",
-        "username": "omer",
-        "password": "omerkorcak"
-      },
-      "quota": 50,
-      "requiredCredit": 155,
-      "location": "M2-Z04",
-      "shortName": "CSE4067",
-      "fullName": "Introduction to Blockchain Programming",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Tuesday"
-        },
-        {
-          "startTime": "16:00",
-          "endTime": "16:50",
-          "dayOfWeek": "Tuesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Fatma Corut",
-        "personSurname": "Ergin",
-        "username": "fatma",
-        "password": "fatma.ergin"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "CSE4070",
-      "fullName": "Software Frameworks",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Mehmet",
-        "personSurname": "Baran",
-        "username": "mehmet",
-        "password": "mehmetbaran"
-      },
-      "quota": 50,
-      "requiredCredit": 155,
-      "location": "M2-Z05",
-      "shortName": "CSE4075",
-      "fullName": "Wireless and Mobile Networks",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Assoc. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Borahan",
-        "personSurname": "Tümer",
-        "username": "borahan",
-        "password": "borahantumer"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z06",
-      "shortName": "CSE4082",
-      "fullName": "Artificial Intelligence",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Tuesday"
-        },
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Tuesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Assoc. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Müjdat",
-        "personSurname": "Soytürk",
-        "username": "mujdat",
-        "password": "mujdatsoyturk"
-      },
-      "quota": 50,
-      "requiredCredit": 155,
-      "location": "M2-Z07",
-      "shortName": "CSE4083",
-      "fullName": "Computer Graphics",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "16:00",
-          "endTime": "16:50",
-          "dayOfWeek": "Monday"
-        },
-        {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Monday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Prof. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Ali Fuat",
-        "personSurname": "Alkaya",
-        "username": "alifuat",
-        "password": "alifuatalkaya"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z01",
-      "shortName": "CSE4084",
-      "fullName": "Multimedia Systems",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Thursday"
-        },
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Thursday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Prof. Dr.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Çiğdem Eroğlu",
-        "personSurname": "Erdem",
-        "username": "cigdem",
-        "password": "cigdemerogluerdem"
-      },
-      "quota": 50,
-      "requiredCredit": 155,
-      "location": "M2-Z02",
-      "shortName": "CSE4085",
-      "fullName": "Human Computer Interaction",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Friday"
-        },
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Friday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Prof. Dr.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Haluk Rahmi",
-        "personSurname": "Topçuğlu",
-        "username": "haluk",
-        "password": "haluk"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z03",
-      "shortName": "CSE4086",
-      "fullName": "Mobile Device Programming",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Friday"
-        },
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Friday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Dr.Öğr.",
-        "officeHours": [
-          {
-            "startTime": "14:00",
-            "endTime": "14:50",
-            "dayOfWeek": "Monday"
-          },
-          {
-            "startTime": "15:00",
-            "endTime": "15:50",
-            "dayOfWeek": "Monday"
-          }
-        ],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Betül",
-        "personSurname": "Boz",
-        "username": "betul",
-        "password": "boz"
-      },
-      "quota": 50,
-      "requiredCredit": 155,
-      "location": "M2-Z04",
-      "shortName": "CSE4217",
-      "fullName": "Microprocessors",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Tuesday"
-        },
-        {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Tuesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Doç. Dr.",
-        "officeHours": [
-          {
-            "startTime": "11:30",
-            "endTime": "12:20",
-            "dayOfWeek": "Monday"
-          },
-          {
-            "startTime": "13:00",
-            "endTime": "13:50",
-            "dayOfWeek": "Monday"
-          }
-        ],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Murat Can",
-        "personSurname": "Ganiz",
-        "username": "muratcan",
-        "password": "muratcanganiz"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "CSE4093",
-      "fullName": "Special Topics in Computer Engineering I",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Doç. Dr.",
-        "officeHours": [
-          {
-            "startTime": "09:30",
-            "endTime": "10:20",
-            "dayOfWeek": "Monday"
-          },
-          {
-            "startTime": "10:30",
-            "endTime": "11:20",
-            "dayOfWeek": "Monday"
-          }
-        ],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Mustafa",
-        "personSurname": "Ağaoglu",
-        "username": "mustafa",
-        "password": "mustafaagaoglu"
-      },
-      "quota": 50,
-      "requiredCredit": 155,
-      "location": "M2-Z05",
-      "shortName": "CSE4094",
-      "fullName": "Special Topics in Computer Engineering II",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "16:00",
-          "endTime": "16:50",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Sanem",
-        "personSurname": "Arslan",
-        "username": "sanem",
-        "password": "sanemarslan"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z06",
-      "shortName": "CSE4095",
-      "fullName": "Special Topics in Computer Engineering III",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Thursday"
-        },
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Thursday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Ali Haydar",
-        "personSurname": "Özer",
-        "username": "alihaydar",
-        "password": "alihaydarozer"
-      },
-      "quota": 50,
-      "requiredCredit": 155,
-      "location": "M2-Z07",
-      "shortName": "CSE4096",
-      "fullName": "Special Topics in Computer Engineering IV",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Sanem",
-        "personSurname": "Arslan",
-        "username": "sanem",
-        "password": "sanemarslan"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z01",
-      "shortName": "BIOE4072",
-      "fullName": "Planning and Management of Research",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Friday"
-        },
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Friday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Ali Haydar",
-        "personSurname": "Özer",
-        "username": "alihaydar",
-        "password": "alihaydarozer"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z02",
-      "shortName": "CHE4060",
-      "fullName": "Cost Management in Chemical Industries",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Tuesday"
-        },
-        {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Tuesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Assoc. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Ömer",
-        "personSurname": "Korçak",
-        "username": "omer",
-        "password": "omerkorcak"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z03",
-      "shortName": "CHE4068",
-      "fullName": "Financial Engineering",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Thursday"
-        },
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Thursday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Fatma Corut",
-        "personSurname": "Ergin",
-        "username": "fatma",
-        "password": "fatma.ergin"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "CHE4080",
-      "fullName": "Chemical Engineering for Sustainable Biosphere",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Friday"
-        },
-        {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Friday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Mehmet",
-        "personSurname": "Baran",
-        "username": "mehmet",
-        "password": "mehmetbaran"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "CSE4044",
-      "fullName": "Software Project Management",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Assoc. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Borahan",
-        "personSurname": "Tümer",
-        "username": "borahan",
-        "password": "borahantumer"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z05",
-      "shortName": "CSE4056",
-      "fullName": "Management of Information Systems",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Monday"
-        },
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Monday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Assoc. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Müjdat",
-        "personSurname": "Soytürk",
-        "username": "mujdat",
-        "password": "mujdatsoyturk"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z06",
-      "shortName": "CSE4062",
-      "fullName": "Introduction to Data Science and Analytics",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "16:00",
-          "endTime": "16:50",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Prof. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Ali Fuat",
-        "personSurname": "Alkaya",
-        "username": "alifuat",
-        "password": "alifuatalkaya"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z01",
-      "shortName": "EE4056",
-      "fullName": "Introduction to Information Systems Management",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "16:00",
-          "endTime": "16:50",
-          "dayOfWeek": "Tuesday"
-        },
-        {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Tuesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Prof. Dr.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Çiğdem Eroğlu",
-        "personSurname": "Erdem",
-        "username": "cigdem",
-        "password": "cigdemerogluerdem"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z02",
-      "shortName": "EE4062",
-      "fullName": "Introduction to Image Processing",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Thursday"
-        },
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Thursday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Prof. Dr.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Haluk Rahmi",
-        "personSurname": "Topçuğlu",
-        "username": "haluk",
-        "password": "haluk"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z03",
-      "shortName": "ENVE4062",
-      "fullName": "Energy and the Environment",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Friday"
-        },
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Friday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Dr.Öğr.",
-        "officeHours": [
-          {
-            "startTime": "14:00",
-            "endTime": "14:50",
-            "dayOfWeek": "Monday"
-          },
-          {
-            "startTime": "15:00",
-            "endTime": "15:50",
-            "dayOfWeek": "Monday"
-          }
-        ],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Betül",
-        "personSurname": "Boz",
-        "username": "betul",
-        "password": "boz"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "ENVE4063",
-      "fullName": "Construction Materials for Environmental Engineering",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Doç. Dr.",
-        "officeHours": [
-          {
-            "startTime": "11:30",
-            "endTime": "12:20",
-            "dayOfWeek": "Monday"
-          },
-          {
-            "startTime": "13:00",
-            "endTime": "13:50",
-            "dayOfWeek": "Monday"
-          }
-        ],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Murat Can",
-        "personSurname": "Ganiz",
-        "username": "muratcan",
-        "password": "muratcanganiz"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "IE4055",
-      "fullName": "Design of Experiments",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "16:00",
-          "endTime": "16:50",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Doç. Dr.",
-        "officeHours": [
-          {
-            "startTime": "09:30",
-            "endTime": "10:20",
-            "dayOfWeek": "Monday"
-          },
-          {
-            "startTime": "10:30",
-            "endTime": "11:20",
-            "dayOfWeek": "Monday"
-          }
-        ],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Mustafa",
-        "personSurname": "Ağaoglu",
-        "username": "mustafa",
-        "password": "mustafaagaoglu"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z05",
-      "shortName": "IE4087",
-      "fullName": "Introduction to Total Quality Management",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Monday"
-        },
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Monday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Sanem",
-        "personSurname": "Arslan",
-        "username": "sanem",
-        "password": "sanemarslan"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z06",
-      "shortName": "ME3004",
-      "fullName": "Mathematical Modeling in Mechanical Engineering",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Friday"
-        },
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Friday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Ali Haydar",
-        "personSurname": "Özer",
-        "username": "alihaydar",
-        "password": "alihaydarozer"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z01",
-      "shortName": "ME3022",
-      "fullName": "Mechatronics",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Tuesday"
-        },
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Tuesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Assoc. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Ömer",
-        "personSurname": "Korçak",
-        "username": "omer",
-        "password": "omerkorcak"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z02",
-      "shortName": "ME4018",
-      "fullName": "Introduction to Robotics",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "16:00",
-          "endTime": "16:50",
-          "dayOfWeek": "Thursday"
-        },
-        {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Thursday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Fatma Corut",
-        "personSurname": "Ergin",
-        "username": "fatma",
-        "password": "fatma.ergin"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z03",
-      "shortName": "ME4022",
-      "fullName": "Control Systems",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Asst. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Mehmet",
-        "personSurname": "Baran",
-        "username": "mehmet",
-        "password": "mehmetbaran"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "ME4033",
-      "fullName": "Designing Quality Products",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Assoc. Prof.",
-        "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Borahan",
-        "personSurname": "Tümer",
-        "username": "borahan",
-        "password": "borahantumer"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "ME4051",
-      "fullName": "Automotive Engineering",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
     },
     {
       "dates": [
         {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Friday"
-        },
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Friday"
+          "startTime": "2023-01-01",
+          "endTime": "2023-05-01"
         }
       ],
-      "sectionName": "1.1",
+      "sectionName": "C",
       "lecturer": {
-        "reputation": "Assoc. Prof.",
+        "reputation": "Excellent",
         "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Müjdat",
-        "personSurname": "Soytürk",
-        "username": "mujdat",
-        "password": "mujdatsoyturk"
+        "salary": 5000,
+        "employmentStatus": "Full-Time",
+        "personName": "John",
+        "personSurname": "Doe",
+        "username": "john.doe",
+        "password": "password"
       },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z05",
-      "shortName": "MGT4076",
-      "fullName": "Quality Management System in Automotive Industry",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
+      "quota": 20,
+      "location": "Room 301",
+      "isRemote": true,
+      "shortName": "ART101",
+      "fullName": "Introduction to Art",
+      "description": "Art appreciation",
+      "prerequisite": [],
+      "semester": 2,
+      "credit": 3,
+      "classHours": 2
     },
     {
       "dates": [
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Monday"
-        },
         {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Monday"
+          "startTime": "2023-01-01",
+          "endTime": "2023-05-01"
         }
       ],
-      "sectionName": "1.1",
+      "sectionName": "C",
       "lecturer": {
-        "reputation": "Prof. Prof.",
+        "reputation": "Excellent",
         "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Ali Fuat",
-        "personSurname": "Alkaya",
-        "username": "alifuat",
-        "password": "alifuatalkaya"
+        "salary": 5000,
+        "employmentStatus": "Full-Time",
+        "personName": "John",
+        "personSurname": "Doe",
+        "username": "john.doe",
+        "password": "password"
       },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z06",
-      "shortName": "MGT4082",
-      "fullName": "Advanced Innovative Design Management for Entrepreneurship",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
+      "quota": 20,
+      "location": "Room 301",
+      "isRemote": true,
+      "shortName": "ART101",
+      "fullName": "Introduction to Art",
+      "description": "Art appreciation",
+      "prerequisite": [],
+      "semester": 2,
+      "credit": 3,
+      "classHours": 2
     },
     {
       "dates": [
         {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Tuesday"
-        },
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Tuesday"
+          "startTime": "2023-01-01",
+          "endTime": "2023-05-01"
         }
       ],
-      "sectionName": "1.1",
+      "sectionName": "C",
       "lecturer": {
-        "reputation": "Prof. Dr.",
+        "reputation": "Excellent",
         "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Çiğdem Eroğlu",
-        "personSurname": "Erdem",
-        "username": "cigdem",
-        "password": "cigdemerogluerdem"
+        "salary": 5000,
+        "employmentStatus": "Full-Time",
+        "personName": "John",
+        "personSurname": "Doe",
+        "username": "john.doe",
+        "password": "password"
       },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z01",
-      "shortName": "MGT4084",
-      "fullName": "Innovation and New Product Development Management",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
+      "quota": 20,
+      "location": "Room 301",
+      "isRemote": true,
+      "shortName": "ART101",
+      "fullName": "Introduction to Art",
+      "description": "Art appreciation",
+      "prerequisite": [],
+      "semester": 2,
+      "credit": 3,
+      "classHours": 2
     },
     {
       "dates": [
-        {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Thursday"
-        },
         {
-          "startTime": "16:00",
-          "endTime": "16:50",
-          "dayOfWeek": "Thursday"
+          "startTime": "2023-01-01",
+          "endTime": "2023-05-01"
         }
       ],
-      "sectionName": "1.1",
+      "sectionName": "C",
       "lecturer": {
-        "reputation": "Prof. Dr.",
+        "reputation": "Excellent",
         "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Haluk Rahmi",
-        "personSurname": "Topçuğlu",
-        "username": "haluk",
-        "password": "haluk"
+        "salary": 5000,
+        "employmentStatus": "Full-Time",
+        "personName": "John",
+        "personSurname": "Doe",
+        "username": "john.doe",
+        "password": "password"
       },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z02",
-      "shortName": "MGT4086",
-      "fullName": "Managing Engineering and Technology",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
+      "quota": 20,
+      "location": "Room 301",
+      "isRemote": true,
+      "shortName": "ART101",
+      "fullName": "Introduction to Art",
+      "description": "Art appreciation",
+      "prerequisite": [],
+      "semester": 2,
+      "credit": 3,
+      "classHours": 2
     },
     {
       "dates": [
         {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Friday"
-        },
-        {
-          "startTime": "16:00",
-          "endTime": "16:50",
-          "dayOfWeek": "Friday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Dr.Öğr.",
-        "officeHours": [
-          {
-            "startTime": "14:00",
-            "endTime": "14:50",
-            "dayOfWeek": "Monday"
-          },
-          {
-            "startTime": "15:00",
-            "endTime": "15:50",
-            "dayOfWeek": "Monday"
-          }
-        ],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Betül",
-        "personSurname": "Boz",
-        "username": "betul",
-        "password": "boz"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z03",
-      "shortName": "MGT4088",
-      "fullName": "Project Management for Engineers",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Monday"
-        },
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Monday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Doç. Dr.",
-        "officeHours": [
-          {
-            "startTime": "11:30",
-            "endTime": "12:20",
-            "dayOfWeek": "Monday"
-          },
-          {
-            "startTime": "13:00",
-            "endTime": "13:50",
-            "dayOfWeek": "Monday"
-          }
-        ],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Murat Can",
-        "personSurname": "Ganiz",
-        "username": "muratcan",
-        "password": "muratcanganiz"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "MSE4073",
-      "fullName": "Materials Engineering Economics and Plant Design",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Wednesday"
-        }
-      ],
-      "sectionName": "1.1",
-      "lecturer": {
-        "reputation": "Doç. Dr.",
-        "officeHours": [
-          {
-            "startTime": "09:30",
-            "endTime": "10:20",
-            "dayOfWeek": "Monday"
-          },
-          {
-            "startTime": "10:30",
-            "endTime": "11:20",
-            "dayOfWeek": "Monday"
-          }
-        ],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Mustafa",
-        "personSurname": "Ağaoglu",
-        "username": "mustafa",
-        "password": "mustafaagaoglu"
-      },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "MSE4074",
-      "fullName": "Total Quality Management in Materials Engineering",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
-    },
-    {
-      "dates": [
-        {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Wednesday"
-        },
-        {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Wednesday"
+          "startTime": "2023-01-01",
+          "endTime": "2023-05-01"
         }
       ],
-      "sectionName": "1.1",
+      "sectionName": "C",
       "lecturer": {
-        "reputation": "Asst. Prof.",
+        "reputation": "Excellent",
         "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Sanem",
-        "personSurname": "Arslan",
-        "username": "sanem",
-        "password": "sanemarslan"
+        "salary": 5000,
+        "employmentStatus": "Full-Time",
+        "personName": "John",
+        "personSurname": "Doe",
+        "username": "john.doe",
+        "password": "password"
       },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z02",
-      "shortName": "CSE4026",
-      "fullName": "Introduction to Robotics and Control Theory",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
+      "quota": 20,
+      "location": "Room 301",
+      "isRemote": true,
+      "shortName": "ART101",
+      "fullName": "Introduction to Art",
+      "description": "Art appreciation",
+      "prerequisite": [],
+      "semester": 2,
+      "credit": 3,
+      "classHours": 2
     },
     {
       "dates": [
         {
-          "startTime": "09:30",
-          "endTime": "10:20",
-          "dayOfWeek": "Monday"
-        },
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Monday"
+          "startTime": "2023-01-01",
+          "endTime": "2023-05-01"
         }
       ],
-      "sectionName": "1.1",
+      "sectionName": "C",
       "lecturer": {
-        "reputation": "Asst. Prof.",
+        "reputation": "Excellent",
         "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Ali Haydar",
-        "personSurname": "Özer",
-        "username": "alihaydar",
-        "password": "alihaydarozer"
+        "salary": 5000,
+        "employmentStatus": "Full-Time",
+        "personName": "John",
+        "personSurname": "Doe",
+        "username": "john.doe",
+        "password": "password"
       },
-      "quota": 50,
-      "requiredCredit": 155,
-      "location": "M2-Z03",
-      "shortName": "CSE4032",
-      "fullName": "Introduction to Distributed Systems",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
+      "quota": 20,
+      "location": "Room 301",
+      "isRemote": true,
+      "shortName": "ART101",
+      "fullName": "Introduction to Art",
+      "description": "Art appreciation",
+      "prerequisite": [],
+      "semester": 2,
+      "credit": 3,
+      "classHours": 2
     },
     {
       "dates": [
-        {
-          "startTime": "10:30",
-          "endTime": "11:20",
-          "dayOfWeek": "Tuesday"
-        },
         {
-          "startTime": "11:30",
-          "endTime": "12:20",
-          "dayOfWeek": "Tuesday"
+          "startTime": "2023-01-01",
+          "endTime": "2023-05-01"
         }
       ],
-      "sectionName": "1.1",
+      "sectionName": "C",
       "lecturer": {
-        "reputation": "Assoc. Prof.",
+        "reputation": "Excellent",
         "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Ömer",
-        "personSurname": "Korçak",
-        "username": "omer",
-        "password": "omerkorcak"
+        "salary": 5000,
+        "employmentStatus": "Full-Time",
+        "personName": "John",
+        "personSurname": "Doe",
+        "username": "john.doe",
+        "password": "password"
       },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z04",
-      "shortName": "CSE4034",
-      "fullName": "Advanced Unix Programming",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
+      "quota": 20,
+      "location": "Room 301",
+      "isRemote": true,
+      "shortName": "ART101",
+      "fullName": "Introduction to Art",
+      "description": "Art appreciation",
+      "prerequisite": [],
+      "semester": 2,
+      "credit": 3,
+      "classHours": 2
     },
     {
       "dates": [
         {
-          "startTime": "13:00",
-          "endTime": "13:50",
-          "dayOfWeek": "Thursday"
-        },
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Thursday"
+          "startTime": "2023-01-01",
+          "endTime": "2023-05-01"
         }
       ],
-      "sectionName": "1.1",
+      "sectionName": "C",
       "lecturer": {
-        "reputation": "Asst. Prof.",
+        "reputation": "Excellent",
         "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Fatma Corut",
-        "personSurname": "Ergin",
-        "username": "fatma",
-        "password": "fatma.ergin"
+        "salary": 5000,
+        "employmentStatus": "Full-Time",
+        "personName": "John",
+        "personSurname": "Doe",
+        "username": "john.doe",
+        "password": "password"
       },
-      "quota": 50,
-      "requiredCredit": 155,
-      "location": "M2-Z04",
-      "shortName": "CSE4038",
-      "fullName": "Introduction to Parallel Processing",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
+      "quota": 20,
+      "location": "Room 301",
+      "isRemote": true,
+      "shortName": "ART101",
+      "fullName": "Introduction to Art",
+      "description": "Art appreciation",
+      "prerequisite": [],
+      "semester": 2,
+      "credit": 3,
+      "classHours": 2
     },
     {
       "dates": [
         {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Thursday"
-        },
-        {
-          "startTime": "16:00",
-          "endTime": "16:50",
-          "dayOfWeek": "Thursday"
+          "startTime": "2023-01-01",
+          "endTime": "2023-05-01"
         }
       ],
-      "sectionName": "1.2",
+      "sectionName": "C",
       "lecturer": {
-        "reputation": "Asst. Prof.",
+        "reputation": "Excellent",
         "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Mehmet",
-        "personSurname": "Baran",
-        "username": "mehmet",
-        "password": "mehmetbaran"
+        "salary": 5000,
+        "employmentStatus": "Full-Time",
+        "personName": "John",
+        "personSurname": "Doe",
+        "username": "john.doe",
+        "password": "password"
       },
-      "quota": 50,
-      "requiredCredit": 155,
-      "location": "M2-Z05",
-      "shortName": "CSE4038",
-      "fullName": "Introduction to Parallel Processing",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
+      "quota": 20,
+      "location": "Room 301",
+      "isRemote": true,
+      "shortName": "ART101",
+      "fullName": "Introduction to Art",
+      "description": "Art appreciation",
+      "prerequisite": [],
+      "semester": 2,
+      "credit": 3,
+      "classHours": 2
     },
     {
       "dates": [
-        {
-          "startTime": "14:00",
-          "endTime": "14:50",
-          "dayOfWeek": "Friday"
-        },
         {
-          "startTime": "15:00",
-          "endTime": "15:50",
-          "dayOfWeek": "Friday"
+          "startTime": "2023-01-01",
+          "endTime": "2023-05-01"
         }
       ],
-      "sectionName": "1.1",
+      "sectionName": "C",
       "lecturer": {
-        "reputation": "Assoc. Prof.",
+        "reputation": "Excellent",
         "officeHours": [],
-        "salary": 10000,
-        "employmentStatus": "active",
-        "personName": "Borahan",
-        "personSurname": "Tümer",
-        "username": "borahan",
-        "password": "borahantumer"
+        "salary": 5000,
+        "employmentStatus": "Full-Time",
+        "personName": "John",
+        "personSurname": "Doe",
+        "username": "john.doe",
+        "password": "password"
       },
-      "quota": 50,
-      "requiredCredit": 165,
-      "location": "M2-Z06",
-      "shortName": "CSE4040",
-      "fullName": "Cloud Computing",
-      "description": "Elective",
-      "semester": 7,
-      "credit": 5,
-      "classHours": 4
+      "quota": 20,
+      "location": "Room 301",
+      "isRemote": true,
+      "shortName": "ART101",
+      "fullName": "Introduction to Art",
+      "description": "Art appreciation",
+      "prerequisite": [],
+      "semester": 2,
+      "credit": 3,
+      "classHours": 2
     }
   ]
 }
