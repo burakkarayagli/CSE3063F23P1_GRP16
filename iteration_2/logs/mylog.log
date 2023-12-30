@@ -1,0 +1,8 @@
+2023-12-30 11:16:59 INFO  Menu:62 - Login menu displayed
+2023-12-30 11:26:48 INFO  Menu:62 - Login menu displayed
+2023-12-30 11:26:54 INFO  Menu:74 - User hakki logged in successfully
+2023-12-30 11:26:54 INFO  StudentMenu:28 - Student menu displayed
+2023-12-30 11:26:57 INFO  Menu:62 - Login menu displayed
+2023-12-30 11:27:16 INFO  Menu:62 - Login menu displayed
+2023-12-30 11:27:18 WARN  Menu:77 - User dfgdf failed to log in with username dfgdf and password dfsgd
+2023-12-30 11:27:18 INFO  Menu:62 - Login menu displayed
