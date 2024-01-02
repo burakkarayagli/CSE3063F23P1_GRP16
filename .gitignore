@@ -10,7 +10,7 @@
 *.nar
 hs_err_pid*
 replay_pid*
-
+/python_iteration/models/__pycache__
 ##############################
 ## Maven
 ##############################
