@@ -32,6 +32,6 @@ class Person:
     def setPassword(self, password):
         self.password = password
 
-    
+    # There must be an abstract method for menu
     def getMenu(self):
         pass
