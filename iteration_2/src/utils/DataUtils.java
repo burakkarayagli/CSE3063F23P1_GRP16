@@ -97,7 +97,7 @@ public class DataUtils {
         return databaseInstance;
     }
 
-    private String databaseFolder = "database";
+    private String databaseFolder = "iteration_2/database";
 
     private ArrayList<File> getStudentFiles() {
         ArrayList<File> files = new ArrayList<>();
