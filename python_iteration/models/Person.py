@@ -1,37 +1,57 @@
+from abc import ABC, abstractmethod
 
-class Person:    
+
+class Person(ABC):
     def __init__(self, personName, personSurname, username, password):
-        self.personName = personName
-        self.personSurname = personSurname
-        self.username = username
-        self.password = password
-    
-    
-    def getPersonName(self):
-        return self.personName
-    
+        self.__personName = personName
+        self.__personSurname = personSurname
+        self.__username = username
+        self.__password = password
+
+    @property
+    def personName(self):
+        return self.__personName
+
+    @personName.setter
+    def personName(self, personName):
+        self.__personName = personName
+
+    @property
+    def personSurname(self):
+        return self.__personSurname
+
+    @personSurname.setter
+    def personSurname(self, personSurname):
+        self.__personSurname = personSurname
+
     def getFullName(self):
-        return self.personName+" "+self.personSurname
-    
-    def setPersonName(self, personName):
-        self.personName = personName
-    
-    def getPersonSurname(self):
-        return self.personSurname
+        return self.__personName + " " + self.__personSurname
 
-    def setPersonSurname(self, personSurname):
-        self.personName = personName
+    @property
+    def username(self):
+        return self.__username
 
-    
-    def getUsername(self):
-        return self.username
+    @username.setter
+    def username(self, username):
+        self.__username = username
 
-    def setUsername(self, username):
-        self.username = username
-    
+    @property
+    def password(self):
+        return self.__password
+
+    @password.setter
     def setPassword(self, password):
-        self.password = password
+        self.__password = password
 
-    # There must be an abstract method for menu
+
+    # It extensively displays information related to the user.
+    # It will display accordingly with the type of the user.(advisor, student, etc.)
+    @abstractmethod
+    def getInformation(self):
+        pass
+
+    # There must be an abstract method for the menu
+    # There will be menus exist depending on the type of the user.
+    @abstractmethod
     def getMenu(self):
         pass

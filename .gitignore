@@ -1,5 +1,6 @@
 # Personal
 *.back
+
 ## Java
 ##############################
 .mtj.tmp/
@@ -10,7 +11,7 @@
 *.nar
 hs_err_pid*
 replay_pid*
-
+/python_iteration/models/__pycache__
 ##############################
 ## Maven
 ##############################
@@ -91,3 +92,4 @@ nb-configuration.xml
 ##############################
 
 database/*
+__pycache__
