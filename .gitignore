@@ -1,5 +1,6 @@
 # Personal
 *.back
+
 ## Java
 ##############################
 .mtj.tmp/
@@ -91,3 +92,4 @@ nb-configuration.xml
 ##############################
 
 database/*
+__pycache__

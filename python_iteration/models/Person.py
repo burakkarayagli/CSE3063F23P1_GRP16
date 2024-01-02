@@ -1,44 +1,45 @@
 from abc import ABC, abstractmethod
 
+
 class Person(ABC):
     def __init__(self, personName, personSurname, username, password):
         self.__personName = personName
         self.__personSurname = personSurname
         self.__username = username
         self.__password = password
-    
+
     @property
-    def getPersonName(self):
+    def personName(self):
         return self.__personName
 
-    @getPersonName.setter
-    def setPersonName(self, personName):
+    @personName.setter
+    def personName(self, personName):
         self.__personName = personName
 
     @property
-    def getPersonSurname(self):
+    def personSurname(self):
         return self.__personSurname
 
-    @getPersonSurname.setter
-    def setPersonSurname(self, personSurname):
+    @personSurname.setter
+    def personSurname(self, personSurname):
         self.__personSurname = personSurname
 
     def getFullName(self):
         return self.__personName + " " + self.__personSurname
-    
+
     @property
-    def getUsername(self):
+    def username(self):
         return self.__username
 
-    @getUsername.setter
-    def setUsername(self, username):
+    @username.setter
+    def username(self, username):
         self.__username = username
-    
+
     @property
-    def getPassword(self):
+    def password(self):
         return self.__password
 
-    @getPassword.setter
+    @password.setter
     def setPassword(self, password):
         self.__password = password
 
