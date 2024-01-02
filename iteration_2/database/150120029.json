@@ -1,0 +1,16 @@
+{
+  "address": "Umraniye/Istanbul",
+  "phoneNumber": "5244556677",
+  "semester": 1,
+  "entranceYear": 2023,
+  "status": "",
+  "selectedCourses": [],
+  "transcript": {
+    "listGrades": [],
+    "notes": ""
+  },
+  "personName": "Nazli",
+  "personSurname": "Aslan",
+  "username": "nazli",
+  "password": "nazliaslan"
+}
