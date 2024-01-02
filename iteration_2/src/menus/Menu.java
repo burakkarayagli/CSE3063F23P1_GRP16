@@ -135,7 +135,7 @@ public class Menu {
         // Create a rolling file appender
         RollingFileAppender fileAppender;
         try {
-            fileAppender = new RollingFileAppender(layout, "logs/mylog.log", true);
+            fileAppender = new RollingFileAppender(layout, "iteration_2/logs/mylog.log", true);
             fileAppender.setMaxFileSize("5MB");
             fileAppender.setMaxBackupIndex(3);
 
