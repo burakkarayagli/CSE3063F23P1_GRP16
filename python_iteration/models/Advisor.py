@@ -3,20 +3,22 @@ class Advisor(Staff):
     def __init__(self, person_name, person_surname, username, password, reputation, office_hours, salary, employment_status, students):
         super().__init__(person_name, person_surname, username, password, reputation, office_hours, salary, employment_status)
         self.students = students
-
-    def set_students(self, students):
+        
+    @property
+    def students(self):
+        return self.students
+        
+    @students.setter
+    def students(self, students):
         self.students = students
 
-    def get_students(self):
-        return self.students
-
-    def add_student(self, student):
+    def __add_student(self, student):
         return self.students.append(student)
 
-    def delete_student(self, student):
+    def __delete_student(self, student):
         return self.students.remove(student)
 
-    def student_course_organization(self):
+    def __student_course_organization(self):
         num = 0
         for i, student in enumerate(self.students):
             print("Eligible Students")
@@ -40,11 +42,11 @@ class Advisor(Staff):
             print("Course has been added to the list of the student.")
             student.add_course(chosen_course)
 
-    def get_combined_courses(self, student):
+    def __get_combined_courses(self, student):
         combined_courses = student.get_selected_courses() + student.get_available_courses()
         return combined_courses
 
-    def reject_student(self, student, selections):
+    def __reject_student(self, student, selections):
         try:
             if selections == "*":
                 student.set_status("Rejected")
@@ -75,7 +77,7 @@ class Advisor(Staff):
         except Exception as e:
             raise Exception("Input must only include numbers. Please try again.") from e
 
-    def approve_student(self, student, selections):
+    def __approve_student(self, student, selections):
         try:
             if selections[0] == 0 and len(selections) == 1:
                 student.set_status("Approved")
