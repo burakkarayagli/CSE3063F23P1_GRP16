@@ -1,10 +1,28 @@
 from typing import List
+from TimeInterval import TimeInterval
+from Course import Course
+
 
 class NonTechnicalElectiveCourse(Course):
-    def __init__(self, course, dates: List[TimeInterval], sectionName: str, lecturer, quota: int,
-                 location: str, isRemote: bool):
-        super().__init__(course.shortName, course.fullName, course.description, course.prerequisite,
-                         course.semester, course.credit, course.classHours)
+    def __init__(
+        self,
+        course,
+        dates: List[TimeInterval],
+        sectionName: str,
+        lecturer,
+        quota: int,
+        location: str,
+        isRemote: bool,
+    ):
+        super().__init__(
+            course.shortName,
+            course.fullName,
+            course.description,
+            course.prerequisite,
+            course.semester,
+            course.credit,
+            course.classHours,
+        )
         self.dates = dates
         self.sectionName = sectionName
         self.lecturer = lecturer
@@ -43,15 +61,17 @@ class NonTechnicalElectiveCourse(Course):
         self.quota = quota
 
     def __str__(self):
-        return (f"Non Technical Elective Course: {self.fullName}\n"
-                f"Code: {self.shortName}\n"
-                f"Description: {self.description}\n"
-                f"Prequisite: {', '.join(self.prerequisite)}\n"
-                f"Semester: {self.semester}\n"
-                f"Credit: {self.credit}\n"
-                f"Class Hours: {self.classHours}\n"
-                f"Section Name: {self.sectionName}\n"
-                f"Lecturer: {self.lecturer.get_full_name()}\n"
-                f"Quota: {self.quota}\n"
-                f"Location: {self.location}\n"
-                f"IsRemote: {self.isRemote}\n------------")
+        return (
+            f"Non Technical Elective Course: {self.fullName}\n"
+            f"Code: {self.shortName}\n"
+            f"Description: {self.description}\n"
+            f"Prequisite: {', '.join(self.prerequisite)}\n"
+            f"Semester: {self.semester}\n"
+            f"Credit: {self.credit}\n"
+            f"Class Hours: {self.classHours}\n"
+            f"Section Name: {self.sectionName}\n"
+            f"Lecturer: {self.lecturer.get_full_name()}\n"
+            f"Quota: {self.quota}\n"
+            f"Location: {self.location}\n"
+            f"IsRemote: {self.isRemote}\n------------"
+        )
