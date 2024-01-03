@@ -22,40 +22,40 @@ class Student(Person):
         transcript: Transcript,
     ):
         super().__init__(firstName, lastName, username, password)
-        self.__semester__ = semester
-        self.__enteranceYear__ = enteranceYear
-        self.__status__ = status
-        self.__selectedCourse__ = selectedCourse
-        self.__approvedCourse__ = approvedCourse
-        self.__transcript__ = transcript
+        self.__semester = semester
+        self.__enteranceYear = enteranceYear
+        self.__status = status
+        self.__selectedCourse = selectedCourse
+        self.__approvedCourse = approvedCourse
+        self.__transcript = transcript
 
     # getters and setters
     @property
     def semester(self):
-        return self.__semester__
+        return self.__semester
 
     @semester.setter
     def semester(self, semester: int):
-        self.__semester__ = semester
+        self.__semester = semester
 
     @property
     def enteranceYear(self):
-        return self.__enteranceYear__
+        return self.__enteranceYear
 
     @enteranceYear.setter
     def enteranceYear(self, enteranceYear: int):
-        self.__enteranceYear__ = enteranceYear
+        self.__enteranceYear = enteranceYear
 
     @property
     def status(self):
-        return self.__status__
+        return self.__status
 
     @status.setter
     def status(self, status: str):
-        self.__status__ = status
+        self.__status = status
 
     def addSelectedCourse(self, course: Course):
-        self.__selectedCourse__.append(course)
+        self.__selectedCourse.append(course)
 
     def removeSelectedCourse(self, course: Course):
         # TODO: implement, can be __eq__ method use in the Course class or
@@ -63,7 +63,7 @@ class Student(Person):
         pass
 
     def addApprovedCourse(self, course: Course):
-        self.__approvedCourse__.append(course)
+        self.__approvedCourse.append(course)
 
     def removeApprovedCourse(self, course: Course):
         # TODO: implement, can be __eq__ method use in the Course class or
@@ -72,10 +72,10 @@ class Student(Person):
 
     def printSelectedCourse(self):
         print("SELECTED COURSES:")
-        for index, course in enumerate(self.__selectedCourse__):
+        for index, course in enumerate(self.__selectedCourse):
             print(f"{index+1}. {course.getFullName()}")
 
     def printTranscript(self):
         print("TRANSCRIPT:")
         # TODO: implement, writing __str__ in transcript class
-        print(self.__transcript__)
+        print(self.__transcript)

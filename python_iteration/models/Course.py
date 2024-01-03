@@ -1,84 +1,88 @@
+from types import List
+
+
 class Course:
     def __init__(
         self,
-        shortName="",
-        fullName="",
+        short_name="",
+        full_name="",
         description="",
-        prerequisite=None,
+        prerequisite=List[str](),
         semester=0,
         credit=0,
-        classHours=0,
     ):
-        self.shortName = shortName
-        self.fullName = fullName
-        self.description = description
-        self.prerequisite = prerequisite if prerequisite is not None else []
-        self.semester = semester
-        self.credit = credit
-        self.classHours = classHours
+        self.__short_name = short_name
+        self.__full_name = full_name
+        self.__description = description
+        self.__prerequisite = prerequisite
+        self.__semester = semester
+        self.__credit = credit
 
-    def get_short_name(self):
-        return self.shortName
+    @property
+    def short_name(self) -> str:
+        return self.__short_name
 
-    def set_short_name(self, shortName):
-        self.shortName = shortName
+    @short_name.setter
+    def short_name(self, short_name: str):
+        self.__short_name = short_name
 
-    def get_full_name(self):
-        return self.fullName
+    @property
+    def full_name(self) -> str:
+        return self.__full_name
 
-    def set_full_name(self, fullName):
-        self.fullName = fullName
+    @full_name.setter
+    def full_name(self, full_name: str):
+        self.__full_name = full_name
 
-    def get_description(self):
-        return self.description
+    @property
+    def description(self) -> str:
+        return self.__description
 
-    def set_description(self, description):
-        self.description = description
+    @description.setter
+    def description(self, description: str):
+        self.__description = description
 
-    def get_prerequisite(self):
-        return self.prerequisite
+    @property
+    def semester(self) -> int:
+        return self.__semester
 
-    def set_prerequisite(self, prerequisite):
-        self.prerequisite = prerequisite
+    @semester.setter
+    def semester(self, semester: int):
+        self.__semester = semester
 
-    def remove_prerequisite(self, prerequisite):
-        if prerequisite in self.prerequisite:
-            self.prerequisite.remove(prerequisite)
-            return True
-        return False
+    @property
+    def credit(self) -> str:
+        self.__credit
 
-    def add_prerequisite(self, prerequisite):
-        self.prerequisite.append(prerequisite)
-        return True
-
-    def get_semester(self):
-        return self.semester
-
-    def set_semester(self, semester):
-        self.semester = semester
-
-    def get_credit(self):
-        return self.credit
-
-    def set_credit(self, credit):
+    @property.setter
+    def credit(self, credit: int):
         if 0 < credit < 10:
-            self.credit = credit
+            self.__credit = credit
         else:
             print("Credit must be between 1 and 9")
 
-    def get_class_hours(self):
-        return self.classHours
+    def add_prerequisite(self, prerequisite: str) -> bool:
+        self.__prerequisite.append(prerequisite)
+        return True
 
-    def set_class_hours(self, classHours):
-        if 0 < classHours < 10:
-            self.classHours = classHours
-        else:
-            print("Class hours must be between 1 and 9")
+    def remove_prerequisite(self, prerequisite: str) -> bool:
+        if prerequisite in self.__prerequisite:
+            self.__prerequisite.remove(prerequisite)
+            return True
+        return False
 
-    def get_prerequisites(self):
-        if not self.prerequisite or len(self.prerequisite) == 0:
+    def get_prerequisites(self) -> str:
+        if not self.__prerequisite or len(self.__prerequisite) == 0:
             return "There is no prerequisite"
-        return " ".join(self.prerequisite)
+        return ",".join(self.prerequisite)
 
     def __str__(self):
-        return f"Course Code: {self.shortName}\nCourse Name: {self.fullName}\nDescription: {self.description}\nPrerequisite: {self.get_prerequisites()}\nSemester: {self.semester}\nCredit: {self.credit}\nClass Hours: {self.classHours}\n---------"
+        return (
+            f"Course Code: {self.short_name}\n"
+            f"Course Name: {self.full_name}\n"
+            f"Description: {self.description}\n"
+            f"Prerequisite: {self.get_prerequisites()}\n"
+            f"Semester: {self.semester}\n"
+            f"Credit: {self.credit}\n"
+            f"---------"
+        )
