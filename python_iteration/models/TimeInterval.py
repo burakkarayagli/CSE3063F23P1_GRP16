@@ -4,7 +4,7 @@ class TimeInterval:
         self.__startTime = startTime
         self.__endTime = endTime
 
-    def isOverlap(self, other):
+    def __eq__(self, other):
         if isinstance(other, TimeInterval):
             if self.dayOfWeek == other.dayOfWeek:
                 if self.startTime == other.startTime:
@@ -45,3 +45,4 @@ class TimeInterval:
             self.__endTime = endTime
         else:
             raise TypeError("endTime must be a string")
+

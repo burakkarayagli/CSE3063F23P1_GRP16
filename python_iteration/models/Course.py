@@ -1,5 +1,14 @@
 class Course:
-    def __init__(self, shortName="", fullName="", description="", prerequisite=None, semester=0, credit=0, classHours=0):
+    def __init__(
+        self,
+        shortName="",
+        fullName="",
+        description="",
+        prerequisite=None,
+        semester=0,
+        credit=0,
+        classHours=0,
+    ):
         self.shortName = shortName
         self.fullName = fullName
         self.description = description
@@ -73,4 +82,3 @@ class Course:
 
     def __str__(self):
         return f"Course Code: {self.shortName}\nCourse Name: {self.fullName}\nDescription: {self.description}\nPrerequisite: {self.get_prerequisites()}\nSemester: {self.semester}\nCredit: {self.credit}\nClass Hours: {self.classHours}\n---------"
-
