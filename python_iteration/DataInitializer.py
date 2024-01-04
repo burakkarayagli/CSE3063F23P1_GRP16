@@ -20,7 +20,27 @@ class DataInitializer:
             with open(file_dir, 'r') as f:
                 data = json.load(f)
                 self.students.append(data)
+        
+        for i in range(len(self.students)):
+            grades = []
+            for j in range(len(self.students[i]["transcript"]["listGrades"])):
+                course_info = self.students[i]["transcript"]["listGrades"][j]
+                course = find_course(course_info["shortName"])
+            grades.append(course)
+            transcript = Transcript(grades, "")
+            student = Student(students[i]["personName"], students[i]["personSurname"], students[i]["username"], students[i]["password"], students[i]["semester"], 
+                        students[i]["status"], students[i]["waitingCourses"], students[i]["approvedCourses"], students[i]["rejectedCourses"], transcript)
 
+    def find_course(self, shortName: str):
+        for i in range(len(courses)):
+            if courses[i]["shortName"] == shortName:
+                return courses[i]
+
+    def find_student(self, personName: str):
+        for i in range(len(students)):
+            if students[i]["shortName"] == personname:
+                return students[i]
+        
     def read_parameters(self):
         import json
         directory = os.getcwd() + "/database"  # Use "/" instead of "\"
@@ -35,6 +55,7 @@ class DataInitializer:
     
     def read_advisors(self):
         self.advisors = self.parameters[0]["advisors"]
+        
     
     def read_lecturers(self):
         self.lecturers = self.parameters[0]["lecturers"]
@@ -47,6 +68,13 @@ class DataInitializer:
         self.read_advisors()
         self.read_students()
         self.read_lecturers()
+    
+
+
+
+datainit = DataInitializer()
+
+print(datainit.students[0])
 
 
 
