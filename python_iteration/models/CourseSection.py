@@ -91,6 +91,18 @@ class CourseSection(Course):
     def get_lecturer_username(self) -> str:
         return self.__lecturer.username
 
+    def is_time_overlap(self, date: TimeInterval) -> bool:
+        for d in self.__dates:
+            if d == date:
+                return True
+        return False
+
+    def check_overlap(self, course_section) -> bool:
+        for d in self.__dates:
+            if course_section.is_time_overlap(d):
+                return True
+        return False
+
     def __str__(self):
         return (
             f"---------\n"
