@@ -30,7 +30,7 @@ class DataInitializer:
             transcript = Transcript(grades, "")
             student = Student(students[i]["personName"], students[i]["personSurname"], students[i]["username"], students[i]["password"], students[i]["semester"], 
                         students[i]["status"], students[i]["waitingCourses"], students[i]["approvedCourses"], students[i]["rejectedCourses"], transcript)
-
+            self.students[i] = student
     def find_course(self, shortName: str):
         for i in range(len(courses)):
             if courses[i]["shortName"] == shortName:
@@ -55,7 +55,20 @@ class DataInitializer:
     
     def read_advisors(self):
         self.advisors = self.parameters[0]["advisors"]
-        
+        for i in range(len(self.advisors)):
+            advisor_students = []
+            time_intervals = []
+            for j in range(len(self.advisors[i]["officeHours"])):
+                office_hours = self.advisors[i]["officeHours"][j]
+                time_interval = TimeInterval(office_hours["startTime"], office_hours["endTime"], office_hours["dayOfWeek"])
+                time_intervals.append(time_interval)
+            
+            for j in range(len(self.advisors[i]["students"])):
+                student_name = self.advisors[i]["students"][j]["personName"]
+                student = find_student(student_name)
+                advisor_students.append(student)
+            advisor = Advisor(self.advisors[i]["personName"], self.advisors[i]["personSurname"], self.advisors[i]["username"], self.advisors[i]["password"],
+            self.advisors[i]["reputation"], time_intervals, self.advisors[i]["salary"], self.advisors[i]["employmentStatus"], advisor_students)
     
     def read_lecturers(self):
         self.lecturers = self.parameters[0]["lecturers"]
