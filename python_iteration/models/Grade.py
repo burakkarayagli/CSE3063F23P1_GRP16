@@ -1,16 +1,27 @@
+from Student import Student
+from Transcript import Transcript
+from Course import Course
+
 class Grade:
     def __init__(self, course=None, grade=None):
-        self.course = course
-        self.grade = grade
+        self._course = course
+        self._grade = grade
 
-    def get_course(self):
-        return self.course
+    @property
+    def course(self):
+        return self._course
 
-    def set_course(self, course):
-        self.course = course
+    @course.setter
+    def course(self, course):
+        if isinstance(course, Course):
+            self._course = course
+        else:
+            raise ValueError("Invalid course object. Must be an instance of Course class.")
 
-    def get_grade(self):
-        return self.grade
+    @property
+    def grade(self):
+        return self._grade
 
-    def set_grade(self, grade):
-        self.grade = grade
+    @grade.setter
+    def grade(self, grade):
+        self._grade = grade

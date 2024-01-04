@@ -1,0 +1,16 @@
+{
+  "address": "Kagithane/Istanbul",
+  "phoneNumber": "5166778899",
+  "semester": 1,
+  "entranceYear": 2023,
+  "status": "",
+  "selectedCourses": [],
+  "transcript": {
+    "listGrades": [],
+    "notes": ""
+  },
+  "personName": "Gizem",
+  "personSurname": "Akbas",
+  "username": "gizem",
+  "password": "gizemakbas"
+}
