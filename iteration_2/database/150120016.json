@@ -14,8 +14,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 1,
-          "credit": 2,
-          "classHours": 2
+          "credit": 2
         },
         "grade": "BA"
       },
@@ -26,8 +25,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 1,
-          "credit": 5,
-          "classHours": 3
+          "credit": 5
         },
         "grade": "BB"
       },
@@ -38,8 +36,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 1,
-          "credit": 4,
-          "classHours": 3
+          "credit": 4
         },
         "grade": "CB"
       },
@@ -50,8 +47,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 1,
-          "credit": 6,
-          "classHours": 4
+          "credit": 6
         },
         "grade": "DC"
       },
@@ -62,8 +58,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 1,
-          "credit": 6,
-          "classHours": 2
+          "credit": 6
         },
         "grade": "DD"
       },
@@ -74,8 +69,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 1,
-          "credit": 4,
-          "classHours": 2
+          "credit": 4
         },
         "grade": "BA"
       },
@@ -86,8 +80,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 1,
-          "credit": 2,
-          "classHours": 2
+          "credit": 2
         },
         "grade": "BB"
       },
@@ -98,8 +91,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 1,
-          "credit": 2,
-          "classHours": 2
+          "credit": 2
         },
         "grade": "CB"
       },
@@ -110,8 +102,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 2,
-          "credit": 2,
-          "classHours": 2
+          "credit": 2
         },
         "grade": "DC"
       },
@@ -122,8 +113,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 2,
-          "credit": 6,
-          "classHours": 4
+          "credit": 6
         },
         "grade": "DD"
       },
@@ -134,8 +124,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 2,
-          "credit": 6,
-          "classHours": 2
+          "credit": 6
         },
         "grade": "BA"
       },
@@ -146,8 +135,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 2,
-          "credit": 5,
-          "classHours": 3
+          "credit": 5
         },
         "grade": "BB"
       },
@@ -158,8 +146,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 2,
-          "credit": 4,
-          "classHours": 2
+          "credit": 4
         },
         "grade": "CB"
       },
@@ -170,8 +157,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 2,
-          "credit": 2,
-          "classHours": 2
+          "credit": 2
         },
         "grade": "DC"
       },
@@ -182,8 +168,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 2,
-          "credit": 2,
-          "classHours": 2
+          "credit": 2
         },
         "grade": "DD"
       },
@@ -194,8 +179,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 3,
-          "credit": 6,
-          "classHours": 3
+          "credit": 6
         },
         "grade": "BA"
       },
@@ -204,12 +188,9 @@
           "shortName": "CSE2225",
           "fullName": "Data Structures",
           "description": "",
-          "prerequisite": [
-            "CSE1242"
-          ],
+          "prerequisite": ["CSE1242"],
           "semester": 3,
-          "credit": 7,
-          "classHours": 3
+          "credit": 7
         },
         "grade": "BB"
       },
@@ -220,8 +201,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 3,
-          "credit": 4,
-          "classHours": 3
+          "credit": 4
         },
         "grade": "CB"
       },
@@ -230,12 +210,9 @@
           "shortName": "EE2031",
           "fullName": "Electric Circuits",
           "description": "",
-          "prerequisite": [
-            "PHYS1102"
-          ],
+          "prerequisite": ["PHYS1102"],
           "semester": 3,
-          "credit": 5,
-          "classHours": 3
+          "credit": 5
         },
         "grade": "DC"
       },
@@ -246,8 +223,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 3,
-          "credit": 4,
-          "classHours": 3
+          "credit": 4
         },
         "grade": "DD"
       },
@@ -256,12 +232,9 @@
           "shortName": "MATH2059",
           "fullName": "Numerical Methods",
           "description": "",
-          "prerequisite": [
-            "MATH1001"
-          ],
+          "prerequisite": ["MATH1001"],
           "semester": 3,
-          "credit": 4,
-          "classHours": 3
+          "credit": 4
         },
         "grade": "BA"
       }
