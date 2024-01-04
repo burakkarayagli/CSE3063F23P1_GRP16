@@ -1,8 +1,33 @@
 
+from types import List
+from Staff import Staff
+from TimeInterval import TimeInterval
+from Student import Student
+
 class Advisor(Staff):
-    def __init__(self, person_name, person_surname, username, password, reputation, office_hours, salary, employment_status, students):
-        super().__init__(person_name, person_surname, username, password, reputation, office_hours, salary, employment_status)
-        self.students = students
+    def __init__(
+        self, 
+        person_name: str, 
+        person_surname: str, 
+        username: str, 
+        password: str, 
+        reputation: str, 
+        office_hours: List[TimeInterval], 
+        salary: int, 
+        employment_status: str, 
+        students: List[Student]
+    ):
+        super().__init__(
+            person_name, 
+            person_surname, 
+            username, 
+            password, 
+            reputation,
+            office_hours,
+            salary,
+            employment_status
+            )
+        self.__students = students
         
     @property
     def students(self):
@@ -12,13 +37,13 @@ class Advisor(Staff):
     def students(self, students):
         self.students = students
 
-    def __add_student(self, student):
+    def __addStudent(self, student):
         return self.students.append(student)
 
-    def __delete_student(self, student):
+    def __deleteStudent(self, student):
         return self.students.remove(student)
 
-    def __student_course_organization(self):
+    def __studentCourseOrganization(self):
         num = 0
         for i, student in enumerate(self.students):
             print("Eligible Students")
@@ -42,11 +67,11 @@ class Advisor(Staff):
             print("Course has been added to the list of the student.")
             student.add_course(chosen_course)
 
-    def __get_combined_courses(self, student):
+    def __getCombinedCourses(self, student):
         combined_courses = student.get_selected_courses() + student.get_available_courses()
         return combined_courses
 
-    def __reject_student(self, student, selections):
+    def __rejectStudent(self, student, selections):
         try:
             if selections == "*":
                 student.set_status("Rejected")
@@ -77,7 +102,7 @@ class Advisor(Staff):
         except Exception as e:
             raise Exception("Input must only include numbers. Please try again.") from e
 
-    def __approve_student(self, student, selections):
+    def __approveStudent(self, student, selections):
         try:
             if selections[0] == 0 and len(selections) == 1:
                 student.set_status("Approved")
