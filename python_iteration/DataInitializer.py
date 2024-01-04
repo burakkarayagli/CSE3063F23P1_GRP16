@@ -26,7 +26,8 @@ class DataInitializer:
             for j in range(len(self.students[i]["transcript"]["listGrades"])):
                 course_info = self.students[i]["transcript"]["listGrades"][j]
                 course = find_course(course_info["shortName"])
-            grades.append(course)
+                grade = Grade(course, course_info["grade"])
+                grades.append(grade)
             transcript = Transcript(grades, "")
             student = Student(students[i]["personName"], students[i]["personSurname"], students[i]["username"], students[i]["password"], students[i]["semester"], 
                         students[i]["status"], students[i]["waitingCourses"], students[i]["approvedCourses"], students[i]["rejectedCourses"], transcript)
@@ -75,6 +76,7 @@ class DataInitializer:
             advisor = Advisor(self.advisors[i]["personName"], self.advisors[i]["personSurname"], self.advisors[i]["username"], self.advisors[i]["password"],
             self.advisors[i]["reputation"], time_intervals, self.advisors[i]["salary"], self.advisors[i]["employmentStatus"], advisor_students)
             self.advisors[i] = advisor 
+
 
     def read_lecturers(self):
         self.lecturers = self.parameters[0]["lecturers"]
