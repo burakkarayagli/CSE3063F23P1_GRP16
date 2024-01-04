@@ -47,7 +47,7 @@ public class NonTechnicalElectiveCourse extends Course implements SectionInterfa
     }
 
     public boolean isMandatory() {
-        return true;
+        return false;
     }
 
     public void setDates(ArrayList<TimeInterval> dates) {

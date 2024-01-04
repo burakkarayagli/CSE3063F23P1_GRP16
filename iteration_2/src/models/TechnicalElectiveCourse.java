@@ -54,11 +54,11 @@ public class TechnicalElectiveCourse extends Course implements SectionInterface 
 
     // Interface Methods
     public boolean isTechnical() {
-        return false;
+        return true;
     }
 
     public boolean isMandatory() {
-        return true;
+        return false;
     }
 
     public void setDates(ArrayList<TimeInterval> dates) {
