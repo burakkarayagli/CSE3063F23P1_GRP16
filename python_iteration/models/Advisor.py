@@ -21,12 +21,12 @@ class Advisor(Staff):
             person_name, 
             person_surname, 
             username, 
-            password, 
-            reputation,
-            office_hours,
-            salary,
-            employment_status
+            password
             )
+        self.__reputation = reputation
+        self.__office_hours = office_hours
+        self.__salary = salary
+        self.__employment_status = employment_status
         self.__students = students
         
     @property
