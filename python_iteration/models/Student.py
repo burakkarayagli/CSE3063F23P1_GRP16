@@ -78,6 +78,8 @@ class Student(Person):
         # use while loop and check the course name etc.
         pass
 
+
+
     def addapprovedCourses(self, course: CourseSection):
         self.__approvedCourses.append(course)
 
@@ -165,6 +167,8 @@ class Student(Person):
         for course in allCourses:
             if self.__canStudentTakeCourse(course):
                 availableCourses.append(course)
+        
+        return availableCourses
 
     
     #Private helper methods
@@ -193,6 +197,8 @@ class Student(Person):
         for prerequisite in prerequisites:
             if prerequisite not in passedCourses_shortNames:
                 return False
+            
+        return True
             
     #Checks student's semester with semester of course
     #If student's semester is greater or equal than semester of course, returns True
@@ -236,18 +242,13 @@ class Student(Person):
             warnings.append(colored_string("Maximum credit limit exceeded", "red"))
         
         return warnings        
-    
+
     #Check overlap between courses in waiting list
     def checkOverlap(self):
         pass
 
-    
-    
-        
     def getMenu(self):
-        PRIMARY_COLOR = "blue"
-        SECONDARY_COLOR = "yellow"
-        return colored_string(f"Welcome BURAK", "green") + "\n" + \
+        MenuString = colored_string(f"Welcome {self.getFullName}", "green") + "\n" + \
             colored_string("1", PRIMARY_COLOR) + colored_string("-", SECONDARY_COLOR) + " Add course to waiting list\n" + \
             colored_string("2", PRIMARY_COLOR) + colored_string("-", SECONDARY_COLOR) + " Drop course from waiting list\n" + \
             colored_string("3", PRIMARY_COLOR) + colored_string("-", SECONDARY_COLOR) + " List available courses\n" + \
@@ -257,14 +258,89 @@ class Student(Person):
             colored_string("7", PRIMARY_COLOR) + colored_string("-", SECONDARY_COLOR) + " List transcript\n" + \
             colored_string("8", PRIMARY_COLOR) + colored_string("-", SECONDARY_COLOR) + " Exit\n" + \
             colored_string("Please select an option: ", "yellow")
+        
+        print(MenuString)
+        while option < 1 or option > 8:
+            try:
+                option = int(input())
+            except TypeError:
+                print("Please enter a valid option")
+                continue
+            
+            if option == 1:
+                self.MENU_ADD_COURSE()
+            elif option == 2:
+                self.MENU_DROP_COURSE()
+            elif option == 3:
+                self.MENU_LIST_AVAILABLE_COURSES()
+            elif option == 4:
+                self.MENU_LIST_WAITING_COURSES()
+            elif option == 5:
+                self.MENU_LIST_APPROVED_COURSES()
+            elif option == 6:
+                self.MENU_LIST_REJECTED_COURSES()
+            elif option == 7:
+                self.MENU_LIST_TRANSCRIPT()
+            elif option == 8:
+                self.MENU_EXIT()
+            else:
+                print("Please enter a valid option")
+                continue
+
     
-    print(getMenu())
-    
-    
+    def MENU_ADD_COURSE(self):
+        availableCourses = self.getAvailableCourses()
+        
+        if len(availableCourses) == 0:
+            print(colored_string("No available courses", "red"))
+            return
 
 
+        for index, course in enumerate(availableCourses):
+            print(colored_string(f"{index+1}", PRIMARY_COLOR) + colored_string("-", SECONDARY_COLOR) + colored_string(f" {course.getFullName()}", TEXT_COLOR))
 
+        print(colored_string("Please select a course: ", INPUT_COLOR))
+        option = 0
+        while option < 1 or option > len(availableCourses):
+            try:
+                option = int(input())
+            except TypeError:
+                print("Please enter a valid option")
+                continue
+            
+            if option < 1 or option > len(availableCourses):
+                print("Please enter a valid option")
+                continue
+            
+            self.addCourse(availableCourses[option-1])
+            return
+
+        
+
+    def MENU_DROP_COURSE(self):
+        waitingCourses = self.waitingCourses
+
+
+    def MENU_LIST_AVAILABLE_COURSES(self):
+        pass
+
+    def MENU_LIST_WAITING_COURSES(self):
+        pass
+
+    def MENU_LIST_APPROVED_COURSES(self):
+        pass
+
+    def MENU_LIST_REJECTED_COURSES(self):
+        pass
     
+    def MENU_LIST_TRANSCRIPT(self):
+        pass
+
+    def MENU_EXIT(self):
+        pass
+
+
+ 
 def colored_string(text, color):
         colors = {
             'reset': '\033[0m',
@@ -284,7 +360,6 @@ def colored_string(text, color):
         return colors[color] + text + colors['reset']
 
 def getMenu():
-        
         return colored_string(f"Welcome BURAK", "green") + "\n" + \
             colored_string("1", PRIMARY_COLOR) + colored_string("-", SECONDARY_COLOR) + colored_string(" Add course to waiting list\n", TEXT_COLOR) + \
             colored_string("2", PRIMARY_COLOR) + colored_string("-", SECONDARY_COLOR) + colored_string(" Drop course from waiting list\n", TEXT_COLOR) + \
