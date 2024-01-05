@@ -34,6 +34,11 @@ class CourseSection(Course):
         self.__type = type
 
     @property
+    def dates(self) -> List[TimeInterval]:
+        return self.__dates
+    
+
+    @property
     def section_name(self) -> str:
         return self.__section_name
 

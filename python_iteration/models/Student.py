@@ -288,6 +288,68 @@ class Student(Person):
     def checkOverlap(self):
         pass
 
+    # Prints weekly schedule
+    def printWeeklySchedule(self):
+        from tabulate import tabulate
+        courseSections = self.__waitingCourses
+
+        monday, tuesday, wednesday, thursday, friday = {}, {}, {}, {}, {}
+
+        headers = ["Time/Day", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+
+        row = []
+
+        for courseSection in courseSections:
+            courseSectionDates = courseSection.dates
+            for date in courseSectionDates:
+                dateDay = date.day_of_week
+                dateStartTime = date.start_time
+                dateEndTime = date.end_time
+
+                interval = dateStartTime + " - " + dateEndTime
+
+                if dateDay == "Monday":
+                    monday[interval] = courseSection
+                elif dateDay == "Tuesday":
+                    tuesday[interval] = courseSection
+                elif dateDay == "Wednesday":
+                    wednesday[interval] = courseSection
+                elif dateDay == "Thursday":
+                    thursday[interval] = courseSection
+                elif dateDay == "Friday":
+                    friday[interval] = courseSection
+        
+
+        intervals = list(monday.keys()) + list(tuesday.keys()) + list(wednesday.keys()) + list(thursday.keys()) + list(friday.keys())
+        intervals = sorted(list(set(intervals)))
+        
+        for interval in intervals:
+            row.append(interval)
+            if interval in monday:
+                row.append(monday[interval].get_full_name())
+            else:
+                row.append("")
+            if interval in tuesday:
+                row.append(tuesday[interval].get_full_name())
+            else:
+                row.append("")
+            if interval in wednesday:
+                row.append(wednesday[interval].get_full_name())
+            else:
+                row.append("")
+            if interval in thursday:
+                row.append(thursday[interval].get_full_name())
+            else:
+                row.append("")
+            if interval in friday:
+                row.append(friday[interval].get_full_name())
+            else:
+                row.append("")
+
+            print(tabulate(row, headers=headers, tablefmt="fancy_grid"))
+                
+                
+
     def getMenu(self):
         MenuString = (
             colored_string(f"Welcome {self.getFullName}", "green")
@@ -301,13 +363,17 @@ class Student(Person):
             # other menu option
             + colored_string("8", PRIMARY_COLOR)
             + colored_string("-", SECONDARY_COLOR)
-            + " Exit\n"
+            + " Display weekly schedule\n"
+            + colored_string("9", PRIMARY_COLOR)
+            + colored_string("-", SECONDARY_COLOR)
+            + colored_string(" Exit\n", EXIT_COLOR)
+            
             + colored_string("Please select an option: ", "yellow")
         )
 
         print(MenuString)
         option = -1
-        while option < 1 or option > 8:
+        while option < 1 or option > 9:
             try:
                 option = int(input("MENU OPTION: "))
             except TypeError:
@@ -319,6 +385,8 @@ class Student(Person):
             elif option == 2:
                 self.getInformationMenu()
             elif option == 8:
+                self.MENU_DISPLAY_WEEKLY_SCHEDULE()
+            elif option == 9:
                 self.MENU_EXIT()
             else:
                 print("Please enter a valid option")
@@ -369,8 +437,6 @@ class Student(Person):
                 logger.error(f"Error adding course: {e}")
             return
 
-            self.addCourse(availableCourses[option - 1])
-            return
 
     def MENU_DROP_COURSE(self):
         waitingCourses = self.__waitingCourses
@@ -488,9 +554,17 @@ class Student(Person):
         self.printTranscript()
         self.getMenu()
         return
+    
+    def MENU_DISPLAY_WEEKLY_SCHEDULE(self):
+        self.printWeeklySchedule()
+        self.getMenu()
+        return
 
     def MENU_EXIT(self):
+        self.write()
         self.getMenu()
+        return
+
 
     def getInformationMenu(self):
         MenuString = (
@@ -610,11 +684,11 @@ class Student(Person):
         }
 
     # it can be used for writing to json file
-    # def write(self):
-    #     from DataInitializer import DataInitializer
+    def write(self):
+        from DataInitializer import DataInitializer
 
-    #     dataInitializer = DataInitializer()
-    #     dataInitializer.write_student(self)
+        dataInitializer = DataInitializer()
+        dataInitializer.write_student(self)
 
 
 def colored_string(text, color):
