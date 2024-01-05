@@ -3,6 +3,9 @@ from typing import List
 from Student import Student
 from Staff import Staff
 from TimeInterval import TimeInterval
+from DataInitializer import DataInitializer
+
+#student.getFullName() yazilacak
 
 
 class Advisor(Staff):
@@ -50,60 +53,60 @@ class Advisor(Staff):
         for i, student in enumerate(self.students):
             print("Eligible Students")
             print("Please select one of them")
-            print(f"{i + 1} {student.get_full_name()}")
+            print(f"{i + 1} {student.getFullName()}") #'ll change
 
         num = int(input())
         student = self.students[num - 1]
-        combined_course_list = self.get_combined_courses(student)
+        combined_course_list = self.__getCombinedCourses(student) 
 
         for i, course in enumerate(combined_course_list):
-            print(f"{i + 1} {course.get_full_name()}")
+            print(f"{i + 1} {course.__full_name} {course.__short_name}")
 
         selection = int(input())
         chosen_course = combined_course_list[selection - 1]
 
-        if chosen_course in student.get_selected_courses():
+        if chosen_course in student.__waitingCourses:  #'ll change
             print("Course chosen by the student has been dropped.")
-            student.drop_course(chosen_course)
+            student.dropCourse(chosen_course)
         else:
             print("Course has been added to the list of the student.")
             student.add_course(chosen_course)
 
     def __getCombinedCourses(self, student):
         combined_courses = (
-            student.get_selected_courses() + student.get_available_courses()
+            student.__waitingCourses + student.getAvailableCourses() #'ll change
         )
         return combined_courses
 
     def __rejectStudent(self, student, selections):
         try:
             if selections == "*":
-                student.set_status("Rejected")
-                student.get_selected_courses().clear()
+                student.status("Rejected")
+                student.__waitingCourses.clear() #'ll change
                 return True
             else:
                 rejected_courses = [
-                    student.get_selected_courses()[int(selection) - 1]
+                    student.__waitingCourses[int(selection) - 1] #'ll change
                     for selection in selections.split(",")
                 ]
 
                 for rejected_course in rejected_courses:
-                    student.drop_course(rejected_course)
+                    student.dropCourse(rejected_course)
 
-            student.set_status("Rejected")
+            student.status("Rejected")
             # save the advisors
-            data_utils = DataUtils.get_instance()
-            advisors = data_utils.get_advisors()
+            data_utils = DataInitializer()
+            advisors = data_utils.advisors
             for i, advisor in enumerate(advisors):
-                if advisor.get_username() == self.get_username():
+                if advisor.get_username == self.get_username(): #'ll change
                     advisors[i] = self
-            data_utils.write_advisors(advisors)
+            data_utils.write_advisor(advisors)
 
-            students = data_utils.get_students()
+            students = data_utils.students
             for i, s in enumerate(students):
-                if s.get_username() == student.get_username():
+                if s.get_username() == student.get_username(): #'ll change
                     students[i] = student
-            data_utils.write_students(students)
+            data_utils.write_student(students)
 
             return True
         except Exception as e:
@@ -112,27 +115,27 @@ class Advisor(Staff):
     def __approveStudent(self, student, selections):
         try:
             if selections[0] == 0 and len(selections) == 1:
-                student.set_status("Approved")
+                student.status("Approved")
                 # save the advisors
-                data_utils = DataUtils.get_instance()
-                advisors = data_utils.get_advisors()
+                data_utils = DataInitializer()
+                advisors = data_utils.advisors 
                 for i, advisor in enumerate(advisors):
-                    if advisor.get_username() == self.get_username():
+                    if advisor.username == self.username: #'ll change
                         advisors[i] = self
-                data_utils.write_advisors(advisors)
+                data_utils.write_advisor(advisors) #'ll change
 
-                students = data_utils.get_students()
+                students = data_utils.students
                 for i, s in enumerate(students):
-                    if s.get_username() == student.get_username():
+                    if s.username == student.username: #'ll change
                         students[i] = student
-                data_utils.write_students(students)
+                data_utils.write_student(students)
 
                 return True
             else:
                 status = False
                 exists = False
 
-                for i in range(len(student.get_selected_courses()), 0, -1):
+                for i in range(len(student.__waitingCourses), 0, -1): #'ll change
                     exists = False
 
                     for j in range(len(selections), 0, -1):
@@ -141,24 +144,24 @@ class Advisor(Staff):
                             break
 
                     if not exists:
-                        student.drop_course(student.get_selected_courses()[i - 1])
+                        student.dropCourse(student.__waitingCourses[i - 1]) #'ll change
                         status = True
 
-                student.set_status("Rejected" if status else "Approved")
+                student.status("Rejected" if status else "Approved")
 
             # save the advisors
-            data_utils = DataUtils.get_instance()
-            advisors = data_utils.get_advisors()
+            data_utils = DataInitializer()
+            advisors = data_utils.advisors
             for i, advisor in enumerate(advisors):
-                if advisor.get_username() == self.get_username():
+                if advisor.username == self.username:
                     advisors[i] = self
-            data_utils.write_advisors(advisors)
+            data_utils.write_advisor(advisors) #'ll change
 
-            students = data_utils.get_students()
+            students = data_utils.students
             for i, s in enumerate(students):
-                if s.get_username() == student.get_username():
+                if s.username == student.username:
                     students[i] = student
-            data_utils.write_students(students)
+            data_utils.write_student(students)
 
             return True
         except Exception as e:
@@ -246,7 +249,7 @@ class Advisor(Staff):
         student_selection = 0
 
         while student_selection < 1 or student_selection > len(
-            self.advisorController.get_students()
+            self.advisorController.get_students() #'ll change
         ):
             print("Which student do you want to go on?\nType -1 to back")
 
@@ -267,13 +270,13 @@ class Advisor(Staff):
 
         print(f"List of courses for student {student.getFullName()}")
 
-        courses_of_student = student.get_selected_courses()
+        courses_of_student = student.__waitingCourses
 
-        if student.get_status() in ["Rejected", "Approved"]:
+        if student.status() in ["Rejected", "Approved"]:
             print("Approve/Reject process is already done for this student.\n")
         else:
             for i, course in enumerate(courses_of_student):
-                print(f"{i + 1} -> {course.get_full_name()} {course.get_short_name()}")
+                print(f"{i + 1} -> {course.__full_name} {course.__short_name}")
 
             print(
                 "Please enter the courses you want to approve for the student \n"
@@ -387,15 +390,15 @@ class Advisor(Staff):
 
     def toJson(self):
         return {
-            "personName": self._Person__personName,
-            "personSurname": self._Person__personSurname,
-            "username": self._Person__username,
-            "password": self._Person__password,
-            "reputation": self._Staff__reputation,
+            "personName": self.__personName,
+            "personSurname": self.__personSurname,
+            "username": self.__username,
+            "password": self.__password,
+            "reputation": self.__reputation,
             "officeHours": [
-                timeInterval.to_json() for timeInterval in self._Staff__office_hours
+                timeInterval.to_json() for timeInterval in self.__office_hours
             ],
-            "salary": self._Staff__salary,
-            "employmentStatus": self._Staff__employment_status,
+            "salary": self.__salary, #'ll change
+            "employmentStatus": self.__employment_status, #'ll change
             "students": [student.password for student in self.__students],
         }
