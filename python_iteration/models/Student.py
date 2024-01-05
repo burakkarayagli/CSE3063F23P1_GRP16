@@ -297,7 +297,7 @@ class Student(Person):
 
         headers = ["Time/Day", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 
-        row = []
+        table = []
 
         for courseSection in courseSections:
             courseSectionDates = courseSection.dates
@@ -324,6 +324,7 @@ class Student(Person):
         intervals = sorted(list(set(intervals)))
         
         for interval in intervals:
+            row = []
             row.append(interval)
             if interval in monday:
                 row.append(monday[interval].get_full_name())
@@ -346,13 +347,15 @@ class Student(Person):
             else:
                 row.append("")
 
-            print(tabulate(row, headers=headers, tablefmt="fancy_grid"))
+            table.append(row)
+            
+        print(tabulate(table, headers=headers, tablefmt="fancy_grid"))
                 
                 
 
     def getMenu(self):
         MenuString = (
-            colored_string(f"Welcome {self.getFullName}", "green")
+            colored_string(f"Welcome {self.getFullName()}", "green")
             + "\n"
             + colored_string("1", PRIMARY_COLOR)
             + colored_string("-", SECONDARY_COLOR)
@@ -375,7 +378,8 @@ class Student(Person):
         option = -1
         while option < 1 or option > 9:
             try:
-                option = int(input("MENU OPTION: "))
+                option = int(input())
+
             except TypeError:
                 print("Please enter a valid option")
                 continue
@@ -412,7 +416,8 @@ class Student(Person):
         option = -1
         while option < 0 or option > len(availableCourses):
             try:
-                option = int(input("ADD COURSE OPTION: "))
+                option = int(input())
+
             except TypeError:
                 print("Please enter a valid option")
                 continue
