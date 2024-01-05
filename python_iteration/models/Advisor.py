@@ -19,6 +19,7 @@ class Advisor(Staff):
         students: List[Student],
     ):
         super().__init__(
+
             person_name,
             person_surname,
             username,
