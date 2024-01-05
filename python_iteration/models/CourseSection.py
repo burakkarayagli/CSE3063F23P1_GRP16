@@ -141,3 +141,8 @@ class CourseSection(Course):
             f"Lecturer Name: {self.__lecturer.getFullName()}\n"
             f"Dates: {', '.join([d.__str__() for d in self.__dates])}\n"
         )
+
+    def __eq__(self, other):
+        if not isinstance(other, CourseSection):
+            return False
+        return self.short_name == other.short_name and self.__section_name == other.__section_name
