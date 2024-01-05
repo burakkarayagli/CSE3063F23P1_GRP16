@@ -1,0 +1,6449 @@
+{
+  "courses": [
+    {
+      "shortName": "ATA121",
+      "fullName": "Atatürk İlkeleri ve İnkılap Tarihi I",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "MBG1201",
+      "fullName": "Introduction to Modern Biology",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE1200",
+      "fullName": "Introduction to Computer Engineering",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 4
+    },
+    {
+      "shortName": "CSE1241",
+      "fullName": "Computer Programming I",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 6
+    },
+    {
+      "shortName": "MATH1001",
+      "fullName": "Calculus I",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 6
+    },
+    {
+      "shortName": "PHYS1001",
+      "fullName": "Physics I",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 4
+    },
+    {
+      "shortName": "PHYS1003",
+      "fullName": "Physics Lab I",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "TRD121",
+      "fullName": "Türk Dili I",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "ATA122",
+      "fullName": "Atatürk İlkeleri ve İnkılap Tarihi II",
+      "description": "",
+      "prerequisite": [],
+      "semester": 2,
+      "credit": 2
+    },
+    {
+      "shortName": "CSE1242",
+      "fullName": "Computer Programming II",
+      "description": "",
+      "prerequisite": [],
+      "semester": 2,
+      "credit": 6
+    },
+    {
+      "shortName": "MATH1002",
+      "fullName": "Calculus II",
+      "description": "",
+      "prerequisite": [],
+      "semester": 2,
+      "credit": 6
+    },
+    {
+      "shortName": "MATH2256",
+      "fullName": "Linear Algebra for Computer Engineering",
+      "description": "",
+      "prerequisite": [],
+      "semester": 2,
+      "credit": 5
+    },
+    {
+      "shortName": "PHYS1002",
+      "fullName": "Physics II",
+      "description": "",
+      "prerequisite": [],
+      "semester": 2,
+      "credit": 4
+    },
+    {
+      "shortName": "PHYS1004",
+      "fullName": "Physics Lab II",
+      "description": "",
+      "prerequisite": [],
+      "semester": 2,
+      "credit": 2
+    },
+    {
+      "shortName": "TRD122",
+      "fullName": "Türk Dili II",
+      "description": "",
+      "prerequisite": [],
+      "semester": 2,
+      "credit": 2
+    },
+    {
+      "shortName": "CSE2023",
+      "fullName": "Discrete Computational Structures",
+      "description": "",
+      "prerequisite": [],
+      "semester": 3,
+      "credit": 6
+    },
+    {
+      "shortName": "CSE2225",
+      "fullName": "Data Structures",
+      "description": "",
+      "prerequisite": [
+        "CSE1242"
+      ],
+      "semester": 3,
+      "credit": 7
+    },
+    {
+      "shortName": "ECON2004",
+      "fullName": "Engineering Economy",
+      "description": "",
+      "prerequisite": [],
+      "semester": 3,
+      "credit": 4
+    },
+    {
+      "shortName": "EE2031",
+      "fullName": "Electric Circuits",
+      "description": "",
+      "prerequisite": [
+        "PHYS1102"
+      ],
+      "semester": 3,
+      "credit": 5
+    },
+    {
+      "shortName": "MATH2055",
+      "fullName": "Differential Equations",
+      "description": "",
+      "prerequisite": [],
+      "semester": 3,
+      "credit": 4
+    },
+    {
+      "shortName": "MATH2059",
+      "fullName": "Numerical Methods",
+      "description": "",
+      "prerequisite": [
+        "MATH1001"
+      ],
+      "semester": 3,
+      "credit": 4
+    },
+    {
+      "shortName": "CSE2138",
+      "fullName": "Systems Programming",
+      "description": "",
+      "prerequisite": [],
+      "semester": 4,
+      "credit": 7
+    },
+    {
+      "shortName": "CSE2246",
+      "fullName": "Analysis of Algorithms",
+      "description": "",
+      "prerequisite": [
+        "CSE2225"
+      ],
+      "semester": 4,
+      "credit": 6
+    },
+    {
+      "shortName": "CSE2260",
+      "fullName": "Principles of Programming Languages",
+      "description": "",
+      "prerequisite": [
+        "CSE1242"
+      ],
+      "semester": 4,
+      "credit": 6
+    },
+    {
+      "shortName": "EE2032",
+      "fullName": "Electronics",
+      "description": "",
+      "prerequisite": [
+        "EE2031"
+      ],
+      "semester": 4,
+      "credit": 5
+    },
+    {
+      "shortName": "STAT2253",
+      "fullName": "Probability and Statistics for Computer Engineering",
+      "description": "",
+      "prerequisite": [],
+      "semester": 4,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE3033",
+      "fullName": "Operating Systems",
+      "description": "",
+      "prerequisite": [
+        "CSE2225"
+      ],
+      "semester": 5,
+      "credit": 7
+    },
+    {
+      "shortName": "CSE3055",
+      "fullName": "Database Systems",
+      "description": "",
+      "prerequisite": [
+        "CSE2225"
+      ],
+      "semester": 5,
+      "credit": 7
+    },
+    {
+      "shortName": "CSE3063",
+      "fullName": "Object-Oriented Software Design",
+      "description": "",
+      "prerequisite": [
+        "CSE1242"
+      ],
+      "semester": 5,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE3215",
+      "fullName": "Digital Logic Design",
+      "description": "",
+      "prerequisite": [],
+      "semester": 5,
+      "credit": 6
+    },
+    {
+      "shortName": "IE3081",
+      "fullName": "Modeling and Discrete Simulation",
+      "description": "",
+      "prerequisite": [
+        "STAT2253"
+      ],
+      "semester": 5,
+      "credit": 4
+    },
+    {
+      "shortName": "COM2202",
+      "fullName": "Technical Communication & Entrepreneurship",
+      "description": "",
+      "prerequisite": [],
+      "semester": 6,
+      "credit": 2
+    },
+    {
+      "shortName": "CSE3044",
+      "fullName": "Software Engineering",
+      "description": "",
+      "prerequisite": [
+        "CSE3055"
+      ],
+      "semester": 6,
+      "credit": 7
+    },
+    {
+      "shortName": "CSE3264",
+      "fullName": "Formal Languages and Automata Theory",
+      "description": "",
+      "prerequisite": [
+        "CSE2023"
+      ],
+      "semester": 6,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE3038",
+      "fullName": "Computer Organization",
+      "description": "",
+      "prerequisite": [
+        "CSE2138",
+        "CSE3215"
+      ],
+      "semester": 6,
+      "credit": 7
+    },
+    {
+      "shortName": "CSE3048",
+      "fullName": "Introduction to Signals and Systems",
+      "description": "",
+      "prerequisite": [
+        "MATH2055"
+      ],
+      "semester": 6,
+      "credit": 5
+    },
+    {
+      "shortName": "IE3235",
+      "fullName": "Operations Research",
+      "description": "",
+      "prerequisite": [
+        "MATH2256"
+      ],
+      "semester": 6,
+      "credit": 4
+    },
+    {
+      "shortName": "CSE4297",
+      "fullName": "Engineering Project I",
+      "description": "",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4074",
+      "fullName": "Computer Networks",
+      "description": "",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4219",
+      "fullName": "Principles of Embedded System Design",
+      "description": "",
+      "prerequisite": [
+        "CSE3038"
+      ],
+      "semester": 7,
+      "credit": 6
+    },
+    {
+      "shortName": "ISG121",
+      "fullName": "Work Safety 1",
+      "description": "",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 2
+    },
+    {
+      "shortName": "CSE4288",
+      "fullName": "Introduction to Machine Learning",
+      "description": "",
+      "prerequisite": [
+        "STAT2253",
+        "MATH2256"
+      ],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4000",
+      "fullName": "Summer Practice ",
+      "description": "",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 10
+    },
+    {
+      "shortName": "CSE4298",
+      "fullName": "Engineering Project II",
+      "description": "",
+      "prerequisite": [
+        "CSE4297"
+      ],
+      "semester": 8,
+      "credit": 5
+    },
+    {
+      "shortName": "ISG122",
+      "fullName": "İş Sağlığı ve Güvenliği II",
+      "description": "",
+      "prerequisite": [
+        "ISG121"
+      ],
+      "semester": 8,
+      "credit": 2
+    },
+    {
+      "shortName": "BIOE4072",
+      "fullName": "Planning and Management of Research",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CHE4060",
+      "fullName": "Cost Management in Chemical Industries",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CHE4068",
+      "fullName": "Financial Engineering",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CHE4080",
+      "fullName": "Chemical Engineering for Sustainable Biosphere",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4044",
+      "fullName": "Software Project Management",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4056",
+      "fullName": "Management of Information Systems",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4062",
+      "fullName": "Introduction to Data Science and Analytics",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "EE4056",
+      "fullName": "Introduction to Information Systems Management",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "EE4062",
+      "fullName": "Introduction to Image Processing",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "ENVE4062",
+      "fullName": "Energy and the Environment",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "ENVE4063",
+      "fullName": "Construction Materials for Environmental Engineering",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "IE4055",
+      "fullName": "Design of Experiments",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "IE4087",
+      "fullName": "Introduction to Total Quality Management",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "ME3004",
+      "fullName": "Mathematical Modeling in Mechanical Engineering",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "ME3022",
+      "fullName": "Mechatronics",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "ME4018",
+      "fullName": "Introduction to Robotics",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "ME4022",
+      "fullName": "Control Systems",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "ME4033",
+      "fullName": "Designing Quality Products",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "ME4051",
+      "fullName": "Automotive Engineering",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "MGT4076",
+      "fullName": "Quality Management System in Automotive Industry",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "MGT4082",
+      "fullName": "Advanced Innovative Design Management for Entrepreneurship",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "MGT4084",
+      "fullName": "Innovation and New Product Development Management",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "MGT4086",
+      "fullName": "Managing Engineering and Technology",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "MGT4088",
+      "fullName": "Project Management for Engineers",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "MSE4073",
+      "fullName": "Materials Engineering Economics and Plant Design",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "MSE4074",
+      "fullName": "Total Quality Management in Materials Engineering",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4026",
+      "fullName": "Introduction to Robotics and Control Theory",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4032",
+      "fullName": "Introduction to Distributed Systems",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4034",
+      "fullName": "Advanced Unix Programming",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4038",
+      "fullName": "Introduction to Parallel Processing",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4040",
+      "fullName": "Cloud Computing",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4053",
+      "fullName": "Information Systems: Analysis and Design",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4057",
+      "fullName": "Information Systems Security",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4058",
+      "fullName": "Fundamentals of Electronic Commerce",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4059",
+      "fullName": "Internet Programming",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4061",
+      "fullName": "Compiler Design",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4063",
+      "fullName": "Fundamentals of Data Mining",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4065",
+      "fullName": "Introduction to Computational Genomics",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4066",
+      "fullName": "Introduction to Cryptography",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4067",
+      "fullName": "Introduction to Blockchain Programming",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4070",
+      "fullName": "Software Frameworks",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4075",
+      "fullName": "Wireless and Mobile Networks",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4082",
+      "fullName": "Artificial Intelligence",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4083",
+      "fullName": "Computer Graphics",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4084",
+      "fullName": "Multimedia Systems",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4085",
+      "fullName": "Human Computer Interaction",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4086",
+      "fullName": "Mobile Device Programming",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4217",
+      "fullName": "Microprocessors",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4093",
+      "fullName": "Special Topics in Computer Engineering I",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4094",
+      "fullName": "Special Topics in Computer Engineering II",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4095",
+      "fullName": "Special Topics in Computer Engineering III",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "CSE4096",
+      "fullName": "Special Topics in Computer Engineering IV",
+      "description": "Elective",
+      "prerequisite": [],
+      "semester": 7,
+      "credit": 5
+    },
+    {
+      "shortName": "BUS1003",
+      "fullName": "Entrepreneurship and Innovation",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "BUS1004",
+      "fullName": "Strategic Entrepreneurship",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "BUS2005",
+      "fullName": "International Business",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "CAS1001",
+      "fullName": "Self Management",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "CAS1010",
+      "fullName": "Our Biosphere",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "CAS1061",
+      "fullName": "Geometric Origami",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "CAS2001",
+      "fullName": "Energy for Physical Activity",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "CAS2002",
+      "fullName": "Human Performance and Nutrition",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "CAS2003",
+      "fullName": "Cardiopulmonary Resuscitation and First Aid Basics",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "CAS2004",
+      "fullName": "Interpersonal Relations and Communication",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "CAS2005",
+      "fullName": "Trekking and Orienteering",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "CAS3001",
+      "fullName": "Earthquake and Rescue Principles",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "CAS3044",
+      "fullName": "Positive Thinking",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "COMM2060",
+      "fullName": "Communication Models and Techniques",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "FNCE3003",
+      "fullName": "Investment Planning",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "HR1013",
+      "fullName": "Career Development",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "HR4001",
+      "fullName": "Career Orientation",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "HSS3002",
+      "fullName": "Ethics in Engineering and Science",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "IKT1054",
+      "fullName": "Industrial and Economic Sociology",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "INF1001",
+      "fullName": "Information Literacy in Engineering",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "LAW2004",
+      "fullName": "Labor Law",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "MAN1001",
+      "fullName": "Principles of Managerial Economics & Financial Management",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "MGT1021",
+      "fullName": "Design, Innovation and Entrepreneurship",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "MGT3082",
+      "fullName": "Creativity And Innovation Management",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "MRK3082",
+      "fullName": "Integrated Marketing Communication",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "MRK3084",
+      "fullName": "Brand Creation/Branding",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "NTE1002",
+      "fullName": "Effects of Human Behaviour on Environment",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "NTE1003",
+      "fullName": "The Culture of Radiation Safety",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "NTE1004",
+      "fullName": "World Cultures",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "NTE1006",
+      "fullName": "Basic Principles of Accessibility in Informatics and Technology",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "NTE1008",
+      "fullName": "Cinema",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "NTE1010",
+      "fullName": "Introduction to Finance for Engineers",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "NTE1011",
+      "fullName": "Business Communication",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "NTE1012",
+      "fullName": "Introduction to Corporate Governance for Engineers",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "NTE1013",
+      "fullName": "Business Intelligence for Managers",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "NTE1014",
+      "fullName": "Introduction to Strategic Human Resources Management",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "NTE1015",
+      "fullName": "Introduction to Leadership & Management for Engineers",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "NTE1016",
+      "fullName": "Introduction to Strategy for Engineers",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "OB2040",
+      "fullName": "Industrial Psychology",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "OB2041",
+      "fullName": "Behavioral Sciences for Engineers",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "OB3043",
+      "fullName": "Organizational Behaviour",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "SOC3082",
+      "fullName": "Environmental Sociology",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "YDA1001",
+      "fullName": "German for Beginners",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "YDA1002",
+      "fullName": "German",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "YDA1003",
+      "fullName": "German Communication",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "YDA2001",
+      "fullName": "Seminars in German",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "YDF1001",
+      "fullName": "French for Beginners",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "YDF1002",
+      "fullName": "French",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "YDI1004",
+      "fullName": "Report Writing in English",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "YDIS1001",
+      "fullName": "Spanish for Beginners",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    },
+    {
+      "shortName": "YDIS1002",
+      "fullName": "Spanish",
+      "description": "",
+      "prerequisite": [],
+      "semester": 1,
+      "credit": 2
+    }
+  ],
+  "lecturers": [
+    {
+      "personName": "Mustafa",
+      "personSurname": "Ağaoglu",
+      "username": "mustafa",
+      "password": "mustafaagaoglu",
+      "reputation": "Doç. Dr.",
+      "officeHours": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "salary": 10000,
+      "employmentStatus": "active",
+      "courses": [
+        {
+          "shortName": "PHYS1002",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "STAT2253",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4000",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "IE4087",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "MSE4074",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4063",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4094",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CAS2004",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "MGT1021",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "NTE1014",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "YDI1004",
+          "sectionName": "1.1"
+        }
+      ]
+    },
+    {
+      "personName": "Murat Can",
+      "personSurname": "Ganiz",
+      "username": "muratcan",
+      "password": "muratcanganiz",
+      "reputation": "Doç. Dr.",
+      "officeHours": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "salary": 10000,
+      "employmentStatus": "active",
+      "courses": [
+        {
+          "shortName": "MATH2256",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "EE2032",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4297",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "IE4055",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "MSE4073",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4061",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4093",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CAS2003",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "MAN1001",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "NTE1013",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "YDF1002",
+          "sectionName": "1.1"
+        }
+      ]
+    },
+    {
+      "personName": "Betül",
+      "personSurname": "Boz",
+      "username": "betul",
+      "password": "boz",
+      "reputation": "Dr.Öğr.",
+      "officeHours": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "salary": 10000,
+      "employmentStatus": "active",
+      "courses": [
+        {
+          "shortName": "MATH1002",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE2260",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "IE3235",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "ENVE4063",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "MGT4088",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4059",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4217",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CAS2002",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "LAW2004",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "NTE1012",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "YDF1001",
+          "sectionName": "1.1"
+        }
+      ]
+    },
+    {
+      "personName": "Haluk Rahmi",
+      "personSurname": "Topçuğlu",
+      "username": "haluk",
+      "password": "haluk",
+      "reputation": "Prof. Dr.",
+      "officeHours": [],
+      "salary": 10000,
+      "employmentStatus": "active",
+      "courses": [
+        {
+          "shortName": "CSE1242",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE2246",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE3048",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "ENVE4062",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "MGT4086",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4058",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4086",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CAS2001",
+          "sectionName": "N2"
+        },
+        {
+          "shortName": "INF1001",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "NTE1011",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "YDA2001",
+          "sectionName": "1.1"
+        }
+      ]
+    },
+    {
+      "personName": "Çiğdem Eroğlu",
+      "personSurname": "Erdem",
+      "username": "cigdem",
+      "password": "cigdemerogluerdem",
+      "reputation": "Prof. Dr.",
+      "officeHours": [],
+      "salary": 10000,
+      "employmentStatus": "active",
+      "courses": [
+        {
+          "shortName": "ATA122",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE2138",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE3038",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "EE4062",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "MGT4084",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4057",
+          "sectionName": "1.2"
+        },
+        {
+          "shortName": "CSE4085",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CAS2001",
+          "sectionName": "N1"
+        },
+        {
+          "shortName": "IKT1054",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "NTE1010",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "YDA1003",
+          "sectionName": "1.1"
+        }
+      ]
+    },
+    {
+      "personName": "Ali Fuat",
+      "personSurname": "Alkaya",
+      "username": "alifuat",
+      "password": "alifuatalkaya",
+      "reputation": "Prof. Prof.",
+      "officeHours": [],
+      "salary": 10000,
+      "employmentStatus": "active",
+      "courses": [
+        {
+          "shortName": "TRD121",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "MATH2059",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE3264",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "EE4056",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "MGT4082",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4057",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4084",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CAS1061",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "HSS3002",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "NTE1008",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "YDA1002",
+          "sectionName": "1.1"
+        }
+      ]
+    },
+    {
+      "personName": "Müjdat",
+      "personSurname": "Soytürk",
+      "username": "mujdat",
+      "password": "mujdatsoyturk",
+      "reputation": "Assoc. Prof.",
+      "officeHours": [],
+      "salary": 10000,
+      "employmentStatus": "active",
+      "courses": [
+        {
+          "shortName": "PHYS1003",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "MATH2055",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE3044",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4062",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "MGT4076",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4053",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4083",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CAS1010",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "HR4001",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "NTE1006",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "YDA1001",
+          "sectionName": "1.1"
+        }
+      ]
+    },
+    {
+      "personName": "Borahan",
+      "personSurname": "Tümer",
+      "username": "borahan",
+      "password": "borahantumer",
+      "reputation": "Assoc. Prof.",
+      "officeHours": [],
+      "salary": 10000,
+      "employmentStatus": "active",
+      "courses": [
+        {
+          "shortName": "PHYS1001",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "EE2031",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "COM2202",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "ISG122",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4056",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "ME4051",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4040",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4082",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CAS1001",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "HR1013",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "NTE1004",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "SOC3082",
+          "sectionName": "1.1"
+        }
+      ]
+    },
+    {
+      "personName": "Mehmet",
+      "personSurname": "Baran",
+      "username": "mehmet",
+      "password": "mehmetbaran",
+      "reputation": "Asst. Prof.",
+      "officeHours": [],
+      "salary": 10000,
+      "employmentStatus": "active",
+      "courses": [
+        {
+          "shortName": "MATH1001",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "ECON2004",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "IE3081",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4298",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4044",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "ME4033",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4038",
+          "sectionName": "1.2"
+        },
+        {
+          "shortName": "CSE4075",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "BUS2005",
+          "sectionName": "N2"
+        },
+        {
+          "shortName": "FNCE3003",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "NTE1003",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "OB3043",
+          "sectionName": "1.1"
+        }
+      ]
+    },
+    {
+      "personName": "Fatma Corut",
+      "personSurname": "Ergin",
+      "username": "fatma",
+      "password": "fatma.ergin",
+      "reputation": "Asst. Prof.",
+      "officeHours": [],
+      "salary": 10000,
+      "employmentStatus": "active",
+      "courses": [
+        {
+          "shortName": "CSE1241",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE2225",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE3215",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4288",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CHE4080",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "ME4022",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4038",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4070",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "BUS2005",
+          "sectionName": "N1"
+        },
+        {
+          "shortName": "COMM2060",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "NTE1002",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "OB2041",
+          "sectionName": "1.1"
+        }
+      ]
+    },
+    {
+      "personName": "Ömer",
+      "personSurname": "Korçak",
+      "username": "omer",
+      "password": "omerkorcak",
+      "reputation": "Assoc. Prof.",
+      "officeHours": [],
+      "salary": 10000,
+      "employmentStatus": "active",
+      "courses": [
+        {
+          "shortName": "CSE1200",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE2023",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE3063",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "ISG121",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CHE4068",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "ME4018",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4034",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4067",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "BUS1004",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CAS3044",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "MRK3084",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "OB2040",
+          "sectionName": "1.1"
+        }
+      ]
+    },
+    {
+      "personName": "Ali Haydar",
+      "personSurname": "Özer",
+      "username": "alihaydar",
+      "password": "alihaydarozer",
+      "reputation": "Asst. Prof.",
+      "officeHours": [],
+      "salary": 10000,
+      "employmentStatus": "active",
+      "courses": [
+        {
+          "shortName": "MBG1201",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "TRD122",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE3055",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4219",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CHE4060",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "ME3022",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4032",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4066",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4096",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "BUS1003",
+          "sectionName": "N2"
+        },
+        {
+          "shortName": "CAS3001",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "MRK3082",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "NTE1016",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "YDIS1002",
+          "sectionName": "1.1"
+        }
+      ]
+    },
+    {
+      "personName": "Sanem",
+      "personSurname": "Arslan",
+      "username": "sanem",
+      "password": "sanemarslan",
+      "reputation": "Asst. Prof.",
+      "officeHours": [],
+      "salary": 10000,
+      "employmentStatus": "active",
+      "courses": [
+        {
+          "shortName": "ATA121",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "PHYS1004",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE3033",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4074",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "BIOE4072",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "ME3004",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4026",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4065",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "CSE4095",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "BUS1003",
+          "sectionName": "N1"
+        },
+        {
+          "shortName": "CAS2005",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "MGT3082",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "NTE1015",
+          "sectionName": "1.1"
+        },
+        {
+          "shortName": "YDIS1001",
+          "sectionName": "1.1"
+        }
+      ]
+    }
+  ],
+  "advisors": [
+    {
+      "personName": "Fatma Corut",
+      "personSurname": "Ergin",
+      "username": "fatmacorut",
+      "password": "fatmacorutergin",
+      "reputation": "Dr.Öğr.Üyesi",
+      "officeHours": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "salary": 10000,
+      "employmentStatus": "active",
+      "students": [
+        "hakkikokur",
+        "burakkarayagli",
+        "barisgirayakman",
+        "efeozgen",
+        "musaozkan",
+        "tamerunal",
+        "ahmetyilmaz",
+        "elifaydin",
+        "aysekaya",
+        "mehmetaksoy",
+        "zeynepcelik",
+        "mustafademir",
+        "sevgisahin",
+        "emretoprak",
+        "esrayildiz",
+        "ozlemtas"
+      ]
+    },
+    {
+      "personName": "Ali",
+      "personSurname": "Haydar",
+      "username": "alihaydar",
+      "password": "alihaydar",
+      "reputation": "Doç.Dr.",
+      "officeHours": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "salary": 10000,
+      "employmentStatus": "active",
+      "students": [
+        "yusufarslan",
+        "betulgunes",
+        "ismailkarahan",
+        "cerenay",
+        "selimeren",
+        "gizemakbas",
+        "berkyilmazer",
+        "ilaydakorkmaz",
+        "onurcetin",
+        "gulsenSen",
+        "burakoguz",
+        "semakirim",
+        "mehmetselcuk",
+        "nazliaslan",
+        "sercanozturk",
+        "esinulutas"
+      ]
+    },
+    {
+      "personName": "Mujdat",
+      "personSurname": "Soytürk",
+      "username": "mujdat",
+      "password": "mujdatSoyturk",
+      "reputation": "Doç.Dr.",
+      "officeHours": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "salary": 10000,
+      "employmentStatus": "active",
+      "students": [
+        "rizayildirim",
+        "sibelekinci",
+        "enginArikan",
+        "erenkaratas",
+        "aslicengiz",
+        "aysesevinc",
+        "alikocak",
+        "selinonat",
+        "kaanturk",
+        "denizyilmazoglu",
+        "cemacar",
+        "ebruaygun",
+        "berkayalbayrak",
+        "sibelyigit",
+        "aysegulakdogan",
+        "ugursarikaya",
+        "gizemtemiz"
+      ]
+    }
+  ],
+  "courseSections": [
+    {
+      "shortName": "ATA121",
+      "fullName": "Atatürk İlkeleri ve İnkılap Tarihi I",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "sanemarslan",
+      "quota": 85,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "MBG1201",
+      "fullName": "Introduction to Modern Biology",
+      "description": "",
+      "semester": 1,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alihaydarozer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE1200",
+      "fullName": "Introduction to Computer Engineering",
+      "description": "",
+      "semester": 1,
+      "credit": 4,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "omerkorcak",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE1241",
+      "fullName": "Computer Programming I",
+      "description": "",
+      "semester": 1,
+      "credit": 6,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "fatma.ergin",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "MATH1001",
+      "fullName": "Calculus I",
+      "description": "",
+      "semester": 1,
+      "credit": 6,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mehmetbaran",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "PHYS1001",
+      "fullName": "Physics I",
+      "description": "",
+      "semester": 1,
+      "credit": 4,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "borahantumer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "PHYS1003",
+      "fullName": "Physics Lab I",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mujdatsoyturk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "TRD121",
+      "fullName": "Türk Dili I",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alifuatalkaya",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "ATA122",
+      "fullName": "Atatürk İlkeleri ve İnkılap Tarihi II",
+      "description": "",
+      "semester": 2,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "cigdemerogluerdem",
+      "quota": 85,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE1242",
+      "fullName": "Computer Programming II",
+      "description": "",
+      "semester": 2,
+      "credit": 6,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "haluk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "MATH1002",
+      "fullName": "Calculus II",
+      "description": "",
+      "semester": 2,
+      "credit": 6,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "boz",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "MATH2256",
+      "fullName": "Linear Algebra for Computer Engineering",
+      "description": "",
+      "semester": 2,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "muratcanganiz",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "PHYS1002",
+      "fullName": "Physics II",
+      "description": "",
+      "semester": 2,
+      "credit": 4,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mustafaagaoglu",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "PHYS1004",
+      "fullName": "Physics Lab II",
+      "description": "",
+      "semester": 2,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "sanemarslan",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "TRD122",
+      "fullName": "Türk Dili II",
+      "description": "",
+      "semester": 2,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alihaydarozer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE2023",
+      "fullName": "Discrete Computational Structures",
+      "description": "",
+      "semester": 3,
+      "credit": 6,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "omerkorcak",
+      "quota": 85,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE2225",
+      "fullName": "Data Structures",
+      "description": "",
+      "semester": 3,
+      "credit": 7,
+      "prerequisite": [
+        "CSE1242"
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "fatma.ergin",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "ECON2004",
+      "fullName": "Engineering Economy",
+      "description": "",
+      "semester": 3,
+      "credit": 4,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mehmetbaran",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "EE2031",
+      "fullName": "Electric Circuits",
+      "description": "",
+      "semester": 3,
+      "credit": 5,
+      "prerequisite": [
+        "PHYS1102"
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "borahantumer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "MATH2055",
+      "fullName": "Differential Equations",
+      "description": "",
+      "semester": 3,
+      "credit": 4,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mujdatsoyturk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "MATH2059",
+      "fullName": "Numerical Methods",
+      "description": "",
+      "semester": 3,
+      "credit": 4,
+      "prerequisite": [
+        "MATH1001"
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alifuatalkaya",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE2138",
+      "fullName": "Systems Programming",
+      "description": "",
+      "semester": 4,
+      "credit": 7,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "cigdemerogluerdem",
+      "quota": 85,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE2246",
+      "fullName": "Analysis of Algorithms",
+      "description": "",
+      "semester": 4,
+      "credit": 6,
+      "prerequisite": [
+        "CSE2225"
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "haluk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE2260",
+      "fullName": "Principles of Programming Languages",
+      "description": "",
+      "semester": 4,
+      "credit": 6,
+      "prerequisite": [
+        "CSE1242"
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "boz",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "EE2032",
+      "fullName": "Electronics",
+      "description": "",
+      "semester": 4,
+      "credit": 5,
+      "prerequisite": [
+        "EE2031"
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "muratcanganiz",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "STAT2253",
+      "fullName": "Probability and Statistics for Computer Engineering",
+      "description": "",
+      "semester": 4,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mustafaagaoglu",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE3033",
+      "fullName": "Operating Systems",
+      "description": "",
+      "semester": 5,
+      "credit": 7,
+      "prerequisite": [
+        "CSE2225"
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "sanemarslan",
+      "quota": 85,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE3055",
+      "fullName": "Database Systems",
+      "description": "",
+      "semester": 5,
+      "credit": 7,
+      "prerequisite": [
+        "CSE2225"
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alihaydarozer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE3063",
+      "fullName": "Object-Oriented Software Design",
+      "description": "",
+      "semester": 5,
+      "credit": 5,
+      "prerequisite": [
+        "CSE1242"
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "omerkorcak",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE3215",
+      "fullName": "Digital Logic Design",
+      "description": "",
+      "semester": 5,
+      "credit": 6,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "fatma.ergin",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "IE3081",
+      "fullName": "Modeling and Discrete Simulation",
+      "description": "",
+      "semester": 5,
+      "credit": 4,
+      "prerequisite": [
+        "STAT2253"
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mehmetbaran",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "COM2202",
+      "fullName": "Technical Communication & Entrepreneurship",
+      "description": "",
+      "semester": 6,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "borahantumer",
+      "quota": 85,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE3044",
+      "fullName": "Software Engineering",
+      "description": "",
+      "semester": 6,
+      "credit": 7,
+      "prerequisite": [
+        "CSE3055"
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mujdatsoyturk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE3264",
+      "fullName": "Formal Languages and Automata Theory",
+      "description": "",
+      "semester": 6,
+      "credit": 5,
+      "prerequisite": [
+        "CSE2023"
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alifuatalkaya",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE3038",
+      "fullName": "Computer Organization",
+      "description": "",
+      "semester": 6,
+      "credit": 7,
+      "prerequisite": [
+        "CSE2138",
+        "CSE3215"
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "cigdemerogluerdem",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE3048",
+      "fullName": "Introduction to Signals and Systems",
+      "description": "",
+      "semester": 6,
+      "credit": 5,
+      "prerequisite": [
+        "MATH2055"
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "haluk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "IE3235",
+      "fullName": "Operations Research",
+      "description": "",
+      "semester": 6,
+      "credit": 4,
+      "prerequisite": [
+        "MATH2256"
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "boz",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE4297",
+      "fullName": "Engineering Project I",
+      "description": "",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "muratcanganiz",
+      "quota": 85,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE4000",
+      "fullName": "Summer Practice ",
+      "description": "",
+      "semester": 7,
+      "credit": 10,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mustafaagaoglu",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE4074",
+      "fullName": "Computer Networks",
+      "description": "",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "sanemarslan",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE4219",
+      "fullName": "Principles of Embedded System Design",
+      "description": "",
+      "semester": 7,
+      "credit": 6,
+      "prerequisite": [
+        "CSE3038"
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alihaydarozer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "ISG121",
+      "fullName": "Work Safety 1",
+      "description": "",
+      "semester": 7,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "omerkorcak",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE4288",
+      "fullName": "Introduction to Machine Learning",
+      "description": "",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        "STAT2253",
+        "MATH2256"
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "fatma.ergin",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "CSE4298",
+      "fullName": "Engineering Project II",
+      "description": "",
+      "semester": 8,
+      "credit": 5,
+      "prerequisite": [
+        "CSE4297"
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mehmetbaran",
+      "quota": 85,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "ISG122",
+      "fullName": "İş Sağlığı ve Güvenliği II",
+      "description": "",
+      "semester": 8,
+      "credit": 2,
+      "prerequisite": [
+        "ISG121"
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "borahantumer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "mandatory"
+    },
+    {
+      "shortName": "BIOE4072",
+      "fullName": "Planning and Management of Research",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "sanemarslan",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CHE4060",
+      "fullName": "Cost Management in Chemical Industries",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alihaydarozer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CHE4068",
+      "fullName": "Financial Engineering",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "omerkorcak",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CHE4080",
+      "fullName": "Chemical Engineering for Sustainable Biosphere",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "fatma.ergin",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4044",
+      "fullName": "Software Project Management",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mehmetbaran",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4056",
+      "fullName": "Management of Information Systems",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "borahantumer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4062",
+      "fullName": "Introduction to Data Science and Analytics",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mujdatsoyturk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "EE4056",
+      "fullName": "Introduction to Information Systems Management",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alifuatalkaya",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "EE4062",
+      "fullName": "Introduction to Image Processing",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "cigdemerogluerdem",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "ENVE4062",
+      "fullName": "Energy and the Environment",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "haluk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "ENVE4063",
+      "fullName": "Construction Materials for Environmental Engineering",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "boz",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "IE4055",
+      "fullName": "Design of Experiments",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "muratcanganiz",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "IE4087",
+      "fullName": "Introduction to Total Quality Management",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mustafaagaoglu",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "ME3004",
+      "fullName": "Mathematical Modeling in Mechanical Engineering",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "sanemarslan",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "ME3022",
+      "fullName": "Mechatronics",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alihaydarozer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "ME4018",
+      "fullName": "Introduction to Robotics",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "omerkorcak",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "ME4022",
+      "fullName": "Control Systems",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "fatma.ergin",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "ME4033",
+      "fullName": "Designing Quality Products",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mehmetbaran",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "ME4051",
+      "fullName": "Automotive Engineering",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "borahantumer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "MGT4076",
+      "fullName": "Quality Management System in Automotive Industry",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mujdatsoyturk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "MGT4082",
+      "fullName": "Advanced Innovative Design Management for Entrepreneurship",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alifuatalkaya",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "MGT4084",
+      "fullName": "Innovation and New Product Development Management",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "cigdemerogluerdem",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "MGT4086",
+      "fullName": "Managing Engineering and Technology",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "haluk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "MGT4088",
+      "fullName": "Project Management for Engineers",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "boz",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "MSE4073",
+      "fullName": "Materials Engineering Economics and Plant Design",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "muratcanganiz",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "MSE4074",
+      "fullName": "Total Quality Management in Materials Engineering",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mustafaagaoglu",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4026",
+      "fullName": "Introduction to Robotics and Control Theory",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "sanemarslan",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4032",
+      "fullName": "Introduction to Distributed Systems",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alihaydarozer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 155,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4034",
+      "fullName": "Advanced Unix Programming",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "omerkorcak",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4038",
+      "fullName": "Introduction to Parallel Processing",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "fatma.ergin",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 155,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4038",
+      "fullName": "Introduction to Parallel Processing",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        }
+      ],
+      "sectionName": "1.2",
+      "lecturer": "mehmetbaran",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 155,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4040",
+      "fullName": "Cloud Computing",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "borahantumer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4053",
+      "fullName": "Information Systems: Analysis and Design",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mujdatsoyturk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4057",
+      "fullName": "Information Systems Security",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alifuatalkaya",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4057",
+      "fullName": "Information Systems Security",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        }
+      ],
+      "sectionName": "1.2",
+      "lecturer": "cigdemerogluerdem",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4058",
+      "fullName": "Fundamentals of Electronic Commerce",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "haluk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4059",
+      "fullName": "Internet Programming",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "boz",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 155,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4061",
+      "fullName": "Compiler Design",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "muratcanganiz",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4063",
+      "fullName": "Fundamentals of Data Mining",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mustafaagaoglu",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4065",
+      "fullName": "Introduction to Computational Genomics",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "sanemarslan",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 155,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4066",
+      "fullName": "Introduction to Cryptography",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alihaydarozer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4067",
+      "fullName": "Introduction to Blockchain Programming",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "omerkorcak",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 155,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4070",
+      "fullName": "Software Frameworks",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "fatma.ergin",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4075",
+      "fullName": "Wireless and Mobile Networks",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mehmetbaran",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 155,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4082",
+      "fullName": "Artificial Intelligence",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "borahantumer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4083",
+      "fullName": "Computer Graphics",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mujdatsoyturk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 155,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4084",
+      "fullName": "Multimedia Systems",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        },
+        {
+          "dayOfWeek": "Monday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alifuatalkaya",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4085",
+      "fullName": "Human Computer Interaction",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "cigdemerogluerdem",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 155,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4086",
+      "fullName": "Mobile Device Programming",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "haluk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4217",
+      "fullName": "Microprocessors",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "boz",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 155,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4093",
+      "fullName": "Special Topics in Computer Engineering I",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "muratcanganiz",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4094",
+      "fullName": "Special Topics in Computer Engineering II",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mustafaagaoglu",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 155,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4095",
+      "fullName": "Special Topics in Computer Engineering III",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "sanemarslan",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 165,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "CSE4096",
+      "fullName": "Special Topics in Computer Engineering IV",
+      "description": "Elective",
+      "semester": 7,
+      "credit": 5,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alihaydarozer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 155,
+      "type": "technicalElective"
+    },
+    {
+      "shortName": "BUS1003",
+      "fullName": "Entrepreneurship and Innovation",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        }
+      ],
+      "sectionName": "N1",
+      "lecturer": "sanemarslan",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "BUS1003",
+      "fullName": "Entrepreneurship and Innovation",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        }
+      ],
+      "sectionName": "N2",
+      "lecturer": "alihaydarozer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "BUS1004",
+      "fullName": "Strategic Entrepreneurship",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "omerkorcak",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "BUS2005",
+      "fullName": "International Business",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        }
+      ],
+      "sectionName": "N1",
+      "lecturer": "fatma.ergin",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "BUS2005",
+      "fullName": "International Business",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "N2",
+      "lecturer": "mehmetbaran",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "CAS1001",
+      "fullName": "Self Management",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "borahantumer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "CAS1010",
+      "fullName": "Our Biosphere",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mujdatsoyturk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "CAS1061",
+      "fullName": "Geometric Origami",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alifuatalkaya",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "CAS2001",
+      "fullName": "Energy for Physical Activity",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "N1",
+      "lecturer": "cigdemerogluerdem",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "CAS2001",
+      "fullName": "Energy for Physical Activity",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "N2",
+      "lecturer": "haluk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "CAS2002",
+      "fullName": "Human Performance and Nutrition",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "boz",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "CAS2003",
+      "fullName": "Cardiopulmonary Resuscitation and First Aid Basics",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "muratcanganiz",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "CAS2004",
+      "fullName": "Interpersonal Relations and Communication",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mustafaagaoglu",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "CAS2005",
+      "fullName": "Trekking and Orienteering",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "sanemarslan",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "CAS3001",
+      "fullName": "Earthquake and Rescue Principles",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alihaydarozer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "CAS3044",
+      "fullName": "Positive Thinking",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "omerkorcak",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "COMM2060",
+      "fullName": "Communication Models and Techniques",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "fatma.ergin",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "FNCE3003",
+      "fullName": "Investment Planning",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mehmetbaran",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "HR1013",
+      "fullName": "Career Development",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "borahantumer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "HR4001",
+      "fullName": "Career Orientation",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mujdatsoyturk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "HSS3002",
+      "fullName": "Ethics in Engineering and Science",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alifuatalkaya",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "IKT1054",
+      "fullName": "Industrial and Economic Sociology",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "cigdemerogluerdem",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "INF1001",
+      "fullName": "Information Literacy in Engineering",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "haluk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "LAW2004",
+      "fullName": "Labor Law",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "boz",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "MAN1001",
+      "fullName": "Principles of Managerial Economics & Financial Management",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "muratcanganiz",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "MGT1021",
+      "fullName": "Design, Innovation and Entrepreneurship",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mustafaagaoglu",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "MGT3082",
+      "fullName": "Creativity And Innovation Management",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "sanemarslan",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "MRK3082",
+      "fullName": "Integrated Marketing Communication",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alihaydarozer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "MRK3084",
+      "fullName": "Brand Creation/Branding",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "omerkorcak",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "NTE1002",
+      "fullName": "Effects of Human Behaviour on Environment",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "fatma.ergin",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "NTE1003",
+      "fullName": "The Culture of Radiation Safety",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mehmetbaran",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "NTE1004",
+      "fullName": "World Cultures",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "borahantumer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "NTE1006",
+      "fullName": "Basic Principles of Accessibility in Informatics and Technology",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mujdatsoyturk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "NTE1008",
+      "fullName": "Cinema",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alifuatalkaya",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "NTE1010",
+      "fullName": "Introduction to Finance for Engineers",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "cigdemerogluerdem",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "NTE1011",
+      "fullName": "Business Communication",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "haluk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "NTE1012",
+      "fullName": "Introduction to Corporate Governance for Engineers",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "boz",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "NTE1013",
+      "fullName": "Business Intelligence for Managers",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "muratcanganiz",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "NTE1014",
+      "fullName": "Introduction to Strategic Human Resources Management",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mustafaagaoglu",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "NTE1015",
+      "fullName": "Introduction to Leadership & Management for Engineers",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "sanemarslan",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "NTE1016",
+      "fullName": "Introduction to Strategy for Engineers",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alihaydarozer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "OB2040",
+      "fullName": "Industrial Psychology",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "omerkorcak",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "OB2041",
+      "fullName": "Behavioral Sciences for Engineers",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "fatma.ergin",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "OB3043",
+      "fullName": "Organizational Behaviour",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mehmetbaran",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "SOC3082",
+      "fullName": "Environmental Sociology",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "borahantumer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "YDA1001",
+      "fullName": "German for Beginners",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Tuesday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mujdatsoyturk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "YDA1002",
+      "fullName": "German",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alifuatalkaya",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "YDA1003",
+      "fullName": "German Communication",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "16:00",
+          "endTime": "16:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "cigdemerogluerdem",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "YDA2001",
+      "fullName": "Seminars in German",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "haluk",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "YDF1001",
+      "fullName": "French for Beginners",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "boz",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "YDF1002",
+      "fullName": "French",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "14:00",
+          "endTime": "14:50"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "15:00",
+          "endTime": "15:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "muratcanganiz",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "YDI1004",
+      "fullName": "Report Writing in English",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "09:30",
+          "endTime": "10:20"
+        },
+        {
+          "dayOfWeek": "Friday",
+          "startTime": "10:30",
+          "endTime": "11:20"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "mustafaagaoglu",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "YDIS1001",
+      "fullName": "Spanish for Beginners",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Wednesday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "sanemarslan",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    },
+    {
+      "shortName": "YDIS1002",
+      "fullName": "Spanish",
+      "description": "",
+      "semester": 1,
+      "credit": 2,
+      "prerequisite": [
+        ""
+      ],
+      "dates": [
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "11:30",
+          "endTime": "12:20"
+        },
+        {
+          "dayOfWeek": "Thursday",
+          "startTime": "13:00",
+          "endTime": "13:50"
+        }
+      ],
+      "sectionName": "1.1",
+      "lecturer": "alihaydarozer",
+      "quota": 50,
+      "numberOfStudent": 0,
+      "requiredCredit": 0,
+      "type": "nonTechnicalElective"
+    }
+  ]
+}

@@ -1,22 +1,22 @@
-from types import List
+from typing import List
 
 
 class Course:
     def __init__(
         self,
-        short_name="",
-        full_name="",
-        description="",
-        prerequisite=List[str](),
-        semester=0,
-        credit=0,
+        short_name: str,
+        full_name: str,
+        description: str,
+        prerequisite: List[str],
+        semester: int,
+        credit: int,
     ):
-        self.__short_name = short_name
-        self.__full_name = full_name
-        self.__description = description
-        self.__prerequisite = prerequisite
-        self.__semester = semester
-        self.__credit = credit
+        self.__short_name: str = short_name
+        self.__full_name: str = full_name
+        self.__description: str = description
+        self.__prerequisite: List[str] = [] if prerequisite is None else prerequisite
+        self.__semester: int = semester
+        self.__credit: int = credit
 
     @property
     def short_name(self) -> str:
@@ -52,11 +52,11 @@ class Course:
 
     @property
     def credit(self) -> str:
-        self.__credit
+        return self.__credit
 
-    @property.setter
+    @credit.setter
     def credit(self, credit: int):
-        if 0 < credit < 10:
+        if credit >= 0 and credit <= 10:
             self.__credit = credit
         else:
             print("Credit must be between 1 and 9")
@@ -72,9 +72,19 @@ class Course:
         return False
 
     def get_prerequisites(self) -> str:
-        if not self.__prerequisite or len(self.__prerequisite) == 0:
-            return "There is no prerequisite"
-        return ",".join(self.prerequisite)
+        if self.__prerequisite is None or len(self.__prerequisite) == 0:
+            return ""
+        return ",".join(self.__prerequisite)
+
+    def to_json(self):
+        return {
+            "shortName": self.short_name,
+            "fullName": self.full_name,
+            "description": self.description,
+            "prerequisite": list(self.__prerequisite),
+            "semester": self.semester,
+            "credit": self.credit,
+        }
 
     def __str__(self):
         return (

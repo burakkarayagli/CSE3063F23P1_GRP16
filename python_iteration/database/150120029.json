@@ -1,0 +1,12 @@
+{
+  "personName": "Nazli",
+  "personSurname": "Aslan",
+  "username": "nazli",
+  "password": "nazliaslan",
+  "semester": 1,
+  "status": "",
+  "waitingCourses": [],
+  "approvedCourses": [],
+  "rejectedCourses": [],
+  "transcript": []
+}

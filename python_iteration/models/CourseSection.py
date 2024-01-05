@@ -1,4 +1,4 @@
-from types import List
+from typing import List
 from TimeInterval import TimeInterval
 
 from Course import Course
@@ -6,7 +6,7 @@ from Lecturer import Lecturer
 
 
 class CourseSection(Course):
-    def __int__(
+    def __init__(
         self,
         course: Course,
         dates: List[TimeInterval],
@@ -19,11 +19,11 @@ class CourseSection(Course):
     ):
         super().__init__(
             short_name=course.short_name,
-            full_name=course.full_names,
+            full_name=course.full_name,
             description=course.description,
             semester=course.semester,
             credit=course.credit,
-            prerequisite=List[str](course.prerequisite.split(",")),
+            prerequisite=course.get_prerequisites().split(","),
         )
         self.__dates = dates
         self.__section_name = section_name
@@ -103,6 +103,26 @@ class CourseSection(Course):
                 return True
         return False
 
+    def get_full_name(self) -> str:
+        return self.short_name + " " + self.__section_name
+
+    def to_json(self):
+        return {
+            "shortName": self.short_name,
+            "fullName": self.full_name,
+            "description": self.description,
+            "semester": self.semester,
+            "credit": self.credit,
+            "prerequisite": list(self._Course__prerequisite),
+            "dates": [d.to_json() for d in self.__dates],
+            "sectionName": self.__section_name,
+            "lecturer": self.__lecturer.password,
+            "quota": self.__quota,
+            "numberOfStudent": self.__number_of_student,
+            "requiredCredit": self.__required_credit,
+            "type": self.__type,
+        }
+
     def __str__(self):
         return (
             f"---------\n"
@@ -118,7 +138,6 @@ class CourseSection(Course):
             f"Number of Student: {self.__number_of_student}\n"
             f"Required Credit: {self.__required_credit}\n"
             f"Type: {self.__type}\n"
-            f"Lecturer Name: {self.__lecturer.full_name}\n"
-            f"Dates: {','.join([d.__str__() for d in self.__dates])}\n"
-            f"---------"
+            f"Lecturer Name: {self.__lecturer.getFullName()}\n"
+            f"Dates: {', '.join([d.__str__() for d in self.__dates])}\n"
         )
