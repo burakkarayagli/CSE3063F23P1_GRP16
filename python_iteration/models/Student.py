@@ -154,6 +154,37 @@ class Student(Person):
             print(f"Error dropping course: {e}")
             logger.error(f"Error dropping course: {e}")
 
+    # INDEX METHODS
+    def rejectCourseWithIndex(self, index: int):
+        try:
+            # Remove course from waiting list
+            course = self.__waitingCourses.pop(index)
+            self.__rejectedCourses.append(course)
+            print(
+                f"Course {course.get_full_name()} dropped from waiting list of {self.getFullName()}"
+            )
+            logger.info(
+                f"Course {course.get_full_name()} dropped from waiting list of {self.getFullName()}"
+            )
+        except:
+            print("Error dropping course")
+            logger.error("Error dropping course")
+
+    def approveCourseWithIndex(self, index: int):
+        try:
+            # Remove course from waiting list
+            course = self.__waitingCourses.pop(index)
+            self.__approvedCourses.append(course)
+            print(
+                f"Course {course.get_full_name()} approved from waiting list of {self.getFullName()}"
+            )
+            logger.info(
+                f"Course {course.get_full_name()} approved from waiting list of {self.getFullName()}"
+            )
+        except Exception as e:
+            print("Error dropping course")
+            logger.error("Error dropping course")
+
     # Available Courses
     """
     If course is not in waiting list, approved list or rejected list or courses that student has already passed
