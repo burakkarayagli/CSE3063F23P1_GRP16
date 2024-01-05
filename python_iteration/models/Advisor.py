@@ -173,7 +173,7 @@ class Advisor(Staff):
         ):
             print("Which student do you want to go on?\nType -1 for exit")
 
-            for j, student in enumerate(self.advisorController.get_students()):
+            for j, student in enumerate(self.__students):
                 print(f"{j + 1}- {student.getFullName()}", end="")
 
                 if student.status == "Rejected":
@@ -258,17 +258,11 @@ class Advisor(Staff):
 
         return numbers
 
-    def getStudent(self):
-        return self.__students
+    def getInformation(self):
+        pass
 
     def add_student(self, student):
         self.__students.append(student)
-
-    def getInformation():
-        pass
-
-    def getMenu():
-        pass
 
     def toJson(self):
         return {
