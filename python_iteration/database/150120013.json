@@ -1,16 +1,12 @@
 {
-  "address": "Uskudar/Istanbul",
-  "phoneNumber": "5088990011",
-  "semester": 1,
-  "entranceYear": 2023,
-  "status": "",
-  "selectedCourses": [],
-  "transcript": {
-    "listGrades": [],
-    "notes": ""
-  },
   "personName": "Emre",
   "personSurname": "Toprak",
   "username": "emre",
-  "password": "emretoprak"
+  "password": "emretoprak",
+  "semester": 1,
+  "status": "",
+  "waitingCourses": [],
+  "approvedCourses": [],
+  "rejectedCourses": [],
+  "transcript": []
 }

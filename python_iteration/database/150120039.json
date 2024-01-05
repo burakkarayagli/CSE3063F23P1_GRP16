@@ -1,16 +1,12 @@
 {
-  "address": "Kartal/Istanbul",
-  "phoneNumber": "5367890123",
-  "semester": 1,
-  "entranceYear": 2023,
-  "status": "",
-  "selectedCourses": [],
-  "transcript": {
-    "listGrades": [],
-    "notes": ""
-  },
   "personName": "Selin",
   "personSurname": "Onat",
   "username": "selin",
-  "password": "selinonat"
+  "password": "selinonat",
+  "semester": 1,
+  "status": "",
+  "waitingCourses": [],
+  "approvedCourses": [],
+  "rejectedCourses": [],
+  "transcript": []
 }
