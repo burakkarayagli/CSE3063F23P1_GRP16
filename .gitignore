@@ -90,6 +90,9 @@ nb-configuration.xml
 ##############################
 ## database folder
 ##############################
-
+database.bac
+database.bac2
+backup
 database/*
 __pycache__
+dumy.py

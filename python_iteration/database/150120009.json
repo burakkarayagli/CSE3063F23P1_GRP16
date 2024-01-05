@@ -1,0 +1,161 @@
+{
+  "personName": "Mehmet",
+  "personSurname": "Aksoy",
+  "username": "mehmet",
+  "password": "mehmetaksoy",
+  "semester": 7,
+  "status": "",
+  "waitingCourses": [],
+  "approvedCourses": [],
+  "rejectedCourses": [],
+  "transcript": [
+    {
+      "shortName": "ATA121",
+      "grade": "BA"
+    },
+    {
+      "shortName": "MBG1201",
+      "grade": "BB"
+    },
+    {
+      "shortName": "CSE1200",
+      "grade": "FF"
+    },
+    {
+      "shortName": "CSE1241",
+      "grade": "DC"
+    },
+    {
+      "shortName": "MATH1001",
+      "grade": "AA"
+    },
+    {
+      "shortName": "PHYS1001",
+      "grade": "FF"
+    },
+    {
+      "shortName": "PHYS1003",
+      "grade": "FF"
+    },
+    {
+      "shortName": "TRD121",
+      "grade": "FF"
+    },
+    {
+      "shortName": "ATA122",
+      "grade": "FF"
+    },
+    {
+      "shortName": "CSE1242",
+      "grade": "DD"
+    },
+    {
+      "shortName": "MATH1002",
+      "grade": "FF"
+    },
+    {
+      "shortName": "MATH2256",
+      "grade": "F"
+    },
+    {
+      "shortName": "PHYS1002",
+      "grade": "CB"
+    },
+    {
+      "shortName": "PHYS1004",
+      "grade": "FF"
+    },
+    {
+      "shortName": "TRD122",
+      "grade": "FF"
+    },
+    {
+      "shortName": "CSE2023",
+      "grade": "AA"
+    },
+    {
+      "shortName": "CSE2225",
+      "grade": "BB"
+    },
+    {
+      "shortName": "ECON2004",
+      "grade": "CB"
+    },
+    {
+      "shortName": "EE2031",
+      "grade": "DC"
+    },
+    {
+      "shortName": "MATH2055",
+      "grade": "DD"
+    },
+    {
+      "shortName": "MATH2059",
+      "grade": "BA"
+    },
+    {
+      "shortName": "CSE2138",
+      "grade": "FF"
+    },
+    {
+      "shortName": "CSE2246",
+      "grade": "CB"
+    },
+    {
+      "shortName": "CSE2260",
+      "grade": "DC"
+    },
+    {
+      "shortName": "EE2032",
+      "grade": "DD"
+    },
+    {
+      "shortName": "STAT2253",
+      "grade": "AA"
+    },
+    {
+      "shortName": "CSE3033",
+      "grade": "AA"
+    },
+    {
+      "shortName": "CSE3055",
+      "grade": "CB"
+    },
+    {
+      "shortName": "CSE3063",
+      "grade": "DC"
+    },
+    {
+      "shortName": "CSE3215",
+      "grade": "DD"
+    },
+    {
+      "shortName": "IE3081",
+      "grade": "BA"
+    },
+    {
+      "shortName": "CSE3038",
+      "grade": "AA"
+    },
+    {
+      "shortName": "CSE3044",
+      "grade": "AA"
+    },
+    {
+      "shortName": "CSE3264",
+      "grade": "DC"
+    },
+    {
+      "shortName": "CSE3048",
+      "grade": "BA"
+    },
+    {
+      "shortName": "IE3235",
+      "grade": "BB"
+    },
+    {
+      "shortName": "COM2202",
+      "grade": "BB"
+    }
+  ]
+}

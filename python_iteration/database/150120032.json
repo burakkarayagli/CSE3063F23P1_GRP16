@@ -1,0 +1,97 @@
+{
+  "personName": "Riza",
+  "personSurname": "Yildirim",
+  "username": "riza",
+  "password": "rizayildirim",
+  "semester": 4,
+  "status": "",
+  "waitingCourses": [],
+  "approvedCourses": [],
+  "rejectedCourses": [],
+  "transcript": [
+    {
+      "shortName": "ATA121",
+      "grade": "BA"
+    },
+    {
+      "shortName": "MBG1201",
+      "grade": "BB"
+    },
+    {
+      "shortName": "CSE1200",
+      "grade": "CB"
+    },
+    {
+      "shortName": "CSE1241",
+      "grade": "DC"
+    },
+    {
+      "shortName": "MATH1001",
+      "grade": "DD"
+    },
+    {
+      "shortName": "PHYS1001",
+      "grade": "BA"
+    },
+    {
+      "shortName": "PHYS1003",
+      "grade": "BB"
+    },
+    {
+      "shortName": "TRD121",
+      "grade": "CB"
+    },
+    {
+      "shortName": "ATA122",
+      "grade": "DC"
+    },
+    {
+      "shortName": "CSE1242",
+      "grade": "DD"
+    },
+    {
+      "shortName": "MATH1002",
+      "grade": "BA"
+    },
+    {
+      "shortName": "MATH2256",
+      "grade": "BB"
+    },
+    {
+      "shortName": "PHYS1002",
+      "grade": "CB"
+    },
+    {
+      "shortName": "PHYS1004",
+      "grade": "DC"
+    },
+    {
+      "shortName": "TRD122",
+      "grade": "DD"
+    },
+    {
+      "shortName": "CSE2023",
+      "grade": "BA"
+    },
+    {
+      "shortName": "CSE2225",
+      "grade": "BB"
+    },
+    {
+      "shortName": "ECON2004",
+      "grade": "CB"
+    },
+    {
+      "shortName": "EE2031",
+      "grade": "DC"
+    },
+    {
+      "shortName": "MATH2055",
+      "grade": "DD"
+    },
+    {
+      "shortName": "MATH2059",
+      "grade": "BA"
+    }
+  ]
+}

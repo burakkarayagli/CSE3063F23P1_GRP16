@@ -1,0 +1,45 @@
+{
+  "personName": "Betul",
+  "personSurname": "Gunes",
+  "username": "betul",
+  "password": "betulgunes",
+  "semester": 2,
+  "status": "",
+  "waitingCourses": [],
+  "approvedCourses": [],
+  "rejectedCourses": [],
+  "transcript": [
+    {
+      "shortName": "ATA121",
+      "grade": "FF"
+    },
+    {
+      "shortName": "MBG1201",
+      "grade": "FF"
+    },
+    {
+      "shortName": "CSE1200",
+      "grade": "AA"
+    },
+    {
+      "shortName": "CSE1241",
+      "grade": "DC"
+    },
+    {
+      "shortName": "MATH1001",
+      "grade": "AA"
+    },
+    {
+      "shortName": "PHYS1001",
+      "grade": "BA"
+    },
+    {
+      "shortName": "PHYS1003",
+      "grade": "BB"
+    },
+    {
+      "shortName": "TRD121",
+      "grade": "CB"
+    }
+  ]
+}
