@@ -1,16 +1,12 @@
 {
-  "address": "Kadikoy/Istanbul",
-  "phoneNumber": "5011223344",
-  "semester": 1,
-  "entranceYear": 2023,
-  "status": "",
-  "selectedCourses": [],
-  "transcript": {
-    "listGrades": [],
-    "notes": ""
-  },
   "personName": "Ahmet",
   "personSurname": "Yilmaz",
   "username": "ahmet",
-  "password": "ahmetyilmaz"
+  "password": "ahmetyilmaz",
+  "semester": 1,
+  "status": "",
+  "waitingCourses": [],
+  "approvedCourses": [],
+  "rejectedCourses": [],
+  "transcript": []
 }

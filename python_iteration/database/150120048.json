@@ -1,16 +1,12 @@
 {
-  "address": "Buyukcekmece/Istanbul",
-  "phoneNumber": "5456789012",
-  "semester": 1,
-  "entranceYear": 2023,
-  "status": "",
-  "selectedCourses": [],
-  "transcript": {
-    "listGrades": [],
-    "notes": ""
-  },
   "personName": "Gizem",
   "personSurname": "Temiz",
   "username": "gizem",
-  "password": "gizemtemiz"
+  "password": "gizemtemiz",
+  "semester": 1,
+  "status": "",
+  "waitingCourses": [],
+  "approvedCourses": [],
+  "rejectedCourses": [],
+  "transcript": []
 }
