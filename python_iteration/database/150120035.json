@@ -1,197 +1,73 @@
 {
-  "address": "Kadikoy/Istanbul",
-  "phoneNumber": "5312345678",
-  "semester": 3,
-  "entranceYear": 2022,
-  "status": "",
-  "selectedCourses": [],
-  "transcript": {
-    "listGrades": [
-      {
-        "course": {
-          "shortName": "ATA121",
-          "fullName": "Atatürk İlkeleri ve İnkılap Tarihi I",
-          "description": "",
-          "prerequisite": [],
-          "semester": 1,
-          "credit": 2,
-          "classHours": 2
-        },
-        "grade": "BA"
-      },
-      {
-        "course": {
-          "shortName": "MBG1201",
-          "fullName": "Introduction to Modern Biology",
-          "description": "",
-          "prerequisite": [],
-          "semester": 1,
-          "credit": 5,
-          "classHours": 3
-        },
-        "grade": "BB"
-      },
-      {
-        "course": {
-          "shortName": "CSE1200",
-          "fullName": "Introduction to Computer Engineering",
-          "description": "",
-          "prerequisite": [],
-          "semester": 1,
-          "credit": 4,
-          "classHours": 3
-        },
-        "grade": "CB"
-      },
-      {
-        "course": {
-          "shortName": "CSE1241",
-          "fullName": "Computer Programming I",
-          "description": "",
-          "prerequisite": [],
-          "semester": 1,
-          "credit": 6,
-          "classHours": 4
-        },
-        "grade": "DC"
-      },
-      {
-        "course": {
-          "shortName": "MATH1001",
-          "fullName": "Calculus I",
-          "description": "",
-          "prerequisite": [],
-          "semester": 1,
-          "credit": 6,
-          "classHours": 2
-        },
-        "grade": "DD"
-      },
-      {
-        "course": {
-          "shortName": "PHYS1001",
-          "fullName": "Physics I",
-          "description": "",
-          "prerequisite": [],
-          "semester": 1,
-          "credit": 4,
-          "classHours": 2
-        },
-        "grade": "BA"
-      },
-      {
-        "course": {
-          "shortName": "PHYS1003",
-          "fullName": "Physics Lab I",
-          "description": "",
-          "prerequisite": [],
-          "semester": 1,
-          "credit": 2,
-          "classHours": 2
-        },
-        "grade": "BB"
-      },
-      {
-        "course": {
-          "shortName": "TRD121",
-          "fullName": "Türk Dili I",
-          "description": "",
-          "prerequisite": [],
-          "semester": 1,
-          "credit": 2,
-          "classHours": 2
-        },
-        "grade": "CB"
-      },
-      {
-        "course": {
-          "shortName": "ATA122",
-          "fullName": "Atatürk İlkeleri ve İnkılap Tarihi II",
-          "description": "",
-          "prerequisite": [],
-          "semester": 2,
-          "credit": 2,
-          "classHours": 2
-        },
-        "grade": "DC"
-      },
-      {
-        "course": {
-          "shortName": "CSE1242",
-          "fullName": "Computer Programming II",
-          "description": "",
-          "prerequisite": [],
-          "semester": 2,
-          "credit": 6,
-          "classHours": 4
-        },
-        "grade": "DD"
-      },
-      {
-        "course": {
-          "shortName": "MATH1002",
-          "fullName": "Calculus II",
-          "description": "",
-          "prerequisite": [],
-          "semester": 2,
-          "credit": 6,
-          "classHours": 2
-        },
-        "grade": "BA"
-      },
-      {
-        "course": {
-          "shortName": "MATH2256",
-          "fullName": "Linear Algebra for Computer Engineering",
-          "description": "",
-          "prerequisite": [],
-          "semester": 2,
-          "credit": 5,
-          "classHours": 3
-        },
-        "grade": "BB"
-      },
-      {
-        "course": {
-          "shortName": "PHYS1002",
-          "fullName": "Physics II",
-          "description": "",
-          "prerequisite": [],
-          "semester": 2,
-          "credit": 4,
-          "classHours": 2
-        },
-        "grade": "CB"
-      },
-      {
-        "course": {
-          "shortName": "PHYS1004",
-          "fullName": "Physics Lab II",
-          "description": "",
-          "prerequisite": [],
-          "semester": 2,
-          "credit": 2,
-          "classHours": 2
-        },
-        "grade": "DC"
-      },
-      {
-        "course": {
-          "shortName": "TRD122",
-          "fullName": "Türk Dili II",
-          "description": "",
-          "prerequisite": [],
-          "semester": 2,
-          "credit": 2,
-          "classHours": 2
-        },
-        "grade": "DD"
-      }
-    ],
-    "notes": ""
-  },
   "personName": "Eren",
   "personSurname": "Karatas",
   "username": "eren",
-  "password": "erenkaratas"
+  "password": "erenkaratas",
+  "semester": 3,
+  "status": "",
+  "waitingCourses": [],
+  "approvedCourses": [],
+  "rejectedCourses": [],
+  "transcript": [
+    {
+      "shortName": "ATA121",
+      "grade": "BA"
+    },
+    {
+      "shortName": "MBG1201",
+      "grade": "BB"
+    },
+    {
+      "shortName": "CSE1200",
+      "grade": "CB"
+    },
+    {
+      "shortName": "CSE1241",
+      "grade": "DC"
+    },
+    {
+      "shortName": "MATH1001",
+      "grade": "DD"
+    },
+    {
+      "shortName": "PHYS1001",
+      "grade": "BA"
+    },
+    {
+      "shortName": "PHYS1003",
+      "grade": "BB"
+    },
+    {
+      "shortName": "TRD121",
+      "grade": "CB"
+    },
+    {
+      "shortName": "ATA122",
+      "grade": "DC"
+    },
+    {
+      "shortName": "CSE1242",
+      "grade": "DD"
+    },
+    {
+      "shortName": "MATH1002",
+      "grade": "BA"
+    },
+    {
+      "shortName": "MATH2256",
+      "grade": "BB"
+    },
+    {
+      "shortName": "PHYS1002",
+      "grade": "CB"
+    },
+    {
+      "shortName": "PHYS1004",
+      "grade": "DC"
+    },
+    {
+      "shortName": "TRD122",
+      "grade": "DD"
+    }
+  ]
 }
