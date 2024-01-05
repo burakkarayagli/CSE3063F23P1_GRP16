@@ -123,6 +123,13 @@ class CourseSection(Course):
             "type": self.__type,
         }
 
+    def __eq__(self, other):
+        if (
+            self._Course__short_name == other._Course__short_name
+            and self.__section_name == other.section_name
+        ):
+            return True
+
     def __str__(self):
         return (
             f"---------\n"
