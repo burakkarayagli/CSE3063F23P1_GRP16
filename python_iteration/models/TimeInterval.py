@@ -47,5 +47,12 @@ class TimeInterval:
         else:
             raise TypeError("end_time must be a string")
 
+    def to_json(self):
+        return {
+            "dayOfWeek": self.day_of_week,
+            "startTime": self.start_time,
+            "endTime": self.end_time,
+        }
+
     def __str__(self):
-        return f"Date: {self.day_of_week}, {self.start_time} - {self.end_time}\n"
+        return f"{self.day_of_week} {self.start_time} - {self.end_time}"

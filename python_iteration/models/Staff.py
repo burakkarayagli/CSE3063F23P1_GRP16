@@ -1,5 +1,18 @@
+from Person import Person
+
+
 class Staff(Person):
-    def __init__(self, person_name, person_surname, username, password, reputation, office_hours, salary, employment_status):
+    def __init__(
+        self,
+        person_name,
+        person_surname,
+        username,
+        password,
+        reputation,
+        office_hours,
+        salary,
+        employment_status,
+    ):
         super().__init__(person_name, person_surname, username, password)
         self.__reputation = reputation
         self.__office_hours = office_hours

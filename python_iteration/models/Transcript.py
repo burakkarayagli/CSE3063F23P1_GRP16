@@ -2,17 +2,18 @@ from typing import List
 from Grade import Grade
 from Course import Course
 
+
 class Transcript:
     GRADE_MAPPING = {
-        'AA': 4.0,
-        'BA': 3.5,
-        'BB': 3.0,
-        'CB': 2.5,
-        'CC': 2.0,
-        'DC': 1.5,
-        'DD': 1.0,
-        'FD': 0.5,
-        'FF': 0.0
+        "AA": 4.0,
+        "BA": 3.5,
+        "BB": 3.0,
+        "CB": 2.5,
+        "CC": 2.0,
+        "DC": 1.5,
+        "DD": 1.0,
+        "FD": 0.5,
+        "FF": 0.0,
     }
 
     def __init__(self, initial_grades: List[Grade] = None):
@@ -70,12 +71,24 @@ class Transcript:
         return total_sum / total_credit
 
     def get_passed_courses(self) -> List[Course]:
-        passed_courses = [grade.course for grade in self.__list_grades if self.GRADE_MAPPING.get(grade.grade, 0.0) >= 2.0]
+        passed_courses = [
+            grade.course
+            for grade in self.__list_grades
+            if self.GRADE_MAPPING.get(grade.grade, 0.0) >= 2.0
+        ]
         return passed_courses
 
     def get_taken_courses(self) -> List[Course]:
         taken_courses = [grade.course for grade in self.__list_grades]
         return taken_courses
+
+    def to_json(self):
+        transcript = []
+        for grade in self.__list_grades:
+            transcript.append(
+                {"shortName": grade.get_course_short_name(), "grade": grade.grade}
+            )
+        return transcript
 
     def __str__(self) -> str:
         result = "Transcript: \n"
