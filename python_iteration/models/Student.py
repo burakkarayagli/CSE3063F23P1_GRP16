@@ -364,10 +364,10 @@ class Student(Person):
     def MENU_EXIT(self):
         pass
 
-    def getInformation():
+    def getMenu(self):
         pass
 
-    def getMenu():
+    def getInformationMenu(self):
         pass
 
     def toJson(self):

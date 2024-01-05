@@ -120,7 +120,7 @@ class Lecturer(Staff):
         for course in self.__courses:
             print(course)
 
-    def getInformation():
+    def getInformationMenu(self):
         pass
 
     def getMenu():
