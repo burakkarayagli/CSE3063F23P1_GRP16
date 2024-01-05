@@ -344,7 +344,7 @@ class Student(Person):
         option = -1
         while option < 0 or option > len(availableCourses):
             try:
-                option = int(input("ADD COURSE OPTION"))
+                option = int(input("ADD COURSE OPTION: "))
             except TypeError:
                 print("Please enter a valid option")
                 continue
@@ -520,26 +520,27 @@ class Student(Person):
         option = 0
         while True:
             try:
-                option = int(input(()))
+                option = int(input())
             except TypeError:
                 print("Please enter a valid option")
                 pass
 
-                if option == 1:
-                    self.MENU_LIST_AVAILABLE_COURSES()
-                elif option == 2:
-                    self.MENU_LIST_WAITING_COURSES()
-                elif option == 3:
-                    self.MENU_LIST_APPROVED_COURSES()
-                elif option == 4:
-                    self.MENU_LIST_REJECTED_COURSES()
-                elif option == 5:
-                    self.MENU_LIST_TRANSCRIPT()
-                elif option == 8:
-                    self.MENU_EXIT()
-                else:
-                    print("Please enter a valid option")
-                    continue
+            if option == 1:
+                print('sdf')
+                self.MENU_LIST_AVAILABLE_COURSES()
+            elif option == 2:
+                self.MENU_LIST_WAITING_COURSES()
+            elif option == 3:
+                self.MENU_LIST_APPROVED_COURSES()
+            elif option == 4:
+                self.MENU_LIST_REJECTED_COURSES()
+            elif option == 5:
+                self.MENU_LIST_TRANSCRIPT()
+            elif option == 8:
+                self.MENU_EXIT()
+            else:
+                print("Please enter a valid option")
+                continue
 
     def getManipulationMenu(self):
         MenuString = (
@@ -566,15 +567,15 @@ class Student(Person):
                 print("Please enter a valid option")
                 pass
 
-                if option == 1:
-                    self.MENU_ADD_COURSE()
-                elif option == 2:
-                    self.MENU_DROP_COURSE()
-                elif option == 8:
-                    self.MENU_EXIT()
-                else:
-                    print("Please enter a valid option")
-                    continue
+            if option == 1:
+                self.MENU_ADD_COURSE()
+            elif option == 2:
+                self.MENU_DROP_COURSE()
+            elif option == 8:
+                self.MENU_EXIT()
+            else:
+                print("Please enter a valid option")
+                continue
 
     def toJson(self):
         return {
