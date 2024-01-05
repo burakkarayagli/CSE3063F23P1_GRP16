@@ -126,6 +126,9 @@ class Lecturer(Staff):
     def getMenu():
         pass
 
+    def getManipulationMenu():
+        pass
+
     def to_json(self):
         return {
             "personName": self.personName,

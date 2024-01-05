@@ -19,7 +19,6 @@ class Advisor(Staff):
         students: List[Student],
     ):
         super().__init__(
-
             person_name,
             person_surname,
             username,
@@ -289,7 +288,7 @@ class Advisor(Staff):
     def getMenu(self):
         # this is actually getMenu
         print(f"Welcome {self.getFullName()}")
-        print("1- Manage Student Courses")
+        print("1- Manage Student Courses(Approve/Reject)")
         print("2- Information")
         print("3- Logout")
 
@@ -321,25 +320,49 @@ class Advisor(Staff):
             )
 
     def getManipulationMenu(self):
-        print("1- Student Course Organization")
-        print("2- Approve/Reject Student")
-        print("3- Back(-1)")
+        student_selection = 0
 
-        try:
-            selection = int(input())
-        except ValueError:
-            print("Invalid choice. Please try again.")
-            self.getManipulationMenu()
-            return
+        while student_selection < 1 or student_selection > len(self.__students):
+            print("Which student do you want to go on?\nType -1 to back")
 
-        if selection == 1:
-            self.__studentCourseOrganization()
-            self.getManipulationMenu()
-        elif selection == 2:
-            self.__approveRejectStudent()
-            self.getManipulationMenu()
-        elif selection == 3:
-            self.getMenu()
+            for j, student in enumerate(self.__students):
+                print(f"{j + 1}- {student.getFullName()}", end="")
+                print(f"({student.getWaitingCoursesLength()} Pending)")
+
+            try:
+                student_selection = int(input())
+            except ValueError:
+                print("Invalid choice. Please try again.")
+
+            if student_selection == -1:
+                self.getMenu()
+
+        student = self.__students[student_selection - 1]
+
+        print(f"List of courses for student {student.getFullName()}")
+        while True:
+            print("--------------------")
+            student.printwaitingCourses()
+            print("select only one, type -1 to exit")
+            try:
+                selection = int(input())
+                if selection == -1:
+                    break
+                print("1- Approve")
+                print("2- Reject")
+                selection2 = int(input())
+                if selection2 == 1:
+                    student.approveCourseWithIndex(selection - 1)
+                elif selection2 == 2:
+                    student.rejectCourseWithIndex(selection - 1)
+                else:
+                    print("Invalid choice. Please try again.")
+                    continue
+            except:
+                print("Invalid choice. Please try again.")
+                continue
+        # write student here
+        self.getMenu()
 
     def is_valid_format(self, selections):
         selections = selections.replace(",", "").replace(" ", "")

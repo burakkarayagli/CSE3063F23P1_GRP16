@@ -185,6 +185,9 @@ class Student(Person):
             print("Error dropping course")
             logger.error("Error dropping course")
 
+    def getWaitingCoursesLength(self):
+        return len(self.__waitingCourses)
+
     # Available Courses
     """
     If course is not in waiting list, approved list or rejected list or courses that student has already passed
@@ -573,6 +576,9 @@ class Student(Person):
 
 
     def getInformationMenu(self):
+        pass
+
+    def getManipulationMenu():
         pass
 
     def toJson(self):
