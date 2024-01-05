@@ -422,7 +422,7 @@ class Student(Person):
         pass
 
 
-    def getMenu():
+    def getInformationMenu(self):
         pass
 
     def toJson(self):
