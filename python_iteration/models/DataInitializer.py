@@ -14,7 +14,19 @@ database_folder = "python_iteration/database"
 
 
 class DataInitializer:
+    _instance = None  # Class variable to store the instance
+
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super(DataInitializer, cls).__new__(cls)
+            cls._instance._initialized = False
+        return cls._instance
+
     def __init__(self):
+        if self._initialized:
+            return
+        self._initialized = True
+        
         self.students = []
         self.advisors = []
         self.lecturers = []
