@@ -14,8 +14,8 @@ logedUser = None
 def login(logedUser):
     print("WELECOME TO COURSE REGISTRATION SYSTEM")
     while logedUser == None:
-        username = input("Enter username: ")
-        password = input("Enter password: ")
+        username = "burak"
+        password = "burakkarayagli"
         for lecturer in lecturers:
             if lecturer.username == username and lecturer.password == password:
                 logedUser = lecturer

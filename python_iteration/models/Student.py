@@ -130,6 +130,14 @@ class Student(Person):
         if len(self.__waitingCourses) == MAX_COURSES:
             print("Maximum number of courses exceeded")
             return
+        
+        if (course in self.__rejectedCourses):
+            # Remove course from rejected list
+            self.__rejectedCourses.remove(course)
+            logger.info(
+                f"Course {course.get_full_name()} removed from rejected list of {self.getFullName()}"
+            )
+
 
         try:
             # Add course to waiting list
@@ -144,6 +152,16 @@ class Student(Person):
 
     # Drop course from waiting list
     def dropCourse(self, course: CourseSection):
+        #if course is approved student can't drop that course
+        if course in self.__approvedCourses:
+            print("Course already approved")
+            return
+        
+        # Check if course is in waiting list	
+        if not self.__isCourseInWaitingCoursesList(course):
+            print("Course not in waiting list")
+            return
+
         try:
             # Remove course from waiting list
             self.__waitingCourses.remove(course)
@@ -190,7 +208,7 @@ class Student(Person):
 
     # Available Courses
     """
-    If course is not in waiting list, approved list or rejected list or courses that student has already passed
+    If course is not in waiting list, approved list or courses that student has already passed
 
     If student has passed prerequisites
     """
@@ -222,7 +240,6 @@ class Student(Person):
         return (
             self.__isCourseInWaitingCoursesList(course)
             or self.__isCourseInApprovedCoursesList(course)
-            or self.__isCourseInRejectedCoursesList(course)
         )
 
     def __isStudentAlreadyPassedCourse(self, course: CourseSection):
