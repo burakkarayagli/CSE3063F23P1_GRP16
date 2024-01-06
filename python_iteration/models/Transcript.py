@@ -25,7 +25,8 @@ class Transcript:
         for grade in self.__list_grades:
             result += f"Course name: {grade.course.full_name} | Student Grade: {grade.grade}\n"
         return result
-
+    
+    # shoul be remove
     @property
     def grade_list(self) -> List[Grade]:
         return self.__list_grades

@@ -33,10 +33,10 @@ class CourseSection(Course):
         self.__required_credit = required_credit
         self.__type = type
 
+    # shoul be remove
     @property
     def dates(self) -> List[TimeInterval]:
         return self.__dates
-    
 
     @property
     def section_name(self) -> str:
@@ -157,4 +157,7 @@ class CourseSection(Course):
     def __eq__(self, other):
         if not isinstance(other, CourseSection):
             return False
-        return self.short_name == other.short_name and self.__section_name == other.__section_name
+        return (
+            self.short_name == other.short_name
+            and self.__section_name == other.__section_name
+        )

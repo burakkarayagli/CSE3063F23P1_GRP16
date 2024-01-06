@@ -349,9 +349,7 @@ class Student(Person):
 
             table.append(row)
             
-        print(tabulate(table, headers=headers, tablefmt="fancy_grid"))
-                
-                
+        print(tabulate(table, headers=headers, tablefmt="fancy_grid"))              
 
     def getMenu(self):
         MenuString = (
@@ -441,7 +439,6 @@ class Student(Person):
                 print(f"Error adding course: {e}")
                 logger.error(f"Error adding course: {e}")
             return
-
 
     def MENU_DROP_COURSE(self):
         waitingCourses = self.__waitingCourses
@@ -569,7 +566,6 @@ class Student(Person):
         self.write()
         self.getMenu()
         return
-
 
     def getInformationMenu(self):
         MenuString = (
