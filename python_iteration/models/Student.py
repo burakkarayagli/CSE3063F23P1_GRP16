@@ -345,7 +345,7 @@ class Student(Person):
                 row.append("")
 
             table.append(row)
-            
+
         print(tabulate(table, headers=headers, tablefmt="fancy_grid"))
                 
                 
@@ -503,14 +503,47 @@ class Student(Person):
         
 
     def MENU_LIST_AVAILABLE_COURSES(self):
+        from tabulate import tabulate
         if len(self.getAvailableCourses()) == 0:
             print(colored_string("No available courses", "red"))
             self.getMenu()
             return
         
         #Prints available courses' full name, short name, credit, lecturer name
+        headers = ["Full Name", "Short Name", "Credit", "Lecturer Name", "Time/Day"]
+        headers_with_color = [colored_string(header, "magenta") for header in headers]
+        table = []
         for index, course in enumerate(self.getAvailableCourses()):
-            print(colored_string(f"{index+1}", PRIMARY_COLOR) + colored_string("-", SECONDARY_COLOR) + colored_string(f" {course.full_name}", TEXT_COLOR) + colored_string(f" {course.credit}", TEXT_COLOR))
+            
+            #row color is green if index even, else row color is blue
+            if index % 2 == 0:
+                row_color = "green"
+            else:
+                row_color = "cyan"
+
+            row = []
+            row.append(course.full_name)
+            row.append(course.short_name + " " + course.section_name)
+            row.append(str(course.credit))
+            row.append(course.get_lecturer_full_name())
+
+            
+
+            dates = course.dates
+            time_day = ""
+            #Monday[09:00-10:00] Tuesday[09:00-10:00] Wednesday[09:00-10:00] Thursday[09:00-10:00] Friday[09:00-10:00]
+            for date in dates:
+                time_day += date.day_of_week + "[" + date.start_time + "-" + date.end_time + "] "
+            row.append(time_day)
+            #changein every item's color in row
+            row = [colored_string(item, row_color) for item in row]
+
+            table.append(row)
+
+        print(tabulate(tabular_data=table, headers=headers_with_color, tablefmt="fancy_grid"))
+
+
+            #print(colored_string(f"{index+1}", PRIMARY_COLOR) + colored_string("-", SECONDARY_COLOR) + colored_string(f" {course.full_name}", TEXT_COLOR) + colored_string(f" {course.credit}", TEXT_COLOR))
 
         print(colored_string("=====================================", "black"))
         self.getMenu()
@@ -629,6 +662,7 @@ def colored_string(text, color):
         "magenta": "\033[35m",
         "cyan": "\033[36m",
         "white": "\033[37m",
+        
     }
 
     if color not in colors:

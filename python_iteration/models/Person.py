@@ -57,3 +57,6 @@ class Person(ABC):
 
     def getManipulationMenu():
         pass
+
+    def __str__(self):
+        return self.__personName + " " + self.__personSurname
