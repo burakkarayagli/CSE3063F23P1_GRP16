@@ -4,16 +4,6 @@ class TimeInterval:
         self.__start_time = start_time
         self.__end_time = end_time
 
-    def __eq__(self, other):
-        # compare the day_of_week and start_time
-        if isinstance(other, TimeInterval):
-            if self.day_of_week == other.day_of_week:
-                if self.start_time == other.start_time:
-                    return True
-            return False
-        else:
-            raise TypeError("other must be a TimeInterval object")
-
     @property
     def day_of_week(self):
         return self.__day_of_week
@@ -56,3 +46,13 @@ class TimeInterval:
 
     def __str__(self):
         return f"{self.day_of_week} {self.start_time} - {self.end_time}"
+
+    def __eq__(self, other):
+        # compare the day_of_week and start_time
+        if isinstance(other, TimeInterval):
+            if self.day_of_week == other.day_of_week:
+                if self.start_time == other.start_time:
+                    return True
+            return False
+        else:
+            raise TypeError("other must be a TimeInterval object")

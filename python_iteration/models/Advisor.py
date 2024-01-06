@@ -30,14 +30,6 @@ class Advisor(Staff):
         )
         self.__students = [] if students is None else students
 
-    @property
-    def students(self):
-        return self.students
-
-    @students.setter
-    def students(self, students):
-        self.students = students
-
     def __addStudent(self, student):
         return self.students.append(student)
 
@@ -340,6 +332,7 @@ class Advisor(Staff):
         student = self.__students[student_selection - 1]
 
         print(f"List of courses for student {student.getFullName()}")
+        print(student.getWarnings())
         while True:
             print("--------------------")
             student.printwaitingCourses()
@@ -362,6 +355,7 @@ class Advisor(Staff):
                 print("Invalid choice. Please try again.")
                 continue
         # write student here
+        student.write()
         self.getMenu()
 
     def is_valid_format(self, selections):
