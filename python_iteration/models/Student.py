@@ -185,6 +185,9 @@ class Student(Person):
             print("Error dropping course")
             logger.error("Error dropping course")
 
+    def getWaitingCoursesLength(self):
+        return len(self.__waitingCourses)
+
     # Available Courses
     """
     If course is not in waiting list, approved list or rejected list or courses that student has already passed
@@ -356,25 +359,11 @@ class Student(Person):
             + "\n"
             + colored_string("1", PRIMARY_COLOR)
             + colored_string("-", SECONDARY_COLOR)
-            + " Add course to waiting list\n"
+            + " Manipulation Menu(Add/Drop)\n"
             + colored_string("2", PRIMARY_COLOR)
             + colored_string("-", SECONDARY_COLOR)
-            + " Drop course from waiting list\n"
-            + colored_string("3", PRIMARY_COLOR)
-            + colored_string("-", SECONDARY_COLOR)
-            + " List available courses\n"
-            + colored_string("4", PRIMARY_COLOR)
-            + colored_string("-", SECONDARY_COLOR)
-            + " List waiting courses\n"
-            + colored_string("5", PRIMARY_COLOR)
-            + colored_string("-", SECONDARY_COLOR)
-            + " List approved courses\n"
-            + colored_string("6", PRIMARY_COLOR)
-            + colored_string("-", SECONDARY_COLOR)
-            + " List rejected courses\n"
-            + colored_string("7", PRIMARY_COLOR)
-            + colored_string("-", SECONDARY_COLOR)
-            + " List transcript\n"
+            + " Imformation Menu(List)\n"
+            # other menu option
             + colored_string("8", PRIMARY_COLOR)
             + colored_string("-", SECONDARY_COLOR)
             + " Display weekly schedule\n"
@@ -390,24 +379,15 @@ class Student(Person):
         while option < 1 or option > 9:
             try:
                 option = int(input())
+
             except TypeError:
                 print("Please enter a valid option")
                 continue
 
             if option == 1:
-                self.MENU_ADD_COURSE()
+                self.getManipulationMenu()
             elif option == 2:
-                self.MENU_DROP_COURSE()
-            elif option == 3:
-                self.MENU_LIST_AVAILABLE_COURSES()
-            elif option == 4:
-                self.MENU_LIST_WAITING_COURSES()
-            elif option == 5:
-                self.MENU_LIST_APPROVED_COURSES()
-            elif option == 6:
-                self.MENU_LIST_REJECTED_COURSES()
-            elif option == 7:
-                self.MENU_LIST_TRANSCRIPT()
+                self.getInformationMenu()
             elif option == 8:
                 self.MENU_DISPLAY_WEEKLY_SCHEDULE()
             elif option == 9:
@@ -437,6 +417,7 @@ class Student(Person):
         while option < 0 or option > len(availableCourses):
             try:
                 option = int(input())
+
             except TypeError:
                 print("Please enter a valid option")
                 continue
@@ -444,15 +425,16 @@ class Student(Person):
             if option == 0:
                 self.getMenu()
                 return
-            
+
             if option < 0 or option > len(availableCourses):
                 print("Please enter a valid option")
                 continue
-            
-            
+
             try:
-                self.addCourse(availableCourses[option-1])
-                logger.info(f"Course {availableCourses[option-1].full_name} added to waiting list of {self.getFullName()}")
+                self.addCourse(availableCourses[option - 1])
+                logger.info(
+                    f"Course {availableCourses[option-1].full_name} added to waiting list of {self.getFullName()}"
+                )
                 self.MENU_ADD_COURSE()
                 return
             except Exception as e:
@@ -461,18 +443,20 @@ class Student(Person):
             return
 
 
-
     def MENU_DROP_COURSE(self):
         waitingCourses = self.__waitingCourses
-
 
         if len(waitingCourses) == 0:
             print(colored_string("No courses in waiting list", "red"))
             self.getMenu()
             return
-        
+
         for index, course in enumerate(waitingCourses):
-            print(colored_string(f"{index+1}", PRIMARY_COLOR) + colored_string("-", SECONDARY_COLOR) + colored_string(f" {course.full_name}", TEXT_COLOR))
+            print(
+                colored_string(f"{index+1}", PRIMARY_COLOR)
+                + colored_string("-", SECONDARY_COLOR)
+                + colored_string(f" {course.full_name}", TEXT_COLOR)
+            )
 
         print(colored_string("Please select a course: ", INPUT_COLOR))
         print(colored_string("0 for go back to menu", INPUT_COLOR))
@@ -483,24 +467,23 @@ class Student(Person):
             except TypeError:
                 print("Please enter a valid option")
                 continue
-            
+
             if option == 0:
                 self.getMenu()
                 return
-            
+
             if option < 0 or option > len(waitingCourses):
                 print("Please enter a valid option")
                 continue
-            
+
             try:
-                self.dropCourse(waitingCourses[option-1])
+                self.dropCourse(waitingCourses[option - 1])
                 self.MENU_DROP_COURSE()
                 return
             except Exception as e:
                 print(f"Error dropping course: {e}")
                 logger.error(f"Error dropping course: {e}")
             return
-        
 
     def MENU_LIST_AVAILABLE_COURSES(self):
         from tabulate import tabulate
@@ -548,7 +531,6 @@ class Student(Person):
         print(colored_string("=====================================", "black"))
         self.getMenu()
         return
-    
 
     def MENU_LIST_WAITING_COURSES(self):
         print("=====================================")
@@ -556,11 +538,13 @@ class Student(Person):
             print(colored_string("No courses in waiting list", "red"))
             self.getMenu()
             return
-        
 
         for index, course in enumerate(self.__waitingCourses):
-            print(colored_string(f"{course.full_name}", TEXT_COLOR) + colored_string(f" {course.credit}", TEXT_COLOR))
-        
+            print(
+                colored_string(f"{course.full_name}", TEXT_COLOR)
+                + colored_string(f" {course.credit}", TEXT_COLOR)
+            )
+
         print(colored_string("=====================================", "black"))
         self.getMenu()
         return
@@ -571,10 +555,13 @@ class Student(Person):
             print(colored_string("No courses in approved list", "red"))
             self.getMenu()
             return
-        
+
         for index, course in enumerate(self.__approvedCourses):
-            print(colored_string(f"{course.full_name}", TEXT_COLOR) + colored_string(f" {course.credit}", TEXT_COLOR))
-        
+            print(
+                colored_string(f"{course.full_name}", TEXT_COLOR)
+                + colored_string(f" {course.credit}", TEXT_COLOR)
+            )
+
         print(colored_string("=====================================", "black"))
         self.getMenu()
         return
@@ -585,10 +572,13 @@ class Student(Person):
             print(colored_string("No courses in rejected list", "red"))
             self.getMenu()
             return
-        
+
         for index, course in enumerate(self.__rejectedCourses):
-            print(colored_string(f"{course.full_name}", TEXT_COLOR) + colored_string(f" {course.credit}", TEXT_COLOR))
-        
+            print(
+                colored_string(f"{course.full_name}", TEXT_COLOR)
+                + colored_string(f" {course.credit}", TEXT_COLOR)
+            )
+
         print(colored_string("=====================================", "black"))
         self.getMenu()
         return
@@ -605,11 +595,94 @@ class Student(Person):
 
     def MENU_EXIT(self):
         self.write()
+        self.getMenu()
         return
 
 
     def getInformationMenu(self):
-        pass
+        MenuString = (
+            colored_string("Information Menu", "green")
+            + "\n"
+            + colored_string("1", PRIMARY_COLOR)
+            + colored_string("-", SECONDARY_COLOR)
+            + " List available courses\n"
+            + colored_string("2", PRIMARY_COLOR)
+            + colored_string("-", SECONDARY_COLOR)
+            + " List waiting courses\n"
+            + colored_string("3", PRIMARY_COLOR)
+            + colored_string("-", SECONDARY_COLOR)
+            + " List approved courses\n"
+            + colored_string("4", PRIMARY_COLOR)
+            + colored_string("-", SECONDARY_COLOR)
+            + " List rejected courses\n"
+            + colored_string("5", PRIMARY_COLOR)
+            + colored_string("-", SECONDARY_COLOR)
+            + " List transcript\n"
+            + colored_string("8", PRIMARY_COLOR)
+            + colored_string("-", SECONDARY_COLOR)
+            + " Exit \n"
+            + colored_string("Please select an option: ", "yellow")
+        )
+        print(MenuString)
+        option = 0
+        while True:
+            try:
+                option = int(input())
+            except TypeError:
+                print("Please enter a valid option")
+                pass
+
+            if option == 1:
+                print('sdf')
+                self.MENU_LIST_AVAILABLE_COURSES()
+            elif option == 2:
+                self.MENU_LIST_WAITING_COURSES()
+            elif option == 3:
+                self.MENU_LIST_APPROVED_COURSES()
+            elif option == 4:
+                self.MENU_LIST_REJECTED_COURSES()
+            elif option == 5:
+                self.MENU_LIST_TRANSCRIPT()
+            elif option == 8:
+                self.MENU_EXIT()
+            else:
+                print("Please enter a valid option")
+                continue
+
+    def getManipulationMenu(self):
+        MenuString = (
+            colored_string("Manipulation Menu", "green")
+            + "\n"
+            + colored_string("1", PRIMARY_COLOR)
+            + colored_string("-", SECONDARY_COLOR)
+            + " Add course to waiting list\n"
+            + colored_string("2", PRIMARY_COLOR)
+            + colored_string("-", SECONDARY_COLOR)
+            + " Drop course from waiting list\n"
+            + colored_string("8", PRIMARY_COLOR)
+            + colored_string("-", SECONDARY_COLOR)
+            + " Exit \n"
+            + colored_string("Please select an option: ", "yellow")
+        )
+
+        print(MenuString)
+        option = 0
+        while True:
+            try:
+                option = int(input())
+            except TypeError:
+                print("Please enter a valid option")
+                pass
+
+            if option == 1:
+                self.MENU_ADD_COURSE()
+            elif option == 2:
+                self.MENU_DROP_COURSE()
+            elif option == 8:
+                self.MENU_EXIT()
+            else:
+                print("Please enter a valid option")
+                continue
 
     def toJson(self):
         return {

@@ -55,6 +55,7 @@ class Person(ABC):
     def getMenu(self):
         pass
 
+    @abstractmethod
     def getManipulationMenu():
         pass
 
