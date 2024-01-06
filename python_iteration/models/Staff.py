@@ -35,16 +35,6 @@ class Staff(Person):
     def office_hours(self, office_hours):
         self.__office_hours = office_hours
 
-    def add_office_hour(self, office_hour):
-        self.__office_hours.append(office_hour)
-        return True
-
-    def delete_office_hour(self, office_hour):
-        if office_hour in self.__office_hours:
-            self.__office_hours.remove(office_hour)
-            return True
-        return False
-
     @property
     def salary(self):
         return self.__salary
@@ -60,3 +50,13 @@ class Staff(Person):
     @employment_status.setter
     def employment_status(self, employment_status):
         self.__employment_status = employment_status
+
+    def add_office_hour(self, office_hour):
+        self.__office_hours.append(office_hour)
+        return True
+
+    def delete_office_hour(self, office_hour):
+        if office_hour in self.__office_hours:
+            self.__office_hours.remove(office_hour)
+            return True
+        return False

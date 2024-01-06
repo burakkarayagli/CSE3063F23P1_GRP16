@@ -24,9 +24,6 @@ class Person(ABC):
     def personSurname(self, personSurname):
         self.__personSurname = personSurname
 
-    def getFullName(self):
-        return self.__personName + " " + self.__personSurname
-
     @property
     def username(self):
         return self.__username
@@ -43,6 +40,9 @@ class Person(ABC):
     def setPassword(self, password):
         self.__password = password
 
+    def getFullName(self):
+        return self.__personName + " " + self.__personSurname
+
     # It extensively displays information related to the user.
     # It will display accordingly with the type of the user.(advisor, student, etc.)
     @abstractmethod
@@ -55,5 +55,6 @@ class Person(ABC):
     def getMenu(self):
         pass
 
+    @abstractmethod
     def getManipulationMenu():
         pass

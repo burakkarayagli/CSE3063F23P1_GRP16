@@ -5,7 +5,16 @@
   "password": "burakkarayagli",
   "semester": 5,
   "status": "Approved",
-  "waitingCourses": [],
+  "waitingCourses": [
+    {
+      "shortName": "PHYS1001",
+      "sectionName": "1.1"
+    },
+    {
+      "shortName": "CSE1200",
+      "sectionName": "1.1"
+    }
+  ],
   "approvedCourses": [],
   "rejectedCourses": [],
   "transcript": [

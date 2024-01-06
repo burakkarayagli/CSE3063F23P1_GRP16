@@ -7,19 +7,6 @@ class Grade:
         self.__grade = grade
 
     @property
-    def course(self):
-        return self.__course
-
-    @course.setter
-    def course(self, course):
-        if isinstance(course, Course):
-            self.__course = course
-        else:
-            raise ValueError(
-                "Invalid course object. Must be an instance of Course class."
-            )
-
-    @property
     def grade(self):
         return self.__grade
 
@@ -27,5 +14,17 @@ class Grade:
     def grade(self, grade):
         self.__grade = grade
 
-    def get_course_short_name(self):
+    def setcourse(self, course) -> bool:
+        if isinstance(course, Course):
+            self.__course = course
+        else:
+            raise ValueError(
+                "Invalid course object. Must be an instance of Course class."
+            )
+        return True
+
+    def get_course_short_name(self) -> str:
         return self.__course.short_name
+
+    def __eq__(self, other):
+        return self.get_course_short_name() == other.get_course_short_name()

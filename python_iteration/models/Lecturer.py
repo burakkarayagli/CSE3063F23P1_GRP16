@@ -120,10 +120,15 @@ class Lecturer(Staff):
         for course in self.__courses:
             print(course)
 
+    # Abstract shoul be implement in menu
+
     def getInformationMenu(self):
         pass
 
     def getMenu():
+        pass
+
+    def getManipulationMenu():
         pass
 
     def to_json(self):

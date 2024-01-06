@@ -96,3 +96,8 @@ class Course:
             f"Credit: {self.credit}\n"
             f"---------"
         )
+
+    def __eq__(self, other):
+        if self.short_name == other.short_name:
+            return True
+        return False

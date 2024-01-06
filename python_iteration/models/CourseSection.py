@@ -33,6 +33,11 @@ class CourseSection(Course):
         self.__required_credit = required_credit
         self.__type = type
 
+    # shoul be remove // can be use check_overlap etc. methods
+    @property
+    def dates(self) -> List[TimeInterval]:
+        return self.__dates
+
     @property
     def section_name(self) -> str:
         return self.__section_name
@@ -123,6 +128,13 @@ class CourseSection(Course):
             "type": self.__type,
         }
 
+    def __eq__(self, other):
+        if (
+            self._Course__short_name == other._Course__short_name
+            and self.__section_name == other.section_name
+        ):
+            return True
+
     def __str__(self):
         return (
             f"---------\n"
@@ -140,4 +152,12 @@ class CourseSection(Course):
             f"Type: {self.__type}\n"
             f"Lecturer Name: {self.__lecturer.getFullName()}\n"
             f"Dates: {', '.join([d.__str__() for d in self.__dates])}\n"
+        )
+
+    def __eq__(self, other):
+        if not isinstance(other, CourseSection):
+            return False
+        return (
+            self.short_name == other.short_name
+            and self.__section_name == other.__section_name
         )

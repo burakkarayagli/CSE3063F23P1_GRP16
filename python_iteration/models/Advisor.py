@@ -22,7 +22,6 @@ class Advisor(Staff):
         students: List[Student],
     ):
         super().__init__(
-
             person_name,
             person_surname,
             username,
@@ -33,14 +32,6 @@ class Advisor(Staff):
             employment_status,
         )
         self.__students = [] if students is None else students
-
-    @property
-    def students(self):
-        return self.students
-
-    @students.setter
-    def students(self, students):
-        self.students = students
 
     def __addStudent(self, student):
         return self.students.append(student)
@@ -248,9 +239,9 @@ class Advisor(Staff):
     def __approveRejectStudent(self):
         student_selection = 0
 
-        while student_selection < 1 or student_selection > len(
-            self.advisorController.get_students() #'ll change
-        ):
+
+        while student_selection < 1 or student_selection > len(self.__students):
+
             print("Which student do you want to go on?\nType -1 to back")
 
             for j, student in enumerate(self.__students):
@@ -270,54 +261,33 @@ class Advisor(Staff):
 
         print(f"List of courses for student {student.getFullName()}")
 
-        courses_of_student = student.__waitingCourses
+        while True:
+            print("--------------------")
+            student.printwaitingCourses()
+            print("select only one, type -1 to exit")
+            try:
+                selection = int(input())
+                if selection == -1:
 
-        if student.status() in ["Rejected", "Approved"]:
-            print("Approve/Reject process is already done for this student.\n")
-        else:
-            for i, course in enumerate(courses_of_student):
-                print(f"{i + 1} -> {course.__full_name} {course.__short_name}")
-
-            print(
-                "Please enter the courses you want to approve for the student \n"
-                "Type * to approve all courses\n"
-                "The non-chosen ones will automatically be rejected\n"
-                "Type -1 for exit\n"
-                "Selection/s: "
-            )
-
-            selections = input()
-            if selections == "-1":
-                self.getMenu()
-                return
-
-            sorted_selections = []
-            while True:
-                if selections == "*":
-                    sorted_selections.append(0)
-                    self.__approveStudent(student, sorted_selections)
                     break
+                print("1- Approve")
+                print("2- Reject")
+                selection2 = int(input())
+                if selection2 == 1:
+                    student.approveCourseWithIndex(selection - 1)
+                elif selection2 == 2:
+                    student.rejectCourseWithIndex(selection - 1)
                 else:
-                    if not self.is_valid_format(selections):
-                        print(
-                            "Invalid format. Please enter a valid comma-separated list of numbers.\n"
-                        )
-                    else:
-                        sorted_selections = self.sort_numbers(selections)
-
-                        if sorted_selections[0] <= 0:
-                            print("Invalid input. Please stay in bounds.\n")
-                        else:
-                            self.__approveStudent(student, sorted_selections)
-                            break
-
-                    print("Enter a comma-separated list of numbers: ")
-                    selections = input()
+                    print("Invalid choice. Please try again.")
+                    continue
+            except:
+                print("Invalid choice. Please try again.")
+                continue
 
     def getMenu(self):
         # this is actually getMenu
         print(f"Welcome {self.getFullName()}")
-        print("1- Manage Student Courses")
+        print("1- Manage Student Courses(Approve/Reject)")
         print("2- Information")
         print("3- Logout")
 
@@ -349,25 +319,51 @@ class Advisor(Staff):
             )
 
     def getManipulationMenu(self):
-        print("1- Student Course Organization")
-        print("2- Approve/Reject Student")
-        print("3- Back(-1)")
+        student_selection = 0
 
-        try:
-            selection = int(input())
-        except ValueError:
-            print("Invalid choice. Please try again.")
-            self.getManipulationMenu()
-            return
+        while student_selection < 1 or student_selection > len(self.__students):
+            print("Which student do you want to go on?\nType -1 to back")
 
-        if selection == 1:
-            self.__studentCourseOrganization()
-            self.getManipulationMenu()
-        elif selection == 2:
-            self.__approveRejectStudent()
-            self.getManipulationMenu()
-        elif selection == 3:
-            self.getMenu()
+            for j, student in enumerate(self.__students):
+                print(f"{j + 1}- {student.getFullName()}", end="")
+                print(f"({student.getWaitingCoursesLength()} Pending)")
+
+            try:
+                student_selection = int(input())
+            except ValueError:
+                print("Invalid choice. Please try again.")
+
+            if student_selection == -1:
+                self.getMenu()
+
+        student = self.__students[student_selection - 1]
+
+        print(f"List of courses for student {student.getFullName()}")
+        print(student.getWarnings())
+        while True:
+            print("--------------------")
+            student.printwaitingCourses()
+            print("select only one, type -1 to exit")
+            try:
+                selection = int(input())
+                if selection == -1:
+                    break
+                print("1- Approve")
+                print("2- Reject")
+                selection2 = int(input())
+                if selection2 == 1:
+                    student.approveCourseWithIndex(selection - 1)
+                elif selection2 == 2:
+                    student.rejectCourseWithIndex(selection - 1)
+                else:
+                    print("Invalid choice. Please try again.")
+                    continue
+            except:
+                print("Invalid choice. Please try again.")
+                continue
+        # write student here
+        student.write()
+        self.getMenu()
 
     def is_valid_format(self, selections):
         selections = selections.replace(",", "").replace(" ", "")

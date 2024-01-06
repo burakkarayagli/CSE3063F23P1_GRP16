@@ -19,17 +19,6 @@ class Transcript:
     def __init__(self, initial_grades: List[Grade] = None):
         self.__list_grades = [] if initial_grades is None else initial_grades
 
-    @property
-    def grades(self) -> str:
-        result = ""
-        for grade in self.__list_grades:
-            result += f"Course name: {grade.course.full_name} | Student Grade: {grade.grade}\n"
-        return result
-
-    @property
-    def grade_list(self) -> List[Grade]:
-        return self.__list_grades
-
     def add_grade(self, grade: Grade) -> bool:
         self.__list_grades.append(grade)
         return True if grade is not None else False
@@ -70,17 +59,17 @@ class Transcript:
             return 0.0
         return total_sum / total_credit
 
-    def get_passed_courses(self) -> List[Course]:
-        passed_courses = [
-            grade.course
-            for grade in self.__list_grades
-            if self.GRADE_MAPPING.get(grade.grade, 0.0) >= 2.0
-        ]
-        return passed_courses
+    def is_course_passed(self, courseSection) -> bool:
+        for grade in self.__list_grades:
+            if (
+                grade.get_course_short_name() == courseSection.short_name
+                and grade.grade != "FF"
+            ):
+                return True
+        return False
 
-    def get_taken_courses(self) -> List[Course]:
-        taken_courses = [grade.course for grade in self.__list_grades]
-        return taken_courses
+    def get_passed_course_short_names(self) -> List[str]:
+        return [grade.get_course_short_name() for grade in self.__list_grades]
 
     def to_json(self):
         transcript = []
@@ -91,8 +80,7 @@ class Transcript:
         return transcript
 
     def __str__(self) -> str:
-        result = "Transcript: \n"
-        result += "Grades: \n"
+        result = ""
         for grade in self.__list_grades:
             result += f"Course name: {grade.course.full_name} | Student Grade: {grade.grade}\n"
         return result
