@@ -1,10 +1,24 @@
 import unittest
-from Staff import Staff, TimeInterval
+from Staff import Staff
+from TimeInterval import TimeInterval
+
 
 class StaffTest(unittest.TestCase):
     def setUp(self):
-        self.office_hours = [TimeInterval("09:00", "12:00", "Monday"), TimeInterval("14:00", "17:00", "Wednesday")]
-        self.staff = Staff("John", "Doe", "johndoe", "password", "Excellent", self.office_hours, 50000, "Full-time")
+        self.office_hours = [
+            TimeInterval("09:00", "12:00", "Monday"),
+            TimeInterval("14:00", "17:00", "Wednesday"),
+        ]
+        self.staff = Staff(
+            "John",
+            "Doe",
+            "johndoe",
+            "password",
+            "Excellent",
+            self.office_hours,
+            50000,
+            "Full-time",
+        )
 
     def test_get_reputation(self):
         self.assertEqual("Excellent", self.staff.reputation)
@@ -33,5 +47,6 @@ class StaffTest(unittest.TestCase):
 
     # Add more tests for other methods as needed
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
