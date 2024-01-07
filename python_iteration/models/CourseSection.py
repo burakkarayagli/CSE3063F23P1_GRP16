@@ -74,6 +74,10 @@ class CourseSection(Course):
             raise ValueError("Required credit must be between 0 and 200")
         self.__required_credit = required_credit
 
+    @property
+    def type(self):
+        return self.__type
+
     def set_lecturer(self, lecturer: Lecturer):
         self.__lecturer = lecturer
 

@@ -23,3 +23,51 @@
 2024-01-07 07:09:03,610:INFO:Advisor(Fatma Corut Ergin) logged)
 2024-01-07 07:10:02,377:INFO:Advisor(Fatma Corut Ergin) logged)
 2024-01-07 07:10:40,893:INFO:Advisor(Fatma Corut Ergin) logged)
+2024-01-07 08:22:22,857:INFO:Course CSE3033 1.1 added to waiting list of Hakkı Kokur
+2024-01-07 08:22:22,857:INFO:Course Operating Systems added to waiting list of Hakkı Kokur
+2024-01-07 08:22:23,254:ERROR:Error adding course: invalid literal for int() with base 10: ''
+2024-01-07 08:22:33,509:INFO:Course CSE3055 1.1 added to waiting list of Hakkı Kokur
+2024-01-07 08:22:33,509:INFO:Course Database Systems added to waiting list of Hakkı Kokur
+2024-01-07 08:22:34,913:INFO:Course CSE3063 1.1 added to waiting list of Hakkı Kokur
+2024-01-07 08:22:34,914:INFO:Course Object-Oriented Software Design added to waiting list of Hakkı Kokur
+2024-01-07 08:22:35,500:INFO:Course CSE3215 1.1 added to waiting list of Hakkı Kokur
+2024-01-07 08:22:35,500:INFO:Course Digital Logic Design added to waiting list of Hakkı Kokur
+2024-01-07 08:22:36,030:INFO:Course IE3081 1.1 added to waiting list of Hakkı Kokur
+2024-01-07 08:22:36,031:INFO:Course Modeling and Discrete Simulation added to waiting list of Hakkı Kokur
+2024-01-07 08:22:37,081:ERROR:Error adding course: invalid literal for int() with base 10: ''
+2024-01-07 08:23:37,899:INFO:Course CSE3033 1.1 added to waiting list of Hakkı Kokur
+2024-01-07 08:23:37,899:INFO:Course Operating Systems added to waiting list of Hakkı Kokur
+2024-01-07 08:23:42,820:INFO:Course CSE3055 1.1 added to waiting list of Hakkı Kokur
+2024-01-07 08:23:42,821:INFO:Course Database Systems added to waiting list of Hakkı Kokur
+2024-01-07 08:24:02,049:INFO:Course CSE3063 1.1 added to waiting list of Hakkı Kokur
+2024-01-07 08:24:02,050:INFO:Course Object-Oriented Software Design added to waiting list of Hakkı Kokur
+2024-01-07 08:24:04,952:INFO:Course CSE3215 1.1 added to waiting list of Hakkı Kokur
+2024-01-07 08:24:04,952:INFO:Course Digital Logic Design added to waiting list of Hakkı Kokur
+2024-01-07 08:24:06,024:INFO:Course IE3081 1.1 added to waiting list of Hakkı Kokur
+2024-01-07 08:24:06,024:INFO:Course Modeling and Discrete Simulation added to waiting list of Hakkı Kokur
+2024-01-07 08:24:21,847:INFO:Advisor(Fatma Corut Ergin) logged)
+2024-01-07 08:24:38,570:INFO:Advisor(Fatma Corut Ergin) enter student(Hakkı Kokur)'s approve/reject pages)
+2024-01-07 08:24:38,571:ERROR:Error adding course: 'CourseSection' object has no attribute 'getCredit'
+2024-01-07 08:26:54,483:INFO:Advisor(Fatma Corut Ergin) logged)
+2024-01-07 08:26:56,554:INFO:Advisor(Fatma Corut Ergin) enter student(Hakkı Kokur)'s approve/reject pages)
+2024-01-07 08:42:16,123:INFO:Advisor(Fatma Corut Ergin) logged)
+2024-01-07 08:43:01,720:INFO:Course MATH1001 1.1 added to waiting list of Zeynep Celik
+2024-01-07 08:43:01,720:INFO:Course Calculus I added to waiting list of Zeynep Celik
+2024-01-07 08:43:02,145:INFO:Course ATA122 1.1 added to waiting list of Zeynep Celik
+2024-01-07 08:43:02,145:INFO:Course Atatürk İlkeleri ve İnkılap Tarihi II added to waiting list of Zeynep Celik
+2024-01-07 08:43:02,515:INFO:Course CSE1242 1.1 added to waiting list of Zeynep Celik
+2024-01-07 08:43:02,515:INFO:Course Computer Programming II added to waiting list of Zeynep Celik
+2024-01-07 08:43:02,854:INFO:Course MATH2256 1.1 added to waiting list of Zeynep Celik
+2024-01-07 08:43:02,855:INFO:Course Linear Algebra for Computer Engineering added to waiting list of Zeynep Celik
+2024-01-07 08:43:03,172:INFO:Course PHYS1002 1.1 added to waiting list of Zeynep Celik
+2024-01-07 08:43:03,172:INFO:Course Physics II added to waiting list of Zeynep Celik
+2024-01-07 08:43:03,476:INFO:Course Physics Lab II added to waiting list of Zeynep Celik
+2024-01-07 08:43:03,781:INFO:Course Physics Lab II added to waiting list of Zeynep Celik
+2024-01-07 08:43:04,366:INFO:Course Physics Lab II added to waiting list of Zeynep Celik
+2024-01-07 08:43:04,774:INFO:Course Physics Lab II added to waiting list of Zeynep Celik
+2024-01-07 08:43:05,130:INFO:Course Physics Lab II added to waiting list of Zeynep Celik
+2024-01-07 08:43:18,266:INFO:Course Physics Lab II added to waiting list of Zeynep Celik
+2024-01-07 08:43:18,808:INFO:Course Physics Lab II added to waiting list of Zeynep Celik
+2024-01-07 08:43:19,230:INFO:Course Physics Lab II added to waiting list of Zeynep Celik
+2024-01-07 08:43:46,426:INFO:Course Physics Lab II added to waiting list of Zeynep Celik
+2024-01-07 08:43:47,387:INFO:Course Physics Lab II added to waiting list of Zeynep Celik

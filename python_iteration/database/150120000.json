@@ -5,7 +5,28 @@
   "password": "hakkikokur",
   "semester": 5,
   "status": "",
-  "waitingCourses": [],
+  "waitingCourses": [
+    {
+      "shortName": "CSE3033",
+      "sectionName": "1.1"
+    },
+    {
+      "shortName": "CSE3055",
+      "sectionName": "1.1"
+    },
+    {
+      "shortName": "CSE3063",
+      "sectionName": "1.1"
+    },
+    {
+      "shortName": "CSE3215",
+      "sectionName": "1.1"
+    },
+    {
+      "shortName": "IE3081",
+      "sectionName": "1.1"
+    }
+  ],
   "approvedCourses": [
     {
       "shortName": "ATA121",

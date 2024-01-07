@@ -14,6 +14,9 @@ class Grade:
     def grade(self, grade):
         self.__grade = grade
 
+    def get_credit(self):
+        return self.__course.credit
+
     def setcourse(self, course) -> bool:
         if isinstance(course, Course):
             self.__course = course
