@@ -118,7 +118,7 @@ class CourseSectionTest(unittest.TestCase):
         )
         self.assertFalse(self.course_section2.remove_dates(non_existing_date))
 
-    def is_time_overlap(self, date: TimeInterval) -> bool:
+    def is_time_overlap(self, date) -> bool:
         for d in self.__dates:
             if d.start_time < date.end_time and date.start_time < d.end_time:
                 return True

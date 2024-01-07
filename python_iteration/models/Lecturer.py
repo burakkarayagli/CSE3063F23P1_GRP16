@@ -1,5 +1,5 @@
 from typing import List
-from Student import Student
+
 from Staff import Staff
 from Course import Course
 from TimeInterval import TimeInterval
@@ -13,6 +13,7 @@ logging.basicConfig(
     format="%(asctime)s:%(levelname)s:%(message)s",
 )
 
+
 class Lecturer(Staff):
     def __init__(
         self,
@@ -24,8 +25,8 @@ class Lecturer(Staff):
         office_hours: List[TimeInterval],
         salary: int,
         employment_status: str,
-        students: List[Student] = None,
-        courses: List[Course] = None
+        students=None,
+        courses: List[Course] = None,
     ):
         super().__init__(
             person_name,
@@ -114,9 +115,7 @@ class Lecturer(Staff):
         self.init_courses()
         return True
 
-
     def view_enrolled_students(self, course):
-
         data_utils = DataInitializer()
         students = data_utils.read_students()
         enrolled_students = []
@@ -125,12 +124,21 @@ class Lecturer(Staff):
             selected_courses = student.get_selected_courses()
             for selected_course in selected_courses:
                 if selected_course.get_short_name() == course.get_short_name():
-                    if isinstance(selected_course, (MandatoryCourse, TechnicalElectiveCourse, NonTechnicalElectiveCourse)):
-                        if selected_course.get_lecturer().get_username() == self.get_username():
+                    if isinstance(
+                        selected_course,
+                        (
+                            MandatoryCourse,
+                            TechnicalElectiveCourse,
+                            NonTechnicalElectiveCourse,
+                        ),
+                    ):
+                        if (
+                            selected_course.get_lecturer().get_username()
+                            == self.get_username()
+                        ):
                             enrolled_students.append(student)
 
         return enrolled_students
-
 
     # Abstract shoul be implement in menu
 
@@ -167,23 +175,32 @@ class Lecturer(Staff):
             else:
                 print("Invalid choice. Please try again.")
 
+    def add_course(self, course):
+        self.__courses.append(course)
 
     def getManipulationMenu():
-        
         print("Enter the course code (eg: CSE1001, -1 to exit):")
         course_code = input()
         if course_code == "-1":
             return
 
-        course_name = input("Enter the course name (eg: Introduction to Computer Science):\n")
-        course_description = input("Enter the course description (eg: This course is an introduction to computer science):\n")
-        course_prerequisites = input("Enter the course prerequisites (eg: CSE101,CSE102):\n").split(",")
+        course_name = input(
+            "Enter the course name (eg: Introduction to Computer Science):\n"
+        )
+        course_description = input(
+            "Enter the course description (eg: This course is an introduction to computer science):\n"
+        )
+        course_prerequisites = input(
+            "Enter the course prerequisites (eg: CSE101,CSE102):\n"
+        ).split(",")
 
         course_semester = int(input("Enter the course semester (eg: 1):\n"))
         course_credit = int(input("Enter the course credit (eg: 3):\n"))
         course_class_hours = int(input("Enter the class hours (eg: 3):\n"))
 
-        print("Enter the course type:\n\t 1. Mandatory\n\t 2. Technical Elective\n\t 3. NonTechnical Elective")
+        print(
+            "Enter the course type:\n\t 1. Mandatory\n\t 2. Technical Elective\n\t 3. NonTechnical Elective"
+        )
         course_type = int(input())
 
         section_name = input("Enter the course section name (eg: 1.1):\n")
@@ -206,14 +223,60 @@ class Lecturer(Staff):
             dates.append(TimeInterval(day, start_time, end_time))
 
         if course_type == 1:
-            lab_hours = int(input("Enter the course lab hours (eg: 3, 0 if there are no lab hours):\n"))
-            course = MandatoryCourse(course_code, course_name, course_description, course_prerequisites, course_semester, course_credit, course_class_hours, dates, section_name, quota, location, lab_hours)
+            lab_hours = int(
+                input(
+                    "Enter the course lab hours (eg: 3, 0 if there are no lab hours):\n"
+                )
+            )
+            course = MandatoryCourse(
+                course_code,
+                course_name,
+                course_description,
+                course_prerequisites,
+                course_semester,
+                course_credit,
+                course_class_hours,
+                dates,
+                section_name,
+                quota,
+                location,
+                lab_hours,
+            )
         elif course_type == 2:
             required_credit = int(input("Enter the course required credit (eg: 60):\n"))
-            course = TechnicalElectiveCourse(course_code, course_name, course_description, course_prerequisites, course_semester, course_credit, course_class_hours, dates, section_name, quota, location, required_credit)
+            course = TechnicalElectiveCourse(
+                course_code,
+                course_name,
+                course_description,
+                course_prerequisites,
+                course_semester,
+                course_credit,
+                course_class_hours,
+                dates,
+                section_name,
+                quota,
+                location,
+                required_credit,
+            )
         elif course_type == 3:
-            is_remote = input("Enter if the course is remote (true or false):\n").lower() == 'true'
-            course = NonTechnicalElectiveCourse(course_code, course_name, course_description, course_prerequisites, course_semester, course_credit, course_class_hours, dates, section_name, quota, location, is_remote)
+            is_remote = (
+                input("Enter if the course is remote (true or false):\n").lower()
+                == "true"
+            )
+            course = NonTechnicalElectiveCourse(
+                course_code,
+                course_name,
+                course_description,
+                course_prerequisites,
+                course_semester,
+                course_credit,
+                course_class_hours,
+                dates,
+                section_name,
+                quota,
+                location,
+                is_remote,
+            )
         else:
             print("Invalid course type")
             return
@@ -231,9 +294,6 @@ class Lecturer(Staff):
             "16:00": "16:50",
         }
         return end_times.get(start_time, "")
-
-
-        
 
     def to_json(self):
         return {
