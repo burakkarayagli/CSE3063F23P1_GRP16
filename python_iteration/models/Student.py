@@ -4,7 +4,6 @@ from Person import Person
 from Course import Course
 from Transcript import Transcript
 import logging
-import DataInitializer
 
 from CourseSection import CourseSection
 

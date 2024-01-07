@@ -93,6 +93,7 @@ nb-configuration.xml
 database.bac
 database.bac2
 backup
+.venv
 database/*
 __pycache__
 dumy.py

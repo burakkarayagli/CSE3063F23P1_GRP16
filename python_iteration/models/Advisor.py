@@ -3,9 +3,7 @@ from typing import List
 from Student import Student
 from Staff import Staff
 from TimeInterval import TimeInterval
-from DataInitializer import DataInitializer
 
-#student.getFullName() yazilacak
 
 
 class Advisor(Staff):
