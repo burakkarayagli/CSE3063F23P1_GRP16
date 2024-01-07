@@ -1,5 +1,4 @@
 from Staff import Staff
-from DataInitializer import DataUtils
 
 class Lecturer(Staff):
     def __init__(

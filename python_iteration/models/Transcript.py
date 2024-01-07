@@ -82,5 +82,5 @@ class Transcript:
     def __str__(self) -> str:
         result = ""
         for grade in self.__list_grades:
-            result += f"Course name: {grade.course.full_name} | Student Grade: {grade.grade}\n"
+            result += f"Course name: {grade.get_course_full_name()} | Student Grade: {grade.grade}\n"
         return result
