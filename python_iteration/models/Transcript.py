@@ -69,7 +69,18 @@ class Transcript:
         return False
 
     def get_passed_course_short_names(self) -> List[str]:
-        return [grade.get_course_short_name() for grade in self.__list_grades]
+        passes_course = []
+        for grade in self.__list_grades:
+            if grade.grade != "FF":
+                passes_course.append(grade.get_course_short_name())
+        return passes_course
+
+    def get_passed_total_course_credit(self) -> int:
+        total_credit = 0
+        for grade in self.__list_grades:
+            if grade.grade != "FF":
+                total_credit += grade.get_credit()
+        return total_credit
 
     def to_json(self):
         transcript = []

@@ -182,6 +182,7 @@ class Student(Person):
             logger.info(
                 f"Course {course.get_full_name()} dropped from waiting list of {self.getFullName()}"
             )
+            return True
         except:
             print("Error dropping course")
             logger.error("Error dropping course")
@@ -197,6 +198,7 @@ class Student(Person):
             logger.info(
                 f"Course {course.get_full_name()} approved from waiting list of {self.getFullName()}"
             )
+            return True
         except Exception as e:
             print("Error dropping course")
             logger.error("Error dropping course")
@@ -216,6 +218,7 @@ class Student(Person):
 
         # Getting all courses from database
         from DataInitializer import DataInitializer
+
         data = DataInitializer()
         allCourses = data.course_sections
 
@@ -248,8 +251,18 @@ class Student(Person):
     # Checks passed courses with short names of prerequisites
     def __isStudentPassedPrerequisites(self, course: CourseSection):
         prerequisites = course.get_prerequisites().split(",")
-
         passedCourses_shortNames = self.__transcript.get_passed_course_short_names()
+        # if course.full_name == "Calculus II":
+        #     print(prerequisites)
+        #     print(passedCourses_shortNames)
+
+        # Remove '' if prerequisites is empty
+        if prerequisites == [""]:
+            prerequisites = []
+
+        # if course.full_name == "Calculus II":
+        #     print(prerequisites)
+        #     print(passedCourses_shortNames)
 
         for prerequisite in prerequisites:
             if prerequisite not in passedCourses_shortNames:
@@ -260,11 +273,30 @@ class Student(Person):
     # Checks student's semester with semester of course
     # If student's semester is greater or equal than semester of course, returns True
     def __isStudentHasNeededSemester(self, course: CourseSection):
-        return self.__semester > course.semester
+        if course.type == "nonTechnicalElective":
+            if self.__semester == 2 or self.__semester >= 7:
+                return True
+            else:
+                False
+        elif self.__semester >= course.semester:
+            return True
+
+    def __isStudentCanTakeTechnicalElective(self, course: CourseSection):
+        if course.type == "technicalElective":
+            if (
+                self.__semester >= 7
+                and self.__transcript.get_passed_total_course_credit() >= 165
+            ):
+                return True
+            else:
+                return False
+        else:
+            return True
 
     # Checks if student can take course
     def __canStudentTakeCourse(self, course: CourseSection):
         # Check if course is in current courses list( waiting, approved or rejected courses)
+
         if self.__isCourseInCurrentCoursesList(course):
             return False
 
@@ -278,6 +310,11 @@ class Student(Person):
 
         # Check if student has needed semester
         if not self.__isStudentHasNeededSemester(course):
+            # if course.full_name == "Physics II":
+            #     print("Physics II")
+            return False
+
+        if not self.__isStudentCanTakeTechnicalElective(course):
             return False
 
         return True
@@ -293,8 +330,8 @@ class Student(Person):
 
     def getWarnings(self):
         warnings = []
-        if self.getTotalCredits() > MAX_CREDIT_LIMIT:
-            warnings.append(colored_string("Maximum credit limit exceeded", "red"))
+        if self.__transcript.get_passed_total_course_credit() > MAX_CREDIT_LIMIT:
+            warnings.append("Warning: Maximum credit limit exceeded")
 
         return warnings
 
@@ -384,6 +421,7 @@ class Student(Person):
                 colored_string(f"{index+1}", PRIMARY_COLOR)
                 + colored_string("-", SECONDARY_COLOR)
                 + colored_string(f" {course.full_name}", TEXT_COLOR)
+                + colored_string(f", {course.type}", TEXT_COLOR)
             )
 
         print(colored_string("Please select a course: ", INPUT_COLOR))
@@ -392,7 +430,6 @@ class Student(Person):
         while option < 0 or option > len(availableCourses):
             try:
                 option = int(input())
-
             except TypeError:
                 print("Please enter a valid option")
                 continue
@@ -410,6 +447,7 @@ class Student(Person):
                 logger.info(
                     f"Course {availableCourses[option-1].full_name} added to waiting list of {self.getFullName()}"
                 )
+                self.write()
                 self.MENU_ADD_COURSE()
                 return
             except Exception as e:
@@ -452,6 +490,7 @@ class Student(Person):
 
             try:
                 self.dropCourse(waitingCourses[option - 1])
+                self.write()
                 self.MENU_DROP_COURSE()
                 return
             except Exception as e:
@@ -468,7 +507,14 @@ class Student(Person):
             return
 
         # Prints available courses' full name, short name, credit, lecturer name
-        headers = ["Full Name", "Short Name", "Credit", "Lecturer Name", "Time/Day"]
+        headers = [
+            "Full Name",
+            "Short Name",
+            "Credit",
+            "Lecturer Name",
+            "Time/Day",
+            "Type",
+        ]
         headers_with_color = [colored_string(header, "magenta") for header in headers]
         table = []
         for index, course in enumerate(self.getAvailableCourses()):
@@ -497,6 +543,7 @@ class Student(Person):
                     + "] "
                 )
             row.append(time_day)
+            row.append(course.type)
             # changein every item's color in row
             row = [colored_string(item, row_color) for item in row]
 
@@ -604,7 +651,7 @@ class Student(Person):
         while option < 1 or option > 9:
             try:
                 option = int(input())
-            except TypeError:
+            except TypeError or ValueError:
                 print("Please enter a valid option")
                 continue
 
@@ -649,7 +696,7 @@ class Student(Person):
         while True:
             try:
                 option = int(input())
-            except TypeError:
+            except TypeError or ValueError:
                 print("Please enter a valid option")
                 pass
 
@@ -690,7 +737,7 @@ class Student(Person):
         while True:
             try:
                 option = int(input())
-            except TypeError:
+            except TypeError or ValueError:
                 print("Please enter a valid option")
                 pass
 
@@ -735,9 +782,6 @@ class Student(Person):
             ],
             "transcript": self.__transcript.to_json(),
         }
-    
-    def __eq__(self, other):
-        return self.password == other.password and self.username == other.username
 
     # it can be used for writing to json file
     def write(self):

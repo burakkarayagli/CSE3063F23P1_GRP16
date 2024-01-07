@@ -60,3 +60,12 @@ class Staff(Person):
             self.__office_hours.remove(office_hour)
             return True
         return False
+
+    def getInformationMenu(self):
+        pass
+
+    def getMenu(self):
+        pass
+
+    def getManipulationMenu(self):
+        pass

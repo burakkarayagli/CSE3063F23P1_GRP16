@@ -84,7 +84,9 @@
       "shortName": "MATH1002",
       "fullName": "Calculus II",
       "description": "",
-      "prerequisite": [],
+      "prerequisite": [
+        "MATH1001"
+      ],
       "semester": 2,
       "credit": 6
     },
@@ -2436,7 +2438,7 @@
       "semester": 2,
       "credit": 6,
       "prerequisite": [
-        ""
+        "MATH1002"
       ],
       "dates": [
         {

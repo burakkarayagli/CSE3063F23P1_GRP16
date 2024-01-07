@@ -317,6 +317,7 @@ class Advisor(Staff):
 
     def add_student(self, student):
         self.__students.append(student)
+        return True
 
     def get_student_username(self):
         return [student.username for student in self.__students]

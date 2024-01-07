@@ -5,7 +5,28 @@
   "password": "zeynepcelik",
   "semester": 2,
   "status": "",
-  "waitingCourses": [],
+  "waitingCourses": [
+    {
+      "shortName": "MATH1001",
+      "sectionName": "1.1"
+    },
+    {
+      "shortName": "ATA122",
+      "sectionName": "1.1"
+    },
+    {
+      "shortName": "CSE1242",
+      "sectionName": "1.1"
+    },
+    {
+      "shortName": "MATH2256",
+      "sectionName": "1.1"
+    },
+    {
+      "shortName": "PHYS1002",
+      "sectionName": "1.1"
+    }
+  ],
   "approvedCourses": [],
   "rejectedCourses": [],
   "transcript": [
