@@ -3,11 +3,11 @@ from Student import Student
 from Advisor import Advisor
 from Course import Course
 from CourseSection import CourseSection
-from Lecturer import Lecturer
 from TimeInterval import TimeInterval
+from Lecturer import Lecturer
 
 
-class TestAdvisorFunctions(unittest.TestCase):
+class AdvisorTest(unittest.TestCase):
     def setUp(self):
         self.time_interval1 = TimeInterval("09:00", "12:00", "Monday")
         self.time_interval2 = TimeInterval("13:00", "15:00", "Wednesday")
@@ -62,7 +62,7 @@ class TestAdvisorFunctions(unittest.TestCase):
 
     def test_delete_student(self):
         self.advisor.add_student(self.student)
-        self.advisor._deleteStudent(self.student)
+        self.advisor.__deleteStudent(self.student)
         self.assertNotIn(self.student.username, self.advisor.get_student_username())
 
     def test_student_course_organization(self):
@@ -85,5 +85,5 @@ class TestAdvisorFunctions(unittest.TestCase):
         self.advisor.__rejectStudent(self.student, "*")
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()
