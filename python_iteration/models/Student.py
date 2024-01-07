@@ -243,16 +243,15 @@ class Student(Person):
         )
 
     def __isStudentAlreadyPassedCourse(self, course: CourseSection):
-        return course in self.__transcript.get_passed_courses()
+        if self.__transcript.is_course_passed(course):
+            return True
+        return False
 
     # Checks passed courses with short names of prerequisites
     def __isStudentPassedPrerequisites(self, course: CourseSection):
-        prerequisites = course.get_prerequisites()
+        prerequisites = course.get_prerequisites().split(",")
 
-        passedCourses_shortNames = [
-            passedCourse.short_name
-            for passedCourse in self.__transcript.get_passed_courses()
-        ]
+        passedCourses_shortNames = self.__transcript.get_passed_course_short_names()
 
         for prerequisite in prerequisites:
             if prerequisite not in passedCourses_shortNames:
@@ -263,7 +262,7 @@ class Student(Person):
     # Checks student's semester with semester of course
     # If student's semester is greater or equal than semester of course, returns True
     def __isStudentHasNeededSemester(self, course: CourseSection):
-        return self.__semester >= course.semester
+        return self.__semester > course.semester
 
     # Checks if student can take course
     def __canStudentTakeCourse(self, course: CourseSection):
@@ -308,6 +307,7 @@ class Student(Person):
     # Prints weekly schedule
     def printWeeklySchedule(self):
         from tabulate import tabulate
+
         courseSections = self.__waitingCourses
 
         monday, tuesday, wednesday, thursday, friday = {}, {}, {}, {}, {}
@@ -335,11 +335,16 @@ class Student(Person):
                     thursday[interval] = courseSection
                 elif dateDay == "Friday":
                     friday[interval] = courseSection
-        
 
-        intervals = list(monday.keys()) + list(tuesday.keys()) + list(wednesday.keys()) + list(thursday.keys()) + list(friday.keys())
+        intervals = (
+            list(monday.keys())
+            + list(tuesday.keys())
+            + list(wednesday.keys())
+            + list(thursday.keys())
+            + list(friday.keys())
+        )
         intervals = sorted(list(set(intervals)))
-        
+
         for interval in intervals:
             row = []
             row.append(interval)
@@ -367,58 +372,13 @@ class Student(Person):
             table.append(row)
 
         print(tabulate(table, headers=headers, tablefmt="fancy_grid"))
-                
-                
-
-    def getMenu(self):
-        MenuString = (
-            colored_string(f"Welcome {self.getFullName()}", "green")
-            + "\n"
-            + colored_string("1", PRIMARY_COLOR)
-            + colored_string("-", SECONDARY_COLOR)
-            + " Manipulation Menu(Add/Drop)\n"
-            + colored_string("2", PRIMARY_COLOR)
-            + colored_string("-", SECONDARY_COLOR)
-            + " Imformation Menu(List)\n"
-            # other menu option
-            + colored_string("8", PRIMARY_COLOR)
-            + colored_string("-", SECONDARY_COLOR)
-            + " Display weekly schedule\n"
-            + colored_string("9", PRIMARY_COLOR)
-            + colored_string("-", SECONDARY_COLOR)
-            + colored_string(" Exit\n", EXIT_COLOR)
-            
-            + colored_string("Please select an option: ", "yellow")
-        )
-
-        print(MenuString)
-        option = -1
-        while option < 1 or option > 9:
-            try:
-                option = int(input())
-
-            except TypeError:
-                print("Please enter a valid option")
-                continue
-
-            if option == 1:
-                self.getManipulationMenu()
-            elif option == 2:
-                self.getInformationMenu()
-            elif option == 8:
-                self.MENU_DISPLAY_WEEKLY_SCHEDULE()
-            elif option == 9:
-                self.MENU_EXIT()
-            else:
-                print("Please enter a valid option")
-                continue
 
     def MENU_ADD_COURSE(self):
         availableCourses = self.getAvailableCourses()
 
         if len(availableCourses) == 0:
             print(colored_string("No available courses", "red"))
-            self.getMenu()
+            self.getManipulationMenu()
             return
 
         for index, course in enumerate(availableCourses):
@@ -440,7 +400,7 @@ class Student(Person):
                 continue
 
             if option == 0:
-                self.getMenu()
+                self.getManipulationMenu()
                 return
 
             if option < 0 or option > len(availableCourses):
@@ -459,13 +419,12 @@ class Student(Person):
                 logger.error(f"Error adding course: {e}")
             return
 
-
     def MENU_DROP_COURSE(self):
         waitingCourses = self.__waitingCourses
 
         if len(waitingCourses) == 0:
             print(colored_string("No courses in waiting list", "red"))
-            self.getMenu()
+            self.getManipulationMenu()
             return
 
         for index, course in enumerate(waitingCourses):
@@ -486,7 +445,7 @@ class Student(Person):
                 continue
 
             if option == 0:
-                self.getMenu()
+                self.getManipulationMenu()
                 return
 
             if option < 0 or option > len(waitingCourses):
@@ -506,7 +465,7 @@ class Student(Person):
         from tabulate import tabulate
         if len(self.getAvailableCourses()) == 0:
             print(colored_string("No available courses", "red"))
-            self.getMenu()
+            self.getInformationMenu()
             return
         
         #Prints available courses' full name, short name, credit, lecturer name
@@ -546,14 +505,14 @@ class Student(Person):
             #print(colored_string(f"{index+1}", PRIMARY_COLOR) + colored_string("-", SECONDARY_COLOR) + colored_string(f" {course.full_name}", TEXT_COLOR) + colored_string(f" {course.credit}", TEXT_COLOR))
 
         print(colored_string("=====================================", "black"))
-        self.getMenu()
+        self.getInformationMenu()
         return
 
     def MENU_LIST_WAITING_COURSES(self):
         print("=====================================")
         if len(self.__waitingCourses) == 0:
             print(colored_string("No courses in waiting list", "red"))
-            self.getMenu()
+            self.getInformationMenu()
             return
 
         for index, course in enumerate(self.__waitingCourses):
@@ -563,14 +522,14 @@ class Student(Person):
             )
 
         print(colored_string("=====================================", "black"))
-        self.getMenu()
+        self.getInformationMenu()
         return
 
     def MENU_LIST_APPROVED_COURSES(self):
         print("=====================================")
         if len(self.__approvedCourses) == 0:
             print(colored_string("No courses in approved list", "red"))
-            self.getMenu()
+            self.getInformationMenu()
             return
 
         for index, course in enumerate(self.__approvedCourses):
@@ -580,14 +539,14 @@ class Student(Person):
             )
 
         print(colored_string("=====================================", "black"))
-        self.getMenu()
+        self.getInformationMenu()
         return
 
     def MENU_LIST_REJECTED_COURSES(self):
         print("=====================================")
         if len(self.__rejectedCourses) == 0:
             print(colored_string("No courses in rejected list", "red"))
-            self.getMenu()
+            self.getInformationMenu()
             return
 
         for index, course in enumerate(self.__rejectedCourses):
@@ -597,24 +556,63 @@ class Student(Person):
             )
 
         print(colored_string("=====================================", "black"))
-        self.getMenu()
+        self.getInformationMenu()
         return
 
     def MENU_LIST_TRANSCRIPT(self):
         self.printTranscript()
-        self.getMenu()
+        self.getInformationMenu()
         return
-    
+
     def MENU_DISPLAY_WEEKLY_SCHEDULE(self):
         self.printWeeklySchedule()
-        self.getMenu()
+        self.getInformationMenu()
         return
 
     def MENU_EXIT(self):
         self.write()
-        self.getMenu()
-        return
+        import Controller
 
+    def getMenu(self):
+        MenuString = (
+            colored_string(f"Welcome {self.getFullName()}", "green")
+            + "\n"
+            + colored_string("1", PRIMARY_COLOR)
+            + colored_string("-", SECONDARY_COLOR)
+            + " Manipulation Menu(Add/Drop)\n"
+            + colored_string("2", PRIMARY_COLOR)
+            + colored_string("-", SECONDARY_COLOR)
+            + " Imformation Menu(List)\n"
+            # other menu option
+            + colored_string("8", PRIMARY_COLOR)
+            + colored_string("-", SECONDARY_COLOR)
+            + " Display weekly schedule\n"
+            + colored_string("9", PRIMARY_COLOR)
+            + colored_string("-", SECONDARY_COLOR)
+            + colored_string(" Exit\n", EXIT_COLOR)
+            + colored_string("Please select an option: ", "yellow")
+        )
+
+        print(MenuString)
+        option = -1
+        while option < 1 or option > 9:
+            try:
+                option = int(input())
+            except TypeError:
+                print("Please enter a valid option")
+                continue
+
+            if option == 1:
+                self.getManipulationMenu()
+            elif option == 2:
+                self.getInformationMenu()
+            elif option == 8:
+                self.MENU_DISPLAY_WEEKLY_SCHEDULE()
+            elif option == 9:
+                self.MENU_EXIT()
+            else:
+                print("Please enter a valid option")
+                continue
 
     def getInformationMenu(self):
         MenuString = (
@@ -650,7 +648,6 @@ class Student(Person):
                 pass
 
             if option == 1:
-                print('sdf')
                 self.MENU_LIST_AVAILABLE_COURSES()
             elif option == 2:
                 self.MENU_LIST_WAITING_COURSES()
@@ -661,7 +658,7 @@ class Student(Person):
             elif option == 5:
                 self.MENU_LIST_TRANSCRIPT()
             elif option == 8:
-                self.MENU_EXIT()
+                self.getMenu()
             else:
                 print("Please enter a valid option")
                 continue
@@ -696,7 +693,7 @@ class Student(Person):
             elif option == 2:
                 self.MENU_DROP_COURSE()
             elif option == 8:
-                self.MENU_EXIT()
+                self.getMenu()
             else:
                 print("Please enter a valid option")
                 continue

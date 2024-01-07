@@ -1,5 +1,5 @@
 from Staff import Staff
-
+from DataInitializer import DataUtils
 
 class Lecturer(Staff):
     def __init__(
@@ -119,6 +119,8 @@ class Lecturer(Staff):
     def get_courses(self):
         for course in self.__courses:
             print(course)
+
+    # Abstract shoul be implement in menu
 
     def getInformationMenu(self):
         pass

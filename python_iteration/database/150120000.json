@@ -5,14 +5,23 @@
   "password": "hakkikokur",
   "semester": 5,
   "status": "",
-  "waitingCourses": [
+  "waitingCourses": [],
+  "approvedCourses": [
     {
       "shortName": "ATA121",
       "sectionName": "1.1"
+    },
+    {
+      "shortName": "MBG1201",
+      "sectionName": "1.1"
     }
   ],
-  "approvedCourses": [],
-  "rejectedCourses": [],
+  "rejectedCourses": [
+    {
+      "shortName": "CSE1241",
+      "sectionName": "1.1"
+    }
+  ],
   "transcript": [
     {
       "shortName": "ATA121",

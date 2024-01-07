@@ -14,8 +14,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 1,
-          "credit": 2,
-          "classHours": 2
+          "credit": 2
         },
         "grade": "BA"
       },
@@ -26,8 +25,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 1,
-          "credit": 5,
-          "classHours": 3
+          "credit": 5
         },
         "grade": "BB"
       },
@@ -38,8 +36,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 1,
-          "credit": 4,
-          "classHours": 3
+          "credit": 4
         },
         "grade": "CB"
       },
@@ -50,8 +47,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 1,
-          "credit": 6,
-          "classHours": 4
+          "credit": 6
         },
         "grade": "DC"
       },
@@ -62,8 +58,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 1,
-          "credit": 6,
-          "classHours": 2
+          "credit": 6
         },
         "grade": "DD"
       },
@@ -74,8 +69,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 1,
-          "credit": 4,
-          "classHours": 2
+          "credit": 4
         },
         "grade": "BA"
       },
@@ -86,8 +80,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 1,
-          "credit": 2,
-          "classHours": 2
+          "credit": 2
         },
         "grade": "BB"
       },
@@ -98,8 +91,7 @@
           "description": "",
           "prerequisite": [],
           "semester": 1,
-          "credit": 2,
-          "classHours": 2
+          "credit": 2
         },
         "grade": "CB"
       }
