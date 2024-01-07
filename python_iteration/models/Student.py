@@ -735,6 +735,9 @@ class Student(Person):
             ],
             "transcript": self.__transcript.to_json(),
         }
+    
+    def __eq__(self, other):
+        return self.password == other.password and self.username == other.username
 
     # it can be used for writing to json file
     def write(self):

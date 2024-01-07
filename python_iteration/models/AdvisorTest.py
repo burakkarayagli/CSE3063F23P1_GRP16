@@ -6,22 +6,19 @@ from CourseSection import CourseSection
 from Lecturer import Lecturer
 from TimeInterval import TimeInterval
 
-class TestAdvisorFunctions(unittest.TestCase):
 
+class TestAdvisorFunctions(unittest.TestCase):
     def setUp(self):
         self.time_interval1 = TimeInterval("09:00", "12:00", "Monday")
         self.time_interval2 = TimeInterval("13:00", "15:00", "Wednesday")
 
         self.course = Course(
-            "C101",
-            "Computer Science 101",
-            "Introduction to Computer Science",
-            [],
-            1,
-            3
+            "C101", "Computer Science 101", "Introduction to Computer Science", [], 1, 3
         )
 
-        self.lecturer = Lecturer("John", "Doe", "john.doe", "password123", "PhD")
+        self.lecturer = Lecturer(
+            "John", "Doe", "john.doe", "password123", "PhD", [], 10000, "Full-time", []
+        )
 
         self.course_section = CourseSection(
             self.course,
@@ -31,9 +28,9 @@ class TestAdvisorFunctions(unittest.TestCase):
             30,
             20,
             3,
-            "Lecture"
+            "Lecture",
         )
-        
+
         self.student = Student(
             "Alice",
             "Johnson",
@@ -44,7 +41,7 @@ class TestAdvisorFunctions(unittest.TestCase):
             [],
             [],
             [],
-            None
+            None,
         )
 
         self.advisor = Advisor(
@@ -56,17 +53,17 @@ class TestAdvisorFunctions(unittest.TestCase):
             [self.time_interval1],
             60000,
             "Full-time",
-            [self.student]
+            [self.student],
         )
 
     def test_add_student(self):
         self.advisor.add_student(self.student)
-        self.assertIn(self.student, self.advisor.students)
+        self.assertIn(self.student.username, self.advisor.get_student_username())
 
     def test_delete_student(self):
         self.advisor.add_student(self.student)
-        self.advisor.__deleteStudent(self.student)
-        self.assertNotIn(self.student, self.advisor.students)
+        self.advisor._deleteStudent(self.student)
+        self.assertNotIn(self.student.username, self.advisor.get_student_username())
 
     def test_student_course_organization(self):
         self.advisor.add_student(self.student)
@@ -87,6 +84,6 @@ class TestAdvisorFunctions(unittest.TestCase):
         self.advisor.add_student(self.student)
         self.advisor.__rejectStudent(self.student, "*")
 
-    
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

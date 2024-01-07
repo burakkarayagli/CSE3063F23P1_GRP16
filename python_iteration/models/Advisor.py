@@ -318,6 +318,9 @@ class Advisor(Staff):
     def add_student(self, student):
         self.__students.append(student)
 
+    def get_student_username(self):
+        return [student.username for student in self.__students]
+
     def toJson(self):
         return {
             "personName": self.__personName,
