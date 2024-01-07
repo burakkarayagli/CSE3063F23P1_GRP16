@@ -111,6 +111,9 @@ class CourseSection(Course):
     def get_full_name(self) -> str:
         return self.short_name + " " + self.__section_name
 
+    def get_lecturer_full_name(self) -> str:
+        return self.__lecturer.getFullName()
+
     def to_json(self):
         return {
             "shortName": self.short_name,

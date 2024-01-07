@@ -130,6 +130,14 @@ class Student(Person):
         if len(self.__waitingCourses) == MAX_COURSES:
             print("Maximum number of courses exceeded")
             return
+        
+        if (course in self.__rejectedCourses):
+            # Remove course from rejected list
+            self.__rejectedCourses.remove(course)
+            logger.info(
+                f"Course {course.get_full_name()} removed from rejected list of {self.getFullName()}"
+            )
+
 
         try:
             # Add course to waiting list
@@ -144,6 +152,16 @@ class Student(Person):
 
     # Drop course from waiting list
     def dropCourse(self, course: CourseSection):
+        #if course is approved student can't drop that course
+        if course in self.__approvedCourses:
+            print("Course already approved")
+            return
+        
+        # Check if course is in waiting list	
+        if not self.__isCourseInWaitingCoursesList(course):
+            print("Course not in waiting list")
+            return
+
         try:
             # Remove course from waiting list
             self.__waitingCourses.remove(course)
@@ -190,7 +208,7 @@ class Student(Person):
 
     # Available Courses
     """
-    If course is not in waiting list, approved list or rejected list or courses that student has already passed
+    If course is not in waiting list, approved list or courses that student has already passed
 
     If student has passed prerequisites
     """
@@ -222,7 +240,6 @@ class Student(Person):
         return (
             self.__isCourseInWaitingCoursesList(course)
             or self.__isCourseInApprovedCoursesList(course)
-            or self.__isCourseInRejectedCoursesList(course)
         )
 
     def __isStudentAlreadyPassedCourse(self, course: CourseSection):
@@ -445,19 +462,47 @@ class Student(Person):
             return
 
     def MENU_LIST_AVAILABLE_COURSES(self):
+        from tabulate import tabulate
         if len(self.getAvailableCourses()) == 0:
             print(colored_string("No available courses", "red"))
             self.getInformationMenu()
             return
-
-        # Prints available courses' full name, short name, credit, lecturer name
+        
+        #Prints available courses' full name, short name, credit, lecturer name
+        headers = ["Full Name", "Short Name", "Credit", "Lecturer Name", "Time/Day"]
+        headers_with_color = [colored_string(header, "magenta") for header in headers]
+        table = []
         for index, course in enumerate(self.getAvailableCourses()):
-            print(
-                colored_string(f"{index+1}", PRIMARY_COLOR)
-                + colored_string("-", SECONDARY_COLOR)
-                + colored_string(f" {course.full_name}", TEXT_COLOR)
-                + colored_string(f" {course.credit}", TEXT_COLOR)
-            )
+            
+            #row color is green if index even, else row color is blue
+            if index % 2 == 0:
+                row_color = "green"
+            else:
+                row_color = "cyan"
+
+            row = []
+            row.append(course.full_name)
+            row.append(course.short_name + " " + course.section_name)
+            row.append(str(course.credit))
+            row.append(course.get_lecturer_full_name())
+
+            
+
+            dates = course.dates
+            time_day = ""
+            #Monday[09:00-10:00] Tuesday[09:00-10:00] Wednesday[09:00-10:00] Thursday[09:00-10:00] Friday[09:00-10:00]
+            for date in dates:
+                time_day += date.day_of_week + "[" + date.start_time + "-" + date.end_time + "] "
+            row.append(time_day)
+            #changein every item's color in row
+            row = [colored_string(item, row_color) for item in row]
+
+            table.append(row)
+
+        print(tabulate(tabular_data=table, headers=headers_with_color, tablefmt="fancy_grid"))
+
+
+            #print(colored_string(f"{index+1}", PRIMARY_COLOR) + colored_string("-", SECONDARY_COLOR) + colored_string(f" {course.full_name}", TEXT_COLOR) + colored_string(f" {course.credit}", TEXT_COLOR))
 
         print(colored_string("=====================================", "black"))
         self.getInformationMenu()
@@ -704,6 +749,7 @@ def colored_string(text, color):
         "magenta": "\033[35m",
         "cyan": "\033[36m",
         "white": "\033[37m",
+        
     }
 
     if color not in colors:
