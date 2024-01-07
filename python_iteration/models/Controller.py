@@ -11,19 +11,19 @@ logedUser = None
 
 
 # find the student file
-if "1" == input("press 1 to search"):
-    password = input()
-    import os
-    import json
+# if "1" == input("press 1 to search"):
+#     password = input()
+#     import os
+#     import json
 
-    database_folder = "python_iteration/database"
+#     database_folder = "python_iteration/database"
 
-    for student_file in os.listdir(database_folder):
-        if student_file != "parameters.json":
-            with open(os.path.join(database_folder, student_file), "r") as f:
-                data = json.load(f)
-                if password == data["password"]:
-                    print(student_file)
+#     for student_file in os.listdir(database_folder):
+#         if student_file != "parameters.json":
+#             with open(os.path.join(database_folder, student_file), "r") as f:
+#                 data = json.load(f)
+#                 if password == data["password"]:
+#                     print(student_file)
 
 
 # Login

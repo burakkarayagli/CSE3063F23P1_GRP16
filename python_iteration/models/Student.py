@@ -330,7 +330,10 @@ class Student(Person):
 
     def getWarnings(self):
         warnings = []
-        if self.__transcript.get_passed_total_course_credit() > MAX_CREDIT_LIMIT:
+        current_credit = 0
+        for course in self.__waitingCourses + self.__approvedCourses:
+            current_credit += course.getCredit()
+        if current_credit > MAX_CREDIT_LIMIT:
             warnings.append("Warning: Maximum credit limit exceeded")
 
         return warnings
