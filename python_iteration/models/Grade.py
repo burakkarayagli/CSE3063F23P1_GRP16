@@ -26,5 +26,8 @@ class Grade:
     def get_course_short_name(self) -> str:
         return self.__course.short_name
 
+    def get_course_full_name(self) -> str:
+        return self.__course.full_name
+
     def __eq__(self, other):
         return self.get_course_short_name() == other.get_course_short_name()
